@@ -1,0 +1,10 @@
+C:\DATEN\Git\spiel-des-versagens\Spiel_Des_Lebens\bin\Debug\Spiel_Des_Lebens.exe.config
+C:\DATEN\Git\spiel-des-versagens\Spiel_Des_Lebens\bin\Debug\Spiel_Des_Lebens.exe
+C:\DATEN\Git\spiel-des-versagens\Spiel_Des_Lebens\bin\Debug\Spiel_Des_Lebens.pdb
+C:\DATEN\Git\spiel-des-versagens\Spiel_Des_Lebens\obj\Debug\Spiel_Des_Lebens.csproj.AssemblyReference.cache
+C:\DATEN\Git\spiel-des-versagens\Spiel_Des_Lebens\obj\Debug\Spiel_Des_Lebens.csproj.SuggestedBindingRedirects.cache
+C:\DATEN\Git\spiel-des-versagens\Spiel_Des_Lebens\obj\Debug\Spiel_Des_Lebens.Properties.Resources.resources
+C:\DATEN\Git\spiel-des-versagens\Spiel_Des_Lebens\obj\Debug\Spiel_Des_Lebens.csproj.GenerateResource.cache
+C:\DATEN\Git\spiel-des-versagens\Spiel_Des_Lebens\obj\Debug\Spiel_Des_Lebens.csproj.CoreCompileInputs.cache
+C:\DATEN\Git\spiel-des-versagens\Spiel_Des_Lebens\obj\Debug\Spiel_Des_Lebens.exe
+C:\DATEN\Git\spiel-des-versagens\Spiel_Des_Lebens\obj\Debug\Spiel_Des_Lebens.pdb
