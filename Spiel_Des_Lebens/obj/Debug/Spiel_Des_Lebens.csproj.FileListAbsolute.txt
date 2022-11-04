@@ -20,3 +20,4 @@ C:\Users\kevin\Documents\Softwareengineering\spiel-des-versagens\Spiel_Des_Leben
 C:\Users\kevin\Documents\Softwareengineering\spiel-des-versagens\Spiel_Des_Lebens\obj\Debug\Spiel_Des_Lebens.exe
 C:\Users\kevin\Documents\Softwareengineering\spiel-des-versagens\Spiel_Des_Lebens\obj\Debug\Spiel_Des_Lebens.pdb
 >>>>>>> abce1d26a583d6da3bc80203809f4dfb07e40f74
+C:\Users\kevin\Documents\Softwareengineering\spiel-des-versagens\Spiel_Des_Lebens\obj\Debug\Spiel_Des_Lebens.csprojAssemblyReference.cache
