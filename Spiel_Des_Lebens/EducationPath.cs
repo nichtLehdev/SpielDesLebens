@@ -27,7 +27,7 @@ namespace Spiel_Des_Lebens
 
         public virtual String getProfession()
         {
-            return "";
+            return "ERROR - EducationPath.getProfession() failed !!!";
         }
 
         public Phase getPhase()

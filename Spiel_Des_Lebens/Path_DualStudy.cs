@@ -30,7 +30,7 @@ namespace Spiel_Des_Lebens
                 case Direction.Civil:
                     return "Steuerwesen";
             }
-            return "ERROR, getProfession failed!";
+            return "ERROR - Path_DualStudy.getProfession() failed !!!";
         }
     }
 }

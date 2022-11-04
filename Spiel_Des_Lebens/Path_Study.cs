@@ -29,7 +29,7 @@ namespace Spiel_Des_Lebens
                 case Direction.Civil:
                     return "Jurastudium";
             }
-            return "ERROR, getProfession failed!";
+            return "ERROR - Path_Study.getProfession() failed !!!";
         }
     }
 }
