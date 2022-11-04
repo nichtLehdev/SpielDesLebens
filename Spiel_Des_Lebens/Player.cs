@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Spiel_Des_Lebens
 {
-    internal class EducationPath
+    internal class Player
     {
     }
 }
