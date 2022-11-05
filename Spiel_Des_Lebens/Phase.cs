@@ -11,7 +11,7 @@ namespace Spiel_Des_Lebens
         private int actionPoints;
         public Phase(int length)
         {
-            actionPoints = length * 8;
+            actionPoints = length * 7;
         }
 
         public int getActionPoints()
