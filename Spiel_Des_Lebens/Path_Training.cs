@@ -29,7 +29,7 @@ namespace Spiel_Des_Lebens
                 case Direction.Civil:
                     return "Rechtanwaltsfachangestellter";
             }
-            return "ERROR - Path_Training.getProfession() failed !!!";
+            throw new Error("Path_Training.getProfession() failed !!!");
         }
     }
 }
