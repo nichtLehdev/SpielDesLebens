@@ -12,11 +12,10 @@ namespace Spiel_Des_Lebens
 {
     public partial class Form2 : Form
     {
-        public Form2(string name, string alter, Image avatar)
+        public Form2(string name, string alter, Image avatar, string abschluss)
         {
             InitializeComponent();
             pictureBox1.Image = avatar;
-
         }
         
         private void Form1_Load(object sender, EventArgs e)

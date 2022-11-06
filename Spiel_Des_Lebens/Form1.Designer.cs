@@ -89,6 +89,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.change_Avatar);
             // 
             // pictureBox2
             // 
@@ -97,6 +98,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(100, 124);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.change_Avatar);
             // 
             // pictureBox3
             // 
@@ -105,6 +107,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(100, 124);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.change_Avatar);
             // 
             // pictureBox4
             // 
@@ -113,6 +116,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(100, 124);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.change_Avatar);
             // 
             // pictureBox5
             // 
@@ -121,6 +125,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(100, 124);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.change_Avatar);
             // 
             // pictureBox6
             // 
@@ -129,6 +134,7 @@
             this.pictureBox6.Size = new System.Drawing.Size(100, 124);
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.change_Avatar);
             // 
             // button1
             // 
