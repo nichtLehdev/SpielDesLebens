@@ -53,10 +53,15 @@
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.label5 = new System.Windows.Forms.Label();
+            this.sonstige_box = new System.Windows.Forms.RichTextBox();
+            this.info_panel = new System.Windows.Forms.Panel();
+            this.info_text = new System.Windows.Forms.RichTextBox();
+            this.info_close_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.info_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -89,6 +94,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.info_panel);
             this.panel1.Controls.Add(this.info_but);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button1);
@@ -110,6 +116,7 @@
             this.info_but.TabStop = false;
             this.info_but.Text = "Info";
             this.info_but.UseVisualStyleBackColor = false;
+            this.info_but.Click += new System.EventHandler(this.show_info);
             // 
             // textBox1
             // 
@@ -129,6 +136,7 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(475, 44);
             this.progressBar1.TabIndex = 4;
+            this.progressBar1.Value = 10;
             // 
             // pictureBox1
             // 
@@ -213,6 +221,7 @@
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.sonstige_box);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
@@ -230,7 +239,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(37, 403);
+            this.label6.Location = new System.Drawing.Point(34, 363);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 13);
             this.label6.TabIndex = 8;
@@ -239,7 +248,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(37, 335);
+            this.label4.Location = new System.Drawing.Point(34, 288);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 13);
             this.label4.TabIndex = 7;
@@ -248,7 +257,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 244);
+            this.label3.Location = new System.Drawing.Point(34, 209);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 6;
@@ -257,7 +266,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 149);
+            this.label2.Location = new System.Drawing.Point(34, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 5;
@@ -275,33 +284,41 @@
             // 
             // progressBar5
             // 
-            this.progressBar5.Location = new System.Drawing.Point(37, 354);
+            this.progressBar5.BackColor = System.Drawing.Color.DarkGray;
+            this.progressBar5.ForeColor = System.Drawing.Color.Maroon;
+            this.progressBar5.Location = new System.Drawing.Point(37, 304);
+            this.progressBar5.MarqueeAnimationSpeed = 50;
             this.progressBar5.Name = "progressBar5";
+            this.progressBar5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.progressBar5.Size = new System.Drawing.Size(162, 23);
             this.progressBar5.TabIndex = 3;
             // 
             // progressBar4
             // 
-            this.progressBar4.Location = new System.Drawing.Point(37, 263);
+            this.progressBar4.BackColor = System.Drawing.Color.DarkGray;
+            this.progressBar4.ForeColor = System.Drawing.Color.Maroon;
+            this.progressBar4.Location = new System.Drawing.Point(37, 225);
             this.progressBar4.Name = "progressBar4";
             this.progressBar4.Size = new System.Drawing.Size(162, 23);
             this.progressBar4.TabIndex = 2;
             // 
             // progressBar3
             // 
-            this.progressBar3.Location = new System.Drawing.Point(37, 168);
+            this.progressBar3.BackColor = System.Drawing.Color.DarkGray;
+            this.progressBar3.Location = new System.Drawing.Point(37, 147);
             this.progressBar3.Name = "progressBar3";
             this.progressBar3.Size = new System.Drawing.Size(162, 23);
             this.progressBar3.TabIndex = 1;
             // 
             // progressBar2
             // 
-            this.progressBar2.BackColor = System.Drawing.Color.Black;
+            this.progressBar2.BackColor = System.Drawing.Color.DarkGray;
             this.progressBar2.ForeColor = System.Drawing.Color.Maroon;
             this.progressBar2.Location = new System.Drawing.Point(37, 73);
             this.progressBar2.Name = "progressBar2";
             this.progressBar2.Size = new System.Drawing.Size(162, 23);
             this.progressBar2.TabIndex = 0;
+            this.progressBar2.Value = 10;
             // 
             // label5
             // 
@@ -311,6 +328,47 @@
             this.label5.Size = new System.Drawing.Size(53, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Fortschritt";
+            // 
+            // sonstige_box
+            // 
+            this.sonstige_box.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.sonstige_box.Location = new System.Drawing.Point(37, 379);
+            this.sonstige_box.Name = "sonstige_box";
+            this.sonstige_box.Size = new System.Drawing.Size(162, 96);
+            this.sonstige_box.TabIndex = 9;
+            this.sonstige_box.Text = "";
+            this.sonstige_box.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // info_panel
+            // 
+            this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.info_panel.Controls.Add(this.info_close_button);
+            this.info_panel.Controls.Add(this.info_text);
+            this.info_panel.Location = new System.Drawing.Point(59, 59);
+            this.info_panel.Name = "info_panel";
+            this.info_panel.Size = new System.Drawing.Size(365, 208);
+            this.info_panel.TabIndex = 5;
+            this.info_panel.Visible = false;
+            // 
+            // info_text
+            // 
+            this.info_text.Location = new System.Drawing.Point(32, 61);
+            this.info_text.Name = "info_text";
+            this.info_text.Size = new System.Drawing.Size(300, 118);
+            this.info_text.TabIndex = 0;
+            this.info_text.Text = "";
+            this.info_text.Visible = false;
+            // 
+            // info_close_button
+            // 
+            this.info_close_button.Location = new System.Drawing.Point(257, 22);
+            this.info_close_button.Name = "info_close_button";
+            this.info_close_button.Size = new System.Drawing.Size(75, 23);
+            this.info_close_button.TabIndex = 6;
+            this.info_close_button.Text = "Schließen";
+            this.info_close_button.UseVisualStyleBackColor = true;
+            this.info_close_button.Visible = false;
+            this.info_close_button.Click += new System.EventHandler(this.info_close);
             // 
             // Form2
             // 
@@ -333,6 +391,7 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.info_panel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,6 +424,10 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.RichTextBox sonstige_box;
+        private System.Windows.Forms.Panel info_panel;
+        private System.Windows.Forms.Button info_close_button;
+        private System.Windows.Forms.RichTextBox info_text;
     }
 }
 

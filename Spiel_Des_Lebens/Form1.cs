@@ -17,8 +17,6 @@ namespace Spiel_Des_Lebens
             InitializeComponent();
         }
 
-
-
         private void open_next(object sender, EventArgs e)
         {
             Form2 t = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss);
@@ -71,6 +69,11 @@ namespace Spiel_Des_Lebens
             {
                 abschluss = button4.Text;
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

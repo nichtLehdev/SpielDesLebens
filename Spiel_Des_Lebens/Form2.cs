@@ -19,8 +19,7 @@ namespace Spiel_Des_Lebens
         }
         
         private void Form1_Load(object sender, EventArgs e)
-        {
-
+        { 
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,6 +45,25 @@ namespace Spiel_Des_Lebens
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void show_info(object sender, EventArgs e)
+        {
+            info_panel.Visible = true;
+            info_close_button.Visible = true;
+            info_text.Visible = true;
+        }
+
+        private void info_close(object sender, EventArgs e)
+        {
+            info_panel.Visible = false;
+            info_close_button.Visible = false;
+            info_text.Visible = false;
         }
     }
 }
