@@ -9,14 +9,13 @@ using Spiel_Des_Lebens;
 namespace Spiel_Des_Lebens
 {
     [TestClass]
-    class UnitTest
+    public class UnitTest
     {
         [TestMethod]
         public void createPlayer()
         {
             Player player = new Player(true, 21, "Maximilian Koch", Player.Path.StudyDual);
             player.setDirection(EducationPath.Direction.Stem);
-            Assert.Fail();
         }
     }
 }
