@@ -9,25 +9,25 @@ namespace Spiel_Des_Lebens
     internal class EducationPath
     {
         public int phaseLength;
-        protected Direction direction;
+        protected Profession profession;
         protected Phase phase;
 
-        public enum Direction { Social = 1 , Business = 2, Science = 3, Stem = 4, Civil = 5 };
+        public enum Profession { Social = 1 , Business = 2, Science = 3, Stem = 4, Civil = 5 };
 
-        public virtual void main(Direction direction)
+        public virtual void main(Profession profession)
         {
-            setDirection(direction);
+            setProfession(profession);
             phase = new Phase(phaseLength);
         }
 
-        public void setDirection( Direction direction )
+        public void setProfession( Profession profession )
         {
-            this.direction = direction;
+            this.profession = profession;
         }
 
         public virtual String getProfession()
         {
-            return "ERROR - EducationPath.getProfession() failed !!!";
+            throw new Error("EducationPath.getProfession() failed !!!");
         }
 
         public Phase getPhase()

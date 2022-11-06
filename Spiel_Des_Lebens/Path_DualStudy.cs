@@ -9,25 +9,25 @@ namespace Spiel_Des_Lebens
     internal class Path_DualStudy : EducationPath
     {
 
-        public override void main(Direction direction)
+        public override void main(Profession profession)
         {
             phaseLength = 3;
-            base.main(direction);
+            base.main(profession);
         }
 
         public override string getProfession()
         {
-            switch(direction)
+            switch(profession)
             {
-                case Direction.Social:
+                case Profession.Social:
                     return "Angewandte Gesundheits- und Pflegewissenschaften";
-                case Direction.Business:
+                case Profession.Business:
                     return "BWL";
-                case Direction.Science:
+                case Profession.Science:
                     return "Angewandte Physik";
-                case Direction.Stem:
+                case Profession.Stem:
                     return "Angewandtes Informatikstudium";
-                case Direction.Civil:
+                case Profession.Civil:
                     return "Steuerwesen";
             }
             throw new Error("Path_DualStudy.getProfession() failed !!!");

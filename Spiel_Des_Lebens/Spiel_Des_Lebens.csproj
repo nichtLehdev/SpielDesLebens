@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="EducationPath.cs" />
     <Compile Include="Error.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="Eventgenerator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

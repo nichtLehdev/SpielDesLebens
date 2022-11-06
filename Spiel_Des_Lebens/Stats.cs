@@ -37,7 +37,7 @@ namespace Spiel_Des_Lebens
 
             if (mentalHealth > 100) { mentalHealth = 100; }
             if (motivation > 100) { motivation = 100; }
-            if (money > 100) { money = 100; }
+            //if (money > 100) { money = 100; }
             if (success > 100) { success = 100; }
         }
     }

@@ -8,25 +8,25 @@ namespace Spiel_Des_Lebens
 {
     internal class Path_Training : EducationPath
     {
-        public override void main(Direction direction)
+        public override void main(Profession profession)
         {
             phaseLength = 2;
-            base.main(direction);
+            base.main(profession);
         }
 
         public override string getProfession()
         {
-            switch (direction)
+            switch (profession)
             {
-                case Direction.Social:
+                case Profession.Social:
                     return "Krankenpflege";
-                case Direction.Business:
+                case Profession.Business:
                     return "Industriekaufmann";
-                case Direction.Science:
+                case Profession.Science:
                     return "Pharmazeutisch Technische Assistenz";
-                case Direction.Stem:
+                case Profession.Stem:
                     return "Fachinformatiker";
-                case Direction.Civil:
+                case Profession.Civil:
                     return "Rechtanwaltsfachangestellter";
             }
             throw new Error("Path_Training.getProfession() failed !!!");

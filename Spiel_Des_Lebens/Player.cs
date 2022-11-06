@@ -12,16 +12,27 @@ namespace Spiel_Des_Lebens
         private int age;
         private string name;
         private Stats playerStat;
+        private Eventgenerator eventgenerator;
         public EducationPath eduPath;
 
         public enum Path {Training, StudyDual, Study};
 
-        public Player(bool avatar, int age, string name, Path path)
+        public Player(bool avatar, int age, string name, Path path, EducationPath.Profession profession)
         {
             this.age = age;
             this.avatar = avatar;
             this.name = name;
             playerStat = new Stats(70, 70, 70, 70);
+            createPath(path);
+            setProfession(profession);
+            createEventgenerator(path, profession);
+        }
+
+        #region create_or_reset
+
+        // TODO void that calls all of the following 3
+        public void createPath(Path path)
+        {
             switch (path)
             {
                 case Path.Training:
@@ -38,9 +49,16 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        public void setDirection( EducationPath.Direction direction)
+        public void setProfession(EducationPath.Profession profession)
         {
-            eduPath.main(direction);
+            eduPath.main(profession);
         }
+
+        public void createEventgenerator(Path path, EducationPath.Profession profession)
+        {
+            eventgenerator = new Eventgenerator(path, profession);
+        }
+
+        #endregion
     }
 }

@@ -14,8 +14,7 @@ namespace Spiel_Des_Lebens
         [TestMethod]
         public void createPlayer()
         {
-            Player player = new Player(true, 21, "Maximilian Koch", Player.Path.StudyDual);
-            player.setDirection(EducationPath.Direction.Stem);
+            Player player = new Player(true, 21, "Maximilian Koch", Player.Path.StudyDual, EducationPath.Profession.Stem);
         }
     }
 }
