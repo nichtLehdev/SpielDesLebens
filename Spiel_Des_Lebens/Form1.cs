@@ -75,5 +75,32 @@ namespace Spiel_Des_Lebens
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void neues_Spiel_open(object sender, EventArgs e)
+        {
+            Layout_neues_Spiel.Visible = true;
+            panel1.Visible = false;
+        }
+
+        private void open_main_menu(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            Layout_neues_Spiel.Visible = false;
+        }
     }
 }
