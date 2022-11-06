@@ -45,7 +45,7 @@ namespace Spiel_Des_Lebens
                     eduPath = new Path_Study();
                     break;
                 default:
-                    throw new Error("no Path selected");
+                    throw new Error("Player.createPath() failed !!!");
             }
         }
 
