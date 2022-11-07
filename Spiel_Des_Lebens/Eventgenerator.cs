@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Spiel_Des_Lebens
 {
@@ -17,7 +18,7 @@ namespace Spiel_Des_Lebens
 
         private void loadEvents(Player.Path path, EducationPath.Profession profession)
         {
-            // saves all events from JSON to events in List (filter by path and profession)
+            // saves all events from JSON to events in List (filter by path and profession), leaves phases
         }
 
         public Event nextEvent(Stats stats, Phase phase)
