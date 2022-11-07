@@ -10,5 +10,11 @@ namespace Spiel_Des_Lebens
     {
         private string title;
         private Stats optionStat;
+
+        public Option(string title, Stats optionStat)
+        {
+            this.title = title;
+            this.optionStat = optionStat;
+        }
     }
 }
