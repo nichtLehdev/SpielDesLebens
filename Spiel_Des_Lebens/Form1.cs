@@ -19,9 +19,13 @@ namespace Spiel_Des_Lebens
 
         private void open_next(object sender, EventArgs e)
         {
-            Form2 t = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss);
-            t.Show();
+            if (ValidateChildren(ValidationConstraints.Enabled))
+            {
+                Form2 t = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss);
+                t.Show();
+            }
         }
+
         private Image avatar;
         private void change_Avatar(object sender, EventArgs e)
         {
@@ -71,26 +75,6 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void neues_Spiel_open(object sender, EventArgs e)
         {
             Layout_neues_Spiel.Visible = true;
@@ -101,6 +85,41 @@ namespace Spiel_Des_Lebens
         {
             panel1.Visible = true;
             Layout_neues_Spiel.Visible = false;
+        }
+
+        private void txt_name_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_name.Text))
+            {
+                e.Cancel = true;
+                txt_name.Focus();
+                errorProvider1.SetError(txt_name, "Bitte gebe deinen Namen ein");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txt_name, null);
+            }
+        }
+
+        private void txt_alter_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void txt_alter_Validating(object sender, CancelEventArgs e)
+        {
+            if( string.IsNullOrEmpty(txt_alter.Text) || Convert.ToInt16(txt_alter.Text) > 60 || Convert.ToInt16(txt_alter.Text) < 15)
+            {
+                e.Cancel = true;
+                txt_alter.Focus();
+                errorProvider1.SetError(txt_alter, "Wähle ein Alter zwischen 15 und 60");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txt_alter, null);
+            }
         }
     }
 }

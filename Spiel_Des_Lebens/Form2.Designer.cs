@@ -31,6 +31,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.info_panel = new System.Windows.Forms.Panel();
+            this.info_close_button = new System.Windows.Forms.Button();
+            this.info_text = new System.Windows.Forms.RichTextBox();
             this.info_but = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -43,6 +46,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.sonstige_box = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,15 +57,17 @@
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.label5 = new System.Windows.Forms.Label();
-            this.sonstige_box = new System.Windows.Forms.RichTextBox();
-            this.info_panel = new System.Windows.Forms.Panel();
-            this.info_text = new System.Windows.Forms.RichTextBox();
-            this.info_close_button = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblPlayerAge = new System.Windows.Forms.Label();
+            this.lblPlayerName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.info_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.info_panel.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -88,7 +94,6 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
@@ -103,7 +108,37 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(475, 363);
             this.panel1.TabIndex = 3;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // info_panel
+            // 
+            this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.info_panel.Controls.Add(this.info_close_button);
+            this.info_panel.Controls.Add(this.info_text);
+            this.info_panel.Location = new System.Drawing.Point(59, 84);
+            this.info_panel.Name = "info_panel";
+            this.info_panel.Size = new System.Drawing.Size(365, 208);
+            this.info_panel.TabIndex = 5;
+            this.info_panel.Visible = false;
+            // 
+            // info_close_button
+            // 
+            this.info_close_button.Location = new System.Drawing.Point(257, 22);
+            this.info_close_button.Name = "info_close_button";
+            this.info_close_button.Size = new System.Drawing.Size(75, 23);
+            this.info_close_button.TabIndex = 6;
+            this.info_close_button.Text = "Schließen";
+            this.info_close_button.UseVisualStyleBackColor = true;
+            this.info_close_button.Visible = false;
+            this.info_close_button.Click += new System.EventHandler(this.info_close);
+            // 
+            // info_text
+            // 
+            this.info_text.Location = new System.Drawing.Point(32, 61);
+            this.info_text.Name = "info_text";
+            this.info_text.Size = new System.Drawing.Size(300, 118);
+            this.info_text.TabIndex = 0;
+            this.info_text.Text = "";
+            this.info_text.Visible = false;
             // 
             // info_but
             // 
@@ -127,7 +162,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(365, 168);
             this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // progressBar1
             // 
@@ -141,7 +175,7 @@
             // pictureBox1
             // 
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(53, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(128, 145);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,6 +270,15 @@
             this.panel3.Size = new System.Drawing.Size(238, 546);
             this.panel3.TabIndex = 7;
             // 
+            // sonstige_box
+            // 
+            this.sonstige_box.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.sonstige_box.Location = new System.Drawing.Point(37, 379);
+            this.sonstige_box.Name = "sonstige_box";
+            this.sonstige_box.Size = new System.Drawing.Size(162, 96);
+            this.sonstige_box.TabIndex = 9;
+            this.sonstige_box.Text = "";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -280,7 +323,6 @@
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Geld";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // progressBar5
             // 
@@ -329,46 +371,57 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Fortschritt";
             // 
-            // sonstige_box
+            // panel4
             // 
-            this.sonstige_box.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.sonstige_box.Location = new System.Drawing.Point(37, 379);
-            this.sonstige_box.Name = "sonstige_box";
-            this.sonstige_box.Size = new System.Drawing.Size(162, 96);
-            this.sonstige_box.TabIndex = 9;
-            this.sonstige_box.Text = "";
-            this.sonstige_box.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.lblAge);
+            this.panel4.Controls.Add(this.lblName);
+            this.panel4.Controls.Add(this.lblPlayerAge);
+            this.panel4.Controls.Add(this.lblPlayerName);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Location = new System.Drawing.Point(34, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(238, 213);
+            this.panel4.TabIndex = 9;
             // 
-            // info_panel
+            // lblAge
             // 
-            this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.info_panel.Controls.Add(this.info_close_button);
-            this.info_panel.Controls.Add(this.info_text);
-            this.info_panel.Location = new System.Drawing.Point(59, 59);
-            this.info_panel.Name = "info_panel";
-            this.info_panel.Size = new System.Drawing.Size(365, 208);
-            this.info_panel.TabIndex = 5;
-            this.info_panel.Visible = false;
+            this.lblAge.AutoSize = true;
+            this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAge.Location = new System.Drawing.Point(69, 189);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(37, 13);
+            this.lblAge.TabIndex = 9;
+            this.lblAge.Text = "Alter:";
             // 
-            // info_text
+            // lblName
             // 
-            this.info_text.Location = new System.Drawing.Point(32, 61);
-            this.info_text.Name = "info_text";
-            this.info_text.Size = new System.Drawing.Size(300, 118);
-            this.info_text.TabIndex = 0;
-            this.info_text.Text = "";
-            this.info_text.Visible = false;
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(66, 164);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(43, 13);
+            this.lblName.TabIndex = 8;
+            this.lblName.Text = "Name:";
             // 
-            // info_close_button
+            // lblPlayerAge
             // 
-            this.info_close_button.Location = new System.Drawing.Point(257, 22);
-            this.info_close_button.Name = "info_close_button";
-            this.info_close_button.Size = new System.Drawing.Size(75, 23);
-            this.info_close_button.TabIndex = 6;
-            this.info_close_button.Text = "Schließen";
-            this.info_close_button.UseVisualStyleBackColor = true;
-            this.info_close_button.Visible = false;
-            this.info_close_button.Click += new System.EventHandler(this.info_close);
+            this.lblPlayerAge.AutoSize = true;
+            this.lblPlayerAge.Location = new System.Drawing.Point(117, 189);
+            this.lblPlayerAge.Name = "lblPlayerAge";
+            this.lblPlayerAge.Size = new System.Drawing.Size(63, 13);
+            this.lblPlayerAge.TabIndex = 7;
+            this.lblPlayerAge.Text = "Spieler Alter";
+            // 
+            // lblPlayerName
+            // 
+            this.lblPlayerName.AutoSize = true;
+            this.lblPlayerName.Location = new System.Drawing.Point(114, 164);
+            this.lblPlayerName.Name = "lblPlayerName";
+            this.lblPlayerName.Size = new System.Drawing.Size(70, 13);
+            this.lblPlayerName.TabIndex = 6;
+            this.lblPlayerName.Text = "Spieler Name";
             // 
             // Form2
             // 
@@ -376,10 +429,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1431, 642);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.panel1);
             this.Name = "Form2";
@@ -387,11 +440,13 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.info_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.info_panel.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -428,6 +483,11 @@
         private System.Windows.Forms.Panel info_panel;
         private System.Windows.Forms.Button info_close_button;
         private System.Windows.Forms.RichTextBox info_text;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblPlayerName;
+        private System.Windows.Forms.Label lblPlayerAge;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblAge;
     }
 }
 
