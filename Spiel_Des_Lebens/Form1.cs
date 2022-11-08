@@ -23,6 +23,7 @@ namespace Spiel_Des_Lebens
             {
                 Form2 t = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss);
                 t.Show();
+                this.Hide();
             }
         }
 
