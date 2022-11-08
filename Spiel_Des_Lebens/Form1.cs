@@ -75,10 +75,24 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private void neues_Spiel_open(object sender, EventArgs e)
+        private void neues_Spiel_open(Object sender, EventArgs e)
         {
-            Layout_neues_Spiel.Visible = true;
-            panel1.Visible = false;
+           Button btn = sender as Button;
+           if (btn.Text == "Neues Spiel")
+                {
+                    Layout_neues_Spiel.Visible = true;
+                    panel1.Visible = false;
+                }
+             else
+                {
+                textBox_mini_field.Text = btn.Text;
+                panel2.Visible = true;
+                button_mini_1.Visible = true;
+                button_mini_2.Visible = true;
+                button_mini_3.Visible = true;
+                textBox_mini_field.Visible = true;
+            }
+            
         }
 
         private void open_main_menu(object sender, EventArgs e)
@@ -120,6 +134,35 @@ namespace Spiel_Des_Lebens
                 e.Cancel = false;
                 errorProvider1.SetError(txt_alter, null);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Close_option_spiel_start(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            button_mini_1.Visible = false;
+            button_mini_2.Visible = false;
+            button_mini_3.Visible = false;
+            textBox_mini_field.Visible = false;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
