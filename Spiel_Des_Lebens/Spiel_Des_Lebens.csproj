@@ -70,6 +70,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requirements.cs" />
     <Compile Include="Stats.cs" />
+    <Compile Include="StatsParameter.cs" />
     <Compile Include="UnitTest.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

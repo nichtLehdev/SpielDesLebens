@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// TODO: bool is to clamped
+
 namespace Spiel_Des_Lebens
 {
     class Stats
@@ -26,10 +28,10 @@ namespace Spiel_Des_Lebens
             {
                 foreach (StatsParameter statParam2 in stats)
                 {
-                    if (statParam2.name == statParam.name )
+                    if (statParam2.getName() == statParam.getName() )
                     {
-                        statParam2.value += statParam.value;
-                        if(!endlessParameters.contains(statParam2.name))
+                        statParam2.setValue() += statParam.getValue();
+                        if(!endlessParameters.contains(statParam2.getName))
                             statParam2.clampBottomTop();
                         else
                             statParam2.clampBottom();

@@ -8,8 +8,8 @@ namespace Spiel_Des_Lebens
 {
     class StatsParameter
     {
-        private string name { public get; };
-        private int value { public get; public set; };
+        private string name;
+        private int value; // string enum
 
         public StatsParameter(string name, int value)
         {
@@ -25,5 +25,20 @@ namespace Spiel_Des_Lebens
         public void clampBottom() {
             if (value < 0) { value = 0; }
         }
+        
+        public string getName() {
+                return name;
+        }
+
+        public int getValue()
+        {
+            return value;
+        }
+
+        public void setValue(int value)
+        {
+            this.value = value;
+        }
+
     }
 }
