@@ -30,8 +30,8 @@ namespace Spiel_Des_Lebens
         private Image avatar;
         private void change_Avatar(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            avatar = btn.Image;
+            PictureBox img = (PictureBox)sender;
+            avatar = img.Image;
         }
         private string abschluss;
         private void change_Abschluss(object sender, EventArgs e)

@@ -283,7 +283,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(457, 544);
             this.panel1.TabIndex = 1;
-
             // 
             // panel2
             // 
@@ -351,7 +350,6 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.Snow;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox1.Location = new System.Drawing.Point(163, 52);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
