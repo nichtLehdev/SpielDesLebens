@@ -15,6 +15,7 @@ namespace Spiel_Des_Lebens
         private int alter;
         private string name;
         private string abschluss;
+        private Image avatar;
         public Form2(string name, string alter, Image avatar, string abschluss)
         {
             InitializeComponent();
@@ -22,12 +23,13 @@ namespace Spiel_Des_Lebens
             this.name = name;
             this.alter = Convert.ToInt16(alter);
             this.abschluss = abschluss;
+            this.avatar = avatar;
         }
         
         private void Form1_Load(object sender, EventArgs e)
         {
-            lblPlayerAge.Text = Convert.ToString(alter);
-            lblPlayerName.Text = name;
+            lblPlayerAge.Text = Convert.ToString(this.alter);
+            lblPlayerName.Text = this.name;
 
         }
 

@@ -171,6 +171,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Hauptschulaschluss";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.change_Abschluss);
             // 
             // button2
             // 
@@ -181,6 +182,8 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Realschulabschluss";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.change_Abschluss);
+            this.button2.Validating += new System.ComponentModel.CancelEventHandler(this.button2_Validating);
             // 
             // button3
             // 
@@ -191,6 +194,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "Fachhochschulreife";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.change_Abschluss);
             // 
             // button4
             // 
@@ -201,6 +205,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "allg. Hochschulreife";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.change_Abschluss);
             // 
             // lable_1
             // 
@@ -219,7 +224,6 @@
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(360, 22);
             this.txt_name.TabIndex = 11;
-            this.txt_name.Validating += new System.ComponentModel.CancelEventHandler(this.txt_name_Validating);
             // 
             // label1
             // 
@@ -239,7 +243,6 @@
             this.txt_alter.Size = new System.Drawing.Size(360, 22);
             this.txt_alter.TabIndex = 14;
             this.txt_alter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_alter_KeyPress);
-            this.txt_alter.Validating += new System.ComponentModel.CancelEventHandler(this.txt_alter_Validating);
             // 
             // button9
             // 
@@ -326,7 +329,7 @@
             this.button_mini_1.Text = "Laden";
             this.button_mini_1.UseVisualStyleBackColor = true;
             this.button_mini_1.Visible = false;
-            this.button_mini_1.Click += new System.EventHandler(this.change_Avatar);
+            this.button_mini_1.Click += new System.EventHandler(this.laden_test);
             // 
             // textBox_mini_field
             // 

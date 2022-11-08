@@ -33,11 +33,22 @@ namespace Spiel_Des_Lebens
             PictureBox img = (PictureBox)sender;
             avatar = img.Image;
         }
+
+        private void laden_test(object sender, EventArgs e)
+        {
+            //für das Bsp werden sie vorher gestzt
+            Form2 t = new Form2("Mia Münstermann", "20", pictureBox1.Image, "Testaschlusss");
+            t.Show();
+            this.Hide();
+        }
+
+
         private string abschluss;
         private void change_Abschluss(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             abschluss = btn.Text;
+            Console.WriteLine(abschluss);
         }
 
         private void neues_Spiel_open(Object sender, EventArgs e)
@@ -66,39 +77,9 @@ namespace Spiel_Des_Lebens
             Layout_neues_Spiel.Visible = false;
         }
 
-        private void txt_name_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txt_name.Text))
-            {
-                e.Cancel = true;
-                txt_name.Focus();
-                errorProvider1.SetError(txt_name, "Bitte gebe deinen Namen ein");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider1.SetError(txt_name, null);
-            }
-        }
-
         private void txt_alter_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
-        }
-
-        private void txt_alter_Validating(object sender, CancelEventArgs e)
-        {
-            if( string.IsNullOrEmpty(txt_alter.Text) || Convert.ToInt16(txt_alter.Text) > 60 || Convert.ToInt16(txt_alter.Text) < 15)
-            {
-                e.Cancel = true;
-                txt_alter.Focus();
-                errorProvider1.SetError(txt_alter, "Wähle ein Alter zwischen 15 und 60");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider1.SetError(txt_alter, null);
-            }
         }
 
         private void Close_option_spiel_start(object sender, EventArgs e)
@@ -110,5 +91,28 @@ namespace Spiel_Des_Lebens
             textBox_mini_field.Visible = false;
         }
 
+        private void button2_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(abschluss))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(weiter_button, "Wähle einen Schulabschluss");
+            }
+            else if (string.IsNullOrEmpty(txt_name.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(weiter_button, "Bitte gebe einen namen ein");
+            }
+            else if (string.IsNullOrEmpty(txt_alter.Text) || Convert.ToInt16(txt_alter.Text) > 60 || Convert.ToInt16(txt_alter.Text) < 15)
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(weiter_button, "Wähle ein Alter zwischen 15 und 60");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(weiter_button, null);
+            }
+        }
     }
 }
