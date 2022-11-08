@@ -14,12 +14,14 @@ namespace Spiel_Des_Lebens
     {
         private int alter;
         private string name;
+        private string abschluss;
         public Form2(string name, string alter, Image avatar, string abschluss)
         {
             InitializeComponent();
             pictureBox1.Image = avatar;
             this.name = name;
             this.alter = Convert.ToInt16(alter);
+            this.abschluss = abschluss;
         }
         
         private void Form1_Load(object sender, EventArgs e)
