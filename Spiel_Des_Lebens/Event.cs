@@ -16,8 +16,6 @@ namespace Spiel_Des_Lebens
         private string text;
         private Requirements requirement;
         private List<Option> options;
-        // TODO Alles aus JSON als Attribut hier speichern.
-        // TODO Objekt Strukt aus Klasse Stats wiederwenden.
 
         public Event(string title, string text, Requirements req, List<Option> options )
         {
