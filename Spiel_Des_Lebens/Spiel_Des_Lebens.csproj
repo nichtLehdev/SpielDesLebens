@@ -8,7 +8,6 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Spiel_Des_Lebens</RootNamespace>
     <AssemblyName>Spiel_Des_Lebens</AssemblyName>
-    <LangVersion>8.0</LangVersion>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
