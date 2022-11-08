@@ -1,33 +1,43 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Spiel_Des_Lebens
 {
     class StatsParameter
     {
-        private string name;
-        private int value; // string enum
+        public enum StatType { mentalHealth, money, motivation, success };
+        private StatType name;
+        private int value;
+        private bool toBeClampedBottom;
+        private bool toBeClampedTop;
 
-        public StatsParameter(string name, int value)
+        public StatsParameter(StatType name, int value, bool clampBottom, bool clampTop)
         {
             this.name = name;
             this.value = value;
-        }
-        
-        public void clampBottomTop() {
-            if (value < 0) { value = 0; }
-            if (value > 100) { value = 100; }
+            this.toBeClampedBottom = clampBottom;
+            this.toBeClampedTop = clampTop;
         }
 
-        public void clampBottom() {
-            if (value < 0) { value = 0; }
+
+        public void clampBottom()
+        {
+            if (toBeClampedBottom) { 
+                if (value < 0) { value = 0; }
+            }
         }
+
+        public void clampTop()
+        {
+            if (toBeClampedTop)
+            {
+                if (value < 100) { value = 100; }
+            }
+        }
+             
+
+
         
-        public string getName() {
-                return name;
+        public StatType getName()
+        {
+            return name;
         }
 
         public int getValue()
@@ -39,6 +49,7 @@ namespace Spiel_Des_Lebens
         {
             this.value = value;
         }
+  
 
     }
 }

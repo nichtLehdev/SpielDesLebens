@@ -1,43 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-// TODO: bool is to clamped
 
 namespace Spiel_Des_Lebens
 {
     class Stats
     {
-        public List<StatsParameter> stats;
-        private List<string> endlessParameters = new List<string> { "money" };
+        private List<StatsParameter> stats = new List<StatsParameter>();
 
-        public Stats(int mentalHealth, int motivation, int money, int success)
+        public Stats(int mentalHealth, int money, int motivation, int success)
         {
-            stats = new List<StatsParameter>();
-            stats.Add(new StatsParameter("mentalHealth", mentalHealth));
-            stats.Add(new StatsParameter("motivation", motivation));
-            stats.Add(new StatsParameter("money", money));
-            stats.Add(new StatsParameter("success", success));
+            stats.Add(new StatsParameter(StatsParameter.StatType.mentalHealth, mentalHealth, true, true));
+            stats.Add(new StatsParameter(StatsParameter.StatType.money, money, true, true));
+            stats.Add(new StatsParameter(StatsParameter.StatType.motivation, motivation, true, false));
+            stats.Add(new StatsParameter(StatsParameter.StatType.success, success, true, true));
         }
 
         public void change(Stats stat)
         {
-            foreach (StatsParameter statParam in stat.stats)
+            for (int i = 0; i < stats.Count; i++)
             {
-                foreach (StatsParameter statParam2 in stats)
-                {
-                    if (statParam2.getName() == statParam.getName() )
-                    {
-                        statParam2.setValue() += statParam.getValue();
-                        if(!endlessParameters.contains(statParam2.getName))
-                            statParam2.clampBottomTop();
-                        else
-                            statParam2.clampBottom();
-                    }
-                }
+                stats[i].setValue(stats[i].getValue() + stat.getStats()[i].getValue());
             }
+        }
+
+        public List<StatsParameter> getStats()
+        {
+            return stats;
         }
 
     }
