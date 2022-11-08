@@ -8,8 +8,6 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Spiel_Des_Lebens
 {
- 
-
     class Event
     {
         private string title;

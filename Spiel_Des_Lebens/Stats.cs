@@ -8,37 +8,35 @@ namespace Spiel_Des_Lebens
 {
     class Stats
     {
-        public int mentalHealth, motivation, money, success;
+        public List<StatsParameter> stats;
+        private List<string> endlessParameters = new List<string> { "money" };
 
         public Stats(int mentalHealth, int motivation, int money, int success)
         {
-            this.mentalHealth = mentalHealth;
-            this.motivation = motivation;
-            this.money = money;
-            this.success = success;
+            stats = new List<StatsParameter>();
+            stats.Add(new StatsParameter("mentalHealth", mentalHealth));
+            stats.Add(new StatsParameter("motivation", motivation));
+            stats.Add(new StatsParameter("money", money));
+            stats.Add(new StatsParameter("success", success));
         }
 
         public void change(Stats stat)
         {
-            this.mentalHealth += stat.mentalHealth;
-            this.motivation += stat.motivation;
-            this.money += stat.money;
-            this.success += stat.success;
-            clamp();
+            foreach (StatsParameter statParam in stat.stats)
+            {
+                foreach (StatsParameter statParam2 in stats)
+                {
+                    if (statParam2.name == statParam.name )
+                    {
+                        statParam2.value += statParam.value;
+                        if(!endlessParameters.contains(statParam2.name))
+                            statParam2.clampBottomTop();
+                        else
+                            statParam2.clampBottom();
+                    }
+                }
+            }
         }
 
-        // ensures value is between 0 and 100
-        private void clamp()
-        {
-            if(mentalHealth < 0) {mentalHealth = 0;}
-            if(motivation < 0) { motivation = 0; }
-            if(money < 0) { money = 0; }
-            if(success < 0) { success = 0; }
-
-            if (mentalHealth > 100) { mentalHealth = 100; }
-            if (motivation > 100) { motivation = 100; }
-            //if (money > 100) { money = 100; }
-            if (success > 100) { success = 100; }
-        }
     }
 }
