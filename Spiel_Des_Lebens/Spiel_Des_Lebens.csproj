@@ -61,9 +61,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Option.cs" />
-    <Compile Include="Path_DualStudy.cs" />
-    <Compile Include="Path_Study.cs" />
-    <Compile Include="Path_Training.cs" />
     <Compile Include="Phase.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />

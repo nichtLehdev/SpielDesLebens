@@ -6,12 +6,12 @@ namespace Spiel_Des_Lebens
     {
         private List<Event> events = new List<Event>();
 
-        public Eventgenerator(Player.Path path, EducationPath.Profession profession)
+        public Eventgenerator(EducationPath.Path path, EducationPath.Profession profession)
         {
             loadEvents(path, profession);
         }
 
-        private void loadEvents(Player.Path path, EducationPath.Profession profession)
+        private void loadEvents(EducationPath.Path path, EducationPath.Profession profession)
         {
             // saves all events from JSON to events in List (filter by path and profession), leaves phases
         }
