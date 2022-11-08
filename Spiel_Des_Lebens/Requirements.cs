@@ -1,6 +1,6 @@
 ﻿namespace Spiel_Des_Lebens
 {
-    class Requirements
+    internal class Requirements
     {
         private int[] path;
         private int[] profession;

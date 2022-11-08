@@ -2,7 +2,7 @@
 
 namespace Spiel_Des_Lebens
 {
-    class Event
+    internal class Event
     {
         private string title;
         private string text;

@@ -3,7 +3,7 @@
 
 namespace Spiel_Des_Lebens
 {
-    class Stats
+    internal class Stats
     {
         private List<StatsParameter> stats = new List<StatsParameter>();
 

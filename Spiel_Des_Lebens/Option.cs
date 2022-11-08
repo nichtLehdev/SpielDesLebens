@@ -1,6 +1,6 @@
 ﻿namespace Spiel_Des_Lebens
 {
-    class Option
+    internal class Option
     {
         private string title;
         private string text;

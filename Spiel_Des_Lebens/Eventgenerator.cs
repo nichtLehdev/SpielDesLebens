@@ -2,7 +2,7 @@
 
 namespace Spiel_Des_Lebens
 {
-    class Eventgenerator
+    internal class Eventgenerator
     {
         private List<Event> events = new List<Event>();
 

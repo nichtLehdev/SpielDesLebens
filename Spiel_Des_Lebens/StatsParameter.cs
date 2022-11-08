@@ -1,6 +1,6 @@
 namespace Spiel_Des_Lebens
 {
-    class StatsParameter
+    internal class StatsParameter
     {
         public enum StatType { mentalHealth, money, motivation, success };
         private StatType name;
