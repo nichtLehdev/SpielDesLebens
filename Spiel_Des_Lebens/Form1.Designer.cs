@@ -283,7 +283,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(457, 544);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+
             // 
             // panel2
             // 
@@ -296,7 +296,6 @@
             this.panel2.Size = new System.Drawing.Size(361, 223);
             this.panel2.TabIndex = 6;
             this.panel2.Visible = false;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button_mini_3
             // 
@@ -337,7 +336,6 @@
             this.textBox_mini_field.Size = new System.Drawing.Size(168, 22);
             this.textBox_mini_field.TabIndex = 0;
             this.textBox_mini_field.Visible = false;
-            this.textBox_mini_field.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button5
             // 

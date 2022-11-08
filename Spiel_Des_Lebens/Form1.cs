@@ -101,21 +101,6 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Close_option_spiel_start(object sender, EventArgs e)
         {
             panel2.Visible = false;
@@ -125,9 +110,5 @@ namespace Spiel_Des_Lebens
             textBox_mini_field.Visible = false;
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
