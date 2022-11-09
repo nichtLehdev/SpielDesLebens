@@ -20,6 +20,8 @@ namespace Spiel_Des_Lebens
             for (int i = 0; i < stats.Count; i++)
             {
                 stats[i].setValue(stats[i].getValue() + stat.getStats()[i].getValue());
+                stats[i].clampBottom();
+                stats[i].clampTop();
             }
         }
 

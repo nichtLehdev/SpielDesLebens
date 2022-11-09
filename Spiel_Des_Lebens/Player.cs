@@ -15,12 +15,12 @@
             this.avatar = avatar;
             this.name = name;
             playerStat = new Stats(70, 70, 70, 70);
-            resetCarreer(path, profession);
+            resetCareer(path, profession);
         }
 
         #region create_or_reset
 
-        public void resetCarreer(EducationPath.Path path, EducationPath.Profession profession)
+        public void resetCareer(EducationPath.Path path, EducationPath.Profession profession)
         {
             createEducationPath(path, profession);
             createEventgenerator(path, profession);
