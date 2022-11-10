@@ -15,7 +15,7 @@ namespace Spiel_Des_Lebens
 
         public List<loadEvent> events = new List<loadEvent>();
 
-        public Eventgenerator(EducationPath.Path path, EducationPath.Profession profession)
+        public Eventgenerator(Data.Path path, Data.Profession profession)
         {
             List<loadEvent> events = loadEvents();
             this.events = filterEvents(events, path, profession);
@@ -36,7 +36,7 @@ namespace Spiel_Des_Lebens
 
         }
 
-        public List<loadEvent> filterEvents(List<loadEvent> events, EducationPath.Path path, EducationPath.Profession profession)
+        public List<loadEvent> filterEvents(List<loadEvent> events, Data.Path path, Data.Profession profession)
         {
             List<loadEvent> filteredEvents = new List<loadEvent>();
             foreach (loadEvent e in events)

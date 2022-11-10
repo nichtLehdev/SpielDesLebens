@@ -9,10 +9,10 @@ namespace Spiel_Des_Lebens
 
         public Stat(int mentalHealth, int money, int motivation, int success)
         {
-            stats.Add(new StatParameter(StatParameter.StatType.mentalHealth, mentalHealth, true, true));
-            stats.Add(new StatParameter(StatParameter.StatType.money, money, true, true));
-            stats.Add(new StatParameter(StatParameter.StatType.motivation, motivation, true, false));
-            stats.Add(new StatParameter(StatParameter.StatType.success, success, true, true));
+            stats.Add(new StatParameter(Data.StatType.mentalHealth, mentalHealth, true, true));
+            stats.Add(new StatParameter(Data.StatType.money, money, true, true));
+            stats.Add(new StatParameter(Data.StatType.motivation, motivation, true, false));
+            stats.Add(new StatParameter(Data.StatType.success, success, true, true));
         }
 
         public void change(Stat stat)

@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data.cs" />
     <Compile Include="EducationPath.cs" />
     <Compile Include="Error.cs" />
     <Compile Include="Event.cs" />

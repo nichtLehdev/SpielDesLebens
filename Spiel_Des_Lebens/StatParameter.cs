@@ -2,13 +2,12 @@ namespace Spiel_Des_Lebens
 {
     internal class StatParameter
     {
-        public enum StatType { mentalHealth, money, motivation, success };
-        private StatType name;
+        private Data.StatType name;
         private int value;
         private bool toBeClampedBottom;
         private bool toBeClampedTop;
 
-        public StatParameter(StatType name, int value, bool clampBottom, bool clampTop)
+        public StatParameter(Data.StatType name, int value, bool clampBottom, bool clampTop)
         {
             this.name = name;
             this.value = value;
@@ -35,7 +34,7 @@ namespace Spiel_Des_Lebens
 
 
         
-        public StatType getName()
+        public Data.StatType getName()
         {
             return name;
         }
