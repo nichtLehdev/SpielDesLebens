@@ -22,14 +22,14 @@ namespace Spiel_Des_Lebens
             this.path = path;
         }
 
-        private void setProfession(Data.Profession profession )
+        private void setProfession(Data.Profession profession)
         {
             this.profession = profession;
         }
 
         public String getProfession()
         {
-            return Data.career[(int)path,(int)profession];
+            return Data.career[(int)path, (int)profession];
         }
 
         public Phase getPhase()

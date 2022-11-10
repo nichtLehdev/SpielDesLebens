@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Spiel_Des_Lebens
+﻿namespace Spiel_Des_Lebens
 {
     internal class loadOption
     {
@@ -13,5 +7,5 @@ namespace Spiel_Des_Lebens
         public string text { get; set; }
         public loadStat stats { get; set; }
     }
-    
+
 }

@@ -1,12 +1,7 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Linq;
-using System.Linq;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.IO;
-using System;
-using static Spiel_Des_Lebens.EducationPath;
+using System.Linq;
 
 namespace Spiel_Des_Lebens
 {

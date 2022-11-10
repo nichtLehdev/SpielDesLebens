@@ -7,7 +7,7 @@ namespace Spiel_Des_Lebens
         public Error(string message)
         : base(message)
         {
-            Console.WriteLine( "ERROR - " + message);
+            Console.WriteLine("ERROR - " + message);
         }
     }
 }

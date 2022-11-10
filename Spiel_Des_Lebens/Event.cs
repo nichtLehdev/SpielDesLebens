@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Spiel_Des_Lebens
 {
@@ -11,7 +10,7 @@ namespace Spiel_Des_Lebens
         private Requirement requirements;
         private List<Option> options;
 
-        public Event(string title, string text, Requirement req, List<Option> options )
+        public Event(string title, string text, Requirement req, List<Option> options)
         {
             this.title = title;
             this.text = text;

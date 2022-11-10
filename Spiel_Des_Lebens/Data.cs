@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Spiel_Des_Lebens
 {
@@ -17,7 +13,7 @@ namespace Spiel_Des_Lebens
         public static String[,] career = new string[3, 5] { { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" },
                                                      {"Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen"},
                                                      {"Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium"} };
-        public static int[] phaseL = new int[3] { 2, 3, 3};
+        public static int[] phaseL = new int[3] { 2, 3, 3 };
 
     }
 }

@@ -18,7 +18,8 @@ namespace Spiel_Des_Lebens
 
         public void clampBottom()
         {
-            if (toBeClampedBottom) { 
+            if (toBeClampedBottom)
+            {
                 if (value < 0) { value = 0; }
             }
         }
@@ -30,10 +31,10 @@ namespace Spiel_Des_Lebens
                 if (value < 100) { value = 100; }
             }
         }
-             
 
 
-        
+
+
         public Data.StatType getName()
         {
             return name;
@@ -48,7 +49,7 @@ namespace Spiel_Des_Lebens
         {
             this.value = value;
         }
-  
+
 
     }
 }

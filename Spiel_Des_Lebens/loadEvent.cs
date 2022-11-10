@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Spiel_Des_Lebens
 {
@@ -15,5 +11,5 @@ namespace Spiel_Des_Lebens
         public loadRequirement requirements { get; set; }
         public List<loadOption> options { get; set; }
     }
-    
+
 }
