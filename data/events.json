@@ -4,6 +4,7 @@
       "title": "Hofmann ist im Urlaub",
       "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
       "info": "Wenn du den Hofmman verlezt passiert nichts",
+      "priority": 1,
       "requirements": {
          "path": [0, 1, 2],
          "profession": [0, 1, 2, 3, 4],
@@ -51,6 +52,7 @@
       "title": "Das Sekretariat ist geschlossen",
       "text": "Das Sekretariat ist geschlossen. Was willst du tun ?",
       "info": "Wenn du das Sekretariat beleidigst passiert nichts",
+      "priority": 1,
       "requirements": {
          "path": [3],
          "profession": [2],
