@@ -8,6 +8,7 @@ namespace Spiel_Des_Lebens
         public string title { get; set; }
         public string text { get; set; }
         public string info { get; set; }
+        public int priority { get; set; }
         public loadRequirement requirements { get; set; }
         public List<loadOption> options { get; set; }
     }
