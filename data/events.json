@@ -5,8 +5,8 @@
       "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
       "info": "Wenn du den Hofmman verlezt passiert nichts",
       "requirements": {
-         "path": [3],
-         "profession": [2],
+         "path": [0, 1, 2],
+         "profession": [0, 1, 2, 3, 4],
          "phase": [2, 4],
          "stats_min": {
             "mentalHealth": 0,

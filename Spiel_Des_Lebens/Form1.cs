@@ -16,7 +16,14 @@ namespace Spiel_Des_Lebens
         {
             InitializeComponent();
             var test = new Eventgenerator(EducationPath.Path.Training, EducationPath.Profession.Business);
-            var test2 = "test";
+            List<loadEvent> test3 = test.events;
+            textBox1.Text = test3[0].id;
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
