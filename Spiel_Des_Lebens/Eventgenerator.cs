@@ -19,8 +19,12 @@ namespace Spiel_Des_Lebens
         {
             List<loadEvent> events = loadEvents();
             this.events = filterEvents(events, path, profession);
+            // TODO cleanup constructur, change player reset
+            // TODO JSON: add priority to events
+            // TODO relative path to json file in package
         }
 
+        #region json
         private List<loadEvent> loadEvents()
         {
             // saves all events from JSON to events in List (filter by path and profession), leaves phases
@@ -38,17 +42,18 @@ namespace Spiel_Des_Lebens
 
         public List<loadEvent> filterEvents(List<loadEvent> events, Data.Path path, Data.Profession profession)
         {
-            List<loadEvent> filteredEvents = new List<loadEvent>();
+            List<loadEvent> filterEvents = new List<loadEvent>();
             foreach (loadEvent e in events)
             {
                 //if (Array.IndexOf(e.requirements.path, (int)path) != -1 && Array.IndexOf(e.requirements.profession, (int)profession) != -1)
                 if (e.requirements.path.Contains((int)path) && e.requirements.profession.Contains((int)profession))
                 {
-                    filteredEvents.Add(e);
+                    filterEvents.Add(e);
                 }
             }
-            return filteredEvents;
+            return filterEvents;
         }
+        #endregion
 
         public Event nextEvent(Stat stats, Phase phase)
         {
