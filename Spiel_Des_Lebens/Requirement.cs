@@ -1,14 +1,14 @@
 ﻿namespace Spiel_Des_Lebens
 {
-    internal class Requirements
+    internal class Requirement
     {
         private int[] path;
         private int[] profession;
         private int[] phase;
-        private Stats reqStatMin;
-        private Stats reqStatMax;
+        private Stat reqStatMin;
+        private Stat reqStatMax;
 
-        public Requirements(int[] path, int[] profession, int[] phase, Stats minStats, Stats maxStats)
+        public Requirement(int[] path, int[] profession, int[] phase, Stat minStats, Stat maxStats)
         {
             this.path = path;
             this.profession = profession;

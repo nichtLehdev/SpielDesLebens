@@ -4,9 +4,9 @@
     {
         private string title;
         private string text;
-        private Stats optionStat;
+        private Stat optionStat;
 
-        public Option(string title, string text, Stats optionStat)
+        public Option(string title, string text, Stat optionStat)
         {
             this.title = title;
             this.text = text;

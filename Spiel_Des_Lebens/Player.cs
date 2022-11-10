@@ -5,7 +5,7 @@
         private bool avatar;
         private int age;
         private string name;
-        private Stats playerStat;
+        private Stat playerStat;
         private Eventgenerator eventgenerator;
         public EducationPath eduPath;
 
@@ -14,7 +14,7 @@
             this.age = age;
             this.avatar = avatar;
             this.name = name;
-            playerStat = new Stats(70, 70, 70, 70);
+            playerStat = new Stat(70, 70, 70, 70);
             resetCareer(path, profession);
         }
 

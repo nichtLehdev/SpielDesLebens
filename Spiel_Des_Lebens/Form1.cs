@@ -15,6 +15,8 @@ namespace Spiel_Des_Lebens
         public Form1()
         {
             InitializeComponent();
+            var test = new Eventgenerator(EducationPath.Path.Training, EducationPath.Profession.Business);
+            var test2 = "test";
         }
     }
 }

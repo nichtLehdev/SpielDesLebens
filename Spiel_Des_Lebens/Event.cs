@@ -8,10 +8,10 @@ namespace Spiel_Des_Lebens
         private string title;
         private string text;
         private string info;
-        private Requirements requirements;
+        private Requirement requirements;
         private List<Option> options;
 
-        public Event(string title, string text, Requirements req, List<Option> options )
+        public Event(string title, string text, Requirement req, List<Option> options )
         {
             this.title = title;
             this.text = text;

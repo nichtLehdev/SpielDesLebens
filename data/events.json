@@ -1,0 +1,107 @@
+[
+   {
+      "id": "E-078",
+      "title": "Hofmann ist im Urlaub",
+      "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
+      "info": "Wenn du den Hofmman verlezt passiert nichts",
+      "requirements": {
+         "path": [3],
+         "profession": [2],
+         "phase": [2, 4],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-078_1",
+            "title": "Ich zücke mein Messer und stelle mich vor den Hofmann",
+            "text": "Der Hofmann ist überrascht und schreit laut auf. Er rennt weg und du hast ihn verletzt.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-078_2",
+            "title": "Ich renne hinterher",
+            "text": "Du rennst hinterher und verletzt den Hofmann. Er rennt weg und du hast ihn verletzt.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-079",
+      "title": "Das Sekretariat ist geschlossen",
+      "text": "Das Sekretariat ist geschlossen. Was willst du tun ?",
+      "info": "Wenn du das Sekretariat beleidigst passiert nichts",
+      "requirements": {
+         "path": [3],
+         "profession": [2],
+         "phase": [2, 4],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-079_1",
+            "title": "Ich öffne die Tür gewaltsam",
+            "text": "Das Sekretariat ist immernoch geschlossen.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-079_2",
+            "title": "Ich warte bis die Tür aufgeht",
+            "text": "Das Sekretariat ist immernoch geschlossen.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-079_3",
+            "title": "Ich gebe auf",
+            "text": "Du gehst nach Hause.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         }
+      ]
+   }
+]
