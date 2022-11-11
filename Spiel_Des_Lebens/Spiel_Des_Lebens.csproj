@@ -73,6 +73,7 @@
     <Compile Include="Requirement.cs" />
     <Compile Include="Stat.cs" />
     <Compile Include="StatParameter.cs" />
+    <Compile Include="Timing.cs" />
     <Compile Include="UnitTest.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

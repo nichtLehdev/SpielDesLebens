@@ -12,8 +12,8 @@ namespace Spiel_Des_Lebens
 
         public Eventgenerator(Data.Path path, Data.Profession profession)
         {
-            List<loadEvent> events = loadEvents();
-            this.events = filterEvents(events, path, profession);
+            this.events = loadEvents();
+            //this.events = filterEvents(events, path, profession);
             // TODO cleanup constructur, change player reset
             // TODO JSON: add priority to events
             // TODO relative path to json file in package
@@ -23,7 +23,7 @@ namespace Spiel_Des_Lebens
         private List<loadEvent> loadEvents()
         {
             // saves all events from JSON to events in List (filter by path and profession), leaves phases
-            string filename = "C:\\DATEN\\Git\\spiel-des-versagens\\data\\events.json";
+            string filename = "..//..//..//data//events.json";
             if (File.Exists(filename))
             {
                 return JsonConvert.DeserializeObject<List<loadEvent>>(File.ReadAllText(filename));
@@ -41,10 +41,10 @@ namespace Spiel_Des_Lebens
             foreach (loadEvent e in events)
             {
                 //if (Array.IndexOf(e.requirements.path, (int)path) != -1 && Array.IndexOf(e.requirements.profession, (int)profession) != -1)
-                if (e.requirements.path.Contains((int)path) && e.requirements.profession.Contains((int)profession))
+                /*if (e.requirements.path.Contains((int)path) && e.requirements.profession.Contains((int)profession))
                 {
                     filterEvents.Add(e);
-                }
+                }*/
             }
             return filterEvents;
         }

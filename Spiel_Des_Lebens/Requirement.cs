@@ -2,17 +2,13 @@
 {
     internal class Requirement
     {
-        private int[] path;
-        private int[] profession;
-        private int[] phase;
+        private int[,,] timings;
         private Stat reqStatMin;
         private Stat reqStatMax;
 
-        public Requirement(int[] path, int[] profession, int[] phase, Stat minStats, Stat maxStats)
+        public Requirement(int[,,] timings, Stat minStats, Stat maxStats)
         {
-            this.path = path;
-            this.profession = profession;
-            this.phase = phase;
+            this.timings = timings;
             reqStatMin = minStats;
             reqStatMax = maxStats;
         }

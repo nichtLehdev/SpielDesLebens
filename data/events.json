@@ -6,22 +6,31 @@
       "info": "Wenn du den Hofmman verlezt passiert nichts",
       "priority": 1,
       "requirements": {
-         "path": [0, 1, 2],
-         "profession": [0, 1, 2, 3, 4],
-         "phase": [2, 4],
-         "stats_min": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 0
-         },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
-      },
+        "timings": [
+          {
+            "path": [ "0", "1" ],
+            "profession": [ "0", "4" ],
+            "phase": [ "(%2-1)!0" ]
+          },
+          {
+            "path": [ "4" ],
+            "profession": [ "1" ],
+            "phase": [ "1" ]
+          }
+        ],
+        "stats_min":{
+          "mentalHealth": 0,
+          "motivation": 0,
+          "money": 0,
+          "success": 0
+        },
+        "stats_max":{
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 100,
+          "success": 100
+        }
+    },
       "options": [
          {
             "id": "E-078_1",
@@ -54,22 +63,31 @@
       "info": "Wenn du das Sekretariat beleidigst passiert nichts",
       "priority": 1,
       "requirements": {
-         "path": [3],
-         "profession": [2],
-         "phase": [2, 4],
-         "stats_min": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 0
-         },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "timings": [
+          {
+            "path": [ "0", "1" ],
+            "profession": [ "0", "4" ],
+            "phase": [ "(%2-1)!0" ]
+          },
+          {
+            "path": [ "4" ],
+            "profession": [ "1" ],
+            "phase": [ "1" ]
+          }
+        ],
+      "stats_min": {
+        "mentalHealth": 0,
+        "motivation": 0,
+        "money": 0,
+        "success": 0
       },
+      "stats_max": {
+        "mentalHealth": 100,
+        "motivation": 100,
+        "money": 100,
+        "success": 100
+      }
+    },
       "options": [
          {
             "id": "E-079_1",
