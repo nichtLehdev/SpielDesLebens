@@ -41,7 +41,6 @@ namespace Spiel_Des_Lebens
             {
                 activeForm.Close();
             }
-            //ActiveButton(btnSender);
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -65,16 +64,6 @@ namespace Spiel_Des_Lebens
             info_panel.Visible = false;
             info_close_button.Visible = false;
             info_text.Visible = false;
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnAktion_Click(object sender, EventArgs e)

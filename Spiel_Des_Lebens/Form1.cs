@@ -58,14 +58,14 @@ namespace Spiel_Des_Lebens
 
         private void neues_Spiel_open(Object sender, EventArgs e)
         {
-           Button btn = sender as Button;
-           if (btn.Text == "Neues Spiel")
-                {
-                    Layout_neues_Spiel.Visible = true;
-                    panel1.Visible = false;
-                }
-             else
-                {
+            Button btn = sender as Button;
+            if (btn.Text == "Neues Spiel")
+            {
+                Layout_neues_Spiel.Visible = true;
+                panel1.Visible = false;
+            }
+            else
+            {
                 textBox_mini_field.Text = btn.Text;
                 panel2.Visible = true;
                 button_mini_1.Visible = true;
@@ -73,9 +73,8 @@ namespace Spiel_Des_Lebens
                 button_mini_3.Visible = true;
                 textBox_mini_field.Visible = true;
             }
-            
-        }
 
+        }
         private void open_main_menu(object sender, EventArgs e)
         {
             panel1.Visible = true;
