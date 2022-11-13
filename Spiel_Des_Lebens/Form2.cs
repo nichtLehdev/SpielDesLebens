@@ -16,6 +16,7 @@ namespace Spiel_Des_Lebens
         private string name;
         private string abschluss;
         private Image avatar;
+        private Form activeForm;
         public Form2(string name, string alter, Image avatar, string abschluss)
         {
             InitializeComponent();
@@ -30,6 +31,25 @@ namespace Spiel_Des_Lebens
         {
             lblPlayerAge.Text = Convert.ToString(this.alter);
             lblPlayerName.Text = this.name;
+            btnAktion_Click(sender, e);
+
+        }
+
+        public void OpenChildForm(Form childForm, object btnSender)
+        {
+            if(activeForm != null)
+            {
+                activeForm.Close();
+            }
+            //ActiveButton(btnSender);
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.panelActiveChild.Controls.Add(childForm);
+            this.panelActiveChild.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
 
         }
 
@@ -47,11 +67,6 @@ namespace Spiel_Des_Lebens
             info_text.Visible = false;
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
 
@@ -59,6 +74,35 @@ namespace Spiel_Des_Lebens
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void btnAktion_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormActions(), sender);
+        }
+
+        private void btnSport_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormFreetime(), sender);
+
+        }
+
+        private void btnHausis_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormSchool(), sender);
+
+        }
+
+        private void btnMusik_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormFreetime(), sender);
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormFreetime(), sender);
 
         }
     }

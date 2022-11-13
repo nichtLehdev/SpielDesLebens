@@ -21,9 +21,14 @@ namespace Spiel_Des_Lebens
         {
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
-                Form2 t = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss);
-                t.Show();
-                this.Hide();
+                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss);
+                mainForm.TopLevel = false;
+                mainForm.FormBorderStyle = FormBorderStyle.None;
+                mainForm.Dock = DockStyle.Fill;
+                this.Controls.Add(mainForm);
+                this.Tag = mainForm;
+                mainForm.BringToFront();
+                mainForm.Show();
             }
         }
 

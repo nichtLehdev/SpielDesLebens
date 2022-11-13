@@ -63,6 +63,16 @@ namespace Spiel_Des_Lebens.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Background {
+            get {
+                object obj = ResourceManager.GetObject("Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Homework_Icon_small3 {
             get {
                 object obj = ResourceManager.GetObject("Homework_Icon_small3", resourceCulture);
@@ -76,6 +86,16 @@ namespace Spiel_Des_Lebens.Properties {
         internal static System.Drawing.Bitmap Music_Icon_small {
             get {
                 object obj = ResourceManager.GetObject("Music_Icon_small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Schule1 {
+            get {
+                object obj = ResourceManager.GetObject("Schule1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

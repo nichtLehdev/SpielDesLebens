@@ -38,8 +38,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.btnHausis = new System.Windows.Forms.Button();
             this.userInfo = new System.Windows.Forms.Panel();
             this.lblPlayerName = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
@@ -58,14 +56,19 @@
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelActiveChild = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.btnMusik = new System.Windows.Forms.Button();
             this.btnSport = new System.Windows.Forms.Button();
+            this.btnHausis = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.info_panel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.userInfo.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,7 +106,7 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(479, 157);
+            this.panel1.Location = new System.Drawing.Point(3, 278);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(475, 363);
             this.panel1.TabIndex = 3;
@@ -165,10 +168,10 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.ForeColor = System.Drawing.Color.Maroon;
-            this.progressBar1.Location = new System.Drawing.Point(479, 70);
+            this.progressBar1.ForeColor = System.Drawing.Color.GreenYellow;
+            this.progressBar1.Location = new System.Drawing.Point(196, 53);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(475, 44);
+            this.progressBar1.Size = new System.Drawing.Size(548, 44);
             this.progressBar1.TabIndex = 4;
             this.progressBar1.Value = 10;
             // 
@@ -188,38 +191,6 @@
             this.panel2.Size = new System.Drawing.Size(240, 642);
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Image = global::Spiel_Des_Lebens.Properties.Resources.Music_Icon_small;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 500);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(240, 60);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "andere Aktion";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // btnHausis
-            // 
-            this.btnHausis.FlatAppearance.BorderSize = 0;
-            this.btnHausis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHausis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHausis.ForeColor = System.Drawing.Color.Black;
-            this.btnHausis.Image = global::Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
-            this.btnHausis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHausis.Location = new System.Drawing.Point(0, 290);
-            this.btnHausis.Name = "btnHausis";
-            this.btnHausis.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnHausis.Size = new System.Drawing.Size(240, 60);
-            this.btnHausis.TabIndex = 12;
-            this.btnHausis.Text = "Hausaufgaben";
-            this.btnHausis.UseVisualStyleBackColor = true;
             // 
             // userInfo
             // 
@@ -289,15 +260,16 @@
             this.btnAktion.TabIndex = 0;
             this.btnAktion.Text = "Aktionsfenster";
             this.btnAktion.UseVisualStyleBackColor = true;
-            this.btnAktion.Click += new System.EventHandler(this.button3_Click);
+            this.btnAktion.Click += new System.EventHandler(this.btnAktion_Click);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel3.BackColor = System.Drawing.Color.Brown;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.sonstige_box);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
@@ -305,9 +277,10 @@
             this.panel3.Controls.Add(this.progressBar4);
             this.panel3.Controls.Add(this.progressBar3);
             this.panel3.Controls.Add(this.progressBar2);
-            this.panel3.Location = new System.Drawing.Point(1093, 44);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1191, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(238, 546);
+            this.panel3.Size = new System.Drawing.Size(240, 642);
             this.panel3.TabIndex = 7;
             // 
             // sonstige_box
@@ -405,11 +378,48 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(476, 44);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.69307F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(193, 22);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.Size = new System.Drawing.Size(75, 18);
             this.label5.TabIndex = 8;
             this.label5.Text = "Fortschritt";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Brown;
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.progressBar1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(240, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(951, 119);
+            this.panel4.TabIndex = 9;
+            // 
+            // panelActiveChild
+            // 
+            this.panelActiveChild.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelActiveChild.Location = new System.Drawing.Point(240, 119);
+            this.panelActiveChild.Name = "panelActiveChild";
+            this.panelActiveChild.Size = new System.Drawing.Size(951, 523);
+            this.panelActiveChild.TabIndex = 10;
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.Black;
+            this.button6.Image = global::Spiel_Des_Lebens.Properties.Resources.Music_Icon_small;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(0, 500);
+            this.button6.Name = "button6";
+            this.button6.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.button6.Size = new System.Drawing.Size(240, 60);
+            this.button6.TabIndex = 15;
+            this.button6.Text = "andere Aktion";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnMusik
             // 
@@ -426,6 +436,7 @@
             this.btnMusik.TabIndex = 14;
             this.btnMusik.Text = "Musik";
             this.btnMusik.UseVisualStyleBackColor = true;
+            this.btnMusik.Click += new System.EventHandler(this.btnMusik_Click);
             // 
             // btnSport
             // 
@@ -442,6 +453,24 @@
             this.btnSport.TabIndex = 13;
             this.btnSport.Text = "Sport";
             this.btnSport.UseVisualStyleBackColor = true;
+            this.btnSport.Click += new System.EventHandler(this.btnSport_Click);
+            // 
+            // btnHausis
+            // 
+            this.btnHausis.FlatAppearance.BorderSize = 0;
+            this.btnHausis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHausis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHausis.ForeColor = System.Drawing.Color.Black;
+            this.btnHausis.Image = global::Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
+            this.btnHausis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHausis.Location = new System.Drawing.Point(0, 290);
+            this.btnHausis.Name = "btnHausis";
+            this.btnHausis.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnHausis.Size = new System.Drawing.Size(240, 60);
+            this.btnHausis.TabIndex = 12;
+            this.btnHausis.Text = "Hausaufgaben";
+            this.btnHausis.UseVisualStyleBackColor = true;
+            this.btnHausis.Click += new System.EventHandler(this.btnHausis_Click);
             // 
             // pictureBox1
             // 
@@ -459,11 +488,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1431, 642);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.panelActiveChild);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.panel1);
             this.Name = "Form2";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -475,9 +503,10 @@
             this.userInfo.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -516,6 +545,8 @@
         private System.Windows.Forms.Button btnHausis;
         private System.Windows.Forms.Button btnMusik;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panelActiveChild;
     }
 }
 

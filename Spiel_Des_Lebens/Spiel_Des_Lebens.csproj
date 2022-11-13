@@ -46,6 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormActions.Designer.cs">
+      <DependentUpon>FormActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFreetime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFreetime.Designer.cs">
+      <DependentUpon>FormFreetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSchool.Designer.cs">
+      <DependentUpon>FormSchool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI_Interface.cs" />
     <Compile Include="EducationPath.cs" />
     <Compile Include="Form1.cs">
@@ -74,15 +97,20 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormActions.resx">
+      <DependentUpon>FormActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFreetime.resx">
+      <DependentUpon>FormFreetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSchool.resx">
+      <DependentUpon>FormSchool.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -95,6 +123,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sports_Icon_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Homework_Icon_small3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music_Icon_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schule1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
