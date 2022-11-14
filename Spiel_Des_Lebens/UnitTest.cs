@@ -46,15 +46,18 @@ namespace Spiel_Des_Lebens
             Event event1 = new Event("1","Test1", "pls", 6 ,requirement, listOption);
             Event event2 = new Event("2", "Test1", "pls", 6, requirement2, listOption);
 
+            filteredEvents.Add(event1);
+            filteredEvents.Add(event2);
+
             //Events in filteredEvents kopieren
 
             foreach (Event e in filteredEvents)
             {
                 bool phaseExists = false;
-                for (int i = 0; i < e.requirements.timings.Length; i++)
+                for (int i = 0; i < 3; i++)
                 {
                     //if (e.requirements.timings[(int).GetPath(), (int)edupath.getProfession(), i] == edupath.getPhase().getCurrentPhase())
-                    if (e.requirements.timings[1, 1, i] == 2)
+                    if (e.requirements.timings[1, 0, i] == 2)
                     {
                         phaseExists = true;
                     }
@@ -64,9 +67,6 @@ namespace Spiel_Des_Lebens
                     filteredEvents.Remove(e);
                 }
             }
-
-
-            Assert.Fail();
         }
     }
 }
