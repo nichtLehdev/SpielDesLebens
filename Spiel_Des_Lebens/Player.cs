@@ -23,7 +23,7 @@
         public void resetCareer(Data.Path path, Data.Profession profession)
         {
             createEducationPath(path, profession);
-            createEventgenerator(path, profession);
+            createEventgenerator(eduPath);
         }
 
         private void createEducationPath(Data.Path path, Data.Profession profession)
@@ -31,11 +31,16 @@
             eduPath = new EducationPath(path, profession);
         }
 
-        private void createEventgenerator(Data.Path path, Data.Profession profession)
+        private void createEventgenerator(EducationPath eduPath)
         {
-            eventgenerator = new Eventgenerator(path, profession);
+            eventgenerator = new Eventgenerator(eduPath);
         }
 
         #endregion
+
+        public void nextPhase() //muss bei jeder neuen Phase aufgerufen
+        {
+
+        }
     }
 }

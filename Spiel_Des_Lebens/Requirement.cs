@@ -2,9 +2,9 @@
 {
     internal class Requirement
     {
-        private int[,,] timings;
-        private Stat reqStatMin;
-        private Stat reqStatMax;
+        public int[,,] timings;
+        public Stat reqStatMin;
+        public Stat reqStatMax;
 
         public Requirement(int[,,] timings, Stat minStats, Stat maxStats)
         {

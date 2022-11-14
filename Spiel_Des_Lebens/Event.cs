@@ -4,13 +4,13 @@ namespace Spiel_Des_Lebens
 {
     internal class Event
     {
-        private string id; 
-        private string title;
-        private string text;
-        private string info;
-        private int priority;
-        private Requirement requirements;
-        private List<Option> options;
+        public string id; 
+        public string title;
+        public string text;
+        public string info;
+        public int priority;
+        public Requirement requirements;
+        public List<Option> options;
 
         public Event(string id, string title, string text, int priority, Requirement req, List<Option> options)
         {

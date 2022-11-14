@@ -7,11 +7,14 @@ namespace Spiel_Des_Lebens
 {
     internal class Eventgenerator
     {
+        private EducationPath edupath;
 
         public List<loadEvent> events = new List<loadEvent>();
+        private List<Event> filteredEvents = new List<Event>();
 
-        public Eventgenerator(Data.Path path, Data.Profession profession)
+        public Eventgenerator(EducationPath edupath)
         {
+            this.edupath = edupath;
             this.events = loadEvents();
             //this.events = filterEvents(events, path, profession);
             // TODO cleanup constructur, change player reset
@@ -54,6 +57,27 @@ namespace Spiel_Des_Lebens
         {
             // returns next Event
             return null; // delete!!!!!
+        }
+
+        public void filterEvents ()
+        {
+            //Events in filteredEvents kopieren
+
+            foreach(Event e in filteredEvents)
+            {
+                bool phaseExists = false;
+                for(int i = 0; i < e.requirements.timings.Length; i++)
+                {
+                    if(e.requirements.timings[(int)edupath.GetPath(), (int)edupath.getProfession(), i] == edupath.getPhase().getCurrentPhase())
+                    {
+                        phaseExists = true;
+                    }
+                }
+                if(phaseExists == false)
+                {
+                    filteredEvents.Remove(e);
+                }
+            }
         }
     }
 

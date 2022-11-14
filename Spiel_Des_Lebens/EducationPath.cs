@@ -27,9 +27,19 @@ namespace Spiel_Des_Lebens
             this.profession = profession;
         }
 
-        public String getProfession()
+        public String getProfessionName()
         {
             return Data.career[(int)path, (int)profession];
+        }
+
+        public Data.Profession getProfession()
+        {
+            return profession;
+        }
+
+        public Data.Path GetPath()
+        {
+            return this.path;
         }
 
         public Phase getPhase()
