@@ -82,7 +82,8 @@ namespace Spiel_Des_Lebens
                         }
                         catch (Exception ex)
                         {
-                            throw new Error(ex.Message);
+                            // throw new Error(ex.Message.ToString());
+                            throw new Error("EventListConverter: Error parsing path in event " + this.id);
                         }
                     }
                     return parsedPaths.ToArray();
@@ -372,3 +373,4 @@ namespace Spiel_Des_Lebens
 
     }
 }
+

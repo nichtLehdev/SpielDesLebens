@@ -2,8 +2,8 @@
    {
       "id": "E-001",
       "title": "Bewerbung schreiben",
-      "text": "Was gehöhrt NICHT in ein Bewerbungsschreiben?",
-      "info": "hat auswirkungen auf den Erfolg",
+      "text": "Was gehört NICHT in ein Bewerbungsschreiben?",
+      "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -30,7 +30,7 @@
          {
             "id": "E-001_1",
             "title": "Lebenslauf nacherzählen",
-            "text": "korrekt, in ein Bewerbungsschreiben gehört die persöhnliche Motivation und den Unternehmensbezug.",
+            "text": "korrekt, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -41,7 +41,7 @@
          {
             "id": "E-001_2",
             "title": "Unternehmensbezug",
-            "text": "falsch, in ein Bewerbungsschreiben gehört die persöhnliche Motivation und den Unternehmensbezug. \n Unter https://www.arbeitsagentur.de/erfolgreich-bewerben/bewerbung-schreiben findest du weitere Infos zum Bewerbungsschreiben",
+            "text": "falsch, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug. \n Unter https://www.arbeitsagentur.de/erfolgreich-bewerben/bewerbung-schreiben findest du weitere Infos zum Bewerbungsschreiben",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -55,7 +55,7 @@
       "id": "E-002",
       "title": "Bewerbung schreiben",
       "text": "Was kommt in ein Bewerbungsschreiben?",
-      "info": "hat auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -82,7 +82,7 @@
          {
             "id": "E-002_1",
             "title": "Motivation & Unternehmensbezug",
-            "text": "korrekt, in ein Bewerbungsschreiben gehört die persöhnliche Motivation und den Unternehmensbezug.",
+            "text": "korrekt, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -93,7 +93,7 @@
          {
             "id": "E-002_2",
             "title": "Beziehungsstatus & Kontostand",
-            "text": "falsch, in ein Bewerbungsschreiben gehört die persöhnliche Motivation und den Unternehmensbezug. weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+            "text": "falsch, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug. weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -107,7 +107,7 @@
       "id": "E-003",
       "title": "Lebenslauf erstellen",
       "text": "Was kommt in den Lebenslauf?",
-      "info": "hat auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -155,7 +155,7 @@
          },
          {
             "id": "E-003_3",
-            "title": "höchster Schulabschluss, relevante Praktikas, geeignetes Porträt, sonstige Qualifikationen, evtl. Freizeitaktivitäten",
+            "title": "höchster Schulabschluss, relevante Praktika, geeignetes Porträt, sonstige Qualifikationen, evtl. Freizeitaktivitäten",
             "text": "korrekt, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
@@ -166,7 +166,7 @@
          },
          {
             "id": "E-003_4",
-            "title": "Selbsfindungsphase",
+            "title": "Selbstfindungsphase",
             "text": "falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
@@ -181,7 +181,7 @@
       "id": "E-004",
       "title": "Bildauswahl für den Lebenslauf",
       "text": "Wähle ein Bild für deinen Lebenslauf aus:",
-      "info": "hat auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -255,7 +255,7 @@
       "id": "E-005",
       "title": "Hobbys für den Lebenslauf",
       "text": "welche Hobbys kommen für einen Lebenslauf in Frage?:",
-      "info": "hat auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -292,7 +292,7 @@
          },
          {
             "id": "E-005_2",
-            "title": "mit Freunden treffen, Sex, Drogen nehemn",
+            "title": "mit Freunden treffen, Sex, Drogen nehmen",
             "text": "falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
@@ -307,7 +307,7 @@
       "id": "E-006",
       "title": "Frage Bewerbungsgespräch",
       "text": "Wo sehen Sie sich in 5 Jahren",
-      "info": "hat auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -359,7 +359,7 @@
       "id": "E-007",
       "title": "Frage Bewerbungsgespräch",
       "text": "Warum haben Sie sich für diese Berufsrichtung entschieden?",
-      "info": "hat auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -396,7 +396,7 @@
          },
          {
             "id": "E-007_2",
-            "title": "persönliche Motivation und Bezug zu der angestrebten Tätigkeit nennnen",
+            "title": "persönliche Motivation und Bezug zu der angestrebten Tätigkeit nennen",
             "text": "gute Antwort",
             "stats": {
                "mentalHealth": 0,
@@ -410,8 +410,8 @@
    {
       "id": "E-008",
       "title": "Bewerbungsphase Studium",
-      "text": "Du hast deine Bewerbungsunterlagen an meherer Unis geschickt und wartetst auf Antwort, was tust du in der Zwischenzeit?",
-      "info": "hat auswirkungen auf den Erfolg",
+      "text": "Du hast deine Bewerbungsunterlagen an mehrere Unis geschickt und wartests auf Antwort, was tust du in der Zwischenzeit?",
+      "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -463,7 +463,7 @@
       "id": "E-009",
       "title": "Wohnungssuche fürs Studium",
       "text": "Du bewirbst dich für eine Wohnung, was schreibst du in deine Bewerbung?",
-      "info": "hat auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -514,7 +514,7 @@
    {
       "id": "E-010",
       "title": "1. Arbeitstag",
-      "text": "Du kommst auf in dem Unternhemen an, weißt aber nicht wo dein Abeitsplatz ist",
+      "text": "Du kommst auf in dem Unternehmen an, weißt aber nicht wo dein Arbeitsplatz ist",
       "info": "betrifft Erfolg, Mentale Gesundheit, Motivation",
       "priority": 1,
       "requirements": {
@@ -547,7 +547,7 @@
          {
             "id": "E-010_1",
             "title": "höflich an der Rezeption nachfragen",
-            "text": "Du gehst an die Rezeption, stellst dich vor und frägst wo du hinmusst. Die Rezeptionistin bringt dich an deinen Arbeitsplatz und ihr führt ein kurzes Gespräch.",
+            "text": "Du gehst an die Rezeption, stellst dich vor und fragst wo du hinmusst. Die Rezeptionistin bringt dich an deinen Arbeitsplatz und ihr führt ein kurzes Gespräch.",
             "stats": {
                "mentalHealth": 3,
                "motivation": 3,
@@ -573,6 +573,7 @@
       "title": "Mittagspause",
       "text": "Wie verbringst du deine Mittagspause?",
       "info": "potentieller sozialer Kontakt",
+      "priority": 1,
       "requirements": {
          "timings": [
             {
@@ -583,8 +584,8 @@
             {
                "path": ["1"],
                "profession": ["*"],
-               // "phase": ["*%2", "*!0"] todo: fix %2
-               "phase": ["*", "*!0"]
+               // "phase": ["*%2", "*!0"]
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -604,7 +605,7 @@
          {
             "id": "E-011_1",
             "title": "mit Kollegen",
-            "text": "du gesellst dich zu deinen Kollen",
+            "text": "du gesellst dich zu deinen Kollegen",
             "stats": {
                "mentalHealth": 10,
                "motivation": 30,
@@ -615,7 +616,7 @@
          {
             "id": "E-011_2",
             "title": "alleine",
-            "text": "du verkriechts dich alleine in einer Ecke und isst dein Butterbrot",
+            "text": "du verkriechst dich alleine in einer Ecke und isst dein Butterbrot",
             "stats": {
                "mentalHealth": -10,
                "motivation": -10,
@@ -628,21 +629,22 @@
    {
       "id": "E-012",
       "title": "Läster Schwestern",
-      "text": "Ihre Kollegin Tanja redet schlecht über ihre Kollgegin Meike.",
+      "text": "Ihre Kollegin Tanja redet schlecht über ihre Kollegin Meike.",
       "info": "soziales Event",
+      "priority": 1,
       "requirements": {
          "timings": [
             {
                "path": ["0"],
                "profession": ["*"],
                // "phase": ["!%2"]
-               "phase": ["*", "*!0"]
+               "phase": ["*"]
             },
             {
                "path": ["1"],
                "profession": ["*"],
                // "phase": ["%2", "!0"]
-               "phase": ["*", "*!0"]
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -695,7 +697,7 @@
          {
             "id": "E-012_4",
             "title": "Meike mitteilen dass Tanja über sie gelästert hat.",
-            "text": "Meike ist entsetzt und läuft wutenentbrannt zu Tanja und es fliegen die Fetzen.",
+            "text": "Meike ist entsetzt und läuft wutentbrannt zu Tanja und es fliegen die Fetzen.",
             "stats": {
                "mentalHealth": -2,
                "motivation": -5,
@@ -710,19 +712,20 @@
       "title": "Überstunden",
       "text": "Du hast Feierabend aber deine Tagesaufgabe noch nicht erledigt.",
       "info": "soziales Event",
+      "priority": 1,
       "requirements": {
          "timings": [
             {
                "path": ["0"],
                "profession": ["*"],
                // "phase": ["!%2"]
-               "phase": ["*", "*!0"]
+               "phase": ["*"]
             },
             {
                "path": ["1"],
                "profession": ["*"],
                // "phase": ["%2", "!0"]
-               "phase": ["*", "*!0"]
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -767,20 +770,21 @@
       "id": "E-014",
       "title": "Deadline",
       "text": "das Projekt an dem du aktuell arbeitest wird nicht rechtzeitig fertig werden.",
-      "info": "hat auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 1,
       "requirements": {
          "timings": [
             {
                "path": ["0"],
                "profession": ["1", "2", "3", "4"],
                // "phase": ["!%2"]
-               "phase": ["*", "*!0"]
+               "phase": ["*"]
             },
             {
                "path": ["1"],
                "profession": ["1", "2", "3", "4"],
                // "phase": ["%2", "!0"]
-               "phase": ["*", "*!0"]
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -799,8 +803,8 @@
       "options": [
          {
             "id": "E-014_1",
-            "title": "dem Chef bescheid geben",
-            "text": "du gibst deinem chef bescheid, dass du ds Projekt nicht rechzeitig fertig bekommen wirst. Und ihr findet gemeinsam eine Lösung.",
+            "title": "dem Chef Bescheid geben",
+            "text": "du gibst deinem Chef Bescheid, dass du ds Projekt nicht rechtzeitig fertig bekommen wirst. Und ihr findet gemeinsam eine Lösung.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 5,
@@ -823,22 +827,23 @@
    },
    {
       "id": "E-015",
-      "title": "alzheimer Patient",
-      "text": "du hast eine alte Frau zu versorgen. Sie frägt dich jetzt schon zum 7. Mal wie alt du bist.",
-      "info": "hat auswirkungen auf den Erfolg",
+      "title": "Alzheimer Patient",
+      "text": "du hast eine alte Frau zu versorgen. Sie fragt dich jetzt schon zum 7. Mal wie alt du bist.",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 1,
       "requirements": {
          "timings": [
             {
                "path": ["0"],
                "profession": ["0"],
                // "phase": ["!%2"]
-               "phase": ["*", "*!0"]
+               "phase": ["*"]
             },
             {
                "path": ["1"],
                "profession": ["0"],
                // "phase": ["%2", "!0"]
-               "phase": ["*", "*!0"]
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -858,7 +863,7 @@
          {
             "id": "E-015_1",
             "title": "die Geduld verlieren",
-            "text": "du verlierts die Gedult und schreist die Patientin an. Deine Chefin ist nicht begeistert und mahnt dich ab.",
+            "text": "du verlierst die Geduld und schreist die Patientin an. Deine Chefin ist nicht begeistert und mahnt dich ab.",
             "stats": {
                "mentalHealth": -10,
                "motivation": -10,
@@ -879,7 +884,7 @@
          },
          {
             "id": "E-015_3",
-            "title": "du ignorioerst die Frage",
+            "title": "du ignorierst die Frage",
             "text": "du lässt dir dein genervt sein nicht anmerken und Antwortest. Deine Chefin ist von deiner Geduld beeindruckt.",
             "stats": {
                "mentalHealth": 10,
@@ -903,17 +908,18 @@
    },
 
    {
-      "id": "E-020",
+      "id": "E-016",
       "title": "neuer Mitschüler",
       "text": "Im Klassenzimmer triffst du auf einen neuen Mitschüler, er sieht unsicher aus.",
       "info": "potentieller sozialer Kontakt",
+      "priority": 1,
       "requirements": {
          "timings": [
             {
                "path": ["0"],
                "profession": ["*"],
                // "phase": ["%2", "!2", "!0"]
-               "phase": ["*", "*!0"]
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -931,9 +937,9 @@
       },
       "options": [
          {
-            "id": "E-001_1",
+            "id": "E-016_1",
             "title": "Ansprechen",
-            "text": "du stellst dich dem neuen Mitschüler/Komilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde bildet eine Lerngruppe",
+            "text": "du stellst dich dem neuen Mitschüler/Kommilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde bildet eine Lerngruppe",
             "stats": {
                "mentalHealth": 10,
                "motivation": 30,
@@ -942,7 +948,7 @@
             }
          },
          {
-            "id": "E-001_2",
+            "id": "E-016_2",
             "title": "Ignorieren",
             "text": "du gehst an dem neuen Mitschüler vorbei ohne ihn zu beachten und setzt dich auf deinen Platz",
             "stats": {
@@ -954,331 +960,361 @@
          }
       ]
    },
-   // {
-   //    "id": "E-002",
-   //    "title": "Einladung zur Party",
-   //    "text": "Du wirst zu einer Party eingeladen",
-   //    "info": "potentieller sozialer Kontakt, absturz gefahr",
-   //    "requirements": {
-   //       "path": [0, 1, 2],
-   //       "profession": [0, 1, 2, 3, 4],
-   //       "phase": [],
-   //       "stats_min": {
-   //          "mentalHealth": 60,
-   //          "motivation": 0,
-   //          "money": 0,
-   //          "success": 0
-   //       },
-   //       "stats_max": {
-   //          "mentalHealth": 100,
-   //          "motivation": 100,
-   //          "money": 100,
-   //          "success": 70
-   //       }
-   //    },
-   //    "options": [
-   //       {
-   //          "id": "E-002_1",
-   //          "title": "zusagen",
-   //          "text": "du kommst zur Party und hast eine tolle Zeit aber der Morgen danach bringt das böse Erwachen",
-   //          "stats": {
-   //             "mentalHealth": 15,
-   //             "motivation": 0,
-   //             "money": 0,
-   //             "success": -15
-   //          }
-   //       },
-   //       {
-   //          "id": "E-002_2",
-   //          "title": "absagen",
-   //          "text": "du sagts ab und verbringst das Wochenende mit lernen",
-   //          "stats": {
-   //             "mentalHealth": 0,
-   //             "motivation": -10,
-   //             "money": 0,
-   //             "success": 20
-   //          }
-   //       }
-   //    ]
-   // },
+   {
+      "id": "E-017",
+      "title": "Einladung zur Party",
+      "text": "Du wirst zu einer Party eingeladen",
+      "info": "potentieller sozialer Kontakt, Absturz Gefahr",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 60,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 70
+         }
+      },
+      "options": [
+         {
+            "id": "E-017_1",
+            "title": "zusagen",
+            "text": "du kommst zur Party und hast eine tolle Zeit aber der Morgen danach bringt das böse Erwachen",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 0,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-017_2",
+            "title": "absagen",
+            "text": "du sagst ab und verbringst das Wochenende mit lernen",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": -10,
+               "money": 0,
+               "success": 20
+            }
+         }
+      ]
+   },
 
-   // {
-   //    "id": "E-004",
-   //    "title": "Lerngruppe oder Nachhilfe",
-   //    "text": "Du möchstet beim Lernen besser vorankommen",
-   //    "info": "steigerung des Erfolgs",
-   //    "requirements": {
-   //       "path": [0, 1, 2],
-   //       "profession": [0, 1, 2, 3, 4],
-   //       "phase": [],
-   //       "stats_min": {
-   //          "mentalHealth": 0,
-   //          "motivation": 0,
-   //          "money": 0,
-   //          "success": 0
-   //       },
-   //       "stats_max": {
-   //          "mentalHealth": 100,
-   //          "motivation": 100,
-   //          "money": 100,
-   //          "success": 60
-   //       }
-   //    },
-   //    "options": [
-   //       {
-   //          "id": "E-004_1",
-   //          "title": "Lerngruppe",
-   //          "text": "du trittst einer Lerngruppe bei",
-   //          "stats": {
-   //             "mentalHealth": 15,
-   //             "motivation": 15,
-   //             "money": 0,
-   //             "success": 20
-   //          }
-   //       },
-   //       {
-   //          "id": "E-004_2",
-   //          "title": "professionelle Nachhilfe",
-   //          "text": "du nimmst dir Nachhilfe und zahlst Monatlich Geld",
-   //          "stats": {
-   //             "mentalHealth": 0,
-   //             "motivation": 0,
-   //             "money": -20,
-   //             "success": 0
-   //          }
-   //       }
-   //    ]
-   // },
-   // {
-   //    "id": "E-005",
-   //    "title": "Mobbing  eines Freundes",
-   //    "text": "einer deiner Freunde wird gemobbt",
-   //    "info": "verletzungsgefahr",
-   //    "requirements": {
-   //       "path": [0, 1, 2],
-   //       "profession": [0, 1, 2, 3, 4],
-   //       "phase": [],
-   //       "stats_min": {
-   //          "mentalHealth": 0,
-   //          "motivation": 0,
-   //          "money": 0,
-   //          "success": 0
-   //       },
-   //       "stats_max": {
-   //          "mentalHealth": 100,
-   //          "motivation": 100,
-   //          "money": 100,
-   //          "success": 100
-   //       }
-   //    },
-   //    "options": [
-   //       {
-   //          "id": "E-005_1",
-   //          "title": "verteidigen",
-   //          "text": "du verteidigst deinen Freund und kassierts dabei ein paar Schläge.",
-   //          "stats": {
-   //             "mentalHealth": 15,
-   //             "motivation": 0,
-   //             "money": 0,
-   //             "success": 0
-   //          }
-   //       },
-   //       {
-   //          "id": "E-005_2",
-   //          "title": "weglaufen",
-   //          "text": "du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
-   //          "stats": {
-   //             "mentalHealth": -10,
-   //             "motivation": 0,
-   //             "money": 0,
-   //             "success": 0
-   //          }
-   //       },
-   //       {
-   //          "id": "E-005_3",
-   //          "title": "mitmachen",
-   //          "text": "du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
-   //          "stats": {
-   //             "mentalHealth": -30,
-   //             "motivation": 0,
-   //             "money": 15,
-   //             "success": 0
-   //          }
-   //       },
-   //       {
-   //          "id": "E-005_4",
-   //          "title": "zuschauen und danach helfen",
-   //          "text": "du schaust zu wie dein Freund fertig gemacht wird und bietest ihm danach ein Pflaster für seine Wunde an.",
-   //          "stats": {
-   //             "mentalHealth": -10,
-   //             "motivation": 0,
-   //             "money": 0,
-   //             "success": 0
-   //          }
-   //       }
-   //    ]
-   // },
-   // {
-   //    "id": "E-006",
-   //    "title": "Mobbing  eines Freundes",
-   //    "text": "einer deiner Freunde wird gemobbt",
-   //    "info": "verletzungsgefahr",
-   //    "requirements": {
-   //       "path": [0, 1, 2],
-   //       "profession": [0, 1, 2, 3, 4],
-   //       "phase": [],
-   //       "stats_min": {
-   //          "mentalHealth": 0,
-   //          "motivation": 0,
-   //          "money": 0,
-   //          "success": 0
-   //       },
-   //       "stats_max": {
-   //          "mentalHealth": 100,
-   //          "motivation": 100,
-   //          "money": 100,
-   //          "success": 100
-   //       }
-   //    },
-   //    "options": [
-   //       {
-   //          "id": "E-006_1",
-   //          "title": "verteidigen",
-   //          "text": "du verteidigst deinen Freund und kassierts dabei ein paar Schläge.",
-   //          "stats": {
-   //             "mentalHealth": 10,
-   //             "motivation": 0,
-   //             "money": 0,
-   //             "success": 0
-   //          }
-   //       },
-   //       {
-   //          "id": "E-006_2",
-   //          "title": "weglaufen",
-   //          "text": "du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
-   //          "stats": {
-   //             "mentalHealth": -10,
-   //             "motivation": 0,
-   //             "money": 0,
-   //             "success": 0
-   //          }
-   //       },
-   //       {
-   //          "id": "E-006_3",
-   //          "title": "mitmachen",
-   //          "text": "du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
-   //          "stats": {
-   //             "mentalHealth": -30,
-   //             "motivation": 0,
-   //             "money": 15,
-   //             "success": 0
-   //          }
-   //       }
-   //    ]
-   // },
-   // {
-   //    "id": "E-078",
-   //    "title": "Hofmann ist im Urlaub",
-   //    "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
-   //    "info": "Wenn du den Hofmman verlezt passiert nichts",
-   //    "requirements": {
-   //       "path": [0, 1, 2],
-   //       "profession": [0, 1, 2, 3, 4],
-   //       "phase": [2, 4],
-   //       "stats_min": {
-   //          "mentalHealth": 0,
-   //          "motivation": 0,
-   //          "money": 0,
-   //          "success": 0
-   //       },
-   //       "stats_max": {
-   //          "mentalHealth": 100,
-   //          "motivation": 100,
-   //          "money": 100,
-   //          "success": 100
-   //       }
-   //    },
-   //    "options": [
-   //       {
-   //          "id": "E-078_1",
-   //          "title": "Ich zücke mein Messer und stelle mich vor den Hofmann",
-   //          "text": "Der Hofmann ist überrascht und schreit laut auf. Er rennt weg und du hast ihn verletzt.",
-   //          "stats": {
-   //             "mentalHealth": -50,
-   //             "motivation": 30,
-   //             "money": 0,
-   //             "success": -15
-   //          }
-   //       },
-   //       {
-   //          "id": "E-078_2",
-   //          "title": "Ich renne hinterher",
-   //          "text": "Du rennst hinterher und verletzt den Hofmann. Er rennt weg und du hast ihn verletzt.",
-   //          "stats": {
-   //             "mentalHealth": -50,
-   //             "motivation": 30,
-   //             "money": 0,
-   //             "success": -15
-   //          }
-   //       }
-   //    ]
-   // },
-   // {
-   //    "id": "E-079",
-   //    "title": "Das Sekretariat ist geschlossen",
-   //    "text": "Das Sekretariat ist geschlossen. Was willst du tun ?",
-   //    "info": "Wenn du das Sekretariat beleidigst passiert nichts",
-   //    "requirements": {
-   //       "path": [3],
-   //       "profession": [2],
-   //       "phase": [2, 4],
-   //       "stats_min": {
-   //          "mentalHealth": 0,
-   //          "motivation": 0,
-   //          "money": 0,
-   //          "success": 0
-   //       },
-   //       "stats_max": {
-   //          "mentalHealth": 100,
-   //          "motivation": 100,
-   //          "money": 100,
-   //          "success": 100
-   //       }
-   //    },
-   //    "options": [
-   //       {
-   //          "id": "E-079_1",
-   //          "title": "Ich öffne die Tür gewaltsam",
-   //          "text": "Das Sekretariat ist immernoch geschlossen.",
-   //          "stats": {
-   //             "mentalHealth": -50,
-   //             "motivation": 30,
-   //             "money": 0,
-   //             "success": -15
-   //          }
-   //       },
-   //       {
-   //          "id": "E-079_2",
-   //          "title": "Ich warte bis die Tür aufgeht",
-   //          "text": "Das Sekretariat ist immernoch geschlossen.",
-   //          "stats": {
-   //             "mentalHealth": -50,
-   //             "motivation": 30,
-   //             "money": 0,
-   //             "success": -15
-   //          }
-   //       },
-   //       {
-   //          "id": "E-079_3",
-   //          "title": "Ich gebe auf",
-   //          "text": "Du gehst nach Hause.",
-   //          "stats": {
-   //             "mentalHealth": -50,
-   //             "motivation": 30,
-   //             "money": 0,
-   //             "success": -15
-   //          }
-   //       }
-   //    ]
-   // }
+   {
+      "id": "E-018",
+      "title": "Lerngruppe oder Nachhilfe",
+      "text": "Du möchtest beim Lernen besser vorankommen",
+      "info": "Steigerung des Erfolgs",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 60
+         }
+      },
+      "options": [
+         {
+            "id": "E-018_1",
+            "title": "Lerngruppe",
+            "text": "du trittst einer Lerngruppe bei",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 15,
+               "money": 0,
+               "success": 20
+            }
+         },
+         {
+            "id": "E-018_2",
+            "title": "professionelle Nachhilfe",
+            "text": "du nimmst dir Nachhilfe und zahlst Monatlich Geld",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": -20,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-019",
+      "title": "Mobbing  eines Freundes",
+      "text": "einer deiner Freunde wird gemobbt",
+      "info": "verletzungsgefahr",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-019_1",
+            "title": "verteidigen",
+            "text": "du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-019_2",
+            "title": "weglaufen",
+            "text": "du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-019_3",
+            "title": "mitmachen",
+            "text": "du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
+            "stats": {
+               "mentalHealth": -30,
+               "motivation": 0,
+               "money": 15,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-019_4",
+            "title": "zuschauen und danach helfen",
+            "text": "du schaust zu wie dein Freund fertig gemacht wird und bietest ihm danach ein Pflaster für seine Wunde an.",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-020",
+      "title": "Mobbing  eines Freundes",
+      "text": "einer deiner Freunde wird gemobbt",
+      "info": "verletzungsgefahr",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-020_1",
+            "title": "verteidigen",
+            "text": "du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-020_2",
+            "title": "weglaufen",
+            "text": "du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-020_3",
+            "title": "mitmachen",
+            "text": "du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
+            "stats": {
+               "mentalHealth": -30,
+               "motivation": 0,
+               "money": 15,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-998",
+      "title": "Hofmann ist im Urlaub",
+      "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
+      "info": "Wenn du den Hofmman verletzt passiert nichts",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-998_1",
+            "title": "Ich zücke mein Messer und stelle mich vor den Hofmann",
+            "text": "Der Hofmann ist überrascht und schreit laut auf. Er rennt weg und du hast ihn verletzt.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-998_2",
+            "title": "Ich renne hinterher",
+            "text": "Du rennst hinterher und verletzt den Hofmann. Er rennt weg und du hast ihn verletzt.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-999",
+      "title": "Das Sekretariat ist geschlossen",
+      "text": "Das Sekretariat ist geschlossen. Was willst du tun ?",
+      "info": "Wenn du das Sekretariat beleidigst passiert nichts",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1", "2"],
+               "profession": ["2", "3", "4"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-999_1",
+            "title": "Ich öffne die Tür gewaltsam",
+            "text": "Das Sekretariat ist immer noch geschlossen.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-999_2",
+            "title": "Ich warte bis die Tür aufgeht",
+            "text": "Das Sekretariat ist immer noch geschlossen.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-999_3",
+            "title": "Ich gebe auf",
+            "text": "Du gehst nach Hause.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         }
+      ]
+   }
 ]
