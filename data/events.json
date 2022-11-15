@@ -957,9 +957,13 @@
       "info": "potentieller sozialer Kontakt, Absturz Gefahr",
       "priority": 1,
       "requirements": {
-         "path": [0, 1, 2],
-         "profession": [0, 1, 2, 3, 4],
-         "phase": [],
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
          "stats_min": {
             "mentalHealth": 60,
             "motivation": 0,
@@ -1006,9 +1010,13 @@
       "info": "Steigerung des Erfolgs",
       "priority": 1,
       "requirements": {
-         "path": [0, 1, 2],
-         "profession": [0, 1, 2, 3, 4],
-         "phase": [],
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
          "stats_min": {
             "mentalHealth": 0,
             "motivation": 0,
@@ -1054,9 +1062,13 @@
       "info": "verletzungsgefahr",
       "priority": 1,
       "requirements": {
-         "path": [0, 1, 2],
-         "profession": [0, 1, 2, 3, 4],
-         "phase": [],
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
          "stats_min": {
             "mentalHealth": 0,
             "motivation": 0,
@@ -1124,9 +1136,13 @@
       "info": "verletzungsgefahr",
       "priority": 1,
       "requirements": {
-         "path": [0, 1, 2],
-         "profession": [0, 1, 2, 3, 4],
-         "phase": [],
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
          "stats_min": {
             "mentalHealth": 0,
             "motivation": 0,
@@ -1183,9 +1199,13 @@
       "info": "Wenn du den Hofmman verletzt passiert nichts",
       "priority": 1,
       "requirements": {
-         "path": [0, 1, 2],
-         "profession": [0, 1, 2, 3, 4],
-         "phase": [2, 4],
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
          "stats_min": {
             "mentalHealth": 0,
             "motivation": 0,
@@ -1231,9 +1251,13 @@
       "info": "Wenn du das Sekretariat beleidigst passiert nichts",
       "priority": 1,
       "requirements": {
-         "path": [3],
-         "profession": [2],
-         "phase": [2, 4],
+         "timings": [
+            {
+               "path": ["1", "2"],
+               "profession": ["2", "3", "4"],
+               "phase": ["*"]
+            }
+         ],
          "stats_min": {
             "mentalHealth": 0,
             "motivation": 0,
