@@ -1,23 +1,40 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static Spiel_Des_Lebens.Data;
 
 namespace Spiel_Des_Lebens
 {
-    internal class EventConverter
+    internal class EventListConverter
     {
         private string id;
 
-        public EventConverter(loadEvent e){
-            
+        public EventListConverter(List<loadEvent> eList)
+        {
+            List<Event> events = new List<Event>();
+            foreach (loadEvent e in eList)
+            {
+                List<Timing> timings = new List<Timing>();
+                foreach (loadTiming lt in e.requirements.timings)
+                {
+                    timings.Add(evaluateTimings(lt));
+                }
+
+                Requirement r = new Requirement(timings, convertLoadStatToStat(e.requirements.stats_min), convertLoadStatToStat(e.requirements.stats_max));
+
+                List<Option> oList = new List<Option>();
+                foreach (loadOption o in e.options)
+                {
+                    oList.Add(convertLoadOptionToOption(o));
+                }
+
+
+                events.Add(new Event(e.id, e.title, e.text, e.priority, r, oList));
+
+            }
         }
 
-        private int[,,] evaluateTimings(Timing lTiming)
+        private Timing evaluateTimings(loadTiming lTiming)
         {
             List<string> path = lTiming.path;
             List<string> profession = lTiming.profession;
@@ -30,33 +47,32 @@ namespace Spiel_Des_Lebens
             //TODO Convert 1D arrays into 3D array. 
             // Specify construction of 3D array.
 
-            int[,,] timings = new int[0,0,0];
-
-            return timings;
+            return new Timing(ePaths.ToList(), eProfessions.ToList(), ePhases.ToList());
 
         }
 
         private int[] evaluatePaths(List<string> paths)
         {
-            if(paths != null)
+            if (paths != null)
             {
-                if(paths.IndexOf("*") != -1)
+                if (paths.IndexOf("*") != -1)
                 {
                     int length = Enum.GetNames(typeof(Data.Path)).Length;
                     int[] newPaths = new int[length];
 
-                    for(int i=0; i<length; i++)
+                    for (int i = 0; i < length; i++)
                     {
                         newPaths[i] = i;
                     }
 
                     return newPaths;
-                    
+
                 }
                 else
                 {
                     List<int> parsedPaths = new List<int>();
-                   foreach(string path in paths){
+                    foreach (string path in paths)
+                    {
                         try
                         {
                             parsedPaths.Add(int.Parse(path));
@@ -65,7 +81,7 @@ namespace Spiel_Des_Lebens
                         {
                             throw new Error(ex.Message);
                         }
-                   }
+                    }
                     return parsedPaths.ToArray();
                 }
             }
@@ -122,7 +138,7 @@ namespace Spiel_Des_Lebens
                 {
                     int length = getGreatestPhaseCount(paths);
                     int[] newPhases = new int[length];
-                    
+
                     for (int i = 0; i < length; i++)
                     {
                         newPhases[i] = i;
@@ -145,16 +161,16 @@ namespace Spiel_Des_Lebens
             }
             throw new Error("No Phases given (Event_ID: " + this.id + ")");
         }
-        
+
         private int[] evaluatePhase(string phase, int[] paths)
         {
             int bracketCount = 0;
             List<int> possiblePhases = new List<int>();
             List<int> exeptedPhases = new List<int>();
 
-            for(int i = 0; i<phase.Length; i++)
+            for (int i = 0; i < phase.Length; i++)
             {
-                if(phase[i] == '(')
+                if (phase[i] == '(')
                 {
                     bracketCount++;
                 }
@@ -163,17 +179,17 @@ namespace Spiel_Des_Lebens
                     bracketCount--;
                 }
             }
-            if(bracketCount != 0)
+            if (bracketCount != 0)
             {
                 throw new Error("Unequal count of brackets in phase '" + phase + "' (Event_ID: " + this.id + ")");
             }
             int exMarkIdx = phase.IndexOf('!');
             int moduloIdx = phase.IndexOf('%');
 
-            if(exMarkIdx != -1 && moduloIdx != -1) 
-            { 
+            if (exMarkIdx != -1 && moduloIdx != -1)
+            {
                 //% before !
-                if(moduloIdx < exMarkIdx)
+                if (moduloIdx < exMarkIdx)
                 {
                     possiblePhases = moduloCheck(phase, paths);
                     exeptedPhases = exMarkCheck(phase, paths);
@@ -184,18 +200,18 @@ namespace Spiel_Des_Lebens
                     exeptedPhases = exMarkCheck(phase, paths);
                 }
             }
-            else if(exMarkIdx != -1 && moduloIdx == -1)
+            else if (exMarkIdx != -1 && moduloIdx == -1)
             {
                 possiblePhases = fillList(getGreatestPhaseCount(paths));
                 exeptedPhases = exMarkCheck(phase, paths);
             }
-            else if(moduloIdx != -1 && exMarkIdx == -1)
+            else if (moduloIdx != -1 && exMarkIdx == -1)
             {
                 possiblePhases = moduloCheck(phase, paths);
             }
             else
             {
-                if(Int32.TryParse(phase, out int res))
+                if (Int32.TryParse(phase, out int res))
                 {
                     possiblePhases.Add(Int32.Parse(phase));
                 }
@@ -209,7 +225,7 @@ namespace Spiel_Des_Lebens
             {
                 foreach (int eVal in eList)
                 {
-                    if(pVal == eVal)
+                    if (pVal == eVal)
                     {
                         pList.Remove(eVal);
                     }
@@ -222,7 +238,7 @@ namespace Spiel_Des_Lebens
         private List<int> fillList(int length)
         {
             List<int> list = new List<int>();
-            for(int i = 0; i < length; i++)
+            for (int i = 0; i < length; i++)
             {
                 list.Add(i);
             }
@@ -270,7 +286,7 @@ namespace Spiel_Des_Lebens
                     //!(*%2)
                     if (exMarkIdx + 5 < phase.Length)
                     {
-                        if (phase[exMarkIdx + 5]!= ')')
+                        if (phase[exMarkIdx + 5] != ')')
                         {
                             throw new Error("Wrong Char (not ')') at idx: " + exMarkIdx + 5 + " in phase '" + phase + "'. (Event_ID: " + this.id + ")");
                         }
@@ -328,11 +344,11 @@ namespace Spiel_Des_Lebens
 
         }
 
-        
+
         private int getGreatestPhaseCount(int[] paths)
         {
             int greatestCount = 0;
-            foreach(int path in paths)
+            foreach (int path in paths)
             {
                 int count = (int)((3 * 12) / phaseL[path]);
                 if (count > greatestCount) greatestCount = count;

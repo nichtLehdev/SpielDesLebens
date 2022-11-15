@@ -1,15 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Spiel_Des_Lebens
 {
     internal class Timing
     {
-        public List<string> path { get; set; }
-        public List<string> profession { get; set; }
-        public List<string> phase { get; set; }
+        public List<int> path { get; set; }
+        public List<int> profession { get; set; }
+        public List<int> phase { get; set; }
+
+        public Timing(List<int> path, List<int> profession, List<int> phase)
+        {
+            this.path = path;
+            this.profession = profession;
+            this.phase = phase;
+        }
     }
 }

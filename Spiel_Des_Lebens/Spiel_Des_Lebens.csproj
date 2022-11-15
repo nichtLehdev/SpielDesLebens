@@ -54,6 +54,7 @@
     <Compile Include="EducationPath.cs" />
     <Compile Include="Error.cs" />
     <Compile Include="Event.cs" />
+    <Compile Include="EventListConverter.cs" />
     <Compile Include="Eventgenerator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -65,6 +66,7 @@
     <Compile Include="loadStat.cs" />
     <Compile Include="loadRequirement.cs" />
     <Compile Include="loadEvent.cs" />
+    <Compile Include="Timing.cs" />
     <Compile Include="Option.cs" />
     <Compile Include="Phase.cs" />
     <Compile Include="Player.cs" />
@@ -73,7 +75,7 @@
     <Compile Include="Requirement.cs" />
     <Compile Include="Stat.cs" />
     <Compile Include="StatParameter.cs" />
-    <Compile Include="Timing.cs" />
+    <Compile Include="loadTiming.cs" />
     <Compile Include="UnitTest.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
