@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Spiel_Des_Lebens.Data;
 
 namespace Spiel_Des_Lebens
 {
@@ -16,6 +15,7 @@ namespace Spiel_Des_Lebens
             List<Event> events = new List<Event>();
             foreach (loadEvent e in eList)
             {
+                this.id = e.id;
                 List<Timing> timings = new List<Timing>();
                 foreach (loadTiming lt in e.requirements.timings)
                 {
@@ -100,7 +100,7 @@ namespace Spiel_Des_Lebens
             {
                 if (paths.IndexOf("*") != -1)
                 {
-                    int length = Enum.GetNames(typeof(Profession)).Length;
+                    int length = Enum.GetNames(typeof(Data.Profession)).Length;
                     int[] newProfessions = new int[length];
 
                     for (int i = 0; i < length; i++)
@@ -353,7 +353,7 @@ namespace Spiel_Des_Lebens
             int greatestCount = 0;
             foreach (int path in paths)
             {
-                int count = (int)((3 * 12) / phaseL[path]);
+                int count = (int)((3 * 12) / Data.phaseL[path]);
                 if (count > greatestCount) greatestCount = count;
             }
             return greatestCount;

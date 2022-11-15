@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Windows.Forms.Design;
 
 namespace Spiel_Des_Lebens
 {
@@ -11,7 +12,7 @@ namespace Spiel_Des_Lebens
         private EducationPath edupath;
 
         private List<Event> filteredEventsPathProfession = new List<Event>();
-        private List<Event> filteredEvents = new List<Event>();
+        private List<Event> filteredEventsPhase = new List<Event>();
 
 
         public Eventgenerator(EducationPath edupath)
@@ -22,6 +23,13 @@ namespace Spiel_Des_Lebens
             // TODO cleanup constructur, change player reset
             // TODO JSON: add priority to events
             // TODO relative path to json file in package
+        }
+
+        public Event nextEvent(Stat stats)
+        {
+            filterEventsByStats(stats);
+            // returns next Event
+            return null; // delete!!!!!
         }
 
         #region load career events
@@ -73,43 +81,50 @@ namespace Spiel_Des_Lebens
         }
         #endregion
 
-        public Event nextEvent(Stat stats)
-        {
-            filterEventsByStats(stats);
-            // returns next Event
-            return null; // delete!!!!!
-        }
-
+        #region filter
         private void filterEventsByPhase()
         {
             //filters out all Events, which are valid for the current Phase and puts these in filteredList
-            foreach (Event e in filteredEvents)
+            foreach (Event e in filteredEventsPathProfession)
             {
                 foreach (Timing t in e.requirements.timings)
                 {
-                    foreach (int phasenumber in t.phase)
+                    if (containsPhase(t))
                     {
-                        if(Convert.ToInt32(phasenumber) == (int)edupath.getPhase().getCurrentPhase())
-                        {
-                                filteredEvents.Add(e);
-                        }
+                        filteredEventsPhase.Add(e);
+                        break;
                     }
                 }
             }
         }
 
-        private void filterEventsByStats(Stat playerStats)  //filters by Stats, change later, so that it removes false elements
+        private bool containsPhase(Timing t)
         {
-            foreach (Event e in filteredEvents)
+            for (int i = 0; i < t.phase.Count; i++)
+            {
+                if (t.phase[i] == edupath.getPhase().getCurrentPhase())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private List<Event> filterEventsByStats(Stat playerStats)  //filters by Stats, change later, so that it removes false elements
+        {
+            List<Event> fEvents = new List<Event>();
+            foreach (Event e in filteredEventsPhase)
             {
                 if (e.requirements.reqStatMin.isSmaller(playerStats) 
                     && e.requirements.reqStatMax.isGreater(playerStats))
                 {
-                    filteredEvents2.Add(e);
+                    fEvents.Add(e);
                 }
             }
+            return fEvents;
         }
- 
+        #endregion
+
     }
 }
 
