@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 
@@ -17,6 +18,7 @@ namespace Spiel_Des_Lebens
         [TestMethod]
         public void filterEvents() //remove later
         {
+            //EducationPath edupath= new EducationPath();
             List<Event> filteredEvents = new List<Event>();
 
             int[,,] phases = { 
@@ -27,7 +29,7 @@ namespace Spiel_Des_Lebens
             Stat statmin = new Stat(0, 0, 0, 0);
             Stat statmax = new Stat(100, 100, 100, 100);
 
-            Requirement requirement = new Requirement(phases, statmin, statmax );
+            Requirement requirement = new Requirement(null, statmin, statmax );
 
             int[,,] phases2 = {
                 {    {0,1,2 } },            //Paths
@@ -35,7 +37,7 @@ namespace Spiel_Des_Lebens
                 {    {0,1,1 } },            //Phase
             };
           
-            Requirement requirement2 = new Requirement(phases2, statmin, statmax);
+            Requirement requirement2 = new Requirement(null, statmin, statmax);
 
             Option option = new Option("1", "1", "1", statmin);
 
@@ -53,14 +55,31 @@ namespace Spiel_Des_Lebens
 
             foreach (Event e in filteredEvents)
             {
+                
+                foreach(Timing t in e.requirements.timings)
+                {
+                    //remove Timing elements which do not have the current phsae
+                    for(int i = 0; i < t.path.Count; i++)
+                    {
+                        //if()
+                    }
+                    foreach(string pathnumber in t.path)
+                    {
+                        //int pathnumberInt = string
+                        //if (Convert.ToInt32(pathnumber) != (int)edupath.getPhase().getCurrentPhase()) ;
+                        {
+
+                        }
+                    }
+                }
                 bool phaseExists = false;
                 for (int i = 0; i < 3; i++)
                 {
                     //if (e.requirements.timings[(int).GetPath(), (int)edupath.getProfession(), i] == edupath.getPhase().getCurrentPhase())
-                    if (e.requirements.timings[1, 0, i] == 2)
+                    /*if (e.requirements.timings[1, 0, i] == 2)
                     {
                         phaseExists = true;
-                    }
+                    }*/
                 }
                 if (phaseExists == false)
                 {

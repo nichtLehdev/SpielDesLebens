@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -59,27 +60,36 @@ namespace Spiel_Des_Lebens
             return null; // delete!!!!!
         }
 
-        public void filterEvents ()
+        private void filterEventsByPhase()
         {
-            //Events in filteredEvents kopieren
-
-            foreach(Event e in filteredEvents)
+            //filters out all Events, which are valid for the current Phase and puts these in filteredList
+            foreach (Event e in filteredEvents)
             {
-                bool phaseExists = false;
-                for(int i = 0; i < e.requirements.timings.Length; i++)
+                foreach (Timing t in e.requirements.timings)
                 {
-                    if(e.requirements.timings[(int)edupath.GetPath(), (int)edupath.getProfession(), i] == edupath.getPhase().getCurrentPhase())
+                    foreach (string phasenumber in t.phase)
                     {
-                        phaseExists = true;
+                        if(Convert.ToInt32(phasenumber) == (int)edupath.getPhase().getCurrentPhase())
+                        {
+                                filteredEvents.Add(e);
+                        }
                     }
-                }
-                if(phaseExists == false)
-                {
-                    filteredEvents.Remove(e);
                 }
             }
         }
-    }
 
+        private void filterEventsByStats(Stat playerStats)
+        {
+            foreach (Event e in filteredEvents)
+            {
+                /*foreach (Requirement requirement in e.requirements.timings)
+                {
+
+                }*/
+            }
+        }
+
+ 
+    }
 }
 
