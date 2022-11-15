@@ -52,40 +52,6 @@ namespace Spiel_Des_Lebens
             filteredEvents.Add(event2);
 
             //Events in filteredEvents kopieren
-
-            foreach (Event e in filteredEvents)
-            {
-                
-                foreach(Timing t in e.requirements.timings)
-                {
-                    //remove Timing elements which do not have the current phsae
-                    for(int i = 0; i < t.path.Count; i++)
-                    {
-                        //if()
-                    }
-                    foreach(string pathnumber in t.path)
-                    {
-                        //int pathnumberInt = string
-                        //if (Convert.ToInt32(pathnumber) != (int)edupath.getPhase().getCurrentPhase()) ;
-                        {
-
-                        }
-                    }
-                }
-                bool phaseExists = false;
-                for (int i = 0; i < 3; i++)
-                {
-                    //if (e.requirements.timings[(int).GetPath(), (int)edupath.getProfession(), i] == edupath.getPhase().getCurrentPhase())
-                    /*if (e.requirements.timings[1, 0, i] == 2)
-                    {
-                        phaseExists = true;
-                    }*/
-                }
-                if (phaseExists == false)
-                {
-                    filteredEvents.Remove(e);
-                }
-            }
         }
     }
 }

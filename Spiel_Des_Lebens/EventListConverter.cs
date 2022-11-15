@@ -9,7 +9,9 @@ namespace Spiel_Des_Lebens
     {
         private string id;
 
-        public EventListConverter(List<loadEvent> eList)
+        public EventListConverter() { }
+
+        public List<Event> convertLoadEventToEvent(List<loadEvent> eList)
         {
             List<Event> events = new List<Event>();
             foreach (loadEvent e in eList)
@@ -32,6 +34,7 @@ namespace Spiel_Des_Lebens
                 events.Add(new Event(e.id, e.title, e.text, e.priority, r, oList));
 
             }
+            return events;
         }
 
         private Timing evaluateTimings(loadTiming lTiming)
