@@ -529,7 +529,7 @@
       "E-010":{
          "title":"1. Arbeitstag",
          "text":"Du kommst auf in dem Unternhemen an, weißt aber nicht wo dein Abeitsplatz ist",
-         "info":"hat auswirkungen auf den Erfolg",
+         "info":"betrifft Erfolg, Mentale Gesundheit, Motivation",
          "priority": 1,
          "requirements": {
            "timings": [
@@ -594,12 +594,12 @@
                {
                  "path": [ "0" ],
                  "profession": [ "*" ],
-                 "phase": [ "1" ]
+                 "phase": [ "!%2" ]
                },
                {
                  "path": [ "1" ],
                  "profession": [ "*" ],
-                 "phase": [ "2" ]
+                 "phase": [ "%2","!0" ]
                }
              ],
              "stats_min":{
@@ -651,12 +651,12 @@
                {
                  "path": [ "0" ],
                  "profession": [ "*" ],
-                 "phase": [ "1" ]
+                 "phase": [ "!%2" ]
                },
                {
                  "path": [ "1" ],
                  "profession": [ "*" ],
-                 "phase": [ "2" ]
+                 "phase": [ "%2","!0" ]
                }
              ],
              "stats_min":{
@@ -712,6 +712,200 @@
                      "motivation":-5,
                      "money":0,
                      "success":0
+                  }
+               }
+            }
+            
+         ]
+      } 
+   },
+   {
+      "E-013":{
+          "title": "Überstunden",
+          "text": "Du hast Feierabend aber deine Tagesaufgabe noch nicht erledigt.",
+          "info": "soziales Event",
+          "requirments":{
+            "timings": [
+               {
+                 "path": [ "0" ],
+                 "profession": [ "*" ],
+                 "phase": [ "!%2" ]
+               },
+               {
+                 "path": [ "1" ],
+                 "profession": [ "*" ],
+                 "phase": [ "%2","!0" ]
+               }
+             ],
+             "stats_min":{
+                "mentalHealth":0,
+                "motivation":0,
+                "money":0,
+                "success":0
+             },
+             "stats_max":{
+                "mentalHealth": 100,
+                "motivation": 100,
+                "money": 100,
+                "success": 100
+             }
+          },
+          "options":[
+            {
+               "E-013_1": {
+                  "title": "Überstunden machen",
+                  "text": "du bleibst 2 h länger auf der Arbeit um die Aufgabe fertigzustellen. Dein Chef ist Glücklich.",
+                  "stats": {
+                     "mentalHealth": 5,
+                     "motivation": 5,
+                     "money": 0,
+                     "success": 5
+                  }
+               },
+               "E-013_2":{
+                  "title":"morgen fertigstellen",
+                  "text":"du machst Feierabend und erledigt die Aufgabe am nächsten Tag.",
+                  "stats":{
+                     "mentalHealth":0,
+                     "motivation":-5,
+                     "money":0,
+                     "success":-5
+                  }
+               }
+            }
+            
+         ]
+      } 
+   },
+   {
+      "E-014":{
+          "title": "Deadline",
+          "text": "das Projekt an dem du aktuell arbeitest wird nicht rechtzeitig fertig werden.",
+          "info": "hat auswirkungen auf den Erfolg",
+          "requirments":{
+            "timings": [
+               {
+                 "path": [ "0" ],
+                 "profession": [ "1","2","3","4" ],
+                 "phase": [ "!%2" ]
+               },
+               {
+                 "path": [ "1" ],
+                 "profession": [ "1","2","3","4" ],
+                 "phase": [ "%2","!0" ]
+               }
+             ],
+             "stats_min":{
+                "mentalHealth":0,
+                "motivation":0,
+                "money":0,
+                "success":0
+             },
+             "stats_max":{
+                "mentalHealth": 100,
+                "motivation": 100,
+                "money": 100,
+                "success": 100
+             }
+          },
+          "options":[
+            {
+               "E-014_1": {
+                  "title": "dem Chef bescheid geben",
+                  "text": "du gibst deinem chef bescheid, dass du ds Projekt nicht rechzeitig fertig bekommen wirst. Und ihr findet gemeinsam eine Lösung.",
+                  "stats": {
+                     "mentalHealth": 10,
+                     "motivation": 5,
+                     "money": 0,
+                     "success": 10
+                  }
+               },
+               "E-014_2":{
+                  "title":"Überstunden schieben",
+                  "text":"du machst sehr viele Überstunden, das Projekt wird rechtzeitig fertig, die Qualität ist gerade so ausreichend und du bist überarbeitet. ",
+                  "stats": {
+                     "mentalHealth": 10,
+                     "motivation": 5,
+                     "money": 0,
+                     "success": 10
+                  }
+               }
+            }
+            
+         ]
+      } 
+   },
+   {
+      "E-015":{
+          "title": "alzheimer Patient",
+          "text": "du hast eine alte Frau zu versorgen. Sie frägt dich jetzt schon zum 7. Mal wie alt du bist.",
+          "info": "hat auswirkungen auf den Erfolg",
+          "requirments":{
+            "timings": [
+               {
+                 "path": [ "0" ],
+                 "profession": [ "0" ],
+                 "phase": [ "!%2" ]
+               },
+               {
+                 "path": [ "1" ],
+                 "profession": [ "0" ],
+                 "phase": [ "%2","!0" ]
+               }
+             ],
+             "stats_min":{
+                "mentalHealth":0,
+                "motivation":0,
+                "money":0,
+                "success":0
+             },
+             "stats_max":{
+                "mentalHealth": 100,
+                "motivation": 100,
+                "money": 100,
+                "success": 100
+             }
+          },
+          "options":[
+            {
+               "E-015_1": {
+                  "title": "die Geduld verlieren",
+                  "text": "du verlierts die Gedult und schreist die Patientin an. Deine Chefin ist nicht begeistert und mahnt dich ab.",
+                  "stats": {
+                     "mentalHealth": -10,
+                     "motivation": -10,
+                     "money": 0,
+                     "success": -40
+                  }
+               },
+               "E-015_2":{
+                  "title":"du antwortest",
+                  "text":"du lässt dir dein genervt sein nicht anmerken und Antwortest. Deine Chefin ist von deiner Geduld beeindruckt.",
+                  "stats": {
+                     "mentalHealth": 10,
+                     "motivation": 10,
+                     "money": 0,
+                     "success": 15
+                  }
+               },
+               "E-015_3":{
+                  "title":"du ignorioerst die Frage",
+                  "text":"du lässt dir dein genervt sein nicht anmerken und Antwortest. Deine Chefin ist von deiner Geduld beeindruckt.",
+                  "stats": {
+                     "mentalHealth": 10,
+                     "motivation": 10,
+                     "money": 0,
+                     "success": 15
+                  }
+               },
+               "E-015_4":{
+                  "title":"auf die Wiederholung hinweisen",
+                  "text":"du sagst ihr, dass sie diese Frage nun zum 100. Mal stellt und sich dein Alter in den letzten paar Minuten nicht geändert hat. Die Patientin fängt an zu weinen.",
+                  "stats": {
+                     "mentalHealth": -10,
+                     "motivation": -5,
+                     "money": 0,
+                     "success": -5
                   }
                }
             }
