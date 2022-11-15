@@ -30,5 +30,29 @@ namespace Spiel_Des_Lebens
             return stats;
         }
 
+        public bool isGreater(Stat stats1)
+        {
+            for(int i=0; i < stats.Count; i++)
+            {
+                if (!stats[i].isGreater(stats1.stats[i]))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public bool isSmaller(Stat stats1)
+        {
+            for (int i = 0; i < stats.Count; i++)
+            {
+                if (!stats[i].isSmaller(stats1.stats[i]))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
     }
 }

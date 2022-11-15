@@ -32,6 +32,24 @@ namespace Spiel_Des_Lebens
             }
         }
 
+        public bool isGreater(StatParameter statParamenter)
+        {
+            if(this.value > statParamenter.value)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool isSmaller(StatParameter statParamenter)
+        {
+            if (this.value < statParamenter.value)
+            {
+                return true;
+            }
+            return false;
+        }
+
 
 
 

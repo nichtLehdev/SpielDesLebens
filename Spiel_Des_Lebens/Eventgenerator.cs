@@ -12,6 +12,8 @@ namespace Spiel_Des_Lebens
 
         public List<loadEvent> events = new List<loadEvent>();
         private List<Event> filteredEvents = new List<Event>();
+        private List<Event> filteredEvents2 = new List<Event>();  // ist nicht schön, aber provisorisch und kommt wieder 
+
 
         public Eventgenerator(EducationPath edupath)
         {
@@ -54,8 +56,9 @@ namespace Spiel_Des_Lebens
         }
         #endregion
 
-        public Event nextEvent(Stat stats, Phase phase)
+        public Event nextEvent(Stat stats)
         {
+            filterEventsByStats(stats);
             // returns next Event
             return null; // delete!!!!!
         }
@@ -78,17 +81,20 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private void filterEventsByStats(Stat playerStats)
+        private void filterEventsByStats(Stat playerStats)  //filters by Stats, change later, so that it removes false elements
         {
             foreach (Event e in filteredEvents)
             {
-                /*foreach (Requirement requirement in e.requirements.timings)
+                /*foreach(Requirement requirement in e)
                 {
-
+                    if (requirement.reqStatMin.isSmaller(playerStats) 
+                        && requirement.reqStatMax.isGreater(playerStats))
+                    {
+                        filteredEvents2.Add(e);
+                    }
                 }*/
             }
         }
-
  
     }
 }
