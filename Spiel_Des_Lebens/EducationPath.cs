@@ -37,7 +37,7 @@ namespace Spiel_Des_Lebens
             return profession;
         }
 
-        public Data.Path GetPath()
+        public Data.Path getPath()
         {
             return this.path;
         }

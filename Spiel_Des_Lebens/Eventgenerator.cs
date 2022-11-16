@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Windows.Forms.Design;
 
 namespace Spiel_Des_Lebens
 {
@@ -10,29 +11,38 @@ namespace Spiel_Des_Lebens
     {
         private EducationPath edupath;
 
-        public List<loadEvent> events = new List<loadEvent>();
-        private List<Event> filteredEvents = new List<Event>();
-        private List<Event> filteredEvents2 = new List<Event>();  // ist nicht schön, aber provisorisch und kommt wieder 
+        private List<Event> filteredEventsPathProfession = new List<Event>();
+        private List<Event> filteredEventsPhase = new List<Event>();
 
 
         public Eventgenerator(EducationPath edupath)
         {
             this.edupath = edupath;
-            this.events = loadEvents();
+            filterEventsByPathProfession(loadEvents());
             //this.events = filterEvents(events, path, profession);
             // TODO cleanup constructur, change player reset
             // TODO JSON: add priority to events
             // TODO relative path to json file in package
         }
 
-        #region json
-        private List<loadEvent> loadEvents()
+        public Event nextEvent(Stat stats)
         {
-            // saves all events from JSON to events in List (filter by path and profession), leaves phases
-            string filename = "..//..//..//data//events.json";
+            filterEventsByStats(stats);
+            // returns next Event
+            return null; // delete!!!!!
+        }
+
+        #region load career events
+        private List<Event> loadEvents()
+        {
+            // saves all events from JSON to events in list saves all loadEvents as events
+        string filename = "..//..//..//data//events.json";
             if (File.Exists(filename))
             {
-                return JsonConvert.DeserializeObject<List<loadEvent>>(File.ReadAllText(filename));
+                List<loadEvent> loadEvents = JsonConvert.DeserializeObject<List<loadEvent>>(File.ReadAllText(filename));
+                
+                EventListConverter eConverter = new EventListConverter();
+                return eConverter.convertLoadEventToEvent(loadEvents);
             }
             else
             {
@@ -41,60 +51,81 @@ namespace Spiel_Des_Lebens
 
         }
 
-        public List<loadEvent> filterEvents(List<loadEvent> events, Data.Path path, Data.Profession profession)
-        {
-            List<loadEvent> filterEvents = new List<loadEvent>();
-            foreach (loadEvent e in events)
-            {
-                //if (Array.IndexOf(e.requirements.path, (int)path) != -1 && Array.IndexOf(e.requirements.profession, (int)profession) != -1)
-                /*if (e.requirements.path.Contains((int)path) && e.requirements.profession.Contains((int)profession))
-                {
-                    filterEvents.Add(e);
-                }*/
-            }
-            return filterEvents;
-        }
-        #endregion
 
-        public Event nextEvent(Stat stats)
+        // (filter by path and profession), leaves phases
+        private void filterEventsByPathProfession(List<Event> events)
         {
-            filterEventsByPhase();
-            filterEventsByStats(stats);
-
-            return null;
-            
-        }
-
-        private void filterEventsByPhase()
-        {
-            //filters out all Events, which are valid for the current Phase and puts these in filteredList
-            foreach (Event e in filteredEvents)
+            foreach (Event e in events)
             {
                 foreach (Timing t in e.requirements.timings)
                 {
-                    foreach (int phasenumber in t.phase)
+                    if(containsPathProfession(t))
                     {
-                        if(phasenumber == edupath.getPhase().getCurrentPhase())
-                        {
-                                filteredEvents.Add(e); //change to remove
-                        }
+                        filteredEventsPathProfession.Add(e);
+                        break;
                     }
                 }
             }
         }
 
-        private void filterEventsByStats(Stat playerStats)  //filters by Stats, change later, so that it removes false elements
+        private bool containsPathProfession(Timing t)
         {
-            foreach (Event e in filteredEvents)
+            for (int i = 0; i < t.path.Count; i++)
             {
-                    if (e.requirements.reqStatMin.isSmaller(playerStats) 
-                        && e.requirements.reqStatMax.isGreater(playerStats))
+                if (t.path[i] == (int)edupath.getPath() && t.profession[i] == (int)edupath.getProfession())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        #endregion
+
+        #region filter
+        private void filterEventsByPhase()
+        {
+            //filters out all Events, which are valid for the current Phase and puts these in filteredList
+            foreach (Event e in filteredEventsPathProfession)
+            {
+                foreach (Timing t in e.requirements.timings)
+                {
+                    if (containsPhase(t))
                     {
-                        filteredEvents2.Add(e); //change to remove 
+                        filteredEventsPhase.Add(e);
+                        break;
                     }
+                }
             }
         }
 
+        private bool containsPhase(Timing t)
+        {
+            for (int i = 0; i < t.phase.Count; i++)
+            {
+                if (t.phase[i] == edupath.getPhase().getCurrentPhase())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private void filterEventsByStats(Stat playerStats)  //filters by Stats, change later, so that it removes false elements
+        {
+            /*foreach (Event e in filteredEvents)
+            {
+                /*foreach(Requirement requirement in e)
+                {
+                    if (requirement.reqStatMin.isSmaller(playerStats) 
+                        && requirement.reqStatMax.isGreater(playerStats))
+                    {
+                        filteredEvents2.Add(e);
+                    }
+            return fEvents;
+            }*/
+        #endregion
+
+        }
  
     }
 }
