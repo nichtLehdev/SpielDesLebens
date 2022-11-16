@@ -58,9 +58,11 @@ namespace Spiel_Des_Lebens
 
         public Event nextEvent(Stat stats)
         {
+            filterEventsByPhase();
             filterEventsByStats(stats);
-            // returns next Event
-            return null; // delete!!!!!
+
+            return null;
+            
         }
 
         private void filterEventsByPhase()
@@ -70,11 +72,11 @@ namespace Spiel_Des_Lebens
             {
                 foreach (Timing t in e.requirements.timings)
                 {
-                    foreach (string phasenumber in t.phase)
+                    foreach (int phasenumber in t.phase)
                     {
-                        if(Convert.ToInt32(phasenumber) == (int)edupath.getPhase().getCurrentPhase())
+                        if(phasenumber == edupath.getPhase().getCurrentPhase())
                         {
-                                filteredEvents.Add(e);
+                                filteredEvents.Add(e); //change to remove
                         }
                     }
                 }
@@ -85,16 +87,14 @@ namespace Spiel_Des_Lebens
         {
             foreach (Event e in filteredEvents)
             {
-                /*foreach(Requirement requirement in e)
-                {
-                    if (requirement.reqStatMin.isSmaller(playerStats) 
-                        && requirement.reqStatMax.isGreater(playerStats))
+                    if (e.requirements.reqStatMin.isSmaller(playerStats) 
+                        && e.requirements.reqStatMax.isGreater(playerStats))
                     {
-                        filteredEvents2.Add(e);
+                        filteredEvents2.Add(e); //change to remove 
                     }
-                }*/
             }
         }
+
  
     }
 }
