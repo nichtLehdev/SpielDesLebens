@@ -27,7 +27,9 @@ namespace Spiel_Des_Lebens
 
         public Event nextEvent(Stat stats)
         {
-            filterEventsByStats(stats);
+            filterEventsByPhase();
+            List<Event> events = filterEventsByStats(stats);
+
             // returns next Event
             return null; // delete!!!!!
         }
@@ -59,25 +61,13 @@ namespace Spiel_Des_Lebens
             {
                 foreach (Timing t in e.requirements.timings)
                 {
-                    if(containsPathProfession(t))
+                    if (t.path.Contains((int)edupath.getPath()) && t.profession.Contains((int)edupath.getProfession()))
                     {
                         filteredEventsPathProfession.Add(e);
                         break;
                     }
                 }
             }
-        }
-
-        private bool containsPathProfession(Timing t)
-        {
-            for (int i = 0; i < t.path.Count; i++)
-            {
-                if (t.path[i] == (int)edupath.getPath() && t.profession[i] == (int)edupath.getProfession())
-                {
-                    return true;
-                }
-            }
-            return false;
         }
         #endregion
 
@@ -89,7 +79,7 @@ namespace Spiel_Des_Lebens
             {
                 foreach (Timing t in e.requirements.timings)
                 {
-                    if (containsPhase(t))
+                    if (t.phase.Contains(edupath.getPhase().getCurrentPhase()))
                     {
                         filteredEventsPhase.Add(e);
                         break;
@@ -98,34 +88,22 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private bool containsPhase(Timing t)
+        private List<Event> filterEventsByStats(Stat playerStats)  //filters by Stats, change later, so that it removes false elements
         {
-            for (int i = 0; i < t.phase.Count; i++)
+            List<Event> fEvents = new List<Event>();
+            foreach (Event e in filteredEventsPhase)
             {
-                if (t.phase[i] == edupath.getPhase().getCurrentPhase())
+                if (e.requirements.reqStatMin.isSmaller(playerStats)
+                    && e.requirements.reqStatMax.isGreater(playerStats))
                 {
-                    return true;
+                    fEvents.Add(e);
                 }
             }
-            return false;
-        }
-
-        private void filterEventsByStats(Stat playerStats)  //filters by Stats, change later, so that it removes false elements
-        {
-            /*foreach (Event e in filteredEvents)
-            {
-                /*foreach(Requirement requirement in e)
-                {
-                    if (requirement.reqStatMin.isSmaller(playerStats) 
-                        && requirement.reqStatMax.isGreater(playerStats))
-                    {
-                        filteredEvents2.Add(e);
-                    }
             return fEvents;
-            }*/
+        }
         #endregion
 
-        }
+    }
  
     }
 }
