@@ -24,14 +24,64 @@ namespace Spiel_Des_Lebens
             // TODO JSON: add priority to events
             // TODO relative path to json file in package
         }
+        //Prio: for loop frägt Randomized Num ab, if(Randomized>50...) ist prio 1, dann 50 halbieren und nochmal
+        //Bei Priority = 0 Event wird direkt das erste Event der events Liste ausgeführt und gelöscht mittels Id aus filteredEventsPathProfession
 
         public Event nextEvent(Stat stats)
         {
             filterEventsByPhase();
             List<Event> events = filterEventsByStats(stats);
+            for(int i = 0; i < events.Count;)
+            {
+                if(events[i].priority == 0)
+                {
+                    deleteEventByID(events[i].id);
+                    return events[i];
+                }
+            }
+            while (true)
+            {
+                Random random = new Random();
+                double chance = random.NextDouble() * (100 - 0);
+                double percentage = 50;
+                int prio = 0;
+                while (percentage < chance)
+                {
+                    prio++;
+                    percentage /= 2;
+                }
+                List<Event> prioEvents = new List<Event>();
+                for (int i = 0; i < events.Count; i++)
+                {
+                    if (events[i].priority == prio)
+                    {
+                        prioEvents.Add(events[i]);
+                    }
+                }
+                if (prioEvents.Count != 0)
+                {
+                    int eventIndex = random.Next(prioEvents.Count);
+                    filteredEventsPathProfession[findEventIndexByID(prioEvents[eventIndex].id)].priority *= 2;
+                    return prioEvents[eventIndex];
+                }
+            }
+        }
 
-            // returns next Event
-            return null; // delete!!!!!
+        private int findEventIndexByID(string id)
+        {
+            for (int i = 0; i < filteredEventsPathProfession.Count;)
+            {
+                if (filteredEventsPathProfession[i].id == id)
+                {
+                    return i;
+                }
+            }
+            throw new Error("Event ID could not be found: " + id);
+        }
+
+        private void deleteEventByID(string id)
+        {           
+            filteredEventsPathProfession.RemoveAt(findEventIndexByID(id));
         }
 
         #region load career events
@@ -103,8 +153,6 @@ namespace Spiel_Des_Lebens
         }
         #endregion
 
-    }
- 
     }
 }
 
