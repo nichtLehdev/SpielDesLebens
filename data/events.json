@@ -641,7 +641,7 @@
             {
                "path": ["1"],
                "profession": ["*"],
-               "phase": ["*%2", "*!0"]
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -720,7 +720,7 @@
             {
                "path": ["1"],
                "profession": ["*"],
-               "phase": ["*%2", "*!0"]
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -777,7 +777,7 @@
             {
                "path": ["1"],
                "profession": ["1", "2", "3", "4"],
-               "phase": ["*%2", "*!0"]
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -834,7 +834,7 @@
             {
                "path": ["1"],
                "profession": ["0"],
-               "phase": ["*%2", "*!0"]
+               "phase": ["(*%2)!0"]
             }
          ],
          "stats_min": {
@@ -909,7 +909,7 @@
             {
                "path": ["0"],
                "profession": ["*"],
-               "phase": ["*%2", "*!2", "*!0"]
+               "phase": ["(*%2)!2"] 
             }
          ],
          "stats_min": {
@@ -961,7 +961,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*"] 
             }
          ],
          "stats_min": {
@@ -1203,7 +1203,7 @@
             {
                "path": ["*"],
                "profession": ["3"],
-               "phase": ["*", "!0"]
+               "phase": ["*!0"]
             }
          ],
          "stats_min": {

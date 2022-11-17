@@ -148,7 +148,7 @@ namespace Spiel_Des_Lebens
                     int length = getGreatestPhaseCount(paths);
                     int[] newPhases = new int[length];
 
-                    for (int i = 0; i < length; i++)
+                    for (int i = 1; i < length + 1; i++)
                     {
                         newPhases[i] = i;
                     }
@@ -157,7 +157,6 @@ namespace Spiel_Des_Lebens
                 }
                 else
                 {
-                    List<int> phaseList = new List<int>();
                     foreach (string phase in phases)
                     {
                         evaluatePhase(phase, paths);
@@ -195,23 +194,23 @@ namespace Spiel_Des_Lebens
                 //% before !
                 if (moduloIdx < exMarkIdx)
                 {
-                    possibleValues = moduloCheck(phase, paths);
-                    exeptedValues = exMarkCheck(phase, paths);
+                    possibleValues.AddRange(moduloCheck(phase, paths));
+                    exeptedValues.AddRange(exMarkCheck(phase, paths));
                 }
                 else
                 {
-                    possibleValues = fillList(getGreatestPhaseCount(paths));
-                    exeptedValues = exMarkCheck(phase, paths);
+                    possibleValues.AddRange(fillList(getGreatestPhaseCount(paths)));
+                    exeptedValues.AddRange(exMarkCheck(phase, paths));
                 }
             }
             else if (exMarkIdx != -1 && moduloIdx == -1)
             {
-                possibleValues = fillList(getGreatestPhaseCount(paths));
-                exeptedValues = exMarkCheck(phase, paths);
+                possibleValues.AddRange(fillList(getGreatestPhaseCount(paths)));
+                exeptedValues.AddRange(exMarkCheck(phase, paths));
             }
             else if (moduloIdx != -1 && exMarkIdx == -1)
             {
-                possibleValues = moduloCheck(phase, paths);
+                possibleValues.AddRange(moduloCheck(phase, paths));
             }
             else
             {
