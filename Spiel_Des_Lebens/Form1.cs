@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Spiel_Des_Lebens
@@ -9,10 +8,45 @@ namespace Spiel_Des_Lebens
         public Form1()
         {
             InitializeComponent();
-            //var test = new Eventgenerator(Data.Path.Training, Data.Profession.Business);
-            //var test = new Eventgenerator(Data.Path.Training, Data.Profession.Business);
-            //List<loadEvent> test3 = test.events;
-            //textBox1.Text = test3[0].id;
+            var carrer = new EducationPath(Data.Path.Training, Data.Profession.Social);
+            var eventgenerator = new Eventgenerator(carrer);
+            var test = eventgenerator.loadEvents();
+            string output = "";
+            foreach (var item in test)
+            {
+                output += item.id + "\r\n";
+                foreach (var timings in item.requirements.timings)
+                {
+                    output += "path: ";
+                    foreach (var path in timings.path)
+                    {
+                        output += path;
+                        output += " ";
+                    }
+                    output += "\r\n";
+
+                    output += "profession: ";
+                    foreach (var profession in timings.profession)
+                    {
+                        output += profession;
+                        output += " ";
+                    }
+                    output += "\r\n";
+
+                    output += "phase: ";
+                    foreach (var phase in timings.phase)
+                    {
+                        output += phase;
+                        output += " ";
+                    }
+                    output += "\r\n";
+                    output += "\r\n";
+
+
+                }
+            }
+
+            textBox1.Text = output;
 
         }
 

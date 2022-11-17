@@ -584,7 +584,7 @@
             {
                "path": ["1"],
                "profession": ["*"],
-               "phase": ["*%2", "*!0"]
+               "phase": ["(*%2)"]
             }
          ],
          "stats_min": {
@@ -1187,6 +1187,289 @@
                "mentalHealth": -30,
                "motivation": 0,
                "money": 15,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-021",
+      "title": "Error",
+      "text": "Dein Code läuft nicht und du hast eine Fehlermeldung. Was tust du?",
+      "info": "hat Auswirkungen auf Erfolg",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["3"],
+               "phase": ["*", "!0"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 60
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-021_1",
+            "title": "Googeln",
+            "text": "Du suchst im Internet nach dem Fehler und findest die Lösung nach 20 Minuten.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 10,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-021_2",
+            "title": "im Code suchen",
+            "text": "Du durchsuchst den Code nach dem Fehler und grübelst 90 Minuten darüber nach bis du schließlich doch googelst.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": -10,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-030",
+      "title": "neuer Mitschüler",
+      "text": "Im Klassenzimmer triffst du auf einen neuen Mitschüler, er sieht unsicher aus.",
+      "info": "potentieller sozialer Kontakt",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["(*%2)!2", "(*%2)!4"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-030_1",
+            "title": "Ansprechen",
+            "text": "du stellst dich dem neuen Mitschüler/Kommilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde bildet eine Lerngruppe",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 30,
+               "money": 0,
+               "success": 15
+            }
+         },
+         {
+            "id": "E-030_2",
+            "title": "Ignorieren",
+            "text": "du gehst an dem neuen Mitschüler vorbei ohne ihn zu beachten und setzt dich auf deinen Platz",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-031",
+      "title": "Einladung zur Party",
+      "text": "Du wirst zu einer Party eingeladen",
+      "info": "potentieller sozialer Kontakt, Absturz Gefahr",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 60,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 70
+         }
+      },
+      "options": [
+         {
+            "id": "E-031_1",
+            "title": "zusagen",
+            "text": "du kommst zur Party und hast eine tolle Zeit aber der Morgen danach bringt das böse Erwachen",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 0,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-031_2",
+            "title": "absagen",
+            "text": "du sagst ab und verbringst das Wochenende mit lernen",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": -10,
+               "money": 0,
+               "success": 20
+            }
+         }
+      ]
+   },
+
+   {
+      "id": "E-032",
+      "title": "Lerngruppe oder Nachhilfe",
+      "text": "Du möchtest beim Lernen besser vorankommen",
+      "info": "Steigerung des Erfolgs",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 60
+         }
+      },
+      "options": [
+         {
+            "id": "E-032_1",
+            "title": "Lerngruppe",
+            "text": "du trittst einer Lerngruppe bei",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 15,
+               "money": 0,
+               "success": 20
+            }
+         },
+         {
+            "id": "E-032_2",
+            "title": "professionelle Nachhilfe",
+            "text": "du nimmst dir Nachhilfe und zahlst Monatlich Geld",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": -20,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-033",
+      "title": "Mobbing  eines Freundes",
+      "text": "einer deiner Freunde wird gemobbt",
+      "info": "verletzungsgefahr",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-033_1",
+            "title": "verteidigen",
+            "text": "du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-033_2",
+            "title": "weglaufen",
+            "text": "du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-033_3",
+            "title": "mitmachen",
+            "text": "du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
+            "stats": {
+               "mentalHealth": -30,
+               "motivation": 0,
+               "money": 15,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-033_4",
+            "title": "zuschauen und danach helfen",
+            "text": "du schaust zu wie dein Freund fertig gemacht wird und bietest ihm danach ein Pflaster für seine Wunde an.",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": 0,
+               "money": 0,
                "success": 0
             }
          }

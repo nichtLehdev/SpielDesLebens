@@ -83,7 +83,8 @@ namespace Spiel_Des_Lebens
         }
 
         #region load career events
-        private List<Event> loadEvents()
+        // public temp. for testing
+        public List<Event> loadEvents()
         {
             // saves all events from JSON to events in list saves all loadEvents as events
             string filename = "..//..//..//data//events.json";
