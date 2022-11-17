@@ -240,7 +240,7 @@ namespace Spiel_Des_Lebens
         private List<int> fillList(int length)
         {
             List<int> list = new List<int>();
-            for (int i = 0; i < length; i++)
+            for (int i = 1; i < length + 1; i++)
             {
                 list.Add(i);
             }
@@ -329,7 +329,7 @@ namespace Spiel_Des_Lebens
                 {
                     int length = getGreatestPhaseCount(paths);
                     int moduloValue = Int32.Parse(phase[moduloIdx + 1].ToString());
-                    for (int i = 0; i < length; i++)
+                    for (int i = 1; i < length + 1; i++)
                     {
                         if (i % moduloValue == 0)
                         {
