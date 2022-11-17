@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Windows.Forms.Design;
 
 namespace Spiel_Des_Lebens
 {
@@ -31,9 +29,9 @@ namespace Spiel_Des_Lebens
         {
             filterEventsByPhase();
             List<Event> events = filterEventsByStats(stats);
-            for(int i = 0; i < events.Count;)
+            for (int i = 0; i < events.Count;)
             {
-                if(events[i].priority == 0)
+                if (events[i].priority == 0)
                 {
                     deleteEventByID(events[i].id);
                     return events[i];
@@ -80,7 +78,7 @@ namespace Spiel_Des_Lebens
         }
 
         private void deleteEventByID(string id)
-        {           
+        {
             filteredEventsPathProfession.RemoveAt(findEventIndexByID(id));
         }
 
@@ -88,11 +86,11 @@ namespace Spiel_Des_Lebens
         private List<Event> loadEvents()
         {
             // saves all events from JSON to events in list saves all loadEvents as events
-        string filename = "..//..//..//data//events.json";
+            string filename = "..//..//..//data//events.json";
             if (File.Exists(filename))
             {
                 List<loadEvent> loadEvents = JsonConvert.DeserializeObject<List<loadEvent>>(File.ReadAllText(filename));
-                
+
                 EventListConverter eConverter = new EventListConverter();
                 return eConverter.convertLoadEventToEvent(loadEvents);
             }

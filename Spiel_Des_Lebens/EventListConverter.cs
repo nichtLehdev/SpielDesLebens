@@ -228,7 +228,7 @@ namespace Spiel_Des_Lebens
             List<int> comparedList = new List<int>();
             foreach (int pVal in pList)
             {
-                if(eList.IndexOf(pVal) == -1)
+                if (eList.IndexOf(pVal) == -1)
                 {
                     comparedList.Add(pVal);
                 }
