@@ -225,17 +225,15 @@ namespace Spiel_Des_Lebens
 
         private List<int> compareLists(List<int> pList, List<int> eList)
         {
+            List<int> comparedList = new List<int>();
             foreach (int pVal in pList)
             {
-                foreach (int eVal in eList)
+                if(eList.IndexOf(pVal) == -1)
                 {
-                    if (pVal == eVal)
-                    {
-                        pList.Remove(eVal);
-                    }
+                    comparedList.Add(pVal);
                 }
             }
-            return pList;
+            return comparedList;
         }
 
 
