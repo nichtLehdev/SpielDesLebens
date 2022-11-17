@@ -146,14 +146,8 @@ namespace Spiel_Des_Lebens
                 if (phases.IndexOf("*") != -1)
                 {
                     int length = getGreatestPhaseCount(paths);
-                    int[] newPhases = new int[length];
-
-                    for (int i = 1; i < length + 1; i++)
-                    {
-                        newPhases[i] = i;
-                    }
-
-                    return newPhases;
+                    return fillList(length).ToArray();
+                   
                 }
                 else
                 {
