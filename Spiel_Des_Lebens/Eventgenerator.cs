@@ -24,12 +24,64 @@ namespace Spiel_Des_Lebens
             // TODO JSON: add priority to events
             // TODO relative path to json file in package
         }
+        //Prio: for loop frägt Randomized Num ab, if(Randomized>50...) ist prio 1, dann 50 halbieren und nochmal
+        //Bei Priority = 0 Event wird direkt das erste Event der events Liste ausgeführt und gelöscht mittels Id aus filteredEventsPathProfession
 
         public Event nextEvent(Stat stats)
         {
-            filterEventsByStats(stats);
-            // returns next Event
-            return null; // delete!!!!!
+            filterEventsByPhase();
+            List<Event> events = filterEventsByStats(stats);
+            for(int i = 0; i < events.Count;)
+            {
+                if(events[i].priority == 0)
+                {
+                    deleteEventByID(events[i].id);
+                    return events[i];
+                }
+            }
+            while (true)
+            {
+                Random random = new Random();
+                double chance = random.NextDouble() * (100 - 0);
+                double percentage = 50;
+                int prio = 0;
+                while (percentage < chance)
+                {
+                    prio++;
+                    percentage /= 2;
+                }
+                List<Event> prioEvents = new List<Event>();
+                for (int i = 0; i < events.Count; i++)
+                {
+                    if (events[i].priority == prio)
+                    {
+                        prioEvents.Add(events[i]);
+                    }
+                }
+                if (prioEvents.Count != 0)
+                {
+                    int eventIndex = random.Next(prioEvents.Count);
+                    filteredEventsPathProfession[findEventIndexByID(prioEvents[eventIndex].id)].priority *= 2;
+                    return prioEvents[eventIndex];
+                }
+            }
+        }
+
+        private int findEventIndexByID(string id)
+        {
+            for (int i = 0; i < filteredEventsPathProfession.Count;)
+            {
+                if (filteredEventsPathProfession[i].id == id)
+                {
+                    return i;
+                }
+            }
+            throw new Error("Event ID could not be found: " + id);
+        }
+
+        private void deleteEventByID(string id)
+        {           
+            filteredEventsPathProfession.RemoveAt(findEventIndexByID(id));
         }
 
         #region load career events
@@ -59,25 +111,13 @@ namespace Spiel_Des_Lebens
             {
                 foreach (Timing t in e.requirements.timings)
                 {
-                    if(containsPathProfession(t))
+                    if (t.path.Contains((int)edupath.getPath()) && t.profession.Contains((int)edupath.getProfession()))
                     {
                         filteredEventsPathProfession.Add(e);
                         break;
                     }
                 }
             }
-        }
-
-        private bool containsPathProfession(Timing t)
-        {
-            for (int i = 0; i < t.path.Count; i++)
-            {
-                if (t.path[i] == (int)edupath.getPath() && t.profession[i] == (int)edupath.getProfession())
-                {
-                    return true;
-                }
-            }
-            return false;
         }
         #endregion
 
@@ -89,7 +129,7 @@ namespace Spiel_Des_Lebens
             {
                 foreach (Timing t in e.requirements.timings)
                 {
-                    if (containsPhase(t))
+                    if (t.phase.Contains(edupath.getPhase().getCurrentPhase()))
                     {
                         filteredEventsPhase.Add(e);
                         break;
@@ -98,24 +138,12 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private bool containsPhase(Timing t)
-        {
-            for (int i = 0; i < t.phase.Count; i++)
-            {
-                if (t.phase[i] == edupath.getPhase().getCurrentPhase())
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
         private List<Event> filterEventsByStats(Stat playerStats)  //filters by Stats, change later, so that it removes false elements
         {
             List<Event> fEvents = new List<Event>();
             foreach (Event e in filteredEventsPhase)
             {
-                if (e.requirements.reqStatMin.isSmaller(playerStats) 
+                if (e.requirements.reqStatMin.isSmaller(playerStats)
                     && e.requirements.reqStatMax.isGreater(playerStats))
                 {
                     fEvents.Add(e);
