@@ -7,6 +7,8 @@ namespace Spiel_Des_Lebens
     internal class EventListConverter
     {
         private string id;
+        private List<int> possibleValues;
+        private List<int> exeptedValues;
 
         public EventListConverter() { }
 
@@ -136,6 +138,9 @@ namespace Spiel_Des_Lebens
         }
         private int[] evaluatePhaseList(List<string> phases, int[] paths)
         {
+            possibleValues = new List<int>();
+            exeptedValues = new List<int>();
+
             if (phases != null)
             {
                 if (phases.IndexOf("*") != -1)
@@ -155,22 +160,17 @@ namespace Spiel_Des_Lebens
                     List<int> phaseList = new List<int>();
                     foreach (string phase in phases)
                     {
-                        foreach (int p in evaluatePhase(phase, paths))
-                        {
-                            phaseList.Add(p);
-                        }
+                        evaluatePhase(phase, paths);
                     }
-                    return phaseList.ToArray();
+                    return compareLists(possibleValues, exeptedValues).ToArray();
                 }
             }
             throw new Error("No Phases given (Event_ID: " + this.id + ")");
         }
 
-        private int[] evaluatePhase(string phase, int[] paths)
+        private void evaluatePhase(string phase, int[] paths)
         {
             int bracketCount = 0;
-            List<int> possiblePhases = new List<int>();
-            List<int> exeptedPhases = new List<int>();
 
             for (int i = 0; i < phase.Length; i++)
             {
@@ -195,32 +195,32 @@ namespace Spiel_Des_Lebens
                 //% before !
                 if (moduloIdx < exMarkIdx)
                 {
-                    possiblePhases = moduloCheck(phase, paths);
-                    exeptedPhases = exMarkCheck(phase, paths);
+                    possibleValues = moduloCheck(phase, paths);
+                    exeptedValues = exMarkCheck(phase, paths);
                 }
                 else
                 {
-                    possiblePhases = fillList(getGreatestPhaseCount(paths));
-                    exeptedPhases = exMarkCheck(phase, paths);
+                    possibleValues = fillList(getGreatestPhaseCount(paths));
+                    exeptedValues = exMarkCheck(phase, paths);
                 }
             }
             else if (exMarkIdx != -1 && moduloIdx == -1)
             {
-                possiblePhases = fillList(getGreatestPhaseCount(paths));
-                exeptedPhases = exMarkCheck(phase, paths);
+                possibleValues = fillList(getGreatestPhaseCount(paths));
+                exeptedValues = exMarkCheck(phase, paths);
             }
             else if (moduloIdx != -1 && exMarkIdx == -1)
             {
-                possiblePhases = moduloCheck(phase, paths);
+                possibleValues = moduloCheck(phase, paths);
             }
             else
             {
                 if (Int32.TryParse(phase, out int res))
                 {
-                    possiblePhases.Add(Int32.Parse(phase));
+                    possibleValues.Add(Int32.Parse(phase));
                 }
             }
-            return compareLists(possiblePhases, exeptedPhases).ToArray();
+            
         }
 
         private List<int> compareLists(List<int> pList, List<int> eList)
