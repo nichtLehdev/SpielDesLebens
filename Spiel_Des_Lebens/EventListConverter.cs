@@ -311,7 +311,7 @@ namespace Spiel_Des_Lebens
             if (moduloIdx != -1)
             {
 
-                if (phase[moduloIdx + 1] != 2 && phase[moduloIdx + 1] != 3)
+                if (phase[moduloIdx + 1] != '2' && phase[moduloIdx + 1] != '3')
                 {
                     throw new Error("Wrong char after % in phase '" + phase + "' (only 2,3 possible) (Event_ID: " + this.id + ")");
                 }
