@@ -352,7 +352,7 @@ namespace Spiel_Des_Lebens
             int greatestCount = 0;
             foreach (int path in paths)
             {
-                int count = (int)((3 * 12) / (6/ Data.phaseL[path]));
+                int count = (int)((3 * 12) / Data.phaseL[path]);
                 if (count > greatestCount) greatestCount = count;
             }
             return greatestCount;
