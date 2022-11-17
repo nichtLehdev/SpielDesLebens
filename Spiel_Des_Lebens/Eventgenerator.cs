@@ -11,6 +11,7 @@ namespace Spiel_Des_Lebens
 
         private List<Event> filteredEventsPathProfession = new List<Event>();
         private List<Event> filteredEventsPhase = new List<Event>();
+        private int seed = DateTime.Now.Millisecond;
 
 
         public Eventgenerator(EducationPath edupath)
@@ -39,7 +40,7 @@ namespace Spiel_Des_Lebens
             }
             while (true)
             {
-                Random random = new Random();
+                Random random = new Random(seed);
                 double chance = random.NextDouble() * (100 - 0);
                 double percentage = 50;
                 int prio = 0;
