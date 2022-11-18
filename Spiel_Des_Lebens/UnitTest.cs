@@ -1,7 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Spiel_Des_Lebens
 {

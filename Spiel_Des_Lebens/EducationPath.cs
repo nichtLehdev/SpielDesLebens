@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Spiel_Des_Lebens
+﻿namespace Spiel_Des_Lebens
 {
     internal class EducationPath
     {
@@ -27,7 +25,7 @@ namespace Spiel_Des_Lebens
             this.profession = profession;
         }
 
-        public String getProfessionName()
+        public string getProfessionName()
         {
             return Data.career[(int)path, (int)profession];
         }

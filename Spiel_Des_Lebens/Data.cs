@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Spiel_Des_Lebens
+﻿namespace Spiel_Des_Lebens
 {
     internal static class Data
     {
@@ -10,7 +8,7 @@ namespace Spiel_Des_Lebens
         public enum StatType { mentalHealth, money, motivation, success };
 
 
-        public static String[,] career = new string[3, 5] { { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" },
+        public static string[,] career = new string[3, 5] { { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" },
                                                      {"Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen"},
                                                      {"Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium"} };
         public static int[] phaseL = new int[3] { 2, 3, 3 };
