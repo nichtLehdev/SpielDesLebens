@@ -1,13 +1,13 @@
 namespace Spiel_Des_Lebens
 {
-   public class Player
+   internal class Player
    {
-      private Image avatar;
+      private bool avatar;
       private int age;
       private string name;
       private Stat playerStat;
       private Eventgenerator eventgenerator;
-      public EducationPath eduPath;
+      private EducationPath eduPath;
 
       public Player(bool avatar, int age, string name, Data.Path path, Data.Profession profession)
       {

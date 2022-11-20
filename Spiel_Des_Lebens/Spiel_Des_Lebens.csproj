@@ -122,9 +122,6 @@
     <Compile Include="StatParameter.cs" />
     <Compile Include="loadTiming.cs" />
     <Compile Include="UnitTest.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
