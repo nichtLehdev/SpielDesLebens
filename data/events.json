@@ -514,7 +514,7 @@
    {
       "id": "E-010",
       "title": "1. Arbeitstag",
-      "text": "Du kommst auf in dem Unternehmen an, weißt aber nicht wo dein Arbeitsplatz ist",
+      "text": "Du kommst in dem Unternehmen an, weißt aber nicht wo dein Arbeitsplatz ist",
       "info": "betrifft Erfolg, Mentale Gesundheit, Motivation",
       "priority": 1,
       "requirements": {
@@ -909,7 +909,7 @@
             {
                "path": ["0"],
                "profession": ["*"],
-               "phase": ["(*%2)!2"] 
+               "phase": ["(*%2)!2"]
             }
          ],
          "stats_min": {
@@ -961,7 +961,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"] 
+               "phase": ["*"]
             }
          ],
          "stats_min": {
