@@ -94,5 +94,10 @@ namespace Spiel_Des_Lebens
             OpenChildForm(new Forms.FormFreetime(), sender);
 
         }
+
+        private void panelActiveChild_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
