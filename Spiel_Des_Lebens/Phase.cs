@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Spiel_Des_Lebens
+﻿namespace Spiel_Des_Lebens
 {
     internal class Phase
     {
         private int actionPoints;
+        private int currentPhase;
         public Phase(int length)
         {
             actionPoints = length * 7;
@@ -22,6 +17,16 @@ namespace Spiel_Des_Lebens
         public void subtractPoints(int points)
         {
             actionPoints -= points;
+        }
+
+        public void nextPhase()
+        {
+            currentPhase++;
+        }
+
+        public int getCurrentPhase()
+        {
+            return currentPhase;
         }
     }
 }

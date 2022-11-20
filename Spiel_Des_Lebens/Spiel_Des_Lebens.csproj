@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0"
+  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -33,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,7 +75,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="UI_Interface.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="EducationPath.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="EventListConverter.cs" />
+    <Compile Include="Eventgenerator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +96,12 @@
     <Compile Include="Path_DualStudy.cs" />
     <Compile Include="Path_Study.cs" />
     <Compile Include="Path_Training.cs" />
+    <Compile Include="loadOption.cs" />
+    <Compile Include="loadStat.cs" />
+    <Compile Include="loadRequirement.cs" />
+    <Compile Include="loadEvent.cs" />
+    <Compile Include="Timing.cs" />
+    <Compile Include="Option.cs" />
     <Compile Include="Phase.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
@@ -106,11 +122,24 @@
     <EmbeddedResource Include="Forms\FormSchool.resx">
       <DependentUpon>FormSchool.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Requirement.cs" />
+    <Compile Include="Stat.cs" />
+    <Compile Include="StatParameter.cs" />
+    <Compile Include="loadTiming.cs" />
+    <Compile Include="UnitTest.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

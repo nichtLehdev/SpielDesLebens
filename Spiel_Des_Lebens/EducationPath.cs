@@ -1,33 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Spiel_Des_Lebens
+﻿namespace Spiel_Des_Lebens
 {
     internal class EducationPath
     {
-        public int phaseLength;
-        protected Direction direction;
-        protected Phase phase;
+        private int phaseLength;
+        private Data.Path path;
+        private Data.Profession profession;
+        private Phase phase;
 
-        public enum Direction { Social = 1 , Business = 2, Science = 3, Stem = 4, Civil = 5 };
-
-        public virtual void main(Direction direction)
+        public EducationPath(Data.Path path, Data.Profession profession)
         {
-            setDirection(direction);
+            setPath(path);
+            setProfession(profession);
+            phaseLength = Data.phaseL[(int)path];
             phase = new Phase(phaseLength);
         }
 
-        public void setDirection( Direction direction )
+        private void setPath(Data.Path path)
         {
-            this.direction = direction;
+            this.path = path;
         }
 
-        public virtual String getProfession()
+        private void setProfession(Data.Profession profession)
         {
-            return "ERROR - EducationPath.getProfession() failed !!!";
+            this.profession = profession;
+        }
+
+        public string getProfessionName()
+        {
+            return Data.career[(int)path, (int)profession];
+        }
+
+        public Data.Profession getProfession()
+        {
+            return profession;
+        }
+
+        public Data.Path getPath()
+        {
+            return this.path;
         }
 
         public Phase getPhase()
