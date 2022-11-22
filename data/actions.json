@@ -1,0 +1,34 @@
+[
+   {
+      "id": "A-",
+      "title": "",
+      "info": "",
+      "result": {
+         "id": "A-_1",
+         "title": "",
+         "text": "",
+         "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-",
+      "title": "",
+      "info": "",
+      "result": {
+         "id": "A-_1",
+         "title": "",
+         "text": "",
+         "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         }
+      }
+   }
+]
