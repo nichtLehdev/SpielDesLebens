@@ -1,12 +1,12 @@
 namespace Spiel_Des_Lebens
 {
-   internal class Player
-   {
+    internal class Player
+    {
       private bool avatar;
       private int age;
       private string name;
       private Stat playerStat;
-      private Eventgenerator eventgenerator;
+      public Eventgenerator eventgenerator;
       private EducationPath eduPath;
 
       public Player(bool avatar, int age, string name, Data.Path path, Data.Profession profession)
@@ -42,5 +42,25 @@ namespace Spiel_Des_Lebens
       {
 
       }
-   }
+
+        public void setPlayerStat(Stat stats)
+        {
+            this.playerStat = stats;
+        }
+
+        public Stat getPlayerStat()
+        {
+            return this.playerStat;
+        }
+
+        public void setEducationPath(EducationPath eduPath)
+        {
+            this.eduPath = eduPath;
+        }
+
+        public EducationPath getEducationPath()
+        {
+            return this.eduPath;
+        }
+    }
 }

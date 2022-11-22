@@ -21,5 +21,15 @@ namespace Spiel_Des_Lebens
             this.requirements = req;
             this.options = options;
         }
+
+        public List<Option> getOption()
+        {
+            return this.options;
+        }
+
+        public void setOption()
+        {
+            this.options = new List<Option>();
+        }
     }
 }

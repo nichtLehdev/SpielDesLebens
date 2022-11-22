@@ -17,6 +17,7 @@ namespace Spiel_Des_Lebens
         private string abschluss;
         private Image avatar;
         private Form activeForm;
+        private UI_Interface ui_interface;
         public Form2(string name, string alter, Image avatar, string abschluss)
         {
             InitializeComponent();
@@ -29,6 +30,7 @@ namespace Spiel_Des_Lebens
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            UI_Interface uI_Interface = new UI_Interface(true, 5, "ds", 0, 0);
             lblPlayerAge.Text = Convert.ToString(this.alter);
             lblPlayerName.Text = this.name;
             btnAktion_Click(sender, e);

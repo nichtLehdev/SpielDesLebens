@@ -16,12 +16,15 @@ namespace Spiel_Des_Lebens
 
         public Event getNextEvent()
         {
-            return null;
+            //TODO
+            Stat stat = new Stat(50, 50, 50, 50);
+            //player.eventgenerator.nextEvent(stat);
+            return player.eventgenerator.nextEvent(stat);
         }
 
         public void receiveEventOption(Option option)
         {
-
+            //return getNextEvent()
         }
 
         public int[] getNextActionList()
@@ -36,18 +39,64 @@ namespace Spiel_Des_Lebens
 
         public int getActionPoints()
         {
-            return 0;
+            return player.getEducationPath().getPhase().getCurrentPhase();
         }
 
         public int getCurrentPhase()
         {
+            return player.getEducationPath().getPhase().getCurrentPhase();
+        }
+
+        public int getPlayerMoney()
+        {
+
+            foreach(StatParameter statsp in player.getPlayerStat().getStats())
+            {
+                if (statsp.getName().Equals("money"))
+                {
+                    return statsp.getValue();
+                }
+            }
             return 0;
         }
 
-        public Stat getPlayerStat()
+        public int getPlayerMentalHealth()
         {
-            return null;
+            foreach (StatParameter statsp in player.getPlayerStat().getStats())
+            {
+                if (statsp.getName().Equals("mentalHealth"))
+                {
+                    return statsp.getValue();
+                }
+            }
+            return 0;
         }
+
+        public int getPlayerMotivation()
+        {
+            foreach (StatParameter statsp in player.getPlayerStat().getStats())
+            {
+                if (statsp.getName().Equals("motivation"))
+                {
+                    return statsp.getValue();
+                }
+            }
+            return 0;
+        }
+
+        public int getPlayerSuccess()
+        {
+            foreach (StatParameter statsp in player.getPlayerStat().getStats())
+            {
+                if (statsp.getName().Equals("success"))
+                {
+                    return statsp.getValue();
+                }
+            }
+            return 0;
+        }
+
+
 
 
 

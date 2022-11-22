@@ -73,13 +73,13 @@ namespace Spiel_Des_Lebens
         }
 
         private Image avatar;
-        private void change_Avatar(object sender, EventArgs e)
+        private void changeAvatar(object sender, EventArgs e)
         {
             PictureBox img = (PictureBox)sender;
             avatar = img.Image;
         }
 
-        private void laden_test(object sender, EventArgs e)
+        private void load_test(object sender, EventArgs e)
         {
             //für das Bsp werden sie vorher gestzt
             Form2 t = new Form2("Mia Münstermann", "20", pictureBox1.Image, "Testaschlusss");
@@ -89,11 +89,10 @@ namespace Spiel_Des_Lebens
 
 
         private string abschluss;
-        private void change_Abschluss(object sender, EventArgs e)
+        private void changePath(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             abschluss = btn.Text;
-            Console.WriteLine(abschluss);
         }
 
         private void neues_Spiel_open(Object sender, EventArgs e)

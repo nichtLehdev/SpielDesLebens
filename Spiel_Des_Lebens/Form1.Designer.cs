@@ -109,7 +109,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.change_Avatar);
+            this.pictureBox1.Click += new System.EventHandler(this.changeAvatar);
             // 
             // pictureBox2
             // 
@@ -118,7 +118,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(100, 124);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.change_Avatar);
+            this.pictureBox2.Click += new System.EventHandler(this.changeAvatar);
             // 
             // pictureBox3
             // 
@@ -129,7 +129,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(100, 124);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.change_Avatar);
+            this.pictureBox3.Click += new System.EventHandler(this.changeAvatar);
             // 
             // pictureBox4
             // 
@@ -138,7 +138,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(100, 124);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.change_Avatar);
+            this.pictureBox4.Click += new System.EventHandler(this.changeAvatar);
             // 
             // pictureBox5
             // 
@@ -147,7 +147,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(100, 124);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.change_Avatar);
+            this.pictureBox5.Click += new System.EventHandler(this.changeAvatar);
             // 
             // pictureBox6
             // 
@@ -156,7 +156,7 @@
             this.pictureBox6.Size = new System.Drawing.Size(100, 124);
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.change_Avatar);
+            this.pictureBox6.Click += new System.EventHandler(this.changeAvatar);
             // 
             // button1
             // 
@@ -166,7 +166,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Hauptschulaschluss";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.change_Abschluss);
+            this.button1.Click += new System.EventHandler(this.changePath);
             // 
             // button2
             // 
@@ -176,7 +176,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Realschulabschluss";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.change_Abschluss);
+            this.button2.Click += new System.EventHandler(this.changePath);
             this.button2.Validating += new System.ComponentModel.CancelEventHandler(this.button2_Validating);
             // 
             // button3
@@ -187,7 +187,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "Fachhochschulreife";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.change_Abschluss);
+            this.button3.Click += new System.EventHandler(this.changePath);
             // 
             // button4
             // 
@@ -197,7 +197,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "allg. Hochschulreife";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.change_Abschluss);
+            this.button4.Click += new System.EventHandler(this.changePath);
             // 
             // lable_1
             // 

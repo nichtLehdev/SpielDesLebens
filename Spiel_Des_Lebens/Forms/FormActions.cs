@@ -12,6 +12,7 @@ namespace Spiel_Des_Lebens.Forms
 {
     public partial class FormActions : Form
     {
+        private UI_Interface ui_interface = new UI_Interface(true, 4, "Fritz", 0, 0);
         public FormActions()
         {
             InitializeComponent();
@@ -30,6 +31,13 @@ namespace Spiel_Des_Lebens.Forms
             this.Tag = school;
             school.BringToFront();
             school.Show();
+        }
+
+        private void btnLoadEvent_Click(object sender, EventArgs e)
+        {
+            //ui_interface.getNextEvent();
+            Console.WriteLine("sdfg");
+            Console.WriteLine("Chosen Event: " + ui_interface.getNextEvent().ToString());
         }
     }
 }
