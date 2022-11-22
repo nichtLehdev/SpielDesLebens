@@ -38,6 +38,7 @@ namespace Spiel_Des_Lebens
                     return events[i];
                 }
             }
+            // change to something which terminates defnitly
             while (true)
             {
                 Random random = new Random(seed);
