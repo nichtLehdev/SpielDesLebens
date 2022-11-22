@@ -1325,7 +1325,7 @@
       ]
    },
    {
-      "id": "E-022",
+      "id": "E-023",
       "title": "Klausuren Phase",
       "text": "Die Prüfungen stehen an, du kommst in einem Fach nicht gut voran.",
       "info": "hat Auswirkungen auf Erfolg",
@@ -1358,7 +1358,7 @@
       },
       "options": [
          {
-            "id": "E-022_1",
+            "id": "E-023_1",
             "title": "aufgeben",
             "text": "Du gibst auf und nimmst eine schlechte Note in Kauf.",
             "stats": {
@@ -1369,7 +1369,7 @@
             }
          },
          {
-            "id": "E-022_2",
+            "id": "E-023_2",
             "title": "weiter lernen",
             "text": "Du versuchst weiterhin dir den Stoff einzuverleiben. Kommst aber nur langsam voran.",
             "stats": {
@@ -1380,7 +1380,7 @@
             }
          },
          {
-            "id": "E-022_3",
+            "id": "E-023_3",
             "title": "Ein Mitschüler um Hilfe bitten.",
             "text": "Du holst dir Hilfe beim lernen.",
             "stats": {
@@ -1391,7 +1391,7 @@
             }
          },
          {
-            "id": "E-022_4",
+            "id": "E-023_4",
             "title": "weinen",
             "text": "Du fängst an zu weinen.",
             "stats": {
@@ -1405,7 +1405,7 @@
       ]
    },
    {
-      "id": "E-022",
+      "id": "E-024",
       "title": "Semesterferien",
       "text": "Du hast eine Woche Urlaub geplant, was machst du?",
       "info": "hat Auswirkungen auf Mental Health",
@@ -1433,7 +1433,7 @@
       },
       "options": [
          {
-            "id": "E-022_1",
+            "id": "E-024_1",
             "title": "Urlaub mit Komilitonen",
             "text": "Du fährst mit einer kleine Gruppe aus deinem Kurs auf eine Tropische Insel.",
             "stats": {
@@ -1444,7 +1444,7 @@
             }
          },
          {
-            "id": "E-022_2",
+            "id": "E-024_2",
             "title": "Lernurlaub",
             "text": "Du lernst in deinem Urlaub.",
             "stats": {
@@ -1455,7 +1455,7 @@
             }
          },
          {
-            "id": "E-022_3",
+            "id": "E-024_3",
             "title": "Urlaub mit einer Freundin / einem Freund",
             "text": "Du machst gemeinsam mit einem deiner Freunde Urlaub in Norwegen.",
             "stats": {
@@ -1466,7 +1466,7 @@
             }
          },
          {
-            "id": "E-022_4",
+            "id": "E-024_4",
             "title": "alleine Urlaub machen",
             "text": "Du fährst alleine an die Ostsee.",
             "stats": {
