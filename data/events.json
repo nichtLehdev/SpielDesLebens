@@ -1245,6 +1245,241 @@
       ]
    },
    {
+      "id": "E-022",
+      "title": "Klausuren Phase",
+      "text": "Die Prüfungen stehen an, du wirst zu einer Geburtstagsfeier eingeladen.",
+      "info": "hat Auswirkungen auf Erfolg",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0","2"],
+               "profession": ["*"],
+               "phase": ["*%2"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*!%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 60
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-022_1",
+            "title": "zusagen & abschießen",
+            "text": "Du bringst ein Geschenk mit und genießt die Party in vollen Zügen. Am nächsten Tag dröhnt dir der Schädel.",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 10,
+               "money": -15,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-022_2",
+            "title": "absagen",
+            "text": "Du gehst nicht auf die Party und lernst das ganze Wochenende.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": -10,
+               "money": 0,
+               "success": 25
+            }
+         },
+         {
+            "id": "E-022_3",
+            "title": "für 3h auf die Party",
+            "text": "Du gehst 3 Stunden auf die Party, überreichst ein Geschenk und trinkst nur 2 Bier.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 10,
+               "money": -10,
+               "success": 20
+            }
+         },
+         {
+            "id": "E-022_4",
+            "title": "zusagen & kein Alkohol trinken",
+            "text": "Du gehst auf die Party, überreichst ein Geschenk und lernst am nächsten Tag.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 0,
+               "money": -10,
+               "success": 15
+            }
+         }
+         
+      ]
+   },
+   {
+      "id": "E-022",
+      "title": "Klausuren Phase",
+      "text": "Die Prüfungen stehen an, du kommst in einem Fach nicht gut voran.",
+      "info": "hat Auswirkungen auf Erfolg",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0","2"],
+               "profession": ["*"],
+               "phase": ["*%2"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*!%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 60
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-022_1",
+            "title": "aufgeben",
+            "text": "Du gibst auf und nimmst eine schlechte Note in Kauf.",
+            "stats": {
+               "mentalHealth": -15,
+               "motivation": -10,
+               "money": 0,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-022_2",
+            "title": "weiter lernen",
+            "text": "Du versuchst weiterhin dir den Stoff einzuverleiben. Kommst aber nur langsam voran.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": 5,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-022_3",
+            "title": "Ein Mitschüler um Hilfe bitten.",
+            "text": "Du holst dir Hilfe beim lernen.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 15,
+               "money": 0,
+               "success": 20
+            }
+         },
+         {
+            "id": "E-022_4",
+            "title": "weinen",
+            "text": "Du fängst an zu weinen.",
+            "stats": {
+               "mentalHealth": -15,
+               "motivation": -20,
+               "money": 0,
+               "success": -15
+            }
+         }
+         
+      ]
+   },
+   {
+      "id": "E-022",
+      "title": "Semesterferien",
+      "text": "Du hast eine Woche Urlaub geplant, was machst du?",
+      "info": "hat Auswirkungen auf Mental Health",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*!%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 60
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-022_1",
+            "title": "Urlaub mit Komilitonen",
+            "text": "Du fährst mit einer kleine Gruppe aus deinem Kurs auf eine Tropische Insel.",
+            "stats": {
+               "mentalHealth": 50,
+               "motivation": 30,
+               "money": -200,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-022_2",
+            "title": "Lernurlaub",
+            "text": "Du lernst in deinem Urlaub.",
+            "stats": {
+               "mentalHealth": -20,
+               "motivation": 20,
+               "money": 0,
+               "success": 50
+            }
+         },
+         {
+            "id": "E-022_3",
+            "title": "Urlaub mit einer Freundin / einem Freund",
+            "text": "Du machst gemeinsam mit einem deiner Freunde Urlaub in Norwegen.",
+            "stats": {
+               "mentalHealth": 40,
+               "motivation": 20,
+               "money": -300,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-022_4",
+            "title": "alleine Urlaub machen",
+            "text": "Du fährst alleine an die Ostsee.",
+            "stats": {
+               "mentalHealth": 25,
+               "motivation": 15,
+               "money": -400,
+               "success": 0
+            }
+         }
+      ]
+   },
+   
+   {
       "id": "E-030",
       "title": "neuer Mitschüler",
       "text": "Im Klassenzimmer triffst du auf einen neuen Mitschüler, er sieht unsicher aus.",
