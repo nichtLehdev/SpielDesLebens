@@ -1421,7 +1421,7 @@
          "stats_min": {
             "mentalHealth": 0,
             "motivation": 0,
-            "money": 0,
+            "money": 500,
             "success": 60
          },
          "stats_max": {
@@ -1473,6 +1473,58 @@
                "mentalHealth": 25,
                "motivation": 15,
                "money": -400,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-025",
+      "title": "Semesterferien",
+      "text": "Du planst eine Freizeitaktivität für die Semesterferien",
+      "info": "hat Auswirkungen auf Mental Health",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*!%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 90,
+            "success": 60
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": 100,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-025_1",
+            "title": "Metal Konzert",
+            "text": "Du gehst auf ein Konzert der Band Helloween. Die Stimmung ist super, das Bier schmeckt gut und du hast sehr viel Spaß im Moshpit.",
+            "stats": {
+               "mentalHealth": 40,
+               "motivation": 30,
+               "money": -90,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-025_2",
+            "title": "Pop Konzert",
+            "text": "Du gehst auf ein Pop Konzert. Die Stimmung ist ausgelassen, der Alkohol schmeckt schrecklich und du erhälst eine Bierdusche. ",
+            "stats": {
+               "mentalHealth": 20,
+               "motivation": 15,
+               "money": -70,
                "success": 0
             }
          }
