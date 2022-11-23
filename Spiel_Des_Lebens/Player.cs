@@ -53,6 +53,11 @@ namespace Spiel_Des_Lebens
             return this.playerStat;
         }
 
+        public void changePlayerStat(Stat stats)
+        {
+            this.playerStat.change(stats);
+        }
+
         public void setEducationPath(EducationPath eduPath)
         {
             this.eduPath = eduPath;

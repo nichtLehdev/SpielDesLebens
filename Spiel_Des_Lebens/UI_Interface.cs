@@ -9,23 +9,44 @@ namespace Spiel_Des_Lebens
     internal class UI_Interface
     {
         private Player player;
+        private Event currentEvent;
         public UI_Interface(bool avatar, int age, string name, Data.Path path, Data.Profession profession)
         {
             player = new Player(avatar, age, name, path, profession);
         }
 
-        public Event getNextEvent()
+        public void nextEvent()
         {
-            //TODO
-            Stat stat = new Stat(50, 50, 50, 50);
-            //player.eventgenerator.nextEvent(stat);
-            return player.eventgenerator.nextEvent(stat);
+            currentEvent = player.eventgenerator.nextEvent(player.getPlayerStat());
         }
 
-        public void receiveEventOption(Option option)
+        #region getEventString
+        public String getEventOptionTitle(int option)
         {
-            //return getNextEvent()
+            return currentEvent.getOption()[option].getTitle();
         }
+
+        public String getEventOptionText(int option)
+        {
+            //Player stats verändern
+            return currentEvent.getOption()[option].getText();
+        }
+
+        public String getEventText()
+        {
+            return currentEvent.text;
+        }
+
+        public String getEventTitle()
+        {
+            return currentEvent.title;
+        }
+
+        public String getEventInfo()
+        {
+            return currentEvent.info;
+        }
+        #endregion
 
         public int[] getNextActionList()
         {
@@ -39,7 +60,7 @@ namespace Spiel_Des_Lebens
 
         public int getActionPoints()
         {
-            return player.getEducationPath().getPhase().getCurrentPhase();
+            return player.getEducationPath().getPhase().getActionPoints();
         }
 
         public int getCurrentPhase()
@@ -47,6 +68,8 @@ namespace Spiel_Des_Lebens
             return player.getEducationPath().getPhase().getCurrentPhase();
         }
 
+
+        #region getPlayerStats
         public int getPlayerMoney()
         {
 
@@ -95,9 +118,15 @@ namespace Spiel_Des_Lebens
             }
             return 0;
         }
+        #endregion
 
 
-
+        public void changePlayerStats(int option)
+        {
+            Stat currentOptionStats = currentEvent.options[option].getStats();
+            this.player.changePlayerStat(currentOptionStats);
+        }
+        
 
 
     }

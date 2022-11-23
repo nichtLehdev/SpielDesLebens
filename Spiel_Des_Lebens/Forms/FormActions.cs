@@ -37,7 +37,7 @@ namespace Spiel_Des_Lebens.Forms
         {
             //ui_interface.getNextEvent();
             Console.WriteLine("sdfg");
-            Console.WriteLine("Chosen Event: " + ui_interface.getNextEvent().ToString());
+            //Console.WriteLine("Chosen Event: " + ui_interface.getNextEvent().ToString());
         }
     }
 }

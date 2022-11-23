@@ -322,7 +322,7 @@
             this.button_mini_1.Text = "Laden";
             this.button_mini_1.UseVisualStyleBackColor = true;
             this.button_mini_1.Visible = false;
-            this.button_mini_1.Click += new System.EventHandler(this.laden_test);
+            this.button_mini_1.Click += new System.EventHandler(this.load_test);
             // 
             // textBox_mini_field
             // 

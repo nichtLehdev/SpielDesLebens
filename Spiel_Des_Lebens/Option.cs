@@ -14,5 +14,22 @@
             this.text = text;
             this.optionStat = optionStat;
         }
+
+        public string getTitle()
+        {
+            return this.title;
+        }
+
+        public string getText()
+        {
+            return this.text;
+        }
+
+        public Stat getStats()
+        {
+            return this.optionStat;
+        }
+
+
     }
 }

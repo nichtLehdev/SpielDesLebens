@@ -30,7 +30,7 @@ namespace Spiel_Des_Lebens
         
         private void Form1_Load(object sender, EventArgs e)
         {
-            UI_Interface uI_Interface = new UI_Interface(true, 5, "ds", 0, 0);
+            UI_Interface uI_Interface = new UI_Interface(true, 18, "Fritz", Data.Path.Training, Data.Profession.Business);
             lblPlayerAge.Text = Convert.ToString(this.alter);
             lblPlayerName.Text = this.name;
             btnAktion_Click(sender, e);
@@ -99,6 +99,12 @@ namespace Spiel_Des_Lebens
 
         private void panelActiveChild_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void btnLoadEvent_Click(object sender, EventArgs e)
+        {
+            //txtEvent = ui_interface.nextEvent().ToString();
 
         }
     }
