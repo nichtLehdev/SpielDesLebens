@@ -31,7 +31,7 @@ namespace Spiel_Des_Lebens
         {
             filterEventsByPhase();
             List<Event> events = filterEventsByStats(stats);
-            for (int i = 0; i < events.Count;)
+            for (int i = 0; i < events.Count; i++)
             {
                 if (events[i].priority == 0)
                 {
@@ -41,11 +41,12 @@ namespace Spiel_Des_Lebens
             }
             while (true)
             {
+                seed = DateTime.Now.Millisecond;
                 Random random = new Random(seed);
                 double chance = random.NextDouble() * (100 - 0);
                 double percentage = 50;
-                int prio = 0;
-                while (percentage < chance)
+                int prio = 1;
+                while (percentage >= chance)
                 {
                     prio++;
                     percentage /= 2;
@@ -69,7 +70,7 @@ namespace Spiel_Des_Lebens
 
         private int findEventIndexByID(string id)
         {
-            for (int i = 0; i < filteredEventsPathProfession.Count;)
+            for (int i = 0; i < filteredEventsPathProfession.Count; i++)
             {
                 if (filteredEventsPathProfession[i].id == id)
                 {
