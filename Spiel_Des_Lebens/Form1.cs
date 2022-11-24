@@ -48,11 +48,22 @@ namespace Spiel_Des_Lebens
 
             textBox1.Text = output;
 
-        }
+            output = "";
+            var actionTest = new ActionGenerator().loadActions();
+            foreach(Action action in actionTest)
+            {
+                output += action.id + "\r\n";
+                Option o = action.result;
+                output += o.id + "\r\n";
+                foreach(StatParameter item in o.optionStat.getStats())
+                {
+                    output += item.getName() + ": " + item.getValue() + "\r\n";
+                }
+            }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+            textBox2.Text = output;
 
         }
+        
     }
 }

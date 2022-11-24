@@ -2,10 +2,10 @@
 {
     internal class Option
     {
-        private string id;
-        private string title;
-        private string text;
-        private Stat optionStat;
+        public string id;
+        public string title;
+        public string text;
+        public Stat optionStat;
 
         public Option(string id, string title, string text, Stat optionStat)
         {

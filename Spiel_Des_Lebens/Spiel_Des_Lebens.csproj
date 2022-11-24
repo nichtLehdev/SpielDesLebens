@@ -50,6 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Action.cs" />
+    <Compile Include="ActionGenerator.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="EducationPath.cs" />
     <Compile Include="Error.cs" />
