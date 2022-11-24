@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Spiel_Des_Lebens
 {
@@ -23,13 +24,27 @@ namespace Spiel_Des_Lebens
         #region getEventString
         public String getEventOptionTitle(int option)
         {
-            return currentEvent.getOption()[option].getTitle();
+            if (currentEvent.getOption()[option] == null)
+            {
+                return "";
+            }
+            else
+            {
+                return currentEvent.getOption()[option].getTitle();
+            }
         }
 
         public String getEventOptionText(int option)
         {
-            //Player stats verändern
-            return currentEvent.getOption()[option].getText();
+            if (currentEvent.getOption()[option] == null)
+            {
+                return "";
+            }
+            else
+            {
+                //Player stats verändern
+                return currentEvent.getOption()[option].getText();
+            }
         }
 
         public String getEventText()
@@ -44,7 +59,14 @@ namespace Spiel_Des_Lebens
 
         public String getEventInfo()
         {
-            return currentEvent.info;
+            if (currentEvent.info == null)
+            {
+                return "";
+            }
+            else
+            {
+                return currentEvent.info;
+            }
         }
         #endregion
 
