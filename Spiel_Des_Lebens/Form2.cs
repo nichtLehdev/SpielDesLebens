@@ -81,6 +81,7 @@ namespace Spiel_Des_Lebens
             info_panel.Visible = true;
             info_close_button.Visible = true;
             info_text.Visible = true;
+            all_options_disable();
         }
 
         private void info_close(object sender, EventArgs e)
@@ -88,6 +89,7 @@ namespace Spiel_Des_Lebens
             info_panel.Visible = false;
             info_close_button.Visible = false;
             info_text.Visible = false;
+            all_options_enable();
         }
 
         private void btnAktion_Click(object sender, EventArgs e)
@@ -164,6 +166,22 @@ namespace Spiel_Des_Lebens
             }
 
         }
+        private void all_options_disable()
+        {
+            option_1_btn.Enabled = false;
+            option_2_btn.Enabled = false;
+            option_3_btn.Enabled = false;
+            option_4_btn.Enabled = false;
+            option_5_btn.Enabled = false;
+        }
+        private void all_options_enable()
+        {
+            option_1_btn.Enabled = true;
+            option_2_btn.Enabled = true;
+            option_3_btn.Enabled = true;
+            option_4_btn.Enabled = true;
+            option_5_btn.Enabled = true;
+        }
         private void all_options_hide()
         {
             option_1_btn.Visible = false;
@@ -178,7 +196,6 @@ namespace Spiel_Des_Lebens
             show_info_btn.Visible = false;
             close_opt_end_txt.Visible = true;
             all_options_hide();
-
         }
 
         private void option_3_click(object sender, EventArgs e)
