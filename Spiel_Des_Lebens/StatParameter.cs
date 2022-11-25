@@ -28,7 +28,7 @@ namespace Spiel_Des_Lebens
         {
             if (toBeClampedTop)
             {
-                if (value < 100) { value = 100; }
+                if (value > 100) { value = 100; }
             }
         }
 
