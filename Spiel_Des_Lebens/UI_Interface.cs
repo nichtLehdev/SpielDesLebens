@@ -83,6 +83,13 @@ namespace Spiel_Des_Lebens
         {
             return player.getEducationPath().getPhase().getCurrentPhase();
         }
+
+        public int getMaxPhase()
+        {
+            return player.getEducationPath().getPhaseLength();
+        }
+
+
         #region getPlayerStats
         public int getPlayerMoney()
         {
