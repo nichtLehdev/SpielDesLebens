@@ -126,6 +126,7 @@ namespace Spiel_Des_Lebens
         #region filter
         private void filterEventsByPhase()
         {
+            filteredEventsPhase.Clear();
             //filters out all Events, which are valid for the current Phase and puts these in filteredList
             foreach (Event e in filteredEventsPathProfession)
             {
