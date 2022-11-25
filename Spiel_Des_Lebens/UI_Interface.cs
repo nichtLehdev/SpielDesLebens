@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Spiel_Des_Lebens
 {
@@ -14,29 +15,41 @@ namespace Spiel_Des_Lebens
         {
             player = new Player(avatar, age, name, path, profession);
         }
-
         public void nextEvent()
         {
             currentEvent = player.eventgenerator.nextEvent(player.getPlayerStat());
         }
-
         #region getEventString
         public String getEventOptionTitle(int option)
         {
-            return currentEvent.getOption()[option].getTitle();
+            if (option >= currentEvent.getOption().Count)
+            {
+                return "";
+            }
+            else
+            {
+                return currentEvent.getOption()[option].getTitle();
+            }
         }
 
         public String getEventOptionText(int option)
         {
             //Player stats verändern
-            return currentEvent.getOption()[option].getText();
+            if (option >= currentEvent.getOption().Count)
+            {
+                return "";
+            }
+            else
+            {
+                //Player stats verändern
+                return currentEvent.getOption()[option].getText();
+            }
         }
 
         public String getEventText()
         {
             return currentEvent.text;
         }
-
         public String getEventTitle()
         {
             return currentEvent.title;
@@ -45,6 +58,14 @@ namespace Spiel_Des_Lebens
         public String getEventInfo()
         {
             return currentEvent.info;
+            if (currentEvent.info == null)
+            {
+                return "";
+            }
+            else
+            {
+                return currentEvent.info;
+            }
         }
         #endregion
 
@@ -52,28 +73,21 @@ namespace Spiel_Des_Lebens
         {
             return null; //length 3 needs new Class Action
         }
-
         public void receiveAction(int action) //needs new Class Action
         {
-
         }
-
         public int getActionPoints()
         {
             return player.getEducationPath().getPhase().getActionPoints();
         }
-
         public int getCurrentPhase()
         {
             return player.getEducationPath().getPhase().getCurrentPhase();
         }
-
-
         #region getPlayerStats
         public int getPlayerMoney()
         {
-
-            foreach(StatParameter statsp in player.getPlayerStat().getStats())
+            foreach (StatParameter statsp in player.getPlayerStat().getStats())
             {
                 if (statsp.getName().Equals("money"))
                 {
@@ -82,7 +96,6 @@ namespace Spiel_Des_Lebens
             }
             return 0;
         }
-
         public int getPlayerMentalHealth()
         {
             foreach (StatParameter statsp in player.getPlayerStat().getStats())
@@ -94,7 +107,6 @@ namespace Spiel_Des_Lebens
             }
             return 0;
         }
-
         public int getPlayerMotivation()
         {
             foreach (StatParameter statsp in player.getPlayerStat().getStats())
@@ -106,7 +118,6 @@ namespace Spiel_Des_Lebens
             }
             return 0;
         }
-
         public int getPlayerSuccess()
         {
             foreach (StatParameter statsp in player.getPlayerStat().getStats())
@@ -119,15 +130,11 @@ namespace Spiel_Des_Lebens
             return 0;
         }
         #endregion
-
-
         public void changePlayerStats(int option)
         {
             Stat currentOptionStats = currentEvent.options[option].getStats();
             this.player.changePlayerStat(currentOptionStats);
         }
-        
-
 
     }
 }
