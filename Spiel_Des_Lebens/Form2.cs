@@ -36,27 +36,8 @@ namespace Spiel_Des_Lebens
             ui_interface = new UI_Interface(true, 18, "Fritz", Data.Path.Training, Data.Profession.Business);
             lblPlayerAge.Text = Convert.ToString(this.alter);
             lblPlayerName.Text = this.name;
-            ui_interface.nextEvent();
-            event_title.Text = ui_interface.getEventTitle();
-            event_txt_box.Text = ui_interface.getEventText();
-            current_phase_txt.Text = "Derzeitige Phase: " + ui_interface.getCurrentPhase() +1;
-            left_phase_txt.Text = "Verbleibene Phasenzeit: " + (ui_interface.getMaxPhase() - ui_interface.getCurrentPhase()); 
-            action_points_txt.Text = "Aktionspunkte: " + ui_interface.getActionPoints();
-            option_1_btn.Text = ui_interface.getEventOptionTitle(0);
-            option_2_btn.Text = ui_interface.getEventOptionTitle(1);
-            if (ui_interface.getEventOptionTitle(3) == "" && ui_interface.getEventOptionTitle(2) != "")
-            {
-                option_3_btn.Visible = true;
-                option_3_btn.Text = ui_interface.getEventOptionTitle(2);
-            }
-            else if(ui_interface.getEventOptionTitle(2) != "" && ui_interface.getEventOptionTitle(3) != "")
-            {
-                option_4_btn.Visible = true;
-                option_4_btn.Text = ui_interface.getEventOptionTitle(2);
-                option_5_btn.Visible = true;
-                option_5_btn.Text = ui_interface.getEventOptionTitle(3);
-            }
-            
+            btnLoadEvent_Click();
+            update_aktionpoints();
         }
 
         public void OpenChildForm(Form childForm, object btnSender)
@@ -143,26 +124,25 @@ namespace Spiel_Des_Lebens
             option_2_btn.Visible = true;
             option_1_btn.Text = ui_interface.getEventOptionTitle(0);
             option_2_btn.Text = ui_interface.getEventOptionTitle(1);
-            if (ui_interface.getEventOptionTitle(3) == "" && ui_interface.getEventOptionTitle(2) != "")
+            if (ui_interface.getEventOptionTitle(2) != "")
             {
                 option_3_btn.Visible = true;
                 option_3_btn.Text = ui_interface.getEventOptionTitle(2);
                 option_4_btn.Visible = false;
-                option_5_btn.Visible = false;
-            }
-            else if (ui_interface.getEventOptionTitle(2) != "" && ui_interface.getEventOptionTitle(3) != "")
-            {
-                option_3_btn.Visible = false;
-                option_4_btn.Visible = true;
-                option_4_btn.Text = ui_interface.getEventOptionTitle(2);
-                option_5_btn.Visible = true;
-                option_5_btn.Text = ui_interface.getEventOptionTitle(3);
+                if(ui_interface.getEventOptionTitle(3) != "")
+                {
+                    option_4_btn.Visible = true;
+                    option_4_btn.Text = ui_interface.getEventOptionTitle(3);
+                }
+                else
+                {
+                    option_4_btn.Visible = false;
+                }
             }
             else
             {
                 option_3_btn.Visible = false;
                 option_4_btn.Visible = false;
-                option_5_btn.Visible = false;
             }
 
         }
@@ -172,7 +152,6 @@ namespace Spiel_Des_Lebens
             option_2_btn.Enabled = false;
             option_3_btn.Enabled = false;
             option_4_btn.Enabled = false;
-            option_5_btn.Enabled = false;
         }
         private void all_options_enable()
         {
@@ -180,7 +159,6 @@ namespace Spiel_Des_Lebens
             option_2_btn.Enabled = true;
             option_3_btn.Enabled = true;
             option_4_btn.Enabled = true;
-            option_5_btn.Enabled = true;
         }
         private void all_options_hide()
         {
@@ -188,7 +166,6 @@ namespace Spiel_Des_Lebens
             option_2_btn.Visible = false;
             option_3_btn.Visible = false;
             option_4_btn.Visible = false;
-            option_5_btn.Visible = false;
         }
         private void option_1_click(object sender, EventArgs e)
         {
@@ -197,7 +174,13 @@ namespace Spiel_Des_Lebens
             close_opt_end_txt.Visible = true;
             all_options_hide();
         }
-
+        private void option_2_click(object sender, EventArgs e)
+        {
+            event_txt_box.Text = ui_interface.getEventOptionText(1);
+            show_info_btn.Visible = false;
+            close_opt_end_txt.Visible = true;
+            all_options_hide();
+        }
         private void option_3_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(2);
@@ -213,14 +196,7 @@ namespace Spiel_Des_Lebens
             close_opt_end_txt.Visible = true;
             all_options_hide();
         }
-
-        private void option_2_click(object sender, EventArgs e)
-        {
-            event_txt_box.Text = ui_interface.getEventOptionText(1);
-            show_info_btn.Visible = false;
-            close_opt_end_txt.Visible = true;
-            all_options_hide();
-        }
+         
         private void update_aktionpoints()
         {
             int action_points = ui_interface.getActionPoints();
