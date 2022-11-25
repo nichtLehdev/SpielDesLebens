@@ -238,6 +238,7 @@
             // 
             // event_txt_box
             // 
+            this.event_txt_box.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.event_txt_box.BackColor = System.Drawing.SystemColors.Control;
             this.event_txt_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.event_txt_box.Location = new System.Drawing.Point(59, 84);
