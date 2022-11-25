@@ -41,7 +41,7 @@ namespace Spiel_Des_Lebens
             }
             else
             {
-                //Player stats verändern
+                changePlayerStats(option);
                 return currentEvent.getOption()[option].getText();
             }
         }
