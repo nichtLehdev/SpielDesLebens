@@ -22,7 +22,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -74,7 +74,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -126,7 +126,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -200,7 +200,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -274,7 +274,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -326,7 +326,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -378,7 +378,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -430,7 +430,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -482,7 +482,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -539,7 +539,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -596,7 +596,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -653,7 +653,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -732,7 +732,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -789,7 +789,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -846,7 +846,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -921,7 +921,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -973,7 +973,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 70
          }
       },
@@ -1026,7 +1026,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 60
          }
       },
@@ -1078,7 +1078,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1152,7 +1152,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1215,7 +1215,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1253,7 +1253,7 @@
       "requirements": {
          "timings": [
             {
-               "path": ["0","2"],
+               "path": ["0", "2"],
                "profession": ["*"],
                "phase": ["*%2"]
             },
@@ -1272,7 +1272,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1321,7 +1321,6 @@
                "success": 15
             }
          }
-         
       ]
    },
    {
@@ -1333,7 +1332,7 @@
       "requirements": {
          "timings": [
             {
-               "path": ["0","2"],
+               "path": ["0", "2"],
                "profession": ["*"],
                "phase": ["*%2"]
             },
@@ -1352,7 +1351,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1401,7 +1400,6 @@
                "success": -15
             }
          }
-         
       ]
    },
    {
@@ -1413,7 +1411,7 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1","2"],
+               "path": ["1", "2"],
                "profession": ["*"],
                "phase": ["*%2"]
             }
@@ -1427,7 +1425,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1501,7 +1499,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1553,7 +1551,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 10000000,
+            "money": -100000,
             "success": 100
          }
       },
@@ -1615,7 +1613,7 @@
             {
                "path": ["2"],
                "profession": ["*"],
-               "phase": ["*!%2","*!<5"]
+               "phase": ["*!%2", "*!<5"]
             }
          ],
          "stats_min": {
@@ -1627,7 +1625,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 10000000,
+            "money": -100000,
             "success": 100
          }
       },
@@ -1679,7 +1677,7 @@
          "stats_max": {
             "mentalHealth": 20,
             "motivation": 20,
-            "money": 10000000,
+            "money": -100000,
             "success": 30
          }
       },
@@ -1747,13 +1745,13 @@
          "stats_min": {
             "mentalHealth": 5,
             "motivation": 0,
-            "money": 100,
+            "money": -1,
             "success": 0
          },
          "stats_max": {
             "mentalHealth": 25,
             "motivation": 20,
-            "money": 10000000,
+            "money": -100000,
             "success": 30
          }
       },
@@ -1804,8 +1802,7 @@
          }
       ]
    },
-   
-   
+
    {
       "id": "E-030",
       "title": "neuer Mitschüler",
@@ -1829,7 +1826,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1881,7 +1878,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 70
          }
       },
@@ -1934,7 +1931,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 60
          }
       },
@@ -1986,7 +1983,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -2060,7 +2057,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -2112,7 +2109,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
