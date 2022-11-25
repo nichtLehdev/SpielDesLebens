@@ -41,7 +41,7 @@ namespace Spiel_Des_Lebens
             
             event_txt_box.Text = ui_interface.getEventText();
             current_phase_txt.Text = "Derzeitige Phase: " + ui_interface.getCurrentPhase() +1;
-            left_phase_txt.Text = "Verbleibene Phasenzeit: " + (6- ui_interface.getCurrentPhase()); //BRAUCHE NOCH AKTIONSTEILESACHEN
+            left_phase_txt.Text = "Verbleibene Phasenzeit: " + (ui_interface.getMaxPhase() - ui_interface.getCurrentPhase()); 
             action_points_txt.Text = "Aktionspunkte: " + ui_interface.getActionPoints();
             option_1_btn.Text = ui_interface.getEventOptionTitle(0);
             option_2_btn.Text = ui_interface.getEventOptionTitle(1);
@@ -167,24 +167,28 @@ namespace Spiel_Des_Lebens
         {
             event_txt_box.Text = ui_interface.getEventOptionText(0);
             //await Task.Delay(10);
+            update_aktionpoints();
             btnLoadEvent_Click();
         }
 
         private void option_3_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(2);
+            update_aktionpoints();
             btnLoadEvent_Click();
         }
 
         private void option_4_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(3);
+            update_aktionpoints();
             btnLoadEvent_Click();
         }
 
         private void option_2_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(1);
+            update_aktionpoints();
             btnLoadEvent_Click();
         }
         private void update_aktionpoints()
