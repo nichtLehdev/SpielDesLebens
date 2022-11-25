@@ -37,7 +37,7 @@
             this.info_panel = new System.Windows.Forms.Panel();
             this.info_close_button = new System.Windows.Forms.Button();
             this.info_text = new System.Windows.Forms.RichTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.event_title = new System.Windows.Forms.TextBox();
             this.show_info_btn = new System.Windows.Forms.Button();
             this.event_txt_box = new System.Windows.Forms.TextBox();
             this.progress_prog_bar = new System.Windows.Forms.ProgressBar();
@@ -53,7 +53,6 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblPlayerAge = new System.Windows.Forms.Label();
             this.btnAktion = new System.Windows.Forms.Button();
-            this.txtEvent = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.action_points_txt = new System.Windows.Forms.Label();
             this.left_phase_txt = new System.Windows.Forms.Label();
@@ -68,7 +67,6 @@
             this.money_prog_bar = new System.Windows.Forms.ProgressBar();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnLoadEvent = new System.Windows.Forms.Button();
             this.panelActiveChild = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.info_panel.SuspendLayout();
@@ -113,10 +111,10 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.option_5_btn);
+            this.panel1.Controls.Add(this.info_panel);
             this.panel1.Controls.Add(this.option_4_btn);
             this.panel1.Controls.Add(this.option_2_btn);
-            this.panel1.Controls.Add(this.info_panel);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.event_title);
             this.panel1.Controls.Add(this.show_info_btn);
             this.panel1.Controls.Add(this.event_txt_box);
             this.panel1.Controls.Add(this.option_1_btn);
@@ -175,7 +173,7 @@
             this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.info_panel.Controls.Add(this.info_close_button);
             this.info_panel.Controls.Add(this.info_text);
-            this.info_panel.Location = new System.Drawing.Point(59, 61);
+            this.info_panel.Location = new System.Drawing.Point(59, 69);
             this.info_panel.Name = "info_panel";
             this.info_panel.Size = new System.Drawing.Size(365, 208);
             this.info_panel.TabIndex = 5;
@@ -201,12 +199,15 @@
             this.info_text.Text = "";
             this.info_text.Visible = false;
             // 
-            // textBox2
+            // event_title
             // 
-            this.textBox2.Location = new System.Drawing.Point(59, 23);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 20);
-            this.textBox2.TabIndex = 4;
+            this.event_title.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.event_title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.event_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.event_title.Location = new System.Drawing.Point(59, 35);
+            this.event_title.Name = "event_title";
+            this.event_title.Size = new System.Drawing.Size(185, 20);
+            this.event_title.TabIndex = 4;
             // 
             // show_info_btn
             // 
@@ -231,6 +232,7 @@
             this.event_txt_box.Name = "event_txt_box";
             this.event_txt_box.Size = new System.Drawing.Size(365, 168);
             this.event_txt_box.TabIndex = 4;
+            this.event_txt_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // progress_prog_bar
             // 
@@ -404,14 +406,6 @@
             this.btnAktion.UseVisualStyleBackColor = true;
             this.btnAktion.Click += new System.EventHandler(this.btnAktion_Click);
             // 
-            // txtEvent
-            // 
-            this.txtEvent.Location = new System.Drawing.Point(-34, 213);
-            this.txtEvent.Name = "txtEvent";
-            this.txtEvent.Size = new System.Drawing.Size(263, 163);
-            this.txtEvent.TabIndex = 4;
-            this.txtEvent.Text = "";
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Brown;
@@ -553,7 +547,6 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Brown;
-            this.panel4.Controls.Add(this.btnLoadEvent);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.progress_prog_bar);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -562,18 +555,8 @@
             this.panel4.Size = new System.Drawing.Size(951, 119);
             this.panel4.TabIndex = 9;
             // 
-            // btnLoadEvent
-            // 
-            this.btnLoadEvent.Location = new System.Drawing.Point(66, 53);
-            this.btnLoadEvent.Name = "btnLoadEvent";
-            this.btnLoadEvent.Size = new System.Drawing.Size(124, 23);
-            this.btnLoadEvent.TabIndex = 9;
-            this.btnLoadEvent.Text = "Event Laden";
-            this.btnLoadEvent.UseVisualStyleBackColor = true;
-            // 
             // panelActiveChild
             // 
-            this.panelActiveChild.Controls.Add(this.txtEvent);
             this.panelActiveChild.Controls.Add(this.panel1);
             this.panelActiveChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelActiveChild.Location = new System.Drawing.Point(240, 119);
@@ -648,9 +631,7 @@
         private System.Windows.Forms.Label action_points_txt;
         private System.Windows.Forms.Label left_phase_txt;
         private System.Windows.Forms.Label current_phase_txt;
-        private System.Windows.Forms.RichTextBox txtEvent;
-        private System.Windows.Forms.Button btnLoadEvent;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox event_title;
         private System.Windows.Forms.Button option_2_btn;
         private System.Windows.Forms.Button option_5_btn;
         private System.Windows.Forms.Button option_4_btn;

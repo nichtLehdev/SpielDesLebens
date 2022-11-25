@@ -38,7 +38,7 @@ namespace Spiel_Des_Lebens
             lblPlayerName.Text = this.name;
             /*btnAktion_Click(sender, e);*/
             ui_interface.nextEvent();
-            
+            event_title.Text = ui_interface.getEventTitle();
             event_txt_box.Text = ui_interface.getEventText();
             current_phase_txt.Text = "Derzeitige Phase: " + ui_interface.getCurrentPhase() +1;
             left_phase_txt.Text = "Verbleibene Phasenzeit: " + (ui_interface.getMaxPhase() - ui_interface.getCurrentPhase()); 
@@ -131,13 +131,12 @@ namespace Spiel_Des_Lebens
         {
             update_aktionpoints();
             ui_interface.nextEvent();
-            //txtEvent = ui_interface.nextEvent().ToString();
+            event_title.Text = ui_interface.getEventTitle();
             event_txt_box.Text = ui_interface.getEventText();
             if(ui_interface.getEventInfo() != ""){
                 show_info_btn.Visible = true;
                 info_text.Text = ui_interface.getEventInfo();
             }
-            //option[] = uI_Interface.getEventOptionTitle()
             option_1_btn.Text = ui_interface.getEventOptionTitle(0);
             option_2_btn.Text = ui_interface.getEventOptionTitle(1);
             if (ui_interface.getEventOptionTitle(3) == "" && ui_interface.getEventOptionTitle(2) != "")
@@ -192,6 +191,7 @@ namespace Spiel_Des_Lebens
         {
             int action_points = ui_interface.getActionPoints();
             int cur_phase = ui_interface.getCurrentPhase();
+            int overall_phase = ui_interface.getMaxPhase();
             if (action_points_txt.Text == "Aktionspunkte: 12")
             {
                 action_points_txt.Text = "Aktionspunkte: " + action_points;
@@ -199,7 +199,7 @@ namespace Spiel_Des_Lebens
             }
             action_points_txt.Text = "Aktionspunkte: " + action_points;
             left_phase_txt.Text = "Verbleibene Länge der Phase: " + (12 - action_points);
-            progress_prog_bar.Value = (cur_phase-1)* 12 +action_points ; // Hierbei mus geschaut werden wie lange das ganze Spiel ist um das ergebniss mit einen korrekten Wert darzustellen
+            progress_prog_bar.Value = 100*((cur_phase-1)* 12 +action_points)/(overall_phase*12) ; // Hierbei mus geschaut werden wie lange das ganze Spiel ist um das ergebniss mit einen korrekten Wert darzustellen
             if (ui_interface.getPlayerMoney() <= 100)
             {
                 money_prog_bar.Value = ui_interface.getPlayerMoney();
