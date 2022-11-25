@@ -1260,7 +1260,7 @@
             {
                "path": ["1"],
                "profession": ["*"],
-               "phase": ["*!%2"]
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -1339,7 +1339,7 @@
             {
                "path": ["1"],
                "profession": ["*"],
-               "phase": ["*!%2"]
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -1413,7 +1413,7 @@
             {
                "path": ["1", "2"],
                "profession": ["*"],
-               "phase": ["*%2"]
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -1539,7 +1539,7 @@
             {
                "path": ["0"],
                "profession": ["*"],
-               "phase": ["*!%2"]
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -1613,7 +1613,7 @@
             {
                "path": ["2"],
                "profession": ["*"],
-               "phase": ["*!%2", "*!<5"]
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
