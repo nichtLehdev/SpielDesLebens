@@ -96,7 +96,7 @@ namespace Spiel_Des_Lebens
         {
             foreach (StatParameter statsp in player.getPlayerStat().getStats())
             {
-                if (statsp.getName().Equals("money"))
+                if (statsp.getName().ToString() == "money")
                 {
                     return statsp.getValue();
                 }
@@ -107,7 +107,7 @@ namespace Spiel_Des_Lebens
         {
             foreach (StatParameter statsp in player.getPlayerStat().getStats())
             {
-                if (statsp.getName().Equals("mentalHealth"))
+                if (statsp.getName().ToString() == "mentalHealth")
                 {
                     return statsp.getValue();
                 }
@@ -118,7 +118,7 @@ namespace Spiel_Des_Lebens
         {
             foreach (StatParameter statsp in player.getPlayerStat().getStats())
             {
-                if (statsp.getName().Equals("motivation"))
+                if (statsp.getName().ToString() == "motivation")
                 {
                     return statsp.getValue();
                 }
@@ -129,7 +129,7 @@ namespace Spiel_Des_Lebens
         {
             foreach (StatParameter statsp in player.getPlayerStat().getStats())
             {
-                if (statsp.getName().Equals("success"))
+                if (statsp.getName().ToString() == "success")
                 {
                     return statsp.getValue();
                 }
