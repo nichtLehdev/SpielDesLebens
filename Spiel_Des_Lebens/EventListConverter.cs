@@ -45,12 +45,9 @@ namespace Spiel_Des_Lebens
             List<string> profession = lTiming.profession;
             List<string> phase = lTiming.phase;
 
-            int[] ePaths = evaluatePaths(path);
-            int[] eProfessions = evaluateProfessions(profession);
-            int[] ePhases = evaluatePhaseList(phase, ePaths);
-
-            //TODO Convert 1D arrays into 3D array. 
-            // Specify construction of 3D array.
+            int[] ePaths = evaluatePaths(path).ToHashSet().ToArray();
+            int[] eProfessions = evaluateProfessions(profession).ToHashSet().ToArray();
+            int[] ePhases = evaluatePhaseList(phase, ePaths).ToHashSet().ToArray();
 
             return new Timing(ePaths.ToList(), eProfessions.ToList(), ePhases.ToList());
 
@@ -147,7 +144,7 @@ namespace Spiel_Des_Lebens
                 {
                     int length = getGreatestPhaseCount(paths);
                     return fillList(length).ToArray();
-                   
+
                 }
                 else
                 {
@@ -213,7 +210,7 @@ namespace Spiel_Des_Lebens
                     possibleValues.Add(Int32.Parse(phase));
                 }
             }
-            
+
         }
 
         private List<int> compareLists(List<int> pList, List<int> eList)
