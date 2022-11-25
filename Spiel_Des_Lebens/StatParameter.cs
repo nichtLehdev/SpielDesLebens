@@ -34,7 +34,7 @@ namespace Spiel_Des_Lebens
 
         public bool isGreater(StatParameter statParamenter)
         {
-            if(this.value > statParamenter.value)
+            if(this.value >= statParamenter.value)
             {
                 return true;
             }
@@ -43,7 +43,7 @@ namespace Spiel_Des_Lebens
 
         public bool isSmaller(StatParameter statParamenter)
         {
-            if (this.value < statParamenter.value)
+            if (this.value <= statParamenter.value)
             {
                 return true;
             }
