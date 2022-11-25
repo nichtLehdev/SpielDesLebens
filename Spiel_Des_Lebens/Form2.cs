@@ -36,7 +36,6 @@ namespace Spiel_Des_Lebens
             ui_interface = new UI_Interface(true, 18, "Fritz", Data.Path.Training, Data.Profession.Business);
             lblPlayerAge.Text = Convert.ToString(this.alter);
             lblPlayerName.Text = this.name;
-            /*btnAktion_Click(sender, e);*/
             ui_interface.nextEvent();
             event_title.Text = ui_interface.getEventTitle();
             event_txt_box.Text = ui_interface.getEventText();
@@ -133,10 +132,13 @@ namespace Spiel_Des_Lebens
             ui_interface.nextEvent();
             event_title.Text = ui_interface.getEventTitle();
             event_txt_box.Text = ui_interface.getEventText();
-            if(ui_interface.getEventInfo() != ""){
+            if (ui_interface.getEventInfo() != "")
+            {
                 show_info_btn.Visible = true;
                 info_text.Text = ui_interface.getEventInfo();
             }
+            option_1_btn.Visible = true;
+            option_2_btn.Visible = true;
             option_1_btn.Text = ui_interface.getEventOptionTitle(0);
             option_2_btn.Text = ui_interface.getEventOptionTitle(1);
             if (ui_interface.getEventOptionTitle(3) == "" && ui_interface.getEventOptionTitle(2) != "")
@@ -160,32 +162,47 @@ namespace Spiel_Des_Lebens
                 option_4_btn.Visible = false;
                 option_5_btn.Visible = false;
             }
-            
-        }
 
+        }
+        private void all_options_hide()
+        {
+            option_1_btn.Visible = false;
+            option_2_btn.Visible = false;
+            option_3_btn.Visible = false;
+            option_4_btn.Visible = false;
+            option_5_btn.Visible = false;
+        }
         private void option_1_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(0);
-            //await Task.Delay(10);
-            btnLoadEvent_Click();
+            show_info_btn.Visible = false;
+            close_opt_end_txt.Visible = true;
+            all_options_hide();
+
         }
 
         private void option_3_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(2);
-            btnLoadEvent_Click();
+            show_info_btn.Visible = false;
+            close_opt_end_txt.Visible = true;
+            all_options_hide();
         }
 
         private void option_4_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(3);
-            btnLoadEvent_Click();
+            show_info_btn.Visible = false;
+            close_opt_end_txt.Visible = true;
+            all_options_hide();
         }
 
         private void option_2_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(1);
-            btnLoadEvent_Click();
+            show_info_btn.Visible = false;
+            close_opt_end_txt.Visible = true;
+            all_options_hide();
         }
         private void update_aktionpoints()
         {
@@ -199,7 +216,7 @@ namespace Spiel_Des_Lebens
             }
             action_points_txt.Text = "Aktionspunkte: " + action_points;
             left_phase_txt.Text = "Verbleibene Länge der Phase: " + (12 - action_points);
-            progress_prog_bar.Value = 100*((cur_phase-1)* 12 +action_points)/(overall_phase*12) ; // Hierbei mus geschaut werden wie lange das ganze Spiel ist um das ergebniss mit einen korrekten Wert darzustellen
+            progress_prog_bar.Value = 100*((cur_phase-1)* 12 +action_points)/(overall_phase*12) ;
             if (ui_interface.getPlayerMoney() <= 100)
             {
                 money_prog_bar.Value = ui_interface.getPlayerMoney();
@@ -207,13 +224,12 @@ namespace Spiel_Des_Lebens
             learn_prog_bar.Value = ui_interface.getPlayerSuccess();
             motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
             mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
-            //ist es möglich nachzuschauen ob man die überhaut die sache ändern muss ohne die ganzen Methoden der UI Aufrufen muss?
         }
-        private void show_actions()
+        
+        private void close_opt_txt(object sender, EventArgs e)
         {
-           int[] action = ui_interface.getNextActionList();
+            close_opt_end_txt.Visible = false;
+            btnLoadEvent_Click();
         }
-
-       
     }
 }
