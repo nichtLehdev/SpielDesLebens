@@ -436,9 +436,9 @@
             this.panel3.Controls.Add(this.learn_prog_bar);
             this.panel3.Controls.Add(this.money_prog_bar);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1191, 0);
+            this.panel3.Location = new System.Drawing.Point(1147, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(240, 642);
+            this.panel3.Size = new System.Drawing.Size(253, 642);
             this.panel3.TabIndex = 7;
             // 
             // action_points_txt
@@ -567,7 +567,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(240, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(951, 119);
+            this.panel4.Size = new System.Drawing.Size(907, 119);
             this.panel4.TabIndex = 9;
             // 
             // panelActiveChild
@@ -576,7 +576,7 @@
             this.panelActiveChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelActiveChild.Location = new System.Drawing.Point(240, 119);
             this.panelActiveChild.Name = "panelActiveChild";
-            this.panelActiveChild.Size = new System.Drawing.Size(951, 523);
+            this.panelActiveChild.Size = new System.Drawing.Size(907, 523);
             this.panelActiveChild.TabIndex = 1;
             // 
             // Form2
@@ -584,7 +584,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1431, 642);
+            this.ClientSize = new System.Drawing.Size(1400, 642);
             this.Controls.Add(this.panelActiveChild);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
