@@ -90,7 +90,6 @@ namespace Spiel_Des_Lebens
             OpenChildForm(new Forms.FormSchool(), sender);
             ui_interface.receiveAction(1);
             update_aktionpoints();
-
         }
 
         private void btnMusik_Click(object sender, EventArgs e)
@@ -218,7 +217,17 @@ namespace Spiel_Des_Lebens
             motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
             mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
         }
-        
+        private void get_new_actions()
+        {
+            /*
+            String[] action_array = (String[]) ui_interface.getNextActionList(); // Vlt als String mir übergeben?
+            if (action_array.Contains("Hausaufgaben"))
+            {
+                option_1_btn.Text = "Hausaufgaben";
+                option_1_btn.Image = Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
+            }
+            */
+        }
         private void close_opt_txt(object sender, EventArgs e)
         {
             close_opt_end_txt.Visible = false;

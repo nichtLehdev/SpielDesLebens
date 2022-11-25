@@ -42,10 +42,10 @@
             this.event_txt_box = new System.Windows.Forms.TextBox();
             this.progress_prog_bar = new System.Windows.Forms.ProgressBar();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.btnMusik = new System.Windows.Forms.Button();
-            this.btnSport = new System.Windows.Forms.Button();
-            this.btnHausis = new System.Windows.Forms.Button();
+            this.action_4_btn = new System.Windows.Forms.Button();
+            this.action_3_btn = new System.Windows.Forms.Button();
+            this.action_2_btn = new System.Windows.Forms.Button();
+            this.action_1_btn = new System.Windows.Forms.Button();
             this.userInfo = new System.Windows.Forms.Panel();
             this.lblPlayerName = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
@@ -243,10 +243,10 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Brown;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.btnMusik);
-            this.panel2.Controls.Add(this.btnSport);
-            this.panel2.Controls.Add(this.btnHausis);
+            this.panel2.Controls.Add(this.action_4_btn);
+            this.panel2.Controls.Add(this.action_3_btn);
+            this.panel2.Controls.Add(this.action_2_btn);
+            this.panel2.Controls.Add(this.action_1_btn);
             this.panel2.Controls.Add(this.userInfo);
             this.panel2.Controls.Add(this.btnAktion);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -255,73 +255,73 @@
             this.panel2.Size = new System.Drawing.Size(240, 642);
             this.panel2.TabIndex = 6;
             // 
-            // button6
+            // action_4_btn
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Image = global::Spiel_Des_Lebens.Properties.Resources.Music_Icon_small;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 500);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(240, 60);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "andere Aktion";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.action_4_btn.FlatAppearance.BorderSize = 0;
+            this.action_4_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.action_4_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.action_4_btn.ForeColor = System.Drawing.Color.Black;
+            this.action_4_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.Music_Icon_small;
+            this.action_4_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.action_4_btn.Location = new System.Drawing.Point(0, 500);
+            this.action_4_btn.Name = "action_4_btn";
+            this.action_4_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.action_4_btn.Size = new System.Drawing.Size(240, 60);
+            this.action_4_btn.TabIndex = 15;
+            this.action_4_btn.Text = "andere Aktion";
+            this.action_4_btn.UseVisualStyleBackColor = true;
+            this.action_4_btn.Click += new System.EventHandler(this.button6_Click);
             // 
-            // btnMusik
+            // action_3_btn
             // 
-            this.btnMusik.FlatAppearance.BorderSize = 0;
-            this.btnMusik.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMusik.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMusik.ForeColor = System.Drawing.Color.Black;
-            this.btnMusik.Image = global::Spiel_Des_Lebens.Properties.Resources.Music_Icon_small;
-            this.btnMusik.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMusik.Location = new System.Drawing.Point(0, 430);
-            this.btnMusik.Name = "btnMusik";
-            this.btnMusik.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnMusik.Size = new System.Drawing.Size(240, 60);
-            this.btnMusik.TabIndex = 14;
-            this.btnMusik.Text = "Musik";
-            this.btnMusik.UseVisualStyleBackColor = true;
-            this.btnMusik.Click += new System.EventHandler(this.btnMusik_Click);
+            this.action_3_btn.FlatAppearance.BorderSize = 0;
+            this.action_3_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.action_3_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.action_3_btn.ForeColor = System.Drawing.Color.Black;
+            this.action_3_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.Music_Icon_small;
+            this.action_3_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.action_3_btn.Location = new System.Drawing.Point(0, 430);
+            this.action_3_btn.Name = "action_3_btn";
+            this.action_3_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.action_3_btn.Size = new System.Drawing.Size(240, 60);
+            this.action_3_btn.TabIndex = 14;
+            this.action_3_btn.Text = "Musik";
+            this.action_3_btn.UseVisualStyleBackColor = true;
+            this.action_3_btn.Click += new System.EventHandler(this.btnMusik_Click);
             // 
-            // btnSport
+            // action_2_btn
             // 
-            this.btnSport.FlatAppearance.BorderSize = 0;
-            this.btnSport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSport.ForeColor = System.Drawing.Color.Black;
-            this.btnSport.Image = global::Spiel_Des_Lebens.Properties.Resources.Sports_Icon_small;
-            this.btnSport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSport.Location = new System.Drawing.Point(0, 360);
-            this.btnSport.Name = "btnSport";
-            this.btnSport.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnSport.Size = new System.Drawing.Size(240, 60);
-            this.btnSport.TabIndex = 13;
-            this.btnSport.Text = "Sport";
-            this.btnSport.UseVisualStyleBackColor = true;
-            this.btnSport.Click += new System.EventHandler(this.btnSport_Click);
+            this.action_2_btn.FlatAppearance.BorderSize = 0;
+            this.action_2_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.action_2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.action_2_btn.ForeColor = System.Drawing.Color.Black;
+            this.action_2_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.Sports_Icon_small;
+            this.action_2_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.action_2_btn.Location = new System.Drawing.Point(0, 360);
+            this.action_2_btn.Name = "action_2_btn";
+            this.action_2_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.action_2_btn.Size = new System.Drawing.Size(240, 60);
+            this.action_2_btn.TabIndex = 13;
+            this.action_2_btn.Text = "Sport";
+            this.action_2_btn.UseVisualStyleBackColor = true;
+            this.action_2_btn.Click += new System.EventHandler(this.btnSport_Click);
             // 
-            // btnHausis
+            // action_1_btn
             // 
-            this.btnHausis.FlatAppearance.BorderSize = 0;
-            this.btnHausis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHausis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHausis.ForeColor = System.Drawing.Color.Black;
-            this.btnHausis.Image = global::Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
-            this.btnHausis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHausis.Location = new System.Drawing.Point(0, 290);
-            this.btnHausis.Name = "btnHausis";
-            this.btnHausis.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnHausis.Size = new System.Drawing.Size(240, 60);
-            this.btnHausis.TabIndex = 12;
-            this.btnHausis.Text = "Hausaufgaben";
-            this.btnHausis.UseVisualStyleBackColor = true;
-            this.btnHausis.Click += new System.EventHandler(this.btnHausis_Click);
+            this.action_1_btn.FlatAppearance.BorderSize = 0;
+            this.action_1_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.action_1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.action_1_btn.ForeColor = System.Drawing.Color.Black;
+            this.action_1_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
+            this.action_1_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.action_1_btn.Location = new System.Drawing.Point(0, 290);
+            this.action_1_btn.Name = "action_1_btn";
+            this.action_1_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.action_1_btn.Size = new System.Drawing.Size(240, 60);
+            this.action_1_btn.TabIndex = 12;
+            this.action_1_btn.Text = "Hausaufgaben";
+            this.action_1_btn.UseVisualStyleBackColor = true;
+            this.action_1_btn.Click += new System.EventHandler(this.btnHausis_Click);
             // 
             // userInfo
             // 
@@ -428,7 +428,7 @@
             // 
             this.action_points_txt.AutoSize = true;
             this.action_points_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.267326F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.action_points_txt.Location = new System.Drawing.Point(32, 154);
+            this.action_points_txt.Location = new System.Drawing.Point(36, 154);
             this.action_points_txt.Name = "action_points_txt";
             this.action_points_txt.Size = new System.Drawing.Size(182, 16);
             this.action_points_txt.TabIndex = 12;
@@ -448,7 +448,7 @@
             // 
             this.current_phase_txt.AutoSize = true;
             this.current_phase_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.current_phase_txt.Location = new System.Drawing.Point(22, 58);
+            this.current_phase_txt.Location = new System.Drawing.Point(28, 70);
             this.current_phase_txt.Name = "current_phase_txt";
             this.current_phase_txt.Size = new System.Drawing.Size(212, 17);
             this.current_phase_txt.TabIndex = 10;
@@ -619,10 +619,10 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Panel userInfo;
-        private System.Windows.Forms.Button btnSport;
-        private System.Windows.Forms.Button btnHausis;
-        private System.Windows.Forms.Button btnMusik;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button action_2_btn;
+        private System.Windows.Forms.Button action_1_btn;
+        private System.Windows.Forms.Button action_3_btn;
+        private System.Windows.Forms.Button action_4_btn;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panelActiveChild;
         private System.Windows.Forms.Label action_points_txt;
