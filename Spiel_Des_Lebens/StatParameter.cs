@@ -34,6 +34,10 @@ namespace Spiel_Des_Lebens
 
         public bool isGreater(StatParameter statParamenter)
         {
+            if(this.value == -1)
+            {
+                return true;
+            }
             if(this.value >= statParamenter.value)
             {
                 return true;
