@@ -57,7 +57,6 @@ namespace Spiel_Des_Lebens
 
         public String getEventInfo()
         {
-            return currentEvent.info;
             if (currentEvent.info == null)
             {
                 return "";

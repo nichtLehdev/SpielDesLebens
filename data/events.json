@@ -22,7 +22,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": 1000000,
             "success": 100
          }
       },
@@ -71,12 +71,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -123,12 +123,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -197,12 +197,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -271,12 +271,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -323,12 +323,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -375,12 +375,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -427,12 +427,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -479,12 +479,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -536,12 +536,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -593,12 +593,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -650,12 +650,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -729,12 +729,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -786,12 +786,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -843,12 +843,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -918,12 +918,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -970,12 +970,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 70
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 70
+        }
       },
       "options": [
          {
@@ -1023,12 +1023,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 60
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 60
+        }
       },
       "options": [
          {
@@ -1075,12 +1075,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -1149,12 +1149,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -1212,12 +1212,12 @@
             "money": 0,
             "success": 60
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -1264,12 +1264,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -1316,12 +1316,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 70
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 70
+        }
       },
       "options": [
          {
@@ -1369,12 +1369,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 60
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 60
+        }
       },
       "options": [
          {
@@ -1421,12 +1421,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -1495,12 +1495,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
@@ -1547,12 +1547,12 @@
             "money": 0,
             "success": 0
          },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": 100,
-            "success": 100
-         }
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": 1000000,
+          "success": 100
+        }
       },
       "options": [
          {
