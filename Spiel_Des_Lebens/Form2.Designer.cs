@@ -68,6 +68,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelActiveChild = new System.Windows.Forms.Panel();
+            this.close_opt_end_txt = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.info_panel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,9 +84,9 @@
             this.option_1_btn.BackColor = System.Drawing.Color.RosyBrown;
             this.option_1_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.option_1_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.option_1_btn.Location = new System.Drawing.Point(59, 273);
+            this.option_1_btn.Location = new System.Drawing.Point(59, 230);
             this.option_1_btn.Name = "option_1_btn";
-            this.option_1_btn.Size = new System.Drawing.Size(80, 44);
+            this.option_1_btn.Size = new System.Drawing.Size(222, 57);
             this.option_1_btn.TabIndex = 0;
             this.option_1_btn.Text = "option_1_btn";
             this.option_1_btn.UseVisualStyleBackColor = false;
@@ -97,9 +98,9 @@
             this.option_3_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.option_3_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.option_3_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.option_3_btn.Location = new System.Drawing.Point(201, 273);
+            this.option_3_btn.Location = new System.Drawing.Point(59, 342);
             this.option_3_btn.Name = "option_3_btn";
-            this.option_3_btn.Size = new System.Drawing.Size(80, 44);
+            this.option_3_btn.Size = new System.Drawing.Size(222, 44);
             this.option_3_btn.TabIndex = 1;
             this.option_3_btn.Text = "option_1_btn";
             this.option_3_btn.UseVisualStyleBackColor = false;
@@ -110,8 +111,9 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.option_5_btn);
+            this.panel1.Controls.Add(this.close_opt_end_txt);
             this.panel1.Controls.Add(this.info_panel);
+            this.panel1.Controls.Add(this.option_5_btn);
             this.panel1.Controls.Add(this.option_4_btn);
             this.panel1.Controls.Add(this.option_2_btn);
             this.panel1.Controls.Add(this.event_title);
@@ -119,9 +121,9 @@
             this.panel1.Controls.Add(this.event_txt_box);
             this.panel1.Controls.Add(this.option_1_btn);
             this.panel1.Controls.Add(this.option_3_btn);
-            this.panel1.Location = new System.Drawing.Point(233, 102);
+            this.panel1.Location = new System.Drawing.Point(196, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(475, 363);
+            this.panel1.Size = new System.Drawing.Size(589, 426);
             this.panel1.TabIndex = 10;
             // 
             // option_5_btn
@@ -130,9 +132,9 @@
             this.option_5_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.option_5_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.option_5_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.option_5_btn.Location = new System.Drawing.Point(249, 273);
+            this.option_5_btn.Location = new System.Drawing.Point(325, 329);
             this.option_5_btn.Name = "option_5_btn";
-            this.option_5_btn.Size = new System.Drawing.Size(80, 44);
+            this.option_5_btn.Size = new System.Drawing.Size(222, 57);
             this.option_5_btn.TabIndex = 6;
             this.option_5_btn.Text = "option_1_btn";
             this.option_5_btn.UseVisualStyleBackColor = false;
@@ -145,9 +147,9 @@
             this.option_4_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.option_4_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.option_4_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.option_4_btn.Location = new System.Drawing.Point(152, 273);
+            this.option_4_btn.Location = new System.Drawing.Point(59, 329);
             this.option_4_btn.Name = "option_4_btn";
-            this.option_4_btn.Size = new System.Drawing.Size(80, 44);
+            this.option_4_btn.Size = new System.Drawing.Size(222, 57);
             this.option_4_btn.TabIndex = 7;
             this.option_4_btn.Text = "option_1_btn";
             this.option_4_btn.UseVisualStyleBackColor = false;
@@ -160,9 +162,9 @@
             this.option_2_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.option_2_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.option_2_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.option_2_btn.Location = new System.Drawing.Point(344, 273);
+            this.option_2_btn.Location = new System.Drawing.Point(325, 230);
             this.option_2_btn.Name = "option_2_btn";
-            this.option_2_btn.Size = new System.Drawing.Size(80, 44);
+            this.option_2_btn.Size = new System.Drawing.Size(222, 57);
             this.option_2_btn.TabIndex = 6;
             this.option_2_btn.Text = "option_1_btn";
             this.option_2_btn.UseVisualStyleBackColor = false;
@@ -173,7 +175,7 @@
             this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.info_panel.Controls.Add(this.info_close_button);
             this.info_panel.Controls.Add(this.info_text);
-            this.info_panel.Location = new System.Drawing.Point(59, 69);
+            this.info_panel.Location = new System.Drawing.Point(135, 115);
             this.info_panel.Name = "info_panel";
             this.info_panel.Size = new System.Drawing.Size(365, 208);
             this.info_panel.TabIndex = 9;
@@ -213,7 +215,7 @@
             // 
             this.show_info_btn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.show_info_btn.Cursor = System.Windows.Forms.Cursors.Default;
-            this.show_info_btn.Location = new System.Drawing.Point(349, 23);
+            this.show_info_btn.Location = new System.Drawing.Point(472, 23);
             this.show_info_btn.Name = "show_info_btn";
             this.show_info_btn.Size = new System.Drawing.Size(75, 40);
             this.show_info_btn.TabIndex = 3;
@@ -230,7 +232,7 @@
             this.event_txt_box.Location = new System.Drawing.Point(59, 84);
             this.event_txt_box.Multiline = true;
             this.event_txt_box.Name = "event_txt_box";
-            this.event_txt_box.Size = new System.Drawing.Size(365, 168);
+            this.event_txt_box.Size = new System.Drawing.Size(488, 106);
             this.event_txt_box.TabIndex = 4;
             this.event_txt_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -564,6 +566,17 @@
             this.panelActiveChild.Size = new System.Drawing.Size(951, 523);
             this.panelActiveChild.TabIndex = 1;
             // 
+            // close_opt_end_txt
+            // 
+            this.close_opt_end_txt.Location = new System.Drawing.Point(472, 35);
+            this.close_opt_end_txt.Name = "close_opt_end_txt";
+            this.close_opt_end_txt.Size = new System.Drawing.Size(75, 20);
+            this.close_opt_end_txt.TabIndex = 8;
+            this.close_opt_end_txt.Text = "Nächstes Event";
+            this.close_opt_end_txt.UseVisualStyleBackColor = true;
+            this.close_opt_end_txt.Visible = false;
+            this.close_opt_end_txt.Click += new System.EventHandler(this.close_opt_txt);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -635,6 +648,7 @@
         private System.Windows.Forms.Button option_2_btn;
         private System.Windows.Forms.Button option_5_btn;
         private System.Windows.Forms.Button option_4_btn;
+        private System.Windows.Forms.Button close_opt_end_txt;
     }
 }
 

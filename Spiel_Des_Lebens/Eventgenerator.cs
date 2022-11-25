@@ -62,7 +62,7 @@ namespace Spiel_Des_Lebens
                 if (prioEvents.Count != 0)
                 {
                     int eventIndex = random.Next(prioEvents.Count);
-                    filteredEventsPathProfession[findEventIndexByID(prioEvents[eventIndex].id)].priority *= 2;
+                    //filteredEventsPathProfession[findEventIndexByID(prioEvents[eventIndex].id)].priority *= 2;
                     return prioEvents[eventIndex];
                 }
             }

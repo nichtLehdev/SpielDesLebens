@@ -166,26 +166,32 @@ namespace Spiel_Des_Lebens
         private void option_1_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(0);
-            //await Task.Delay(10);
-            btnLoadEvent_Click();
+            show_info_btn.Visible = false;
+            close_opt_end_txt.Visible = true;
+
         }
 
         private void option_3_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(2);
-            btnLoadEvent_Click();
+            show_info_btn.Visible = false;
+            close_opt_end_txt.Visible = true;
         }
 
         private void option_4_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(3);
-            btnLoadEvent_Click();
+            show_info_btn.Visible = false;
+            close_opt_end_txt.Visible = true;
+
         }
 
         private void option_2_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(1);
-            btnLoadEvent_Click();
+            show_info_btn.Visible = false;
+            close_opt_end_txt.Visible = true;
+
         }
         private void update_aktionpoints()
         {
@@ -214,6 +220,11 @@ namespace Spiel_Des_Lebens
            int[] action = ui_interface.getNextActionList();
         }
 
-       
+        private void close_opt_txt(object sender, EventArgs e)
+        {
+
+            close_opt_end_txt.Visible = false;
+            btnLoadEvent_Click();
+        }
     }
 }
