@@ -133,7 +133,7 @@
             this.option_5_btn.Location = new System.Drawing.Point(249, 273);
             this.option_5_btn.Name = "option_5_btn";
             this.option_5_btn.Size = new System.Drawing.Size(80, 44);
-            this.option_5_btn.TabIndex = 8;
+            this.option_5_btn.TabIndex = 6;
             this.option_5_btn.Text = "option_1_btn";
             this.option_5_btn.UseVisualStyleBackColor = false;
             this.option_5_btn.Visible = false;
@@ -176,7 +176,7 @@
             this.info_panel.Location = new System.Drawing.Point(59, 69);
             this.info_panel.Name = "info_panel";
             this.info_panel.Size = new System.Drawing.Size(365, 208);
-            this.info_panel.TabIndex = 5;
+            this.info_panel.TabIndex = 9;
             this.info_panel.Visible = false;
             // 
             // info_close_button
