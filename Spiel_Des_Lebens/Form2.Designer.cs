@@ -31,12 +31,13 @@
             this.option_1_btn = new System.Windows.Forms.Button();
             this.option_3_btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.option_5_btn = new System.Windows.Forms.Button();
-            this.option_4_btn = new System.Windows.Forms.Button();
-            this.option_2_btn = new System.Windows.Forms.Button();
+            this.close_opt_end_txt = new System.Windows.Forms.Button();
             this.info_panel = new System.Windows.Forms.Panel();
             this.info_close_button = new System.Windows.Forms.Button();
             this.info_text = new System.Windows.Forms.RichTextBox();
+            this.option_5_btn = new System.Windows.Forms.Button();
+            this.option_4_btn = new System.Windows.Forms.Button();
+            this.option_2_btn = new System.Windows.Forms.Button();
             this.event_title = new System.Windows.Forms.TextBox();
             this.show_info_btn = new System.Windows.Forms.Button();
             this.event_txt_box = new System.Windows.Forms.TextBox();
@@ -68,7 +69,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelActiveChild = new System.Windows.Forms.Panel();
-            this.close_opt_end_txt = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.info_panel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -126,6 +126,48 @@
             this.panel1.Size = new System.Drawing.Size(589, 426);
             this.panel1.TabIndex = 10;
             // 
+            // close_opt_end_txt
+            // 
+            this.close_opt_end_txt.Location = new System.Drawing.Point(472, 23);
+            this.close_opt_end_txt.Name = "close_opt_end_txt";
+            this.close_opt_end_txt.Size = new System.Drawing.Size(75, 40);
+            this.close_opt_end_txt.TabIndex = 8;
+            this.close_opt_end_txt.Text = "Nächstes Event";
+            this.close_opt_end_txt.UseVisualStyleBackColor = true;
+            this.close_opt_end_txt.Visible = false;
+            this.close_opt_end_txt.Click += new System.EventHandler(this.close_opt_txt);
+            // 
+            // info_panel
+            // 
+            this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.info_panel.Controls.Add(this.info_close_button);
+            this.info_panel.Controls.Add(this.info_text);
+            this.info_panel.Location = new System.Drawing.Point(135, 115);
+            this.info_panel.Name = "info_panel";
+            this.info_panel.Size = new System.Drawing.Size(365, 208);
+            this.info_panel.TabIndex = 9;
+            this.info_panel.Visible = false;
+            // 
+            // info_close_button
+            // 
+            this.info_close_button.Location = new System.Drawing.Point(257, 22);
+            this.info_close_button.Name = "info_close_button";
+            this.info_close_button.Size = new System.Drawing.Size(75, 23);
+            this.info_close_button.TabIndex = 6;
+            this.info_close_button.Text = "Schließen";
+            this.info_close_button.UseVisualStyleBackColor = true;
+            this.info_close_button.Visible = false;
+            this.info_close_button.Click += new System.EventHandler(this.info_close);
+            // 
+            // info_text
+            // 
+            this.info_text.Location = new System.Drawing.Point(32, 61);
+            this.info_text.Name = "info_text";
+            this.info_text.Size = new System.Drawing.Size(300, 118);
+            this.info_text.TabIndex = 0;
+            this.info_text.Text = "";
+            this.info_text.Visible = false;
+            // 
             // option_5_btn
             // 
             this.option_5_btn.BackColor = System.Drawing.Color.RosyBrown;
@@ -169,37 +211,6 @@
             this.option_2_btn.Text = "option_1_btn";
             this.option_2_btn.UseVisualStyleBackColor = false;
             this.option_2_btn.Click += new System.EventHandler(this.option_2_click);
-            // 
-            // info_panel
-            // 
-            this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.info_panel.Controls.Add(this.info_close_button);
-            this.info_panel.Controls.Add(this.info_text);
-            this.info_panel.Location = new System.Drawing.Point(135, 115);
-            this.info_panel.Name = "info_panel";
-            this.info_panel.Size = new System.Drawing.Size(365, 208);
-            this.info_panel.TabIndex = 9;
-            this.info_panel.Visible = false;
-            // 
-            // info_close_button
-            // 
-            this.info_close_button.Location = new System.Drawing.Point(257, 22);
-            this.info_close_button.Name = "info_close_button";
-            this.info_close_button.Size = new System.Drawing.Size(75, 23);
-            this.info_close_button.TabIndex = 6;
-            this.info_close_button.Text = "Schließen";
-            this.info_close_button.UseVisualStyleBackColor = true;
-            this.info_close_button.Visible = false;
-            this.info_close_button.Click += new System.EventHandler(this.info_close);
-            // 
-            // info_text
-            // 
-            this.info_text.Location = new System.Drawing.Point(32, 61);
-            this.info_text.Name = "info_text";
-            this.info_text.Size = new System.Drawing.Size(300, 118);
-            this.info_text.TabIndex = 0;
-            this.info_text.Text = "";
-            this.info_text.Visible = false;
             // 
             // event_title
             // 
@@ -520,6 +531,7 @@
             // learn_prog_bar
             // 
             this.learn_prog_bar.BackColor = System.Drawing.Color.DarkGray;
+            this.learn_prog_bar.ForeColor = System.Drawing.Color.Maroon;
             this.learn_prog_bar.Location = new System.Drawing.Point(38, 318);
             this.learn_prog_bar.Name = "learn_prog_bar";
             this.learn_prog_bar.Size = new System.Drawing.Size(162, 23);
@@ -565,17 +577,6 @@
             this.panelActiveChild.Name = "panelActiveChild";
             this.panelActiveChild.Size = new System.Drawing.Size(951, 523);
             this.panelActiveChild.TabIndex = 1;
-            // 
-            // close_opt_end_txt
-            // 
-            this.close_opt_end_txt.Location = new System.Drawing.Point(472, 35);
-            this.close_opt_end_txt.Name = "close_opt_end_txt";
-            this.close_opt_end_txt.Size = new System.Drawing.Size(75, 20);
-            this.close_opt_end_txt.TabIndex = 8;
-            this.close_opt_end_txt.Text = "Nächstes Event";
-            this.close_opt_end_txt.UseVisualStyleBackColor = true;
-            this.close_opt_end_txt.Visible = false;
-            this.close_opt_end_txt.Click += new System.EventHandler(this.close_opt_txt);
             // 
             // Form2
             // 
