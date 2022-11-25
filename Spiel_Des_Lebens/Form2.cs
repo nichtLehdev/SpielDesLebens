@@ -129,6 +129,7 @@ namespace Spiel_Des_Lebens
 
         private void btnLoadEvent_Click()
         {
+            update_aktionpoints();
             ui_interface.nextEvent();
             //txtEvent = ui_interface.nextEvent().ToString();
             event_txt_box.Text = ui_interface.getEventText();
@@ -160,35 +161,31 @@ namespace Spiel_Des_Lebens
                 option_4_btn.Visible = false;
                 option_5_btn.Visible = false;
             }
-            update_aktionpoints();
+            
         }
 
         private void option_1_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(0);
             //await Task.Delay(10);
-            update_aktionpoints();
             btnLoadEvent_Click();
         }
 
         private void option_3_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(2);
-            update_aktionpoints();
             btnLoadEvent_Click();
         }
 
         private void option_4_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(3);
-            update_aktionpoints();
             btnLoadEvent_Click();
         }
 
         private void option_2_click(object sender, EventArgs e)
         {
             event_txt_box.Text = ui_interface.getEventOptionText(1);
-            update_aktionpoints();
             btnLoadEvent_Click();
         }
         private void update_aktionpoints()
@@ -203,7 +200,10 @@ namespace Spiel_Des_Lebens
             action_points_txt.Text = "Aktionspunkte: " + action_points;
             left_phase_txt.Text = "Verbleibene Länge der Phase: " + (12 - action_points);
             progress_prog_bar.Value = (cur_phase-1)* 12 +action_points ; // Hierbei mus geschaut werden wie lange das ganze Spiel ist um das ergebniss mit einen korrekten Wert darzustellen
-            money_prog_bar.Value = ui_interface.getPlayerMoney();
+            if (ui_interface.getPlayerMoney() <= 100)
+            {
+                money_prog_bar.Value = ui_interface.getPlayerMoney();
+            }
             learn_prog_bar.Value = ui_interface.getPlayerSuccess();
             motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
             mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
