@@ -33,15 +33,15 @@ namespace Spiel_Des_Lebens
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            UI_Interface ui_interface = new UI_Interface(true, 18, "Fritz", Data.Path.Training, Data.Profession.Business);
+            ui_interface = new UI_Interface(true, 18, "Fritz", Data.Path.Training, Data.Profession.Business);
             lblPlayerAge.Text = Convert.ToString(this.alter);
             lblPlayerName.Text = this.name;
             /*btnAktion_Click(sender, e);*/
             ui_interface.nextEvent();
             
             event_txt_box.Text = ui_interface.getEventText();
-            current_phase_txt.Text = "Derzeitige Phase: " + ui_interface.getCurrentPhase();
-            left_phase_txt.Text = "Verbleibene Phasenzeit: " + (6- ui_interface.getCurrentPhase());
+            current_phase_txt.Text = "Derzeitige Phase: " + ui_interface.getCurrentPhase() +1;
+            left_phase_txt.Text = "Verbleibene Phasenzeit: " + (6- ui_interface.getCurrentPhase()); //BRAUCHE NOCH AKTIONSTEILESACHEN
             action_points_txt.Text = "Aktionspunkte: " + ui_interface.getActionPoints();
             option_1_btn.Text = ui_interface.getEventOptionTitle(0);
             option_2_btn.Text = ui_interface.getEventOptionTitle(1);
@@ -129,6 +129,7 @@ namespace Spiel_Des_Lebens
 
         private void btnLoadEvent_Click()
         {
+            ui_interface.nextEvent();
             //txtEvent = ui_interface.nextEvent().ToString();
             event_txt_box.Text = ui_interface.getEventText();
             if(ui_interface.getEventInfo() != ""){
@@ -136,47 +137,54 @@ namespace Spiel_Des_Lebens
                 info_text.Text = ui_interface.getEventInfo();
             }
             //option[] = uI_Interface.getEventOptionTitle()
-            option_1_btn.Text = option[0];
-            option_2_btn.Text = option[1];
-            if (option[4] == "" && option[3] != "")
+            option_1_btn.Text = ui_interface.getEventOptionTitle(0);
+            option_2_btn.Text = ui_interface.getEventOptionTitle(1);
+            if (ui_interface.getEventOptionTitle(3) == "" && ui_interface.getEventOptionTitle(2) != "")
             {
                 option_3_btn.Visible = true;
-                option_3_btn.Text = option[2];
+                option_3_btn.Text = ui_interface.getEventOptionTitle(2);
                 option_4_btn.Visible = false;
                 option_5_btn.Visible = false;
+            }
+            else if (ui_interface.getEventOptionTitle(2) != "" && ui_interface.getEventOptionTitle(3) != "")
+            {
+                option_3_btn.Visible = false;
+                option_4_btn.Visible = true;
+                option_4_btn.Text = ui_interface.getEventOptionTitle(2);
+                option_5_btn.Visible = true;
+                option_5_btn.Text = ui_interface.getEventOptionTitle(3);
             }
             else
             {
                 option_3_btn.Visible = false;
-                option_4_btn.Visible = true;
-                option_4_btn.Text = option[2];
-                option_5_btn.Visible = true;
-                option_5_btn.Text = option[3];
+                option_4_btn.Visible = false;
+                option_5_btn.Visible = false;
             }
             update_aktionpoints();
         }
 
         private void option_1_click(object sender, EventArgs e)
         {
-            ui_interface.getEventOptionTitle(1);
+            event_txt_box.Text = ui_interface.getEventOptionText(0);
+            //await Task.Delay(10);
             btnLoadEvent_Click();
         }
 
         private void option_3_click(object sender, EventArgs e)
         {
-            ui_interface.getEventOptionTitle(3);
+            event_txt_box.Text = ui_interface.getEventOptionText(2);
             btnLoadEvent_Click();
         }
 
         private void option_4_click(object sender, EventArgs e)
         {
-            ui_interface.getEventOptionTitle(4);
+            event_txt_box.Text = ui_interface.getEventOptionText(3);
             btnLoadEvent_Click();
         }
 
         private void option_2_click(object sender, EventArgs e)
         {
-            ui_interface.getEventOptionTitle(1);
+            event_txt_box.Text = ui_interface.getEventOptionText(1);
             btnLoadEvent_Click();
         }
         private void update_aktionpoints()
