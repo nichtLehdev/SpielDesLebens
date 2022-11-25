@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
 namespace Spiel_Des_Lebens
 {
@@ -19,14 +18,12 @@ namespace Spiel_Des_Lebens
         {
             this.edupath = edupath;
             filterEventsByPathProfession(loadEvents());
-            //this.events = filterEvents(events, path, profession);
             // TODO cleanup constructur, change player reset
-            // TODO JSON: add priority to events
             // TODO relative path to json file in package
         }
+
         //Prio: for loop frägt Randomized Num ab, if(Randomized>50...) ist prio 1, dann 50 halbieren und nochmal
         //Bei Priority = 0 Event wird direkt das erste Event der events Liste ausgeführt und gelöscht mittels Id aus filteredEventsPathProfession
-
         public Event nextEvent(Stat stats)
         {
             filterEventsByPhase();
@@ -62,7 +59,7 @@ namespace Spiel_Des_Lebens
                 if (prioEvents.Count != 0)
                 {
                     int eventIndex = random.Next(prioEvents.Count);
-                    filteredEventsPathProfession[findEventIndexByID(prioEvents[eventIndex].id)].priority *= 2;
+                    // filteredEventsPathProfession[findEventIndexByID(prioEvents[eventIndex].id)].priority *= 2;
                     return prioEvents[eventIndex];
                 }
             }

@@ -33,7 +33,7 @@ namespace Spiel_Des_Lebens
                 }
 
 
-                events.Add(new Event(e.id, e.title, e.text, e.priority, r, oList));
+                events.Add(new Event(e.id, e.title, e.text, e.info, e.priority, r, oList));
 
             }
             return events;
@@ -49,8 +49,7 @@ namespace Spiel_Des_Lebens
             int[] eProfessions = evaluateProfessions(profession);
             int[] ePhases = evaluatePhaseList(phase, ePaths);
 
-            //TODO Convert 1D arrays into 3D array. 
-            // Specify construction of 3D array.
+
 
             return new Timing(ePaths.ToList(), eProfessions.ToList(), ePhases.ToList());
 
@@ -147,7 +146,7 @@ namespace Spiel_Des_Lebens
                 {
                     int length = getGreatestPhaseCount(paths);
                     return fillList(length).ToArray();
-                   
+
                 }
                 else
                 {
@@ -213,7 +212,7 @@ namespace Spiel_Des_Lebens
                     possibleValues.Add(Int32.Parse(phase));
                 }
             }
-            
+
         }
 
         private List<int> compareLists(List<int> pList, List<int> eList)
