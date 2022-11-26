@@ -496,11 +496,75 @@
       }
    },
    {
-      "id": "A-099",
-      "title": "",
+      "id": "A-032",
+      "title": "Alkohol trinken",
+      "info": "Alkohol ist eine Lösung, oder doch ein Destillat von Problemen ? - Github Copilot",
+      "result": {
+         "id": "A-032_1",
+         "title": "Lass die Finger weg von Alkohol",
+         "text": "Leider hatten deine Trinkeskapaden negative Auswirkungen auf deine Motivation, Mental Health, deinen Erfolg und deinen Geldbeutel",
+         "stats": {
+            "mentalHealth": -5,
+            "motivation": -5,
+            "money": -10,
+            "success": -5
+         }
+      }
+   },
+   {
+      "id": "A-033",
+      "title": "im Laden klauen",
       "info": "",
       "result": {
-         "id": "A-099_1",
+         "id": "A-033_1",
+         "title": "",
+         "text": "",
+         "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-034",
+      "title": "Drogen nehmen",
+      "info": "",
+      "result": {
+         "id": "A-034_1",
+         "title": "",
+         "text": "",
+         "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-035",
+      "title": "eine Schlägerei veranstalten",
+      "info": "",
+      "result": {
+         "id": "A-035_1",
+         "title": "",
+         "text": "",
+         "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-036",
+      "title": "Filme illegal downloaden",
+      "info": "",
+      "result": {
+         "id": "A-036_1",
          "title": "",
          "text": "",
          "stats": {
