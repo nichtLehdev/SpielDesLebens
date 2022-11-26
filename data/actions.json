@@ -249,7 +249,7 @@
       "result": {
          "id": "A-016_1",
          "title": "Die Küche steht in Flammen",
-         "text": "Du hast 10 € für Zutaten ausgegeben. Deine Mental Health hat ebenfalls gelitten, dafür hast du aber einen ordentlichen Erfolg erreicht.",
+         "text": "Du hast 5 € für Zutaten ausgegeben. Deine Mental Health hat ebenfalls gelitten, dafür hast du aber einen ordentlichen Erfolg erreicht.",
          "stats": {
             "mentalHealth": -5,
             "motivation": 0,
