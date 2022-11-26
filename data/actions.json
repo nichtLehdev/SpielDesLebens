@@ -99,6 +99,9 @@
       "id": "A-007",
       "title": "Güter des täglichen Bedarfs einkaufen",
       "info": "Zum Erfolg gehört auch ein guter Lebensmittelvorrat",
+      "id": "A-001",
+      "title": "",
+      "info": "",
       "result": {
          "id": "A-007_1",
          "title": "Wocheneinkauf",
