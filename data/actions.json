@@ -86,7 +86,7 @@
       "result": {
          "id": "A-006_1",
          "title": "Premiere von Marvel Teil 69",
-         "text": "Trozt der inflationsbedingten Preiserhöhung auf 23€ hast du dir den neuen Marvel-Film angeschaut. Deine Motivation und Mental Health haben sich verbessert.",
+         "text": "Trotz der inflationsbedingten Preiserhöhung auf 23€ hast du dir den neuen Marvel-Film angeschaut. Deine Motivation und Mental Health haben sich verbessert.",
          "stats": {
             "mentalHealth": 15,
             "motivation": 15,
@@ -198,7 +198,7 @@
       "result": {
          "id": "A-013_1",
          "title": "Netflix & Chill",
-         "text": "Motivation und Mentalhealth gibt es schon für 5€.",
+         "text": "Motivation und Mental Health gibt es schon für 5€.",
          "stats": {
             "mentalHealth": 8,
             "motivation": 8,
@@ -369,7 +369,7 @@
    },
    {
       "id": "A-024",
-      "title": "faulenzen und nichts tun",
+      "title": "Faulenzen und nichts tun",
       "info": "mal richtig faulenzen ist bestimmt gut für die Gesundheit",
       "result": {
          "id": "A-024_1",
@@ -385,7 +385,7 @@
    },
    {
       "id": "A-025",
-      "title": "meditieren",
+      "title": "Meditieren",
       "info": "faulenzen nur in gesellschaftlich akzeptierter Form",
       "result": {
          "id": "A-025_1",
@@ -396,6 +396,102 @@
             "motivation": 10,
             "money": 0,
             "success": 5
+         }
+      }
+   },
+   {
+      "id": "A-026",
+      "title": "ein Buch lesen",
+      "info": "bildet und macht glücklich, gibt es leider aber nicht kostenlos",
+      "result": {
+         "id": "A-026_1",
+         "title": "Jener, der keine guten Bücher liest, hat keinen Vorteil gegenüber jenem, der gar nicht liest. - Mark Twain",
+         "text": "Du hast zwar 10€ ausgegeben, dafür hast du aber auch etwas gelernt, bist motiviert und konntest ein wenig abschalten.",
+         "stats": {
+            "mentalHealth": 10,
+            "motivation": 10,
+            "money": -10,
+            "success": 10
+         }
+      }
+   },
+   {
+      "id": "A-027",
+      "title": "Tagebuch schreiben",
+      "info": "die eigenen Gedanken aufschreiben hilft manchmal, die eigenen Gedanken zu ordnen - Github Copilot",
+      "result": {
+         "id": "A-027_1",
+         "title": "kostenneutrale Psychotherapie mit negativen Nebenwirkungen",
+         "text": "nach der Beschäftigung mit deinen Gedanken und Erlebnissen von heute, hast du realisiert, dass das Leben eine Qual ist. Morgen bist du wieder motiviert.",
+         "stats": {
+            "mentalHealth": -10,
+            "motivation": 5,
+            "money": 0,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-028",
+      "title": "ein Kreuzworträtsel lösen",
+      "info": "bildet und motiviert",
+      "result": {
+         "id": "A-028_1",
+         "title": "Glückwunsch, du hast sogar den 10€ Amazon Gutschein fürs einsenden gewonnen",
+         "text": "Du hast erfolgreich etwas gelernt, bist motiviert und 10€ gewonnen.",
+         "stats": {
+            "mentalHealth": 0,
+            "motivation": 10,
+            "money": 10,
+            "success": 5
+         }
+      }
+   },
+   {
+      "id": "A-029",
+      "title": "einen Udemy-Kurs absolvieren",
+      "info": "bildet für kleines Geld",
+      "result": {
+         "id": "A-029_1",
+         "title": "Ob sich der Aufwand gelohnt hat ?",
+         "text": "Du hast Erfolgreich den Kurs abgeschlossen, war aber anstrengender als gedacht. Deine Motivation und Mental Health sind gefallen.",
+         "stats": {
+            "mentalHealth": -5,
+            "motivation": -5,
+            "money": -5,
+            "success": 15
+         }
+      }
+   },
+   {
+      "id": "A-030",
+      "title": "ein Musikinstrument spielen",
+      "info": "ein Musikinstrument zu spielen ist gesellschaftlich hoch angesehen",
+      "result": {
+         "id": "A-030_1",
+         "title": "Übung macht den Meister",
+         "text": "Du kannst nun erfolgreich ein Stück fehlerfrei spielen, trotzdem brauchst du nun erstmal eine Pause",
+         "stats": {
+            "mentalHealth": 10,
+            "motivation": -5,
+            "money": 0,
+            "success": 10
+         }
+      }
+   },
+   {
+      "id": "A-031",
+      "title": "TODOs abarbeiten",
+      "info": "du hast dir viel vorgenommen",
+      "result": {
+         "id": "A-099_1",
+         "title": "Die Liste ist siginifikant kürzer geworden",
+         "text": "Ein erfolgreicher TODO-Marathon liegt hinter dir, deshalb brauchst du nun erstmal eine Pause",
+         "stats": {
+            "mentalHealth": -10,
+            "motivation": -10,
+            "money": 0,
+            "success": 10
          }
       }
    },
