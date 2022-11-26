@@ -2035,6 +2035,228 @@
       ]
    },
    {
+      "id": "E-034",
+      "title": "Lange Mittagspause",
+      "text": "Du bist an der Uni & hast 4h Mittagspause. Was machst du in Bezug auf dein Essen?",
+      "info": "Auswirkung auf Mentale Gesundheit & Geld",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1","2"],
+               "profession": ["*"],
+               "phase": ["*!%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 20,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-034_1",
+            "title": "Pizza & Waffeln",
+            "text": "Du und deine Kommilitonen organisieren einen Pizzaofen, ein Waffeleisen und eine Kommilitonin bringt Waffelteig mit. Ihr backt Pizza und Waffeln im Vorlesungsraum, es fliegen ein paar Sicherungen raus aber ihr knackt das Schloss des Sicherungskastens und macht diese wieder rein.",
+            "stats": {
+               "mentalHealth": 30,
+               "motivation": 0,
+               "money": -5,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-034_2",
+            "title": "Bäcker",
+            "text": "du holst dir mit ein paar anderen Kommilitonen etwas vom Becker.",
+            "stats": {
+               "mentalHealth": 20,
+               "motivation": 0,
+               "money": -3,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-034_3",
+            "title": "Mensa",
+            "text": "Du gehst mit ein paar anderen Kommilitonen in die Mensa der Uni. Das essen ist okay.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 0,
+               "money": -15,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-034_4",
+            "title": "Pausenbrot rein stopfen und lernen",
+            "text": "Du isst das Butterbrot, welches dir deine Mama mitgegeben hat, und lernst während dem Essen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 10
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-035",
+      "title": "Lange Mittagspause",
+      "text": "Du bist an der Uni & hast 4h Mittagspause. Was machst du in Bezug auf dein Trinken?",
+      "info": "Auswirkung auf den lernerfolg des restlichen Tages",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1","2"],
+               "profession": ["*"],
+               "phase": ["*!%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 5,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-035_1",
+            "title": "Saftschorle",
+            "text": "Du kauft dir einen Saft beim Supermarkt. Er gibt dir die Energie die du für die letzte Vorlesung brauchst.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": -1,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-035_2",
+            "title": "Pfälzer Schorle",
+            "text": "Du kauft beim Supermarkt eine Weinschorle. Die Mittagspause macht Spaß doch in der Vorlesung danach kannst du dich nicht konzentrieren.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 0,
+               "money": -2,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-035_3",
+            "title": "Bier",
+            "text": "Du kauft dir beim Supermarkt ein Bier. Die Mittagspause macht Spaß doch in der Vorlesung danach schläfst du ein.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 0,
+               "money": -2,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-035_4",
+            "title": "Energy Drink",
+            "text": "Du kauft dir beim Supermarkt einen Energy Drink. Du genießt die Mittagspause und hast keine Probleme der Vorlesung danach zu folgen.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 5,
+               "money": -1,
+               "success": 15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-036",
+      "title": "Lange Mittagspause",
+      "text": "Du bist an der Uni & hast 4h Mittagspause. Wie verbringst du diese?",
+      "info": "Auswirkung auf verschiedene Stats",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1","2"],
+               "profession": ["*"],
+               "phase": ["*!%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 5,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-036_1",
+            "title": "essen & lernen",
+            "text": "Du kauft dir etwas zu essen und lernst.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 5,
+               "money": -3,
+               "success": 20
+            }
+         },
+         {
+            "id": "E-036_2",
+            "title": "essen & schlafen",
+            "text": "Du kauft dir etwas zu essen und schläfst im Vorlesungsraum. Es ist nicht sehr bequem aber geht.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 5,
+               "money": -3,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-036_3",
+            "title": "essen & Computer spielen",
+            "text": "Du kauft dir etwas zu essen und spielst the Binding of Issac.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 10,
+               "money": -3,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-036_4",
+            "title": "schlafen & lernen",
+            "text": "Du schläft im Vorlesungsraum und lernst anschließend.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 0,
+               "money": -3,
+               "success": 15
+            }
+         }
+      ]
+   },
+   {
       "id": "E-998",
       "title": "Hofmann ist im Urlaub",
       "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
