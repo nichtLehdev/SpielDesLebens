@@ -1,10 +1,122 @@
 [
    {
-      "id": "A-1",
-      "title": "",
-      "info": "",
+      "id": "A-001",
+      "title": "Sport machen",
+      "info": "gibt Motivation und Mental Health",
       "result": {
-         "id": "A-_1",
+         "id": "A-001_1",
+         "title": "Auf dem Weg zu Olympia",
+         "text": "Du hast eine neue persönliche Bestleistung erzielt.",
+         "stats": {
+            "mentalHealth": 5,
+            "motivation": 15,
+            "money": 0,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-002",
+      "title": "UNO mit Vater spielen",
+      "info": "gibt eine geringe Steigerung der Motivation",
+      "result": {
+         "id": "A-002_1",
+         "title": "Väter können unfassbar nerven",
+         "text": "Dein Vater hat dich mit UNO abgezockt. Du hast 5 Euro und ein wenig an Mental Health verloren. Aber du hast trotzdem Motivation gewonnen.",
+         "stats": {
+            "mentalHealth": -5,
+            "motivation": 10,
+            "money": -5,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-003",
+      "title": "Freunde treffen",
+      "info": "Bringt Mental Health und Motivation",
+      "result": {
+         "id": "A-003_1",
+         "title": "Gute Freunde sind Gold wert",
+         "text": "Deine Motivation und Mental Health haben sich verbessert.",
+         "stats": {
+            "mentalHealth": 10,
+            "motivation": 10,
+            "money": 0,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-004",
+      "title": "Nebenjob machen",
+      "info": "Gegen Motivation und Mental Health gibt es Geld und ein wenig Erfolg - Willkommen im Kapitalismus",
+      "result": {
+         "id": "A-004_1",
+         "title": "Geld stinkt nicht",
+         "text": "Du hast 25 Euro verdient dafür aber Motivation und Mental Health verloren.",
+         "stats": {
+            "mentalHealth": -5,
+            "motivation": -10,
+            "money": 25,
+            "success": 5
+         }
+      }
+   },
+   {
+      "id": "A-005",
+      "title": "Lernen",
+      "info": "Erfolg lässt sich nicht kaufen, aber mit Motivation erreichen",
+      "result": {
+         "id": "A-005_1",
+         "title": "Erfolg ist kein Zufall",
+         "text": "Deine Motivation wurde 1:1 in Erfolg ausgezahlt.",
+         "stats": {
+            "mentalHealth": 0,
+            "motivation": -10,
+            "money": 0,
+            "success": 10
+         }
+      }
+   },
+   {
+      "id": "A-006",
+      "title": "ins Kino gehen",
+      "info": "Glück ist kaufbar",
+      "result": {
+         "id": "A-006_1",
+         "title": "Premiere von Marvel Teil 69",
+         "text": "Trozt der inflationsbedingten Preiserhöhung auf 23€ hast du dir den neuen Marvel-Film angeschaut. Deine Motivation und Mental Health haben sich verbessert.",
+         "stats": {
+            "mentalHealth": 15,
+            "motivation": 15,
+            "money": -23,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-007",
+      "title": "Güter des täglichen Bedarfs einkaufen",
+      "info": "Zum Erfolg gehört auch ein guter Lebensmittelvorrat",
+      "result": {
+         "id": "A-007_1",
+         "title": "Wocheneinkauf",
+         "text": "Du hasst alles gekauft, was du brauchst. Das ist ein Erfolg.",
+         "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": -20,
+            "success": 10
+         }
+      }
+   },
+   {
+      "id": "A-008",
+      "title": "eine Party feiern",
+      "info": "Party ist immer gut - auch wenn du alleine bist",
+      "result": {
+         "id": "A-008_1",
          "title": "",
          "text": "",
          "stats": {
@@ -16,11 +128,11 @@
       }
    },
    {
-      "id": "A-2",
+      "id": "A-099",
       "title": "",
       "info": "",
       "result": {
-         "id": "A-_2",
+         "id": "A-099_1",
          "title": "",
          "text": "",
          "stats": {
