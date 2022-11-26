@@ -114,16 +114,288 @@
    {
       "id": "A-008",
       "title": "eine Party feiern",
-      "info": "Party ist immer gut - auch wenn du alleine bist",
+      "info": "Bedenke die Folgen des Alkoholkonsums",
       "result": {
          "id": "A-008_1",
-         "title": "",
-         "text": "",
+         "title": "Der nächste Tag",
+         "text": "Du nun zwar motiviert, aber leider noch so betrunken, dass du heute nicht produktiv bist.",
          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
+            "mentalHealth": 5,
+            "motivation": 15,
+            "money": -15,
+            "success": -5
+         }
+      }
+   },
+   {
+      "id": "A-009",
+      "title": "einen spaziergang machen",
+      "info": "Kostenlos und gut für die Gesundheit",
+      "result": {
+         "id": "A-009_1",
+         "title": "Erholt und motiviert",
+         "text": "Mental Health und Motivation wurden gesteigert.",
+         "stats": {
+            "mentalHealth": 5,
+            "motivation": 5,
             "money": 0,
             "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-010",
+      "title": "gut essen gehen",
+      "info": "Gute Essen gehen ist teuer, aber es lohnt sich",
+      "result": {
+         "id": "A-010_1",
+         "title": "Das war lecker",
+         "text": "Die 35€ waren es wert. Deine Motivation, Mental Health und Erfolg haben sich verbessert.",
+         "stats": {
+            "mentalHealth": 15,
+            "motivation": 15,
+            "money": -35,
+            "success": 5
+         }
+      }
+   },
+   {
+      "id": "A-011",
+      "title": "Musik hören",
+      "info": "Musik ist gut für die Motivation",
+      "result": {
+         "id": "A-011_1",
+         "title": "Musik ist keine Lösung",
+         "text": "Für Motivationsprobleme heute aber schon, wenn Spotify Premium nicht so teuer wäre.",
+         "stats": {
+            "mentalHealth": 5,
+            "motivation": 10,
+            "money": -10,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-012",
+      "title": "Podcast hören",
+      "info": "ist wie Musik nur manchmal mit Bildung",
+      "result": {
+         "id": "A-012_1",
+         "title": "Kostenfreie Bildung mit Motivationsschub",
+         "text": "Deine Motivation und Erfolg haben sich verbessert.",
+         "stats": {
+            "mentalHealth": 0,
+            "motivation": 5,
+            "money": 0,
+            "success": 5
+         }
+      }
+   },
+   {
+      "id": "A-013",
+      "title": "eine(n) Film / Serie zuhause schauen",
+      "info": "kostengünstige Unterhaltung",
+      "result": {
+         "id": "A-013_1",
+         "title": "Netflix & Chill",
+         "text": "Motivation und Mentalhealth gibt es schon für 5€.",
+         "stats": {
+            "mentalHealth": 8,
+            "motivation": 8,
+            "money": -5,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-014",
+      "title": "Social Media konsumieren",
+      "info": "Social Media hat nicht nur Vorteile",
+      "result": {
+         "id": "A-099_1",
+         "title": "Social Media ist nicht dein Freund",
+         "text": "Deine Motivation hat sich verbessert. Mental Health und Erfolgs haben sich verschlechtert.",
+         "stats": {
+            "mentalHealth": -10,
+            "motivation": 5,
+            "money": 0,
+            "success": -5
+         }
+      }
+   },
+   {
+      "id": "A-015",
+      "title": "Videogames spielen",
+      "info": "gute Indiegames gibt es schon für 10€",
+      "result": {
+         "id": "A-015_1",
+         "title": "Du hast eine neuen Highscore erreicht",
+         "text": "Motivation und Mental Health haben wurden gesteigert.",
+         "stats": {
+            "mentalHealth": 5,
+            "motivation": 15,
+            "money": -10,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-016",
+      "title": "Kochen / Backen",
+      "info": "Wenn du es schaffst ein etwas genießbares zu kreieren, dann ist das ein Erfolg",
+      "result": {
+         "id": "A-016_1",
+         "title": "Die Küche steht in Flammen",
+         "text": "Du hast 10 € für Zutaten ausgegeben. Deine Mental Health hat ebenfalls gelitten, dafür hast du aber einen ordentlichen Erfolg erreicht.",
+         "stats": {
+            "mentalHealth": -5,
+            "motivation": 0,
+            "money": -5,
+            "success": 10
+         }
+      }
+   },
+   {
+      "id": "A-017",
+      "title": "lange ausschlafen",
+      "info": "mal richtig ausschlafen ist gut für die Gesundheit und lohnt sich",
+      "result": {
+         "id": "A-017_1",
+         "title": "Auch die schönste Nacht hat ein Ende",
+         "text": "Du hast zwar einige Aufgaben liegen lassen dafür bist du nun wieder hochmotiviert und hast einen gesunden Start in den Tag.",
+         "stats": {
+            "mentalHealth": 15,
+            "motivation": 20,
+            "money": 0,
+            "success": -10
+         }
+      }
+   },
+   {
+      "id": "A-018",
+      "title": "Wohnung / Zimmer putzen",
+      "info": "muss leider auch gemacht werden",
+      "result": {
+         "id": "A-018_1",
+         "title": "Du hast dein Leben im Griff.",
+         "text": "Nach 2h Stunden Putzmarathon ist dein Zimmer wieder sauber. Motivation und Mental Health sind gesunken trotzdem hast du einen Erfolg erzielt.",
+         "stats": {
+            "mentalHealth": -5,
+            "motivation": -5,
+            "money": 0,
+            "success": 10
+         }
+      }
+   },
+   {
+      "id": "A-019",
+      "title": "einen Ausflug mit der Familie machen",
+      "info": "Familie ist wichtig, aber anstrengend",
+      "result": {
+         "id": "A-099_1",
+         "title": "immerhin kostenlos",
+         "text": "deine Mental Health ist gesunken, dafür bist du immerhin wieder motiviert.",
+         "stats": {
+            "mentalHealth": -5,
+            "motivation": 10,
+            "money": 0,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-020",
+      "title": "ein Bad nehmen",
+      "info": "mal richtig entspannen ist gut für die Gesundheit und lohnt sich",
+      "result": {
+         "id": "A-020_1",
+         "title": "Du hast dich entspannt",
+         "text": "Du hast eine Aufgaben liegen lassen dafür bist du nun wieder hochmotiviert und in guter psychisch bester Verfassung.",
+         "stats": {
+            "mentalHealth": 10,
+            "motivation": 15,
+            "money": 0,
+            "success": -5
+         }
+      }
+   },
+   {
+      "id": "A-021",
+      "title": "Shoppen gehen",
+      "info": "Glück ist eben doch käuflich",
+      "result": {
+         "id": "A-021_1",
+         "title": "Das Geld ist leer, die Taschen voll",
+         "text": "Du bist nun 50€ ärmer, dafür hast du aber ein paar neue Sachen und bist glücklich.",
+         "stats": {
+            "mentalHealth": 15,
+            "motivation": 20,
+            "money": -50,
+            "success": 0
+         }
+      }
+   },
+   {
+      "id": "A-022",
+      "title": "etwas reparieren",
+      "info": "defekte Dinge zu reparieren ist nicht nur gut für die Umwelt, sondern auch für die Motivation und den Erfolg",
+      "result": {
+         "id": "A-022_1",
+         "title": "umweltbewusst sparen - gewusst wie",
+         "text": "Du hast erfolgreich etwas repariert. Deine Motivation und dein Erfolg haben sich verbessert.",
+         "stats": {
+            "mentalHealth": 0,
+            "motivation": 10,
+            "money": 0,
+            "success": 10
+         }
+      }
+   },
+   {
+      "id": "A-023",
+      "title": "unnötige Dinge aussortieren",
+      "info": "vielleicht kann davon noch etwas verkaufen",
+      "result": {
+         "id": "A-023_1",
+         "title": "anstrengend, aber erfolgreich",
+         "text": "Du bist zwar jetzt müde, hast aber erfolgreich ausgemistet und sogar noch 10€ verdient.",
+         "stats": {
+            "mentalHealth": -5,
+            "motivation": -5,
+            "money": 10,
+            "success": 3
+         }
+      }
+   },
+   {
+      "id": "A-024",
+      "title": "faulenzen und nichts tun",
+      "info": "mal richtig faulenzen ist bestimmt gut für die Gesundheit",
+      "result": {
+         "id": "A-024_1",
+         "title": "Erholt, aber wenig motiviert und erfolglos",
+         "text": "Einfach mal abschalten hat deine Mental Health gesteigert, dafür hast du aber nichts erreicht und deine Motivation ist kaum gestiegen.",
+         "stats": {
+            "mentalHealth": 10,
+            "motivation": 2,
+            "money": 0,
+            "success": -5
+         }
+      }
+   },
+   {
+      "id": "A-025",
+      "title": "meditieren",
+      "info": "faulenzen nur in gesellschaftlich akzeptierter Form",
+      "result": {
+         "id": "A-025_1",
+         "title": "Erholt und motiviert",
+         "text": "Da du dich entspannt hast, bist du nun motiviert und in psychisch bester Verfassung, dass du die liegengebliebenen Aufgaben in kürzester Zeit erledigen kannst.",
+         "stats": {
+            "mentalHealth": 15,
+            "motivation": 10,
+            "money": 0,
+            "success": 5
          }
       }
    },
