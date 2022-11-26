@@ -24,12 +24,12 @@ namespace Spiel_Des_Lebens
                     timings.Add(evaluateTimings(lt));
                 }
 
-                Requirement r = new Requirement(timings, convertLoadStatToStat(e.requirements.stats_min), convertLoadStatToStat(e.requirements.stats_max));
+                Requirement r = new Requirement(timings, Converter.convertLoadStatToStat(e.requirements.stats_min), Converter.convertLoadStatToStat(e.requirements.stats_max));
 
                 List<Option> oList = new List<Option>();
                 foreach (loadOption o in e.options)
                 {
-                    oList.Add(convertLoadOptionToOption(o));
+                    oList.Add(Converter.convertLoadOptionToOption(o));
                 }
 
 
@@ -346,17 +346,6 @@ namespace Spiel_Des_Lebens
                 if (count > greatestCount) greatestCount = count;
             }
             return greatestCount;
-        }
-
-
-        private Option convertLoadOptionToOption(loadOption lOption)
-        {
-            return new Option(lOption.id, lOption.title, lOption.text, convertLoadStatToStat(lOption.stats));
-        }
-
-        private Stat convertLoadStatToStat(loadStat lStat)
-        {
-            return new Stat(lStat.mentalHealth, lStat.money, lStat.motivation, lStat.success);
         }
 
     }

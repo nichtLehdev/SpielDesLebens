@@ -52,6 +52,8 @@
   <ItemGroup>
     <Compile Include="Action.cs" />
     <Compile Include="ActionGenerator.cs" />
+    <Compile Include="ActionListConverter.cs" />
+    <Compile Include="Converter.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="EducationPath.cs" />
     <Compile Include="Error.cs" />
@@ -64,6 +66,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="loadAction.cs" />
     <Compile Include="loadOption.cs" />
     <Compile Include="loadStat.cs" />
     <Compile Include="loadRequirement.cs" />

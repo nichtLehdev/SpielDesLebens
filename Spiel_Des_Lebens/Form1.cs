@@ -52,8 +52,8 @@ namespace Spiel_Des_Lebens
             var actionTest = new ActionGenerator().loadActions();
             foreach(Action action in actionTest)
             {
-                output += action.id + "\r\n";
-                Option o = action.result;
+                output += action.getId() + "\r\n";
+                Option o = action.getResult();
                 output += o.id + "\r\n";
                 foreach(StatParameter item in o.optionStat.getStats())
                 {

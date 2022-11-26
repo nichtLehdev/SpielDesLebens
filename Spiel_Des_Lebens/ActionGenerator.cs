@@ -17,10 +17,8 @@ namespace Spiel_Des_Lebens
             string filename = "..//..//..//data//actions.json";
             if (File.Exists(filename))
             {
-                List<Action> loadActions = JsonConvert.DeserializeObject<List<Action>>(File.ReadAllText(filename));
-
-                
-                return loadActions;
+                List<loadAction> loadActions = JsonConvert.DeserializeObject<List<loadAction>>(File.ReadAllText(filename));
+                return ActionListConverter.convertLoadActionsToActions(loadActions);
             }
             else
             {
