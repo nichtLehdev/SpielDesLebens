@@ -45,9 +45,9 @@ namespace Spiel_Des_Lebens
             List<string> profession = lTiming.profession;
             List<string> phase = lTiming.phase;
 
-            int[] ePaths = evaluatePaths(path).ToHashSet().ToArray();
-            int[] eProfessions = evaluateProfessions(profession).ToHashSet().ToArray();
-            int[] ePhases = evaluatePhaseList(phase, ePaths).ToHashSet().ToArray();
+            int[] ePaths = evaluatePaths(path).ToArray();
+            int[] eProfessions = evaluateProfessions(profession).ToArray();
+            int[] ePhases = evaluatePhaseList(phase, ePaths).ToArray();
 
             return new Timing(ePaths.ToList(), eProfessions.ToList(), ePhases.ToList());
 
@@ -218,7 +218,7 @@ namespace Spiel_Des_Lebens
             List<int> comparedList = new List<int>();
             foreach (int pVal in pList)
             {
-                if (eList.IndexOf(pVal) == -1)
+                if (eList.IndexOf(pVal) == -1 && comparedList.IndexOf(pVal) == -1)
                 {
                     comparedList.Add(pVal);
                 }
