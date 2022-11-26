@@ -482,10 +482,10 @@
    {
       "id": "A-031",
       "title": "TODOs abarbeiten",
-      "info": "du hast dir viel vorgenommen",
+      "info": "Du hast dir viel vorgenommen",
       "result": {
          "id": "A-099_1",
-         "title": "Die Liste ist siginifikant kürzer geworden",
+         "title": "Die Liste ist signifikant kürzer geworden",
          "text": "Ein erfolgreicher TODO-Marathon liegt hinter dir, deshalb brauchst du nun erstmal eine Pause",
          "stats": {
             "mentalHealth": -10,
@@ -514,64 +514,64 @@
    {
       "id": "A-033",
       "title": "im Laden klauen",
-      "info": "",
+      "info": "Klauen ist illegal, aber es ist ja nur ein kleiner Gegenstand - Github Copilot",
       "result": {
          "id": "A-033_1",
-         "title": "",
-         "text": "",
+         "title": "Wer klaut, kauft zweimal - so oder so ähnlich",
+         "text": "Du hast einen Gegenstand geklaut, wurdest erwischt und hast eine Anzeige bekommen. Deine Motivation und Mental Health sind gefallen. Ebenso musst du nun eine Geldstrafe zahlen und hast einen Eintrag im Führungszeugnis.",
          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 0
+            "mentalHealth": -10,
+            "motivation": -10,
+            "money": -30,
+            "success": -10
          }
       }
    },
    {
       "id": "A-034",
       "title": "Drogen nehmen",
-      "info": "",
+      "info": "Drogen sind illegal, machen aber glücklich",
       "result": {
          "id": "A-034_1",
-         "title": "",
-         "text": "",
+         "title": "Lass die Finger weg von Drogen",
+         "text": "Leider wurde dein Dealer gefasst und war sehr gesprächig. Du hast nun auch eine Anzeige bekommen. Deine Motivation und Mental Health sind gefallen. Ebenso musst du nun eine Geldstrafe zahlen und hast einen Eintrag im Führungszeugnis.",
          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 0
+            "mentalHealth": -10,
+            "motivation": -10,
+            "money": -30,
+            "success": -10
          }
       }
    },
    {
       "id": "A-035",
       "title": "eine Schlägerei veranstalten",
-      "info": "",
+      "info": "Gewalt ist die Lösung. - Github Copilot",
       "result": {
          "id": "A-035_1",
-         "title": "",
-         "text": "",
+         "title": "nächstes Mal vorher mehr trainieren",
+         "text": "Leider hast du den Kürzeren gezogen. Deine Motivation und Mental Health sind gefallen. Du bist nun auch noch verletzt und fällst 2 Wochen aus.",
          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
+            "mentalHealth": -8,
+            "motivation": -8,
             "money": 0,
-            "success": 0
+            "success": -5
          }
       }
    },
    {
       "id": "A-036",
       "title": "Filme illegal downloaden",
-      "info": "",
+      "info": "Filme sind teuer, aber es gibt ja auch Torrents - Github Copilot",
       "result": {
          "id": "A-036_1",
-         "title": "",
-         "text": "",
+         "title": "Das nächste mal den VPN nicht vergessen",
+         "text": "Leider wurdest du erwischt. Deine Motivation und Mental Health sind gefallen. Ebenso musst du nun eine Geldstrafe zahlen und hast einen Eintrag im Führungszeugnis.",
          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 0
+            "mentalHealth": -10,
+            "motivation": -10,
+            "money": -30,
+            "success": -10
          }
       }
    }
