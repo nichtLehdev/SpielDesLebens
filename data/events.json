@@ -2541,6 +2541,1785 @@
       ]
    },
    {
+      "id": "E-037",
+      "title": "Vorlesung",
+      "text": "Du bist an der Uni & hast Vorlesung. Was tust du?",
+      "info": "Auswirkung auf verschiedene Stats",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1","2"],
+               "profession": ["*"],
+               "phase": ["*!%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-037_1",
+            "title": "schlafen",
+            "text": "Da du bis 5 Uhr Morgens Hellblade Seuna`s Sacrifice gespielt hast bist du Müde und schläft in der Vorlesung. Da hast Albträume vom Höllenbiest.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": 0,
+               "money": 0,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-037_2",
+            "title": "Computer Spiele spielen",
+            "text": "Du hörst nur mit einem Ohr zu und spielst während der Vorlesung LOL an deinem Laptop.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-037_3",
+            "title": "zuhören & mitschreiben",
+            "text": "Du beteiligst dich aktiv am Unterricht und machst dir Notzen.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 8,
+               "money": 0,
+               "success": 20
+            }
+         },
+         {
+            "id": "E-037_4",
+            "title": "Klassenclown spielen",
+            "text": "Du machst einen auf Klassenclown und störst die Vorlesung mit deinen Witzen und dummen Sprüchen. Der Professor schmeißt dich nach einer Stunde raus.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": -5,
+               "money": -3,
+               "success": -10
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-038",
+      "title": "online Vorlesung",
+      "text": "Herr Prof. Hofmann möchte mal wieder nicht an die Uni kommen und unterrichtet online Java. Was machst du?",
+      "info": "zuhören sinkt das IQ bei diesem, Professor.",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1","2"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 30,
+            "motivation": 20,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-038_1",
+            "title": "zuhören",
+            "text": "Du folgst dem Unterricht aufmerksam und suchst vergeblich nach guten Inhalten. Am Ende der Vorlesung bist du fix und fertig.",
+            "stats": {
+               "mentalHealth": -20,
+               "motivation": -10,
+               "money": 0,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-038_2",
+            "title": "Knoblauch Brot backen",
+            "text": "Du backst während der vorlesung Knoblauchbrot und streamst dabei auf Discord. Das Knoblauchbrot ist sehr lecker.",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 15,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-038_3",
+            "title": "Hofmann fertig machen",
+            "text": "Du widersprichst dem Professor und belegst, dass er Unsinn erzählt. Hofmann ist nicht begeistert.",
+            "stats": {
+               "mentalHealth": 20,
+               "motivation": 20,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-038_4",
+            "title": "für Mathe lernen",
+            "text": "Du lernst währenddessen für Mathe.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 10,
+               "money": 0,
+               "success": 20
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-039",
+      "title": "online Vorlesung",
+      "text": "Du hast online Vorlesung in C bei Herr Kruse. Was machst du?",
+      "info": "Herr Kruse macht sehr guten Unterricht",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1","2"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-039_1",
+            "title": "zuhören",
+            "text": "Du beteiligst dich aktiv an der Vorlesung und hast sehr viel Spaß beim Programmieren in C.",
+            "stats": {
+               "mentalHealth": 20,
+               "motivation": 15,
+               "money": 0,
+               "success": 20
+            }
+         },
+         {
+            "id": "E-039_2",
+            "title": "Computer spielen",
+            "text": "Du hörst Herr Kruse nicht zu und spielst auf deinem 2. Bildschirm Stardew Valley. Als Herr Kruse am Glücksrad dreht und dieses dich zum beantworten der Frage auswählt, hast du nicht zu sagen.",
+            "stats": {
+               "mentalHealth": -15,
+               "motivation": -5,
+               "money": 0,
+               "success": -10
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-040",
+      "title": "online Vorlesung",
+      "text": "Du hast online Vorlesung. Was machst du?",
+      "info": "Auswirkung auf Erfolg.",
+      "priority": 3,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1","2"],
+               "profession": ["*"],
+               "phase": ["*!%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-040_1",
+            "title": "zuhören",
+            "text": "Du beteiligst dich aktiv an der Vorlesung. Die Professorin nimmt dich zur Kenntnis.",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 10,
+               "money": 0,
+               "success": 15
+            }
+         },
+         {
+            "id": "E-040_2",
+            "title": "Computer spielen",
+            "text": "Du hörst nicht zu und spielst auf deinem 2. Bildschirm Styx Master of Shadows.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-041",
+      "title": "Klausurfragen von Martin",
+      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Wie oft denkt ein Mensch durchschnittlich an sex?",
+      "info": "nur die richtige Antwort hat Auswirkungen.",
+      "priority": 3,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-041_1",
+            "title": "alle 30 Minuten",
+            "text": "falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-041_2",
+            "title": "alle 7 Minuten",
+            "text": "Korrekt, du hast im Unterricht gut aufgepasst. Martin ist stolz auf dich.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 5,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-041_3",
+            "title": "alle 10 Minuten",
+            "text": "falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-041_4",
+            "title": "alle 5 Minuten",
+            "text": "falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-042",
+      "title": "Klausurfragen von Martin",
+      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Wie bringt man sich am besten um?",
+      "info": "nur die richtige Antwort hat Auswirkungen.",
+      "priority": 3,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-042_1",
+            "title": "vor einen Zug schmeißen",
+            "text": "Falsch, selbst wenn der zug schnell genu ist damit man keine Schmerzen hat ist diese Methode eine sehr große sauerei. Deine Leichenteile müssen aufgesammelt werden, der Zugfahrer ist traumatisiert und die Passagiere haben keinen schönen Tag.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-042_2",
+            "title": "erschießen",
+            "text": "Falsch, diese Methode ist zu aufwändig. Der Aufwand eine Waffe zu besorgen ist unnötig, die Methode ist nicht schmerzfrei und es gibt eine sauerei. ",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-042_3",
+            "title": "in der Badewanne einschlafen",
+            "text": "Korrekt, diese Methode ist schmerzfrei und hinterlässt keine sauerei. Man füllte die Badewanne mit lauwarmem Wasser, nimmt eine Schlaftablette, gönnt sich noch ein Glaß Wein und schläft friedlich ein.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-042_4",
+            "title": "ertrinken",
+            "text": "Falsch, ertrinken dauert recht lange und man gerät in Panik. Außerdem ist es recht aufwändig die Leiche aus dem Gewässer zu holen. ",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-043",
+      "title": "Klausurfragen von Martin",
+      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. In welchem Zustand bekommt man jemanden am besten zu Bettsport überredet?",
+      "info": "nur die richtige Antwort hat Auswirkungen.",
+      "priority": 3,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-043_1",
+            "title": "nach sportlichen Aktivitäten oder einem Horrorfilm.",
+            "text": "Richtig, wenn die Person wieder bei Kräften ist aber das Adrenalin noch Wirkung zeigt steigert dies die Chancen, dass sie Lust auf bettsport hat.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-043_2",
+            "title": "bei Kaffee und Kuchen",
+            "text": "Falsch, mit Kaffee und Kuchen kann man die Person besser kennenlernen doch es steigert nicht die Libido.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-044",
+      "title": "Klausurfragen von Martin",
+      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Welche Filmart ist für ein Date mit gewissen Absichten am förderlichsten?",
+      "info": "nur die richtige Antwort hat Auswirkungen.",
+      "priority": 3,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-044_1",
+            "title": "Romantik Schnulze.",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-044_2",
+            "title": "Horror",
+            "text": "Richtig, ein Horrorfilm steigert das Adrenalin.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 10
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-045",
+      "title": "Klausurfragen von Martin",
+      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. bei welchem Professor braucht man psychologische Betreuung?",
+      "info": "hat Auswirkungen auf den Erfolg.",
+      "priority": 3,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-045_1",
+            "title": "Kruse",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-045_2",
+            "title": "Hofmann",
+            "text": "Richtig!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 10
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-046",
+      "title": "Klausurfragen von Martin",
+      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Welchen Charm haben erfolgreiche Informatiker?",
+      "info": "hat Auswirkungen auf den Erfolg.",
+      "priority": 3,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-046_1",
+            "title": "den selben Charm wie ein Rocker",
+            "text": "Korrekt, erfolgreiche Informatiker haben den Charm eines Rockers (alte, weiße, stinke Männer). Sowohl Informatiker als auch Rocker haben in ihrem Beruf sehr viel Freiheiten und potenziell ein hohes Gehalt.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 10,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-046_2",
+            "title": "den selben Charm wie ein BWLer",
+            "text": "Falsch, ein Informatiker hat rein gar nicht mit einem Informatiker gemeinsam.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-047",
+      "title": "Klausurfragen von Martin",
+      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Was ist ein Synonym für einen BWLer?",
+      "info": "nur die richtige Antwort hat Auswirkungen.",
+      "priority": 3,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-047_1",
+            "title": "traurige Gestalten",
+            "text": "Korrekt.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-047_2",
+            "title": "Eventmanager",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-048",
+      "title": "Klausurfragen von Martin",
+      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Was deutet auf einen grundlegenden Fehler in der Denkweise hin?",
+      "info": "nur die richtige Antwort hat Auswirkungen.",
+      "priority": 3,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["0","2","3","4"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-048_1",
+            "title": "wenn man Psychologie studiert",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-048_2",
+            "title": "wenn man BWL studiert",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 10
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-049",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Welche dieser Optionen ist KEINE Programmiersprache?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-049_1",
+            "title": "Java",
+            "text": "Falsch. HTML IST KEINE PROGRAMMIERSPRACHE!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-049_2",
+            "title": "HTML",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-049_3",
+            "title": "C",
+            "text": "Falsch. HTML IST KEINE PROGRAMMIERSPRACHE!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-049_4",
+            "title": "Python",
+            "text": "Falsch. HTML IST KEINE PROGRAMMIERSPRACHE!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -10
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-050",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Was ist der \"Klammeraffengriff\" unter Windows?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-050_1",
+            "title": "[Alt]+[Shift]+[Ctrl]",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-050_2",
+            "title": "[Alt]+[Cmd]+[Entf]",
+            "text": "Falsch. ",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-050_3",
+            "title": "[Strg]+[Alt]+[Entf]",
+            "text": "Richtig. Mit diesem Befehl hat man unter anderem zugriff auf den Taskmanager.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-050_4",
+            "title": "[Shift]+[Alt]+[ctrl]",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-051",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Shareware ist...",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-051_1",
+            "title": "... eine Software, die sich mehrere Nutzer teilen können.",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-051_2",
+            "title": "...die Auswahl preiswerter Aktienindex-Fonds durch ein Computersystem.",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-051_3",
+            "title": "...eine Cloud, die die Verarbeitung von besonders vielen Dokumenten zulässt.",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-051_4",
+            "title": "... eine Software, die als kostenlose Testversion zu Verfügung gestellt wird.",
+            "text": "Richtig. im Gegensatz zu Freeware wird der Nutzer nach einer Testphase aufgefordert sich kostenpflichtig zu registrieren.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-052",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Im Binärsystem gibt es...",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-052_1",
+            "title": "... alle Zahlen von 0 bis 9.",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-052_2",
+            "title": "... nur die Ziffern 0 und 1.",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-052_3",
+            "title": "... nur die Ziffern 1 und 2.",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-052_4",
+            "title": "... nur die Ziffern 10 und 11.",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-053",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Was ist ein Bit?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-053_1",
+            "title": "Eine folge aus 4 Zahlen",
+            "text": "Falsch, ein Bit ist eine Binärziffer.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-053_2",
+            "title": "Eine folge aus 8 Zahlen",
+            "text": "Falsch, ein Bit ist eine Binärziffer.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-053_3",
+            "title": "Eine Binärziffer.",
+            "text": "Korrekt, ein Bit ist die kleinste Informationseinheit in einem Rechner und entspricht der Ziffer 0 oder 1.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-053_4",
+            "title": "Eine Kombination aus Ziffern des Binärsystems.",
+            "text": "Falsch, ein Bit ist eine Binärziffer.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-054",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Wie viele Zustände kann man mit zwei Bits darstellen?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-054_1",
+            "title": "2",
+            "text": "Falsch, n Bit = 2^n Zustände",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-054_2",
+            "title": "4",
+            "text": "Korrekt, n Bit = 2^n Zustände.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-054_3",
+            "title": "6",
+            "text": "Falsch, n Bit = 2^n Zustände",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-054_4",
+            "title": "8",
+            "text": "Falsch, n Bit = 2^n Zustände",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-055",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Wie lautet die nächste Zahl in dieser Reihe? 101, 110, 111, 1000, ...",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-055_1",
+            "title": "1001",
+            "text": "Korrekt.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-055_2",
+            "title": "1010",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-055_3",
+            "title": "1100",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-055_4",
+            "title": "1111",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-056",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Wie lautet 1111 aus dem Binärsystem im Dezimalsystem?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-056_1",
+            "title": "4",
+            "text": "Falsch, 2^3 + 2^2 + 2^1 + 2^0 = 8 + 4 + 2 + 1 = 15",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-056_2",
+            "title": "7",
+            "text": "Falsch, 2^3 + 2^2 + 2^1 + 2^0 = 8 + 4 + 2 + 1 = 15",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-056_3",
+            "title": "15",
+            "text": "Korrekt, 2^3 + 2^2 + 2^1 + 2^0 = 8 + 4 + 2 + 1 = 15",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-056_4",
+            "title": "67",
+            "text": "Falsch, 2^3 + 2^2 + 2^1 + 2^0 = 8 + 4 + 2 + 1 = 15",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-057",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Wie lautet 10011 aus dem Binärsystem im Dezimalsystem?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-057_1",
+            "title": "2",
+            "text": "Falsch, 2^4 + 2^1 + 2^0 = 16 + 2 + 1 = 19",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-057_2",
+            "title": "19",
+            "text": "Korrekt, 2^4 + 2^1 + 2^0 = 16 + 2 + 1 = 19",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-057_3",
+            "title": "98",
+            "text": "Falsch, 2^4 + 2^1 + 2^0 = 16 + 2 + 1 = 19",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-057_4",
+            "title": "543",
+            "text": "Falsch, 2^4 + 2^1 + 2^0 = 16 + 2 + 1 = 19",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-058",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Hexadezimalsystem ist ein Stellenwertsystem zur Basis...?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-058_1",
+            "title": "5",
+            "text": "Falsch, Hexa, Griechischen = 6. Dezimal, Lateinisch = 10. es gibt Ziffern von 0-9 und A-F",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-058_2",
+            "title": "10",
+            "text": "Falsch, Hexa, Griechischen = 6. Dezimal, Lateinisch = 10. es gibt Ziffern von 0-9 und A-F",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-058_3",
+            "title": "16",
+            "text": "Richtig, Hexa, Griechischen = 6. Dezimal, Lateinisch = 10. es gibt Ziffern von 0-9 und A-F",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-058_4",
+            "title": "21",
+            "text": "Falsch, Hexa, Griechischen = 6. Dezimal, Lateinisch = 10. es gibt Ziffern von 0-9 und A-F",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-058",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Das Binärsystem ist ein Stellenwertsystem zur Basis...?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-058_1",
+            "title": "4",
+            "text": "Falsch, die Basis ist 2.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-058_2",
+            "title": "2",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-058_3",
+            "title": "0",
+            "text": "Falsch, die Basis ist 2.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-058_4",
+            "title": "1",
+            "text": "Falsch, die Basis ist 2.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-059",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Das Dezimalsystem ist ein Stellenwertsystem zur Basis...?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-059_1",
+            "title": "10",
+            "text": "Richtig!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-059_2",
+            "title": "2",
+            "text": "Falsch, die Basis ist 10.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-059_3",
+            "title": "20",
+            "text": "Falsch, die Basis ist 10.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-059_4",
+            "title": "1000",
+            "text": "Falsch, die Basis ist 10.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-060",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. 1BF6 (Hexa) = ... (Dezimalsystem) ?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-060_1",
+            "title": "0",
+            "text": "Falsch, 1*16^3 + 11*16^2 + 15*16^1 + 6*16^0 = 4036 + 2816 + 240 +6 = 7158",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-060_2",
+            "title": "12",
+            "text": "Falsch, 1*16^3 + 11*16^2 + 15*16^1 + 6*16^0 = 4036 + 2816 + 240 +6 = 7158",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-060_3",
+            "title": "7158",
+            "text": "Richtig, 1*16^3 + 11*16^2 + 15*16^1 + 6*16^0 = 4036 + 2816 + 240 +6 = 7158",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-060_4",
+            "title": "23445",
+            "text": "Falsch, 1*16^3 + 11*16^2 + 15*16^1 + 6*16^0 = 4036 + 2816 + 240 +6 = 7158",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
       "id": "E-998",
       "title": "Hofmann ist im Urlaub",
       "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
