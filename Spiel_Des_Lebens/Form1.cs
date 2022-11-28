@@ -172,5 +172,10 @@ namespace Spiel_Des_Lebens
             e.Graphics.FillEllipse(linGrBrush, 0, 30, 200, 100);
             e.Graphics.FillRectangle(linGrBrush, 0, 155, 500, 30);
         }
+        private void accept_fict_btn_Click(object sender, EventArgs e)
+        {
+            fiction_panel.Visible = false;
+        }
+
     }
 }

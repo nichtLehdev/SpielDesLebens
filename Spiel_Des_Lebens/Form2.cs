@@ -216,6 +216,7 @@ namespace Spiel_Des_Lebens
             learn_prog_bar.Value = ui_interface.getPlayerSuccess();
             motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
             mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
+            game_over_check();
         }
         private void get_new_actions()
         {
@@ -232,6 +233,93 @@ namespace Spiel_Des_Lebens
         {
             close_opt_end_txt.Visible = false;
             btnLoadEvent_Click();
+    }
+        private void game_over_check()
+        {
+            String[] stats = new String[4];
+            int i = 0;
+            if (money_prog_bar.Value <= 0)
+            {
+                stats[i] = "money";
+                i++;
+            }
+            if (learn_prog_bar.Value <= 0)
+            {
+                stats[i] = "learn";
+                i++;
+            }
+            if (motivation_prog_bar.Value <= 0)
+            {
+                stats[i] = "motivation";
+                i++;
+            }
+            if (mental_prog_bar.Value <= 0)
+            {
+                stats[i] = "mental";
+                i++;
+            }
+            if (stats[0] != null)
+            {
+                game_over(stats);
+            }
+        }
+        private void game_over(string[] stat)
+        {
+            if (stat[0] == "money")
+            {
+                game_over_txt.Text = "Geld beachten";
+            }
+            if (stat[0] == "learn")
+            {
+                game_over_txt.Text = "Lerstand beachten";
+            }
+            if (stat[0] == "motivation")
+            {
+                game_over_txt.Text = "Motivation beachten";
+            }
+            if (stat[0] == "mental")
+            {
+                game_over_txt.Text = "Mental beachten";
+            }
+            if (stat[1] != null)
+            {
+                if (stat[0] == "learn")
+                {
+                    game_over_txt.Text = game_over_txt + "Lernstand beachten.";
+                }
+                if (stat[0] == "motivation")
+                {
+                    game_over_txt.Text = game_over_txt + "Motivation beachten.";
+                }
+                if (stat[0] == "mental")
+                {
+                    game_over_txt.Text = game_over_txt + "Mental Health beachten.";
+                }
+            }
+            if (stat[2] != null)
+            {
+                if (stat[0] == "motivation")
+                {
+                    game_over_txt.Text = game_over_txt + "Motivation beachten.";
+                }
+                if (stat[0] == "mental")
+                {
+                    game_over_txt.Text = game_over_txt + "Mental Health beachten.";
+                }
+            }
+            if (stat[3] != null)
+            {
+                game_over_txt.Text = game_over_txt + "Mental Health beachten.";
+            }
+            game_over_panel.Visible = true;
+            all_options_disable();
+        }
+
+        private void game_over_btn_Click(object sender, EventArgs e)
+        {
+            Form1 t = new Form1();
+            t.Show();
+            Hide();
         }
     }
 }

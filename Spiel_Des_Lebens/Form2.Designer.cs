@@ -32,6 +32,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.close_opt_end_txt = new System.Windows.Forms.Button();
             this.info_panel = new System.Windows.Forms.Panel();
+            this.game_over_panel = new System.Windows.Forms.Panel();
+            this.game_over_btn = new System.Windows.Forms.Button();
+            this.game_over_title = new System.Windows.Forms.TextBox();
+            this.game_over_txt = new System.Windows.Forms.RichTextBox();
             this.info_close_button = new System.Windows.Forms.Button();
             this.info_text = new System.Windows.Forms.RichTextBox();
             this.option_4_btn = new System.Windows.Forms.Button();
@@ -70,6 +74,7 @@
             this.panelActiveChild = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.info_panel.SuspendLayout();
+            this.game_over_panel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.userInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,6 +100,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.game_over_panel);
             this.panel1.Controls.Add(this.close_opt_end_txt);
             this.panel1.Controls.Add(this.info_panel);
             this.panel1.Controls.Add(this.option_4_btn);
@@ -107,7 +113,7 @@
             this.panel1.Location = new System.Drawing.Point(196, 39);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(589, 426);
-            this.panel1.TabIndex = 10;
+            this.panel1.TabIndex = 4;
             // 
             // close_opt_end_txt
             // 
@@ -130,6 +136,45 @@
             this.info_panel.Size = new System.Drawing.Size(365, 208);
             this.info_panel.TabIndex = 9;
             this.info_panel.Visible = false;
+            // 
+            // game_over_panel
+            // 
+            this.game_over_panel.Controls.Add(this.game_over_btn);
+            this.game_over_panel.Controls.Add(this.game_over_title);
+            this.game_over_panel.Controls.Add(this.game_over_txt);
+            this.game_over_panel.Location = new System.Drawing.Point(135, 115);
+            this.game_over_panel.Name = "game_over_panel";
+            this.game_over_panel.Size = new System.Drawing.Size(365, 217);
+            this.game_over_panel.TabIndex = 9;
+            this.game_over_panel.Visible = false;
+            // 
+            // game_over_btn
+            // 
+            this.game_over_btn.Location = new System.Drawing.Point(233, 161);
+            this.game_over_btn.Name = "game_over_btn";
+            this.game_over_btn.Size = new System.Drawing.Size(100, 40);
+            this.game_over_btn.TabIndex = 10;
+            this.game_over_btn.Text = "Zum Main Menu";
+            this.game_over_btn.UseVisualStyleBackColor = true;
+            this.game_over_btn.Click += new System.EventHandler(this.game_over_btn_Click);
+            // 
+            // game_over_title
+            // 
+            this.game_over_title.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.game_over_title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.game_over_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game_over_title.Location = new System.Drawing.Point(33, 17);
+            this.game_over_title.Name = "game_over_title";
+            this.game_over_title.Size = new System.Drawing.Size(185, 20);
+            this.game_over_title.TabIndex = 5;
+            // 
+            // game_over_txt
+            // 
+            this.game_over_txt.Location = new System.Drawing.Point(33, 52);
+            this.game_over_txt.Name = "game_over_txt";
+            this.game_over_txt.Size = new System.Drawing.Size(300, 102);
+            this.game_over_txt.TabIndex = 0;
+            this.game_over_txt.Text = "";
             // 
             // info_close_button
             // 
@@ -578,6 +623,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.info_panel.ResumeLayout(false);
+            this.game_over_panel.ResumeLayout(false);
+            this.game_over_panel.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.userInfo.ResumeLayout(false);
             this.userInfo.PerformLayout();
@@ -633,6 +680,10 @@
         private System.Windows.Forms.Button option_4_btn;
         private System.Windows.Forms.Button option_3_btn;
         private System.Windows.Forms.Button close_opt_end_txt;
+        private System.Windows.Forms.Panel game_over_panel;
+        private System.Windows.Forms.Button game_over_btn;
+        private System.Windows.Forms.TextBox game_over_title;
+        private System.Windows.Forms.RichTextBox game_over_txt;
     }
 }
 
