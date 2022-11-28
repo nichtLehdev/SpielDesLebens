@@ -2549,9 +2549,16 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1","2"],
-               "profession": ["*"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1",
+                  "2"
+               ],
+               "profession": [
+                  "*"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             }
          ],
          "stats_min": {
@@ -2623,9 +2630,16 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1","2"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1",
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             }
          ],
          "stats_min": {
@@ -2697,9 +2711,16 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1","2"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1",
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             }
          ],
          "stats_min": {
@@ -2749,9 +2770,16 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1","2"],
-               "profession": ["*"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1",
+                  "2"
+               ],
+               "profession": [
+                  "*"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             }
          ],
          "stats_min": {
@@ -2801,14 +2829,32 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*%2"]
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -2880,14 +2926,32 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*%2"]
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -2959,14 +3023,32 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*%2"]
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3016,14 +3098,32 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*%2"]
+               "path": 
+               ["2"
+            ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3073,14 +3173,32 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*%2"]
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3130,14 +3248,32 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*%2"]
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3187,14 +3323,32 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*%2"]
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3244,14 +3398,32 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*!%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["0","2","3","4"],
-               "phase": ["*%2"]
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0",
+                  "2",
+                  "3",
+                  "4"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3301,14 +3473,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3380,14 +3578,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3459,14 +3683,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3538,14 +3788,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3617,14 +3893,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3696,14 +3998,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3775,14 +4103,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3854,14 +4208,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": 
+               ["*!%2"
+            ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -3933,14 +4313,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -4012,14 +4418,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+            ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -4091,14 +4523,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -4170,14 +4628,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -4249,14 +4733,40 @@
       "requirements": {
          "timings": [
             {
-               "path": ["1"],
-               "profession": ["3"],
-               "phase": ["*!%2"]
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
             },
             {
-               "path": ["2"],
-               "profession": ["3"],
-               "phase": ["*%2"]
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
             }
          ],
          "stats_min": {
@@ -4310,6 +4820,1161 @@
             "id": "E-060_4",
             "title": "23445",
             "text": "Falsch, 1*16^3 + 11*16^2 + 15*16^1 + 6*16^0 = 4036 + 2816 + 240 +6 = 7158",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-061",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Wie viel Liter Blut hat ein Mensch?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-061_1",
+            "title": "1-2",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-061_2",
+            "title": "5-6",
+            "text": "Richtig!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-061_3",
+            "title": "10-12",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-061_4",
+            "title": "15-17",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-062",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Welcher Zelltyp gehört NICHT zu dn Blutzellen?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-062_1",
+            "title": "Leukozyten",
+            "text": "Falsch, Astrozyten gehören zu den Gliazellen. Diese haben unter anderem die Funktion, ein Stützgerüst für Nervenzellen zu bilden.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-062_2",
+            "title": "Erythrozyten",
+            "text": "Falsch, Astrozyten gehören zu den Gliazellen. Diese haben unter anderem die Funktion, ein Stützgerüst für Nervenzellen zu bilden.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-062_3",
+            "title": "Thrombozyten",
+            "text": "Falsch, Astrozyten gehören zu den Gliazellen. Diese haben unter anderem die Funktion, ein Stützgerüst für Nervenzellen zu bilden.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-062_4",
+            "title": "Astrozyten",
+            "text": "Richtig, während Leuko-, Erythro- und Thrombozyten Blutzellen sind, gehören Astrozyten zu den Gliazellen. Diese haben unter anderem die Funktion, ein Stützgerüst für Nervenzellen zu bilden.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-063",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Was ist die Aufgabe von Blutplättchen?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-063_1",
+            "title": "Blutgerinnung",
+            "text": "Richtig, bei Verletzungen bilden Blutplättchen einen Pfropf, der die Wunde verschließt. Gleichzeitig senden sie Botenstoffe aus, die die Blutgerinnung anregen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-063_2",
+            "title": "Farbgebung des Bluts",
+            "text": "Falsch, bei Verletzungen bilden Blutplättchen einen Pfropf, der die Wunde verschließt. Gleichzeitig senden sie Botenstoffe aus, die die Blutgerinnung anregen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-063_3",
+            "title": "Immunabwehr",
+            "text": "Falsch, bei Verletzungen bilden Blutplättchen einen Pfropf, der die Wunde verschließt. Gleichzeitig senden sie Botenstoffe aus, die die Blutgerinnung anregen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-063_4",
+            "title": "Transport von Sauerstoff durch die Blutbahnen",
+            "text": "Richtig, bei Verletzungen bilden Blutplättchen einen Pfropf, der die Wunde verschließt. Gleichzeitig senden sie Botenstoffe aus, die die Blutgerinnung anregen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-064",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Was ist Hämoglobin?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-064_1",
+            "title": "Medikament zur Blutanreicherung",
+            "text": "Falsch, Hämoglobin ist ein Protein der roten Blutkörperchen. Neben der Farbgebung ist es für den Tarnsport von Sauerstoff und Kohlenstoffmonoxid im Blut verantwortlich.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-064_2",
+            "title": "Blut-Krankheit",
+            "text": "Falsch, Hämoglobin ist ein Protein der roten Blutkörperchen. Neben der Farbgebung ist es für den Tarnsport von Sauerstoff und Kohlenstoffmonoxid im Blut verantwortlich.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-064_3",
+            "title": "Lateinischer Begriff für Blut",
+            "text": "Falsch, Hämoglobin ist ein Protein der roten Blutkörperchen. Neben der Farbgebung ist es für den Tarnsport von Sauerstoff und Kohlenstoffmonoxid im Blut verantwortlich.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-064_4",
+            "title": "Farbstoff des Bluts",
+            "text": "Richtig, Hämoglobin ist ein Protein der roten Blutkörperchen. Neben der Farbgebung ist es für den Tarnsport von Sauerstoff und Kohlenstoffmonoxid im Blut verantwortlich.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-065",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Wie viel Blut wird normalerweise bei einer Blutspende entnommen?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-065_1",
+            "title": "100 ml",
+            "text": "Falsch, laut dem Deutschen Roten Kreuz kann der Körper einen Blutverlust von bis zu einem Liter in kurzer Zeit ausgleichen. Eine Spende von 500 ml sollte demnach für gesunde Personen unproblematisch sein.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-065_2",
+            "title": "500 ml",
+            "text": "Richtig, laut dem Deutschen Roten Kreuz kann der Körper einen Blutverlust von bis zu einem Liter in kurzer Zeit ausgleichen. Eine Spende von 500 ml sollte demnach für gesunde Personen unproblematisch sein.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-065_3",
+            "title": "1 l",
+            "text": "Falsch, laut dem Deutschen Roten Kreuz kann der Körper einen Blutverlust von bis zu einem Liter in kurzer Zeit ausgleichen. Eine Spende von 500 ml sollte demnach für gesunde Personen unproblematisch sein.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-065_4",
+            "title": "1,5 l",
+            "text": "Falsch, laut dem Deutschen Roten Kreuz kann der Körper einen Blutverlust von bis zu einem Liter in kurzer Zeit ausgleichen. Eine Spende von 500 ml sollte demnach für gesunde Personen unproblematisch sein.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-066",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Mit welcher Blutgruppe ist man Universalspender?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-066_1",
+            "title": "A negativ",
+            "text": "Falsch, während man hinsichtlich einer Blutspende mit der Blutgruppe 0 negativ als Universalspender gilt, ist man mit AB positiv Universalempfänger. Allerdings gilt das nur für die Spende von roten Blutkörperchen, nicht für das Blutplasma.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-066_2",
+            "title": "B negativ",
+            "text": "Falsch, während man hinsichtlich einer Blutspende mit der Blutgruppe 0 negativ als Universalspender gilt, ist man mit AB positiv Universalempfänger. Allerdings gilt das nur für die Spende von roten Blutkörperchen, nicht für das Blutplasma.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-066_3",
+            "title": "AB negativ",
+            "text": "Falsch, während man hinsichtlich einer Blutspende mit der Blutgruppe 0 negativ als Universalspender gilt, ist man mit AB positiv Universalempfänger. Allerdings gilt das nur für die Spende von roten Blutkörperchen, nicht für das Blutplasma.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-066_4",
+            "title": "0 negativ",
+            "text": "Richtig, während man hinsichtlich einer Blutspende mit der Blutgruppe 0 negativ als Universalspender gilt, ist man mit AB positiv Universalempfänger. Allerdings gilt das nur für die Spende von roten Blutkörperchen, nicht für das Blutplasma.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-067",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Was versteht man unter einer Anämie?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-067_1",
+            "title": "Blutgerinnung",
+            "text": "Falsch, eine Anämie ist ein Mangel des Blutfarbstoffs Hämoglobin. Anzeichen dafür können zum Beispiel Blässe oder Schwindel sein.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-067_2",
+            "title": "Blutüberschuss",
+            "text": "Falsch, eine Anämie ist ein Mangel des Blutfarbstoffs Hämoglobin. Anzeichen dafür können zum Beispiel Blässe oder Schwindel sein.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-067_3",
+            "title": "Blutarmut",
+            "text": "Richtig, eine Anämie ist ein Mangel des Blutfarbstoffs Hämoglobin. Anzeichen dafür können zum Beispiel Blässe oder Schwindel sein.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-067_4",
+            "title": "Starke Blutung",
+            "text": "Falsch, eine Anämie ist ein Mangel des Blutfarbstoffs Hämoglobin. Anzeichen dafür können zum Beispiel Blässe oder Schwindel sein.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-068",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Welche Funktion ist bei der Bluterkrankheit gestört?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-068_1",
+            "title": "Blutgerinnung",
+            "text": "Richtig, es fehlt ein Gerinnungsfaktor im Blut. Bei einer Wunde gerinnt das Blut deutlich langsamer als üblich.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-068_2",
+            "title": "Blutfluss",
+            "text": "Falsch, es fehlt ein Gerinnungsfaktor im Blut. Bei einer Wunde gerinnt das Blut deutlich langsamer als üblich.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-068_3",
+            "title": "Blutbildung",
+            "text": "Falsch, es fehlt ein Gerinnungsfaktor im Blut. Bei einer Wunde gerinnt das Blut deutlich langsamer als üblich.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-068_4",
+            "title": "Die Krankheit gibt es nicht.",
+            "text": "Falsch, es fehlt ein Gerinnungsfaktor im Blut. Bei einer Wunde gerinnt das Blut deutlich langsamer als üblich.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-069",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Welche Blutzellen vermehren sich bei einer Leukämie in ungesundem Maße?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-069_1",
+            "title": "Blutplättchen",
+            "text": "Falsch, bei einer Leukämie vermehren sich unvollständig ausgebildete und somit funktionsunfähige weiße Blutkörperchen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-069_2",
+            "title": "Rote Blutzellen",
+            "text": "Falsch, bei einer Leukämie vermehren sich unvollständig ausgebildete und somit funktionsunfähige weiße Blutkörperchen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-069_3",
+            "title": "Weiße Blutzellen",
+            "text": "Richtig, bei einer Leukämie vermehren sich unvollständig ausgebildete und somit funktionsunfähige weiße Blutkörperchen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-069_4",
+            "title": "Keine, tatsächlich nimmt die Blutzellen-Anzahl ab.",
+            "text": "Falsch, bei einer Leukämie vermehren sich unvollständig ausgebildete und somit funktionsunfähige weiße Blutkörperchen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-070",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Was versuchte man im Mittelalter mit dem Aderlass zu bezwecken?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-070_1",
+            "title": "Delikatesse aus Tierblut herstellen",
+            "text": "Falsch, der Aderlass beruht auf der Säftelehre, die ihren Ursprung in der Antike hat. Sie geht davon aus, dass ein Ungleichgewicht von Körpersäften zu Krankheit führt. Beim Aderlass sollen die schädlichen Säfte abgeführt werden.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-070_2",
+            "title": "Blutsbrüderschaften schließen",
+            "text": "Falsch, der Aderlass beruht auf der Säftelehre, die ihren Ursprung in der Antike hat. Sie geht davon aus, dass ein Ungleichgewicht von Körpersäften zu Krankheit führt. Beim Aderlass sollen die schädlichen Säfte abgeführt werden.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-070_3",
+            "title": "Blutgerinsel Behandeln",
+            "text": "Falsch, der Aderlass beruht auf der Säftelehre, die ihren Ursprung in der Antike hat. Sie geht davon aus, dass ein Ungleichgewicht von Körpersäften zu Krankheit führt. Beim Aderlass sollen die schädlichen Säfte abgeführt werden.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-070_4",
+            "title": "Schädliche Körpersäfte Abführen",
+            "text": "Richtig, der Aderlass beruht auf der Säftelehre, die ihren Ursprung in der Antike hat. Sie geht davon aus, dass ein Ungleichgewicht von Körpersäften zu Krankheit führt.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-071",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Wie viel Herzklappen gibt es im menschlichen Herzen?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-071_1",
+            "title": "2",
+            "text": "Falsch, 4. Die Trikuspidalklappe, Pulmonalklappe, Mitralklappe und Aortenklappe wirken im Herz als Ventile und verhindern so den Rückstrom des Blutes in die falsche Richtung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-071_2",
+            "title": "4",
+            "text": "Richtig. Die Trikuspidalklappe, Pulmonalklappe, Mitralklappe und Aortenklappe wirken im Herz als Ventile und verhindern so den Rückstrom des Blutes in die falsche Richtung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-071_3",
+            "title": "6",
+            "text": "Falsch, 4. Die Trikuspidalklappe, Pulmonalklappe, Mitralklappe und Aortenklappe wirken im Herz als Ventile und verhindern so den Rückstrom des Blutes in die falsche Richtung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-071_4",
+            "title": "8",
+            "text": "Falsch, 4. Die Trikuspidalklappe, Pulmonalklappe, Mitralklappe und Aortenklappe wirken im Herz als Ventile und verhindern so den Rückstrom des Blutes in die falsche Richtung.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
