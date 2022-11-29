@@ -423,5 +423,34 @@ namespace Spiel_Des_Lebens
             action_panel.Visible = false;
             all_options_enable();
         }
+
+        private void hover_action_txt_show_0(object sender, EventArgs e)
+        {
+            info_action_panel_0.Visible = true;
+            info_action_txt_0.Text = ui_interface.getActionInfo(0);
+        }
+        private void hover_action_txt_show_1(object sender, EventArgs e)
+        {
+            info_action_panel_1.Visible = true;
+            info_action_txt_1.Text = ui_interface.getActionInfo(1);
+        }
+        private void hover_action_txt_show_2(object sender, EventArgs e)
+        {
+            info_action_panel_2.Visible = true;
+            info_action_txt_2.Text = ui_interface.getActionInfo(2);
+        }
+        private void hover_action_txt_show_3(object sender, EventArgs e)
+        {
+            info_action_panel_3.Visible = true;
+            info_action_txt_3.Text = ui_interface.getActionInfo(3);
+        }
+
+        private void close_hower_action(object sender, EventArgs e)
+        {
+            info_action_panel_0.Visible = false;
+            info_action_panel_1.Visible = false;
+            info_action_panel_2.Visible = false;
+            info_action_panel_3.Visible = false;
+        }
     }
 }

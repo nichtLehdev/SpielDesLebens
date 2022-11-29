@@ -65,6 +65,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.tutorial_txt_1 = new System.Windows.Forms.TextBox();
             this.panelActiveChild = new System.Windows.Forms.Panel();
+            this.info_action_panel_2 = new System.Windows.Forms.Panel();
+            this.info_action_txt_2 = new System.Windows.Forms.TextBox();
+            this.info_action_panel_3 = new System.Windows.Forms.Panel();
+            this.info_action_txt_3 = new System.Windows.Forms.TextBox();
+            this.info_action_panel_1 = new System.Windows.Forms.Panel();
+            this.info_action_txt_1 = new System.Windows.Forms.TextBox();
             this.tutorial_panel_5 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -72,6 +78,8 @@
             this.button7 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tutorial_panel_3 = new System.Windows.Forms.Panel();
+            this.info_action_panel_0 = new System.Windows.Forms.Panel();
+            this.info_action_txt_0 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -108,9 +116,13 @@
             this.tutorial_panel_6.SuspendLayout();
             this.tutorial_panel_1.SuspendLayout();
             this.panelActiveChild.SuspendLayout();
+            this.info_action_panel_2.SuspendLayout();
+            this.info_action_panel_3.SuspendLayout();
+            this.info_action_panel_1.SuspendLayout();
             this.tutorial_panel_5.SuspendLayout();
             this.tutorial_panel_4.SuspendLayout();
             this.tutorial_panel_3.SuspendLayout();
+            this.info_action_panel_0.SuspendLayout();
             this.panel1.SuspendLayout();
             this.action_panel.SuspendLayout();
             this.tutorial_ask_panel.SuspendLayout();
@@ -157,6 +169,8 @@
             this.action_3_btn.Text = "andere Aktion";
             this.action_3_btn.UseVisualStyleBackColor = false;
             this.action_3_btn.Click += new System.EventHandler(this.action_3_click);
+            this.action_3_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_3_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_3);
             // 
             // action_2_btn
             // 
@@ -173,6 +187,8 @@
             this.action_2_btn.Text = "Musik";
             this.action_2_btn.UseVisualStyleBackColor = false;
             this.action_2_btn.Click += new System.EventHandler(this.action_2_click);
+            this.action_2_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_2_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_2);
             // 
             // action_1_btn
             // 
@@ -189,6 +205,8 @@
             this.action_1_btn.Text = "Sport";
             this.action_1_btn.UseVisualStyleBackColor = false;
             this.action_1_btn.Click += new System.EventHandler(this.action_1_click);
+            this.action_1_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_1_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_1);
             // 
             // action_0_btn
             // 
@@ -205,6 +223,8 @@
             this.action_0_btn.Text = "Hausaufgaben";
             this.action_0_btn.UseVisualStyleBackColor = false;
             this.action_0_btn.Click += new System.EventHandler(this.action_0_click);
+            this.action_0_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_0_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_0);
             // 
             // userInfo
             // 
@@ -480,7 +500,7 @@
             this.tutorial_panel_6.BackColor = System.Drawing.Color.LightGray;
             this.tutorial_panel_6.Controls.Add(this.button5);
             this.tutorial_panel_6.Controls.Add(this.tutorial_txt_6);
-            this.tutorial_panel_6.Location = new System.Drawing.Point(717, 1);
+            this.tutorial_panel_6.Location = new System.Drawing.Point(717, 0);
             this.tutorial_panel_6.Name = "tutorial_panel_6";
             this.tutorial_panel_6.Size = new System.Drawing.Size(190, 119);
             this.tutorial_panel_6.TabIndex = 11;
@@ -546,15 +566,88 @@
             // 
             // panelActiveChild
             // 
+            this.panelActiveChild.Controls.Add(this.info_action_panel_0);
+            this.panelActiveChild.Controls.Add(this.info_action_panel_2);
+            this.panelActiveChild.Controls.Add(this.info_action_panel_3);
+            this.panelActiveChild.Controls.Add(this.info_action_panel_1);
             this.panelActiveChild.Controls.Add(this.tutorial_panel_5);
-            this.panelActiveChild.Controls.Add(this.tutorial_panel_4);
             this.panelActiveChild.Controls.Add(this.tutorial_panel_3);
+            this.panelActiveChild.Controls.Add(this.tutorial_panel_4);
             this.panelActiveChild.Controls.Add(this.panel1);
             this.panelActiveChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelActiveChild.Location = new System.Drawing.Point(240, 119);
             this.panelActiveChild.Name = "panelActiveChild";
             this.panelActiveChild.Size = new System.Drawing.Size(907, 523);
             this.panelActiveChild.TabIndex = 1;
+            // 
+            // info_action_panel_2
+            // 
+            this.info_action_panel_2.BackColor = System.Drawing.Color.LightGray;
+            this.info_action_panel_2.Controls.Add(this.info_action_txt_2);
+            this.info_action_panel_2.Location = new System.Drawing.Point(0, 325);
+            this.info_action_panel_2.Name = "info_action_panel_2";
+            this.info_action_panel_2.Size = new System.Drawing.Size(145, 61);
+            this.info_action_panel_2.TabIndex = 17;
+            this.info_action_panel_2.Visible = false;
+            // 
+            // info_action_txt_2
+            // 
+            this.info_action_txt_2.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.info_action_txt_2.BackColor = System.Drawing.SystemColors.Control;
+            this.info_action_txt_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.info_action_txt_2.Location = new System.Drawing.Point(8, 6);
+            this.info_action_txt_2.Multiline = true;
+            this.info_action_txt_2.Name = "info_action_txt_2";
+            this.info_action_txt_2.Size = new System.Drawing.Size(131, 48);
+            this.info_action_txt_2.TabIndex = 11;
+            this.info_action_txt_2.Text = "Links wird dein Charakter angezeigt";
+            this.info_action_txt_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // info_action_panel_3
+            // 
+            this.info_action_panel_3.BackColor = System.Drawing.Color.LightGray;
+            this.info_action_panel_3.Controls.Add(this.info_action_txt_3);
+            this.info_action_panel_3.Location = new System.Drawing.Point(0, 386);
+            this.info_action_panel_3.Name = "info_action_panel_3";
+            this.info_action_panel_3.Size = new System.Drawing.Size(145, 61);
+            this.info_action_panel_3.TabIndex = 16;
+            this.info_action_panel_3.Visible = false;
+            // 
+            // info_action_txt_3
+            // 
+            this.info_action_txt_3.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.info_action_txt_3.BackColor = System.Drawing.SystemColors.Control;
+            this.info_action_txt_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.info_action_txt_3.Location = new System.Drawing.Point(8, 6);
+            this.info_action_txt_3.Multiline = true;
+            this.info_action_txt_3.Name = "info_action_txt_3";
+            this.info_action_txt_3.Size = new System.Drawing.Size(131, 48);
+            this.info_action_txt_3.TabIndex = 11;
+            this.info_action_txt_3.Text = "Links wird dein Charakter angezeigt";
+            this.info_action_txt_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // info_action_panel_1
+            // 
+            this.info_action_panel_1.BackColor = System.Drawing.Color.LightGray;
+            this.info_action_panel_1.Controls.Add(this.info_action_txt_1);
+            this.info_action_panel_1.Location = new System.Drawing.Point(0, 263);
+            this.info_action_panel_1.Name = "info_action_panel_1";
+            this.info_action_panel_1.Size = new System.Drawing.Size(145, 61);
+            this.info_action_panel_1.TabIndex = 15;
+            this.info_action_panel_1.Visible = false;
+            // 
+            // info_action_txt_1
+            // 
+            this.info_action_txt_1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.info_action_txt_1.BackColor = System.Drawing.SystemColors.Control;
+            this.info_action_txt_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.info_action_txt_1.Location = new System.Drawing.Point(8, 6);
+            this.info_action_txt_1.Multiline = true;
+            this.info_action_txt_1.Name = "info_action_txt_1";
+            this.info_action_txt_1.Size = new System.Drawing.Size(131, 48);
+            this.info_action_txt_1.TabIndex = 11;
+            this.info_action_txt_1.Text = "Links wird dein Charakter angezeigt";
+            this.info_action_txt_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tutorial_panel_5
             // 
@@ -633,11 +726,34 @@
             this.tutorial_panel_3.BackColor = System.Drawing.Color.LightGray;
             this.tutorial_panel_3.Controls.Add(this.button4);
             this.tutorial_panel_3.Controls.Add(this.textBox2);
-            this.tutorial_panel_3.Location = new System.Drawing.Point(0, 68);
+            this.tutorial_panel_3.Location = new System.Drawing.Point(0, 113);
             this.tutorial_panel_3.Name = "tutorial_panel_3";
             this.tutorial_panel_3.Size = new System.Drawing.Size(190, 155);
             this.tutorial_panel_3.TabIndex = 10;
             this.tutorial_panel_3.Visible = false;
+            // 
+            // info_action_panel_0
+            // 
+            this.info_action_panel_0.BackColor = System.Drawing.Color.LightGray;
+            this.info_action_panel_0.Controls.Add(this.info_action_txt_0);
+            this.info_action_panel_0.Location = new System.Drawing.Point(0, 202);
+            this.info_action_panel_0.Name = "info_action_panel_0";
+            this.info_action_panel_0.Size = new System.Drawing.Size(145, 61);
+            this.info_action_panel_0.TabIndex = 14;
+            this.info_action_panel_0.Visible = false;
+            // 
+            // info_action_txt_0
+            // 
+            this.info_action_txt_0.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.info_action_txt_0.BackColor = System.Drawing.SystemColors.Control;
+            this.info_action_txt_0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.info_action_txt_0.Location = new System.Drawing.Point(8, 6);
+            this.info_action_txt_0.Multiline = true;
+            this.info_action_txt_0.Name = "info_action_txt_0";
+            this.info_action_txt_0.Size = new System.Drawing.Size(131, 48);
+            this.info_action_txt_0.TabIndex = 11;
+            this.info_action_txt_0.Text = "Links wird dein Charakter angezeigt";
+            this.info_action_txt_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button4
             // 
@@ -990,12 +1106,20 @@
             this.tutorial_panel_1.ResumeLayout(false);
             this.tutorial_panel_1.PerformLayout();
             this.panelActiveChild.ResumeLayout(false);
+            this.info_action_panel_2.ResumeLayout(false);
+            this.info_action_panel_2.PerformLayout();
+            this.info_action_panel_3.ResumeLayout(false);
+            this.info_action_panel_3.PerformLayout();
+            this.info_action_panel_1.ResumeLayout(false);
+            this.info_action_panel_1.PerformLayout();
             this.tutorial_panel_5.ResumeLayout(false);
             this.tutorial_panel_5.PerformLayout();
             this.tutorial_panel_4.ResumeLayout(false);
             this.tutorial_panel_4.PerformLayout();
             this.tutorial_panel_3.ResumeLayout(false);
             this.tutorial_panel_3.PerformLayout();
+            this.info_action_panel_0.ResumeLayout(false);
+            this.info_action_panel_0.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.action_panel.ResumeLayout(false);
@@ -1082,6 +1206,14 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TextBox action_title;
         private System.Windows.Forms.TextBox action_text;
+        private System.Windows.Forms.Panel info_action_panel_3;
+        private System.Windows.Forms.TextBox info_action_txt_3;
+        private System.Windows.Forms.Panel info_action_panel_1;
+        private System.Windows.Forms.TextBox info_action_txt_1;
+        private System.Windows.Forms.Panel info_action_panel_0;
+        private System.Windows.Forms.TextBox info_action_txt_0;
+        private System.Windows.Forms.Panel info_action_panel_2;
+        private System.Windows.Forms.TextBox info_action_txt_2;
     }
 }
 
