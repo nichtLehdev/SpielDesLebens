@@ -1,17 +1,22 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 namespace Spiel_Des_Lebens
 {
     internal class ActionGenerator
     {
+        private List<Action> actions;
+        private List<Action> oldActions = new List<Action>();
+        private int seed;
 
-        public List<Action> loadActions()
+        public ActionGenerator()
+        {
+            actions = loadActions();
+        }
+
+        private List<Action> loadActions()
         {
             // saves all events from JSON to events in list saves all loadEvents as events
             string filename = "..//..//..//data//actions.json";
@@ -25,6 +30,29 @@ namespace Spiel_Des_Lebens
                 throw new Error("Actiongenerator: File not found");
             }
 
+        }
+
+        public List<Action> getActions()
+        {
+            List<Action> nextActions = new List<Action>();
+            while (nextActions.Count < 4)
+            {
+                Action action = randomAction();
+                if (!nextActions.Contains(action) && !oldActions.Contains(action))
+                {
+                    nextActions.Add(action);
+                }
+            }
+            oldActions = nextActions;
+            return nextActions;
+        }
+
+        private Action randomAction()
+        {
+            seed = DateTime.Now.Millisecond;
+            Random random = new Random(seed);
+            int actionIndex = random.Next(actions.Count);
+            return actions[actionIndex];
         }
     }
 }
