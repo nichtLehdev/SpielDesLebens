@@ -74,6 +74,28 @@ namespace Spiel_Des_Lebens
             }
         }
 
+        public int getActionOptionMainStat(int action)
+        {
+            int highStat = 0;
+            if (action >= currentActions.Count)
+            {
+                return highStat;
+            }
+            else
+            {
+                Stat optionStat = currentActions[action].getResult().getStats();
+
+                for (int i = 0; i < optionStat.getStats().Count; i++)
+                {
+                    if (optionStat.getStats()[highStat].getValue() < optionStat.getStats()[i].getValue())
+                    {
+                        highStat = i;
+                    }
+                }
+            }
+            return highStat;
+        }
+
 
         #endregion
 

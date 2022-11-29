@@ -5,7 +5,7 @@
 
         public enum Path { Training = 0, DualStudy = 1, Study = 2 };
         public enum Profession { Social = 0, Business = 1, Science = 2, Stem = 3, Civil = 4 };
-        public enum StatType { mentalHealth, money, motivation, success };
+        public enum StatType { mentalHealth = 0, money = 1, motivation = 2, success = 3 };
 
 
         public static string[,] career = new string[3, 5] { { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" },
