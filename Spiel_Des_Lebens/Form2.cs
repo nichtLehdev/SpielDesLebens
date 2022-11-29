@@ -218,10 +218,7 @@ namespace Spiel_Des_Lebens
             action_points_txt.Text = "Aktionspunkte: " + action_points;
             left_phase_txt.Text = "Verbleibene Länge der Phase: " + (12 - action_points);
             progress_prog_bar.Value = 100*((cur_phase-1)* 12 +action_points)/(overall_phase*12) ;
-            if (ui_interface.getPlayerMoney() <= 100)
-            {
-                money_prog_bar.Value = ui_interface.getPlayerMoney();
-            }
+            money_prog_bar.Text = ui_interface.getPlayerMoney().ToString()+"€";
             learn_prog_bar.Value = ui_interface.getPlayerSuccess();
             motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
             mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
@@ -229,14 +226,17 @@ namespace Spiel_Des_Lebens
         }
         private void get_new_actions()
         {
-            /*
-            String[] action_array = (String[]) ui_interface.getNextActionList(); // Vlt als String mir übergeben?
-            if (action_array.Contains("Hausaufgaben"))
-            {
-                option_1_btn.Text = "Hausaufgaben";
-                option_1_btn.Image = Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
-            }
-            */
+            action_0_btn.Text = ui_interface.getActionTitle(0);
+            action_0_btn.Image = Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
+            action_1_btn.Text = ui_interface.getActionTitle(1);
+
+            action_2_btn.Text = ui_interface.getActionTitle(2);
+
+            action_3_btn.Text = ui_interface.getActionTitle(3);
+
+           
+            
+            
         }
         private void close_opt_txt(object sender, EventArgs e)
         {
@@ -246,8 +246,8 @@ namespace Spiel_Des_Lebens
         private void game_over_check()
         {
             String[] stats = new String[4];
-            int i = 0;
-            if (money_prog_bar.Value <= 0)
+            int i = 0;;
+            if (money_prog_bar.Text == "0€")
             {
                 stats[i] = "money";
                 i++;
