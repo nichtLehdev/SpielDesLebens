@@ -14,14 +14,16 @@ namespace Spiel_Des_Lebens
 {
     public partial class Form2 : Form
     {
+        private Boolean test_info_visible;
         private int alter;
         private string name;
         private string abschluss;
         private Image avatar;
         private Form activeForm;
         private UI_Interface ui_interface;
+        private Boolean new_game = false;
         private String[] option = new String[4];
-        public Form2(string name, string alter, Image avatar, string abschluss)
+        public Form2(string name, string alter, Image avatar, string abschluss, Boolean new_game)
         {
             InitializeComponent();
             pictureBox1.Image = avatar;
@@ -29,6 +31,7 @@ namespace Spiel_Des_Lebens
             this.alter = Convert.ToInt16(alter);
             this.abschluss = abschluss;
             this.avatar = avatar;
+            this.new_game = new_game;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -38,6 +41,11 @@ namespace Spiel_Des_Lebens
             lblPlayerName.Text = this.name;
             btnLoadEvent_Click();
             update_aktionpoints();
+            if (new_game == true)
+            {
+                all_options_disable();
+                tutorial_ask_panel.Visible = true;
+            }
         }
 
         public void OpenChildForm(Form childForm, object btnSender)
@@ -151,6 +159,7 @@ namespace Spiel_Des_Lebens
             option_2_btn.Enabled = false;
             option_3_btn.Enabled = false;
             option_4_btn.Enabled = false;
+            show_info_btn.Enabled = false;
         }
         private void all_options_enable()
         {
@@ -158,6 +167,7 @@ namespace Spiel_Des_Lebens
             option_2_btn.Enabled = true;
             option_3_btn.Enabled = true;
             option_4_btn.Enabled = true;
+            show_info_btn.Enabled = true;
         }
         private void all_options_hide()
         {
@@ -320,6 +330,72 @@ namespace Spiel_Des_Lebens
             Form1 t = new Form1();
             t.Show();
             Hide();
+        }
+
+        private void end_tutorial(object sender, EventArgs e)
+        {
+            tutorial_ask_panel.Visible = false;
+            all_options_enable();
+        }
+
+        private void start_tutorial(object sender, EventArgs e)
+        {
+            tutorial_ask_panel.Visible = false;
+            tutorial_panel_1.Visible = true;
+        }
+
+        private void continue_tutorial_1(object sender, EventArgs e)
+        {
+            if (tutorial_txt_1.Text == "Links wird dein Charakter angezeigt")
+            {
+                tutorial_txt_1.Text = "Auf der Rechten Seite siehtstd deien Fortschritt im Spiel.";
+            }
+            else
+            {
+                tutorial_panel_2.Visible = true;
+                tutorial_panel_1.Visible = false;
+            }
+        }
+        private void continue_tutorial_2(object sender, EventArgs e)
+        {
+            tutorial_panel_3.Visible = true;
+            tutorial_panel_2.Visible = false;
+        }
+        private void continue_tutorial_3(object sender, EventArgs e)
+        {
+            tutorial_panel_4.Visible = true;
+            tutorial_panel_3.Visible = false;
+        }
+        private void continue_tutorial_4(object sender, EventArgs e)
+        {
+            tutorial_panel_5.Visible = true;
+            tutorial_panel_4.Visible = false;
+            if(show_info_btn.Visible == false)
+            {
+                show_info_btn.Visible = true;
+                show_info_btn.Visible = false;
+            }
+        }
+        private void continue_tutorial_5(object sender, EventArgs e)
+        {
+            if(show_info_btn.Visible == false)
+            {
+                show_info_btn.Visible = false;
+            }
+            tutorial_panel_6.Visible = true;
+            tutorial_panel_5.Visible = false;
+        }
+        private void continue_tutorial_6(object sender, EventArgs e)
+        {
+            if (tutorial_txt_6.Text == "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase gibt eine Semesterlänge an.")
+            {
+                tutorial_txt_6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei einem. Ein Event erhöht die Anzahl der Aktionspnkte bei zwei.";
+            }
+            else
+            {
+                tutorial_panel_6.Visible = false;
+                all_options_enable();
+            }
         }
     }
 }

@@ -56,7 +56,7 @@ namespace Spiel_Des_Lebens
         {
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
-                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss);
+                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss, true);
                 mainForm.TopLevel = false;
                 mainForm.FormBorderStyle = FormBorderStyle.None;
                 mainForm.Dock = DockStyle.Fill;
@@ -77,7 +77,7 @@ namespace Spiel_Des_Lebens
         private void load_test(object sender, EventArgs e)
         {
             //für das Bsp werden sie vorher gestzt
-            Form2 t = new Form2("Mia Münstermann", "20", pictureBox1.Image, "Testaschlusss");
+            Form2 t = new Form2("Mia Münstermann", "20", pictureBox1.Image, "Testaschlusss", false);
             t.Show();
             this.Hide();
         }
