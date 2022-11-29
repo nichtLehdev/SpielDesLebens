@@ -14,7 +14,6 @@ namespace Spiel_Des_Lebens
 {
     public partial class Form2 : Form
     {
-        private Boolean test_info_visible;
         private int alter;
         private string name;
         private string abschluss;
