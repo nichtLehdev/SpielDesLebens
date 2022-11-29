@@ -75,6 +75,10 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.action_panel = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.action_title = new System.Windows.Forms.TextBox();
+            this.action_text = new System.Windows.Forms.TextBox();
             this.tutorial_ask_panel = new System.Windows.Forms.Panel();
             this.tutorial_ask_btn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -95,10 +99,6 @@
             this.show_info_btn = new System.Windows.Forms.Button();
             this.event_txt_box = new System.Windows.Forms.TextBox();
             this.option_1_btn = new System.Windows.Forms.Button();
-            this.action_panel = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.action_title = new System.Windows.Forms.TextBox();
-            this.action_text = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.userInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -112,10 +112,10 @@
             this.tutorial_panel_4.SuspendLayout();
             this.tutorial_panel_3.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.action_panel.SuspendLayout();
             this.tutorial_ask_panel.SuspendLayout();
             this.game_over_panel.SuspendLayout();
             this.info_panel.SuspendLayout();
-            this.action_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // progress_prog_bar
@@ -685,6 +685,52 @@
             this.panel1.Size = new System.Drawing.Size(589, 426);
             this.panel1.TabIndex = 4;
             // 
+            // action_panel
+            // 
+            this.action_panel.Controls.Add(this.button9);
+            this.action_panel.Controls.Add(this.action_title);
+            this.action_panel.Controls.Add(this.action_text);
+            this.action_panel.Location = new System.Drawing.Point(135, 110);
+            this.action_panel.Name = "action_panel";
+            this.action_panel.Size = new System.Drawing.Size(365, 219);
+            this.action_panel.TabIndex = 0;
+            this.action_panel.Visible = false;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(233, 165);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(100, 40);
+            this.button9.TabIndex = 11;
+            this.button9.Text = "Weiter";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.action_close);
+            // 
+            // action_title
+            // 
+            this.action_title.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.action_title.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.action_title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.action_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.action_title.Location = new System.Drawing.Point(33, 17);
+            this.action_title.Name = "action_title";
+            this.action_title.Size = new System.Drawing.Size(185, 20);
+            this.action_title.TabIndex = 10;
+            this.action_title.Text = "Tutorial";
+            // 
+            // action_text
+            // 
+            this.action_text.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.action_text.BackColor = System.Drawing.SystemColors.Control;
+            this.action_text.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.action_text.Location = new System.Drawing.Point(33, 52);
+            this.action_text.Multiline = true;
+            this.action_text.Name = "action_text";
+            this.action_text.Size = new System.Drawing.Size(300, 103);
+            this.action_text.TabIndex = 10;
+            this.action_text.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
+            this.action_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // tutorial_ask_panel
             // 
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_btn);
@@ -916,51 +962,6 @@
             this.option_1_btn.UseVisualStyleBackColor = false;
             this.option_1_btn.Click += new System.EventHandler(this.option_1_click);
             // 
-            // action_panel
-            // 
-            this.action_panel.Controls.Add(this.button9);
-            this.action_panel.Controls.Add(this.action_title);
-            this.action_panel.Controls.Add(this.action_text);
-            this.action_panel.Location = new System.Drawing.Point(135, 110);
-            this.action_panel.Name = "action_panel";
-            this.action_panel.Size = new System.Drawing.Size(365, 219);
-            this.action_panel.TabIndex = 0;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(233, 165);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(100, 40);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Weiter";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.action_close);
-            // 
-            // action_title
-            // 
-            this.action_title.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.action_title.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.action_title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.action_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.action_title.Location = new System.Drawing.Point(33, 17);
-            this.action_title.Name = "action_title";
-            this.action_title.Size = new System.Drawing.Size(185, 20);
-            this.action_title.TabIndex = 10;
-            this.action_title.Text = "Tutorial";
-            // 
-            // action_text
-            // 
-            this.action_text.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.action_text.BackColor = System.Drawing.SystemColors.Control;
-            this.action_text.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.action_text.Location = new System.Drawing.Point(33, 52);
-            this.action_text.Multiline = true;
-            this.action_text.Name = "action_text";
-            this.action_text.Size = new System.Drawing.Size(300, 103);
-            this.action_text.TabIndex = 10;
-            this.action_text.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
-            this.action_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -997,13 +998,13 @@
             this.tutorial_panel_3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.action_panel.ResumeLayout(false);
+            this.action_panel.PerformLayout();
             this.tutorial_ask_panel.ResumeLayout(false);
             this.tutorial_ask_panel.PerformLayout();
             this.game_over_panel.ResumeLayout(false);
             this.game_over_panel.PerformLayout();
             this.info_panel.ResumeLayout(false);
-            this.action_panel.ResumeLayout(false);
-            this.action_panel.PerformLayout();
             this.ResumeLayout(false);
 
         }
