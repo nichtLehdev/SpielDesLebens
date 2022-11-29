@@ -26,12 +26,19 @@ namespace Spiel_Des_Lebens
 
         public String getActionTitle(int action)
         {
-            return currentActions[action].getTitle();
+            if (action >= currentActions.Count)
+            {
+                return "";
+            }
+            else
+            {
+                return currentActions[action].getTitle();
+            }
         }
 
         public String getActionInfo(int action)
         {
-            if (currentActions[action].getInfo() == null)
+            if (action >= currentActions.Count || currentActions[action].getInfo() == null)
             {
                 return "";
             }
@@ -43,13 +50,27 @@ namespace Spiel_Des_Lebens
 
         public String getActionOptionTitle(int action)
         {
-            return currentActions[action].getResult().getTitle();
+            if (action >= currentActions.Count)
+            {
+                return "";
+            }
+            else
+            {
+                return currentActions[action].getResult().getTitle();
+            }
         }
 
         public String getActionOptionText(int action)
         {
-            this.player.changePlayerStat(currentActions[action].getResult().getStats());
-            return currentActions[action].getResult().getText();
+            if (action >= currentActions.Count)
+            {
+                return "";
+            }
+            else
+            {
+                this.player.changePlayerStat(currentActions[action].getResult().getStats());
+                return currentActions[action].getResult().getText();
+            }
         }
 
 
