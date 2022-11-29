@@ -5985,6 +5985,2450 @@
       ]
    },
    {
+      "id": "E-072",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Wo im menschlichen Körper finden sich Flimmerhärchen?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-072_1",
+            "title": "In der Leber",
+            "text": "Falsch. Sie sitzen millionenfach, wie ein Teppich, auf der Schleimhaut der Atemwege und sorgen für deren Selbstreinigung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-072_2",
+            "title": "In der Milz",
+            "text": "Falsch. Sie sitzen millionenfach, wie ein Teppich, auf der Schleimhaut der Atemwege und sorgen für deren Selbstreinigung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-072_3",
+            "title": "In den Atemwegen",
+            "text": "Richtig. Sie sitzen millionenfach, wie ein Teppich, auf der Schleimhaut der Atemwege und sorgen für deren Selbstreinigung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-072_4",
+            "title": "In der linken Niere",
+            "text": "Falsch. Sie sitzen millionenfach, wie ein Teppich, auf der Schleimhaut der Atemwege und sorgen für deren Selbstreinigung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-073",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Welcher Teil des Auges gibt diesem die Färbung?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-073_1",
+            "title": "Iris",
+            "text": "Richtig! Sie ist aus zwei Schichten aufgebaut: Der vorderen, dem Stroma, und der hinteren, dem Pigmentblatt.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-073_2",
+            "title": "Pupille",
+            "text": "Falsch!  Die Iris ist aus zwei Schichten aufgebaut: Der vorderen, dem Stroma, und der hinteren, dem Pigmentblatt.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-073_3",
+            "title": "Linse",
+            "text": "Falsch!  Die Iris ist aus zwei Schichten aufgebaut: Der vorderen, dem Stroma, und der hinteren, dem Pigmentblatt.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-073_4",
+            "title": "Ziliarkörper",
+            "text": "Falsch! Die Iris ist aus zwei Schichten aufgebaut: Der vorderen, dem Stroma, und der hinteren, dem Pigmentblatt.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-074",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Eine akute Erkrankung der Atemwege wird auch ____ genannt.",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-074_1",
+            "title": "Influenzar",
+            "text": "Falsch. Eine Influenza wird durch Grippeviren ausgelöst und ist nicht mit einer Erkältung oder einem grippalen Infekt gleichzusetzen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-074_2",
+            "title": "Influenza",
+            "text": "Richtig. Eine Influenza wird durch Grippeviren ausgelöst und ist nicht mit einer Erkältung oder einem grippalen Infekt gleichzusetzen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-074_3",
+            "title": "Influencer",
+            "text": "Falsch. Eine Influenza wird durch Grippeviren ausgelöst und ist nicht mit einer Erkältung oder einem grippalen Infekt gleichzusetzen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-074_4",
+            "title": "Influenca",
+            "text": "Falsch. Eine Influenza wird durch Grippeviren ausgelöst und ist nicht mit einer Erkältung oder einem grippalen Infekt gleichzusetzen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-075",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Wie viel Prozent des Körpergewichts machen die Knochen im Normalfall aus?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-075_1",
+            "title": "4",
+            "text": "Falsch!, es sind 12%.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-075_2",
+            "title": "9",
+            "text": "Falsch!, es sind 12%.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-075_3",
+            "title": "12",
+            "text": "Richtig!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-075_4",
+            "title": "22",
+            "text": "Falsch!, es sind 12%.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-076",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Welche Pigmente sorgen für die Färbung von Haut und Haaren?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-076_1",
+            "title": "Epinephrine",
+            "text": "Falsch, die Melaninbildung wird durch UVB-Strahlung angeregt, außerdem bewirkt Melanin die Färbung der Augen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-076_2",
+            "title": "Serotonine",
+            "text": "Falsch, die Melaninbildung wird durch UVB-Strahlung angeregt, außerdem bewirkt Melanin die Färbung der Augen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-076_3",
+            "title": "Leptine",
+            "text": "Falsch, die Melaninbildung wird durch UVB-Strahlung angeregt, außerdem bewirkt Melanin die Färbung der Augen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-076_4",
+            "title": "Melanine",
+            "text": "Richtig, die Melaninbildung wird durch UVB-Strahlung angeregt, außerdem bewirkt Melanin die Färbung der Augen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-077",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Wenn man von einer Tonsillitis spricht, dann meint man ...",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-077_1",
+            "title": "einer Blasenentzündung",
+            "text": "Richtig!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-077_2",
+            "title": "einer Magenentzündung",
+            "text": "Falsch. Bei einer Tonsillitis handelt es sich um eine ansteckende Entzündung der Gaumenmandeln.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-077_3",
+            "title": "einer Nierenbeckenentzündung",
+            "text": "Falsch. Bei einer Tonsillitis handelt es sich um eine ansteckende Entzündung der Gaumenmandeln.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-077_4",
+            "title": "einer Mandelentzündung",
+            "text": "Richtig. Bei einer Tonsillitis handelt es sich um eine ansteckende Entzündung der Gaumenmandeln.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-078",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Der Mastdarm ist ein Teil ____ .",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-078_1",
+            "title": "des Leerdarms",
+            "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-078_2",
+            "title": "des Blinddarms",
+            "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-078_3",
+            "title": "des Dickdarms",
+            "text": "Richtig. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-078_4",
+            "title": "des Dünndarms",
+            "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-079",
+      "title": "Klausurfragen Medizin",
+      "text": "Du schreibst eine Klausur in Medizin. Der Mastdarm ist ein Teil ____ .",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "0"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-079_1",
+            "title": "des Leerdarms",
+            "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-079_2",
+            "title": "des Blinddarms",
+            "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-079_3",
+            "title": "des Dickdarms",
+            "text": "Richtig. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-079_4",
+            "title": "des Dünndarms",
+            "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-080",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Was ist KEIN Vorurteil über Informatiker?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-080_1",
+            "title": "sozial inkompetent",
+            "text": "Falsch, dies ist ein Vorurteil das nicht von ungefähr kommt.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-080_2",
+            "title": "kann Hacken",
+            "text": "Falsch, nur wenige Informatiker sind Hacker. Oder vielleicht wollen sie nur, dass du das glaubst? Muhahahahaaa",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-080_3",
+            "title": "mag Dinosaurier",
+            "text": "Richtig, die ist kein Vorurteil gegenüber Informatikern, aber vielleicht sollte es eins sein?",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-080_4",
+            "title": "lichtscheu",
+            "text": "Falsch, Informatiker werden auch oft mit Vampiren verwechselt.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-081",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Was zeichnet einen guten Programmierer aus?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-081_1",
+            "title": "er ist faul",
+            "text": "Richtig. Desto fauler der Programmierer, desto effizienter der Code.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-081_2",
+            "title": "kann Hacken und Drucker reparieren",
+            "text": "NEIN!!!!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-082",
+      "title": "Klausurfragen Informatik",
+      "text": "Du schreibst eine Klausur in IT. Was ist KEIN Bereich der IT?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-082_1",
+            "title": "Security Engeneering",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-082_2",
+            "title": "Softwareentwicklung",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-082_3",
+            "title": "Systemadministration",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-082_4",
+            "title": "Dark Net",
+            "text": "Richtig. Das dark Net ist einfach nur das Dark Net.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-083",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Wofür steht BWL?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-083_1",
+            "title": "Betriebswirtschaftslehre",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-083_2",
+            "title": "Betriebswillsenslehre",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-083_3",
+            "title": "Bill will Luxus",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-083_4",
+            "title": "blonde Weiber Lehrer",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-084",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Wozu werden Konsumgüter verwendet?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-084_1",
+            "title": "Sie dienen der Bedarfsdeckung in Haushalten.",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-084_2",
+            "title": "zur Produktion von anderen Gütern.",
+            "text": "Falsch, das ist die Verwendung von Funktionsgütern.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-085",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Wozu werden Investitionsgüter verwendet?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-085_1",
+            "title": "Sie dienen der Bedarfsdeckung in Haushalten.",
+            "text": "Falsch, das ist die Verwendung von Konsumgütern.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-085_2",
+            "title": "zur Produktion von anderen Gütern.",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-086",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Nenne 3 Beispiele für Investitionsgüter.",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-086_1",
+            "title": "Bekleidung, Automobile, Lebensmittel",
+            "text": "Falsch, das ist die Verwendung von Konsumgütern.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-086_2",
+            "title": " Arbeitskraft, Material, Maschinen",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-087",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Nenne 3 Beispiele für Konsumgüter.",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-087_1",
+            "title": "Bekleidung, Automobile, Lebensmittel",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-087_2",
+            "title": " Arbeitskraft, Material, Maschinen",
+            "text": "Falsch, das ist die Verwendung von Investitionsgütern.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-088",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Definieren Sie den Begriff »Kaufmann«.",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-088_1",
+            "title": "Kaufmann ist wer Handelsgewerbe betreibt.",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-088_2",
+            "title": "Kaufmann ist wer kaufsüchtig ist.",
+            "text": "Falsch, das ist die Verwendung von Investitionsgütern.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-089",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Was versteht man unter Produktwettbewerb?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-089_1",
+            "title": "Wettbewerb hinsichtlich der Entwicklung und der Verbesserung von Produkten.",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-089_2",
+            "title": "Wettbewerb hinsichtlich des Preises vergleichbarer Produkte.",
+            "text": "Falsch, das ist die Definition von Preiswettbewerb.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-090",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Was versteht man unter Preiswettbewerb?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-090_1",
+            "title": "Wettbewerb hinsichtlich der Entwicklung und der Verbesserung von Produkten.",
+            "text": "Falsch, das ist die Definition von Produktwettbewerb.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-090_2",
+            "title": "Wettbewerb hinsichtlich des Preises vergleichbarer Produkte.",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-091",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Bei Preiskartellen werden Absprachen hinsichtlich der _____ getroffen",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-091_1",
+            "title": "Preise",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-091_2",
+            "title": "Produktionsmenge",
+            "text": "Falsch, solche Absprachen trifft man bei einem Mengenkartell.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-092",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Bei Mengenkartellen werden Absprachen hinsichtlich der _____ getroffen",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-092_1",
+            "title": "Preise",
+            "text": "Falsch, solche Absprachen trifft man bei einem Preiskartell.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-092_2",
+            "title": "Produktionsmenge",
+            "text": "Richtig",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-093",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Definieren Sie den Begriff »Kernkompetenz«.",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-093_1",
+            "title": "Kernkompetenzen sind die kollektiv erworbenen Fähigkeiten.",
+            "text": "Richtig",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-093_2",
+            "title": "Kompetenzen eines Kerns. z.B. Kevin Kern.",
+            "text": "Falsch. Aber netter Versuch.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-094",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Was ist KEINE Finanzierungsform?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-094_1",
+            "title": "Beteiligungsfinanzierung",
+            "text": "Falsch",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-094_2",
+            "title": "Selbstfinanzierung",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-094_3",
+            "title": "Unterschlagung",
+            "text": "Durchaus möglich allerdings nicht legal.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-094_4",
+            "title": "Kreditfinanzierung",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-095",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Was sind Hilfsstoffe?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-095_1",
+            "title": "Hilfsstoffe sind mengen- und/oder wertmäßige Nebenbestandteile der Erzeugnisse eines Betriebes.",
+            "text": "Richtig",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-095_2",
+            "title": "Hilfsstoffe werden mittelbar oder unmittelbar bei deren Produktion verbraucht.",
+            "text": "Falsch. Das sind Betriebsstoffe",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-096",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Was sind Betriebsstoffe?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-096_1",
+            "title": "Betriebsstoffe sind mengen- und/oder wertmäßige Nebenbestandteile der Erzeugnisse eines Betriebes.",
+            "text": "Falsch, das sind Hilfsstoffe.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-096_2",
+            "title": "Betriebsstoffe werden mittelbar oder unmittelbar bei deren Produktion verbraucht.",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-097",
+      "title": "Klausurfragen BWL",
+      "text": "Du schreibst eine Klausur in BWL. Was ist keine Kaufart?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-097_1",
+            "title": "Extensive Käufe",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-097_2",
+            "title": "Limitierte Käufe",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-097_3",
+            "title": "Aneignung",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-097_4",
+            "title": "Impulsiv Käufe",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
       "id": "E-998",
       "title": "Hofmann ist im Urlaub",
       "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
@@ -6110,6 +8554,170 @@
                "motivation": 30,
                "money": 0,
                "success": -15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-100",
+      "title": "Klausurvorbereitung Formale Sprachen",
+      "text": "Professor Val bietet eine zusätzliche Vorlesung in Formale Sprachen an. Nimmst du Teil?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "1",
+                  "2"
+               ],
+               "profession": [
+                  "3"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-100_1",
+            "title": "ja",
+            "text": "Sehr gute Entscheidung. Vorlesungen bei Val sind immer sinnvoller und verständlicher als die Vorlesungen bei Hower.",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 15,
+               "money": 0,
+               "success": 20
+            }
+         },
+         {
+            "id": "E-100_2",
+            "title": "nein",
+            "text": "Du verpasst eine Chance auf eine verständliche Formale Sprachen Vorlesung.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-100_3",
+            "title": "Aneignung",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-100_4",
+            "title": "Impulsiv Käufe",
+            "text": "Falsch.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-101",
+      "title": "Klausurfrage BWL ",
+      "text": "Du schreibst eine BWl Klausur. Was beschreiben Marktformen?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": [
+                  "0"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "6",
+                  "10",
+                  "12",
+                  "18"
+               ]
+            },
+            {
+               "path": [
+                  "1"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*!%2"
+               ]
+            },
+            {
+               "path": [
+                  "2"
+               ],
+               "profession": [
+                  "1"
+               ],
+               "phase": [
+                  "*%2"
+               ]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-101_1",
+            "title": "die Struktur von Angebot und Nachfrage",
+            "text": "Richtig.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-101_2",
+            "title": "den Handelsort z.B. Online, lokal.",
+            "text": "Falsch",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
             }
          }
       ]
