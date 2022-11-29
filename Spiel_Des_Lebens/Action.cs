@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Spiel_Des_Lebens
+﻿namespace Spiel_Des_Lebens
 {
     internal class Action
     {
-        private string id;
-        private string title;
-        private string info;
-        private Option result;
+        public string id;
+        public string title;
+        public string info;
+        public Option result;
 
         #region getters
         public string getId() { return id; }

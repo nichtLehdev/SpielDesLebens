@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Spiel_Des_Lebens
 {
@@ -11,6 +7,7 @@ namespace Spiel_Des_Lebens
     {
         private Player player;
         private Event currentEvent;
+        private List<Action> currentActions;
         public UI_Interface(bool avatar, int age, string name, Data.Path path, Data.Profession profession)
         {
             player = new Player(avatar, age, name, path, profession);
@@ -19,6 +16,46 @@ namespace Spiel_Des_Lebens
         {
             currentEvent = player.eventgenerator.nextEvent(player.getPlayerStat());
         }
+
+        public void nextAction()
+        {
+            currentActions = player.actiongenerator.getActions();
+        }
+
+        #region getActionString
+
+        public String getActionTitle(int action)
+        {
+            return currentActions[action].getTitle();
+        }
+
+        public String getActionInfo(int action)
+        {
+            if (currentActions[action].getInfo() == null)
+            {
+                return "";
+            }
+            else
+            {
+                return currentActions[action].getInfo();
+            }
+        }
+
+        public String getActionOptionTitle(int action)
+        {
+            return currentActions[action].getResult().getTitle();
+        }
+
+        public String getActionOptionText(int action)
+        {
+            this.player.changePlayerStat(currentActions[action].getResult().getStats());
+            return currentActions[action].getResult().getText();
+        }
+
+
+        #endregion
+
+
         #region getEventString
         public String getEventOptionTitle(int option)
         {
