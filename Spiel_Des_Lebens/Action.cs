@@ -2,10 +2,10 @@
 {
     internal class Action
     {
-        public string id;
-        public string title;
-        public string info;
-        public Option result;
+        private string id;
+        private string title;
+        private string info;
+        private Option result;
 
         #region getters
         public string getId() { return id; }
