@@ -84,24 +84,28 @@ namespace Spiel_Des_Lebens
         private void action_0_click(object sender, EventArgs e)
         {
             action_text.Text = ui_interface.getActionOptionText(0);
+            action_title.Text = ui_interface.getActionTitle(0);
             action_text_show();
         }
 
         private void action_1_click(object sender, EventArgs e)
         {
             action_text.Text = ui_interface.getActionOptionText(1);
+            action_title.Text = ui_interface.getActionTitle(1);
             action_text_show();
         }
 
         private void action_2_click(object sender, EventArgs e)
         {
             action_text.Text = ui_interface.getActionOptionText(2);
+            action_title.Text = ui_interface.getActionTitle(2);
             action_text_show();
         }
 
         private void action_3_click(object sender, EventArgs e)
         {
             action_text.Text = ui_interface.getActionOptionText(3);
+            action_title.Text = ui_interface.getActionTitle(3);
             action_text_show();
         }
         private void action_text_show()
