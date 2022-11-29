@@ -22,7 +22,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -74,7 +74,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -126,7 +126,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -200,7 +200,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -274,7 +274,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -326,7 +326,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -378,7 +378,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -430,7 +430,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -482,7 +482,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -514,7 +514,7 @@
    {
       "id": "E-010",
       "title": "1. Arbeitstag",
-      "text": "Du kommst auf in dem Unternehmen an, weißt aber nicht wo dein Arbeitsplatz ist",
+      "text": "Du kommst in dem Unternehmen an, weißt aber nicht wo dein Arbeitsplatz ist",
       "info": "betrifft Erfolg, Mentale Gesundheit, Motivation",
       "priority": 1,
       "requirements": {
@@ -539,7 +539,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -596,7 +596,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -653,7 +653,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -732,7 +732,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -789,7 +789,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -846,7 +846,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -909,7 +909,7 @@
             {
                "path": ["0"],
                "profession": ["*"],
-               "phase": ["(*%2)!2"] 
+               "phase": ["(*%2)!2"]
             }
          ],
          "stats_min": {
@@ -921,7 +921,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -961,7 +961,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"] 
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -973,7 +973,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 70
          }
       },
@@ -1026,7 +1026,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 60
          }
       },
@@ -1078,7 +1078,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1152,7 +1152,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1215,7 +1215,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1245,6 +1245,565 @@
       ]
    },
    {
+      "id": "E-022",
+      "title": "Klausuren Phase",
+      "text": "Die Prüfungen stehen an, du wirst zu einer Geburtstagsfeier eingeladen.",
+      "info": "hat Auswirkungen auf Erfolg",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0", "2"],
+               "profession": ["*"],
+               "phase": ["*%2"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 60
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-022_1",
+            "title": "zusagen & abschießen",
+            "text": "Du bringst ein Geschenk mit und genießt die Party in vollen Zügen. Am nächsten Tag dröhnt dir der Schädel.",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 10,
+               "money": -15,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-022_2",
+            "title": "absagen",
+            "text": "Du gehst nicht auf die Party und lernst das ganze Wochenende.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": -10,
+               "money": 0,
+               "success": 25
+            }
+         },
+         {
+            "id": "E-022_3",
+            "title": "für 3h auf die Party",
+            "text": "Du gehst 3 Stunden auf die Party, überreichst ein Geschenk und trinkst nur 2 Bier.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 10,
+               "money": -10,
+               "success": 20
+            }
+         },
+         {
+            "id": "E-022_4",
+            "title": "zusagen & kein Alkohol trinken",
+            "text": "Du gehst auf die Party, überreichst ein Geschenk und lernst am nächsten Tag.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 0,
+               "money": -10,
+               "success": 15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-023",
+      "title": "Klausuren Phase",
+      "text": "Die Prüfungen stehen an, du kommst in einem Fach nicht gut voran.",
+      "info": "hat Auswirkungen auf Erfolg",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0", "2"],
+               "profession": ["*"],
+               "phase": ["*%2"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 60
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-023_1",
+            "title": "aufgeben",
+            "text": "Du gibst auf und nimmst eine schlechte Note in Kauf.",
+            "stats": {
+               "mentalHealth": -15,
+               "motivation": -10,
+               "money": 0,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-023_2",
+            "title": "weiter lernen",
+            "text": "Du versuchst weiterhin dir den Stoff einzuverleiben. Kommst aber nur langsam voran.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": 5,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-023_3",
+            "title": "Ein Mitschüler um Hilfe bitten.",
+            "text": "Du holst dir Hilfe beim lernen.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 15,
+               "money": 0,
+               "success": 20
+            }
+         },
+         {
+            "id": "E-023_4",
+            "title": "weinen",
+            "text": "Du fängst an zu weinen.",
+            "stats": {
+               "mentalHealth": -15,
+               "motivation": -20,
+               "money": 0,
+               "success": -15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-024",
+      "title": "Urlaub",
+      "text": "Du hast eine Woche Urlaub geplant, was machst du?",
+      "info": "hat Auswirkungen auf Mental Health & Geld",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1", "2"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 500,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-024_1",
+            "title": "Urlaub mit Komilitonen",
+            "text": "Du fährst mit einer kleine Gruppe aus deinem Kurs auf eine Tropische Insel.",
+            "stats": {
+               "mentalHealth": 50,
+               "motivation": 30,
+               "money": -200,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-024_2",
+            "title": "Lernurlaub",
+            "text": "Du lernst in deinem Urlaub.",
+            "stats": {
+               "mentalHealth": -20,
+               "motivation": 20,
+               "money": 0,
+               "success": 50
+            }
+         },
+         {
+            "id": "E-024_3",
+            "title": "Urlaub mit einer Freundin / einem Freund",
+            "text": "Du machst gemeinsam mit einem deiner Freunde Urlaub in Norwegen.",
+            "stats": {
+               "mentalHealth": 40,
+               "motivation": 20,
+               "money": -300,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-024_4",
+            "title": "alleine Urlaub machen",
+            "text": "Du fährst alleine an die Ostsee.",
+            "stats": {
+               "mentalHealth": 25,
+               "motivation": 15,
+               "money": -400,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-025",
+      "title": "Freizeit",
+      "text": "Du planst eine Freizeitaktivität.",
+      "info": "hat Auswirkungen auf Mental Health & Geld",
+      "priority": 3,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 90,
+            "success": 60
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-025_1",
+            "title": "Metal Konzert",
+            "text": "Du gehst auf ein Konzert der Band Helloween. Die Stimmung ist super, das Bier schmeckt gut und du hast sehr viel Spaß im Moshpit.",
+            "stats": {
+               "mentalHealth": 40,
+               "motivation": 30,
+               "money": -90,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-025_2",
+            "title": "Pop Konzert",
+            "text": "Du gehst auf ein Pop Konzert. Die Stimmung ist ausgelassen, der Alkohol schmeckt schrecklich und du erhälst eine Bierdusche. ",
+            "stats": {
+               "mentalHealth": 20,
+               "motivation": 15,
+               "money": -70,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-026",
+      "title": "Urlaub",
+      "text": "Du hast dir eine Woche Urlaub genommen, was machst du?",
+      "info": "hat Auswirkungen auf Mental Health & Geld",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 350,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -100000,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-026_1",
+            "title": "Urlaub mit anderen Azubis",
+            "text": "Du fährst mit einer kleine Gruppe aus deinem Kurs nach Italien.",
+            "stats": {
+               "mentalHealth": 45,
+               "motivation": 30,
+               "money": -200,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-026_2",
+            "title": "Lernurlaub",
+            "text": "Du lernst in deinem Urlaub.",
+            "stats": {
+               "mentalHealth": -20,
+               "motivation": 20,
+               "money": 0,
+               "success": 50
+            }
+         },
+         {
+            "id": "E-026_3",
+            "title": "Urlaub mit einer Freundin / einem Freund",
+            "text": "Du machst gemeinsam mit einem deiner Freunde Urlaub in Norwegen.",
+            "stats": {
+               "mentalHealth": 40,
+               "motivation": 20,
+               "money": -250,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-026_4",
+            "title": "alleine Urlaub machen",
+            "text": "Du fährst alleine an die Ostsee.",
+            "stats": {
+               "mentalHealth": 25,
+               "motivation": 15,
+               "money": -300,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-027",
+      "title": "Tutor Angebot",
+      "text": "Einer deiner Professoren bietet dir einen Job als Tutor für ein niedrigeres Semester an.",
+      "info": "hat Auswirkungen auf Erfolg & Geld",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["2"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 40,
+            "motivation": 0,
+            "money": 0,
+            "success": 80
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -100000,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-027_1",
+            "title": "Den Jon annehmen",
+            "text": "Du nimmst den job an und leistest sehr gute Arbeit. Außerdem hast du sehr guten Kontakt zu deinem Professor.",
+            "stats": {
+               "mentalHealth": 20,
+               "motivation": 20,
+               "money": 2000,
+               "success": 40
+            }
+         },
+         {
+            "id": "E-027_2",
+            "title": "ablehnen",
+            "text": "Du dankst dem Professor für sein Angebot und lehnst höflich ab.",
+            "stats": {
+               "mentalHealth": 15,
+               "motivation": 15,
+               "money": 0,
+               "success": 0
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-028",
+      "title": "Illegale Aktivitäten",
+      "text": "Du stehst an der Bushaltestelle. Ein junger Mann kommt auf dich zu und bietet dir Gras an.",
+      "info": "hat Auswirkungen auf Mental Health & Geld.",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 5,
+            "motivation": 0,
+            "money": 50,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 20,
+            "motivation": 20,
+            "money": -100000,
+            "success": 30
+         }
+      },
+      "options": [
+         {
+            "id": "E-028_1",
+            "title": "Das Gras kaufen",
+            "text": "Du rauchst einen Joint jetzt und hebst dir den Rest für später auf. Du bist aktuell sehr Glücklich, verpasst den Bus den du nehmen wolltest aber das ist dir egal.",
+            "stats": {
+               "mentalHealth": 3,
+               "motivation": 5,
+               "money": -50,
+               "success": -25
+            }
+         },
+         {
+            "id": "E-028_2",
+            "title": "mit einem Messer bedrohen um das Gras zu bekommen.",
+            "text": "Du bedrohst den Dealer mit deinem Taschenmesser und verlangst das Gras von Ihm. Doch er beherrscht Kampfsport, verprügelt dich und klaut dein Geld",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": -20,
+               "money": -50,
+               "success": -20
+            }
+         },
+         {
+            "id": "E-028_3",
+            "title": "entsetzt ablehnen",
+            "text": "Du kaufst kein Gras und wirfst dem Dealer einen schockierten Blick zu. Er ist ein wenig irritiert und macht sich davon.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-028_4",
+            "title": "ihn beschimpfen",
+            "text": "Du nennst ihn einen Junkie, sagst ihm dass er es im Leben nie zu etwas bringen wird und er sich zum Teufel scheren soll. Der Dealer hat eine sehr starke Rechte...",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": -15,
+               "money": -20,
+               "success": -15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-029",
+      "title": "Illegale Aktivitäten",
+      "text": "Du bist auf der Neckarwiese. Ein junger Mann kommt auf dich zu und bietet dir Koks an.",
+      "info": "hat Auswirkungen auf Mental Health & Geld.",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 5,
+            "motivation": 0,
+            "money": -1,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 25,
+            "motivation": 20,
+            "money": -100000,
+            "success": 30
+         }
+      },
+      "options": [
+         {
+            "id": "E-029_1",
+            "title": "Das Koks kaufen",
+            "text": "Du nimmst einen Zug jetzt und hebst dir den Rest für später auf. Du bist aktuell sehr Glücklich, verläufst dich aber auf dem Heimweg.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 6,
+               "money": -100,
+               "success": -23
+            }
+         },
+         {
+            "id": "E-029_2",
+            "title": "mit einem Messer bedrohen um das Koks zu bekommen.",
+            "text": "Du bedrohst den Dealer mit deinem Taschenmesser und verlangst das Koks von Ihm. Doch er beherrscht Kampfsport, verprügelt dich, klaut dein Geld und lässt dich bewusstlos zurück.",
+            "stats": {
+               "mentalHealth": -16,
+               "motivation": -25,
+               "money": -70,
+               "success": -20
+            }
+         },
+         {
+            "id": "E-029_3",
+            "title": "entsetzt ablehnen",
+            "text": "Du kaufst kein Koks und wirfst dem Dealer einen schockierten Blick zu. Er ist ein genervt und macht sich davon.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-029_4",
+            "title": "ihn beschimpfen",
+            "text": "Du nennst ihn einen Junkie, sagst ihm dass er es im Leben nie zu etwas bringen wird und er sich zum Teufel scheren soll. Ein paar Tage später wachst du im Krankenhaus auf.",
+            "stats": {
+               "mentalHealth": -20,
+               "motivation": -40,
+               "money": -90,
+               "success": -26
+            }
+         }
+      ]
+   },
+
+   {
       "id": "E-030",
       "title": "neuer Mitschüler",
       "text": "Im Klassenzimmer triffst du auf einen neuen Mitschüler, er sieht unsicher aus.",
@@ -1267,7 +1826,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1319,7 +1878,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 70
          }
       },
@@ -1372,7 +1931,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 60
          }
       },
@@ -1424,7 +1983,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1498,7 +2057,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
@@ -1550,7 +2109,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": 100,
+            "money": -1,
             "success": 100
          }
       },
