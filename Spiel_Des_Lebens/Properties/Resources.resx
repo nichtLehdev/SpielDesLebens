@@ -127,10 +127,19 @@
   <data name="Homework_Icon_small3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Homework_Icon_small3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="money_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mentalhealth_np_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mentalhealth_np_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sports_Icon_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sports_Icon_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motivation_np_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\motivation_np_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

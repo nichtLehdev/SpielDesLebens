@@ -229,7 +229,7 @@ namespace Spiel_Des_Lebens
             learn_prog_bar.Value = ui_interface.getPlayerSuccess();
             motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
             mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
-            //game_over_check();
+            game_over_check();
         }
         private void get_new_actions()
         {
@@ -237,32 +237,35 @@ namespace Spiel_Des_Lebens
             action_1_btn.Text = ui_interface.getActionTitle(1);
             action_2_btn.Text = ui_interface.getActionTitle(2);
             action_3_btn.Text = ui_interface.getActionTitle(3);
-            /*
+            
             action_0_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(0));
             action_1_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(1));
             action_2_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(2));
             action_3_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(3));
-            */
+            
         }
-       /* private Image get_right_icon(int r)
+       private Image get_right_icon(int r)
         {
             if(r == 0)
             {
                 //mental health
+                return Spiel_Des_Lebens.Properties.Resources.mentalhealth_np_48px;
             }
             else if(r == 1)
             {
+                return Spiel_Des_Lebens.Properties.Resources.money_48px;
                 //moneyyyyy
             }
             else if( r == 2)
             {
+                return Spiel_Des_Lebens.Properties.Resources.money_48px;
                 //motivation
             }
-            else if(r == 3){
-              //  return Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
+            else{
+              return Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
                 //lernstand
             }
-        }*/
+        }
         private void close_opt_txt(object sender, EventArgs e)
         {
             close_opt_end_txt.Visible = false;
