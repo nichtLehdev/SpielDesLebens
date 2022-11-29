@@ -45,6 +45,7 @@ namespace Spiel_Des_Lebens
                 all_options_disable();
                 tutorial_ask_panel.Visible = true;
             }
+            get_new_actions();
         }
 
         public void OpenChildForm(Form childForm, object btnSender)
@@ -80,39 +81,34 @@ namespace Spiel_Des_Lebens
             all_options_enable();
         }
 
-        private void btnAktion_Click(object sender, EventArgs e)
+        private void action_0_click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormActions(), sender);
+            action_text.Text = ui_interface.getActionOptionText(0);
+            action_text_show();
         }
 
-        private void btnSport_Click(object sender, EventArgs e)
+        private void action_1_click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormFreetime(), sender);
-            ui_interface.receiveAction(3);
-            update_aktionpoints();
+            action_text.Text = ui_interface.getActionOptionText(1);
+            action_text_show();
         }
 
-        private void btnHausis_Click(object sender, EventArgs e)
+        private void action_2_click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormSchool(), sender);
-            ui_interface.receiveAction(1);
-            update_aktionpoints();
+            action_text.Text = ui_interface.getActionOptionText(2);
+            action_text_show();
         }
 
-        private void btnMusik_Click(object sender, EventArgs e)
+        private void action_3_click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormFreetime(), sender);
-            ui_interface.receiveAction(2);
-            update_aktionpoints();
-
+            action_text.Text = ui_interface.getActionOptionText(3);
+            action_text_show();
         }
-
-        private void button6_Click(object sender, EventArgs e)
+        private void action_text_show()
         {
-            ui_interface.receiveAction(4);
+            action_panel.Visible = true;
+            all_options_disable();
             update_aktionpoints();
-            OpenChildForm(new Forms.FormFreetime(), sender);
-
         }
 
         private void btnLoadEvent_Click()
@@ -132,25 +128,24 @@ namespace Spiel_Des_Lebens
             option_2_btn.Text = ui_interface.getEventOptionTitle(1);
             if (ui_interface.getEventOptionTitle(2) != "")
             {
-                option_3_btn.Visible = true;
-                option_3_btn.Text = ui_interface.getEventOptionTitle(2);
-                option_4_btn.Visible = false;
-                if(ui_interface.getEventOptionTitle(3) != "")
-                {
+              option_3_btn.Visible = true;
+              option_3_btn.Text = ui_interface.getEventOptionTitle(2);
+              option_4_btn.Visible = false;
+              if(ui_interface.getEventOptionTitle(3) != "")
+              {
                     option_4_btn.Visible = true;
                     option_4_btn.Text = ui_interface.getEventOptionTitle(3);
-                }
-                else
-                {
+              }
+              else
+              {
                     option_4_btn.Visible = false;
-                }
+              }
             }
             else
             {
                 option_3_btn.Visible = false;
                 option_4_btn.Visible = false;
             }
-
         }
         private void all_options_disable()
         {
@@ -159,6 +154,10 @@ namespace Spiel_Des_Lebens
             option_3_btn.Enabled = false;
             option_4_btn.Enabled = false;
             show_info_btn.Enabled = false;
+            action_0_btn.Enabled =false;
+            action_1_btn.Enabled = false;
+            action_2_btn.Enabled = false;
+            action_3_btn.Enabled = false;
         }
         private void all_options_enable()
         {
@@ -167,6 +166,10 @@ namespace Spiel_Des_Lebens
             option_3_btn.Enabled = true;
             option_4_btn.Enabled = true;
             show_info_btn.Enabled = true;
+            action_0_btn.Enabled = true;
+            action_1_btn.Enabled = true;
+            action_2_btn.Enabled = true;
+            action_3_btn.Enabled = true;
         }
         private void all_options_hide()
         {
@@ -222,22 +225,40 @@ namespace Spiel_Des_Lebens
             learn_prog_bar.Value = ui_interface.getPlayerSuccess();
             motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
             mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
-            game_over_check();
+            //game_over_check();
         }
         private void get_new_actions()
         {
             action_0_btn.Text = ui_interface.getActionTitle(0);
-            action_0_btn.Image = Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
             action_1_btn.Text = ui_interface.getActionTitle(1);
-
             action_2_btn.Text = ui_interface.getActionTitle(2);
-
             action_3_btn.Text = ui_interface.getActionTitle(3);
-
-           
-            
-            
+            /*
+            action_0_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(0));
+            action_1_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(1));
+            action_2_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(2));
+            action_3_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(3));
+            */
         }
+       /* private Image get_right_icon(int r)
+        {
+            if(r == 0)
+            {
+                //mental health
+            }
+            else if(r == 1)
+            {
+                //moneyyyyy
+            }
+            else if( r == 2)
+            {
+                //motivation
+            }
+            else if(r == 3){
+              //  return Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
+                //lernstand
+            }
+        }*/
         private void close_opt_txt(object sender, EventArgs e)
         {
             close_opt_end_txt.Visible = false;
@@ -395,6 +416,12 @@ namespace Spiel_Des_Lebens
                 tutorial_panel_6.Visible = false;
                 all_options_enable();
             }
+        }
+
+        private void action_close(object sender, EventArgs e)
+        {
+            action_panel.Visible = false;
+            all_options_enable();
         }
     }
 }

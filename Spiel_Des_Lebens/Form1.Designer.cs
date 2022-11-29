@@ -83,7 +83,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Brown;
-            this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.panel1.Controls.Add(this.fiction_panel);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button5);
@@ -98,7 +97,6 @@
             // 
             // fiction_panel
             // 
-            this.fiction_panel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.fiction_panel.Controls.Add(this.accept_fict_btn);
             this.fiction_panel.Controls.Add(this.fiction_txt_box);
             this.fiction_panel.Location = new System.Drawing.Point(0, 0);
@@ -129,7 +127,6 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.panel2.Controls.Add(this.button_mini_3);
             this.panel2.Controls.Add(this.button_mini_2);
             this.panel2.Controls.Add(this.button_mini_1);
@@ -239,7 +236,6 @@
             // Layout_neues_Spiel
             // 
             this.Layout_neues_Spiel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Layout_neues_Spiel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.Layout_neues_Spiel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Layout_neues_Spiel.Controls.Add(this.pictureBox1);
             this.Layout_neues_Spiel.Controls.Add(this.pictureBox2);
