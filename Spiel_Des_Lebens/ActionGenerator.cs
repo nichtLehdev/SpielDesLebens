@@ -22,7 +22,7 @@ namespace Spiel_Des_Lebens
             }
             else
             {
-                throw new Error("Eventgenerator: File not found");
+                throw new Error("Actiongenerator: File not found");
             }
 
         }
