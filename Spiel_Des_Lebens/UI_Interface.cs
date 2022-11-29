@@ -11,13 +11,14 @@ namespace Spiel_Des_Lebens
         public UI_Interface(bool avatar, int age, string name, Data.Path path, Data.Profession profession)
         {
             player = new Player(avatar, age, name, path, profession);
+            nextAction();
         }
         public void nextEvent()
         {
             currentEvent = player.eventgenerator.nextEvent(player.getPlayerStat());
         }
 
-        public void nextAction()
+        private void nextAction()
         {
             currentActions = player.actiongenerator.getActions();
         }
