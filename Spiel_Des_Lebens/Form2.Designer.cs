@@ -586,6 +586,7 @@
             this.tutorial_panel_2.Name = "tutorial_panel_2";
             this.tutorial_panel_2.Size = new System.Drawing.Size(169, 133);
             this.tutorial_panel_2.TabIndex = 11;
+            this.tutorial_panel_2.Visible = false;
             // 
             // button6
             // 
