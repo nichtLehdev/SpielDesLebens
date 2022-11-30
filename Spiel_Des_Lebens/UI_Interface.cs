@@ -13,6 +13,11 @@ namespace Spiel_Des_Lebens
             player = new Player(avatar, age, name, path, profession);
             nextAction();
         }
+
+        public int getMaxActionPoints()
+        {
+            return player.getEducationPath().getPhase().getMaxActionPoints();
+        }
         public void nextEvent()
         {
             currentEvent = player.eventgenerator.nextEvent(player.getPlayerStat());
@@ -23,8 +28,7 @@ namespace Spiel_Des_Lebens
             currentActions = player.actiongenerator.getActions();
         }
 
-        #region getActionString
-
+        #region getActionString        
         public String getActionTitle(int action)
         {
             if (action >= currentActions.Count)
@@ -69,6 +73,7 @@ namespace Spiel_Des_Lebens
             }
             else
             {
+                subtractActionPoints(1);
                 this.player.changePlayerStat(currentActions[action].getResult().getStats());
                 return currentActions[action].getResult().getText();
             }
@@ -122,6 +127,7 @@ namespace Spiel_Des_Lebens
             }
             else
             {
+                subtractActionPoints(2);
                 changePlayerStats(option);
                 return currentEvent.getOption()[option].getText();
             }
@@ -223,10 +229,14 @@ namespace Spiel_Des_Lebens
             this.player.changePlayerStat(currentOptionStats);
         }
 
-        private  void subtractActionPoints(int cost)
+        private void subtractActionPoints(int cost)
         {
-            player.getEducationPath().getPhase().subtractPoints(cost);  
-
+            player.getEducationPath().getPhase().subtractPoints(cost);
+            if (player.getEducationPath().getPhase().getActionPoints() <= 0)
+            {
+                player.getEducationPath().getPhase().nextPhase();
+                nextAction();
+            }
         }
 
     }
