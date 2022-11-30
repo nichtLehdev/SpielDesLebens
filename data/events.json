@@ -2305,7 +2305,7 @@
          {
             "id": "E-037_3",
             "title": "zuhören & mitschreiben",
-            "text": "Du beteiligst dich aktiv am Unterricht und machst dir Notzen.",
+            "text": "Du beteiligst dich aktiv am Unterricht und machst dir Notizen.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 8,
@@ -2328,9 +2328,9 @@
    },
    {
       "id": "E-038",
-      "title": "online Vorlesung",
+      "title": "Online Vorlesung",
       "text": "Herr Prof. Hofmann möchte mal wieder nicht an die Uni kommen und unterrichtet online Java. Was machst du?",
-      "info": "zuhören sinkt das IQ bei diesem, Professor.",
+      "info": "zuhören bei diesem Professor senkt den IQ.",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -2402,7 +2402,7 @@
    },
    {
       "id": "E-039",
-      "title": "online Vorlesung",
+      "title": "Online Vorlesung",
       "text": "Du hast online Vorlesung in C bei Herr Kruse. Was machst du?",
       "info": "Herr Kruse macht sehr guten Unterricht",
       "priority": 1,
@@ -2454,7 +2454,7 @@
    },
    {
       "id": "E-040",
-      "title": "online Vorlesung",
+      "title": "Online Vorlesung",
       "text": "Du hast online Vorlesung. Was machst du?",
       "info": "Auswirkung auf Erfolg.",
       "priority": 3,
@@ -2619,7 +2619,7 @@
          {
             "id": "E-042_1",
             "title": "vor einen Zug schmeißen",
-            "text": "Falsch, selbst wenn der zug schnell genu ist damit man keine Schmerzen hat ist diese Methode eine sehr große sauerei. Deine Leichenteile müssen aufgesammelt werden, der Zugfahrer ist traumatisiert und die Passagiere haben keinen schönen Tag.",
+            "text": "Falsch, selbst wenn der zug schnell genug ist, damit man keine Schmerzen hat ist diese Methode eine sehr große Sauerei. Deine Leichenteile müssen aufgesammelt werden, der Zugfahrer ist traumatisiert und die Passagiere haben keinen schönen Tag.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -2630,7 +2630,7 @@
          {
             "id": "E-042_2",
             "title": "erschießen",
-            "text": "Falsch, diese Methode ist zu aufwändig. Der Aufwand eine Waffe zu besorgen ist unnötig, die Methode ist nicht schmerzfrei und es gibt eine sauerei. ",
+            "text": "Falsch, diese Methode ist zu aufwändig. Der Aufwand eine Waffe zu besorgen ist unnötig, die Methode ist nicht schmerzfrei und es gibt eine Sauerei. ",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -2641,7 +2641,7 @@
          {
             "id": "E-042_3",
             "title": "in der Badewanne einschlafen",
-            "text": "Korrekt, diese Methode ist schmerzfrei und hinterlässt keine sauerei. Man füllte die Badewanne mit lauwarmem Wasser, nimmt eine Schlaftablette, gönnt sich noch ein Glaß Wein und schläft friedlich ein.",
+            "text": "Korrekt, diese Methode ist schmerzfrei und hinterlässt keine sauerei. Man füllte die Badewanne mit lauwarmem Wasser, nimmt eine Schlaftablette, gönnt sich noch ein Glas Wein und schläft friedlich ein.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -2652,7 +2652,7 @@
          {
             "id": "E-042_4",
             "title": "ertrinken",
-            "text": "Falsch, ertrinken dauert recht lange und man gerät in Panik. Außerdem ist es recht aufwändig die Leiche aus dem Gewässer zu holen. ",
+            "text": "Falsch, ertrinken dauert recht lange und man gerät in Panik. Außerdem ist es recht aufwändig die Leiche aus dem Gewässer zu holen.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -2698,7 +2698,7 @@
          {
             "id": "E-043_1",
             "title": "nach sportlichen Aktivitäten oder einem Horrorfilm.",
-            "text": "Richtig, wenn die Person wieder bei Kräften ist aber das Adrenalin noch Wirkung zeigt steigert dies die Chancen, dass sie Lust auf bettsport hat.",
+            "text": "Richtig, wenn die Person wieder bei Kräften ist aber das Adrenalin noch Wirkung zeigt steigert dies die Chancen, dass sie Lust auf Bettsport hat.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -2779,7 +2779,7 @@
    {
       "id": "E-045",
       "title": "Klausurfragen von Martin",
-      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. bei welchem Professor braucht man psychologische Betreuung?",
+      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Bei welchem Professor braucht man psychologische Betreuung?",
       "info": "hat Auswirkungen auf den Erfolg.",
       "priority": 3,
       "requirements": {
@@ -2836,7 +2836,7 @@
    {
       "id": "E-046",
       "title": "Klausurfragen von Martin",
-      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Welchen Charm haben erfolgreiche Informatiker?",
+      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Welchen Charme haben erfolgreiche Informatiker?",
       "info": "hat Auswirkungen auf den Erfolg.",
       "priority": 3,
       "requirements": {
@@ -2868,8 +2868,8 @@
       "options": [
          {
             "id": "E-046_1",
-            "title": "den selben Charm wie ein Rocker",
-            "text": "Korrekt, erfolgreiche Informatiker haben den Charm eines Rockers (alte, weiße, stinke Männer). Sowohl Informatiker als auch Rocker haben in ihrem Beruf sehr viel Freiheiten und potenziell ein hohes Gehalt.",
+            "title": "den selben Charme wie ein Rocker",
+            "text": "Korrekt, erfolgreiche Informatiker haben den Charme eines Rockers (alte, weiße, stinke Männer). Sowohl Informatiker als auch Rocker haben in ihrem Beruf sehr viel Freiheiten und potenziell ein hohes Gehalt.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 10,
@@ -2879,7 +2879,7 @@
          },
          {
             "id": "E-046_2",
-            "title": "den selben Charm wie ein BWLer",
+            "title": "den selben Charme wie ein BWLer",
             "text": "Falsch, ein Informatiker hat rein gar nicht mit einem Informatiker gemeinsam.",
             "stats": {
                "mentalHealth": 0,
@@ -4183,7 +4183,7 @@
    {
       "id": "E-062",
       "title": "Klausurfragen Medizin",
-      "text": "Du schreibst eine Klausur in Medizin. Welcher Zelltyp gehört NICHT zu dn Blutzellen?",
+      "text": "Du schreibst eine Klausur in Medizin. Welcher Zelltyp gehört NICHT zu den Blutzellen?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
@@ -5744,7 +5744,7 @@
          {
             "id": "E-080_2",
             "title": "kann Hacken",
-            "text": "Falsch, nur wenige Informatiker sind Hacker. Oder vielleicht wollen sie nur, dass du das glaubst? Muhahahahaaa",
+            "text": "Falsch, aber nur wenige Informatiker sind Hacker. Oder vielleicht wollen sie nur, dass du das glaubst? Muhahahahaaa",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -5878,7 +5878,7 @@
       "options": [
          {
             "id": "E-082_1",
-            "title": "Security Engeneering",
+            "title": "Security Engineering",
             "text": "Falsch.",
             "stats": {
                "mentalHealth": 0,
@@ -5911,8 +5911,8 @@
          },
          {
             "id": "E-082_4",
-            "title": "Dark Net",
-            "text": "Richtig. Das dark Net ist einfach nur das Dark Net.",
+            "title": "Darknet",
+            "text": "Richtig. Das Darknet ist einfach nur das Darknet.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -7085,7 +7085,7 @@
          {
             "id": "E-102_1",
             "title": "kostengünstiger Erwerb einer fragwürdigen Windows Lizenz",
-            "text": "Leider nicht optimal, dein Windows ist zwar nun aktiviert und funktioniert aber die Lizenz ist nicht legal.",
+            "text": "Leider nicht optimal, dein Windows ist zwar nun aktiviert und funktioniert, aber die Lizenz ist nicht legal.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -7096,7 +7096,7 @@
          {
             "id": "E-102_2",
             "title": "Erwerb einer originalen Windows Lizenz",
-            "text": "Du hast eine legale Windows Lizenz erworben. Dein Windows ist nun aktiviert und du funktioniert.",
+            "text": "Du hast eine legale Windows Lizenz erworben. Dein Windows ist nun aktiviert und funktioniert.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -7188,7 +7188,7 @@
    {
       "id": "E-104",
       "title": "Microsoft Support",
-      "text": "Ein Mensch mit indischem Akzent ruft dich an und behauptet, er sei von Microsoft und er möchte dich über ein Problem mit deinem Computer informieren. Was tust du?",
+      "text": "Ein Mensch mit indischem Akzent ruft dich an und behauptet, er sei von Microsoft. Er möchte dich über ein Problem mit deinem Computer informieren. Was tust du?",
       "info": "Hilfe bei Problemen mit deinem Computer ist immer gut.",
       "priority": 1,
       "requirements": {
@@ -7227,7 +7227,7 @@
          {
             "id": "E-104_2",
             "title": "per Fernwartungssoftware den PC fernsteuern lassen",
-            "text": "Du hast dich auf den Betrug eingelassen und die Kontrolle über dein PC übernommen. Deine Daten sind nun in fremde Hände geraten, sowie du dir ein völlig nutzlosen Virenschutz verkaufen lassen hast.",
+            "text": "Du hast dich auf den Betrug eingelassen und die Kontrolle über dein PC verloren. Deine Daten sind nun in fremde Hände geraten, sowie du dir ein völlig nutzlosen Virenschutz verkaufen hast lassen.",
             "stats": {
                "mentalHealth": -20,
                "motivation": 0,
@@ -7240,7 +7240,7 @@
    {
       "id": "E-105",
       "title": "Du kennst dich doch mit Computern aus",
-      "text": "Eine Freundin von dir hat ein Problem mit ihrem Computer. Sie fragt dich ob du ihr helfen kannst. Was tust du?",
+      "text": "Eine Freundin hat ein Problem mit ihrem Computer. Sie fragt dich ob du ihr helfen kannst. Was tust du?",
       "info": "manchmal kann man auch dankend ablehnen.",
       "priority": 1,
       "requirements": {
@@ -7268,7 +7268,7 @@
          {
             "id": "E-105_1",
             "title": "Du hilfst ihr",
-            "text": "Leider handelt es sich bei ihrem Problem um ein Druckerproblem. Da Drucker grundsätzlich Probleme machen und im Generellen nicht lösbar sind, verlierst du deine Motivation und musst aufgeben.",
+            "text": "Leider handelt es sich bei ihrem Problem um ein Druckerproblem. Da Drucker grundsätzlich Probleme machen und diese im Generellen nicht lösbar sind, verlierst du deine Motivation und musst aufgeben.",
             "stats": {
                "mentalHealth": -20,
                "motivation": -20,
@@ -7279,7 +7279,7 @@
          {
             "id": "E-105_2",
             "title": "Ablehnen",
-            "text": "Du hast dankend abgelehnt. Deine Freundin ist etwas enttäuscht, aber du hast deine Motivation und Zeit gespart, da Drucker Probleme grundsätzlich nicht lösbar sind.",
+            "text": "Du hast dankend abgelehnt. Deine Freundin ist etwas enttäuscht, aber du hast deine Motivation und Zeit gespart, da Druckerprobleme grundsätzlich nicht lösbar sind.",
             "stats": {
                "mentalHealth": -5,
                "motivation": 0,
