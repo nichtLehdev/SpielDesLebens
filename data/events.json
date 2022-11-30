@@ -8,16 +8,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0",
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "0"
-               ]
+               "path": ["0", "1"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "stats_min": {
@@ -67,16 +60,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0",
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "0"
-               ]
+               "path": ["0", "1"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "stats_min": {
@@ -126,16 +112,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0",
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "0"
-               ]
+               "path": ["0", "1"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "stats_min": {
@@ -207,16 +186,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0",
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "0"
-               ]
+               "path": ["0", "1"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "stats_min": {
@@ -288,16 +260,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0",
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "0"
-               ]
+               "path": ["0", "1"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "stats_min": {
@@ -347,16 +312,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0",
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "0"
-               ]
+               "path": ["0", "1"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "stats_min": {
@@ -406,16 +364,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0",
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "0"
-               ]
+               "path": ["0", "1"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "stats_min": {
@@ -465,15 +416,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "0"
-               ]
+               "path": ["2"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "stats_min": {
@@ -523,15 +468,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "0"
-               ]
+               "path": ["2"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "stats_min": {
@@ -581,26 +520,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "1"
-               ]
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["1"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "2"
-               ]
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["2"]
             }
          ],
          "stats_min": {
@@ -650,26 +577,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "(*%2)"
-               ]
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["(*%2)"]
             }
          ],
          "stats_min": {
@@ -719,26 +634,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -810,26 +713,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -879,32 +770,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["0"],
+               "profession": ["1", "2", "3", "4"],
+               "phase": ["*!(*%2)"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["1"],
+               "profession": ["1", "2", "3", "4"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -954,26 +827,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["*!(*%2)"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "(*%2)!0"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["(*%2)!0"]
             }
          ],
          "stats_min": {
@@ -1045,15 +906,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "(*%2)!2"
-               ]
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["(*%2)!2"]
             }
          ],
          "stats_min": {
@@ -1103,15 +958,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*"
-               ]
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -1161,15 +1010,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*"
-               ]
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -1219,15 +1062,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*"
-               ]
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -1299,15 +1136,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*"
-               ]
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -1368,15 +1199,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!0"
-               ]
+               "path": ["*"],
+               "profession": ["3"],
+               "phase": ["*!0"]
             }
          ],
          "stats_min": {
@@ -1426,27 +1251,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0",
-                  "2"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["0", "2"],
+               "profession": ["*"],
+               "phase": ["*%2"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -1518,27 +1330,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0",
-                  "2"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["0", "2"],
+               "profession": ["*"],
+               "phase": ["*%2"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -1610,16 +1409,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1",
-                  "2"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["1", "2"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -1691,15 +1483,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*"
-               ]
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -1749,15 +1535,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -1829,19 +1609,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!(*%2)",
-                  "*!0",
-                  "*!1",
-                  "*!3",
-                  "*!5"
-               ]
+               "path": ["2"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)", "*!0", "*!1", "*!3", "*!5"]
             }
          ],
          "stats_min": {
@@ -1891,15 +1661,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*"
-               ]
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -1971,15 +1735,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*"
-               ]
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -2051,16 +1809,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "(*%2)!2",
-                  "(*%2)!4"
-               ]
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["(*%2)!2", "(*%2)!4"]
             }
          ],
          "stats_min": {
@@ -2110,15 +1861,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*"
-               ]
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -2168,15 +1913,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*"
-               ]
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -2226,15 +1965,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*"
-               ]
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
             }
          ],
          "stats_min": {
@@ -2306,16 +2039,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1",
-                  "2"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["1", "2"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -2387,16 +2113,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1",
-                  "2"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["1", "2"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -2468,16 +2187,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1",
-                  "2"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!(*%2)"
-               ]
+               "path": ["1", "2"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -2549,16 +2261,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1",
-                  "2"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1", "2"],
+               "profession": ["*"],
+               "phase": ["*!%2"]
             }
          ],
          "stats_min": {
@@ -2630,16 +2335,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1",
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1", "2"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             }
          ],
          "stats_min": {
@@ -2711,16 +2409,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1",
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1", "2"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             }
          ],
          "stats_min": {
@@ -2770,16 +2461,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1",
-                  "2"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1", "2"],
+               "profession": ["*"],
+               "phase": ["*!%2"]
             }
          ],
          "stats_min": {
@@ -2829,32 +2513,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -2926,32 +2592,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3023,32 +2671,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3098,32 +2728,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*!%2"]
             },
             {
-               "path": 
-               ["2"
-            ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3173,32 +2785,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3248,32 +2842,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3323,32 +2899,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3398,32 +2956,14 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0",
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0", "2", "3", "4"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3473,40 +3013,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3578,40 +3097,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3683,40 +3181,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3788,40 +3265,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3893,40 +3349,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -3998,40 +3433,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -4103,40 +3517,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -4208,40 +3601,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": 
-               ["*!%2"
-            ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -4313,40 +3685,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -4418,40 +3769,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-            ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -4523,40 +3853,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -4628,40 +3937,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -4733,40 +4021,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -4838,40 +4105,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -4943,40 +4189,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -5048,40 +4273,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -5153,40 +4357,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -5258,40 +4441,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -5363,40 +4525,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -5468,40 +4609,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -5573,40 +4693,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -5678,40 +4777,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -5783,40 +4861,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -5888,40 +4945,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -5993,40 +5029,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -6098,40 +5113,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -6203,40 +5197,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -6308,40 +5281,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -6413,40 +5365,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -6518,40 +5449,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -6623,40 +5533,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -6728,40 +5617,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["0"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["0"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "0"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["0"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -6833,40 +5701,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -6938,40 +5785,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7021,40 +5847,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["3"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7126,40 +5931,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7231,40 +6015,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7314,40 +6077,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7397,40 +6139,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7480,40 +6201,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7563,40 +6263,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7646,40 +6325,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7729,40 +6387,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7812,40 +6449,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7895,40 +6511,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -7978,40 +6573,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -8061,40 +6635,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -8166,40 +6719,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -8249,40 +6781,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -8332,40 +6843,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -8429,136 +6919,6 @@
       ]
    },
    {
-      "id": "E-998",
-      "title": "Hofmann ist im Urlaub",
-      "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
-      "info": "Wenn du den Hofmman verletzt passiert nichts",
-      "priority": 1,
-      "requirements": {
-         "timings": [
-            {
-               "path": [
-                  "*"
-               ],
-               "profession": [
-                  "*"
-               ],
-               "phase": [
-                  "*"
-               ]
-            }
-         ],
-         "stats_min": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 0
-         },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": -1,
-            "success": 100
-         }
-      },
-      "options": [
-         {
-            "id": "E-998_1",
-            "title": "Ich zücke mein Messer und stelle mich vor den Hofmann",
-            "text": "Der Hofmann ist überrascht und schreit laut auf. Er rennt weg und du hast ihn verletzt.",
-            "stats": {
-               "mentalHealth": -50,
-               "motivation": 30,
-               "money": 0,
-               "success": -15
-            }
-         },
-         {
-            "id": "E-998_2",
-            "title": "Ich renne hinterher",
-            "text": "Du rennst hinterher und verletzt den Hofmann. Er rennt weg und du hast ihn verletzt.",
-            "stats": {
-               "mentalHealth": -50,
-               "motivation": 30,
-               "money": 0,
-               "success": -15
-            }
-         }
-      ]
-   },
-   {
-      "id": "E-999",
-      "title": "Das Sekretariat ist geschlossen",
-      "text": "Das Sekretariat ist geschlossen. Was willst du tun ?",
-      "info": "Wenn du das Sekretariat beleidigst passiert nichts",
-      "priority": 1,
-      "requirements": {
-         "timings": [
-            {
-               "path": [
-                  "1",
-                  "2"
-               ],
-               "profession": [
-                  "2",
-                  "3",
-                  "4"
-               ],
-               "phase": [
-                  "*"
-               ]
-            }
-         ],
-         "stats_min": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 0
-         },
-         "stats_max": {
-            "mentalHealth": 100,
-            "motivation": 100,
-            "money": -1,
-            "success": 100
-         }
-      },
-      "options": [
-         {
-            "id": "E-999_1",
-            "title": "Ich öffne die Tür gewaltsam",
-            "text": "Das Sekretariat ist immer noch geschlossen.",
-            "stats": {
-               "mentalHealth": -50,
-               "motivation": 30,
-               "money": 0,
-               "success": -15
-            }
-         },
-         {
-            "id": "E-999_2",
-            "title": "Ich warte bis die Tür aufgeht",
-            "text": "Das Sekretariat ist immer noch geschlossen.",
-            "stats": {
-               "mentalHealth": -50,
-               "motivation": 30,
-               "money": 0,
-               "success": -15
-            }
-         },
-         {
-            "id": "E-999_3",
-            "title": "Ich gebe auf",
-            "text": "Du gehst nach Hause.",
-            "stats": {
-               "mentalHealth": -50,
-               "motivation": 30,
-               "money": 0,
-               "success": -15
-            }
-         }
-      ]
-   },
-   {
       "id": "E-100",
       "title": "Klausurvorbereitung Formale Sprachen",
       "text": "Professor Val bietet eine zusätzliche Vorlesung in Formale Sprachen an. Nimmst du Teil?",
@@ -8567,16 +6927,9 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "1",
-                  "2"
-               ],
-               "profession": [
-                  "3"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1", "2"],
+               "profession": ["3"],
+               "phase": ["*!%2"]
             }
          ],
          "stats_min": {
@@ -8648,40 +7001,19 @@
       "requirements": {
          "timings": [
             {
-               "path": [
-                  "0"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "6",
-                  "10",
-                  "12",
-                  "18"
-               ]
+               "path": ["0"],
+               "profession": ["1"],
+               "phase": ["6", "10", "12", "18"]
             },
             {
-               "path": [
-                  "1"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*!%2"
-               ]
+               "path": ["1"],
+               "profession": ["1"],
+               "phase": ["*!%2"]
             },
             {
-               "path": [
-                  "2"
-               ],
-               "profession": [
-                  "1"
-               ],
-               "phase": [
-                  "*%2"
-               ]
+               "path": ["2"],
+               "profession": ["1"],
+               "phase": ["*%2"]
             }
          ],
          "stats_min": {
@@ -8718,6 +7050,304 @@
                "motivation": 0,
                "money": 0,
                "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-102",
+      "title": "Windows Lizenz aktivieren",
+      "text": "Deine Windows Installation ist nicht aktiviert. Was tust du?",
+      "info": "Als Informatiker solltest du auch mit anderen Betriebssystemen umgehen können.",
+      "priority": 3,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["3"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 20,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-102_1",
+            "title": "kostengünstiger Erwerb einer fragwürdigen Windows Lizenz",
+            "text": "Leider nicht optimal, dein Windows ist zwar nun aktiviert und funktioniert aber die Lizenz ist nicht legal.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": -15,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-102_2",
+            "title": "Erwerb einer originalen Windows Lizenz",
+            "text": "Du hast eine legale Windows Lizenz erworben. Dein Windows ist nun aktiviert und du funktioniert.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": -100,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-102_3",
+            "title": "Wechsel auf Linux",
+            "text": "Sehr gute Wahl. Linux ist eine gute Alternative zu Windows und ist kostenlos. Als Informatiker ist Erfahrung mit Linux immer ein Pluspunkt.",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": 0,
+               "money": 0,
+               "success": 15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-103",
+      "title": "Linux, aber Welches ?",
+      "text": "Du sollst eine geeinte Linux Distribution für einen neuen Webserver der Firma auswählen.",
+      "info": "Stabilität und Sicherheit sind wichtige Kriterien.",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["3"],
+               "phase": ["%2"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["3"],
+               "phase": ["*!(*%2)"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-103_1",
+            "title": "Arch Derivat",
+            "text": "Leider eine schlechte Entscheidung. Arch ist eine eher weniger stabile Distribution und ist eher ungeeignet für einen Produktivserver, da es viel Wartungsaufwand erzeugt.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": -10,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-103_2",
+            "title": "Rat Hat (RPM) Derivat",
+            "text": "RPM Derivate sind stabile Distributionen und viele davon sind für Produktivserver geeignet.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 10,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-103_3",
+            "title": "Debian Derivat",
+            "text": "Debian Derivate sind stabile Distributionen und vor allem Debian selbst ist für den Webserverbetrieb hervorragend geeignet.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 10,
+               "money": 0,
+               "success": 8
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-104",
+      "title": "Microsoft Support",
+      "text": "Ein Mensch mit indischem Akzent ruft dich an und behauptet, er sei von Microsoft und er möchte dich über ein Problem mit deinem Computer informieren. Was tust du?",
+      "info": "Hilfe bei Problemen mit deinem Computer ist immer gut.",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 60,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-104_1",
+            "title": "Beende das Gespräch.",
+            "text": "Gut gemacht, du hast dich nicht auf den Betrug eingelassen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": -5,
+               "money": 0,
+               "success": 2
+            }
+         },
+         {
+            "id": "E-104_2",
+            "title": "per Fernwartungssoftware den PC fernsteuern lassen",
+            "text": "Du hast dich auf den Betrug eingelassen und die Kontrolle über dein PC übernommen. Deine Daten sind nun in fremde Hände geraten, sowie du dir ein völlig nutzlosen Virenschutz verkaufen lassen hast.",
+            "stats": {
+               "mentalHealth": -20,
+               "motivation": 0,
+               "money": -50,
+               "success": -15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-998",
+      "title": "Hofmann ist im Urlaub",
+      "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
+      "info": "Wenn du den Hofmman verletzt passiert nichts",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-998_1",
+            "title": "Ich zücke mein Messer und stelle mich vor den Hofmann",
+            "text": "Der Hofmann ist überrascht und schreit laut auf. Er rennt weg und du hast ihn verletzt.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-998_2",
+            "title": "Ich renne hinterher",
+            "text": "Du rennst hinterher und verletzt den Hofmann. Er rennt weg und du hast ihn verletzt.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-999",
+      "title": "Das Sekretariat ist geschlossen",
+      "text": "Das Sekretariat ist geschlossen. Was willst du tun ?",
+      "info": "Wenn du das Sekretariat beleidigst passiert nichts",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1", "2"],
+               "profession": ["2", "3", "4"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-999_1",
+            "title": "Ich öffne die Tür gewaltsam",
+            "text": "Das Sekretariat ist immer noch geschlossen.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-999_2",
+            "title": "Ich warte bis die Tür aufgeht",
+            "text": "Das Sekretariat ist immer noch geschlossen.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-999_3",
+            "title": "Ich gebe auf",
+            "text": "Du gehst nach Hause.",
+            "stats": {
+               "mentalHealth": -50,
+               "motivation": 30,
+               "money": 0,
+               "success": -15
             }
          }
       ]
