@@ -7238,6 +7238,58 @@
       ]
    },
    {
+      "id": "E-105",
+      "title": "Du kennst dich doch mit Computern aus",
+      "text": "Eine Freundin von dir hat ein Problem mit ihrem Computer. Sie fragt dich ob du ihr helfen kannst. Was tust du?",
+      "info": "manchmal kann man auch dankend ablehnen.",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["3"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 50,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-105_1",
+            "title": "Du hilfst ihr",
+            "text": "Leider handelt es sich bei ihrem Problem um ein Druckerproblem. Da Drucker grundsätzlich Probleme machen und im Generellen nicht lösbar sind, verlierst du deine Motivation und musst aufgeben.",
+            "stats": {
+               "mentalHealth": -20,
+               "motivation": -20,
+               "money": 0,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-105_2",
+            "title": "Ablehnen",
+            "text": "Du hast dankend abgelehnt. Deine Freundin ist etwas enttäuscht, aber du hast deine Motivation und Zeit gespart, da Drucker Probleme grundsätzlich nicht lösbar sind.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": 0,
+               "money": 0,
+               "success": 3
+            }
+         }
+      ]
+   },
+   {
       "id": "E-998",
       "title": "Hofmann ist im Urlaub",
       "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
