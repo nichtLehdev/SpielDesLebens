@@ -217,10 +217,16 @@ namespace Spiel_Des_Lebens
             return 0;
         }
         #endregion
-        public void changePlayerStats(int option)
+        private void changePlayerStats(int option)
         {
             Stat currentOptionStats = currentEvent.options[option].getStats();
             this.player.changePlayerStat(currentOptionStats);
+        }
+
+        private  void subtractActionPoints(int cost)
+        {
+            player.getEducationPath().getPhase().subtractPoints(cost);  
+
         }
 
     }
