@@ -7290,6 +7290,930 @@
       ]
    },
    {
+      "id": "E-106",
+      "title": "Klausurfragen Physik",
+      "text": "Du schreibst eine Physik Klausur. Eine brennende Kerze steht im Wasser. Über die Kerze wird ein Glas gestülpt. Was passiert im Glas?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["2"],
+               "phase": ["6", "10", "12", "18"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["2"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["2"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-106_1",
+            "title": "Die Kerze brennt weiter.",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-106_2",
+            "title": "der Wasserspielgel sinkt",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-106_3",
+            "title": "der Wasserspielgel steigt",
+            "text": "Richtig!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-106_4",
+            "title": "das Glas zieht sich zusammen.",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-107",
+      "title": "Du schreibst eine Physik Klausur.",
+      "text": "Du ziehst einen Luftballon über den Hals einer Glasflasche und stellst das Konstrukt eine Stunde in die Tiefkühltruhe. Was passiert?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["2"],
+               "phase": ["6", "10", "12", "18"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["2"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["2"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-107_1",
+            "title": "Nichts",
+            "text": "Falsch! Beim Abkühlen wird die Luft in der Flasche durch den äußeren Luftdruck zusammengepresst. Der Ballon wird in die Flasche hineingedrückt und bläht sich auf.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-107_2",
+            "title": "der Luftballon bläht auf, bis er von der Flasche fliegt.",
+            "text": "Falsch! Beim Abkühlen wird die Luft in der Flasche durch den äußeren Luftdruck zusammengepresst. Der Ballon wird in die Flasche hineingedrückt und bläht sich auf.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-107_3",
+            "title": "der Luftballon wird in die Flasche gedrückt.",
+            "text": "Richtig! Beim Abkühlen wird die Luft in der Flasche durch den äußeren Luftdruck zusammengepresst. Der Ballon wird in die Flasche hineingedrückt und bläht sich auf.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-107_4",
+            "title": "der Luftballon reißt ab.",
+            "text": "Falsch! Beim Abkühlen wird die Luft in der Flasche durch den äußeren Luftdruck zusammengepresst. Der Ballon wird in die Flasche hineingedrückt und bläht sich auf.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-108",
+      "title": "Du schreibst eine Physik Klausur.",
+      "text": "Du bist in einer mit Wasser gefüllten Badewanne. Wie kannst du möglichst schnell Wasser das Wasser ablassen, nachdem du den Stöpsel gezogen hast?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["2"],
+               "phase": ["6", "10", "12", "18"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["2"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["2"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-108_1",
+            "title": "In der Wanne bleiben.",
+            "text": "Richtig. Durch den höheren Wasserspiegel erhöht sich der Druck auf den Abfluss und das Wasser fließt schneller ab.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-108_2",
+            "title": "schnell aus der Wanne steigen.",
+            "text": "Falsch. Du musst in der Wanne bleiben um einen möglichst hohen Wasserspiegel zu erreichen. Durch den höheren Wasserspiegel erhöht sich der Druck auf den Abfluss und das Wasser fließt schneller ab.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-108_3",
+            "title": "Langsam aus der Wanne steigen.",
+            "text": "Falsch. Du musst in der Wanne bleiben um einen möglichst hohen Wasserspiegel zu erreichen. Durch den höheren Wasserspiegel erhöht sich der Druck auf den Abfluss und das Wasser fließt schneller ab.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-108_4",
+            "title": "Man kann es nicht mehr beeinflussen.",
+            "text": "Falsch. Du musst in der Wanne bleiben um einen möglichst hohen Wasserspiegel zu erreichen. Durch den höheren Wasserspiegel erhöht sich der Druck auf den Abfluss und das Wasser fließt schneller ab.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-109",
+      "title": "Du schreibst eine Physik Klausur.",
+      "text": "Wie kann sich eine Ballerina während einer Pirouette schneller drehen?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["2"],
+               "phase": ["6", "10", "12", "18"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["2"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["2"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-109_1",
+            "title": "Arme zur Drehachse ziehen",
+            "text": "Richtig. Wird Masse näher zur Rotationsachse gezogen oder von dieser weiter entfernt, ist das Objekt schneller oder langsamer.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-109_2",
+            "title": "Arme von der Drehachse wegstrecken.",
+            "text": "Falsch. Wird Masse näher zur Rotationsachse gezogen oder von dieser weiter entfernt, ist das Objekt schneller oder langsamer.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-109_3",
+            "title": "Arme abwechselnd ranziehen und wegstrecken.",
+            "text": "Falsch. Wird Masse näher zur Rotationsachse gezogen oder von dieser weiter entfernt, ist das Objekt schneller oder langsamer.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-109_4",
+            "title": "Gar nicht beeinflussbar.",
+            "text": "Falsch. Wird Masse näher zur Rotationsachse gezogen oder von dieser weiter entfernt, ist das Objekt schneller oder langsamer.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-110",
+      "title": "Du schreibst eine Physik Klausur.",
+      "text": "Achtung Tornado! Welche Kraft wirkt NICHT vorrangig in solch rotierenden Bezugssystemen?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["2"],
+               "phase": ["6", "10", "12", "18"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["2"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["2"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-110_1",
+            "title": "Zentrifugalkraft",
+            "text": "Falsch. Die Zentrifugalkraft ist stets nach außen gerichtet. Variiert die Winkelgeschwindigkeit, wie z.B. beim anfahrenden Karussell, tritt die Eulerkraft auf. Die Corioliskraft lenkt z.B. bewegte Luftmassen von ihrer geraden Bahn ab.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-110_2",
+            "title": "Eulerkraft",
+            "text": "Falsch. Die Zentrifugalkraft ist stets nach außen gerichtet. Variiert die Winkelgeschwindigkeit, wie z.B. beim anfahrenden Karussell, tritt die Eulerkraft auf. Die Corioliskraft lenkt z.B. bewegte Luftmassen von ihrer geraden Bahn ab.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-110_3",
+            "title": "Corioliskraft",
+            "text": "Falsch. Die Zentrifugalkraft ist stets nach außen gerichtet. Variiert die Winkelgeschwindigkeit, wie z.B. beim anfahrenden Karussell, tritt die Eulerkraft auf. Die Corioliskraft lenkt z.B. bewegte Luftmassen von ihrer geraden Bahn ab.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-110_4",
+            "title": "Adhäsionskraft",
+            "text": "Richtig. Die Zentrifugalkraft ist stets nach außen gerichtet. Variiert die Winkelgeschwindigkeit, wie z.B. beim anfahrenden Karussell, tritt die Eulerkraft auf. Die Corioliskraft lenkt z.B. bewegte Luftmassen von ihrer geraden Bahn ab.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-111",
+      "title": "Du schreibst eine Physik Klausur.",
+      "text": "Zentrifugalkraft, Eulerkraft und Corioliskraft sind Scheinkräfte. Ihre Definition beinhaltet, sie genügen nicht dem Prinzip von ...",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["2"],
+               "phase": ["6", "10", "12", "18"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["2"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["2"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-111_1",
+            "title": "d'Alembert.",
+            "text": "Falsch. Formuliert im dritten Newtonschen Axiom: Bei der Wechselwirkung zwischen zwei Körpern erzeugt jede Aktion eine gleich große Reaktion auf den Verursacher. Bei Scheinkräften wie der Zentrifugalkraft existieren keine Kräfte erzeugenden Körper.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-111_2",
+            "title": "Huygens.",
+            "text": "Falsch. Formuliert im dritten Newtonschen Axiom: Bei der Wechselwirkung zwischen zwei Körpern erzeugt jede Aktion eine gleich große Reaktion auf den Verursacher. Bei Scheinkräften wie der Zentrifugalkraft existieren keine Kräfte erzeugenden Körper.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-111_3",
+            "title": "Äquivalenz von Masse und Energie.",
+            "text": "Falsch. Formuliert im dritten Newtonschen Axiom: Bei der Wechselwirkung zwischen zwei Körpern erzeugt jede Aktion eine gleich große Reaktion auf den Verursacher. Bei Scheinkräften wie der Zentrifugalkraft existieren keine Kräfte erzeugenden Körper.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-111_4",
+            "title": "actio und reactio.",
+            "text": "Richtig. Formuliert im dritten Newtonschen Axiom: Bei der Wechselwirkung zwischen zwei Körpern erzeugt jede Aktion eine gleich große Reaktion auf den Verursacher. Bei Scheinkräften wie der Zentrifugalkraft existieren keine Kräfte erzeugenden Körper.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-112",
+      "title": "Du schreibst eine Physik Klausur.",
+      "text": "Wo dauert es länger, ein Ei hart zu kochen: Auf dem Berg oder im Tal (null Meter über dem Meeresspiegel)?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["2"],
+               "phase": ["6", "10", "12", "18"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["2"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["2"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-112_1",
+            "title": "Berg",
+            "text": "Richtig. Im Tal siedet das Wasser bei 100 Grad Celsius. Auf dem Berg ist der Luftdruck geringer als im Tal, daher siedet das Wasser bei niedrigeren Temperaturen. Das Wasser wird da oben also nicht so heiß wie im Tal: Das Ei braucht länger!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-112_2",
+            "title": "Tal.",
+            "text": "Falsch. Im Tal siedet das Wasser bei 100 Grad Celsius. Auf dem Berg ist der Luftdruck geringer als im Tal, daher siedet das Wasser bei niedrigeren Temperaturen. Das Wasser wird da oben also nicht so heiß wie im Tal: Das Ei braucht länger!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-112_3",
+            "title": "Beides gleich lang",
+            "text": "Falsch. Im Tal siedet das Wasser bei 100 Grad Celsius. Auf dem Berg ist der Luftdruck geringer als im Tal, daher siedet das Wasser bei niedrigeren Temperaturen. Das Wasser wird da oben also nicht so heiß wie im Tal: Das Ei braucht länger!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-112_4",
+            "title": "Kann man so nicht sagen.",
+            "text": "Falsch. Im Tal siedet das Wasser bei 100 Grad Celsius. Auf dem Berg ist der Luftdruck geringer als im Tal, daher siedet das Wasser bei niedrigeren Temperaturen. Das Wasser wird da oben also nicht so heiß wie im Tal: Das Ei braucht länger!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-113",
+      "title": "Du schreibst eine Physik Klausur.",
+      "text": "Wie lautet die Formel um die elektrische Leistung P?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["2"],
+               "phase": ["6", "10", "12", "18"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["2"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["2"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-113_1",
+            "title": "P = U : I",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-113_2",
+            "title": "P = U * I",
+            "text": "Richtig!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-113_3",
+            "title": "P = U + I",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-113_4",
+            "title": "P = U - I",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-114",
+      "title": "Du schreibst eine Physik Klausur.",
+      "text": "Wie lautet die Formel um den elektrischen Widerstand R ?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["2"],
+               "phase": ["6", "10", "12", "18"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["2"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["2"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-114_1",
+            "title": "R = U : I",
+            "text": "Richtig!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-114_2",
+            "title": "R = U * I",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-114_3",
+            "title": "R = U + I",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-114_4",
+            "title": "R = U - I",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-115",
+      "title": "Du schreibst eine Physik Klausur.",
+      "text": "Wie lautet die Formel um die elektrische Spannung U ?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["2"],
+               "phase": ["6", "10", "12", "18"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["2"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["2"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-115_1",
+            "title": "U = R : I",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-115_2",
+            "title": "U = R + I",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-115_3",
+            "title": "U = R * I",
+            "text": "Richtig!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-115_4",
+            "title": "U = R - I",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-116",
+      "title": "Du schreibst eine Physik Klausur.",
+      "text": "Wie lautet die Formel um die Stromstärke I ?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["2"],
+               "phase": ["6", "10", "12", "18"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["2"],
+               "phase": ["*!%2"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["2"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-116_1",
+            "title": "I = U : R",
+            "text": "Richtig!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-116_2",
+            "title": "I = U + R",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-116_3",
+            "title": "I = U * R",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-116_4",
+            "title": "I = U - R",
+            "text": "Falsch!",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
       "id": "E-998",
       "title": "Hofmann ist im Urlaub",
       "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
