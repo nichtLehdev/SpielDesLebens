@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.progress_prog_bar = new System.Windows.Forms.ProgressBar();
             this.panel2 = new System.Windows.Forms.Panel();
             this.action_3_btn = new System.Windows.Forms.Button();
+            this.action_2_btn = new System.Windows.Forms.Button();
             this.userInfo = new System.Windows.Forms.Panel();
             this.lblPlayerName = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
@@ -103,7 +105,6 @@
             this.show_info_btn = new System.Windows.Forms.Button();
             this.event_txt_box = new System.Windows.Forms.TextBox();
             this.option_1_btn = new System.Windows.Forms.Button();
-            this.action_2_btn = new System.Windows.Forms.Button();
             this.action_1_btn = new System.Windows.Forms.Button();
             this.action_0_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -172,6 +173,26 @@
             this.action_3_btn.Click += new System.EventHandler(this.action_3_click);
             this.action_3_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
             this.action_3_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_3);
+            // 
+            // action_2_btn
+            // 
+            this.action_2_btn.BackColor = System.Drawing.Color.Transparent;
+            this.action_2_btn.FlatAppearance.BorderSize = 0;
+            this.action_2_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.action_2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.action_2_btn.ForeColor = System.Drawing.Color.Black;
+            this.action_2_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.mentalhealth_48px;
+            this.action_2_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.action_2_btn.Location = new System.Drawing.Point(-1, 444);
+            this.action_2_btn.Name = "action_2_btn";
+            this.action_2_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.action_2_btn.Size = new System.Drawing.Size(240, 60);
+            this.action_2_btn.TabIndex = 14;
+            this.action_2_btn.Text = "Musik";
+            this.action_2_btn.UseVisualStyleBackColor = false;
+            this.action_2_btn.Click += new System.EventHandler(this.action_2_click);
+            this.action_2_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_2_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_2);
             // 
             // userInfo
             // 
@@ -260,7 +281,7 @@
             this.panel3.Controls.Add(this.motivation_prog_bar);
             this.panel3.Controls.Add(this.learn_prog_bar);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1147, 0);
+            this.panel3.Location = new System.Drawing.Point(1193, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(253, 642);
             this.panel3.TabIndex = 7;
@@ -429,7 +450,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(240, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(907, 119);
+            this.panel4.Size = new System.Drawing.Size(953, 119);
             this.panel4.TabIndex = 0;
             // 
             // tutorial_panel_6
@@ -437,7 +458,7 @@
             this.tutorial_panel_6.BackColor = System.Drawing.Color.LightGray;
             this.tutorial_panel_6.Controls.Add(this.button5);
             this.tutorial_panel_6.Controls.Add(this.tutorial_txt_6);
-            this.tutorial_panel_6.Location = new System.Drawing.Point(717, 0);
+            this.tutorial_panel_6.Location = new System.Drawing.Point(763, 0);
             this.tutorial_panel_6.Name = "tutorial_panel_6";
             this.tutorial_panel_6.Size = new System.Drawing.Size(190, 119);
             this.tutorial_panel_6.TabIndex = 11;
@@ -514,7 +535,7 @@
             this.panelActiveChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelActiveChild.Location = new System.Drawing.Point(240, 119);
             this.panelActiveChild.Name = "panelActiveChild";
-            this.panelActiveChild.Size = new System.Drawing.Size(907, 523);
+            this.panelActiveChild.Size = new System.Drawing.Size(953, 523);
             this.panelActiveChild.TabIndex = 1;
             // 
             // info_action_panel_0
@@ -1015,26 +1036,6 @@
             this.option_1_btn.UseVisualStyleBackColor = false;
             this.option_1_btn.Click += new System.EventHandler(this.option_1_click);
             // 
-            // action_2_btn
-            // 
-            this.action_2_btn.BackColor = System.Drawing.Color.Transparent;
-            this.action_2_btn.FlatAppearance.BorderSize = 0;
-            this.action_2_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.action_2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.action_2_btn.ForeColor = System.Drawing.Color.Black;
-            this.action_2_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.motivation_np_48px;
-            this.action_2_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.action_2_btn.Location = new System.Drawing.Point(-1, 444);
-            this.action_2_btn.Name = "action_2_btn";
-            this.action_2_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.action_2_btn.Size = new System.Drawing.Size(240, 60);
-            this.action_2_btn.TabIndex = 14;
-            this.action_2_btn.Text = "Musik";
-            this.action_2_btn.UseVisualStyleBackColor = false;
-            this.action_2_btn.Click += new System.EventHandler(this.action_2_click);
-            this.action_2_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
-            this.action_2_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_2);
-            // 
             // action_1_btn
             // 
             this.action_1_btn.BackColor = System.Drawing.Color.Transparent;
@@ -1042,7 +1043,7 @@
             this.action_1_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.action_1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.action_1_btn.ForeColor = System.Drawing.Color.Black;
-            this.action_1_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.mentalhealth_np_48px;
+            this.action_1_btn.Image = ((System.Drawing.Image)(resources.GetObject("action_1_btn.Image")));
             this.action_1_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.action_1_btn.Location = new System.Drawing.Point(-1, 382);
             this.action_1_btn.Name = "action_1_btn";
@@ -1062,7 +1063,7 @@
             this.action_0_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.action_0_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.action_0_btn.ForeColor = System.Drawing.Color.Black;
-            this.action_0_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.money_48px;
+            this.action_0_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.motivation_48px;
             this.action_0_btn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.action_0_btn.Location = new System.Drawing.Point(0, 311);
             this.action_0_btn.Name = "action_0_btn";
@@ -1090,7 +1091,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1400, 642);
+            this.ClientSize = new System.Drawing.Size(1446, 642);
             this.Controls.Add(this.panelActiveChild);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);

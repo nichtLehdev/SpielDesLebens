@@ -249,11 +249,11 @@ namespace Spiel_Des_Lebens
             if(r == 0)
             {
                 //mental health
-                return Spiel_Des_Lebens.Properties.Resources.mentalhealth_np_48px;
+                return Spiel_Des_Lebens.Properties.Resources.mentalhealth_48px;
             }
             else if(r == 1)
             {
-                return Spiel_Des_Lebens.Properties.Resources.money_48px;
+                return Spiel_Des_Lebens.Properties.Resources.motivation_48px;
                 //moneyyyyy
             }
             else if( r == 2)

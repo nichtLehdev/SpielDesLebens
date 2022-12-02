@@ -83,9 +83,9 @@ namespace Spiel_Des_Lebens.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mentalhealth_np_48px {
+        internal static System.Drawing.Bitmap mentalhealth_48px {
             get {
-                object obj = ResourceManager.GetObject("mentalhealth_np_48px", resourceCulture);
+                object obj = ResourceManager.GetObject("mentalhealth_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace Spiel_Des_Lebens.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap motivation_np_48px {
+        internal static System.Drawing.Bitmap motivation_48px {
             get {
-                object obj = ResourceManager.GetObject("motivation_np_48px", resourceCulture);
+                object obj = ResourceManager.GetObject("motivation_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
