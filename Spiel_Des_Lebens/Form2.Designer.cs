@@ -348,6 +348,7 @@
             this.money_prog_bar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.money_prog_bar.Location = new System.Drawing.Point(31, 221);
             this.money_prog_bar.Name = "money_prog_bar";
+            this.money_prog_bar.ReadOnly = true;
             this.money_prog_bar.Size = new System.Drawing.Size(162, 20);
             this.money_prog_bar.TabIndex = 15;
             // 
@@ -382,6 +383,7 @@
             this.textBox4.Location = new System.Drawing.Point(15, 14);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(139, 83);
             this.textBox4.TabIndex = 11;
             this.textBox4.Text = "Oben werden die Stats deines Charakters angezeigt. Wenn mindestens eine der Attri" +
@@ -404,7 +406,7 @@
             this.left_phase_txt.AutoSize = true;
             this.left_phase_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.left_phase_txt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.left_phase_txt.Location = new System.Drawing.Point(7, 101);
+            this.left_phase_txt.Location = new System.Drawing.Point(18, 112);
             this.left_phase_txt.Name = "left_phase_txt";
             this.left_phase_txt.Size = new System.Drawing.Size(233, 17);
             this.left_phase_txt.TabIndex = 11;
@@ -552,6 +554,7 @@
             this.tutorial_txt_6.Location = new System.Drawing.Point(15, 14);
             this.tutorial_txt_6.Multiline = true;
             this.tutorial_txt_6.Name = "tutorial_txt_6";
+            this.tutorial_txt_6.ReadOnly = true;
             this.tutorial_txt_6.Size = new System.Drawing.Size(163, 68);
             this.tutorial_txt_6.TabIndex = 11;
             this.tutorial_txt_6.Text = "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase gibt ein" +
@@ -588,6 +591,7 @@
             this.tutorial_txt_1.Location = new System.Drawing.Point(15, 14);
             this.tutorial_txt_1.Multiline = true;
             this.tutorial_txt_1.Name = "tutorial_txt_1";
+            this.tutorial_txt_1.ReadOnly = true;
             this.tutorial_txt_1.Size = new System.Drawing.Size(163, 48);
             this.tutorial_txt_1.TabIndex = 11;
             this.tutorial_txt_1.Text = "Links wird dein Charakter angezeigt";
@@ -629,6 +633,7 @@
             this.info_action_txt_0.Location = new System.Drawing.Point(8, 6);
             this.info_action_txt_0.Multiline = true;
             this.info_action_txt_0.Name = "info_action_txt_0";
+            this.info_action_txt_0.ReadOnly = true;
             this.info_action_txt_0.Size = new System.Drawing.Size(131, 48);
             this.info_action_txt_0.TabIndex = 11;
             this.info_action_txt_0.Text = "Links wird dein Charakter angezeigt";
@@ -653,6 +658,7 @@
             this.info_action_txt_2.Location = new System.Drawing.Point(8, 6);
             this.info_action_txt_2.Multiline = true;
             this.info_action_txt_2.Name = "info_action_txt_2";
+            this.info_action_txt_2.ReadOnly = true;
             this.info_action_txt_2.Size = new System.Drawing.Size(131, 48);
             this.info_action_txt_2.TabIndex = 11;
             this.info_action_txt_2.Text = "Links wird dein Charakter angezeigt";
@@ -677,6 +683,7 @@
             this.info_action_txt_3.Location = new System.Drawing.Point(8, 6);
             this.info_action_txt_3.Multiline = true;
             this.info_action_txt_3.Name = "info_action_txt_3";
+            this.info_action_txt_3.ReadOnly = true;
             this.info_action_txt_3.Size = new System.Drawing.Size(131, 48);
             this.info_action_txt_3.TabIndex = 11;
             this.info_action_txt_3.Text = "Links wird dein Charakter angezeigt";
@@ -701,6 +708,7 @@
             this.info_action_txt_1.Location = new System.Drawing.Point(8, 6);
             this.info_action_txt_1.Multiline = true;
             this.info_action_txt_1.Name = "info_action_txt_1";
+            this.info_action_txt_1.ReadOnly = true;
             this.info_action_txt_1.Size = new System.Drawing.Size(131, 48);
             this.info_action_txt_1.TabIndex = 11;
             this.info_action_txt_1.Text = "Links wird dein Charakter angezeigt";
@@ -736,6 +744,7 @@
             this.textBox6.Location = new System.Drawing.Point(15, 14);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(163, 48);
             this.textBox6.TabIndex = 11;
             this.textBox6.Text = "Manche Events haben eine Info Option, um mehr wissen zu dem Event zu bekommen.";
@@ -772,6 +781,7 @@
             this.textBox2.Location = new System.Drawing.Point(15, 14);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(163, 102);
             this.textBox2.TabIndex = 11;
             this.textBox2.Text = "Auf der linken Seite wird das Aktionsfenster angezeigt.  Wenn du auf eine Aktion " +
@@ -810,6 +820,7 @@
             this.textBox5.Location = new System.Drawing.Point(15, 14);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(165, 83);
             this.textBox5.TabIndex = 11;
             this.textBox5.Text = "Dies sind Events, du hast die Möglichkeit bei einem Event eine Option zu wählen. " +
@@ -822,7 +833,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.farbverlauf;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.tutorial_ask_panel);
+            this.panel1.Controls.Add(this.action_panel);
             this.panel1.Controls.Add(this.game_over_panel);
             this.panel1.Controls.Add(this.close_opt_end_txt);
             this.panel1.Controls.Add(this.info_panel);
@@ -845,7 +856,7 @@
             this.action_panel.Controls.Add(this.button9);
             this.action_panel.Controls.Add(this.action_title);
             this.action_panel.Controls.Add(this.action_text);
-            this.action_panel.Location = new System.Drawing.Point(0, 0);
+            this.action_panel.Location = new System.Drawing.Point(135, 115);
             this.action_panel.Name = "action_panel";
             this.action_panel.Size = new System.Drawing.Size(365, 219);
             this.action_panel.TabIndex = 0;
@@ -869,6 +880,7 @@
             this.action_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.action_title.Location = new System.Drawing.Point(33, 17);
             this.action_title.Name = "action_title";
+            this.action_title.ReadOnly = true;
             this.action_title.Size = new System.Drawing.Size(185, 20);
             this.action_title.TabIndex = 10;
             this.action_title.Text = "Tutorial";
@@ -881,6 +893,7 @@
             this.action_text.Location = new System.Drawing.Point(33, 52);
             this.action_text.Multiline = true;
             this.action_text.Name = "action_text";
+            this.action_text.ReadOnly = true;
             this.action_text.Size = new System.Drawing.Size(300, 103);
             this.action_text.TabIndex = 10;
             this.action_text.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
@@ -889,12 +902,11 @@
             // tutorial_ask_panel
             // 
             this.tutorial_ask_panel.BackColor = System.Drawing.Color.FloralWhite;
-            this.tutorial_ask_panel.Controls.Add(this.action_panel);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_btn);
             this.tutorial_ask_panel.Controls.Add(this.button2);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_title);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_txt);
-            this.tutorial_ask_panel.Location = new System.Drawing.Point(135, 110);
+            this.tutorial_ask_panel.Location = new System.Drawing.Point(0, 0);
             this.tutorial_ask_panel.Name = "tutorial_ask_panel";
             this.tutorial_ask_panel.Size = new System.Drawing.Size(365, 219);
             this.tutorial_ask_panel.TabIndex = 9;
@@ -928,6 +940,7 @@
             this.tutorial_ask_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tutorial_ask_title.Location = new System.Drawing.Point(33, 17);
             this.tutorial_ask_title.Name = "tutorial_ask_title";
+            this.tutorial_ask_title.ReadOnly = true;
             this.tutorial_ask_title.Size = new System.Drawing.Size(185, 20);
             this.tutorial_ask_title.TabIndex = 10;
             this.tutorial_ask_title.Text = "Tutorial";
@@ -940,6 +953,7 @@
             this.tutorial_ask_txt.Location = new System.Drawing.Point(33, 52);
             this.tutorial_ask_txt.Multiline = true;
             this.tutorial_ask_txt.Name = "tutorial_ask_txt";
+            this.tutorial_ask_txt.ReadOnly = true;
             this.tutorial_ask_txt.Size = new System.Drawing.Size(300, 103);
             this.tutorial_ask_txt.TabIndex = 10;
             this.tutorial_ask_txt.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
@@ -947,6 +961,8 @@
             // 
             // game_over_panel
             // 
+            this.game_over_panel.BackColor = System.Drawing.Color.FloralWhite;
+            this.game_over_panel.Controls.Add(this.tutorial_ask_panel);
             this.game_over_panel.Controls.Add(this.game_over_btn);
             this.game_over_panel.Controls.Add(this.game_over_title);
             this.game_over_panel.Controls.Add(this.game_over_txt);
@@ -968,11 +984,12 @@
             // 
             // game_over_title
             // 
-            this.game_over_title.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.game_over_title.BackColor = System.Drawing.Color.White;
             this.game_over_title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.game_over_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.game_over_title.Location = new System.Drawing.Point(33, 17);
             this.game_over_title.Name = "game_over_title";
+            this.game_over_title.ReadOnly = true;
             this.game_over_title.Size = new System.Drawing.Size(185, 20);
             this.game_over_title.TabIndex = 5;
             // 
@@ -980,6 +997,7 @@
             // 
             this.game_over_txt.Location = new System.Drawing.Point(33, 52);
             this.game_over_txt.Name = "game_over_txt";
+            this.game_over_txt.ReadOnly = true;
             this.game_over_txt.Size = new System.Drawing.Size(300, 102);
             this.game_over_txt.TabIndex = 0;
             this.game_over_txt.Text = "";
@@ -997,6 +1015,7 @@
             // 
             // info_panel
             // 
+            this.info_panel.BackColor = System.Drawing.Color.FloralWhite;
             this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.info_panel.Controls.Add(this.info_close_button);
             this.info_panel.Controls.Add(this.info_text);
@@ -1021,6 +1040,7 @@
             // 
             this.info_text.Location = new System.Drawing.Point(32, 61);
             this.info_text.Name = "info_text";
+            this.info_text.ReadOnly = true;
             this.info_text.Size = new System.Drawing.Size(300, 118);
             this.info_text.TabIndex = 0;
             this.info_text.Text = "";

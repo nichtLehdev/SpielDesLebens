@@ -85,6 +85,7 @@
             this.errorProvider1.SetIconAlignment(this.fiction_txt_box, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
             this.fiction_txt_box.Location = new System.Drawing.Point(65, 86);
             this.fiction_txt_box.Name = "fiction_txt_box";
+            this.fiction_txt_box.ReadOnly = true;
             this.fiction_txt_box.Size = new System.Drawing.Size(209, 159);
             this.fiction_txt_box.TabIndex = 0;
             this.fiction_txt_box.Text = "\nDies ist ein rein fiktives Spiel. Alle Namen, Charakter, Geschichten und Events " +
@@ -379,6 +380,7 @@
             this.textBox_mini_field.Location = new System.Drawing.Point(84, 15);
             this.textBox_mini_field.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_mini_field.Name = "textBox_mini_field";
+            this.textBox_mini_field.ReadOnly = true;
             this.textBox_mini_field.Size = new System.Drawing.Size(127, 20);
             this.textBox_mini_field.TabIndex = 0;
             this.textBox_mini_field.Visible = false;
@@ -401,6 +403,7 @@
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(122, 42);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(101, 20);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "Spiel des Lebens";
