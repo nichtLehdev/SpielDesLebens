@@ -459,5 +459,5 @@ namespace Spiel_Des_Lebens
          info_action_panel_2.Visible = false;
          info_action_panel_3.Visible = false;
       }
-   }
+    }
 }

@@ -32,8 +32,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.fiction_txt_box = new System.Windows.Forms.RichTextBox();
             this.Layout_neues_Spiel = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -46,7 +52,6 @@
             this.weiter_button = new System.Windows.Forms.Button();
             this.fiction_panel = new System.Windows.Forms.Panel();
             this.accept_fict_btn = new System.Windows.Forms.Button();
-            this.fiction_txt_box = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button_mini_3 = new System.Windows.Forms.Button();
@@ -58,31 +63,36 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.Layout_neues_Spiel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.fiction_panel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.fiction_panel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // fiction_txt_box
+            // 
+            this.errorProvider1.SetIconAlignment(this.fiction_txt_box, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
+            this.fiction_txt_box.Location = new System.Drawing.Point(65, 86);
+            this.fiction_txt_box.Name = "fiction_txt_box";
+            this.fiction_txt_box.Size = new System.Drawing.Size(209, 159);
+            this.fiction_txt_box.TabIndex = 0;
+            this.fiction_txt_box.Text = "\nDies ist ein rein fiktives Spiel. Alle Namen, Charakter, Geschichten und Events " +
+    "sind fiktiv.";
+            // 
             // Layout_neues_Spiel
             // 
-            this.Layout_neues_Spiel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Layout_neues_Spiel.BackColor = System.Drawing.Color.Transparent;
             this.Layout_neues_Spiel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.Layout_neues_Spiel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Layout_neues_Spiel.Controls.Add(this.pictureBox1);
@@ -109,6 +119,26 @@
             this.Layout_neues_Spiel.TabIndex = 0;
             this.Layout_neues_Spiel.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 124);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.changeAvatar);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(119, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 124);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.changeAvatar);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.ErrorImage = null;
@@ -119,6 +149,33 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.changeAvatar);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(13, 143);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 124);
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.changeAvatar);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(119, 143);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 124);
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.changeAvatar);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(225, 143);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 124);
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.changeAvatar);
             // 
             // button1
             // 
@@ -164,42 +221,46 @@
             // lable_1
             // 
             this.lable_1.AutoSize = true;
+            this.lable_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lable_1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lable_1.Location = new System.Drawing.Point(13, 333);
             this.lable_1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.lable_1.Name = "lable_1";
-            this.lable_1.Size = new System.Drawing.Size(35, 13);
+            this.lable_1.Size = new System.Drawing.Size(39, 13);
             this.lable_1.TabIndex = 10;
             this.lable_1.Text = "Name";
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(54, 331);
+            this.txt_name.Location = new System.Drawing.Point(58, 331);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(271, 20);
+            this.txt_name.Size = new System.Drawing.Size(267, 20);
             this.txt_name.TabIndex = 11;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(13, 359);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 5, 10, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 13;
             this.label1.Text = "Alter";
             // 
             // txt_alter
             // 
-            this.txt_alter.Location = new System.Drawing.Point(54, 357);
+            this.txt_alter.Location = new System.Drawing.Point(59, 357);
             this.txt_alter.Name = "txt_alter";
-            this.txt_alter.Size = new System.Drawing.Size(271, 20);
+            this.txt_alter.Size = new System.Drawing.Size(266, 20);
             this.txt_alter.TabIndex = 14;
             this.txt_alter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_alter_KeyPress);
             // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.RosyBrown;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button9.Location = new System.Drawing.Point(55, 383);
             this.button9.Margin = new System.Windows.Forms.Padding(45, 3, 3, 3);
@@ -213,7 +274,7 @@
             // weiter_button
             // 
             this.weiter_button.BackColor = System.Drawing.Color.RosyBrown;
-            this.weiter_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.weiter_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.weiter_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.weiter_button.Location = new System.Drawing.Point(195, 383);
             this.weiter_button.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
@@ -229,7 +290,7 @@
             this.fiction_panel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.fiction_panel.Controls.Add(this.accept_fict_btn);
             this.fiction_panel.Controls.Add(this.fiction_txt_box);
-            this.fiction_panel.Location = new System.Drawing.Point(507, 58);
+            this.fiction_panel.Location = new System.Drawing.Point(504, 58);
             this.fiction_panel.Name = "fiction_panel";
             this.fiction_panel.Size = new System.Drawing.Size(343, 449);
             this.fiction_panel.TabIndex = 4;
@@ -244,16 +305,6 @@
             this.accept_fict_btn.Text = "Vestanden";
             this.accept_fict_btn.UseVisualStyleBackColor = true;
             this.accept_fict_btn.Click += new System.EventHandler(this.accept_fict_btn_Click);
-            // 
-            // fiction_txt_box
-            // 
-            this.errorProvider1.SetIconAlignment(this.fiction_txt_box, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
-            this.fiction_txt_box.Location = new System.Drawing.Point(65, 86);
-            this.fiction_txt_box.Name = "fiction_txt_box";
-            this.fiction_txt_box.Size = new System.Drawing.Size(209, 159);
-            this.fiction_txt_box.TabIndex = 0;
-            this.fiction_txt_box.Text = "\nDies ist ein rein fiktives Spiel. Alle Namen, Charakter, Geschichten und Events " +
-    "sind fiktiv.";
             // 
             // panel1
             // 
@@ -277,7 +328,7 @@
             this.panel2.Controls.Add(this.button_mini_2);
             this.panel2.Controls.Add(this.button_mini_1);
             this.panel2.Controls.Add(this.textBox_mini_field);
-            this.panel2.Location = new System.Drawing.Point(36, 132);
+            this.panel2.Location = new System.Drawing.Point(44, 132);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(271, 181);
@@ -286,6 +337,7 @@
             // 
             // button_mini_3
             // 
+            this.button_mini_3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button_mini_3.Location = new System.Drawing.Point(50, 133);
             this.button_mini_3.Margin = new System.Windows.Forms.Padding(2);
             this.button_mini_3.Name = "button_mini_3";
@@ -298,6 +350,7 @@
             // 
             // button_mini_2
             // 
+            this.button_mini_2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button_mini_2.Location = new System.Drawing.Point(50, 93);
             this.button_mini_2.Margin = new System.Windows.Forms.Padding(2);
             this.button_mini_2.Name = "button_mini_2";
@@ -309,6 +362,7 @@
             // 
             // button_mini_1
             // 
+            this.button_mini_1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button_mini_1.Location = new System.Drawing.Point(50, 54);
             this.button_mini_1.Margin = new System.Windows.Forms.Padding(2);
             this.button_mini_1.Name = "button_mini_1";
@@ -321,6 +375,7 @@
             // 
             // textBox_mini_field
             // 
+            this.textBox_mini_field.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_mini_field.Location = new System.Drawing.Point(84, 15);
             this.textBox_mini_field.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_mini_field.Name = "textBox_mini_field";
@@ -330,6 +385,7 @@
             // 
             // button5
             // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button5.Location = new System.Drawing.Point(65, 104);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(224, 23);
@@ -342,6 +398,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.Snow;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(122, 42);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(101, 20);
@@ -351,6 +408,7 @@
             // 
             // button8
             // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button8.Location = new System.Drawing.Point(65, 289);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(224, 23);
@@ -361,6 +419,7 @@
             // 
             // button7
             // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button7.Location = new System.Drawing.Point(65, 171);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(224, 23);
@@ -371,6 +430,7 @@
             // 
             // button6
             // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button6.Location = new System.Drawing.Point(65, 234);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(224, 23);
@@ -378,53 +438,6 @@
             this.button6.Text = "Neues Spiel";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.neues_Spiel_open);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.changeAvatar);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(119, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.changeAvatar);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(13, 143);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.changeAvatar);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(119, 143);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.changeAvatar);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(225, 143);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.changeAvatar);
             // 
             // Form1
             // 
@@ -439,17 +452,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.Layout_neues_Spiel.ResumeLayout(false);
             this.Layout_neues_Spiel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.fiction_panel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
       }
