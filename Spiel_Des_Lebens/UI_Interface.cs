@@ -223,5 +223,10 @@ namespace Spiel_Des_Lebens
             this.player.changePlayerStat(currentOptionStats);
         }
 
+        public void saveGame(int slot)
+        {
+            SaveGame.saveGame(player, slot);
+        }
+
     }
 }

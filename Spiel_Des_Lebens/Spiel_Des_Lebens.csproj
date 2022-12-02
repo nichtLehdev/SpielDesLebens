@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SaveGame.cs" />
     <Compile Include="Forms\FormActions.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -14,6 +14,13 @@ namespace Spiel_Des_Lebens
         private int seed;
 
 
+        #region Getter
+        public List<Event> getFilteredEventsPathProf()
+        {
+            return filteredEventsPathProfession;
+        }
+        #endregion
+
         public Eventgenerator(EducationPath edupath)
         {
             this.edupath = edupath;

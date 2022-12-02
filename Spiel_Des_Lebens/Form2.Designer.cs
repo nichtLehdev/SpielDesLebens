@@ -32,9 +32,13 @@
             this.progress_prog_bar = new System.Windows.Forms.ProgressBar();
             this.panel2 = new System.Windows.Forms.Panel();
             this.action_3_btn = new System.Windows.Forms.Button();
+            this.action_2_btn = new System.Windows.Forms.Button();
+            this.action_1_btn = new System.Windows.Forms.Button();
+            this.action_0_btn = new System.Windows.Forms.Button();
             this.userInfo = new System.Windows.Forms.Panel();
             this.lblPlayerName = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblName = new System.Windows.Forms.Label();
             this.lblPlayerAge = new System.Windows.Forms.Label();
             this.btnAktion = new System.Windows.Forms.Button();
@@ -104,12 +108,10 @@
             this.show_info_btn = new System.Windows.Forms.Button();
             this.event_txt_box = new System.Windows.Forms.TextBox();
             this.option_1_btn = new System.Windows.Forms.Button();
-            this.action_2_btn = new System.Windows.Forms.Button();
-            this.action_1_btn = new System.Windows.Forms.Button();
-            this.action_0_btn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.userInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.tutorial_panel_2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -128,7 +130,6 @@
             this.tutorial_ask_panel.SuspendLayout();
             this.game_over_panel.SuspendLayout();
             this.info_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // progress_prog_bar
@@ -143,6 +144,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Brown;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.action_3_btn);
             this.panel2.Controls.Add(this.action_2_btn);
             this.panel2.Controls.Add(this.action_1_btn);
@@ -173,6 +175,66 @@
             this.action_3_btn.Click += new System.EventHandler(this.action_3_click);
             this.action_3_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
             this.action_3_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_3);
+            // 
+            // action_2_btn
+            // 
+            this.action_2_btn.BackColor = System.Drawing.Color.Transparent;
+            this.action_2_btn.FlatAppearance.BorderSize = 0;
+            this.action_2_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.action_2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.action_2_btn.ForeColor = System.Drawing.Color.Black;
+            this.action_2_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.mentalhealth_48px;
+            this.action_2_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.action_2_btn.Location = new System.Drawing.Point(-1, 444);
+            this.action_2_btn.Name = "action_2_btn";
+            this.action_2_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.action_2_btn.Size = new System.Drawing.Size(240, 60);
+            this.action_2_btn.TabIndex = 14;
+            this.action_2_btn.Text = "Musik";
+            this.action_2_btn.UseVisualStyleBackColor = false;
+            this.action_2_btn.Click += new System.EventHandler(this.action_2_click);
+            this.action_2_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_2_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_2);
+            // 
+            // action_1_btn
+            // 
+            this.action_1_btn.BackColor = System.Drawing.Color.Transparent;
+            this.action_1_btn.FlatAppearance.BorderSize = 0;
+            this.action_1_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.action_1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.action_1_btn.ForeColor = System.Drawing.Color.Black;
+            this.action_1_btn.Image = ((System.Drawing.Image)(resources.GetObject("action_1_btn.Image")));
+            this.action_1_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.action_1_btn.Location = new System.Drawing.Point(-1, 382);
+            this.action_1_btn.Name = "action_1_btn";
+            this.action_1_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.action_1_btn.Size = new System.Drawing.Size(240, 60);
+            this.action_1_btn.TabIndex = 13;
+            this.action_1_btn.Text = "Sport";
+            this.action_1_btn.UseVisualStyleBackColor = false;
+            this.action_1_btn.Click += new System.EventHandler(this.action_1_click);
+            this.action_1_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_1_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_1);
+            // 
+            // action_0_btn
+            // 
+            this.action_0_btn.BackColor = System.Drawing.Color.Transparent;
+            this.action_0_btn.FlatAppearance.BorderSize = 0;
+            this.action_0_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.action_0_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.action_0_btn.ForeColor = System.Drawing.Color.Black;
+            this.action_0_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.motivation_48px;
+            this.action_0_btn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.action_0_btn.Location = new System.Drawing.Point(0, 311);
+            this.action_0_btn.Name = "action_0_btn";
+            this.action_0_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.action_0_btn.Size = new System.Drawing.Size(240, 60);
+            this.action_0_btn.TabIndex = 12;
+            this.action_0_btn.Text = "Hausaufgaben";
+            this.action_0_btn.UseVisualStyleBackColor = false;
+            this.action_0_btn.Click += new System.EventHandler(this.action_0_click);
+            this.action_0_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_0_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_0);
             // 
             // userInfo
             // 
@@ -208,6 +270,16 @@
             this.lblAge.Size = new System.Drawing.Size(37, 13);
             this.lblAge.TabIndex = 9;
             this.lblAge.Text = "Alter:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(55, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 117);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // lblName
             // 
@@ -1017,75 +1089,15 @@
             this.option_1_btn.UseVisualStyleBackColor = false;
             this.option_1_btn.Click += new System.EventHandler(this.option_1_click);
             // 
-            // action_2_btn
+            // button1
             // 
-            this.action_2_btn.BackColor = System.Drawing.Color.Transparent;
-            this.action_2_btn.FlatAppearance.BorderSize = 0;
-            this.action_2_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.action_2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.action_2_btn.ForeColor = System.Drawing.Color.Black;
-            this.action_2_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.mentalhealth_48px;
-            this.action_2_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.action_2_btn.Location = new System.Drawing.Point(-1, 444);
-            this.action_2_btn.Name = "action_2_btn";
-            this.action_2_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.action_2_btn.Size = new System.Drawing.Size(240, 60);
-            this.action_2_btn.TabIndex = 14;
-            this.action_2_btn.Text = "Musik";
-            this.action_2_btn.UseVisualStyleBackColor = false;
-            this.action_2_btn.Click += new System.EventHandler(this.action_2_click);
-            this.action_2_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
-            this.action_2_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_2);
-            // 
-            // action_1_btn
-            // 
-            this.action_1_btn.BackColor = System.Drawing.Color.Transparent;
-            this.action_1_btn.FlatAppearance.BorderSize = 0;
-            this.action_1_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.action_1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.action_1_btn.ForeColor = System.Drawing.Color.Black;
-            this.action_1_btn.Image = ((System.Drawing.Image)(resources.GetObject("action_1_btn.Image")));
-            this.action_1_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.action_1_btn.Location = new System.Drawing.Point(-1, 382);
-            this.action_1_btn.Name = "action_1_btn";
-            this.action_1_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.action_1_btn.Size = new System.Drawing.Size(240, 60);
-            this.action_1_btn.TabIndex = 13;
-            this.action_1_btn.Text = "Sport";
-            this.action_1_btn.UseVisualStyleBackColor = false;
-            this.action_1_btn.Click += new System.EventHandler(this.action_1_click);
-            this.action_1_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
-            this.action_1_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_1);
-            // 
-            // action_0_btn
-            // 
-            this.action_0_btn.BackColor = System.Drawing.Color.Transparent;
-            this.action_0_btn.FlatAppearance.BorderSize = 0;
-            this.action_0_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.action_0_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.action_0_btn.ForeColor = System.Drawing.Color.Black;
-            this.action_0_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.motivation_48px;
-            this.action_0_btn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.action_0_btn.Location = new System.Drawing.Point(0, 311);
-            this.action_0_btn.Name = "action_0_btn";
-            this.action_0_btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.action_0_btn.Size = new System.Drawing.Size(240, 60);
-            this.action_0_btn.TabIndex = 12;
-            this.action_0_btn.Text = "Hausaufgaben";
-            this.action_0_btn.UseVisualStyleBackColor = false;
-            this.action_0_btn.Click += new System.EventHandler(this.action_0_click);
-            this.action_0_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
-            this.action_0_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_0);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(55, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 117);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.button1.Location = new System.Drawing.Point(39, 580);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 43);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Save Test";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
@@ -1103,6 +1115,7 @@
             this.panel2.ResumeLayout(false);
             this.userInfo.ResumeLayout(false);
             this.userInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.tutorial_panel_2.ResumeLayout(false);
@@ -1137,7 +1150,6 @@
             this.game_over_panel.ResumeLayout(false);
             this.game_over_panel.PerformLayout();
             this.info_panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1223,6 +1235,7 @@
         private System.Windows.Forms.TextBox info_action_txt_0;
         private System.Windows.Forms.Panel info_action_panel_2;
         private System.Windows.Forms.TextBox info_action_txt_2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

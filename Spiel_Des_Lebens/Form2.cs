@@ -459,5 +459,10 @@ namespace Spiel_Des_Lebens
          info_action_panel_2.Visible = false;
          info_action_panel_3.Visible = false;
       }
-   }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ui_interface.saveGame(1);
+        }
+    }
 }

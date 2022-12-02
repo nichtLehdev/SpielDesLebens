@@ -74,5 +74,20 @@ namespace Spiel_Des_Lebens
         {
             return this.eduPath;
         }
+
+        public string getName()
+        {
+            return this.name;
+        }
+
+        public int getAge()
+        {
+            return this.age;
+        }
+
+        public bool getAvatar()
+        {
+            return this.avatar;
+        }
     }
 }
