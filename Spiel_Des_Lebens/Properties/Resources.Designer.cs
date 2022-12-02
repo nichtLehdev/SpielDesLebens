@@ -83,6 +83,26 @@ namespace Spiel_Des_Lebens.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap farbverlaufhell {
+            get {
+                object obj = ResourceManager.GetObject("farbverlaufhell", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap farbverlaufhell1 {
+            get {
+                object obj = ResourceManager.GetObject("farbverlaufhell1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Homework_Icon_small3 {
             get {
                 object obj = ResourceManager.GetObject("Homework_Icon_small3", resourceCulture);
@@ -126,6 +146,16 @@ namespace Spiel_Des_Lebens.Properties {
         internal static System.Drawing.Bitmap Music_Icon_small {
             get {
                 object obj = ResourceManager.GetObject("Music_Icon_small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rotschwarzimg {
+            get {
+                object obj = ResourceManager.GetObject("rotschwarzimg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

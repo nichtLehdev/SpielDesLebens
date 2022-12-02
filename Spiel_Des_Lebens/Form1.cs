@@ -177,5 +177,5 @@ namespace Spiel_Des_Lebens
          fiction_panel.Visible = false;
       }
 
-   }
+    }
 }

@@ -172,5 +172,17 @@
   <ItemGroup>
     <None Include="Resources\mentalhealth_48px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farbverlauf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farbverlaufhell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farbverlaufhell1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotschwarzimg.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
