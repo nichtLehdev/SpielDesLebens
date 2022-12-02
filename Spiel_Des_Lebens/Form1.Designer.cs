@@ -86,7 +86,7 @@
             // fiction_txt_box
             // 
             this.errorProvider1.SetIconAlignment(this.fiction_txt_box, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
-            this.fiction_txt_box.Location = new System.Drawing.Point(65, 86);
+            this.fiction_txt_box.Location = new System.Drawing.Point(80, 95);
             this.fiction_txt_box.Name = "fiction_txt_box";
             this.fiction_txt_box.ReadOnly = true;
             this.fiction_txt_box.Size = new System.Drawing.Size(209, 159);
@@ -347,14 +347,14 @@
             this.fiction_panel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.fiction_panel.Controls.Add(this.accept_fict_btn);
             this.fiction_panel.Controls.Add(this.fiction_txt_box);
-            this.fiction_panel.Location = new System.Drawing.Point(1002, 100);
+            this.fiction_panel.Location = new System.Drawing.Point(0, 0);
             this.fiction_panel.Name = "fiction_panel";
-            this.fiction_panel.Size = new System.Drawing.Size(343, 449);
+            this.fiction_panel.Size = new System.Drawing.Size(343, 497);
             this.fiction_panel.TabIndex = 4;
             // 
             // accept_fict_btn
             // 
-            this.accept_fict_btn.Location = new System.Drawing.Point(65, 354);
+            this.accept_fict_btn.Location = new System.Drawing.Point(80, 355);
             this.accept_fict_btn.Margin = new System.Windows.Forms.Padding(2);
             this.accept_fict_btn.Name = "accept_fict_btn";
             this.accept_fict_btn.Size = new System.Drawing.Size(209, 19);
@@ -367,14 +367,15 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Brown;
             this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
+            this.panel1.Controls.Add(this.fiction_panel);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(109, 31);
+            this.panel1.Location = new System.Drawing.Point(504, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 442);
+            this.panel1.Size = new System.Drawing.Size(343, 497);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -384,7 +385,7 @@
             this.panel2.Controls.Add(this.button_mini_2);
             this.panel2.Controls.Add(this.button_mini_1);
             this.panel2.Controls.Add(this.textBox_mini_field);
-            this.panel2.Location = new System.Drawing.Point(48, 136);
+            this.panel2.Location = new System.Drawing.Point(56, 172);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(262, 175);
@@ -443,7 +444,7 @@
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button5.Location = new System.Drawing.Point(65, 117);
+            this.button5.Location = new System.Drawing.Point(65, 144);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(224, 23);
             this.button5.TabIndex = 0;
@@ -456,7 +457,7 @@
             this.textBox1.BackColor = System.Drawing.Color.Snow;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(122, 42);
+            this.textBox1.Location = new System.Drawing.Point(120, 69);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(101, 20);
@@ -467,7 +468,7 @@
             // button7
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button7.Location = new System.Drawing.Point(65, 210);
+            this.button7.Location = new System.Drawing.Point(65, 244);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(224, 23);
             this.button7.TabIndex = 3;
@@ -478,7 +479,7 @@
             // button6
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button6.Location = new System.Drawing.Point(65, 316);
+            this.button6.Location = new System.Drawing.Point(65, 350);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(224, 23);
             this.button6.TabIndex = 2;
@@ -491,7 +492,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 664);
-            this.Controls.Add(this.fiction_panel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Layout_neues_Spiel);
             this.Name = "Form1";
