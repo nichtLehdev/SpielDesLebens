@@ -36,5 +36,10 @@
         {
             return currentPhase;
         }
+
+        public int getMaxPhaseNumber()
+        {
+            return (int)((3 * 12) / (maxActionPoints / 7));
+        }
     }
 }

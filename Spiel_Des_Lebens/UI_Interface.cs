@@ -171,9 +171,14 @@ namespace Spiel_Des_Lebens
             return player.getEducationPath().getPhase().getCurrentPhase();
         }
 
-        public int getMaxPhase()
+        public int getMaxPhaseLength()
         {
             return player.getEducationPath().getPhaseLength();
+        }
+
+        public int getMaxPhaseNumber()
+        {
+            return player.getEducationPath().getPhase().getMaxPhaseNumber();
         }
 
 

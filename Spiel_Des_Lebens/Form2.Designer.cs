@@ -174,7 +174,7 @@
             this.action_3_btn.Text = "andere Aktion";
             this.action_3_btn.UseVisualStyleBackColor = false;
             this.action_3_btn.Click += new System.EventHandler(this.action_3_click);
-            this.action_3_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_3_btn.MouseLeave += new System.EventHandler(this.close_hover_action);
             this.action_3_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_3);
             // 
             // action_2_btn
@@ -194,7 +194,7 @@
             this.action_2_btn.Text = "Musik";
             this.action_2_btn.UseVisualStyleBackColor = false;
             this.action_2_btn.Click += new System.EventHandler(this.action_2_click);
-            this.action_2_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_2_btn.MouseLeave += new System.EventHandler(this.close_hover_action);
             this.action_2_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_2);
             // 
             // action_1_btn
@@ -214,7 +214,7 @@
             this.action_1_btn.Text = "Sport";
             this.action_1_btn.UseVisualStyleBackColor = false;
             this.action_1_btn.Click += new System.EventHandler(this.action_1_click);
-            this.action_1_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_1_btn.MouseLeave += new System.EventHandler(this.close_hover_action);
             this.action_1_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_1);
             // 
             // action_0_btn
@@ -235,7 +235,7 @@
             this.action_0_btn.Text = "Hausaufgaben";
             this.action_0_btn.UseVisualStyleBackColor = false;
             this.action_0_btn.Click += new System.EventHandler(this.action_0_click);
-            this.action_0_btn.MouseLeave += new System.EventHandler(this.close_hower_action);
+            this.action_0_btn.MouseLeave += new System.EventHandler(this.close_hover_action);
             this.action_0_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_0);
             // 
             // userInfo
