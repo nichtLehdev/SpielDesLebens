@@ -70,6 +70,9 @@
             this.info_action_txt_0 = new System.Windows.Forms.TextBox();
             this.info_action_panel_2 = new System.Windows.Forms.Panel();
             this.info_action_txt_2 = new System.Windows.Forms.TextBox();
+            this.tutorial_panel_4 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.info_action_panel_3 = new System.Windows.Forms.Panel();
             this.info_action_txt_3 = new System.Windows.Forms.TextBox();
             this.info_action_panel_1 = new System.Windows.Forms.Panel();
@@ -80,20 +83,17 @@
             this.tutorial_panel_3 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.tutorial_panel_4 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.action_panel = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.action_title = new System.Windows.Forms.TextBox();
             this.action_text = new System.Windows.Forms.TextBox();
+            this.game_over_panel = new System.Windows.Forms.Panel();
             this.tutorial_ask_panel = new System.Windows.Forms.Panel();
             this.tutorial_ask_btn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tutorial_ask_title = new System.Windows.Forms.TextBox();
             this.tutorial_ask_txt = new System.Windows.Forms.TextBox();
-            this.game_over_panel = new System.Windows.Forms.Panel();
             this.game_over_btn = new System.Windows.Forms.Button();
             this.game_over_title = new System.Windows.Forms.TextBox();
             this.game_over_txt = new System.Windows.Forms.RichTextBox();
@@ -119,21 +119,21 @@
             this.panelActiveChild.SuspendLayout();
             this.info_action_panel_0.SuspendLayout();
             this.info_action_panel_2.SuspendLayout();
+            this.tutorial_panel_4.SuspendLayout();
             this.info_action_panel_3.SuspendLayout();
             this.info_action_panel_1.SuspendLayout();
             this.tutorial_panel_5.SuspendLayout();
             this.tutorial_panel_3.SuspendLayout();
-            this.tutorial_panel_4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.action_panel.SuspendLayout();
-            this.tutorial_ask_panel.SuspendLayout();
             this.game_over_panel.SuspendLayout();
+            this.tutorial_ask_panel.SuspendLayout();
             this.info_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // progress_prog_bar
             // 
-            this.progress_prog_bar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.progress_prog_bar.BackColor = System.Drawing.Color.White;
             this.progress_prog_bar.ForeColor = System.Drawing.Color.Maroon;
             this.progress_prog_bar.Location = new System.Drawing.Point(196, 53);
             this.progress_prog_bar.Name = "progress_prog_bar";
@@ -336,9 +336,9 @@
             this.panel3.Controls.Add(this.motivation_prog_bar);
             this.panel3.Controls.Add(this.learn_prog_bar);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1080, 0);
+            this.panel3.Location = new System.Drawing.Point(1075, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(256, 642);
+            this.panel3.Size = new System.Drawing.Size(275, 642);
             this.panel3.TabIndex = 7;
             // 
             // money_prog_bar
@@ -521,7 +521,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(240, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(840, 119);
+            this.panel4.Size = new System.Drawing.Size(835, 119);
             this.panel4.TabIndex = 0;
             // 
             // tutorial_panel_6
@@ -611,7 +611,7 @@
             this.panelActiveChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelActiveChild.Location = new System.Drawing.Point(240, 119);
             this.panelActiveChild.Name = "panelActiveChild";
-            this.panelActiveChild.Size = new System.Drawing.Size(840, 523);
+            this.panelActiveChild.Size = new System.Drawing.Size(835, 523);
             this.panelActiveChild.TabIndex = 1;
             // 
             // info_action_panel_0
@@ -663,6 +663,45 @@
             this.info_action_txt_2.TabIndex = 11;
             this.info_action_txt_2.Text = "Links wird dein Charakter angezeigt";
             this.info_action_txt_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tutorial_panel_4
+            // 
+            this.tutorial_panel_4.BackColor = System.Drawing.Color.FloralWhite;
+            this.tutorial_panel_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tutorial_panel_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tutorial_panel_4.Controls.Add(this.button7);
+            this.tutorial_panel_4.Controls.Add(this.textBox5);
+            this.tutorial_panel_4.Location = new System.Drawing.Point(540, 39);
+            this.tutorial_panel_4.Name = "tutorial_panel_4";
+            this.tutorial_panel_4.Size = new System.Drawing.Size(195, 133);
+            this.tutorial_panel_4.TabIndex = 12;
+            this.tutorial_panel_4.Visible = false;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(118, 103);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(62, 25);
+            this.button7.TabIndex = 13;
+            this.button7.Text = "Weiter";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.continue_tutorial_4);
+            // 
+            // textBox5
+            // 
+            this.textBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.Location = new System.Drawing.Point(15, 14);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(165, 83);
+            this.textBox5.TabIndex = 11;
+            this.textBox5.Text = "Dies sind Events, du hast die Möglichkeit bei einem Event eine Option zu wählen. " +
+    "Die Entscheidung einer Option zu dem Event hat einen Effekt auf die Stats deines" +
+    " Charakters.";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // info_action_panel_3
             // 
@@ -789,53 +828,14 @@
     "t unteranderem geändert wird.";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tutorial_panel_4
-            // 
-            this.tutorial_panel_4.BackColor = System.Drawing.Color.FloralWhite;
-            this.tutorial_panel_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tutorial_panel_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tutorial_panel_4.Controls.Add(this.button7);
-            this.tutorial_panel_4.Controls.Add(this.textBox5);
-            this.tutorial_panel_4.Location = new System.Drawing.Point(540, 39);
-            this.tutorial_panel_4.Name = "tutorial_panel_4";
-            this.tutorial_panel_4.Size = new System.Drawing.Size(195, 133);
-            this.tutorial_panel_4.TabIndex = 12;
-            this.tutorial_panel_4.Visible = false;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(118, 103);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(62, 25);
-            this.button7.TabIndex = 13;
-            this.button7.Text = "Weiter";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.continue_tutorial_4);
-            // 
-            // textBox5
-            // 
-            this.textBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(15, 14);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(165, 83);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.Text = "Dies sind Events, du hast die Möglichkeit bei einem Event eine Option zu wählen. " +
-    "Die Entscheidung einer Option zu dem Event hat einen Effekt auf die Stats deines" +
-    " Charakters.";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.farbverlauf;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.action_panel);
-            this.panel1.Controls.Add(this.game_over_panel);
+            this.panel1.Controls.Add(this.tutorial_ask_panel);
             this.panel1.Controls.Add(this.close_opt_end_txt);
+            this.panel1.Controls.Add(this.game_over_panel);
             this.panel1.Controls.Add(this.info_panel);
             this.panel1.Controls.Add(this.option_4_btn);
             this.panel1.Controls.Add(this.option_3_btn);
@@ -856,10 +856,10 @@
             this.action_panel.Controls.Add(this.button9);
             this.action_panel.Controls.Add(this.action_title);
             this.action_panel.Controls.Add(this.action_text);
-            this.action_panel.Location = new System.Drawing.Point(135, 115);
+            this.action_panel.Location = new System.Drawing.Point(0, 1);
             this.action_panel.Name = "action_panel";
-            this.action_panel.Size = new System.Drawing.Size(365, 219);
-            this.action_panel.TabIndex = 0;
+            this.action_panel.Size = new System.Drawing.Size(365, 217);
+            this.action_panel.TabIndex = 10;
             this.action_panel.Visible = false;
             // 
             // button9
@@ -899,17 +899,30 @@
             this.action_text.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
             this.action_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // game_over_panel
+            // 
+            this.game_over_panel.BackColor = System.Drawing.Color.FloralWhite;
+            this.game_over_panel.Controls.Add(this.game_over_btn);
+            this.game_over_panel.Controls.Add(this.game_over_title);
+            this.game_over_panel.Controls.Add(this.game_over_txt);
+            this.game_over_panel.Location = new System.Drawing.Point(113, 70);
+            this.game_over_panel.Name = "game_over_panel";
+            this.game_over_panel.Size = new System.Drawing.Size(365, 217);
+            this.game_over_panel.TabIndex = 9;
+            this.game_over_panel.Visible = false;
+            // 
             // tutorial_ask_panel
             // 
             this.tutorial_ask_panel.BackColor = System.Drawing.Color.FloralWhite;
+            this.tutorial_ask_panel.Controls.Add(this.action_panel);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_btn);
             this.tutorial_ask_panel.Controls.Add(this.button2);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_title);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_txt);
-            this.tutorial_ask_panel.Location = new System.Drawing.Point(0, 0);
+            this.tutorial_ask_panel.Location = new System.Drawing.Point(121, 69);
             this.tutorial_ask_panel.Name = "tutorial_ask_panel";
-            this.tutorial_ask_panel.Size = new System.Drawing.Size(365, 219);
-            this.tutorial_ask_panel.TabIndex = 9;
+            this.tutorial_ask_panel.Size = new System.Drawing.Size(365, 227);
+            this.tutorial_ask_panel.TabIndex = 10;
             this.tutorial_ask_panel.Visible = false;
             // 
             // tutorial_ask_btn
@@ -959,19 +972,6 @@
             this.tutorial_ask_txt.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
             this.tutorial_ask_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // game_over_panel
-            // 
-            this.game_over_panel.BackColor = System.Drawing.Color.FloralWhite;
-            this.game_over_panel.Controls.Add(this.tutorial_ask_panel);
-            this.game_over_panel.Controls.Add(this.game_over_btn);
-            this.game_over_panel.Controls.Add(this.game_over_title);
-            this.game_over_panel.Controls.Add(this.game_over_txt);
-            this.game_over_panel.Location = new System.Drawing.Point(135, 115);
-            this.game_over_panel.Name = "game_over_panel";
-            this.game_over_panel.Size = new System.Drawing.Size(365, 217);
-            this.game_over_panel.TabIndex = 9;
-            this.game_over_panel.Visible = false;
-            // 
             // game_over_btn
             // 
             this.game_over_btn.Location = new System.Drawing.Point(233, 161);
@@ -1019,7 +1019,7 @@
             this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.info_panel.Controls.Add(this.info_close_button);
             this.info_panel.Controls.Add(this.info_text);
-            this.info_panel.Location = new System.Drawing.Point(135, 115);
+            this.info_panel.Location = new System.Drawing.Point(117, 73);
             this.info_panel.Name = "info_panel";
             this.info_panel.Size = new System.Drawing.Size(365, 208);
             this.info_panel.TabIndex = 9;
@@ -1145,7 +1145,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1336, 642);
+            this.ClientSize = new System.Drawing.Size(1350, 642);
             this.Controls.Add(this.panelActiveChild);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -1172,6 +1172,8 @@
             this.info_action_panel_0.PerformLayout();
             this.info_action_panel_2.ResumeLayout(false);
             this.info_action_panel_2.PerformLayout();
+            this.tutorial_panel_4.ResumeLayout(false);
+            this.tutorial_panel_4.PerformLayout();
             this.info_action_panel_3.ResumeLayout(false);
             this.info_action_panel_3.PerformLayout();
             this.info_action_panel_1.ResumeLayout(false);
@@ -1180,16 +1182,14 @@
             this.tutorial_panel_5.PerformLayout();
             this.tutorial_panel_3.ResumeLayout(false);
             this.tutorial_panel_3.PerformLayout();
-            this.tutorial_panel_4.ResumeLayout(false);
-            this.tutorial_panel_4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.action_panel.ResumeLayout(false);
             this.action_panel.PerformLayout();
-            this.tutorial_ask_panel.ResumeLayout(false);
-            this.tutorial_ask_panel.PerformLayout();
             this.game_over_panel.ResumeLayout(false);
             this.game_over_panel.PerformLayout();
+            this.tutorial_ask_panel.ResumeLayout(false);
+            this.tutorial_ask_panel.PerformLayout();
             this.info_panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
