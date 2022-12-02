@@ -32,20 +32,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.fiction_panel = new System.Windows.Forms.Panel();
-            this.accept_fict_btn = new System.Windows.Forms.Button();
             this.fiction_txt_box = new System.Windows.Forms.RichTextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button_mini_3 = new System.Windows.Forms.Button();
-            this.button_mini_2 = new System.Windows.Forms.Button();
-            this.button_mini_1 = new System.Windows.Forms.Button();
-            this.textBox_mini_field = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.Layout_neues_Spiel = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -63,10 +50,20 @@
             this.txt_alter = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.weiter_button = new System.Windows.Forms.Button();
+            this.fiction_panel = new System.Windows.Forms.Panel();
+            this.accept_fict_btn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button_mini_3 = new System.Windows.Forms.Button();
+            this.button_mini_2 = new System.Windows.Forms.Button();
+            this.button_mini_1 = new System.Windows.Forms.Button();
+            this.textBox_mini_field = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.fiction_panel.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.Layout_neues_Spiel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -74,168 +71,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.fiction_panel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Brown;
-            this.panel1.Controls.Add(this.fiction_panel);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(504, 58);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 442);
-            this.panel1.TabIndex = 1;
-            // 
-            // fiction_panel
-            // 
-            this.fiction_panel.Controls.Add(this.accept_fict_btn);
-            this.fiction_panel.Controls.Add(this.fiction_txt_box);
-            this.fiction_panel.Location = new System.Drawing.Point(0, 0);
-            this.fiction_panel.Name = "fiction_panel";
-            this.fiction_panel.Size = new System.Drawing.Size(343, 439);
-            this.fiction_panel.TabIndex = 4;
-            // 
-            // accept_fict_btn
-            // 
-            this.accept_fict_btn.Location = new System.Drawing.Point(65, 354);
-            this.accept_fict_btn.Margin = new System.Windows.Forms.Padding(2);
-            this.accept_fict_btn.Name = "accept_fict_btn";
-            this.accept_fict_btn.Size = new System.Drawing.Size(209, 19);
-            this.accept_fict_btn.TabIndex = 1;
-            this.accept_fict_btn.Text = "Vestanden";
-            this.accept_fict_btn.UseVisualStyleBackColor = true;
-            this.accept_fict_btn.Click += new System.EventHandler(this.accept_fict_btn_Click);
-            // 
             // fiction_txt_box
             // 
             this.errorProvider1.SetIconAlignment(this.fiction_txt_box, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
             this.fiction_txt_box.Location = new System.Drawing.Point(65, 86);
             this.fiction_txt_box.Name = "fiction_txt_box";
+            this.fiction_txt_box.ReadOnly = true;
             this.fiction_txt_box.Size = new System.Drawing.Size(209, 159);
             this.fiction_txt_box.TabIndex = 0;
             this.fiction_txt_box.Text = "\nDies ist ein rein fiktives Spiel. Alle Namen, Charakter, Geschichten und Events " +
     "sind fiktiv.";
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button_mini_3);
-            this.panel2.Controls.Add(this.button_mini_2);
-            this.panel2.Controls.Add(this.button_mini_1);
-            this.panel2.Controls.Add(this.textBox_mini_field);
-            this.panel2.Location = new System.Drawing.Point(36, 132);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 181);
-            this.panel2.TabIndex = 6;
-            this.panel2.Visible = false;
-            // 
-            // button_mini_3
-            // 
-            this.button_mini_3.Location = new System.Drawing.Point(50, 133);
-            this.button_mini_3.Margin = new System.Windows.Forms.Padding(2);
-            this.button_mini_3.Name = "button_mini_3";
-            this.button_mini_3.Size = new System.Drawing.Size(186, 19);
-            this.button_mini_3.TabIndex = 3;
-            this.button_mini_3.Text = "Zurück";
-            this.button_mini_3.UseVisualStyleBackColor = true;
-            this.button_mini_3.Visible = false;
-            this.button_mini_3.Click += new System.EventHandler(this.Close_option_spiel_start);
-            // 
-            // button_mini_2
-            // 
-            this.button_mini_2.Location = new System.Drawing.Point(50, 93);
-            this.button_mini_2.Margin = new System.Windows.Forms.Padding(2);
-            this.button_mini_2.Name = "button_mini_2";
-            this.button_mini_2.Size = new System.Drawing.Size(186, 19);
-            this.button_mini_2.TabIndex = 2;
-            this.button_mini_2.Text = "Löschen";
-            this.button_mini_2.UseVisualStyleBackColor = true;
-            this.button_mini_2.Visible = false;
-            // 
-            // button_mini_1
-            // 
-            this.button_mini_1.Location = new System.Drawing.Point(50, 54);
-            this.button_mini_1.Margin = new System.Windows.Forms.Padding(2);
-            this.button_mini_1.Name = "button_mini_1";
-            this.button_mini_1.Size = new System.Drawing.Size(186, 19);
-            this.button_mini_1.TabIndex = 1;
-            this.button_mini_1.Text = "Laden";
-            this.button_mini_1.UseVisualStyleBackColor = true;
-            this.button_mini_1.Visible = false;
-            this.button_mini_1.Click += new System.EventHandler(this.load_test);
-            // 
-            // textBox_mini_field
-            // 
-            this.textBox_mini_field.Location = new System.Drawing.Point(84, 15);
-            this.textBox_mini_field.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_mini_field.Name = "textBox_mini_field";
-            this.textBox_mini_field.Size = new System.Drawing.Size(127, 20);
-            this.textBox_mini_field.TabIndex = 0;
-            this.textBox_mini_field.Visible = false;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(65, 104);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(224, 23);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Spielstand Test";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.neues_Spiel_open);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Snow;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.Location = new System.Drawing.Point(122, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(101, 20);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Spiel des Lebens";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(65, 289);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(224, 23);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Neues Spiel";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.neues_Spiel_open);
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(65, 171);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(224, 23);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "Neues Spiel";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.neues_Spiel_open);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(65, 234);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(224, 23);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Neues Spiel";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.neues_Spiel_open);
-            // 
             // Layout_neues_Spiel
             // 
-            this.Layout_neues_Spiel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Layout_neues_Spiel.BackColor = System.Drawing.Color.Transparent;
+            this.Layout_neues_Spiel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.Layout_neues_Spiel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Layout_neues_Spiel.Controls.Add(this.pictureBox1);
             this.Layout_neues_Spiel.Controls.Add(this.pictureBox2);
@@ -363,42 +222,46 @@
             // lable_1
             // 
             this.lable_1.AutoSize = true;
+            this.lable_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lable_1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lable_1.Location = new System.Drawing.Point(13, 333);
             this.lable_1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.lable_1.Name = "lable_1";
-            this.lable_1.Size = new System.Drawing.Size(35, 13);
+            this.lable_1.Size = new System.Drawing.Size(39, 13);
             this.lable_1.TabIndex = 10;
             this.lable_1.Text = "Name";
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(54, 331);
+            this.txt_name.Location = new System.Drawing.Point(58, 331);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(271, 20);
+            this.txt_name.Size = new System.Drawing.Size(267, 20);
             this.txt_name.TabIndex = 11;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(13, 359);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 5, 10, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 13;
             this.label1.Text = "Alter";
             // 
             // txt_alter
             // 
-            this.txt_alter.Location = new System.Drawing.Point(54, 357);
+            this.txt_alter.Location = new System.Drawing.Point(59, 357);
             this.txt_alter.Name = "txt_alter";
-            this.txt_alter.Size = new System.Drawing.Size(271, 20);
+            this.txt_alter.Size = new System.Drawing.Size(266, 20);
             this.txt_alter.TabIndex = 14;
             this.txt_alter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_alter_KeyPress);
             // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.RosyBrown;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button9.Location = new System.Drawing.Point(55, 383);
             this.button9.Margin = new System.Windows.Forms.Padding(45, 3, 3, 3);
@@ -412,7 +275,7 @@
             // weiter_button
             // 
             this.weiter_button.BackColor = System.Drawing.Color.RosyBrown;
-            this.weiter_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.weiter_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.weiter_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.weiter_button.Location = new System.Drawing.Point(195, 383);
             this.weiter_button.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
@@ -423,21 +286,173 @@
             this.weiter_button.UseVisualStyleBackColor = false;
             this.weiter_button.Click += new System.EventHandler(this.open_next);
             // 
+            // fiction_panel
+            // 
+            this.fiction_panel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
+            this.fiction_panel.Controls.Add(this.accept_fict_btn);
+            this.fiction_panel.Controls.Add(this.fiction_txt_box);
+            this.fiction_panel.Location = new System.Drawing.Point(504, 58);
+            this.fiction_panel.Name = "fiction_panel";
+            this.fiction_panel.Size = new System.Drawing.Size(343, 449);
+            this.fiction_panel.TabIndex = 4;
+            // 
+            // accept_fict_btn
+            // 
+            this.accept_fict_btn.Location = new System.Drawing.Point(65, 354);
+            this.accept_fict_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.accept_fict_btn.Name = "accept_fict_btn";
+            this.accept_fict_btn.Size = new System.Drawing.Size(209, 19);
+            this.accept_fict_btn.TabIndex = 1;
+            this.accept_fict_btn.Text = "Vestanden";
+            this.accept_fict_btn.UseVisualStyleBackColor = true;
+            this.accept_fict_btn.Click += new System.EventHandler(this.accept_fict_btn_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Brown;
+            this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Location = new System.Drawing.Point(504, 58);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(343, 442);
+            this.panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
+            this.panel2.Controls.Add(this.button_mini_3);
+            this.panel2.Controls.Add(this.button_mini_2);
+            this.panel2.Controls.Add(this.button_mini_1);
+            this.panel2.Controls.Add(this.textBox_mini_field);
+            this.panel2.Location = new System.Drawing.Point(44, 132);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(271, 181);
+            this.panel2.TabIndex = 6;
+            this.panel2.Visible = false;
+            // 
+            // button_mini_3
+            // 
+            this.button_mini_3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button_mini_3.Location = new System.Drawing.Point(50, 133);
+            this.button_mini_3.Margin = new System.Windows.Forms.Padding(2);
+            this.button_mini_3.Name = "button_mini_3";
+            this.button_mini_3.Size = new System.Drawing.Size(186, 19);
+            this.button_mini_3.TabIndex = 3;
+            this.button_mini_3.Text = "Zurück";
+            this.button_mini_3.UseVisualStyleBackColor = true;
+            this.button_mini_3.Visible = false;
+            this.button_mini_3.Click += new System.EventHandler(this.Close_option_spiel_start);
+            // 
+            // button_mini_2
+            // 
+            this.button_mini_2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button_mini_2.Location = new System.Drawing.Point(50, 93);
+            this.button_mini_2.Margin = new System.Windows.Forms.Padding(2);
+            this.button_mini_2.Name = "button_mini_2";
+            this.button_mini_2.Size = new System.Drawing.Size(186, 19);
+            this.button_mini_2.TabIndex = 2;
+            this.button_mini_2.Text = "Löschen";
+            this.button_mini_2.UseVisualStyleBackColor = true;
+            this.button_mini_2.Visible = false;
+            // 
+            // button_mini_1
+            // 
+            this.button_mini_1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button_mini_1.Location = new System.Drawing.Point(50, 54);
+            this.button_mini_1.Margin = new System.Windows.Forms.Padding(2);
+            this.button_mini_1.Name = "button_mini_1";
+            this.button_mini_1.Size = new System.Drawing.Size(186, 19);
+            this.button_mini_1.TabIndex = 1;
+            this.button_mini_1.Text = "Laden";
+            this.button_mini_1.UseVisualStyleBackColor = true;
+            this.button_mini_1.Visible = false;
+            this.button_mini_1.Click += new System.EventHandler(this.load_test);
+            // 
+            // textBox_mini_field
+            // 
+            this.textBox_mini_field.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_mini_field.Location = new System.Drawing.Point(84, 15);
+            this.textBox_mini_field.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_mini_field.Name = "textBox_mini_field";
+            this.textBox_mini_field.ReadOnly = true;
+            this.textBox_mini_field.Size = new System.Drawing.Size(127, 20);
+            this.textBox_mini_field.TabIndex = 0;
+            this.textBox_mini_field.Visible = false;
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button5.Location = new System.Drawing.Point(65, 104);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(224, 23);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Spielstand Test";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.neues_Spiel_open);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Snow;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(122, 42);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(101, 20);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "Spiel des Lebens";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button8
+            // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button8.Location = new System.Drawing.Point(65, 289);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(224, 23);
+            this.button8.TabIndex = 4;
+            this.button8.Text = "Neues Spiel";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.neues_Spiel_open);
+            // 
+            // button7
+            // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button7.Location = new System.Drawing.Point(65, 171);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(224, 23);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "Neues Spiel";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.neues_Spiel_open);
+            // 
+            // button6
+            // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button6.Location = new System.Drawing.Point(65, 234);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(224, 23);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Neues Spiel";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.neues_Spiel_open);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 664);
+            this.Controls.Add(this.fiction_panel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Layout_neues_Spiel);
             this.Name = "Form1";
             this.Text = "Spiel des Lebens";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.fiction_panel.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.Layout_neues_Spiel.ResumeLayout(false);
             this.Layout_neues_Spiel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -446,6 +461,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.fiction_panel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
       }
