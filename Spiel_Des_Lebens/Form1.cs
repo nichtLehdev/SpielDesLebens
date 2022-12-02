@@ -176,6 +176,21 @@ namespace Spiel_Des_Lebens
       {
          fiction_panel.Visible = false;
       }
-
+        private void education_path_TextChanged(object sender, EventArgs e)
+        {
+            profession_path.Items.Clear();
+            if (education_path.Text == "Ausbildung")
+            {
+                profession_path.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
+            }
+            else if (education_path.Text == "Duales Studium")
+            {
+                profession_path.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
+            }
+            else if (education_path.Text == "Studium")
+            {
+                profession_path.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
+            }
+        }
     }
 }

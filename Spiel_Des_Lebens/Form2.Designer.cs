@@ -88,16 +88,16 @@
             this.button9 = new System.Windows.Forms.Button();
             this.action_title = new System.Windows.Forms.TextBox();
             this.action_text = new System.Windows.Forms.TextBox();
-            this.game_over_panel = new System.Windows.Forms.Panel();
             this.tutorial_ask_panel = new System.Windows.Forms.Panel();
             this.tutorial_ask_btn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tutorial_ask_title = new System.Windows.Forms.TextBox();
             this.tutorial_ask_txt = new System.Windows.Forms.TextBox();
+            this.close_opt_end_txt = new System.Windows.Forms.Button();
+            this.game_over_panel = new System.Windows.Forms.Panel();
             this.game_over_btn = new System.Windows.Forms.Button();
             this.game_over_title = new System.Windows.Forms.TextBox();
             this.game_over_txt = new System.Windows.Forms.RichTextBox();
-            this.close_opt_end_txt = new System.Windows.Forms.Button();
             this.info_panel = new System.Windows.Forms.Panel();
             this.info_close_button = new System.Windows.Forms.Button();
             this.info_text = new System.Windows.Forms.RichTextBox();
@@ -126,8 +126,8 @@
             this.tutorial_panel_3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.action_panel.SuspendLayout();
-            this.game_over_panel.SuspendLayout();
             this.tutorial_ask_panel.SuspendLayout();
+            this.game_over_panel.SuspendLayout();
             this.info_panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -900,18 +900,6 @@
             this.action_text.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
             this.action_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // game_over_panel
-            // 
-            this.game_over_panel.BackColor = System.Drawing.Color.FloralWhite;
-            this.game_over_panel.Controls.Add(this.game_over_btn);
-            this.game_over_panel.Controls.Add(this.game_over_title);
-            this.game_over_panel.Controls.Add(this.game_over_txt);
-            this.game_over_panel.Location = new System.Drawing.Point(114, 69);
-            this.game_over_panel.Name = "game_over_panel";
-            this.game_over_panel.Size = new System.Drawing.Size(365, 217);
-            this.game_over_panel.TabIndex = 9;
-            this.game_over_panel.Visible = false;
-            // 
             // tutorial_ask_panel
             // 
             this.tutorial_ask_panel.BackColor = System.Drawing.Color.FloralWhite;
@@ -972,6 +960,29 @@
             this.tutorial_ask_txt.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
             this.tutorial_ask_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // close_opt_end_txt
+            // 
+            this.close_opt_end_txt.Location = new System.Drawing.Point(472, 23);
+            this.close_opt_end_txt.Name = "close_opt_end_txt";
+            this.close_opt_end_txt.Size = new System.Drawing.Size(75, 40);
+            this.close_opt_end_txt.TabIndex = 8;
+            this.close_opt_end_txt.Text = "Nächstes Event";
+            this.close_opt_end_txt.UseVisualStyleBackColor = true;
+            this.close_opt_end_txt.Visible = false;
+            this.close_opt_end_txt.Click += new System.EventHandler(this.close_opt_txt);
+            // 
+            // game_over_panel
+            // 
+            this.game_over_panel.BackColor = System.Drawing.Color.FloralWhite;
+            this.game_over_panel.Controls.Add(this.game_over_btn);
+            this.game_over_panel.Controls.Add(this.game_over_title);
+            this.game_over_panel.Controls.Add(this.game_over_txt);
+            this.game_over_panel.Location = new System.Drawing.Point(114, 69);
+            this.game_over_panel.Name = "game_over_panel";
+            this.game_over_panel.Size = new System.Drawing.Size(365, 217);
+            this.game_over_panel.TabIndex = 9;
+            this.game_over_panel.Visible = false;
+            // 
             // game_over_btn
             // 
             this.game_over_btn.Location = new System.Drawing.Point(233, 161);
@@ -1001,17 +1012,6 @@
             this.game_over_txt.Size = new System.Drawing.Size(300, 102);
             this.game_over_txt.TabIndex = 0;
             this.game_over_txt.Text = "";
-            // 
-            // close_opt_end_txt
-            // 
-            this.close_opt_end_txt.Location = new System.Drawing.Point(472, 23);
-            this.close_opt_end_txt.Name = "close_opt_end_txt";
-            this.close_opt_end_txt.Size = new System.Drawing.Size(75, 40);
-            this.close_opt_end_txt.TabIndex = 8;
-            this.close_opt_end_txt.Text = "Nächstes Event";
-            this.close_opt_end_txt.UseVisualStyleBackColor = true;
-            this.close_opt_end_txt.Visible = false;
-            this.close_opt_end_txt.Click += new System.EventHandler(this.close_opt_txt);
             // 
             // info_panel
             // 
@@ -1188,10 +1188,10 @@
             this.panel1.PerformLayout();
             this.action_panel.ResumeLayout(false);
             this.action_panel.PerformLayout();
-            this.game_over_panel.ResumeLayout(false);
-            this.game_over_panel.PerformLayout();
             this.tutorial_ask_panel.ResumeLayout(false);
             this.tutorial_ask_panel.PerformLayout();
+            this.game_over_panel.ResumeLayout(false);
+            this.game_over_panel.PerformLayout();
             this.info_panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
