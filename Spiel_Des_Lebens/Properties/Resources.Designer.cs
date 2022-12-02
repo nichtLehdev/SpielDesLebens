@@ -73,6 +73,16 @@ namespace Spiel_Des_Lebens.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap farbverlauf {
+            get {
+                object obj = ResourceManager.GetObject("farbverlauf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Homework_Icon_small3 {
             get {
                 object obj = ResourceManager.GetObject("Homework_Icon_small3", resourceCulture);
