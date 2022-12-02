@@ -833,6 +833,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.farbverlauf;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.action_panel);
             this.panel1.Controls.Add(this.tutorial_ask_panel);
             this.panel1.Controls.Add(this.close_opt_end_txt);
             this.panel1.Controls.Add(this.game_over_panel);
@@ -856,9 +857,9 @@
             this.action_panel.Controls.Add(this.button9);
             this.action_panel.Controls.Add(this.action_title);
             this.action_panel.Controls.Add(this.action_text);
-            this.action_panel.Location = new System.Drawing.Point(0, 1);
+            this.action_panel.Location = new System.Drawing.Point(114, 66);
             this.action_panel.Name = "action_panel";
-            this.action_panel.Size = new System.Drawing.Size(365, 217);
+            this.action_panel.Size = new System.Drawing.Size(369, 218);
             this.action_panel.TabIndex = 10;
             this.action_panel.Visible = false;
             // 
@@ -905,7 +906,7 @@
             this.game_over_panel.Controls.Add(this.game_over_btn);
             this.game_over_panel.Controls.Add(this.game_over_title);
             this.game_over_panel.Controls.Add(this.game_over_txt);
-            this.game_over_panel.Location = new System.Drawing.Point(113, 70);
+            this.game_over_panel.Location = new System.Drawing.Point(114, 69);
             this.game_over_panel.Name = "game_over_panel";
             this.game_over_panel.Size = new System.Drawing.Size(365, 217);
             this.game_over_panel.TabIndex = 9;
@@ -914,14 +915,13 @@
             // tutorial_ask_panel
             // 
             this.tutorial_ask_panel.BackColor = System.Drawing.Color.FloralWhite;
-            this.tutorial_ask_panel.Controls.Add(this.action_panel);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_btn);
             this.tutorial_ask_panel.Controls.Add(this.button2);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_title);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_txt);
-            this.tutorial_ask_panel.Location = new System.Drawing.Point(121, 69);
+            this.tutorial_ask_panel.Location = new System.Drawing.Point(114, 67);
             this.tutorial_ask_panel.Name = "tutorial_ask_panel";
-            this.tutorial_ask_panel.Size = new System.Drawing.Size(365, 227);
+            this.tutorial_ask_panel.Size = new System.Drawing.Size(365, 217);
             this.tutorial_ask_panel.TabIndex = 10;
             this.tutorial_ask_panel.Visible = false;
             // 
@@ -1019,7 +1019,7 @@
             this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.info_panel.Controls.Add(this.info_close_button);
             this.info_panel.Controls.Add(this.info_text);
-            this.info_panel.Location = new System.Drawing.Point(117, 73);
+            this.info_panel.Location = new System.Drawing.Point(114, 69);
             this.info_panel.Name = "info_panel";
             this.info_panel.Size = new System.Drawing.Size(365, 208);
             this.info_panel.TabIndex = 9;
@@ -1097,6 +1097,7 @@
             this.event_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.event_title.Location = new System.Drawing.Point(59, 35);
             this.event_title.Name = "event_title";
+            this.event_title.ReadOnly = true;
             this.event_title.Size = new System.Drawing.Size(185, 20);
             this.event_title.TabIndex = 4;
             // 
@@ -1123,6 +1124,7 @@
             this.event_txt_box.Location = new System.Drawing.Point(59, 84);
             this.event_txt_box.Multiline = true;
             this.event_txt_box.Name = "event_txt_box";
+            this.event_txt_box.ReadOnly = true;
             this.event_txt_box.Size = new System.Drawing.Size(488, 106);
             this.event_txt_box.TabIndex = 4;
             this.event_txt_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
