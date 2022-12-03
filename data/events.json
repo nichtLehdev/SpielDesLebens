@@ -8755,6 +8755,355 @@
       ]
    },
    {
+      "id": "E-125",
+      "title": "Freitag 15 Uhr",
+      "text": "Keiner ist mehr in der Firma. Du hast aber einen Berg voll Arbeit.",
+      "info": "Arbeiten bringt Erfolg",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["1", "2", "3", "4"],
+               "phase": ["*!(*%2)"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["1", "2", "3", "4"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-125_1",
+            "title": "Du gehst ins Wochenende.",
+            "text": "Schade, deine Mental Health ist zwar gestiegen, dafür ist dein Chef nicht mit dir zufrieden!",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 0,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-125_2",
+            "title": "Du machst zwei Überstunden, um deine Aufgaben fertig zu stellen.",
+            "text": "Dein Wochenende war zwar schnell vorbei, dafür ist dein Chef sehr zufrieden mit dir",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": -10,
+               "money": 0,
+               "success": 15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-126",
+      "title": "Freitag 15 Uhr",
+      "text": "Keiner ist mehr in der Firma. Du hast so viel Arbeit, dass sich dein Schreibtisch unter dem Gewicht der Papiermassen durchbiegt.",
+      "info": "Zu viel Arbeiten macht krank",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["1", "2", "3", "4"],
+               "phase": ["*!(*%2)"]
+            },
+            {
+               "path": ["2"],
+               "profession": ["1", "2", "3", "4"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-126_1",
+            "title": "Du verlässt sofort das Büro.",
+            "text": "Schade, deine Mental Health ist zwar gestiegen, dafür ist dein Chef nicht mit dir zufrieden!",
+            "stats": {
+               "mentalHealth": 12,
+               "motivation": 0,
+               "money": 0,
+               "success": -17
+            }
+         },
+         {
+            "id": "E-126_2",
+            "title": "Du arbeitest weiter bis du die Wichtigsten Dinge fertig hast.",
+            "text": "Dein Wochenende war zwar schnell vorbei, dafür ist dein Chef sehr zufrieden mit dir",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": -10,
+               "money": 0,
+               "success": 15
+            }
+         },
+         {
+            "id": "E-126_3",
+            "title": "Du arbeitest bist du alles auf deinem Schreibtisch erledigt hast",
+            "text": "Das war leider zu viel, 7 Stunden später wachst du auf dem Boden auf wieder auf. Du bist wohl umgekippt. Eine Krankschreibung für zwei Wochen ist unvermeidbar.",
+            "stats": {
+               "mentalHealth": -20,
+               "motivation": -20,
+               "money": 0,
+               "success": -20
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-127",
+      "title": "neue Auszubildende",
+      "text": "Die neuen Auszubildenden kommen und du musst die Firmenführung leiten",
+      "info": "Einen guten ersten Eindruck zu hinterlassen ist das Ziel",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["1", "2", "3", "4"],
+               "phase": ["7", "13"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-127_1",
+            "title": "Du erklärst ihnen, wie schlecht diese Firma ist.",
+            "text": "Dein Chef ist mit deiner Leistung nicht zufrieden.",
+            "stats": {
+               "mentalHealth": 12,
+               "motivation": 0,
+               "money": 0,
+               "success": -17
+            }
+         },
+         {
+            "id": "E-127_2",
+            "title": "Du gibst dir Mühe und erzählst ihnen alles Relevante über die Firma.",
+            "text": "Super, du ermöglichst den Neuen ein angenehmen Einstieg.",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": -10,
+               "money": 0,
+               "success": 15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-128",
+      "title": "neue duale Studenten",
+      "text": "Die neuen dualen Studenten kommen und du musst die Firmenführung leiten",
+      "info": "Einen guten ersten Eindruck zu hinterlassen ist das Ziel",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["1"],
+               "profession": ["1", "2", "3", "4"],
+               "phase": ["6", "10"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-128_1",
+            "title": "Du erklärst ihnen, wie schlecht diese Firma ist.",
+            "text": "Dein Chef ist mit deiner Leistung nicht zufrieden.",
+            "stats": {
+               "mentalHealth": 12,
+               "motivation": 0,
+               "money": 0,
+               "success": -17
+            }
+         },
+         {
+            "id": "E-128_2",
+            "title": "Du gibst dir Mühe und erzählst ihnen alles Relevante über die Firma.",
+            "text": "Super, du ermöglichst den Neuen ein angenehmen Einstieg.",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": -10,
+               "money": 0,
+               "success": 15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-129",
+      "title": "halber Berufsschultag",
+      "text": "Alle aus deiner Berufsschulklasse dürfen nach dem halben Berufsschultag gehen. Nur du musst noch bis um 17:00 Uhr arbeiten.",
+      "info": "Überlege genau!",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-129_1",
+            "title": "Du gehst mit Freude in die Arbeit und freust dich, dass du etwas lernst.",
+            "text": "Du nimmst die Situation so hin, wie sie ist. Das erhöht zwar deinen Erfolg, mindert aber deine Mental Health und deine Motivation.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": -10,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-129_2",
+            "title": "Du suchst das Gespräch mit deinem Ausbilder/der Geschäftsleitung und fragst, ob du auch gehen darfst.",
+            "text": "Selbst wenn du trotzdem nicht gehen darfst, hast du dich getraut und Erfolgspunkte gesammelt. Auch charakterlich hast du dich vielleicht verbessert.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-129_3",
+            "title": "Du meldest dich einfach krank und verbringst einen entspannten Nachmittag.",
+            "text": "Leider trickst du deinen Arbeitgeber aus. Dein Erfolg und Mental Health sinken.",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": 0,
+               "money": 0,
+               "success": -15
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-130",
+      "title": "unfreundlicher Kunde",
+      "text": "Du hast es mit einem unfreundlichem Kunden zu tun. Wie regierst du?",
+      "info": "Der Kunde ist König",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["*!(%2)"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-130_1",
+            "title": "Du bleibst deinem Motto wie du mir so ich dir treu",
+            "text": "Beim nächsten Mal bitte mehr Professionalität.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": -10,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-130_2",
+            "title": "Du lässt dich nicht aus der Ruhe bringen und kümmerst dich bestmöglich um den Kunden.",
+            "text": "Schön, wie reif du bereits bist.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
+      ]
+   },
+   {
       "id": "E-998",
       "title": "Hofmann ist im Urlaub",
       "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
