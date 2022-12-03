@@ -336,7 +336,7 @@
             this.weiter_button.TabIndex = 15;
             this.weiter_button.Text = "Weiter";
             this.weiter_button.UseVisualStyleBackColor = false;
-            this.weiter_button.Click += new System.EventHandler();
+            this.weiter_button.Click += new System.EventHandler(open_next);
             // 
             // fiction_panel
             // 
