@@ -40,6 +40,11 @@
             return this.path;
         }
 
+        public int getPhaseLength()
+        {
+            return phaseLength;
+        }
+
         public Phase getPhase()
         {
             return phase;

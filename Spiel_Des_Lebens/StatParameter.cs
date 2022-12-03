@@ -28,13 +28,17 @@ namespace Spiel_Des_Lebens
         {
             if (toBeClampedTop)
             {
-                if (value < 100) { value = 100; }
+                if (value > 100) { value = 100; }
             }
         }
 
         public bool isGreater(StatParameter statParamenter)
         {
-            if(this.value > statParamenter.value)
+            if(this.value == -1)
+            {
+                return true;
+            }
+            if(this.value >= statParamenter.value)
             {
                 return true;
             }
@@ -43,7 +47,7 @@ namespace Spiel_Des_Lebens
 
         public bool isSmaller(StatParameter statParamenter)
         {
-            if (this.value < statParamenter.value)
+            if (this.value <= statParamenter.value)
             {
                 return true;
             }

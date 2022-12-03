@@ -10,8 +10,8 @@ namespace Spiel_Des_Lebens
         public Stat(int mentalHealth, int money, int motivation, int success)
         {
             stats.Add(new StatParameter(Data.StatType.mentalHealth, mentalHealth, true, true));
-            stats.Add(new StatParameter(Data.StatType.money, money, true, true));
-            stats.Add(new StatParameter(Data.StatType.motivation, motivation, true, false));
+            stats.Add(new StatParameter(Data.StatType.money, money, true, false));
+            stats.Add(new StatParameter(Data.StatType.motivation, motivation, true, true));
             stats.Add(new StatParameter(Data.StatType.success, success, true, true));
         }
 
@@ -32,7 +32,7 @@ namespace Spiel_Des_Lebens
 
         public bool isGreater(Stat stats1)
         {
-            for(int i=0; i < stats.Count; i++)
+            for (int i = 0; i < stats.Count; i++)
             {
                 if (!stats[i].isGreater(stats1.stats[i]))
                 {

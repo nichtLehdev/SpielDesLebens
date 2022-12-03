@@ -33,7 +33,7 @@ namespace Spiel_Des_Lebens
                 }
 
 
-                events.Add(new Event(e.id, e.title, e.text, e.priority, r, oList));
+                events.Add(new Event(e.id, e.title, e.text, e.info, e.priority, r, oList));
 
             }
             return events;
@@ -361,4 +361,3 @@ namespace Spiel_Des_Lebens
 
     }
 }
-

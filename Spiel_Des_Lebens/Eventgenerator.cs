@@ -11,26 +11,24 @@ namespace Spiel_Des_Lebens
 
         private List<Event> filteredEventsPathProfession = new List<Event>();
         private List<Event> filteredEventsPhase = new List<Event>();
-        private int seed = DateTime.Now.Millisecond;
+        private int seed;
 
 
         public Eventgenerator(EducationPath edupath)
         {
             this.edupath = edupath;
             filterEventsByPathProfession(loadEvents());
-            //this.events = filterEvents(events, path, profession);
             // TODO cleanup constructur, change player reset
-            // TODO JSON: add priority to events
             // TODO relative path to json file in package
         }
+
         //Prio: for loop frägt Randomized Num ab, if(Randomized>50...) ist prio 1, dann 50 halbieren und nochmal
         //Bei Priority = 0 Event wird direkt das erste Event der events Liste ausgeführt und gelöscht mittels Id aus filteredEventsPathProfession
-
         public Event nextEvent(Stat stats)
         {
             filterEventsByPhase();
             List<Event> events = filterEventsByStats(stats);
-            for (int i = 0; i < events.Count;)
+            for (int i = 0; i < events.Count; i++)
             {
                 if (events[i].priority == 0)
                 {
@@ -40,11 +38,12 @@ namespace Spiel_Des_Lebens
             }
             while (true)
             {
+                seed = DateTime.Now.Millisecond;
                 Random random = new Random(seed);
                 double chance = random.NextDouble() * (100 - 0);
                 double percentage = 50;
-                int prio = 0;
-                while (percentage < chance)
+                int prio = 1;
+                while (percentage >= chance)
                 {
                     prio++;
                     percentage /= 2;
@@ -60,7 +59,7 @@ namespace Spiel_Des_Lebens
                 if (prioEvents.Count != 0)
                 {
                     int eventIndex = random.Next(prioEvents.Count);
-                    filteredEventsPathProfession[findEventIndexByID(prioEvents[eventIndex].id)].priority *= 2;
+                    //filteredEventsPathProfession[findEventIndexByID(prioEvents[eventIndex].id)].priority *= 2;
                     return prioEvents[eventIndex];
                 }
             }
@@ -68,7 +67,7 @@ namespace Spiel_Des_Lebens
 
         private int findEventIndexByID(string id)
         {
-            for (int i = 0; i < filteredEventsPathProfession.Count;)
+            for (int i = 0; i < filteredEventsPathProfession.Count; i++)
             {
                 if (filteredEventsPathProfession[i].id == id)
                 {
@@ -124,6 +123,7 @@ namespace Spiel_Des_Lebens
         #region filter
         private void filterEventsByPhase()
         {
+            filteredEventsPhase.Clear();
             //filters out all Events, which are valid for the current Phase and puts these in filteredList
             foreach (Event e in filteredEventsPathProfession)
             {
