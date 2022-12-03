@@ -1505,7 +1505,7 @@
          {
             "id": "E-025_1",
             "title": "Metal Konzert",
-            "text": "Du gehst auf ein Konzert der Band Helloween. Die Stimmung ist super, das Bier schmeckt gut und du hast sehr viel Spaß im Moshpit.",
+            "text": "Du gehst auf ein Konzert der Band Halloween. Die Stimmung ist super, das Bier schmeckt gut und du hast sehr viel Spaß im Moshpit.",
             "stats": {
                "mentalHealth": 40,
                "motivation": 30,
@@ -1516,7 +1516,7 @@
          {
             "id": "E-025_2",
             "title": "Pop Konzert",
-            "text": "Du gehst auf ein Pop Konzert. Die Stimmung ist ausgelassen, der Alkohol schmeckt schrecklich und du erhälst eine Bierdusche.",
+            "text": "Du gehst auf ein Pop Konzert. Die Stimmung ist ausgelassen, der Alkohol schmeckt schrecklich und du erhältst eine Bierdusche.",
             "stats": {
                "mentalHealth": 20,
                "motivation": 15,
@@ -8570,9 +8570,14 @@
       "requirements": {
          "timings": [
             {
-               "path": ["*"],
+               "path": ["0", "2"],
                "profession": ["*"],
                "phase": ["*%2"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
             }
          ],
          "stats_min": {
@@ -8639,7 +8644,7 @@
       "id": "E-123",
       "title": "Projektarbeit",
       "text": "Du musst eine Projektarbeit erstellen und abgeben. Leider ist die Abgabe schon morgen. Was machst du?",
-      "info": "hat Auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf deinen Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -8696,7 +8701,7 @@
       "id": "E-124",
       "title": "Gruppenprojekt",
       "text": "Ihr müsst im Team ein Projekt durchführen und abgeben. Die Arbeit ist großteils fertig, aber hat noch Verbesserungspotential. Ihr habt noch eine Woche Zeit. Was macht ihr?",
-      "info": "hat Auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf deinen Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
