@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Policy;
+using static Spiel_Des_Lebens.Data;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Xml.Linq;
 
 namespace Spiel_Des_Lebens
 {
@@ -8,9 +12,9 @@ namespace Spiel_Des_Lebens
         private Player player;
         private Event currentEvent;
         private List<Action> currentActions;
-        public UI_Interface(bool avatar, int age, string name, Data.Path path, Data.Profession profession)
+        public UI_Interface(bool avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
         {
-            player = new Player(avatar, age, name, path, profession);
+            player = new Player(avatar, age, name, path, profession, graduation);
             nextAction();
         }
 
@@ -154,14 +158,6 @@ namespace Spiel_Des_Lebens
             }
         }
         #endregion
-
-        public int[] getNextActionList()
-        {
-            return null; //length 3 needs new Class Action
-        }
-        public void receiveAction(int action) //needs new Class Action
-        {
-        }
         public int getActionPoints()
         {
             return player.getEducationPath().getPhase().getActionPoints();
@@ -179,6 +175,11 @@ namespace Spiel_Des_Lebens
         public int getMaxPhaseNumber()
         {
             return player.getEducationPath().getPhase().getMaxPhaseNumber();
+        }
+
+        public Data.Graduation getGraduation()
+        {
+            return player.getGraduation();
         }
 
 
@@ -239,10 +240,66 @@ namespace Spiel_Des_Lebens
             player.getEducationPath().getPhase().subtractPoints(cost);
             if (player.getEducationPath().getPhase().getActionPoints() <= 0)
             {
-                player.getEducationPath().getPhase().nextPhase();
+                player.nextPhase();
                 nextAction();
             }
         }
 
+        public String getStatWarning()
+        {
+            Data.StatType? statType = player.checkStatSmaller(5);
+            string warning = "";
+            if(statType != null)
+            {               
+                switch ((int)statType)
+                {
+                    case 0: 
+                        warning = "Achtung!! Deine Mentale Gesundheit hat einen kritischen Zustand erreicht";
+                        break;
+                    case 1:
+                        warning = "Achtung!! Du bist fast Pleite";
+                        break;
+                    case 2:
+                        warning = "Achtung!! Deine Motivation hat einen kritischen Zustand erreicht";
+                        break;
+                    case 3:
+                        warning = "Achtung!! Dein Lernstand lässt vermuten, dass du die kommenden Klausuren nicht bestehen wirst";
+                        break;
+                }
+            }
+            return warning;
+        }
+
+        public String getGameOver()
+        {
+            Data.StatType? statType = player.checkStatSmaller(0);
+            string gameOver = "";
+            if (statType != null)
+            {
+                switch ((int)statType)
+                {
+                    case 0:
+                        gameOver = "Game Over!! Du hast nicht auf deine Mentale Gesundheit geachtet und hast daher Selbstmord begangen";
+                        break;
+                    case 1:
+                        gameOver = "Game Over!! Du bist Pleite und kannst deine laufenden Kosten nicht mehr tragen";
+                        break;
+                    case 2:
+                        gameOver = "Game Over!! Du hast keine Motivation mehr und dein Leben macht kein Sinn mehr";
+                        break;
+                    case 3:
+                        gameOver = "Game Over!! Du hast zu wenig gelernt und hast deine Prüfungen nicht bestanden";
+                        break;
+                }
+            }
+            return gameOver;
+        }
+        public void resetPath(Data.Path path, Data.Profession profession)
+        {
+            player.resetCareer(path, profession);
+            Stat stats = new Stat(10, 10, 10, 10);
+            player.changePlayerStat(stats);
+            nextAction();
+        }
     }
 }
