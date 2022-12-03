@@ -1549,7 +1549,7 @@
          "stats_max": {
             "mentalHealth": 100,
             "motivation": 100,
-            "money": -100000,
+            "money": -1,
             "success": 100
          }
       },
@@ -9107,7 +9107,7 @@
       "id": "E-131",
       "title": "Betriebsfeier",
       "text": "Es findet eine Betriebsfeier statt. Alle Mitarbeiter werden gebeten bei der Vorbereitung mitzuhelfen.",
-      "info": "Der Kunde ist König",
+      "info": "Kollegialer Zusammenhalt",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -9175,7 +9175,7 @@
       "id": "E-132",
       "title": "Kaffee für den Chef",
       "text": "Dein Chef hat zum dritten Mal diese Woche dir die Aufgabe geben Kaffee zu kochen und ihm eine Tasse davon zu bringen. Wie reagierst du?",
-      "info": "Der Kunde ist König",
+      "info": "Manchmal muss man sich trauen.",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -9235,6 +9235,58 @@
                "motivation": -5,
                "money": 0,
                "success": 7
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-133",
+      "title": "Ich will aber noch nicht ins Bett!",
+      "text": "21 Uhr, morgen musst du früh aufstehen. Aber du hast noch Lust eine oder zwei Runden LoL zu spielen. Was machst du?",
+      "info": "Schlaf ist wichtig für deine Gesundheit",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-133_1",
+            "title": "schlafen gehen",
+            "text": "Am nächsten morgen kommst du gut aus dem Bett, bist motiviert und voller Energie für einen neuen Tag",
+            "stats": {
+               "mentalHealth": 20,
+               "motivation": 20,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-133_2",
+            "title": "noch eine Runde",
+            "text": "Aus einer Runde wurden zwei, aus zwei wurden drei und aus drei wurden vier. Du kommst erst um 2 Uhr ins Bett und bist am nächsten morgen total müde und unkonzentriert.",
+            "stats": {
+               "mentalHealth": -15,
+               "motivation": -15,
+               "money": 0,
+               "success": 0
             }
          }
       ]
