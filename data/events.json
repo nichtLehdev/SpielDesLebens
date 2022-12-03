@@ -1959,7 +1959,7 @@
    {
       "id": "E-033",
       "title": "Mobbing  eines Freundes",
-      "text": Einer deiner Freunde wird gemobbt",
+      "text": "Einer deiner Freunde wird gemobbt",
       "info": "Verletzungsgefahr",
       "priority": 1,
       "requirements": {
@@ -8189,6 +8189,376 @@
                "success": -5
             }
          }
+      ]
+   },
+   {
+      "id": "E-117",
+      "title": "Dein Staatsexamen steht an",
+      "text": "Was ist nach deutschem Recht kein Mordmerkmal?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+        "timings": [
+          {
+            "path": [ "2" ],
+            "profession": [ "4" ],
+            "phase": [ "*" ]
+          }
+        ],
+        "stats_min": {
+          "mentalHealth": 0,
+          "motivation": 0,
+          "money": 0,
+          "success": 0
+        },
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": -1,
+          "success": 100
+        }
+      },
+      "options": [
+        {
+          "id": "E-117_1",
+          "title": "Befriedigung des Geschlechtstriebs",
+          "text": "Falsch! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-117_2",
+          "title": "Mordlust",
+          "text": "Falsch! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-117_3",
+          "title": "Grausamkeit",
+          "text": "Falsch! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-117_4",
+          "title": "Reflex",
+          "text": "Richtig! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-118",
+      "title": "Dein Staatsexamen steht an",
+      "text": "Welches Organ dient der staatlichen Finanzkontrolle des Bundes?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+        "timings": [
+          {
+            "path": [ "2" ],
+            "profession": [ "4" ],
+            "phase": [ "*" ]
+          }
+        ],
+        "stats_min": {
+          "mentalHealth": 0,
+          "motivation": 0,
+          "money": 0,
+          "success": 0
+        },
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": -1,
+          "success": 100
+        }
+      },
+      "options": [
+        {
+          "id": "E-118_1",
+          "title": "Bundesfinanzamt",
+          "text": "Falsch! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-118_2",
+          "title": "Bundesrechnungshof",
+          "text": "Richtig! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 5
+          }
+        },
+        {
+          "id": "E-118_3",
+          "title": "Bundesverwaltungsgericht",
+          "text": "Falsch! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-118_4",
+          "title": "Bundesverfassungsgericht",
+          "text": "Falsch! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-119",
+      "title": "Dein Staatsexamen steht an",
+      "text": "Wie nennt man die Instanz, die von einem Schuldner eine Leistung fordern darf?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+        "timings": [
+          {
+            "path": [ "2" ],
+            "profession": [ "4" ],
+            "phase": [ "*" ]
+          }
+        ],
+        "stats_min": {
+          "mentalHealth": 0,
+          "motivation": 0,
+          "money": 0,
+          "success": 0
+        },
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": -1,
+          "success": 100
+        }
+      },
+      "options": [
+        {
+          "id": "E-119_1",
+          "title": "Prorogator",
+          "text": "Falsch! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-119_2",
+          "title": "Gläubiger",
+          "text": "Richtig! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 5
+          }
+        },
+        {
+          "id": "E-119_3",
+          "title": "Liquidator",
+          "text": "Falsch! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-119_4",
+          "title": "Querulant",
+          "text": "Falsch! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-120",
+      "title": "Dein Staatsexamen steht an",
+      "text": "Wann wurde die letzte Todesstrafe auf dem Bundesgebiet der heutigen Bundesrepublik vollzogen?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+        "timings": [
+          {
+            "path": [ "2" ],
+            "profession": [ "4" ],
+            "phase": [ "*" ]
+          }
+        ],
+        "stats_min": {
+          "mentalHealth": 0,
+          "motivation": 0,
+          "money": 0,
+          "success": 0
+        },
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": -1,
+          "success": 100
+        }
+      },
+      "options": [
+        {
+          "id": "E-120_1",
+          "title": "1949",
+          "text": "Falsch! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-120_2",
+          "title": "1899",
+          "text": "Falsch! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-120_3",
+          "title": "1934",
+          "text": "Falsch! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-120_4",
+          "title": "1981",
+          "text": "Richtig! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "E-121",
+      "title": "Dein Staatsexamen steht an",
+      "text": "Welche Widerrufsfrist steht Verbrauchern nach §312d BGB zu, die einen Fernabsatzvertrag (z.B. am Telefon oder im Internet) eingegangen sind?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 2,
+      "requirements": {
+        "timings": [
+          {
+            "path": [ "2" ],
+            "profession": [ "4" ],
+            "phase": [ "*" ]
+          }
+        ],
+        "stats_min": {
+          "mentalHealth": 0,
+          "motivation": 0,
+          "money": 0,
+          "success": 0
+        },
+        "stats_max": {
+          "mentalHealth": 100,
+          "motivation": 100,
+          "money": -1,
+          "success": 100
+        }
+      },
+      "options": [
+        {
+          "id": "E-121_1",
+          "title": "zwei Jahre",
+          "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-121_2",
+          "title": "zwei Wochen",
+          "text": "Richtig! Die Widerrufsfrist beträgt zwei Wochen.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 5
+          }
+        },
+        {
+          "id": "E-121_3",
+          "title": "zwei Tage",
+          "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
+        {
+          "id": "E-121_4",
+          "title": "zwei Monate",
+          "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        }
       ]
    },
    {
