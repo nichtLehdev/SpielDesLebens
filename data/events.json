@@ -3,7 +3,7 @@
       "id": "E-001",
       "title": "Bewerbung schreiben",
       "text": "Was gehört NICHT in ein Bewerbungsschreiben?",
-      "info": "hat Auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf deinen Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -30,7 +30,7 @@
          {
             "id": "E-001_1",
             "title": "Lebenslauf nacherzählen",
-            "text": "korrekt, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug.",
+            "text": "Korrekt, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -41,7 +41,7 @@
          {
             "id": "E-001_2",
             "title": "Unternehmensbezug",
-            "text": "falsch, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug. \n Unter https://www.arbeitsagentur.de/erfolgreich-bewerben/bewerbung-schreiben findest du weitere Infos zum Bewerbungsschreiben",
+            "text": "Falsch, in ein Bewerbungsschreiben gehört die persönliche Motivation und der Unternehmensbezug. \n Unter https://www.arbeitsagentur.de/erfolgreich-bewerben/bewerbung-schreiben findest du weitere Infos zum Bewerbungsschreiben",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -82,7 +82,7 @@
          {
             "id": "E-002_1",
             "title": "Motivation & Unternehmensbezug",
-            "text": "korrekt, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug.",
+            "text": "Korrekt, in ein Bewerbungsschreiben gehört die persönliche Motivation und der Unternehmensbezug.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -93,7 +93,7 @@
          {
             "id": "E-002_2",
             "title": "Beziehungsstatus & Kontostand",
-            "text": "falsch, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug. weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+            "text": "Falsch, in ein Bewerbungsschreiben gehört die persönliche Motivation und der Unternehmensbezug. weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -107,7 +107,7 @@
       "id": "E-003",
       "title": "Lebenslauf erstellen",
       "text": "Was kommt in den Lebenslauf?",
-      "info": "hat Auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf deinen Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -134,7 +134,7 @@
          {
             "id": "E-003_1",
             "title": "Informationen über andere Familienmitglieder",
-            "text": "falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+            "text": "Falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -145,7 +145,7 @@
          {
             "id": "E-003_2",
             "title": "Religionszugehörigkeit",
-            "text": "falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+            "text": "Falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -155,8 +155,8 @@
          },
          {
             "id": "E-003_3",
-            "title": "höchster Schulabschluss, relevante Praktika, geeignetes Porträt, sonstige Qualifikationen, evtl. Freizeitaktivitäten",
-            "text": "korrekt, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+            "title": "Höchster Schulabschluss, relevante Praktika, geeignetes Porträt, sonstige Qualifikationen, evtl. Freizeitaktivitäten",
+            "text": "Korrekt, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -167,7 +167,7 @@
          {
             "id": "E-003_4",
             "title": "Selbstfindungsphase",
-            "text": "falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+            "text": "Falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -181,7 +181,7 @@
       "id": "E-004",
       "title": "Bildauswahl für den Lebenslauf",
       "text": "Wähle ein Bild für deinen Lebenslauf aus:",
-      "info": "hat Auswirkungen auf den Erfolg",
+      "info": "hat Auswirkungen auf deinen Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -208,7 +208,7 @@
          {
             "id": "E-004_1",
             "title": "5 Jahre altes neutrales Porträt von dir",
-            "text": "falsch, zu verwenden ist ein aktuelles Porträt von dir",
+            "text": "Falsch, zu verwenden ist ein aktuelles Porträt von dir",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -218,8 +218,8 @@
          },
          {
             "id": "E-004_2",
-            "title": "aktuelles Porträt von dir",
-            "text": "richtig, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+            "title": "Aktuelles Porträt von dir",
+            "text": "Richtig, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -230,7 +230,7 @@
          {
             "id": "E-004_3",
             "title": "Freizeitfoto",
-            "text": "falsch, zu verwenden ist ein aktuelles Porträt von dir",
+            "text": "Falsch, zu verwenden ist ein aktuelles Porträt von dir",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -240,8 +240,8 @@
          },
          {
             "id": "E-004_4",
-            "title": "sehr Freizügiges Foto... ;)",
-            "text": "falsch, zu verwenden ist ein aktuelles Porträt von dir mit Klamotten!",
+            "title": "Sehr Freizügiges Foto... ;)",
+            "text": "Falsch, zu verwenden ist ein aktuelles Porträt von dir mit Klamotten!",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -254,7 +254,7 @@
    {
       "id": "E-005",
       "title": "Hobbys für den Lebenslauf",
-      "text": "welche Hobbys kommen für einen Lebenslauf in Frage?:",
+      "text": "Welche Hobbys kommen für einen Lebenslauf in Frage?:",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
@@ -282,7 +282,7 @@
          {
             "id": "E-005_1",
             "title": "Sport, Nähen, Programmieren, Lesen, Kochen, ehrenamtliche Aktivitäten",
-            "text": "korrekt, dies sind zulässige Hobbys falls Sie einen Berufsbezug haben oder als Ausgleich dienen können",
+            "text": "Korrekt, dies sind zulässige Hobbys, falls Sie einen Berufsbezug haben oder als Ausgleich dienen können",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -293,7 +293,7 @@
          {
             "id": "E-005_2",
             "title": "mit Freunden treffen, Sex, Drogen nehmen",
-            "text": "falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+            "text": "Falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -334,7 +334,7 @@
          {
             "id": "E-006_1",
             "title": "weiß ich nicht",
-            "text": "schlechte Antwort, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+            "text": "Schlechte Antwort, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -344,8 +344,8 @@
          },
          {
             "id": "E-006_2",
-            "title": "in diesem Unternehmen in Position x",
-            "text": "so, oder so ähnlich kann die Antwort ausfallen. Die Frage zielt auf die Beruflichen Ambitionen ab.",
+            "title": "In diesem Unternehmen in Position x",
+            "text": "So, oder so ähnlich kann die Antwort ausfallen. Die Frage zielt auf die Beruflichen Ambitionen ab.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -386,7 +386,7 @@
          {
             "id": "E-007_1",
             "title": "klang ganz gut",
-            "text": "schlechte Antwort, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+            "text": "Schlechte Antwort, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -558,7 +558,7 @@
          {
             "id": "E-010_2",
             "title": "du begibst dich planlos auf die Suche",
-            "text": "du irrst durch die Firma bis dich ein Mitarbeiter anspricht und an deinen Platz bringt.",
+            "text": "Du irrst durch die Firma bis dich ein Mitarbeiter anspricht und an deinen Platz bringt.",
             "stats": {
                "mentalHealth": -5,
                "motivation": -2,
@@ -661,7 +661,7 @@
          {
             "id": "E-012_1",
             "title": "mit Lästern",
-            "text": "du Lästerst eifrig mit und lässt einen sehr unangemessenen Kommentar über Meike fallen als der Chef dazukommt.",
+            "text": "Du lästerst eifrig mit und lässt einen sehr unangemessenen Kommentar über Meike fallen als der Chef dazukommt.",
             "stats": {
                "mentalHealth": -5,
                "motivation": -5,
@@ -672,7 +672,7 @@
          {
             "id": "E-012_2",
             "title": "nicht darauf eingehen",
-            "text": "du Lästerst nicht mit.",
+            "text": "Du Lästerst nicht mit.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -740,7 +740,7 @@
          {
             "id": "E-013_1",
             "title": "Überstunden machen",
-            "text": "du bleibst 2 h länger auf der Arbeit um die Aufgabe fertigzustellen. Dein Chef ist Glücklich.",
+            "text": "Du bleibst 2 h länger auf der Arbeit um die Aufgabe fertigzustellen. Dein Chef ist glücklich.",
             "stats": {
                "mentalHealth": 5,
                "motivation": 5,
@@ -750,8 +750,8 @@
          },
          {
             "id": "E-013_2",
-            "title": "morgen fertigstellen",
-            "text": "du machst Feierabend und erledigt die Aufgabe am nächsten Tag.",
+            "title": "Morgen fertigstellen",
+            "text": "Du machst Feierabend und erledigst die Aufgabe am nächsten Tag.",
             "stats": {
                "mentalHealth": 0,
                "motivation": -5,
@@ -764,7 +764,7 @@
    {
       "id": "E-014",
       "title": "Deadline",
-      "text": "das Projekt an dem du aktuell arbeitest wird nicht rechtzeitig fertig werden.",
+      "text": "Das Projekt an dem du aktuell arbeitest wird nicht rechtzeitig fertig werden.",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
@@ -797,7 +797,7 @@
          {
             "id": "E-014_1",
             "title": "dem Chef Bescheid geben",
-            "text": "du gibst deinem Chef Bescheid, dass du ds Projekt nicht rechtzeitig fertig bekommen wirst. Und ihr findet gemeinsam eine Lösung.",
+            "text": "Du gibst deinem Chef Bescheid, dass du das Projekt nicht rechtzeitig fertig bekommen wirst. Und ihr findet gemeinsam eine Lösung.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 5,
@@ -808,7 +808,7 @@
          {
             "id": "E-014_2",
             "title": "Überstunden schieben",
-            "text": "du machst sehr viele Überstunden, das Projekt wird rechtzeitig fertig, die Qualität ist gerade so ausreichend und du bist überarbeitet. ",
+            "text": "Du machst sehr viele Überstunden, das Projekt wird rechtzeitig fertig, die Qualität ist gerade so ausreichend und du bist überarbeitet.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 5,
@@ -821,7 +821,7 @@
    {
       "id": "E-015",
       "title": "Alzheimer Patient",
-      "text": "du hast eine alte Frau zu versorgen. Sie fragt dich jetzt schon zum 7. Mal wie alt du bist.",
+      "text": "Du hast eine alte Frau zu versorgen. Sie fragt dich jetzt schon zum 7. Mal wie alt du bist.",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
@@ -854,7 +854,7 @@
          {
             "id": "E-015_1",
             "title": "die Geduld verlieren",
-            "text": "du verlierst die Geduld und schreist die Patientin an. Deine Chefin ist nicht begeistert und mahnt dich ab.",
+            "text": "Du verlierst die Geduld und schreist die Patientin an. Deine Chefin ist nicht begeistert und mahnt dich ab.",
             "stats": {
                "mentalHealth": -10,
                "motivation": -10,
@@ -865,7 +865,7 @@
          {
             "id": "E-015_2",
             "title": "du antwortest",
-            "text": "du lässt dir dein genervt sein nicht anmerken und Antwortest. Deine Chefin ist von deiner Geduld beeindruckt.",
+            "text": "Du lässt dir dein genervt sein nicht anmerken und antwortest. Deine Chefin ist von deiner Geduld beeindruckt.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 10,
@@ -876,7 +876,7 @@
          {
             "id": "E-015_3",
             "title": "du ignorierst die Frage",
-            "text": "du lässt dir dein genervt sein nicht anmerken und Antwortest. Deine Chefin ist von deiner Geduld beeindruckt.",
+            "text": "Du lässt dir dein genervt sein nicht anmerken und antwortest. Deine Chefin ist von deiner Geduld beeindruckt.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 10,
@@ -887,7 +887,7 @@
          {
             "id": "E-015_4",
             "title": "auf die Wiederholung hinweisen",
-            "text": "du sagst ihr, dass sie diese Frage nun zum 100. Mal stellt und sich dein Alter in den letzten paar Minuten nicht geändert hat. Die Patientin fängt an zu weinen.",
+            "text": "Du sagst ihr, dass sie diese Frage nun zum 100. Mal stellt und sich dein Alter in den letzten paar Minuten nicht geändert hat. Die Patientin fängt an zu weinen.",
             "stats": {
                "mentalHealth": -10,
                "motivation": -5,
@@ -899,7 +899,7 @@
    },
    {
       "id": "E-016",
-      "title": "neuer Mitschüler",
+      "title": "Neuer Mitschüler",
       "text": "Im Klassenzimmer triffst du auf einen neuen Mitschüler, er sieht unsicher aus.",
       "info": "potentieller sozialer Kontakt",
       "priority": 1,
@@ -928,7 +928,7 @@
          {
             "id": "E-016_1",
             "title": "Ansprechen",
-            "text": "du stellst dich dem neuen Mitschüler/Kommilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde bildet eine Lerngruppe",
+            "text": "Du stellst dich dem neuen Mitschüler/Kommilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde und bildet eine Lerngruppe",
             "stats": {
                "mentalHealth": 10,
                "motivation": 30,
@@ -939,7 +939,7 @@
          {
             "id": "E-016_2",
             "title": "Ignorieren",
-            "text": "du gehst an dem neuen Mitschüler vorbei ohne ihn zu beachten und setzt dich auf deinen Platz",
+            "text": "Du gehst an dem neuen Mitschüler vorbei ohne ihn zu beachten und setzt dich auf deinen Platz",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -953,7 +953,7 @@
       "id": "E-017",
       "title": "Einladung zur Party",
       "text": "Du wirst zu einer Party eingeladen",
-      "info": "potentieller sozialer Kontakt, Absturz Gefahr",
+      "info": "potentieller sozialer Kontakt, Absturzgefahr",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -979,8 +979,8 @@
       "options": [
          {
             "id": "E-017_1",
-            "title": "zusagen",
-            "text": "du kommst zur Party und hast eine tolle Zeit aber der Morgen danach bringt das böse Erwachen",
+            "title": "Zusagen",
+            "text": "Du kommst zur Party und hast eine tolle Zeit aber der Morgen danach bringt das böse Erwachen",
             "stats": {
                "mentalHealth": 15,
                "motivation": 0,
@@ -990,8 +990,8 @@
          },
          {
             "id": "E-017_2",
-            "title": "absagen",
-            "text": "du sagst ab und verbringst das Wochenende mit lernen",
+            "title": "Absagen",
+            "text": "Du sagst ab und verbringst das Wochenende mit lernen",
             "stats": {
                "mentalHealth": 0,
                "motivation": -10,
@@ -1032,7 +1032,7 @@
          {
             "id": "E-018_1",
             "title": "Lerngruppe",
-            "text": "du trittst einer Lerngruppe bei",
+            "text": "Du trittst einer Lerngruppe bei",
             "stats": {
                "mentalHealth": 15,
                "motivation": 15,
@@ -1043,21 +1043,21 @@
          {
             "id": "E-018_2",
             "title": "professionelle Nachhilfe",
-            "text": "du nimmst dir Nachhilfe und zahlst Monatlich Geld",
+            "text": "Du nimmst dir Nachhilfe und zahlst Monatlich Geld",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
                "money": -20,
-               "success": 0
+               "success": 20
             }
          }
       ]
    },
    {
       "id": "E-019",
-      "title": "Mobbing  eines Freundes",
-      "text": "einer deiner Freunde wird gemobbt",
-      "info": "verletzungsgefahr",
+      "title": "Mobbing eines Freundes",
+      "text": "Einer deiner Freunde wird gemobbt",
+      "info": "Verletzungsgefahr",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -1083,8 +1083,8 @@
       "options": [
          {
             "id": "E-019_1",
-            "title": "verteidigen",
-            "text": "du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
+            "title": "Verteidigen",
+            "text": "Du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
             "stats": {
                "mentalHealth": 15,
                "motivation": 0,
@@ -1094,8 +1094,8 @@
          },
          {
             "id": "E-019_2",
-            "title": "weglaufen",
-            "text": "du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
+            "title": "Weglaufen",
+            "text": "Du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
             "stats": {
                "mentalHealth": -10,
                "motivation": 0,
@@ -1105,8 +1105,8 @@
          },
          {
             "id": "E-019_3",
-            "title": "mitmachen",
-            "text": "du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
+            "title": "Mitmachen",
+            "text": "Du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
             "stats": {
                "mentalHealth": -30,
                "motivation": 0,
@@ -1116,8 +1116,8 @@
          },
          {
             "id": "E-019_4",
-            "title": "zuschauen und danach helfen",
-            "text": "du schaust zu wie dein Freund fertig gemacht wird und bietest ihm danach ein Pflaster für seine Wunde an.",
+            "title": "Zuschauen und danach helfen",
+            "text": "Du schaust zu wie dein Freund fertig gemacht wird und bietest ihm danach ein Pflaster für seine Wunde an.",
             "stats": {
                "mentalHealth": -10,
                "motivation": 0,
@@ -1129,9 +1129,9 @@
    },
    {
       "id": "E-020",
-      "title": "Mobbing  eines Freundes",
-      "text": "einer deiner Freunde wird gemobbt",
-      "info": "verletzungsgefahr",
+      "title": "Mobbing eines Freundes",
+      "text": "Einer deiner Freunde wird gemobbt",
+      "info": "Verletzungsgefahr",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -1157,8 +1157,8 @@
       "options": [
          {
             "id": "E-020_1",
-            "title": "verteidigen",
-            "text": "du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
+            "title": "Verteidigen",
+            "text": "Du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 0,
@@ -1168,8 +1168,8 @@
          },
          {
             "id": "E-020_2",
-            "title": "weglaufen",
-            "text": "du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
+            "title": "Weglaufen",
+            "text": "Du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
             "stats": {
                "mentalHealth": -10,
                "motivation": 0,
@@ -1179,8 +1179,8 @@
          },
          {
             "id": "E-020_3",
-            "title": "mitmachen",
-            "text": "du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
+            "title": "Mitmachen",
+            "text": "Du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
             "stats": {
                "mentalHealth": -30,
                "motivation": 0,
@@ -1232,7 +1232,7 @@
          {
             "id": "E-021_2",
             "title": "im Code suchen",
-            "text": "Du durchsuchst den Code nach dem Fehler und grübelst 90 Minuten darüber nach bis du schließlich doch googelst.",
+            "text": "Du durchsuchst den Code nach dem Fehler und grübelst 90 Minuten darüber nach, bis du schließlich doch googelst.",
             "stats": {
                "mentalHealth": -5,
                "motivation": -10,
@@ -1244,7 +1244,7 @@
    },
    {
       "id": "E-022",
-      "title": "Klausuren Phase",
+      "title": "Klausurenphase",
       "text": "Die Prüfungen stehen an, du wirst zu einer Geburtstagsfeier eingeladen.",
       "info": "hat Auswirkungen auf Erfolg",
       "priority": 1,
@@ -1323,7 +1323,7 @@
    },
    {
       "id": "E-023",
-      "title": "Klausuren Phase",
+      "title": "Klausurenphase",
       "text": "Die Prüfungen stehen an, du kommst in einem Fach nicht gut voran.",
       "info": "hat Auswirkungen auf Erfolg",
       "priority": 1,
@@ -1430,8 +1430,8 @@
       "options": [
          {
             "id": "E-024_1",
-            "title": "Urlaub mit Komilitonen",
-            "text": "Du fährst mit einer kleine Gruppe aus deinem Kurs auf eine Tropische Insel.",
+            "title": "Urlaub mit Kommilitonen",
+            "text": "Du fährst mit einer kleine Gruppe aus deinem Kurs auf eine tropische Insel.",
             "stats": {
                "mentalHealth": 50,
                "motivation": 30,
@@ -1516,7 +1516,7 @@
          {
             "id": "E-025_2",
             "title": "Pop Konzert",
-            "text": "Du gehst auf ein Pop Konzert. Die Stimmung ist ausgelassen, der Alkohol schmeckt schrecklich und du erhälst eine Bierdusche. ",
+            "text": "Du gehst auf ein Pop Konzert. Die Stimmung ist ausgelassen, der Alkohol schmeckt schrecklich und du erhälst eine Bierdusche.",
             "stats": {
                "mentalHealth": 20,
                "motivation": 15,
@@ -1630,8 +1630,8 @@
       "options": [
          {
             "id": "E-027_1",
-            "title": "Den Jon annehmen",
-            "text": "Du nimmst den job an und leistest sehr gute Arbeit. Außerdem hast du sehr guten Kontakt zu deinem Professor.",
+            "title": "Den Job annehmen",
+            "text": "Du nimmst den Job an und leistest sehr gute Arbeit. Außerdem hast du sehr guten Kontakt zu deinem Professor.",
             "stats": {
                "mentalHealth": 20,
                "motivation": 20,
@@ -1683,7 +1683,7 @@
          {
             "id": "E-028_1",
             "title": "Das Gras kaufen",
-            "text": "Du rauchst einen Joint jetzt und hebst dir den Rest für später auf. Du bist aktuell sehr Glücklich, verpasst den Bus den du nehmen wolltest aber das ist dir egal.",
+            "text": "Du rauchst jetzt einen Joint und hebst dir den Rest für später auf. Du bist aktuell sehr glücklich und verpasst den Bus den du nehmen wolltest aber, das ist dir egal.",
             "stats": {
                "mentalHealth": 3,
                "motivation": 5,
@@ -1716,7 +1716,7 @@
          {
             "id": "E-028_4",
             "title": "ihn beschimpfen",
-            "text": "Du nennst ihn einen Junkie, sagst ihm dass er es im Leben nie zu etwas bringen wird und er sich zum Teufel scheren soll. Der Dealer hat eine sehr starke Rechte...",
+            "text": "Du nennst ihn einen Junkie, sagst ihm, dass er es im Leben nie zu etwas bringen wird und er sich zum Teufel scheren soll. Der Dealer hat eine sehr starke Rechte...",
             "stats": {
                "mentalHealth": -5,
                "motivation": -15,
@@ -1757,7 +1757,7 @@
          {
             "id": "E-029_1",
             "title": "Das Koks kaufen",
-            "text": "Du nimmst einen Zug jetzt und hebst dir den Rest für später auf. Du bist aktuell sehr Glücklich, verläufst dich aber auf dem Heimweg.",
+            "text": "Du nimmst jetzt einen Zug und hebst dir den Rest für später auf. Du bist aktuell sehr Glücklich, verläufst dich aber auf dem Heimweg.",
             "stats": {
                "mentalHealth": 5,
                "motivation": 6,
@@ -1842,7 +1842,7 @@
          {
             "id": "E-030_2",
             "title": "Ignorieren",
-            "text": "du gehst an dem neuen Mitschüler vorbei ohne ihn zu beachten und setzt dich auf deinen Platz",
+            "text": "Du gehst an dem neuen Mitschüler vorbei ohne ihn zu beachten und setzt dich auf deinen Platz",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -1883,7 +1883,7 @@
          {
             "id": "E-031_1",
             "title": "zusagen",
-            "text": "du kommst zur Party und hast eine tolle Zeit aber der Morgen danach bringt das böse Erwachen",
+            "text": "Du kommst zur Party und hast eine tolle Zeit aber der Morgen danach bringt das böse Erwachen",
             "stats": {
                "mentalHealth": 15,
                "motivation": 0,
@@ -1894,7 +1894,7 @@
          {
             "id": "E-031_2",
             "title": "absagen",
-            "text": "du sagst ab und verbringst das Wochenende mit lernen",
+            "text": "Du sagst ab und verbringst das Wochenende mit lernen",
             "stats": {
                "mentalHealth": 0,
                "motivation": -10,
@@ -1935,7 +1935,7 @@
          {
             "id": "E-032_1",
             "title": "Lerngruppe",
-            "text": "du trittst einer Lerngruppe bei",
+            "text": "Du trittst einer Lerngruppe bei",
             "stats": {
                "mentalHealth": 15,
                "motivation": 15,
@@ -1946,7 +1946,7 @@
          {
             "id": "E-032_2",
             "title": "professionelle Nachhilfe",
-            "text": "du nimmst dir Nachhilfe und zahlst Monatlich Geld",
+            "text": "Du nimmst dir Nachhilfe und zahlst Monatlich Geld",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -1959,8 +1959,8 @@
    {
       "id": "E-033",
       "title": "Mobbing  eines Freundes",
-      "text": "einer deiner Freunde wird gemobbt",
-      "info": "verletzungsgefahr",
+      "text": Einer deiner Freunde wird gemobbt",
+      "info": "Verletzungsgefahr",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -1987,7 +1987,7 @@
          {
             "id": "E-033_1",
             "title": "verteidigen",
-            "text": "du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
+            "text": "Du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
             "stats": {
                "mentalHealth": 15,
                "motivation": 0,
@@ -1998,7 +1998,7 @@
          {
             "id": "E-033_2",
             "title": "weglaufen",
-            "text": "du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
+            "text": "Du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
             "stats": {
                "mentalHealth": -10,
                "motivation": 0,
@@ -2009,7 +2009,7 @@
          {
             "id": "E-033_3",
             "title": "mitmachen",
-            "text": "du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
+            "text": "Du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
             "stats": {
                "mentalHealth": -30,
                "motivation": 0,
@@ -2020,7 +2020,7 @@
          {
             "id": "E-033_4",
             "title": "zuschauen und danach helfen",
-            "text": "du schaust zu wie dein Freund fertig gemacht wird und bietest ihm danach ein Pflaster für seine Wunde an.",
+            "text": "Du schaust zu wie dein Freund fertig gemacht wird und bietest ihm danach ein Pflaster für seine Wunde an.",
             "stats": {
                "mentalHealth": -10,
                "motivation": 0,
@@ -2072,7 +2072,7 @@
          {
             "id": "E-034_2",
             "title": "Bäcker",
-            "text": "du holst dir mit ein paar anderen Kommilitonen etwas vom Becker.",
+            "text": "Du holst dir mit ein paar anderen Kommilitonen etwas vom Bäcker.",
             "stats": {
                "mentalHealth": 20,
                "motivation": 0,
@@ -2283,7 +2283,7 @@
          {
             "id": "E-037_1",
             "title": "schlafen",
-            "text": "Da du bis 5 Uhr Morgens Hellblade Seuna`s Sacrifice gespielt hast bist du Müde und schläft in der Vorlesung. Da hast Albträume vom Höllenbiest.",
+            "text": "Da du bis 5 Uhr Morgens Hellblade Seuna`s Sacrifice gespielt hast bist du müde und schläft in der Vorlesung. Du hast Albträume vom Höllenbiest.",
             "stats": {
                "mentalHealth": -5,
                "motivation": 0,
@@ -2507,7 +2507,7 @@
    {
       "id": "E-041",
       "title": "Klausurfragen von Martin",
-      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Wie oft denkt ein Mensch durchschnittlich an sex?",
+      "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Wie oft denkt ein Mensch durchschnittlich an Sex?",
       "info": "nur die richtige Antwort hat Auswirkungen.",
       "priority": 3,
       "requirements": {
@@ -2540,7 +2540,7 @@
          {
             "id": "E-041_1",
             "title": "alle 30 Minuten",
-            "text": "falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
+            "text": "Falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -2562,7 +2562,7 @@
          {
             "id": "E-041_3",
             "title": "alle 10 Minuten",
-            "text": "falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
+            "text": "Falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 0,
@@ -2573,7 +2573,7 @@
          {
             "id": "E-041_4",
             "title": "alle 5 Minuten",
-            "text": "falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
+            "text": "Falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -2641,7 +2641,7 @@
          {
             "id": "E-042_3",
             "title": "in der Badewanne einschlafen",
-            "text": "Korrekt, diese Methode ist schmerzfrei und hinterlässt keine sauerei. Man füllte die Badewanne mit lauwarmem Wasser, nimmt eine Schlaftablette, gönnt sich noch ein Glas Wein und schläft friedlich ein.",
+            "text": "Korrekt, diese Methode ist schmerzfrei und hinterlässt keine Sauerei. Man füllt die Badewanne mit lauwarmem Wasser, nimmt eine Schlaftablette, gönnt sich noch ein Glas Wein und schläft friedlich ein.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -2869,7 +2869,7 @@
          {
             "id": "E-046_1",
             "title": "den selben Charme wie ein Rocker",
-            "text": "Korrekt, erfolgreiche Informatiker haben den Charme eines Rockers (alte, weiße, stinke Männer). Sowohl Informatiker als auch Rocker haben in ihrem Beruf sehr viel Freiheiten und potenziell ein hohes Gehalt.",
+            "text": "Korrekt, erfolgreiche Informatiker haben den Charme eines Rockers (alte, weiße, stinkende Männer). Sowohl Informatiker als auch Rocker haben in ihrem Beruf sehr viel Freiheiten und potenziell ein hohes Gehalt.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 10,
@@ -2880,7 +2880,7 @@
          {
             "id": "E-046_2",
             "title": "den selben Charme wie ein BWLer",
-            "text": "Falsch, ein Informatiker hat rein gar nicht mit einem Informatiker gemeinsam.",
+            "text": "Falsch, ein Informatiker hat rein gar nichts mit einem BWLer gemeinsam.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -3380,7 +3380,7 @@
       "options": [
          {
             "id": "E-053_1",
-            "title": "Eine folge aus 4 Zahlen",
+            "title": "Eine Folge aus 4 Zahlen",
             "text": "Falsch, ein Bit ist eine Binärziffer.",
             "stats": {
                "mentalHealth": 0,
@@ -4939,7 +4939,7 @@
    {
       "id": "E-071",
       "title": "Klausurfragen Medizin",
-      "text": "Du schreibst eine Klausur in Medizin. Wie viel Herzklappen gibt es im menschlichen Herzen?",
+      "text": "Du schreibst eine Klausur in Medizin. Wie viele Herzklappen gibt es im menschlichen Herzen?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
@@ -5023,7 +5023,7 @@
    {
       "id": "E-072",
       "title": "Klausurfragen Medizin",
-      "text": "Du schreibst eine Klausur in Medizin. Wo im menschlichen Körper finden sich Flimmerhärchen?",
+      "text": "Du schreibst eine Klausur in Medizin. Wo im menschlichen Körper befinden sich Flimmerhärchen?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
@@ -5744,7 +5744,7 @@
          {
             "id": "E-080_2",
             "title": "kann Hacken",
-            "text": "Falsch, aber nur wenige Informatiker sind Hacker. Oder vielleicht wollen sie nur, dass du das glaubst? Muhahahahaaa",
+            "text": "Falsch, nur wenige Informatiker sind Hacker. Oder vielleicht wollen sie nur, dass du das glaubst? Muhahahahaaa",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -6168,20 +6168,20 @@
          }
       },
       "options": [
-         {
-            "id": "E-086_1",
-            "title": "Bekleidung, Automobile, Lebensmittel",
-            "text": "Falsch, das ist die Verwendung von Konsumgütern.",
-            "stats": {
-               "mentalHealth": 0,
-               "motivation": 0,
-               "money": 0,
-               "success": -5
-            }
-         },
+        {
+          "id": "E-086_1",
+          "title": "Bekleidung, Automobile, Lebensmittel",
+          "text": "Falsch, das sind keine Investitionsgüter.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": -5
+          }
+        },
          {
             "id": "E-086_2",
-            "title": " Arbeitskraft, Material, Maschinen",
+            "title": "Arbeitskraft, Material, Maschinen",
             "text": "Richtig.",
             "stats": {
                "mentalHealth": 0,
@@ -6244,7 +6244,7 @@
          {
             "id": "E-087_2",
             "title": " Arbeitskraft, Material, Maschinen",
-            "text": "Falsch, das ist die Verwendung von Investitionsgütern.",
+            "text": "Falsch, das sind keine Konsumgüter",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -6294,7 +6294,7 @@
       "options": [
          {
             "id": "E-088_1",
-            "title": "Kaufmann ist wer Handelsgewerbe betreibt.",
+            "title": "Kaufmann ist, wer Handelsgewerbe betreibt.",
             "text": "Richtig.",
             "stats": {
                "mentalHealth": 0,
@@ -6303,17 +6303,17 @@
                "success": 5
             }
          },
-         {
-            "id": "E-088_2",
-            "title": "Kaufmann ist wer kaufsüchtig ist.",
-            "text": "Falsch, das ist die Verwendung von Investitionsgütern.",
-            "stats": {
-               "mentalHealth": 0,
-               "motivation": 0,
-               "money": 0,
-               "success": 5
-            }
-         }
+        {
+          "id": "E-088_2",
+          "title": "Kaufmann ist wer kaufsüchtig ist.",
+          "text": "Falsch, Kaufmann ist, wer Handelsgewerbe betreibt.",
+          "stats": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 5
+          }
+        }
       ]
    },
    {
@@ -6948,7 +6948,7 @@
       "options": [
          {
             "id": "E-100_1",
-            "title": "ja",
+            "title": "Ja",
             "text": "Sehr gute Entscheidung. Vorlesungen bei Val sind immer sinnvoller und verständlicher als die Vorlesungen bei Hower.",
             "stats": {
                "mentalHealth": 15,
@@ -6959,30 +6959,8 @@
          },
          {
             "id": "E-100_2",
-            "title": "nein",
+            "title": "Nein",
             "text": "Du verpasst eine Chance auf eine verständliche Formale Sprachen Vorlesung.",
-            "stats": {
-               "mentalHealth": 0,
-               "motivation": 0,
-               "money": 0,
-               "success": -5
-            }
-         },
-         {
-            "id": "E-100_3",
-            "title": "Aneignung",
-            "text": "Falsch.",
-            "stats": {
-               "mentalHealth": 0,
-               "motivation": 0,
-               "money": 0,
-               "success": -5
-            }
-         },
-         {
-            "id": "E-100_4",
-            "title": "Impulsiv Käufe",
-            "text": "Falsch.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -7712,7 +7690,7 @@
    {
       "id": "E-111",
       "title": "Du schreibst eine Physik Klausur.",
-      "text": "Zentrifugalkraft, Eulerkraft und Corioliskraft sind Scheinkräfte. Ihre Definition beinhaltet, sie genügen nicht dem Prinzip von ...",
+      "text": "Zentrifugalkraft, Eulerkraft und Corioliskraft sind Scheinkräfte. Ihre Definition beinhaltet: Sie genügen nicht dem Prinzip von ...",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
@@ -7880,7 +7858,7 @@
    {
       "id": "E-113",
       "title": "Du schreibst eine Physik Klausur.",
-      "text": "Wie lautet die Formel um die elektrische Leistung P?",
+      "text": "Wie lautet die Formel um die elektrische Leistung P zu berechnen?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
@@ -7964,7 +7942,7 @@
    {
       "id": "E-114",
       "title": "Du schreibst eine Physik Klausur.",
-      "text": "Wie lautet die Formel um den elektrischen Widerstand R ?",
+      "text": "Wie lautet die Formel um den elektrischen Widerstand R zu berechnen?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
@@ -8048,7 +8026,7 @@
    {
       "id": "E-115",
       "title": "Du schreibst eine Physik Klausur.",
-      "text": "Wie lautet die Formel um die elektrische Spannung U ?",
+      "text": "Wie lautet die Formel um die elektrische Spannung U zu berechnen?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
@@ -8132,7 +8110,7 @@
    {
       "id": "E-116",
       "title": "Du schreibst eine Physik Klausur.",
-      "text": "Wie lautet die Formel um die Stromstärke I ?",
+      "text": "Wie lautet die Formel um die Stromstärke I zu berechnen?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
