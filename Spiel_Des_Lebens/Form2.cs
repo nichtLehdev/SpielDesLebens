@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace Spiel_Des_Lebens
@@ -14,22 +15,61 @@ namespace Spiel_Des_Lebens
         private UI_Interface ui_interface;
         private Boolean new_game = false;
         private String[] option = new String[4];
-        public Form2(string name, string alter, Image avatar, string abschluss, Boolean new_game)
+        private Data.Profession profession;
+        private Data.Path training;
+        private string job;
+        private string refrence_training;
+        public Form2(string name, string alter, Image avatar, string abschluss, bool new_game, String path, String profession, String job)
         {
             InitializeComponent();
-            pictureBox1.Image = avatar;
+            avatar_pic.Image = avatar;
             this.name = name;
             this.alter = Convert.ToInt16(alter);
             this.abschluss = abschluss;
             this.avatar = avatar;
             this.new_game = new_game;
+            this.job = job;
+            this.refrence_training = path;
+            if (profession == "Social")
+            {
+                this.profession = Data.Profession.Social;
+            }
+            else if (profession == "Buisness")
+            {
+                this.profession = Data.Profession.Business;
+            }
+            else if (profession == "Stem")
+            {
+                this.profession = Data.Profession.Stem;
+            }
+            else if (profession == "Science")
+            {
+               this.profession = Data.Profession.Science;
+            }
+            else if (profession == "Civil")
+            {
+                this.profession = Data.Profession.Civil;
+            }
+            if (path == "Training")
+            {
+                this.training = Data.Path.Training;
+            }
+            else if (path == "DualStudy")
+            {
+                this.training = Data.Path.DualStudy;
+            }
+            else if (path == "Study")
+            {
+                this.training = Data.Path.Study;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ui_interface = new UI_Interface(true, 18, "Fritz", Data.Path.Training, Data.Profession.Business);
+            ui_interface = new UI_Interface(true, alter, name, training, profession);
             lblPlayerAge.Text = Convert.ToString(this.alter);
             lblPlayerName.Text = this.name;
+            lblPlayerPath.Text = this.job;
             btnLoadEvent_Click();
             update_aktionpoints();
             if (new_game == true)
@@ -166,6 +206,7 @@ namespace Spiel_Des_Lebens
             action_1_btn.Enabled = true;
             action_2_btn.Enabled = true;
             action_3_btn.Enabled = true;
+            
         }
         private void all_options_hide()
         {
@@ -216,11 +257,27 @@ namespace Spiel_Des_Lebens
             }
             action_points_txt.Text = "Aktionspunkte: " + action_points;
             left_phase_txt.Text = "Verbleibene Länge der Phase: " + (12 - action_points);
-            progress_prog_bar.Value = 100 * ((cur_phase) * 12 + action_points) / (overall_phase * 12);
+            progress_prog_bar.Value = 1;
             money_prog_bar.Text = ui_interface.getPlayerMoney().ToString() + "€";
             learn_prog_bar.Value = ui_interface.getPlayerSuccess();
             motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
             mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
+            if(action_points == 1)
+            {
+                option_1_btn.Enabled = false;
+                option_2_btn.Enabled = false;
+                option_3_btn.Enabled = false;
+                option_4_btn.Enabled = false;
+                show_info_btn.Enabled = false;
+            }
+            if(action_points == 14 && option_1_btn.Enabled == false)
+            {
+                option_1_btn.Enabled = true;
+                option_2_btn.Enabled = true;
+                option_3_btn.Enabled = true;
+                option_4_btn.Enabled = true;
+                show_info_btn.Enabled = true;
+            }
             game_over_check();
         }
         private void get_new_actions()
@@ -452,5 +509,52 @@ namespace Spiel_Des_Lebens
             info_action_panel_2.Visible = false;
             info_action_panel_3.Visible = false;
         }
+
+        private void new_profession_no_btn_Click(object sender, EventArgs e)
+        {
+            if (new_profession_no_btn.Text == "Weiter")
+            {
+                ui_interface = new UI_Interface(true, alter, name, training, profession);
+                lblPlayerPath.Text = new_profession_combo_box.Text;
+            }
+            new_profession_panel.Visible = false;
+            all_options_enable();
+        }
+
+        private void new_profession_opt_open(object sender, EventArgs e)
+        {
+            all_options_disable();
+            new_profession_panel.Visible = true;
+            new_profession_no_btn.Text = "Nein";
+            new_profession_yes_btn.Visible = true;
+        }
+
+        private void new_profession_yes_opt(object sender, EventArgs e)
+        {
+            new_profession_combo_box.Visible = true;
+            new_profession_yes_btn.Visible = false;
+            new_profession_no_btn.Text = "Weiter";
+            new_profession_yes_btn.Visible = false;
+            new_profession_lable.Visible = true;
+            new_profession_no_btn.Enabled = false;
+            if(refrence_training == "Training")
+            {
+                new_profession_combo_box.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
+            }
+            else if (refrence_training == "DualStudy")
+            {
+                new_profession_combo_box.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
+            }
+            else if (refrence_training == "Study")
+            {
+                new_profession_combo_box.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
+            }
+        }
+
+        private void new_profession_txt_change(object sender, EventArgs e)
+        {
+            new_profession_no_btn.Enabled = true;
+        }
+        
     }
 }

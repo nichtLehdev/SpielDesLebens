@@ -44,6 +44,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.education_path = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.profession_path = new System.Windows.Forms.ComboBox();
             this.lable_1 = new System.Windows.Forms.Label();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,7 +64,6 @@
             this.textBox_mini_field = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -83,7 +86,7 @@
             // fiction_txt_box
             // 
             this.errorProvider1.SetIconAlignment(this.fiction_txt_box, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
-            this.fiction_txt_box.Location = new System.Drawing.Point(65, 86);
+            this.fiction_txt_box.Location = new System.Drawing.Point(65, 95);
             this.fiction_txt_box.Name = "fiction_txt_box";
             this.fiction_txt_box.ReadOnly = true;
             this.fiction_txt_box.Size = new System.Drawing.Size(209, 159);
@@ -106,6 +109,10 @@
             this.Layout_neues_Spiel.Controls.Add(this.button2);
             this.Layout_neues_Spiel.Controls.Add(this.button3);
             this.Layout_neues_Spiel.Controls.Add(this.button4);
+            this.Layout_neues_Spiel.Controls.Add(this.label2);
+            this.Layout_neues_Spiel.Controls.Add(this.education_path);
+            this.Layout_neues_Spiel.Controls.Add(this.label3);
+            this.Layout_neues_Spiel.Controls.Add(this.profession_path);
             this.Layout_neues_Spiel.Controls.Add(this.lable_1);
             this.Layout_neues_Spiel.Controls.Add(this.txt_name);
             this.Layout_neues_Spiel.Controls.Add(this.label1);
@@ -113,10 +120,10 @@
             this.Layout_neues_Spiel.Controls.Add(this.button9);
             this.Layout_neues_Spiel.Controls.Add(this.weiter_button);
             this.Layout_neues_Spiel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Layout_neues_Spiel.Location = new System.Drawing.Point(504, 58);
+            this.Layout_neues_Spiel.Location = new System.Drawing.Point(504, 31);
             this.Layout_neues_Spiel.Name = "Layout_neues_Spiel";
             this.Layout_neues_Spiel.Padding = new System.Windows.Forms.Padding(10);
-            this.Layout_neues_Spiel.Size = new System.Drawing.Size(343, 442);
+            this.Layout_neues_Spiel.Size = new System.Drawing.Size(343, 497);
             this.Layout_neues_Spiel.TabIndex = 0;
             this.Layout_neues_Spiel.Visible = false;
             // 
@@ -180,16 +187,18 @@
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button1.Location = new System.Drawing.Point(13, 273);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 23);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Hauptschulaschluss";
+            this.button1.Text = "Hauptschulabschluss";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.changePath);
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button2.Location = new System.Drawing.Point(171, 273);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(154, 23);
@@ -197,10 +206,10 @@
             this.button2.Text = "Realschulabschluss";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.changePath);
-            this.button2.Validating += new System.ComponentModel.CancelEventHandler(this.button2_Validating);
             // 
             // button3
             // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button3.Location = new System.Drawing.Point(13, 302);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(152, 23);
@@ -211,6 +220,7 @@
             // 
             // button4
             // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button4.Location = new System.Drawing.Point(171, 302);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(154, 23);
@@ -219,12 +229,54 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.changePath);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(13, 333);
+            this.label2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Bildungsweg";
+            // 
+            // education_path
+            // 
+            this.education_path.FormattingEnabled = true;
+            this.education_path.Location = new System.Drawing.Point(97, 331);
+            this.education_path.Name = "education_path";
+            this.education_path.Size = new System.Drawing.Size(224, 21);
+            this.education_path.TabIndex = 17;
+            this.education_path.TextChanged += new System.EventHandler(this.education_path_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(13, 360);
+            this.label3.Margin = new System.Windows.Forms.Padding(3, 5, 7, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 13);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Karriereweg";
+            // 
+            // profession_path
+            // 
+            this.profession_path.FormattingEnabled = true;
+            this.profession_path.Location = new System.Drawing.Point(97, 358);
+            this.profession_path.Name = "profession_path";
+            this.profession_path.Size = new System.Drawing.Size(224, 21);
+            this.profession_path.TabIndex = 19;
+            this.profession_path.TextChanged += new System.EventHandler(this.profession_path_TextChanged);
+            // 
             // lable_1
             // 
             this.lable_1.AutoSize = true;
             this.lable_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lable_1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lable_1.Location = new System.Drawing.Point(13, 333);
+            this.lable_1.Location = new System.Drawing.Point(13, 387);
             this.lable_1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.lable_1.Name = "lable_1";
             this.lable_1.Size = new System.Drawing.Size(39, 13);
@@ -233,7 +285,7 @@
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(58, 331);
+            this.txt_name.Location = new System.Drawing.Point(58, 385);
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(267, 20);
             this.txt_name.TabIndex = 11;
@@ -243,7 +295,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(13, 359);
+            this.label1.Location = new System.Drawing.Point(13, 413);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 5, 10, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
@@ -252,7 +304,7 @@
             // 
             // txt_alter
             // 
-            this.txt_alter.Location = new System.Drawing.Point(59, 357);
+            this.txt_alter.Location = new System.Drawing.Point(59, 411);
             this.txt_alter.Name = "txt_alter";
             this.txt_alter.Size = new System.Drawing.Size(266, 20);
             this.txt_alter.TabIndex = 14;
@@ -263,7 +315,7 @@
             this.button9.BackColor = System.Drawing.Color.RosyBrown;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button9.Location = new System.Drawing.Point(55, 383);
+            this.button9.Location = new System.Drawing.Point(55, 437);
             this.button9.Margin = new System.Windows.Forms.Padding(45, 3, 3, 3);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(132, 48);
@@ -277,7 +329,7 @@
             this.weiter_button.BackColor = System.Drawing.Color.RosyBrown;
             this.weiter_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.weiter_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.weiter_button.Location = new System.Drawing.Point(195, 383);
+            this.weiter_button.Location = new System.Drawing.Point(195, 437);
             this.weiter_button.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
             this.weiter_button.Name = "weiter_button";
             this.weiter_button.Size = new System.Drawing.Size(132, 48);
@@ -291,14 +343,15 @@
             this.fiction_panel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.fiction_panel.Controls.Add(this.accept_fict_btn);
             this.fiction_panel.Controls.Add(this.fiction_txt_box);
-            this.fiction_panel.Location = new System.Drawing.Point(504, 58);
+            this.fiction_panel.Location = new System.Drawing.Point(504, 28);
             this.fiction_panel.Name = "fiction_panel";
-            this.fiction_panel.Size = new System.Drawing.Size(343, 449);
+            this.fiction_panel.Size = new System.Drawing.Size(343, 497);
             this.fiction_panel.TabIndex = 4;
             // 
             // accept_fict_btn
             // 
-            this.accept_fict_btn.Location = new System.Drawing.Point(65, 354);
+            this.accept_fict_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.accept_fict_btn.Location = new System.Drawing.Point(65, 352);
             this.accept_fict_btn.Margin = new System.Windows.Forms.Padding(2);
             this.accept_fict_btn.Name = "accept_fict_btn";
             this.accept_fict_btn.Size = new System.Drawing.Size(209, 19);
@@ -314,12 +367,11 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(504, 58);
+            this.panel1.Location = new System.Drawing.Point(504, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 442);
+            this.panel1.Size = new System.Drawing.Size(343, 497);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -329,17 +381,17 @@
             this.panel2.Controls.Add(this.button_mini_2);
             this.panel2.Controls.Add(this.button_mini_1);
             this.panel2.Controls.Add(this.textBox_mini_field);
-            this.panel2.Location = new System.Drawing.Point(44, 132);
+            this.panel2.Location = new System.Drawing.Point(43, 170);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 181);
+            this.panel2.Size = new System.Drawing.Size(262, 175);
             this.panel2.TabIndex = 6;
             this.panel2.Visible = false;
             // 
             // button_mini_3
             // 
             this.button_mini_3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button_mini_3.Location = new System.Drawing.Point(50, 133);
+            this.button_mini_3.Location = new System.Drawing.Point(35, 130);
             this.button_mini_3.Margin = new System.Windows.Forms.Padding(2);
             this.button_mini_3.Name = "button_mini_3";
             this.button_mini_3.Size = new System.Drawing.Size(186, 19);
@@ -352,7 +404,7 @@
             // button_mini_2
             // 
             this.button_mini_2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button_mini_2.Location = new System.Drawing.Point(50, 93);
+            this.button_mini_2.Location = new System.Drawing.Point(35, 93);
             this.button_mini_2.Margin = new System.Windows.Forms.Padding(2);
             this.button_mini_2.Name = "button_mini_2";
             this.button_mini_2.Size = new System.Drawing.Size(186, 19);
@@ -364,7 +416,7 @@
             // button_mini_1
             // 
             this.button_mini_1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button_mini_1.Location = new System.Drawing.Point(50, 54);
+            this.button_mini_1.Location = new System.Drawing.Point(35, 55);
             this.button_mini_1.Margin = new System.Windows.Forms.Padding(2);
             this.button_mini_1.Name = "button_mini_1";
             this.button_mini_1.Size = new System.Drawing.Size(186, 19);
@@ -377,7 +429,7 @@
             // textBox_mini_field
             // 
             this.textBox_mini_field.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_mini_field.Location = new System.Drawing.Point(84, 15);
+            this.textBox_mini_field.Location = new System.Drawing.Point(61, 13);
             this.textBox_mini_field.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_mini_field.Name = "textBox_mini_field";
             this.textBox_mini_field.ReadOnly = true;
@@ -388,7 +440,7 @@
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button5.Location = new System.Drawing.Point(65, 104);
+            this.button5.Location = new System.Drawing.Point(65, 144);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(224, 23);
             this.button5.TabIndex = 0;
@@ -401,7 +453,7 @@
             this.textBox1.BackColor = System.Drawing.Color.Snow;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(122, 42);
+            this.textBox1.Location = new System.Drawing.Point(120, 69);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(101, 20);
@@ -409,21 +461,10 @@
             this.textBox1.Text = "Spiel des Lebens";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button8
-            // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button8.Location = new System.Drawing.Point(65, 289);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(224, 23);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Neues Spiel";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.neues_Spiel_open);
-            // 
             // button7
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button7.Location = new System.Drawing.Point(65, 171);
+            this.button7.Location = new System.Drawing.Point(65, 244);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(224, 23);
             this.button7.TabIndex = 3;
@@ -434,7 +475,7 @@
             // button6
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button6.Location = new System.Drawing.Point(65, 234);
+            this.button6.Location = new System.Drawing.Point(65, 350);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(224, 23);
             this.button6.TabIndex = 2;
@@ -474,9 +515,6 @@
       private System.Windows.Forms.PictureBox pictureBox1;
       private System.Windows.Forms.PictureBox pictureBox2;
       private System.Windows.Forms.PictureBox pictureBox3;
-      private System.Windows.Forms.PictureBox pictureBox4;
-      private System.Windows.Forms.PictureBox pictureBox5;
-      private System.Windows.Forms.PictureBox pictureBox6;
       private System.Windows.Forms.Button button1;
       private System.Windows.Forms.Button button2;
       private System.Windows.Forms.Button button3;
@@ -489,7 +527,6 @@
       private System.Windows.Forms.FlowLayoutPanel Layout_neues_Spiel;
       private System.Windows.Forms.Panel panel1;
       private System.Windows.Forms.Button button5;
-      private System.Windows.Forms.Button button8;
       private System.Windows.Forms.Button button7;
       private System.Windows.Forms.Button button6;
       private System.Windows.Forms.TextBox textBox1;
@@ -503,5 +540,12 @@
       private System.Windows.Forms.Panel fiction_panel;
       private System.Windows.Forms.RichTextBox fiction_txt_box;
       private System.Windows.Forms.Button accept_fict_btn;
-   }
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox education_path;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox profession_path;
+    }
 }

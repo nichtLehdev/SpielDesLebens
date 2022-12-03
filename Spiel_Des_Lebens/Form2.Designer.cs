@@ -36,9 +36,11 @@
             this.action_1_btn = new System.Windows.Forms.Button();
             this.action_0_btn = new System.Windows.Forms.Button();
             this.userInfo = new System.Windows.Forms.Panel();
+            this.lblPlayerPath = new System.Windows.Forms.Label();
+            this.lblPath = new System.Windows.Forms.Label();
             this.lblPlayerName = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.avatar_pic = new System.Windows.Forms.PictureBox();
             this.lblName = new System.Windows.Forms.Label();
             this.lblPlayerAge = new System.Windows.Forms.Label();
             this.btnAktion = new System.Windows.Forms.Button();
@@ -88,16 +90,23 @@
             this.button9 = new System.Windows.Forms.Button();
             this.action_title = new System.Windows.Forms.TextBox();
             this.action_text = new System.Windows.Forms.TextBox();
-            this.game_over_panel = new System.Windows.Forms.Panel();
             this.tutorial_ask_panel = new System.Windows.Forms.Panel();
             this.tutorial_ask_btn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tutorial_ask_title = new System.Windows.Forms.TextBox();
             this.tutorial_ask_txt = new System.Windows.Forms.TextBox();
+            this.close_opt_end_txt = new System.Windows.Forms.Button();
+            this.new_profession_panel = new System.Windows.Forms.Panel();
+            this.new_profession_lable = new System.Windows.Forms.Label();
+            this.new_profession_combo_box = new System.Windows.Forms.ComboBox();
+            this.new_profession_yes_btn = new System.Windows.Forms.Button();
+            this.new_profession_no_btn = new System.Windows.Forms.Button();
+            this.new_profession_title = new System.Windows.Forms.TextBox();
+            this.new_profession_txt = new System.Windows.Forms.TextBox();
+            this.game_over_panel = new System.Windows.Forms.Panel();
             this.game_over_btn = new System.Windows.Forms.Button();
             this.game_over_title = new System.Windows.Forms.TextBox();
             this.game_over_txt = new System.Windows.Forms.RichTextBox();
-            this.close_opt_end_txt = new System.Windows.Forms.Button();
             this.info_panel = new System.Windows.Forms.Panel();
             this.info_close_button = new System.Windows.Forms.Button();
             this.info_text = new System.Windows.Forms.RichTextBox();
@@ -110,7 +119,7 @@
             this.option_1_btn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.userInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar_pic)).BeginInit();
             this.panel3.SuspendLayout();
             this.tutorial_panel_2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -126,8 +135,9 @@
             this.tutorial_panel_3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.action_panel.SuspendLayout();
-            this.game_over_panel.SuspendLayout();
             this.tutorial_ask_panel.SuspendLayout();
+            this.new_profession_panel.SuspendLayout();
+            this.game_over_panel.SuspendLayout();
             this.info_panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -243,9 +253,11 @@
             this.userInfo.BackColor = System.Drawing.Color.Transparent;
             this.userInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.userInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userInfo.Controls.Add(this.lblPlayerPath);
+            this.userInfo.Controls.Add(this.lblPath);
             this.userInfo.Controls.Add(this.lblPlayerName);
             this.userInfo.Controls.Add(this.lblAge);
-            this.userInfo.Controls.Add(this.pictureBox1);
+            this.userInfo.Controls.Add(this.avatar_pic);
             this.userInfo.Controls.Add(this.lblName);
             this.userInfo.Controls.Add(this.lblPlayerAge);
             this.userInfo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -254,10 +266,29 @@
             this.userInfo.Size = new System.Drawing.Size(238, 188);
             this.userInfo.TabIndex = 2;
             // 
+            // lblPlayerPath
+            // 
+            this.lblPlayerPath.AutoSize = true;
+            this.lblPlayerPath.Location = new System.Drawing.Point(112, 163);
+            this.lblPlayerPath.Name = "lblPlayerPath";
+            this.lblPlayerPath.Size = new System.Drawing.Size(102, 13);
+            this.lblPlayerPath.TabIndex = 11;
+            this.lblPlayerPath.Text = "Spieler Bildungsweg";
+            // 
+            // lblPath
+            // 
+            this.lblPath.AutoSize = true;
+            this.lblPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPath.Location = new System.Drawing.Point(52, 163);
+            this.lblPath.Name = "lblPath";
+            this.lblPath.Size = new System.Drawing.Size(37, 13);
+            this.lblPath.TabIndex = 10;
+            this.lblPath.Text = "Path:";
+            // 
             // lblPlayerName
             // 
             this.lblPlayerName.AutoSize = true;
-            this.lblPlayerName.Location = new System.Drawing.Point(112, 140);
+            this.lblPlayerName.Location = new System.Drawing.Point(112, 123);
             this.lblPlayerName.Name = "lblPlayerName";
             this.lblPlayerName.Size = new System.Drawing.Size(70, 13);
             this.lblPlayerName.TabIndex = 6;
@@ -267,27 +298,28 @@
             // 
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAge.Location = new System.Drawing.Point(52, 156);
+            this.lblAge.Location = new System.Drawing.Point(52, 143);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(37, 13);
             this.lblAge.TabIndex = 9;
             this.lblAge.Text = "Alter:";
             // 
-            // pictureBox1
+            // avatar_pic
             // 
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(55, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 117);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.avatar_pic.InitialImage = null;
+            this.avatar_pic.Location = new System.Drawing.Point(55, 11);
+            this.avatar_pic.Name = "avatar_pic";
+            this.avatar_pic.Size = new System.Drawing.Size(120, 109);
+            this.avatar_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatar_pic.TabIndex = 5;
+            this.avatar_pic.TabStop = false;
+            this.avatar_pic.Click += new System.EventHandler(this.new_profession_opt_open);
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(52, 140);
+            this.lblName.Location = new System.Drawing.Point(52, 123);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(43, 13);
             this.lblName.TabIndex = 8;
@@ -296,7 +328,7 @@
             // lblPlayerAge
             // 
             this.lblPlayerAge.AutoSize = true;
-            this.lblPlayerAge.Location = new System.Drawing.Point(112, 156);
+            this.lblPlayerAge.Location = new System.Drawing.Point(112, 143);
             this.lblPlayerAge.Name = "lblPlayerAge";
             this.lblPlayerAge.Size = new System.Drawing.Size(63, 13);
             this.lblPlayerAge.TabIndex = 7;
@@ -833,8 +865,10 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.farbverlauf;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.action_panel);
             this.panel1.Controls.Add(this.tutorial_ask_panel);
             this.panel1.Controls.Add(this.close_opt_end_txt);
+            this.panel1.Controls.Add(this.new_profession_panel);
             this.panel1.Controls.Add(this.game_over_panel);
             this.panel1.Controls.Add(this.info_panel);
             this.panel1.Controls.Add(this.option_4_btn);
@@ -856,9 +890,9 @@
             this.action_panel.Controls.Add(this.button9);
             this.action_panel.Controls.Add(this.action_title);
             this.action_panel.Controls.Add(this.action_text);
-            this.action_panel.Location = new System.Drawing.Point(0, 1);
+            this.action_panel.Location = new System.Drawing.Point(107, 56);
             this.action_panel.Name = "action_panel";
-            this.action_panel.Size = new System.Drawing.Size(365, 217);
+            this.action_panel.Size = new System.Drawing.Size(369, 218);
             this.action_panel.TabIndex = 10;
             this.action_panel.Visible = false;
             // 
@@ -899,29 +933,16 @@
             this.action_text.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
             this.action_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // game_over_panel
-            // 
-            this.game_over_panel.BackColor = System.Drawing.Color.FloralWhite;
-            this.game_over_panel.Controls.Add(this.game_over_btn);
-            this.game_over_panel.Controls.Add(this.game_over_title);
-            this.game_over_panel.Controls.Add(this.game_over_txt);
-            this.game_over_panel.Location = new System.Drawing.Point(113, 70);
-            this.game_over_panel.Name = "game_over_panel";
-            this.game_over_panel.Size = new System.Drawing.Size(365, 217);
-            this.game_over_panel.TabIndex = 9;
-            this.game_over_panel.Visible = false;
-            // 
             // tutorial_ask_panel
             // 
             this.tutorial_ask_panel.BackColor = System.Drawing.Color.FloralWhite;
-            this.tutorial_ask_panel.Controls.Add(this.action_panel);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_btn);
             this.tutorial_ask_panel.Controls.Add(this.button2);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_title);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_txt);
-            this.tutorial_ask_panel.Location = new System.Drawing.Point(121, 69);
+            this.tutorial_ask_panel.Location = new System.Drawing.Point(111, 60);
             this.tutorial_ask_panel.Name = "tutorial_ask_panel";
-            this.tutorial_ask_panel.Size = new System.Drawing.Size(365, 227);
+            this.tutorial_ask_panel.Size = new System.Drawing.Size(365, 217);
             this.tutorial_ask_panel.TabIndex = 10;
             this.tutorial_ask_panel.Visible = false;
             // 
@@ -972,6 +993,112 @@
             this.tutorial_ask_txt.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
             this.tutorial_ask_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // close_opt_end_txt
+            // 
+            this.close_opt_end_txt.Location = new System.Drawing.Point(472, 23);
+            this.close_opt_end_txt.Name = "close_opt_end_txt";
+            this.close_opt_end_txt.Size = new System.Drawing.Size(75, 40);
+            this.close_opt_end_txt.TabIndex = 8;
+            this.close_opt_end_txt.Text = "Nächstes Event";
+            this.close_opt_end_txt.UseVisualStyleBackColor = true;
+            this.close_opt_end_txt.Visible = false;
+            this.close_opt_end_txt.Click += new System.EventHandler(this.close_opt_txt);
+            // 
+            // new_profession_panel
+            // 
+            this.new_profession_panel.BackColor = System.Drawing.Color.FloralWhite;
+            this.new_profession_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.new_profession_panel.Controls.Add(this.new_profession_lable);
+            this.new_profession_panel.Controls.Add(this.new_profession_combo_box);
+            this.new_profession_panel.Controls.Add(this.new_profession_yes_btn);
+            this.new_profession_panel.Controls.Add(this.new_profession_no_btn);
+            this.new_profession_panel.Controls.Add(this.new_profession_title);
+            this.new_profession_panel.Controls.Add(this.new_profession_txt);
+            this.new_profession_panel.Location = new System.Drawing.Point(111, 63);
+            this.new_profession_panel.Name = "new_profession_panel";
+            this.new_profession_panel.Size = new System.Drawing.Size(369, 218);
+            this.new_profession_panel.TabIndex = 12;
+            this.new_profession_panel.Visible = false;
+            // 
+            // new_profession_lable
+            // 
+            this.new_profession_lable.AutoSize = true;
+            this.new_profession_lable.Location = new System.Drawing.Point(41, 98);
+            this.new_profession_lable.Name = "new_profession_lable";
+            this.new_profession_lable.Size = new System.Drawing.Size(63, 13);
+            this.new_profession_lable.TabIndex = 14;
+            this.new_profession_lable.Text = "Karriereweg";
+            this.new_profession_lable.Visible = false;
+            // 
+            // new_profession_combo_box
+            // 
+            this.new_profession_combo_box.FormattingEnabled = true;
+            this.new_profession_combo_box.Location = new System.Drawing.Point(128, 95);
+            this.new_profession_combo_box.Name = "new_profession_combo_box";
+            this.new_profession_combo_box.Size = new System.Drawing.Size(204, 21);
+            this.new_profession_combo_box.TabIndex = 13;
+            this.new_profession_combo_box.Visible = false;
+            this.new_profession_combo_box.TextChanged += new System.EventHandler(this.new_profession_txt_change);
+            // 
+            // new_profession_yes_btn
+            // 
+            this.new_profession_yes_btn.Location = new System.Drawing.Point(33, 163);
+            this.new_profession_yes_btn.Name = "new_profession_yes_btn";
+            this.new_profession_yes_btn.Size = new System.Drawing.Size(100, 40);
+            this.new_profession_yes_btn.TabIndex = 12;
+            this.new_profession_yes_btn.Text = "Ja";
+            this.new_profession_yes_btn.UseVisualStyleBackColor = true;
+            this.new_profession_yes_btn.Click += new System.EventHandler(this.new_profession_yes_opt);
+            // 
+            // new_profession_no_btn
+            // 
+            this.new_profession_no_btn.Location = new System.Drawing.Point(233, 165);
+            this.new_profession_no_btn.Name = "new_profession_no_btn";
+            this.new_profession_no_btn.Size = new System.Drawing.Size(100, 40);
+            this.new_profession_no_btn.TabIndex = 11;
+            this.new_profession_no_btn.Text = "Nein";
+            this.new_profession_no_btn.UseVisualStyleBackColor = true;
+            this.new_profession_no_btn.Click += new System.EventHandler(this.new_profession_no_btn_Click);
+            // 
+            // new_profession_title
+            // 
+            this.new_profession_title.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.new_profession_title.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.new_profession_title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.new_profession_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.new_profession_title.Location = new System.Drawing.Point(33, 17);
+            this.new_profession_title.Name = "new_profession_title";
+            this.new_profession_title.ReadOnly = true;
+            this.new_profession_title.Size = new System.Drawing.Size(185, 20);
+            this.new_profession_title.TabIndex = 10;
+            this.new_profession_title.Text = "Neue Karriere";
+            // 
+            // new_profession_txt
+            // 
+            this.new_profession_txt.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.new_profession_txt.BackColor = System.Drawing.SystemColors.Control;
+            this.new_profession_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.new_profession_txt.Location = new System.Drawing.Point(33, 52);
+            this.new_profession_txt.Multiline = true;
+            this.new_profession_txt.Name = "new_profession_txt";
+            this.new_profession_txt.ReadOnly = true;
+            this.new_profession_txt.Size = new System.Drawing.Size(300, 103);
+            this.new_profession_txt.TabIndex = 10;
+            this.new_profession_txt.Text = "Möchtest du deine Profession ändern?";
+            this.new_profession_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // game_over_panel
+            // 
+            this.game_over_panel.BackColor = System.Drawing.Color.FloralWhite;
+            this.game_over_panel.Controls.Add(this.game_over_btn);
+            this.game_over_panel.Controls.Add(this.game_over_title);
+            this.game_over_panel.Controls.Add(this.game_over_txt);
+            this.game_over_panel.Location = new System.Drawing.Point(111, 70);
+            this.game_over_panel.Name = "game_over_panel";
+            this.game_over_panel.Size = new System.Drawing.Size(365, 217);
+            this.game_over_panel.TabIndex = 9;
+            this.game_over_panel.Visible = false;
+            // 
             // game_over_btn
             // 
             this.game_over_btn.Location = new System.Drawing.Point(233, 161);
@@ -1002,24 +1129,13 @@
             this.game_over_txt.TabIndex = 0;
             this.game_over_txt.Text = "";
             // 
-            // close_opt_end_txt
-            // 
-            this.close_opt_end_txt.Location = new System.Drawing.Point(472, 23);
-            this.close_opt_end_txt.Name = "close_opt_end_txt";
-            this.close_opt_end_txt.Size = new System.Drawing.Size(75, 40);
-            this.close_opt_end_txt.TabIndex = 8;
-            this.close_opt_end_txt.Text = "Nächstes Event";
-            this.close_opt_end_txt.UseVisualStyleBackColor = true;
-            this.close_opt_end_txt.Visible = false;
-            this.close_opt_end_txt.Click += new System.EventHandler(this.close_opt_txt);
-            // 
             // info_panel
             // 
             this.info_panel.BackColor = System.Drawing.Color.FloralWhite;
             this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.info_panel.Controls.Add(this.info_close_button);
             this.info_panel.Controls.Add(this.info_text);
-            this.info_panel.Location = new System.Drawing.Point(117, 73);
+            this.info_panel.Location = new System.Drawing.Point(111, 76);
             this.info_panel.Name = "info_panel";
             this.info_panel.Size = new System.Drawing.Size(365, 208);
             this.info_panel.TabIndex = 9;
@@ -1097,6 +1213,7 @@
             this.event_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.event_title.Location = new System.Drawing.Point(59, 35);
             this.event_title.Name = "event_title";
+            this.event_title.ReadOnly = true;
             this.event_title.Size = new System.Drawing.Size(185, 20);
             this.event_title.TabIndex = 4;
             // 
@@ -1123,6 +1240,7 @@
             this.event_txt_box.Location = new System.Drawing.Point(59, 84);
             this.event_txt_box.Multiline = true;
             this.event_txt_box.Name = "event_txt_box";
+            this.event_txt_box.ReadOnly = true;
             this.event_txt_box.Size = new System.Drawing.Size(488, 106);
             this.event_txt_box.TabIndex = 4;
             this.event_txt_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1156,7 +1274,7 @@
             this.panel2.ResumeLayout(false);
             this.userInfo.ResumeLayout(false);
             this.userInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar_pic)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.tutorial_panel_2.ResumeLayout(false);
@@ -1186,10 +1304,12 @@
             this.panel1.PerformLayout();
             this.action_panel.ResumeLayout(false);
             this.action_panel.PerformLayout();
-            this.game_over_panel.ResumeLayout(false);
-            this.game_over_panel.PerformLayout();
             this.tutorial_ask_panel.ResumeLayout(false);
             this.tutorial_ask_panel.PerformLayout();
+            this.new_profession_panel.ResumeLayout(false);
+            this.new_profession_panel.PerformLayout();
+            this.game_over_panel.ResumeLayout(false);
+            this.game_over_panel.PerformLayout();
             this.info_panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1202,7 +1322,7 @@
         private System.Windows.Forms.TextBox event_txt_box;
         private System.Windows.Forms.Button show_info_btn;
         private System.Windows.Forms.ProgressBar progress_prog_bar;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox avatar_pic;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
@@ -1276,6 +1396,15 @@
         private System.Windows.Forms.TextBox info_action_txt_0;
         private System.Windows.Forms.Panel info_action_panel_2;
         private System.Windows.Forms.TextBox info_action_txt_2;
+        private System.Windows.Forms.Panel new_profession_panel;
+        private System.Windows.Forms.Button new_profession_yes_btn;
+        private System.Windows.Forms.Button new_profession_no_btn;
+        private System.Windows.Forms.TextBox new_profession_title;
+        private System.Windows.Forms.TextBox new_profession_txt;
+        private System.Windows.Forms.Label new_profession_lable;
+        private System.Windows.Forms.ComboBox new_profession_combo_box;
+        private System.Windows.Forms.Label lblPlayerPath;
+        private System.Windows.Forms.Label lblPath;
     }
 }
 
