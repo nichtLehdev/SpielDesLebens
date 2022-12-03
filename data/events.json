@@ -41,7 +41,7 @@
          {
             "id": "E-001_2",
             "title": "Unternehmensbezug",
-            "text": "Falsch, in ein Bewerbungsschreiben gehört die persönliche Motivation und der Unternehmensbezug. \n Unter https://www.arbeitsagentur.de/erfolgreich-bewerben/bewerbung-schreiben findest du weitere Infos zum Bewerbungsschreiben",
+            "text": "Falsch, in ein Bewerbungsschreiben gehört die persönliche Motivation und der Unternehmensbezug. Unter https://www.arbeitsagentur.de/erfolgreich-bewerben/bewerbung-schreiben findest du weitere Infos zum Bewerbungsschreiben",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -899,14 +899,14 @@
    },
    {
       "id": "E-016",
-      "title": "Neuer Mitschüler",
-      "text": "Im Klassenzimmer triffst du auf einen neuen Mitschüler, er sieht unsicher aus.",
+      "title": "Neuer Kommilitone",
+      "text": "In der Vorlesung triffst du auf einen neuen Kommilitonen, er sieht unsicher aus.",
       "info": "potentieller sozialer Kontakt",
       "priority": 1,
       "requirements": {
          "timings": [
             {
-               "path": ["0"],
+               "path": ["1", "2"],
                "profession": ["*"],
                "phase": ["(*%2)!2"]
             }
@@ -928,7 +928,7 @@
          {
             "id": "E-016_1",
             "title": "Ansprechen",
-            "text": "Du stellst dich dem neuen Mitschüler/Kommilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde und bildet eine Lerngruppe",
+            "text": "Du stellst dich dem neuenKommilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde und bildet eine Lerngruppe",
             "stats": {
                "mentalHealth": 10,
                "motivation": 30,
@@ -944,7 +944,7 @@
                "mentalHealth": 0,
                "motivation": 0,
                "money": 0,
-               "success": 0
+               "success": -5
             }
          }
       ]
@@ -984,7 +984,7 @@
             "stats": {
                "mentalHealth": 15,
                "motivation": 0,
-               "money": 0,
+               "money": -30,
                "success": -15
             }
          },
@@ -1802,7 +1802,7 @@
    },
    {
       "id": "E-030",
-      "title": "neuer Mitschüler",
+      "title": "Neuer Mitschüler",
       "text": "Im Klassenzimmer triffst du auf einen neuen Mitschüler, er sieht unsicher aus.",
       "info": "potentieller sozialer Kontakt",
       "priority": 1,
@@ -1831,7 +1831,7 @@
          {
             "id": "E-030_1",
             "title": "Ansprechen",
-            "text": "du stellst dich dem neuen Mitschüler/Kommilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde bildet eine Lerngruppe",
+            "text": "Du stellst dich dem neuen Mitschüler vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde und bildet eine Lerngruppe",
             "stats": {
                "mentalHealth": 10,
                "motivation": 30,
@@ -1847,7 +1847,7 @@
                "mentalHealth": 0,
                "motivation": 0,
                "money": 0,
-               "success": 0
+               "success": -5
             }
          }
       ]
@@ -3091,7 +3091,7 @@
    {
       "id": "E-050",
       "title": "Klausurfragen Informatik",
-      "text": "Du schreibst eine Klausur in IT. Was ist der \"Klammeraffengriff\" unter Windows?",
+      "text": "Du schreibst eine Klausur in IT. Was ist der Klammeraffengriff unter Windows?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
@@ -6168,17 +6168,17 @@
          }
       },
       "options": [
-        {
-          "id": "E-086_1",
-          "title": "Bekleidung, Automobile, Lebensmittel",
-          "text": "Falsch, das sind keine Investitionsgüter.",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        },
+         {
+            "id": "E-086_1",
+            "title": "Bekleidung, Automobile, Lebensmittel",
+            "text": "Falsch, das sind keine Investitionsgüter.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
          {
             "id": "E-086_2",
             "title": "Arbeitskraft, Material, Maschinen",
@@ -6303,17 +6303,17 @@
                "success": 5
             }
          },
-        {
-          "id": "E-088_2",
-          "title": "Kaufmann ist wer kaufsüchtig ist.",
-          "text": "Falsch, Kaufmann ist, wer Handelsgewerbe betreibt.",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 5
-          }
-        }
+         {
+            "id": "E-088_2",
+            "title": "Kaufmann ist wer kaufsüchtig ist.",
+            "text": "Falsch, Kaufmann ist, wer Handelsgewerbe betreibt.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
       ]
    },
    {
@@ -8198,367 +8198,555 @@
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
-        "timings": [
-          {
-            "path": [ "2" ],
-            "profession": [ "4" ],
-            "phase": [ "*" ]
-          }
-        ],
-        "stats_min": {
-          "mentalHealth": 0,
-          "motivation": 0,
-          "money": 0,
-          "success": 0
-        },
-        "stats_max": {
-          "mentalHealth": 100,
-          "motivation": 100,
-          "money": -1,
-          "success": 100
-        }
+         "timings": [
+            {
+               "path": ["2"],
+               "profession": ["4"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
       },
       "options": [
-        {
-          "id": "E-117_1",
-          "title": "Befriedigung des Geschlechtstriebs",
-          "text": "Falsch! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-117_2",
-          "title": "Mordlust",
-          "text": "Falsch! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-117_3",
-          "title": "Grausamkeit",
-          "text": "Falsch! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-117_4",
-          "title": "Reflex",
-          "text": "Richtig! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 5
-          }
-        }
+         {
+            "id": "E-117_1",
+            "title": "Befriedigung des Geschlechtstriebs",
+            "text": "Falsch! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-117_2",
+            "title": "Mordlust",
+            "text": "Falsch! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-117_3",
+            "title": "Grausamkeit",
+            "text": "Falsch! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-117_4",
+            "title": "Reflex",
+            "text": "Richtig! In §28 (2) wird definiert, dass Mörder ist, wer aus Mordlust, zur Befriedigung des Geschlechtstriebs, aus Habgier oder sonst aus niedrigen Beweggründen, heimtückisch oder grausam oder mit gemeingefährlichen Mitteln oder um eine andere Straftat zu ermöglichen oder zu verdecken, einen Menschen tötet. Reflex ist jedoch kein Mordmerkmal",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
       ]
-    },
-    {
+   },
+   {
       "id": "E-118",
       "title": "Dein Staatsexamen steht an",
       "text": "Welches Organ dient der staatlichen Finanzkontrolle des Bundes?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
-        "timings": [
-          {
-            "path": [ "2" ],
-            "profession": [ "4" ],
-            "phase": [ "*" ]
-          }
-        ],
-        "stats_min": {
-          "mentalHealth": 0,
-          "motivation": 0,
-          "money": 0,
-          "success": 0
-        },
-        "stats_max": {
-          "mentalHealth": 100,
-          "motivation": 100,
-          "money": -1,
-          "success": 100
-        }
+         "timings": [
+            {
+               "path": ["2"],
+               "profession": ["4"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
       },
       "options": [
-        {
-          "id": "E-118_1",
-          "title": "Bundesfinanzamt",
-          "text": "Falsch! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-118_2",
-          "title": "Bundesrechnungshof",
-          "text": "Richtig! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 5
-          }
-        },
-        {
-          "id": "E-118_3",
-          "title": "Bundesverwaltungsgericht",
-          "text": "Falsch! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-118_4",
-          "title": "Bundesverfassungsgericht",
-          "text": "Falsch! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        }
+         {
+            "id": "E-118_1",
+            "title": "Bundesfinanzamt",
+            "text": "Falsch! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-118_2",
+            "title": "Bundesrechnungshof",
+            "text": "Richtig! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-118_3",
+            "title": "Bundesverwaltungsgericht",
+            "text": "Falsch! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-118_4",
+            "title": "Bundesverfassungsgericht",
+            "text": "Falsch! Das Organ, das der staatlichen Finanzkontrolle des Bundes dient wird auch Bundesrechnungshof genannt. BRH wurde als weisungsfreie, unabhängige und selbständige externe Finanzkontrolle des Bundes errichtet.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
       ]
-    },
-    {
+   },
+   {
       "id": "E-119",
       "title": "Dein Staatsexamen steht an",
       "text": "Wie nennt man die Instanz, die von einem Schuldner eine Leistung fordern darf?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
-        "timings": [
-          {
-            "path": [ "2" ],
-            "profession": [ "4" ],
-            "phase": [ "*" ]
-          }
-        ],
-        "stats_min": {
-          "mentalHealth": 0,
-          "motivation": 0,
-          "money": 0,
-          "success": 0
-        },
-        "stats_max": {
-          "mentalHealth": 100,
-          "motivation": 100,
-          "money": -1,
-          "success": 100
-        }
+         "timings": [
+            {
+               "path": ["2"],
+               "profession": ["4"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
       },
       "options": [
-        {
-          "id": "E-119_1",
-          "title": "Prorogator",
-          "text": "Falsch! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-119_2",
-          "title": "Gläubiger",
-          "text": "Richtig! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 5
-          }
-        },
-        {
-          "id": "E-119_3",
-          "title": "Liquidator",
-          "text": "Falsch! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-119_4",
-          "title": "Querulant",
-          "text": "Falsch! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        }
+         {
+            "id": "E-119_1",
+            "title": "Prorogator",
+            "text": "Falsch! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-119_2",
+            "title": "Gläubiger",
+            "text": "Richtig! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-119_3",
+            "title": "Liquidator",
+            "text": "Falsch! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-119_4",
+            "title": "Querulant",
+            "text": "Falsch! Die Instanz, die von einem Schuldner eine Leistung fordern darf ist der Gläubiger oder auch Creditore genannt. Demnach glaubt ein Creditore seinem Schuldner, dass dieser die geschuldete Leistung erbringen wird.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
       ]
-    },
-    {
+   },
+   {
       "id": "E-120",
       "title": "Dein Staatsexamen steht an",
       "text": "Wann wurde die letzte Todesstrafe auf dem Bundesgebiet der heutigen Bundesrepublik vollzogen?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
-        "timings": [
-          {
-            "path": [ "2" ],
-            "profession": [ "4" ],
-            "phase": [ "*" ]
-          }
-        ],
-        "stats_min": {
-          "mentalHealth": 0,
-          "motivation": 0,
-          "money": 0,
-          "success": 0
-        },
-        "stats_max": {
-          "mentalHealth": 100,
-          "motivation": 100,
-          "money": -1,
-          "success": 100
-        }
+         "timings": [
+            {
+               "path": ["2"],
+               "profession": ["4"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
       },
       "options": [
-        {
-          "id": "E-120_1",
-          "title": "1949",
-          "text": "Falsch! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-120_2",
-          "title": "1899",
-          "text": "Falsch! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-120_3",
-          "title": "1934",
-          "text": "Falsch! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-120_4",
-          "title": "1981",
-          "text": "Richtig! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": 5
-          }
-        }
+         {
+            "id": "E-120_1",
+            "title": "1949",
+            "text": "Falsch! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-120_2",
+            "title": "1899",
+            "text": "Falsch! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-120_3",
+            "title": "1934",
+            "text": "Falsch! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-120_4",
+            "title": "1981",
+            "text": "Richtig! Man geht davon aus, dass die letzte Hinrichtung aus dem Bundesgebiet der heutigen Bundesrepublik 1981 in der DDR vollzogen wurde. Ein Stasi-Hauptmann wurde durch den sogenannten unerwarteten Nahschuss hingerichtet, da er verdächtigt wurde sich mit Akten in den Westen absetzen zu wollen",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         }
       ]
-    },
-    {
+   },
+   {
       "id": "E-121",
       "title": "Dein Staatsexamen steht an",
       "text": "Welche Widerrufsfrist steht Verbrauchern nach §312d BGB zu, die einen Fernabsatzvertrag (z.B. am Telefon oder im Internet) eingegangen sind?",
       "info": "hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
-        "timings": [
-          {
-            "path": [ "2" ],
-            "profession": [ "4" ],
-            "phase": [ "*" ]
-          }
-        ],
-        "stats_min": {
-          "mentalHealth": 0,
-          "motivation": 0,
-          "money": 0,
-          "success": 0
-        },
-        "stats_max": {
-          "mentalHealth": 100,
-          "motivation": 100,
-          "money": -1,
-          "success": 100
-        }
+         "timings": [
+            {
+               "path": ["2"],
+               "profession": ["4"],
+               "phase": ["*"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
       },
       "options": [
-        {
-          "id": "E-121_1",
-          "title": "zwei Jahre",
-          "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
-          "stats": {
+         {
+            "id": "E-121_1",
+            "title": "zwei Jahre",
+            "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-121_2",
+            "title": "zwei Wochen",
+            "text": "Richtig! Die Widerrufsfrist beträgt zwei Wochen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-121_3",
+            "title": "zwei Tage",
+            "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-121_4",
+            "title": "zwei Monate",
+            "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -5
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-122",
+      "title": "Prüfung einfach gemacht",
+      "text": "Du musst eine Prüfung schreiben. Leider bist du so wie nicht vorbeireit und die Prüfung ist morgen. Was machst du?",
+      "info": "Hat Auswirkungen auf deinen Erfolg",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
             "mentalHealth": 0,
             "motivation": 0,
             "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-121_2",
-          "title": "zwei Wochen",
-          "text": "Richtig! Die Widerrufsfrist beträgt zwei Wochen.",
-          "stats": {
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-122_1",
+            "title": "Zusammenfassung besorgen und lernen was geht",
+            "text": "Du hast die Prüfung mit 3,1 bestanden. Du hast zwar nicht viel gelernt, aber du hast es doch irgendwie geschafft.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": -10,
+               "money": 0,
+               "success": 10
+            }
+         },
+         {
+            "id": "E-122_2",
+            "title": "Altprüfungen besorgen und die Musterlösung auswendig lernen",
+            "text": "Du hast die Prüfung gerade so 4,0 mit bestanden. Nächstes mal einfach früher anfange zu Lernen.",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": 0,
+               "money": -15,
+               "success": 5
+            }
+         },
+         {
+            "id": "E-122_3",
+            "title": "Spickzettel schreiben und nutzen",
+            "text": "Das war leider keine gute Entscheidung die Prüfungsaufsicht hat dich erwischt. Du musst die Prüfung wiederholen.",
+            "stats": {
+               "mentalHealth": -20,
+               "motivation": 0,
+               "money": 0,
+               "success": -20
+            }
+         },
+         {
+            "id": "E-122_4",
+            "title": "Entspannt schlafen gehen und beim Nachbar spicken",
+            "text": "Das war leider keine gute Entscheidung dein Nachbar hat dich verpetzt. Du musst die Prüfung wiederholen.",
+            "stats": {
+               "mentalHealth": -20,
+               "motivation": 0,
+               "money": 0,
+               "success": -20
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-123",
+      "title": "Projektarbeit",
+      "text": "Du musst eine Projektarbeit erstellen und abgeben. Leider ist die Abgabe schon morgen. Was machst du?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["*%2"]
+            },
+            {
+               "path": ["1", "2"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
+            }
+         ],
+         "stats_min": {
             "mentalHealth": 0,
             "motivation": 0,
             "money": 0,
-            "success": 5
-          }
-        },
-        {
-          "id": "E-121_3",
-          "title": "zwei Tage",
-          "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
-          "stats": {
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-123_1",
+            "title": "Du kopierst die Arbeit von einem Klassenkameraden/Kommilitonen und passt sie geringfügig an.",
+            "text": "Das Plagiat ist aufgefallen und du musst die Arbeit wiederholen.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": 0,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-123_2",
+            "title": "Du nimmst was du schon hast du schreibst die Nacht durch.",
+            "text": "Deine Arbeit wir mit 2,0 bewertet. Die Nacht hat sich gelohnt.",
+            "stats": {
+               "mentalHealth": -20,
+               "motivation": -15,
+               "money": 0,
+               "success": 23
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-124",
+      "title": "Gruppenprojekt",
+      "text": "Ihr müsst im Team ein Projekt durchführen und abgeben. Die Arbeit ist großteils fertig, aber hat noch Verbesserungspotential. Ihr habt noch eine Woche Zeit. Was macht ihr?",
+      "info": "hat Auswirkungen auf den Erfolg",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["*%2"]
+            },
+            {
+               "path": ["1", "2"],
+               "profession": ["*"],
+               "phase": ["*!(*%2)"]
+            }
+         ],
+         "stats_min": {
             "mentalHealth": 0,
             "motivation": 0,
             "money": 0,
-            "success": -5
-          }
-        },
-        {
-          "id": "E-121_4",
-          "title": "zwei Monate",
-          "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
-          "stats": {
-            "mentalHealth": 0,
-            "motivation": 0,
-            "money": 0,
-            "success": -5
-          }
-        }
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-124_1",
+            "title": "Du hörst auf deine Teamkollegen und nutzt die verbleibende Zeit für die schönen Dinge des Lebens.",
+            "text": "Eure Arbeit wurde mit 4,0 bewertet. Ihr habt es zwar geschafft. Es wäre allerdings eine bessere Note drin gewesen.",
+            "stats": {
+               "mentalHealth": -5,
+               "motivation": 0,
+               "money": 0,
+               "success": -15
+            }
+         },
+         {
+            "id": "E-124_2",
+            "title": "Du nutzt die Zeit und verbessert die Arbeit alleine.",
+            "text": "Eure Arbeit wird mit 1.9 bewertet. Deine Teamkollegen bedanken sich bei dir.",
+            "stats": {
+               "mentalHealth": 10,
+               "motivation": 15,
+               "money": 0,
+               "success": 25
+            }
+         }
       ]
    },
    {
