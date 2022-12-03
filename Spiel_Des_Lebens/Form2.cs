@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace Spiel_Des_Lebens
@@ -17,6 +18,7 @@ namespace Spiel_Des_Lebens
         private Data.Profession profession;
         private Data.Path training;
         private string job;
+        private string refrence_training;
         public Form2(string name, string alter, Image avatar, string abschluss, bool new_game, String path, String profession, String job)
         {
             InitializeComponent();
@@ -27,6 +29,7 @@ namespace Spiel_Des_Lebens
             this.avatar = avatar;
             this.new_game = new_game;
             this.job = job;
+            this.refrence_training = path;
             if (profession == "Social")
             {
                 this.profession = Data.Profession.Social;
@@ -254,11 +257,27 @@ namespace Spiel_Des_Lebens
             }
             action_points_txt.Text = "Aktionspunkte: " + action_points;
             left_phase_txt.Text = "Verbleibene Länge der Phase: " + (12 - action_points);
-            progress_prog_bar.Value = 100 * ((cur_phase) * 12 + action_points) / (overall_phase * 12);
+            progress_prog_bar.Value = 1;
             money_prog_bar.Text = ui_interface.getPlayerMoney().ToString() + "€";
             learn_prog_bar.Value = ui_interface.getPlayerSuccess();
             motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
             mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
+            if(action_points == 1)
+            {
+                option_1_btn.Enabled = false;
+                option_2_btn.Enabled = false;
+                option_3_btn.Enabled = false;
+                option_4_btn.Enabled = false;
+                show_info_btn.Enabled = false;
+            }
+            if(action_points == 14 && option_1_btn.Enabled == false)
+            {
+                option_1_btn.Enabled = true;
+                option_2_btn.Enabled = true;
+                option_3_btn.Enabled = true;
+                option_4_btn.Enabled = true;
+                show_info_btn.Enabled = true;
+            }
             game_over_check();
         }
         private void get_new_actions()
@@ -493,6 +512,11 @@ namespace Spiel_Des_Lebens
 
         private void new_profession_no_btn_Click(object sender, EventArgs e)
         {
+            if (new_profession_no_btn.Text == "Weiter")
+            {
+                ui_interface = new UI_Interface(true, alter, name, training, profession);
+                lblPlayerPath.Text = new_profession_combo_box.Text;
+            }
             new_profession_panel.Visible = false;
             all_options_enable();
         }
@@ -513,20 +537,18 @@ namespace Spiel_Des_Lebens
             new_profession_yes_btn.Visible = false;
             new_profession_lable.Visible = true;
             new_profession_no_btn.Enabled = false;
-            /*
-            if (education_path.Text == "Ausbildung")
+            if(refrence_training == "Training")
             {
-                profession_path.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
+                new_profession_combo_box.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
             }
-            else if (education_path.Text == "Duales Studium")
+            else if (refrence_training == "DualStudy")
             {
-                profession_path.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
+                new_profession_combo_box.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
             }
-            else if (education_path.Text == "Studium")
+            else if (refrence_training == "Study")
             {
-                profession_path.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
+                new_profession_combo_box.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
             }
-            */
         }
 
         private void new_profession_txt_change(object sender, EventArgs e)
