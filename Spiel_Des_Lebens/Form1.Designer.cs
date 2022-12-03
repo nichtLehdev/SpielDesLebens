@@ -336,15 +336,14 @@
             this.weiter_button.TabIndex = 15;
             this.weiter_button.Text = "Weiter";
             this.weiter_button.UseVisualStyleBackColor = false;
-            this.weiter_button.Click += new System.EventHandler(open_next);
+            this.weiter_button.Click += new System.EventHandler(this.open_next);
             // 
             // fiction_panel
             // 
             this.fiction_panel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.fiction_panel.Controls.Add(this.accept_fict_btn);
-            this.fiction_panel.Controls.Add(this.panel1);
             this.fiction_panel.Controls.Add(this.fiction_txt_box);
-            this.fiction_panel.Location = new System.Drawing.Point(12, 20);
+            this.fiction_panel.Location = new System.Drawing.Point(504, 28);
             this.fiction_panel.Name = "fiction_panel";
             this.fiction_panel.Size = new System.Drawing.Size(343, 497);
             this.fiction_panel.TabIndex = 4;
@@ -370,7 +369,7 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(86, 25);
+            this.panel1.Location = new System.Drawing.Point(504, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(343, 497);
             this.panel1.TabIndex = 1;
@@ -490,6 +489,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 664);
             this.Controls.Add(this.fiction_panel);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Layout_neues_Spiel);
             this.Name = "Form1";
             this.Text = "Spiel des Lebens";

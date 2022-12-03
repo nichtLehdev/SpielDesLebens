@@ -56,7 +56,7 @@ namespace Spiel_Des_Lebens
             
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
-                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss, true, training,  profession);
+                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss, true, training,  profession, profession_path.Text);
                 mainForm.TopLevel = false;
                 mainForm.FormBorderStyle = FormBorderStyle.None;
                 mainForm.Dock = DockStyle.Fill;
@@ -78,7 +78,7 @@ namespace Spiel_Des_Lebens
         private void load_test(object sender, EventArgs e)
         {
             //für das Bsp werden sie vorher gestzt
-            Form2 t = new Form2("Mia Münstermann", "20", pictureBox1.Image, "Testaschlusss", false, "Training", "Stem");
+            Form2 t = new Form2("Mia Münstermann", "20", pictureBox1.Image, "Testaschlusss", false, "Training", "Stem", "Pharmazeutisch Technische Assistenz");
             t.Show();
             this.Hide();
         }
@@ -94,7 +94,7 @@ namespace Spiel_Des_Lebens
             {
                 education_path.Items.AddRange(new object[] { "Ausbildung" });
             }
-            if (abschluss == "Realschulabschluss")
+            else if (abschluss == "Realschulabschluss")
             {
                 education_path.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
             }

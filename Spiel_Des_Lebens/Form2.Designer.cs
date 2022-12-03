@@ -36,6 +36,8 @@
             this.action_1_btn = new System.Windows.Forms.Button();
             this.action_0_btn = new System.Windows.Forms.Button();
             this.userInfo = new System.Windows.Forms.Panel();
+            this.lblPlayerPath = new System.Windows.Forms.Label();
+            this.lblPath = new System.Windows.Forms.Label();
             this.lblPlayerName = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
             this.avatar_pic = new System.Windows.Forms.PictureBox();
@@ -251,6 +253,8 @@
             this.userInfo.BackColor = System.Drawing.Color.Transparent;
             this.userInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.userInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userInfo.Controls.Add(this.lblPlayerPath);
+            this.userInfo.Controls.Add(this.lblPath);
             this.userInfo.Controls.Add(this.lblPlayerName);
             this.userInfo.Controls.Add(this.lblAge);
             this.userInfo.Controls.Add(this.avatar_pic);
@@ -262,10 +266,29 @@
             this.userInfo.Size = new System.Drawing.Size(238, 188);
             this.userInfo.TabIndex = 2;
             // 
+            // lblPlayerPath
+            // 
+            this.lblPlayerPath.AutoSize = true;
+            this.lblPlayerPath.Location = new System.Drawing.Point(112, 163);
+            this.lblPlayerPath.Name = "lblPlayerPath";
+            this.lblPlayerPath.Size = new System.Drawing.Size(102, 13);
+            this.lblPlayerPath.TabIndex = 11;
+            this.lblPlayerPath.Text = "Spieler Bildungsweg";
+            // 
+            // lblPath
+            // 
+            this.lblPath.AutoSize = true;
+            this.lblPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPath.Location = new System.Drawing.Point(52, 163);
+            this.lblPath.Name = "lblPath";
+            this.lblPath.Size = new System.Drawing.Size(37, 13);
+            this.lblPath.TabIndex = 10;
+            this.lblPath.Text = "Path:";
+            // 
             // lblPlayerName
             // 
             this.lblPlayerName.AutoSize = true;
-            this.lblPlayerName.Location = new System.Drawing.Point(112, 140);
+            this.lblPlayerName.Location = new System.Drawing.Point(112, 123);
             this.lblPlayerName.Name = "lblPlayerName";
             this.lblPlayerName.Size = new System.Drawing.Size(70, 13);
             this.lblPlayerName.TabIndex = 6;
@@ -275,7 +298,7 @@
             // 
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAge.Location = new System.Drawing.Point(52, 156);
+            this.lblAge.Location = new System.Drawing.Point(52, 143);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(37, 13);
             this.lblAge.TabIndex = 9;
@@ -286,7 +309,7 @@
             this.avatar_pic.InitialImage = null;
             this.avatar_pic.Location = new System.Drawing.Point(55, 11);
             this.avatar_pic.Name = "avatar_pic";
-            this.avatar_pic.Size = new System.Drawing.Size(120, 117);
+            this.avatar_pic.Size = new System.Drawing.Size(120, 109);
             this.avatar_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.avatar_pic.TabIndex = 5;
             this.avatar_pic.TabStop = false;
@@ -296,7 +319,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(52, 140);
+            this.lblName.Location = new System.Drawing.Point(52, 123);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(43, 13);
             this.lblName.TabIndex = 8;
@@ -305,7 +328,7 @@
             // lblPlayerAge
             // 
             this.lblPlayerAge.AutoSize = true;
-            this.lblPlayerAge.Location = new System.Drawing.Point(112, 156);
+            this.lblPlayerAge.Location = new System.Drawing.Point(112, 143);
             this.lblPlayerAge.Name = "lblPlayerAge";
             this.lblPlayerAge.Size = new System.Drawing.Size(63, 13);
             this.lblPlayerAge.TabIndex = 7;
@@ -1380,6 +1403,8 @@
         private System.Windows.Forms.TextBox new_profession_txt;
         private System.Windows.Forms.Label new_profession_lable;
         private System.Windows.Forms.ComboBox new_profession_combo_box;
+        private System.Windows.Forms.Label lblPlayerPath;
+        private System.Windows.Forms.Label lblPath;
     }
 }
 

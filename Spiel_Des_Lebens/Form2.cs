@@ -16,7 +16,8 @@ namespace Spiel_Des_Lebens
         private String[] option = new String[4];
         private Data.Profession profession;
         private Data.Path training;
-        public Form2(string name, string alter, Image avatar, string abschluss, bool new_game, String path, String profession)
+        private string job;
+        public Form2(string name, string alter, Image avatar, string abschluss, bool new_game, String path, String profession, String job)
         {
             InitializeComponent();
             avatar_pic.Image = avatar;
@@ -25,6 +26,7 @@ namespace Spiel_Des_Lebens
             this.abschluss = abschluss;
             this.avatar = avatar;
             this.new_game = new_game;
+            this.job = job;
             if (profession == "Social")
             {
                 this.profession = Data.Profession.Social;
@@ -64,6 +66,7 @@ namespace Spiel_Des_Lebens
             ui_interface = new UI_Interface(true, alter, name, training, profession);
             lblPlayerAge.Text = Convert.ToString(this.alter);
             lblPlayerName.Text = this.name;
+            lblPlayerPath.Text = this.job;
             btnLoadEvent_Click();
             update_aktionpoints();
             if (new_game == true)
@@ -530,5 +533,6 @@ namespace Spiel_Des_Lebens
         {
             new_profession_no_btn.Enabled = true;
         }
+        
     }
 }
