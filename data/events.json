@@ -9104,6 +9104,142 @@
       ]
    },
    {
+      "id": "E-131",
+      "title": "Betriebsfeier",
+      "text": "Es findet eine Betriebsfeier statt. Alle Mitarbeiter werden gebeten bei der Vorbereitung mitzuhelfen.",
+      "info": "Der Kunde ist König",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["*!(%2)"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-131_1",
+            "title": "Du ignoriert die Einladung und erscheinst nicht.",
+            "text": "Du hast dich nicht beteiligt und verpasst eine gute Gelegenheit, deine Kollegen besser kennenzulernen.",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": -10,
+               "money": 0,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-131_2",
+            "title": "Du gehst zur Betriebsfeier, hilfst aber nicht bei der Vorbereitung.",
+            "text": "Bei der Feier lernst du deine Kollegen besser kennen und hast Spaß. Dein Chef ist aber nicht begeistert, dass du nicht mitgeholfen hast.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": 5,
+               "money": 0,
+               "success": -5
+            }
+         },
+         {
+            "id": "E-131_3",
+            "title": "Du hilfst bei der Vorbereitung mit und erscheinst zur Feier.",
+            "text": "Bei der Feier lernst du deine Kollegen besser kennen und hast Spaß. Dein Chef ist begeistert, dass du mitgeholfen hast.",
+            "stats": {
+               "mentalHealth": 9,
+               "motivation": 9,
+               "money": 0,
+               "success": 7
+            }
+         }
+      ]
+   },
+   {
+      "id": "E-132",
+      "title": "Kaffee für den Chef",
+      "text": "Dein Chef hat zum dritten Mal diese Woche dir die Aufgabe geben Kaffee zu kochen und ihm eine Tasse davon zu bringen. Wie reagierst du?",
+      "info": "Der Kunde ist König",
+      "priority": 1,
+      "requirements": {
+         "timings": [
+            {
+               "path": ["0"],
+               "profession": ["*"],
+               "phase": ["*!(%2)"]
+            },
+            {
+               "path": ["1"],
+               "profession": ["*"],
+               "phase": ["*%2"]
+            }
+         ],
+         "stats_min": {
+            "mentalHealth": 0,
+            "motivation": 0,
+            "money": 0,
+            "success": 0
+         },
+         "stats_max": {
+            "mentalHealth": 100,
+            "motivation": 100,
+            "money": -1,
+            "success": 100
+         }
+      },
+      "options": [
+         {
+            "id": "E-132_1",
+            "title": "Du reagierst gereizt und machst ihm klar, dass du das nicht mehr machen willst.",
+            "text": "Deine Chef ist wenig begeistert von deiner Reaktion und gibt dir anschließend noch mehr Aufgaben, die sonst keiner machen will.",
+            "stats": {
+               "mentalHealth": 0,
+               "motivation": 0,
+               "money": 0,
+               "success": -10
+            }
+         },
+         {
+            "id": "E-132_2",
+            "title": "Du tust, was man dir sagt.",
+            "text": "Dein Chef ist zwar zufrieden mit dir, gelernt hast du in der Zeit aber Nichts. Auch deine Motivation und Mental Health leiden darunter.",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": -10,
+               "money": 0,
+               "success": 0
+            }
+         },
+         {
+            "id": "E-132_3",
+            "title": "Du sagst deinem Chef in freundliche Art und Weise, dass dies keine sinnvolle Aufgabe ist und du hier bist um etwas zu lernen.",
+            "text": "Dein Chef versteht deine Argumente und gibt dir eine Aufgabe, bei der du auch wirklich etwas lernen kannst.",
+            "stats": {
+               "mentalHealth": 5,
+               "motivation": -5,
+               "money": 0,
+               "success": 7
+            }
+         }
+      ]
+   },
+   {
       "id": "E-998",
       "title": "Hofmann ist im Urlaub",
       "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
