@@ -86,7 +86,7 @@
             // fiction_txt_box
             // 
             this.errorProvider1.SetIconAlignment(this.fiction_txt_box, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
-            this.fiction_txt_box.Location = new System.Drawing.Point(80, 95);
+            this.fiction_txt_box.Location = new System.Drawing.Point(65, 95);
             this.fiction_txt_box.Name = "fiction_txt_box";
             this.fiction_txt_box.ReadOnly = true;
             this.fiction_txt_box.Size = new System.Drawing.Size(209, 159);
@@ -192,7 +192,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 23);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Hauptschulaschluss";
+            this.button1.Text = "Hauptschulabschluss";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.changePath);
             // 
@@ -206,7 +206,6 @@
             this.button2.Text = "Realschulabschluss";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.changePath);
-            this.button2.Validating += new System.ComponentModel.CancelEventHandler(this.button2_Validating);
             // 
             // button3
             // 
@@ -245,10 +244,6 @@
             // education_path
             // 
             this.education_path.FormattingEnabled = true;
-            this.education_path.Items.AddRange(new object[] {
-            "Ausbildung",
-            "Duales Studium",
-            "Studium"});
             this.education_path.Location = new System.Drawing.Point(97, 331);
             this.education_path.Name = "education_path";
             this.education_path.Size = new System.Drawing.Size(224, 21);
@@ -274,6 +269,7 @@
             this.profession_path.Name = "profession_path";
             this.profession_path.Size = new System.Drawing.Size(224, 21);
             this.profession_path.TabIndex = 19;
+            this.profession_path.TextChanged += new System.EventHandler(this.profession_path_TextChanged);
             // 
             // lable_1
             // 
@@ -340,21 +336,23 @@
             this.weiter_button.TabIndex = 15;
             this.weiter_button.Text = "Weiter";
             this.weiter_button.UseVisualStyleBackColor = false;
-            this.weiter_button.Click += new System.EventHandler(this.open_next);
+            this.weiter_button.Click += new System.EventHandler();
             // 
             // fiction_panel
             // 
             this.fiction_panel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.fiction_panel.Controls.Add(this.accept_fict_btn);
+            this.fiction_panel.Controls.Add(this.panel1);
             this.fiction_panel.Controls.Add(this.fiction_txt_box);
-            this.fiction_panel.Location = new System.Drawing.Point(0, 0);
+            this.fiction_panel.Location = new System.Drawing.Point(12, 20);
             this.fiction_panel.Name = "fiction_panel";
             this.fiction_panel.Size = new System.Drawing.Size(343, 497);
             this.fiction_panel.TabIndex = 4;
             // 
             // accept_fict_btn
             // 
-            this.accept_fict_btn.Location = new System.Drawing.Point(80, 355);
+            this.accept_fict_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.accept_fict_btn.Location = new System.Drawing.Point(65, 352);
             this.accept_fict_btn.Margin = new System.Windows.Forms.Padding(2);
             this.accept_fict_btn.Name = "accept_fict_btn";
             this.accept_fict_btn.Size = new System.Drawing.Size(209, 19);
@@ -367,13 +365,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Brown;
             this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
-            this.panel1.Controls.Add(this.fiction_panel);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(504, 31);
+            this.panel1.Location = new System.Drawing.Point(86, 25);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(343, 497);
             this.panel1.TabIndex = 1;
@@ -385,7 +382,7 @@
             this.panel2.Controls.Add(this.button_mini_2);
             this.panel2.Controls.Add(this.button_mini_1);
             this.panel2.Controls.Add(this.textBox_mini_field);
-            this.panel2.Location = new System.Drawing.Point(56, 172);
+            this.panel2.Location = new System.Drawing.Point(43, 170);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(262, 175);
@@ -492,7 +489,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 664);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.fiction_panel);
             this.Controls.Add(this.Layout_neues_Spiel);
             this.Name = "Form1";
             this.Text = "Spiel des Lebens";

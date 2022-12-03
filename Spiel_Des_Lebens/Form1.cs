@@ -8,7 +8,9 @@ namespace Spiel_Des_Lebens
 {
    public partial class Form1 : Form
    {
-      public Form1()
+        private String profession = null;
+        private String training = null;
+        public Form1()
       {
          InitializeComponent();
          var carrer = new EducationPath(Data.Path.Training, Data.Profession.Social);
@@ -44,19 +46,17 @@ namespace Spiel_Des_Lebens
                }
                output += "\r\n";
                output += "\r\n";
-
-
             }
-
          }
          textBox1.Text = output;
       }
 
         private void open_next(object sender, EventArgs e)
         {
+            
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
-                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss, true);
+                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss, true, training,  profession);
                 mainForm.TopLevel = false;
                 mainForm.FormBorderStyle = FormBorderStyle.None;
                 mainForm.Dock = DockStyle.Fill;
@@ -65,6 +65,7 @@ namespace Spiel_Des_Lebens
                 mainForm.BringToFront();
                 mainForm.Show();
             }
+
         }
 
       private Image avatar;
@@ -77,18 +78,31 @@ namespace Spiel_Des_Lebens
         private void load_test(object sender, EventArgs e)
         {
             //für das Bsp werden sie vorher gestzt
-            Form2 t = new Form2("Mia Münstermann", "20", pictureBox1.Image, "Testaschlusss", false);
+            Form2 t = new Form2("Mia Münstermann", "20", pictureBox1.Image, "Testaschlusss", false, "Training", "Stem");
             t.Show();
             this.Hide();
         }
 
 
       private string abschluss;
-      private void changePath(object sender, EventArgs e)
-      {
-         Button btn = (Button)sender;
-         abschluss = btn.Text;
-      }
+        private void changePath(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            abschluss = btn.Text;
+            education_path.Items.Clear();
+            if (abschluss == "Hauptschulabschluss")
+            {
+                education_path.Items.AddRange(new object[] { "Ausbildung" });
+            }
+            if (abschluss == "Realschulabschluss")
+            {
+                education_path.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
+            }
+            else
+            {
+                education_path.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium"});
+            }
+        }
 
       private void neues_Spiel_open(Object sender, EventArgs e)
       {
@@ -128,30 +142,6 @@ namespace Spiel_Des_Lebens
          button_mini_3.Visible = false;
          textBox_mini_field.Visible = false;
       }
-
-      private void button2_Validating(object sender, CancelEventArgs e)
-      {
-         if (string.IsNullOrEmpty(abschluss))
-         {
-            e.Cancel = true;
-            errorProvider1.SetError(weiter_button, "Wähle einen Schulabschluss");
-         }
-         else if (string.IsNullOrEmpty(txt_name.Text))
-         {
-            e.Cancel = true;
-            errorProvider1.SetError(weiter_button, "Bitte gebe einen namen ein");
-         }
-         else if (string.IsNullOrEmpty(txt_alter.Text) || Convert.ToInt16(txt_alter.Text) > 60 || Convert.ToInt16(txt_alter.Text) < 15)
-         {
-            e.Cancel = true;
-            errorProvider1.SetError(weiter_button, "Wähle ein Alter zwischen 15 und 60");
-         }
-         else
-         {
-            e.Cancel = false;
-            errorProvider1.SetError(weiter_button, null);
-         }
-      }
       public void CustomizeLinearGradients(PaintEventArgs e)
       {
          LinearGradientBrush linGrBrush = new LinearGradientBrush(
@@ -181,15 +171,125 @@ namespace Spiel_Des_Lebens
             profession_path.Items.Clear();
             if (education_path.Text == "Ausbildung")
             {
+                training = "Training";
                 profession_path.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
             }
             else if (education_path.Text == "Duales Studium")
             {
+                training = "DualStudy";
                 profession_path.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
             }
             else if (education_path.Text == "Studium")
             {
+                training = "Study";
                 profession_path.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
+            }
+        }
+
+        private void profession_path_TextChanged(object sender, EventArgs e)
+        {
+            if (education_path.Text == "Ausbildung")
+            {
+                if (profession_path.Text == "Krankenpflege")
+                {
+                    profession = "Social";
+                }
+                else if (profession_path.Text == "Industriekaufmann")
+                {
+                    profession = "Business";
+                }
+                else if (profession_path.Text == "Pharmazeutisch Technische Assistenz")
+                {
+                    profession = "Stem";
+                }
+                else if (profession_path.Text == "Fachinformatiker")
+                {
+                    profession = "Science";
+                }
+                else if (profession_path.Text == "Rechtanwaltsfachangestellter")
+                {
+                    profession = "Civil";
+                }
+            }
+            else if (education_path.Text == "Duales Studium")
+            {
+                if (profession_path.Text == "Angewandte Gesundheits- und Pflegewissenschaften")
+                {
+                    profession = "Social";
+                }
+                else if (profession_path.Text == "BWL")
+                {
+                    profession = "Business";
+                }
+                else if (profession_path.Text == "Angewandte Physik")
+                {
+                    profession = "Stem";
+                }
+                else if (profession_path.Text == "Angewandtes Informatikstudium")
+                {
+                    profession = "Science";
+                }
+                else if (profession_path.Text == "Steuerwesen")
+                {
+                    profession = "Civil";
+                }
+            }
+            else if (education_path.Text == "Studium")
+            {
+                if (profession_path.Text == "Medizinstudium")
+                {
+                    profession = "Social";
+                }
+                else if (profession_path.Text == "BWL")
+                {
+                    profession = "Business";
+                }
+                else if (profession_path.Text == "Physikstudium")
+                {
+                    profession = "Stem";
+                }
+                else if (profession_path.Text == "Informatikstudium")
+                {
+                    profession = "Science";
+                }
+                else if (profession_path.Text == "Jurastudium")
+                {
+                    profession = "Civil";
+                }
+            }
+        }
+
+        private void button2_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(abschluss))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(weiter_button, "Wähle einen Schulabschluss");
+            }
+            else if (string.IsNullOrEmpty(txt_name.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(weiter_button, "Bitte gebe einen namen ein");
+            }
+            else if (string.IsNullOrEmpty(txt_alter.Text) || Convert.ToInt16(txt_alter.Text) > 60 || Convert.ToInt16(txt_alter.Text) < 15)
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(weiter_button, "Wähle ein Alter zwischen 15 und 60");
+            }
+            else if (string.IsNullOrEmpty(training))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(weiter_button, "Wähle einen Bildungsweg");
+            }
+            else if (string.IsNullOrEmpty(profession))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(weiter_button, "Wähle einen Karriereweg");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(weiter_button, null);
             }
         }
     }
