@@ -402,6 +402,14 @@ namespace Spiel_Des_Lebens
         {
             action_panel.Visible = false;
             all_options_enable();
+            if (ui_interface.getActionPoints() == 1)
+            {
+                option_1_btn.Enabled = false;
+                option_2_btn.Enabled = false;
+                option_3_btn.Enabled = false;
+                option_4_btn.Enabled = false;
+                show_info_btn.Enabled = false;
+            }
         }
 
         private void hover_action_txt_show_0(object sender, EventArgs e)
