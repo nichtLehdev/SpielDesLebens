@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Spiel_Des_Lebens
 {
@@ -11,7 +7,7 @@ namespace Spiel_Des_Lebens
         public static List<Action> convertLoadActionsToActions(List<loadAction> loadActions)
         {
             List<Action> actions = new List<Action>();
-            foreach(loadAction la in loadActions)
+            foreach (loadAction la in loadActions)
             {
                 actions.Add(new Action(la.id, la.title, la.info, Converter.convertLoadOptionToOption(la.result)));
             }

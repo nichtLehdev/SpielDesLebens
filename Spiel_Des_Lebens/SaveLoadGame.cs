@@ -1,10 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Spiel_Des_Lebens
 {
@@ -93,10 +88,12 @@ namespace Spiel_Des_Lebens
         {
             switch (slot)
             {
-                case 1: case 2: case 3:
+                case 1:
+                case 2:
+                case 3:
                     File.WriteAllText("..//..//..//data//savegames//sg" + slot + ".json", serializePlayer(player));
-                break;
-                
+                    break;
+
                 default:
                     throw new Error("SaveGame: Wrong save-slot");
             }
@@ -118,7 +115,7 @@ namespace Spiel_Des_Lebens
             foreach (Event e in player.eventgenerator.getFilteredEventsPathProf())
             {
                 data += "{";
-                data += "\"id\":\"" + e.id +"\",";
+                data += "\"id\":\"" + e.id + "\",";
                 data += "\"title\":\"" + e.title + "\",";
                 data += "\"text\":\"" + e.text + "\",";
                 data += "\"info\":\"" + e.info + "\",";
@@ -132,7 +129,7 @@ namespace Spiel_Des_Lebens
                     {
                         data += "\"" + p + "\",";
                     }
-                    data = data.Remove(data.Length-1);
+                    data = data.Remove(data.Length - 1);
                     data += "],";
 
                     data += "\"profession\":[";
@@ -186,7 +183,7 @@ namespace Spiel_Des_Lebens
             data += "\"edu_path\":{";
             data += "\"path\":" + (int)player.getEducationPath().getPath() + ",";
             data += "\"profession\":" + (int)player.getEducationPath().getProfession() + ",";
-            data += "\"phase\":" + player.getEducationPath().getPhase().getCurrentPhase() +"}}";
+            data += "\"phase\":" + player.getEducationPath().getPhase().getCurrentPhase() + "}}";
 
 
             return data;
