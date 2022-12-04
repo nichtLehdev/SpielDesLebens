@@ -12,7 +12,7 @@ namespace Spiel_Des_Lebens
       private Player player;
       private Event currentEvent;
       private List<Action> currentActions;
-      public UI_Interface(bool avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
+      public UI_Interface(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
       {
          player = new Player(avatar, age, name, path, profession, graduation);
          nextAction();

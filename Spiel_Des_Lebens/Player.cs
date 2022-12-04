@@ -2,7 +2,7 @@ namespace Spiel_Des_Lebens
 {
    internal class Player
    {
-      private bool avatar;
+      private int avatar;
       private int age;
       private string name;
       private Data.Graduation graduation;
@@ -11,7 +11,7 @@ namespace Spiel_Des_Lebens
       public ActionGenerator actiongenerator;
       private EducationPath eduPath;
 
-      public Player(bool avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
+      public Player(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
       {
          this.age = age;
          this.avatar = avatar;
@@ -21,7 +21,7 @@ namespace Spiel_Des_Lebens
          resetCareer(path, profession);
       }
 
-      public Player(bool avatar, int age, string name, Stat playerStat, Eventgenerator eventGen, EducationPath eduPath)
+      public Player(int avatar, int age, string name, Stat playerStat, Eventgenerator eventGen, EducationPath eduPath)
       {
          this.avatar = avatar;
          this.age = age;
@@ -99,7 +99,7 @@ namespace Spiel_Des_Lebens
          return this.age;
       }
 
-      public bool getAvatar()
+      public int getAvatar()
       {
          return this.avatar;
       }

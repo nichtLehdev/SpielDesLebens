@@ -54,7 +54,7 @@ namespace Spiel_Des_Lebens
 
       private void Form1_Load(object sender, EventArgs e)
       {
-         ui_interface = new UI_Interface(true, alter, name, training, profession, graduation);
+         ui_interface = new UI_Interface(0, alter, name, training, profession, graduation);
          lblPlayerAge.Text = Convert.ToString(this.alter);
          lblPlayerName.Text = this.name;
          lblPlayerPath.Text = this.job;

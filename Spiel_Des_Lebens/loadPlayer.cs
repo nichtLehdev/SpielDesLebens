@@ -10,7 +10,7 @@ namespace Spiel_Des_Lebens
     {
         public string name;
         public int age;
-        public string avatar;
+        public int avatar;
         public loadStat stats;
         public List<loadEvent> eventGenList;
         public loadEduPath edu_path;

@@ -13,16 +13,9 @@ namespace Spiel_Des_Lebens
             EventListConverter eventListConverter = new EventListConverter();
             List<Event> filteredEvents = eventListConverter.convertLoadEventToEvent(lPlayer.eventGenList);
             bool avatar;
-            if(lPlayer.avatar == "True")
-            {
-                avatar = true;
-            }
-            else
-            {
-                avatar = false;
-            }
+            
             EducationPath eduPath = convertloadEduPathToEduPath(lPlayer.edu_path);
-            return new Player(avatar, lPlayer.age, lPlayer.name, convertLoadStatToStat(lPlayer.stats), new Eventgenerator(eduPath, filteredEvents), eduPath);
+            return new Player(lPlayer.avatar, lPlayer.age, lPlayer.name, convertLoadStatToStat(lPlayer.stats), new Eventgenerator(eduPath, filteredEvents), eduPath);
         }
 
         private static EducationPath convertloadEduPathToEduPath(loadEduPath lEduPath)

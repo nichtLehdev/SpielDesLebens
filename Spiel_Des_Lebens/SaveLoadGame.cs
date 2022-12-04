@@ -53,7 +53,7 @@ namespace Spiel_Des_Lebens
             string data = "{";
             data += "\"name\":\"" + player.getName() + "\",";
             data += "\"age\":" + player.getAge() + ",";
-            data += "\"avatar\": \"" + player.getAvatar().ToString() + "\",";
+            data += "\"avatar\": " + player.getAvatar() + ",";
             data += "\"stats\": {";
             data += "\"mentalHealth\":" + player.getPlayerStat().getStats()[0].getValue() + ",";
             data += "\"money\":" + player.getPlayerStat().getStats()[1].getValue() + ",";
