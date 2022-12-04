@@ -20,7 +20,8 @@ namespace Spiel_Des_Lebens
         private string refrence_training;
         private string refrence_profession;
         private Data.Graduation graduation;
-        public Form2(string name, string alter, Image avatar, string abschluss, bool new_game, String path, String profession, String job)
+        private int slot;
+        public Form2(string name, string alter, Image avatar, string abschluss, bool new_game, String path, String profession, String job, int slot)
         {
             InitializeComponent();
             avatar_pic.Image = avatar;
@@ -31,6 +32,7 @@ namespace Spiel_Des_Lebens
             this.new_game = new_game;
             this.job = job;
             this.refrence_training = path;
+            this.slot = slot;
             profession_set(profession);
             path_set(path);
             if (abschluss == "Realschulabschluss")
@@ -339,11 +341,14 @@ namespace Spiel_Des_Lebens
 
         private void game_over_btn_Click(object sender, EventArgs e)
         {
+            to_menu();
+        }
+        private void to_menu()
+        {
             Form1 t = new Form1();
             t.Show();
             Hide();
         }
-
         private void end_tutorial(object sender, EventArgs e)
         {
             tutorial_ask_panel.Visible = false;
@@ -594,5 +599,14 @@ namespace Spiel_Des_Lebens
             get_new_actions();
         }
 
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+            ui_interface.saveGame(slot);
+        }
+
+        private void back_to_menu_btn_Click(object sender, EventArgs e)
+        {
+            to_menu();
+        }
     }
 }

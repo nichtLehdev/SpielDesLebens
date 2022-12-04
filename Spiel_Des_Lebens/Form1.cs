@@ -10,6 +10,7 @@ namespace Spiel_Des_Lebens
     {
         private String profession = null;
         private String training = null;
+        private int slot;
         private UiInterfaceMenu uiMenu = new UiInterfaceMenu();
         public Form1()
         {
@@ -21,7 +22,7 @@ namespace Spiel_Des_Lebens
 
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
-                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss, true, training, profession, profession_path.Text);
+                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss, true, training, profession, profession_path.Text, slot);
                 mainForm.TopLevel = false;
                 mainForm.FormBorderStyle = FormBorderStyle.None;
                 mainForm.Dock = DockStyle.Fill;
@@ -76,7 +77,7 @@ namespace Spiel_Des_Lebens
         private void load_test(object sender, EventArgs e)
         {
             //für das Bsp werden sie vorher gestzt
-            Form2 t = new Form2("Mia Münstermann", "20", avatarBox1.Image, "Testabschluss", false, "Training", "Stem", "Pharmazeutisch Technische Assistenz");
+            Form2 t = new Form2("Mia Münstermann", "20", avatarBox1.Image, "Testabschluss", false, "Training", "Stem", "Pharmazeutisch Technische Assistenz", 1);
             t.Show();
             this.Hide();
         }
@@ -107,6 +108,18 @@ namespace Spiel_Des_Lebens
         private void neues_Spiel_open(Object sender, EventArgs e)
         {
             Button btn = sender as Button;
+            if(sender == slot_btn_1)
+            {
+                slot = 1;
+            }
+            else if (sender == slot_btn_2)
+            {
+                slot = 2;
+            }
+            else if (sender == slot_btn_3)
+            {
+                slot = 3;
+            }
             if (btn.Text == "Neues Spiel")
             {
                 Layout_neues_Spiel.Visible = true;
@@ -114,12 +127,10 @@ namespace Spiel_Des_Lebens
             }
             else
             {
-                textBox_mini_field.Text = btn.Text;
                 panel2.Visible = true;
                 button_mini_1.Visible = true;
                 button_mini_2.Visible = true;
                 button_mini_3.Visible = true;
-                textBox_mini_field.Visible = true;
             }
 
         }
@@ -140,7 +151,6 @@ namespace Spiel_Des_Lebens
             button_mini_1.Visible = false;
             button_mini_2.Visible = false;
             button_mini_3.Visible = false;
-            textBox_mini_field.Visible = false;
         }
         public void CustomizeLinearGradients(PaintEventArgs e)
         {
@@ -165,35 +175,38 @@ namespace Spiel_Des_Lebens
         private void accept_fict_btn_Click(object sender, EventArgs e)
         {
             fiction_panel.Visible = false;
+            load_saves();
+
+        }
+        private void load_saves()
+        {
             if (this.uiMenu.hasValidData(1))
             {
-                button5.Text = "Spielstand 1";
+                slot_btn_1.Text = "Spielstand 1";
             }
             else
             {
-                button5.Text = "Neues Spiel";
+                slot_btn_1.Text = "Neues Spiel";
             }
 
             if (this.uiMenu.hasValidData(2))
             {
-                button7.Text = "Spielstand 2";
+                slot_btn_2.Text = "Spielstand 2";
             }
             else
             {
-                button7.Text = "Neues Spiel";
+                slot_btn_2.Text = "Neues Spiel";
             }
 
             if (this.uiMenu.hasValidData(3))
             {
-                button6.Text = "Spielstand3";
+                slot_btn_3.Text = "Spielstand 3";
             }
             else
             {
-                button6.Text = "Neues Spiel";
+                slot_btn_3.Text = "Neues Spiel";
             }
-
         }
-
 
 
 
@@ -325,6 +338,13 @@ namespace Spiel_Des_Lebens
                 e.Cancel = false;
                 errorProvider1.SetError(weiter_button, null);
             }
+        }
+
+        private void button_mini_2_Click(object sender, EventArgs e)
+        {
+            uiMenu.deleteSaveGame(slot);
+            panel2.Visible = false;
+            load_saves();
         }
     }
 }
