@@ -247,7 +247,7 @@ namespace Spiel_Des_Lebens
 
         public String getStatWarning()
         {
-            Data.StatType? statType = player.checkStatSmaller(5);
+            Data.StatType? statType = player.checkStatSmaller(11);
             string warning = "";
             if(statType != null)
             {               
@@ -272,7 +272,7 @@ namespace Spiel_Des_Lebens
 
         public String getGameOver()
         {
-            Data.StatType? statType = player.checkStatSmaller(0);
+            Data.StatType? statType = player.checkStatSmaller(1);
             string gameOver = "";
             if (statType != null)
             {
@@ -299,6 +299,11 @@ namespace Spiel_Des_Lebens
             player.resetCareer(path, profession);
             Stat stats = new Stat(10, 10, 10, 10);
             player.changePlayerStat(stats);
+            nextAction();
+        }
+        public void nextPhase()
+        {
+            player.nextPhase();
             nextAction();
         }
     }
