@@ -59,7 +59,7 @@ namespace Spiel_Des_Lebens
                 if (prioEvents.Count != 0)
                 {
                     int eventIndex = random.Next(prioEvents.Count);
-                    //filteredEventsPathProfession[findEventIndexByID(prioEvents[eventIndex].id)].priority *= 2;
+                    filteredEventsPathProfession[findEventIndexByID(prioEvents[eventIndex].id)].priority += 1;
                     return prioEvents[eventIndex];
                 }
             }
@@ -129,7 +129,7 @@ namespace Spiel_Des_Lebens
             {
                 foreach (Timing t in e.requirements.timings)
                 {
-                    if (t.phase.Contains(edupath.getPhase().getCurrentPhase()))
+                    if (t.phase.Contains(edupath.getPhase().getCurrentPhase()) && t.path.Contains((int)edupath.getPath()) && t.profession.Contains((int)edupath.getProfession()))
                     {
                         filteredEventsPhase.Add(e);
                         break;

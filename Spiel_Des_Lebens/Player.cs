@@ -56,6 +56,11 @@ namespace Spiel_Des_Lebens
 
         }
 
+        public int getPlayerAge()
+        {
+            return age;
+        }
+
         public void setPlayerStat(Stat stats)
         {
             this.playerStat = stats;

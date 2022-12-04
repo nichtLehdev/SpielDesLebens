@@ -281,7 +281,7 @@ namespace Spiel_Des_Lebens
                         gameEnd = "Game Over!!! Du bist Pleite und kannst deine laufenden Kosten nicht mehr tragen";
                         break;
                     case 2:
-                        gameEnd = "Game Over!!! Du hast keine Motivation mehr und dein Leben macht kein Sinn mehr";
+                        gameEnd = "Game Over!!! Du hast keine Motivation mehr und dein Leben ergibt keinen Sinn mehr";
                         break;
                     case 3:
                         gameEnd = "Game Over!!! Du hast zu wenig gelernt und hast deine Prüfungen nicht bestanden";
@@ -345,6 +345,11 @@ namespace Spiel_Des_Lebens
                 }
             }
             return false;
+        }
+
+        public int getPlayerAge()
+        {
+            return player.getPlayerAge();
         }
     }
 }
