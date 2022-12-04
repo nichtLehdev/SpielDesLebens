@@ -942,7 +942,7 @@
             this.tutorial_ask_panel.Controls.Add(this.button2);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_title);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_txt);
-            this.tutorial_ask_panel.Location = new System.Drawing.Point(101, 49);
+            this.tutorial_ask_panel.Location = new System.Drawing.Point(131, 58);
             this.tutorial_ask_panel.Name = "tutorial_ask_panel";
             this.tutorial_ask_panel.Size = new System.Drawing.Size(365, 217);
             this.tutorial_ask_panel.TabIndex = 10;
