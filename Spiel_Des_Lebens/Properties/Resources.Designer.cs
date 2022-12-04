@@ -73,6 +73,16 @@ namespace Spiel_Des_Lebens.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coworking {
+            get {
+                object obj = ResourceManager.GetObject("coworking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap farbverlauf {
             get {
                 object obj = ResourceManager.GetObject("farbverlauf", resourceCulture);
@@ -176,6 +186,16 @@ namespace Spiel_Des_Lebens.Properties {
         internal static System.Drawing.Bitmap Sports_Icon_small {
             get {
                 object obj = ResourceManager.GetObject("Sports_Icon_small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap uni_table {
+            get {
+                object obj = ResourceManager.GetObject("uni-table", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -242,6 +242,13 @@ namespace Spiel_Des_Lebens
 
         private void update_aktionpoints()
         {
+            if (ui_interface.isInSchool() == true)
+            {
+                panelActiveChild.BackgroundImage = Spiel_Des_Lebens.Properties.Resources.uni_table;
+            }
+            else{
+                panelActiveChild.BackgroundImage = Spiel_Des_Lebens.Properties.Resources.coworking;
+            }
             int action_points = ui_interface.getActionPoints();
             int cur_phase = ui_interface.getCurrentPhase();
             int overall_phase = ui_interface.getMaxPhaseLength();
