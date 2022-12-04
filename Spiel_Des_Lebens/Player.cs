@@ -51,6 +51,9 @@ namespace Spiel_Des_Lebens
         {
             eduPath.getPhase().nextPhase();
             increaseAge();
+            //edit stats depending on Path
+            changePlayerStat(Data.statarray[(int)eduPath.getPath()]);
+
         }
 
         public void setPlayerStat(Stat stats)
@@ -96,9 +99,9 @@ namespace Spiel_Des_Lebens
 
         public Data.StatType? checkStatSmaller(int statValue)
         {
-            foreach(StatParameter statParameter in this.playerStat.getStats())
+            foreach (StatParameter statParameter in this.playerStat.getStats())
             {
-                if(statParameter.getValue() < statValue)
+                if (statParameter.getValue() < statValue)
                 {
                     return statParameter.getName();
                 }

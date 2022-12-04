@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Policy;
-using static Spiel_Des_Lebens.Data;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Xml.Linq;
 
 namespace Spiel_Des_Lebens
 {
@@ -249,11 +245,11 @@ namespace Spiel_Des_Lebens
         {
             Data.StatType? statType = player.checkStatSmaller(11);
             string warning = "";
-            if(statType != null)
-            {               
+            if (statType != null)
+            {
                 switch ((int)statType)
                 {
-                    case 0: 
+                    case 0:
                         warning = "Achtung!! Deine Mentale Gesundheit hat einen kritischen Zustand erreicht";
                         break;
                     case 1:
@@ -305,6 +301,37 @@ namespace Spiel_Des_Lebens
         {
             player.nextPhase();
             nextAction();
+        }
+
+        public bool isInSchool()
+        {
+            int currentPhase = player.getEducationPath().getPhase().getCurrentPhase();
+            if (currentPhase == 0)
+            {
+                return false;
+            }
+            if (player.getEducationPath().getPath() == Data.Path.Training)
+            {
+                if (currentPhase % 2 == 0)
+                {
+                    return true;
+                }
+            }
+            else if (player.getEducationPath().getPath() == Data.Path.DualStudy)
+            {
+                if (currentPhase % 2 != 0)
+                {
+                    return true;
+                }
+            }
+            else if (player.getEducationPath().getPath() == Data.Path.Study) // seperatly in case of changes in the future
+            {
+                if (currentPhase % 2 != 0)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
