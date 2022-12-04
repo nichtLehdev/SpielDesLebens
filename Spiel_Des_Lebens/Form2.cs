@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Spiel_Des_Lebens
 {
@@ -22,22 +15,49 @@ namespace Spiel_Des_Lebens
       private UI_Interface ui_interface;
       private Boolean new_game = false;
       private String[] option = new String[4];
-      public Form2(string name, string alter, Image avatar, string abschluss, Boolean new_game)
+      private Data.Profession profession;
+      private Data.Path training;
+      private string job;
+      private string refrence_training;
+      private string refrence_profession;
+      private Data.Graduation graduation;
+      public Form2(string name, string alter, Image avatar, string abschluss, bool new_game, String path, String profession, String job)
       {
          InitializeComponent();
-         pictureBox1.Image = avatar;
+         avatar_pic.Image = avatar;
          this.name = name;
          this.alter = Convert.ToInt16(alter);
          this.abschluss = abschluss;
          this.avatar = avatar;
          this.new_game = new_game;
+         this.job = job;
+         this.refrence_training = path;
+         profession_set(profession);
+         path_set(path);
+         if (abschluss == "Realschulabschluss")
+         {
+            this.graduation = Data.Graduation.Realschulabschluss;
+         }
+         else if (abschluss == "Hauptschulabschluss")
+         {
+            this.graduation = Data.Graduation.Hauptschulabschluss;
+         }
+         else if (abschluss == "Fachhochschulreife")
+         {
+            this.graduation = Data.Graduation.Fachhochschulreife;
+         }
+         else if (abschluss == "allg. Hochschulreife")
+         {
+            this.graduation = Data.Graduation.AllgemeineHochschulreife;
+         }
       }
 
       private void Form1_Load(object sender, EventArgs e)
       {
-         ui_interface = new UI_Interface(true, 18, "Fritz", Data.Path.Training, Data.Profession.Business);
+         ui_interface = new UI_Interface(true, alter, name, training, profession, graduation);
          lblPlayerAge.Text = Convert.ToString(this.alter);
          lblPlayerName.Text = this.name;
+         lblPlayerPath.Text = this.job;
          btnLoadEvent_Click();
          update_aktionpoints();
          if (new_game == true)
@@ -174,6 +194,7 @@ namespace Spiel_Des_Lebens
          action_1_btn.Enabled = true;
          action_2_btn.Enabled = true;
          action_3_btn.Enabled = true;
+
       }
       private void all_options_hide()
       {
@@ -204,153 +225,102 @@ namespace Spiel_Des_Lebens
          all_options_hide();
       }
 
-        private void option_4_click(object sender, EventArgs e)
-        {
-            event_txt_box.Text = ui_interface.getEventOptionText(3);
-            show_info_btn.Visible = false;
-            close_opt_end_txt.Visible = true;
-            all_options_hide();
-        }
-         
-        private void update_aktionpoints()
-        {
-            int action_points = ui_interface.getActionPoints();
-            int cur_phase = ui_interface.getCurrentPhase();
-            int overall_phase = ui_interface.getMaxPhase();
-            if (action_points_txt.Text == "Aktionspunkte: 12")
-            {
-                action_points_txt.Text = "Aktionspunkte: " + action_points;
-                current_phase_txt.Text = "Derzeitige Phase: " + cur_phase;
-            }
-            action_points_txt.Text = "Aktionspunkte: " + action_points;
-            left_phase_txt.Text = "Verbleibene Länge der Phase: " + (12 - action_points);
-            progress_prog_bar.Value = 100*((cur_phase-1)* 12 +action_points)/(overall_phase*12) ;
-            money_prog_bar.Text = ui_interface.getPlayerMoney().ToString()+"€";
-            learn_prog_bar.Value = ui_interface.getPlayerSuccess();
-            motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
-            mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
-            game_over_check();
-        }
-        private void get_new_actions()
-        {
-            action_0_btn.Text = ui_interface.getActionTitle(0);
-            action_1_btn.Text = ui_interface.getActionTitle(1);
-            action_2_btn.Text = ui_interface.getActionTitle(2);
-            action_3_btn.Text = ui_interface.getActionTitle(3);
-            
-            action_0_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(0));
-            action_1_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(1));
-            action_2_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(2));
-            action_3_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(3));
-            
-        }
-       private Image get_right_icon(int r)
-        {
-            if(r == 0)
-            {
-                //mental health
-                return Spiel_Des_Lebens.Properties.Resources.mentalhealth_48px;
-            }
-            else if(r == 1)
-            {
-                return Spiel_Des_Lebens.Properties.Resources.motivation_48px;
-                //moneyyyyy
-            }
-            else if( r == 2)
-            {
-                return Spiel_Des_Lebens.Properties.Resources.money_48px;
-                //motivation
-            }
-            else{
-              return Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
-                //lernstand
-            }
-        }
-        private void close_opt_txt(object sender, EventArgs e)
-        {
-            close_opt_end_txt.Visible = false;
-            btnLoadEvent_Click();
-    }
-        private void game_over_check()
-        {
-            String[] stats = new String[4];
-            int i = 0;;
-            if (money_prog_bar.Text == "0€")
-            {
-                stats[i] = "money";
-                i++;
-            }
-            if (learn_prog_bar.Value <= 0)
-            {
-                stats[i] = "learn";
-                i++;
-            }
-            if (motivation_prog_bar.Value <= 0)
-            {
-                stats[i] = "motivation";
-                i++;
-            }
-            if (mental_prog_bar.Value <= 0)
-            {
-                stats[i] = "mental";
-                i++;
-            }
-            if (stats[0] != null)
-            {
-                game_over(stats);
-            }
-        }
-        private void game_over(string[] stat)
-        {
-            if (stat[0] == "money")
-            {
-                game_over_txt.Text = "Geld beachten";
-            }
-            if (stat[0] == "learn")
-            {
-                game_over_txt.Text = "Lerstand beachten";
-            }
-            if (stat[0] == "motivation")
-            {
-                game_over_txt.Text = "Motivation beachten";
-            }
-            if (stat[0] == "mental")
-            {
-                game_over_txt.Text = "Mental beachten";
-            }
-            if (stat[1] != null)
-            {
-                if (stat[0] == "learn")
-                {
-                    game_over_txt.Text = game_over_txt + "Lernstand beachten.";
-                }
-                if (stat[0] == "motivation")
-                {
-                    game_over_txt.Text = game_over_txt + "Motivation beachten.";
-                }
-                if (stat[0] == "mental")
-                {
-                    game_over_txt.Text = game_over_txt + "Mental Health beachten.";
-                }
-            }
-            if (stat[2] != null)
-            {
-                if (stat[0] == "motivation")
-                {
-                    game_over_txt.Text = game_over_txt + "Motivation beachten.";
-                }
-                if (stat[0] == "mental")
-                {
-                    game_over_txt.Text = game_over_txt + "Mental Health beachten.";
-                }
-            }
-            if (stat[3] != null)
-            {
-                game_over_txt.Text = game_over_txt + "Mental Health beachten.";
-            }
+      private void option_4_click(object sender, EventArgs e)
+      {
+         event_txt_box.Text = ui_interface.getEventOptionText(3);
+         show_info_btn.Visible = false;
+         close_opt_end_txt.Visible = true;
+         all_options_hide();
+      }
+
+      private void update_aktionpoints()
+      {
+         int action_points = ui_interface.getActionPoints();
+         int cur_phase = ui_interface.getCurrentPhase();
+         int overall_phase = ui_interface.getMaxPhaseLength();
+         current_phase_txt.Text = "Derzeitige Phase: " + cur_phase;
+         action_points_txt.Text = "Benutzte Aktionspunkte: " + (ui_interface.getMaxActionPoints() - action_points);
+         left_phase_txt.Text = "Verbleibene Länge der Phase: " + action_points;
+         progress_prog_bar.Value = 1;
+         money_prog_bar.Text = ui_interface.getPlayerMoney().ToString() + "€";
+         learn_prog_bar.Value = ui_interface.getPlayerSuccess();
+         motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
+         mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
+         if (action_points == 1)
+         {
+            option_1_btn.Enabled = false;
+            option_2_btn.Enabled = false;
+            option_3_btn.Enabled = false;
+            option_4_btn.Enabled = false;
+            show_info_btn.Enabled = false;
+         }
+         if (action_points == 14 && option_1_btn.Enabled == false)
+         {
+            option_1_btn.Enabled = true;
+            option_2_btn.Enabled = true;
+            option_3_btn.Enabled = true;
+            option_4_btn.Enabled = true;
+            show_info_btn.Enabled = true;
+         }
+         string warning_check = ui_interface.getStatWarning();
+         if (warning_check != "")
+         {
+            tutorial_panel_2.Visible = true;
+            tutorial_txt_2.Text = warning_check;
+            tutorial_btn_2.Text = "Schließen";
+         }
+         game_over_check();
+      }
+      private void get_new_actions()
+      {
+         action_0_btn.Text = ui_interface.getActionTitle(0);
+         action_1_btn.Text = ui_interface.getActionTitle(1);
+         action_2_btn.Text = ui_interface.getActionTitle(2);
+         action_3_btn.Text = ui_interface.getActionTitle(3);
+
+         action_0_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(0));
+         action_1_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(1));
+         action_2_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(2));
+         action_3_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(3));
+
+      }
+      private Image get_right_icon(int r)
+      {
+         if (r == 0)
+         {
+            //mental health
+            return Spiel_Des_Lebens.Properties.Resources.mentalhealth_48px;
+         }
+         else if (r == 1)
+         {
+            return Spiel_Des_Lebens.Properties.Resources.motivation_48px;
+            //moneyyyyy
+         }
+         else if (r == 2)
+         {
+            return Spiel_Des_Lebens.Properties.Resources.money_48px;
+            //motivation
+         }
+         else
+         {
+            return Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
+            //lernstand
+         }
+      }
+      private void close_opt_txt(object sender, EventArgs e)
+      {
+         close_opt_end_txt.Visible = false;
+         btnLoadEvent_Click();
+      }
+      private void game_over_check()
+      {
+         if (ui_interface.getGameOver() != "")
+         {
             game_over_panel.Visible = true;
             all_options_disable();
-        }
+            game_over_txt.Text = ui_interface.getGameOver();
+         }
+      }
 
       private void game_over_btn_Click(object sender, EventArgs e)
       {
@@ -385,7 +355,10 @@ namespace Spiel_Des_Lebens
       }
       private void continue_tutorial_2(object sender, EventArgs e)
       {
-         tutorial_panel_3.Visible = true;
+         if (tutorial_btn_2.Text == "Weiter")
+         {
+            tutorial_panel_3.Visible = true;
+         }
          tutorial_panel_2.Visible = false;
       }
       private void continue_tutorial_3(object sender, EventArgs e)
@@ -452,7 +425,7 @@ namespace Spiel_Des_Lebens
          info_action_txt_3.Text = ui_interface.getActionInfo(3);
       }
 
-      private void close_hower_action(object sender, EventArgs e)
+      private void close_hover_action(object sender, EventArgs e)
       {
          info_action_panel_0.Visible = false;
          info_action_panel_1.Visible = false;
@@ -460,9 +433,141 @@ namespace Spiel_Des_Lebens
          info_action_panel_3.Visible = false;
       }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ui_interface.saveGame(1);
-        }
-    }
+      private void new_profession_no_btn_Click(object sender, EventArgs e)
+      {
+         if (new_profession_no_btn.Text == "Weiter")
+         {
+            lblPlayerPath.Text = new_profession_profession_combo_box.Text;
+            path_set(refrence_training);
+            profession_set(refrence_profession);
+            ui_interface.resetPath(training, profession);
+         }
+         new_profession_panel.Visible = false;
+         all_options_enable();
+      }
+
+      private void new_profession_opt_open(object sender, EventArgs e)
+      {
+         all_options_disable();
+         new_profession_panel.Visible = true;
+         new_profession_no_btn.Text = "Nein";
+         new_profession_yes_btn.Visible = true;
+      }
+
+      private void new_profession_yes_opt(object sender, EventArgs e)
+      {
+         new_profession_profession_combo_box.Visible = true;
+         new_profession_yes_btn.Visible = false;
+         new_profession_no_btn.Text = "Weiter";
+         new_profession_yes_btn.Visible = false;
+         new_profession_profession_lable.Visible = true;
+         new_profession_path_lable.Visible = true;
+         new_profession_path_combo_box.Visible = true;
+         new_profession_no_btn.Enabled = false;
+         if (abschluss == "Hauptschulabschluss")
+         {
+            new_profession_path_combo_box.Items.AddRange(new object[] { "Ausbildung" });
+         }
+         else if (abschluss == "Realschulabschluss")
+         {
+            new_profession_path_combo_box.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
+         }
+         else
+         {
+            new_profession_path_combo_box.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium" });
+         }
+         new_profession_profession_combo_box.Enabled = false;
+      }
+
+      private void new_profession_txt_change(object sender, EventArgs e)
+      {
+         new_profession_no_btn.Enabled = true;
+         if (new_profession_profession_combo_box.Text == "Krankenpflege" || new_profession_profession_combo_box.Text == "Angewandte Gesundheits- und Pflegewissenschaften" || new_profession_profession_combo_box.Text == "Medizinstudium")
+         {
+            refrence_profession = "Social";
+         }
+         if (new_profession_profession_combo_box.Text == "BWL" || new_profession_profession_combo_box.Text == "Industriekaufmann")
+         {
+            refrence_profession = "Buisness";
+         }
+         if (new_profession_profession_combo_box.Text == "Pharmazeutisch Technische Assistenz" || new_profession_profession_combo_box.Text == "Angewandte Physik" || new_profession_profession_combo_box.Text == "Physikstudium")
+         {
+            refrence_profession = "Stem";
+         }
+         if (new_profession_profession_combo_box.Text == "Fachinformatiker" || new_profession_profession_combo_box.Text == "Angewandtes Informatikstudium" || new_profession_profession_combo_box.Text == "Informatikstudium")
+         {
+            refrence_profession = "Science";
+         }
+         if (new_profession_profession_combo_box.Text == "Jurastudium" || new_profession_profession_combo_box.Text == "Steuerwesen" || new_profession_profession_combo_box.Text == "Rechtanwaltsfachangestellter")
+         {
+            refrence_profession = "Civil";
+         }
+      }
+
+      private void new_profession_path_comboBox_TextChanged(object sender, EventArgs e)
+      {
+         if (new_profession_path_combo_box.Text == "Ausbildung")
+         {
+            refrence_training = "Training";
+            new_profession_profession_combo_box.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
+         }
+         else if (new_profession_path_combo_box.Text == "DualStudy")
+         {
+            refrence_training = "Duales Studium";
+            new_profession_profession_combo_box.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
+         }
+         else if (new_profession_path_combo_box.Text == "Study")
+         {
+            refrence_training = "Studium";
+            new_profession_profession_combo_box.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
+         }
+         new_profession_profession_combo_box.Enabled = true;
+      }
+      private void profession_set(string given_profession)
+      {
+         if (given_profession == "Social")
+         {
+            profession = Data.Profession.Social;
+         }
+         else if (given_profession == "Buisness")
+         {
+            profession = Data.Profession.Business;
+         }
+         else if (given_profession == "Stem")
+         {
+            profession = Data.Profession.Stem;
+         }
+         else if (given_profession == "Science")
+         {
+            profession = Data.Profession.Science;
+         }
+         else if (given_profession == "Civil")
+         {
+            profession = Data.Profession.Civil;
+         }
+      }
+      private void path_set(string given_path)
+      {
+         if (given_path == "Training")
+         {
+            training = Data.Path.Training;
+         }
+         else if (given_path == "DualStudy")
+         {
+            training = Data.Path.DualStudy;
+         }
+         else if (given_path == "Study")
+         {
+            training = Data.Path.Study;
+         }
+      }
+
+      private void next_phase(object sender, EventArgs e)
+      {
+         ui_interface.nextPhase();
+         btnLoadEvent_Click();
+         get_new_actions();
+         ui_interface.nextEvent();
+      }
+   }
 }

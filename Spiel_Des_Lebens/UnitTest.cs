@@ -12,14 +12,14 @@ namespace Spiel_Des_Lebens
         [TestInitialize]
         public void SetUp()
         {
-            this.UiInterface = new UI_Interface(true, 20, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem);
+            this.UiInterface = new UI_Interface(true, 20, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem, Data.Graduation.AllgemeineHochschulreife);
 
         }
 
         [TestMethod]
         public void createPlayer()
         {
-            Player player = new Player(true, 21, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem);
+            Player player = new Player(true, 21, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem, Data.Graduation.AllgemeineHochschulreife);
         }
 
         [TestMethod]
