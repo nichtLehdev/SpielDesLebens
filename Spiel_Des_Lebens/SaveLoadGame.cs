@@ -11,6 +11,24 @@ namespace Spiel_Des_Lebens
 
     internal class SaveLoadGame
     {
+        public static void deleteSaveGame(int slot)
+        {
+            string filename = "..//..//..//data//savegames//sg" + slot + ".json";
+            switch (slot)
+            {
+                case 1:
+                case 2:
+                case 3:
+                    if (File.Exists(filename))
+                    {
+                        File.WriteAllText(filename, "");
+                    }
+                    break;
+                default:
+                    throw new Error("Not a playable slot");
+            }
+        }
+
         public static bool hasValidData(int slot)
         {
             string filename = "..//..//..//data//savegames//sg" + slot + ".json";
