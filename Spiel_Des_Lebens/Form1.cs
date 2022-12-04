@@ -200,11 +200,11 @@ namespace Spiel_Des_Lebens
                 }
                 else if (profession_path.Text == "Pharmazeutisch Technische Assistenz")
                 {
-                    profession = "Stem";
+                    profession = "Science";
                 }
                 else if (profession_path.Text == "Fachinformatiker")
                 {
-                    profession = "Science";
+                    profession = "Stem";
                 }
                 else if (profession_path.Text == "Rechtanwaltsfachangestellter")
                 {
@@ -223,11 +223,11 @@ namespace Spiel_Des_Lebens
                 }
                 else if (profession_path.Text == "Angewandte Physik")
                 {
-                    profession = "Stem";
+                    profession = "Science";
                 }
                 else if (profession_path.Text == "Angewandtes Informatikstudium")
                 {
-                    profession = "Science";
+                    profession = "Stem";
                 }
                 else if (profession_path.Text == "Steuerwesen")
                 {
@@ -246,11 +246,11 @@ namespace Spiel_Des_Lebens
                 }
                 else if (profession_path.Text == "Physikstudium")
                 {
-                    profession = "Stem";
+                    profession = "Science";
                 }
                 else if (profession_path.Text == "Informatikstudium")
                 {
-                    profession = "Science";
+                    profession = "Stem";
                 }
                 else if (profession_path.Text == "Jurastudium")
                 {

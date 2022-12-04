@@ -492,11 +492,11 @@ namespace Spiel_Des_Lebens
             }
             if (new_profession_profession_combo_box.Text == "Pharmazeutisch Technische Assistenz" || new_profession_profession_combo_box.Text == "Angewandte Physik" || new_profession_profession_combo_box.Text == "Physikstudium")
             {
-                refrence_profession = "Stem";
+                refrence_profession = "Science";
             }
             if (new_profession_profession_combo_box.Text == "Fachinformatiker" || new_profession_profession_combo_box.Text == "Angewandtes Informatikstudium" || new_profession_profession_combo_box.Text == "Informatikstudium")
             {
-                refrence_profession = "Science";
+                refrence_profession = "Stem";
             }
             if (new_profession_profession_combo_box.Text == "Jurastudium" || new_profession_profession_combo_box.Text == "Steuerwesen" || new_profession_profession_combo_box.Text == "Rechtanwaltsfachangestellter")
             {
