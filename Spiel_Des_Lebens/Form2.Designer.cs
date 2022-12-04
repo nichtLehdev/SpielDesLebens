@@ -45,6 +45,7 @@
             this.lblPlayerAge = new System.Windows.Forms.Label();
             this.btnAktion = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.next_phase_btn = new System.Windows.Forms.Button();
             this.money_prog_bar = new System.Windows.Forms.TextBox();
             this.tutorial_panel_2 = new System.Windows.Forms.Panel();
             this.tutorial_btn_2 = new System.Windows.Forms.Button();
@@ -86,25 +87,27 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.action_panel = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.action_title = new System.Windows.Forms.TextBox();
-            this.action_text = new System.Windows.Forms.TextBox();
+            this.close_opt_end_txt = new System.Windows.Forms.Button();
             this.tutorial_ask_panel = new System.Windows.Forms.Panel();
             this.tutorial_ask_btn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tutorial_ask_title = new System.Windows.Forms.TextBox();
             this.tutorial_ask_txt = new System.Windows.Forms.TextBox();
-            this.close_opt_end_txt = new System.Windows.Forms.Button();
+            this.game_over_panel = new System.Windows.Forms.Panel();
+            this.game_over_btn = new System.Windows.Forms.Button();
             this.new_profession_panel = new System.Windows.Forms.Panel();
+            this.action_panel = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.action_title = new System.Windows.Forms.TextBox();
+            this.action_text = new System.Windows.Forms.TextBox();
+            this.new_profession_path_combo_box = new System.Windows.Forms.ComboBox();
+            this.new_profession_path_lable = new System.Windows.Forms.Label();
             this.new_profession_profession_lable = new System.Windows.Forms.Label();
             this.new_profession_profession_combo_box = new System.Windows.Forms.ComboBox();
             this.new_profession_yes_btn = new System.Windows.Forms.Button();
             this.new_profession_no_btn = new System.Windows.Forms.Button();
             this.new_profession_title = new System.Windows.Forms.TextBox();
             this.new_profession_txt = new System.Windows.Forms.TextBox();
-            this.game_over_panel = new System.Windows.Forms.Panel();
-            this.game_over_btn = new System.Windows.Forms.Button();
             this.game_over_title = new System.Windows.Forms.TextBox();
             this.game_over_txt = new System.Windows.Forms.RichTextBox();
             this.info_panel = new System.Windows.Forms.Panel();
@@ -117,9 +120,6 @@
             this.show_info_btn = new System.Windows.Forms.Button();
             this.event_txt_box = new System.Windows.Forms.TextBox();
             this.option_1_btn = new System.Windows.Forms.Button();
-            this.new_profession_path_lable = new System.Windows.Forms.Label();
-            this.new_profession_path_combo_box = new System.Windows.Forms.ComboBox();
-            this.next_phase_btn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.userInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avatar_pic)).BeginInit();
@@ -137,10 +137,10 @@
             this.tutorial_panel_5.SuspendLayout();
             this.tutorial_panel_3.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.action_panel.SuspendLayout();
             this.tutorial_ask_panel.SuspendLayout();
-            this.new_profession_panel.SuspendLayout();
             this.game_over_panel.SuspendLayout();
+            this.new_profession_panel.SuspendLayout();
+            this.action_panel.SuspendLayout();
             this.info_panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -376,6 +376,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(275, 642);
             this.panel3.TabIndex = 7;
+            // 
+            // next_phase_btn
+            // 
+            this.next_phase_btn.Location = new System.Drawing.Point(39, 21);
+            this.next_phase_btn.Name = "next_phase_btn";
+            this.next_phase_btn.Size = new System.Drawing.Size(136, 23);
+            this.next_phase_btn.TabIndex = 16;
+            this.next_phase_btn.Text = "Nächste Phase";
+            this.next_phase_btn.UseVisualStyleBackColor = true;
+            this.next_phase_btn.Click += new System.EventHandler(this.next_phase);
             // 
             // money_prog_bar
             // 
@@ -869,6 +879,8 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.farbverlauf;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.action_panel);
+            this.panel1.Controls.Add(this.new_profession_panel);
             this.panel1.Controls.Add(this.close_opt_end_txt);
             this.panel1.Controls.Add(this.tutorial_ask_panel);
             this.panel1.Controls.Add(this.game_over_panel);
@@ -885,55 +897,16 @@
             this.panel1.Size = new System.Drawing.Size(589, 426);
             this.panel1.TabIndex = 4;
             // 
-            // action_panel
+            // close_opt_end_txt
             // 
-            this.action_panel.BackColor = System.Drawing.Color.FloralWhite;
-            this.action_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.action_panel.Controls.Add(this.button9);
-            this.action_panel.Controls.Add(this.action_title);
-            this.action_panel.Controls.Add(this.action_text);
-            this.action_panel.Location = new System.Drawing.Point(6, 17);
-            this.action_panel.Name = "action_panel";
-            this.action_panel.Size = new System.Drawing.Size(369, 218);
-            this.action_panel.TabIndex = 10;
-            this.action_panel.Visible = false;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(233, 165);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(100, 40);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Weiter";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.action_close);
-            // 
-            // action_title
-            // 
-            this.action_title.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.action_title.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.action_title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.action_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.action_title.Location = new System.Drawing.Point(33, 17);
-            this.action_title.Name = "action_title";
-            this.action_title.ReadOnly = true;
-            this.action_title.Size = new System.Drawing.Size(185, 20);
-            this.action_title.TabIndex = 10;
-            this.action_title.Text = "Action_Title";
-            // 
-            // action_text
-            // 
-            this.action_text.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.action_text.BackColor = System.Drawing.SystemColors.Control;
-            this.action_text.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.action_text.Location = new System.Drawing.Point(33, 52);
-            this.action_text.Multiline = true;
-            this.action_text.Name = "action_text";
-            this.action_text.ReadOnly = true;
-            this.action_text.Size = new System.Drawing.Size(300, 103);
-            this.action_text.TabIndex = 10;
-            this.action_text.Text = "Erklärungvon Aktionen";
-            this.action_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.close_opt_end_txt.Location = new System.Drawing.Point(472, 23);
+            this.close_opt_end_txt.Name = "close_opt_end_txt";
+            this.close_opt_end_txt.Size = new System.Drawing.Size(75, 40);
+            this.close_opt_end_txt.TabIndex = 8;
+            this.close_opt_end_txt.Text = "Nächstes Event";
+            this.close_opt_end_txt.UseVisualStyleBackColor = true;
+            this.close_opt_end_txt.Visible = false;
+            this.close_opt_end_txt.Click += new System.EventHandler(this.close_opt_txt);
             // 
             // tutorial_ask_panel
             // 
@@ -942,7 +915,7 @@
             this.tutorial_ask_panel.Controls.Add(this.button2);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_title);
             this.tutorial_ask_panel.Controls.Add(this.tutorial_ask_txt);
-            this.tutorial_ask_panel.Location = new System.Drawing.Point(131, 58);
+            this.tutorial_ask_panel.Location = new System.Drawing.Point(143, 58);
             this.tutorial_ask_panel.Name = "tutorial_ask_panel";
             this.tutorial_ask_panel.Size = new System.Drawing.Size(365, 217);
             this.tutorial_ask_panel.TabIndex = 10;
@@ -995,22 +968,32 @@
             this.tutorial_ask_txt.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
             this.tutorial_ask_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // close_opt_end_txt
+            // game_over_panel
             // 
-            this.close_opt_end_txt.Location = new System.Drawing.Point(472, 23);
-            this.close_opt_end_txt.Name = "close_opt_end_txt";
-            this.close_opt_end_txt.Size = new System.Drawing.Size(75, 40);
-            this.close_opt_end_txt.TabIndex = 8;
-            this.close_opt_end_txt.Text = "Nächstes Event";
-            this.close_opt_end_txt.UseVisualStyleBackColor = true;
-            this.close_opt_end_txt.Visible = false;
-            this.close_opt_end_txt.Click += new System.EventHandler(this.close_opt_txt);
+            this.game_over_panel.BackColor = System.Drawing.Color.FloralWhite;
+            this.game_over_panel.Controls.Add(this.game_over_btn);
+            this.game_over_panel.Controls.Add(this.game_over_title);
+            this.game_over_panel.Controls.Add(this.game_over_txt);
+            this.game_over_panel.Location = new System.Drawing.Point(115, 65);
+            this.game_over_panel.Name = "game_over_panel";
+            this.game_over_panel.Size = new System.Drawing.Size(365, 217);
+            this.game_over_panel.TabIndex = 9;
+            this.game_over_panel.Visible = false;
+            // 
+            // game_over_btn
+            // 
+            this.game_over_btn.Location = new System.Drawing.Point(233, 161);
+            this.game_over_btn.Name = "game_over_btn";
+            this.game_over_btn.Size = new System.Drawing.Size(100, 40);
+            this.game_over_btn.TabIndex = 10;
+            this.game_over_btn.Text = "Zum Main Menu";
+            this.game_over_btn.UseVisualStyleBackColor = true;
+            this.game_over_btn.Click += new System.EventHandler(this.game_over_btn_Click);
             // 
             // new_profession_panel
             // 
             this.new_profession_panel.BackColor = System.Drawing.Color.FloralWhite;
             this.new_profession_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.new_profession_panel.Controls.Add(this.action_panel);
             this.new_profession_panel.Controls.Add(this.new_profession_path_combo_box);
             this.new_profession_panel.Controls.Add(this.new_profession_path_lable);
             this.new_profession_panel.Controls.Add(this.new_profession_profession_lable);
@@ -1019,11 +1002,82 @@
             this.new_profession_panel.Controls.Add(this.new_profession_no_btn);
             this.new_profession_panel.Controls.Add(this.new_profession_title);
             this.new_profession_panel.Controls.Add(this.new_profession_txt);
-            this.new_profession_panel.Location = new System.Drawing.Point(67, 43);
+            this.new_profession_panel.Location = new System.Drawing.Point(132, 69);
             this.new_profession_panel.Name = "new_profession_panel";
             this.new_profession_panel.Size = new System.Drawing.Size(369, 218);
             this.new_profession_panel.TabIndex = 12;
             this.new_profession_panel.Visible = false;
+            // 
+            // action_panel
+            // 
+            this.action_panel.BackColor = System.Drawing.Color.FloralWhite;
+            this.action_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.action_panel.Controls.Add(this.button9);
+            this.action_panel.Controls.Add(this.action_title);
+            this.action_panel.Controls.Add(this.action_text);
+            this.action_panel.Location = new System.Drawing.Point(136, 62);
+            this.action_panel.Name = "action_panel";
+            this.action_panel.Size = new System.Drawing.Size(369, 218);
+            this.action_panel.TabIndex = 10;
+            this.action_panel.Visible = false;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(233, 165);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(100, 40);
+            this.button9.TabIndex = 11;
+            this.button9.Text = "Weiter";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.action_close);
+            // 
+            // action_title
+            // 
+            this.action_title.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.action_title.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.action_title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.action_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.action_title.Location = new System.Drawing.Point(33, 17);
+            this.action_title.Name = "action_title";
+            this.action_title.ReadOnly = true;
+            this.action_title.Size = new System.Drawing.Size(185, 20);
+            this.action_title.TabIndex = 10;
+            this.action_title.Text = "Action_Title";
+            // 
+            // action_text
+            // 
+            this.action_text.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.action_text.BackColor = System.Drawing.SystemColors.Control;
+            this.action_text.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.action_text.Location = new System.Drawing.Point(33, 52);
+            this.action_text.Multiline = true;
+            this.action_text.Name = "action_text";
+            this.action_text.ReadOnly = true;
+            this.action_text.Size = new System.Drawing.Size(300, 103);
+            this.action_text.TabIndex = 10;
+            this.action_text.Text = "Erklärungvon Aktionen";
+            this.action_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // new_profession_path_combo_box
+            // 
+            this.new_profession_path_combo_box.FormattingEnabled = true;
+            this.new_profession_path_combo_box.Location = new System.Drawing.Point(128, 85);
+            this.new_profession_path_combo_box.Name = "new_profession_path_combo_box";
+            this.new_profession_path_combo_box.Size = new System.Drawing.Size(204, 21);
+            this.new_profession_path_combo_box.TabIndex = 16;
+            this.new_profession_path_combo_box.Visible = false;
+            this.new_profession_path_combo_box.TextChanged += new System.EventHandler(this.new_profession_path_comboBox_TextChanged);
+            // 
+            // new_profession_path_lable
+            // 
+            this.new_profession_path_lable.AutoSize = true;
+            this.new_profession_path_lable.BackColor = System.Drawing.Color.Transparent;
+            this.new_profession_path_lable.Location = new System.Drawing.Point(41, 85);
+            this.new_profession_path_lable.Name = "new_profession_path_lable";
+            this.new_profession_path_lable.Size = new System.Drawing.Size(67, 13);
+            this.new_profession_path_lable.TabIndex = 15;
+            this.new_profession_path_lable.Text = "Bildungsweg";
+            this.new_profession_path_lable.Visible = false;
             // 
             // new_profession_profession_lable
             // 
@@ -1092,29 +1146,6 @@
             this.new_profession_txt.TabIndex = 10;
             this.new_profession_txt.Text = "Möchtest du deine Profession ändern?";
             this.new_profession_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // game_over_panel
-            // 
-            this.game_over_panel.BackColor = System.Drawing.Color.FloralWhite;
-            this.game_over_panel.Controls.Add(this.game_over_btn);
-            this.game_over_panel.Controls.Add(this.new_profession_panel);
-            this.game_over_panel.Controls.Add(this.game_over_title);
-            this.game_over_panel.Controls.Add(this.game_over_txt);
-            this.game_over_panel.Location = new System.Drawing.Point(107, 61);
-            this.game_over_panel.Name = "game_over_panel";
-            this.game_over_panel.Size = new System.Drawing.Size(365, 217);
-            this.game_over_panel.TabIndex = 9;
-            this.game_over_panel.Visible = false;
-            // 
-            // game_over_btn
-            // 
-            this.game_over_btn.Location = new System.Drawing.Point(233, 161);
-            this.game_over_btn.Name = "game_over_btn";
-            this.game_over_btn.Size = new System.Drawing.Size(100, 40);
-            this.game_over_btn.TabIndex = 10;
-            this.game_over_btn.Text = "Zum Main Menu";
-            this.game_over_btn.UseVisualStyleBackColor = true;
-            this.game_over_btn.Click += new System.EventHandler(this.game_over_btn_Click);
             // 
             // game_over_title
             // 
@@ -1266,37 +1297,6 @@
             this.option_1_btn.UseVisualStyleBackColor = false;
             this.option_1_btn.Click += new System.EventHandler(this.option_1_click);
             // 
-            // new_profession_path_lable
-            // 
-            this.new_profession_path_lable.AutoSize = true;
-            this.new_profession_path_lable.BackColor = System.Drawing.Color.Transparent;
-            this.new_profession_path_lable.Location = new System.Drawing.Point(41, 85);
-            this.new_profession_path_lable.Name = "new_profession_path_lable";
-            this.new_profession_path_lable.Size = new System.Drawing.Size(67, 13);
-            this.new_profession_path_lable.TabIndex = 15;
-            this.new_profession_path_lable.Text = "Bildungsweg";
-            this.new_profession_path_lable.Visible = false;
-            // 
-            // new_profession_path_combo_box
-            // 
-            this.new_profession_path_combo_box.FormattingEnabled = true;
-            this.new_profession_path_combo_box.Location = new System.Drawing.Point(128, 85);
-            this.new_profession_path_combo_box.Name = "new_profession_path_combo_box";
-            this.new_profession_path_combo_box.Size = new System.Drawing.Size(204, 21);
-            this.new_profession_path_combo_box.TabIndex = 16;
-            this.new_profession_path_combo_box.Visible = false;
-            this.new_profession_path_combo_box.TextChanged += new System.EventHandler(this.new_profession_path_comboBox_TextChanged);
-            // 
-            // next_phase_btn
-            // 
-            this.next_phase_btn.Location = new System.Drawing.Point(39, 21);
-            this.next_phase_btn.Name = "next_phase_btn";
-            this.next_phase_btn.Size = new System.Drawing.Size(136, 23);
-            this.next_phase_btn.TabIndex = 16;
-            this.next_phase_btn.Text = "Nächste Phase";
-            this.next_phase_btn.UseVisualStyleBackColor = true;
-            this.next_phase_btn.Click += new System.EventHandler(this.next_phase);
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1341,14 +1341,14 @@
             this.tutorial_panel_3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.action_panel.ResumeLayout(false);
-            this.action_panel.PerformLayout();
             this.tutorial_ask_panel.ResumeLayout(false);
             this.tutorial_ask_panel.PerformLayout();
-            this.new_profession_panel.ResumeLayout(false);
-            this.new_profession_panel.PerformLayout();
             this.game_over_panel.ResumeLayout(false);
             this.game_over_panel.PerformLayout();
+            this.new_profession_panel.ResumeLayout(false);
+            this.new_profession_panel.PerformLayout();
+            this.action_panel.ResumeLayout(false);
+            this.action_panel.PerformLayout();
             this.info_panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
