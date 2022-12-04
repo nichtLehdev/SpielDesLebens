@@ -57,11 +57,13 @@ namespace Spiel_Des_Lebens
       }
 
       #endregion
-
       public void nextPhase() //muss bei jeder neuen Phase aufgerufen
       {
          eduPath.getPhase().nextPhase();
          increaseAge();
+         //edit stats depending on Path
+         changePlayerStat(Data.statarray[(int)eduPath.getPath()]);
+
       }
 
       public void setPlayerStat(Stat stats)

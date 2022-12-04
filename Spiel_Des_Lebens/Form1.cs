@@ -67,18 +67,51 @@ namespace Spiel_Des_Lebens
             }
 
         }
-
+        private void no_border()
+        {
+            avatarBox1.BorderStyle = BorderStyle.None;
+            avatarBox2.BorderStyle = BorderStyle.None;
+            avatarBox3.BorderStyle = BorderStyle.None;
+            avatarBox4.BorderStyle = BorderStyle.None;
+            avatarBox5.BorderStyle = BorderStyle.None;
+            avatarBox6.BorderStyle = BorderStyle.None;
+        }
       private Image avatar;
       private void changeAvatar(object sender, EventArgs e)
       {
-         PictureBox img = (PictureBox)sender;
+         no_border();
+             if(sender == avatarBox1)
+             {
+                 avatarBox1.BorderStyle = BorderStyle.FixedSingle;
+             }
+             else if (sender == avatarBox2)
+             {
+                 avatarBox2.BorderStyle = BorderStyle.FixedSingle;
+             }
+             else if (sender == avatarBox3)
+             {
+                avatarBox3.BorderStyle = BorderStyle.FixedSingle;
+             }
+             else if (sender == avatarBox4)
+             {
+                avatarBox4.BorderStyle = BorderStyle.FixedSingle;
+             }
+             else if (sender == avatarBox5)
+             {
+                avatarBox5.BorderStyle = BorderStyle.FixedSingle;
+             }
+             else if (sender == avatarBox6)
+             {
+                avatarBox6.BorderStyle = BorderStyle.FixedSingle;
+             }
+            PictureBox img = (PictureBox)sender;
          avatar = img.Image;
       }
 
         private void load_test(object sender, EventArgs e)
         {
             //für das Bsp werden sie vorher gestzt
-            Form2 t = new Form2("Mia Münstermann", "20", pictureBox1.Image, "Testaschlusss", false, "Training", "Stem", "Pharmazeutisch Technische Assistenz");
+            Form2 t = new Form2("Mia Münstermann", "20", avatarBox1.Image, "Testaschlusss", false, "Training", "Stem", "Pharmazeutisch Technische Assistenz");
             t.Show();
             this.Hide();
         }
@@ -90,6 +123,8 @@ namespace Spiel_Des_Lebens
             Button btn = (Button)sender;
             abschluss = btn.Text;
             education_path.Items.Clear();
+            education_path.Text = null;
+            profession_path.Text = null;
             if (abschluss == "Hauptschulabschluss")
             {
                 education_path.Items.AddRange(new object[] { "Ausbildung" });
@@ -168,9 +203,11 @@ namespace Spiel_Des_Lebens
       }
         private void education_path_TextChanged(object sender, EventArgs e)
         {
+            profession_path.Text = null;
             profession_path.Items.Clear();
             if (education_path.Text == "Ausbildung")
             {
+                
                 training = "Training";
                 profession_path.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
             }
@@ -200,11 +237,11 @@ namespace Spiel_Des_Lebens
                 }
                 else if (profession_path.Text == "Pharmazeutisch Technische Assistenz")
                 {
-                    profession = "Stem";
+                    profession = "Science";
                 }
                 else if (profession_path.Text == "Fachinformatiker")
                 {
-                    profession = "Science";
+                    profession = "Stem";
                 }
                 else if (profession_path.Text == "Rechtanwaltsfachangestellter")
                 {
@@ -223,11 +260,11 @@ namespace Spiel_Des_Lebens
                 }
                 else if (profession_path.Text == "Angewandte Physik")
                 {
-                    profession = "Stem";
+                    profession = "Science";
                 }
                 else if (profession_path.Text == "Angewandtes Informatikstudium")
                 {
-                    profession = "Science";
+                    profession = "Stem";
                 }
                 else if (profession_path.Text == "Steuerwesen")
                 {
@@ -246,11 +283,11 @@ namespace Spiel_Des_Lebens
                 }
                 else if (profession_path.Text == "Physikstudium")
                 {
-                    profession = "Stem";
+                    profession = "Science";
                 }
                 else if (profession_path.Text == "Informatikstudium")
                 {
-                    profession = "Science";
+                    profession = "Stem";
                 }
                 else if (profession_path.Text == "Jurastudium")
                 {

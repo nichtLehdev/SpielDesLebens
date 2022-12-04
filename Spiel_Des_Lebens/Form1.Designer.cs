@@ -30,16 +30,27 @@
       private void InitializeComponent()
       {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.fiction_panel = new System.Windows.Forms.Panel();
+            this.accept_fict_btn = new System.Windows.Forms.Button();
             this.fiction_txt_box = new System.Windows.Forms.RichTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button_mini_3 = new System.Windows.Forms.Button();
+            this.button_mini_2 = new System.Windows.Forms.Button();
+            this.button_mini_1 = new System.Windows.Forms.Button();
+            this.textBox_mini_field = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.Layout_neues_Spiel = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.avatarBox1 = new System.Windows.Forms.PictureBox();
+            this.avatarBox2 = new System.Windows.Forms.PictureBox();
+            this.avatarBox3 = new System.Windows.Forms.PictureBox();
+            this.avatarBox4 = new System.Windows.Forms.PictureBox();
+            this.avatarBox5 = new System.Windows.Forms.PictureBox();
+            this.avatarBox6 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -54,34 +65,44 @@
             this.txt_alter = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.weiter_button = new System.Windows.Forms.Button();
-            this.fiction_panel = new System.Windows.Forms.Panel();
-            this.accept_fict_btn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button_mini_3 = new System.Windows.Forms.Button();
-            this.button_mini_2 = new System.Windows.Forms.Button();
-            this.button_mini_1 = new System.Windows.Forms.Button();
-            this.textBox_mini_field = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            this.Layout_neues_Spiel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.fiction_panel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.Layout_neues_Spiel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // fiction_panel
+            // 
+            this.fiction_panel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
+            this.fiction_panel.Controls.Add(this.accept_fict_btn);
+            this.fiction_panel.Controls.Add(this.fiction_txt_box);
+            this.fiction_panel.Location = new System.Drawing.Point(966, 100);
+            this.fiction_panel.Name = "fiction_panel";
+            this.fiction_panel.Size = new System.Drawing.Size(343, 497);
+            this.fiction_panel.TabIndex = 4;
+            // 
+            // accept_fict_btn
+            // 
+            this.accept_fict_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.accept_fict_btn.Location = new System.Drawing.Point(65, 352);
+            this.accept_fict_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.accept_fict_btn.Name = "accept_fict_btn";
+            this.accept_fict_btn.Size = new System.Drawing.Size(209, 19);
+            this.accept_fict_btn.TabIndex = 1;
+            this.accept_fict_btn.Text = "Vestanden";
+            this.accept_fict_btn.UseVisualStyleBackColor = true;
+            this.accept_fict_btn.Click += new System.EventHandler(this.accept_fict_btn_Click);
             // 
             // fiction_txt_box
             // 
@@ -94,17 +115,140 @@
             this.fiction_txt_box.Text = "\nDies ist ein rein fiktives Spiel. Alle Namen, Charakter, Geschichten und Events " +
     "sind fiktiv.";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Brown;
+            this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Location = new System.Drawing.Point(155, 221);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(343, 497);
+            this.panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
+            this.panel2.Controls.Add(this.button_mini_3);
+            this.panel2.Controls.Add(this.button_mini_2);
+            this.panel2.Controls.Add(this.button_mini_1);
+            this.panel2.Controls.Add(this.textBox_mini_field);
+            this.panel2.Location = new System.Drawing.Point(43, 170);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(262, 175);
+            this.panel2.TabIndex = 6;
+            this.panel2.Visible = false;
+            // 
+            // button_mini_3
+            // 
+            this.button_mini_3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button_mini_3.Location = new System.Drawing.Point(35, 130);
+            this.button_mini_3.Margin = new System.Windows.Forms.Padding(2);
+            this.button_mini_3.Name = "button_mini_3";
+            this.button_mini_3.Size = new System.Drawing.Size(186, 19);
+            this.button_mini_3.TabIndex = 3;
+            this.button_mini_3.Text = "Zurück";
+            this.button_mini_3.UseVisualStyleBackColor = true;
+            this.button_mini_3.Visible = false;
+            this.button_mini_3.Click += new System.EventHandler(this.Close_option_spiel_start);
+            // 
+            // button_mini_2
+            // 
+            this.button_mini_2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button_mini_2.Location = new System.Drawing.Point(35, 93);
+            this.button_mini_2.Margin = new System.Windows.Forms.Padding(2);
+            this.button_mini_2.Name = "button_mini_2";
+            this.button_mini_2.Size = new System.Drawing.Size(186, 19);
+            this.button_mini_2.TabIndex = 2;
+            this.button_mini_2.Text = "Löschen";
+            this.button_mini_2.UseVisualStyleBackColor = true;
+            this.button_mini_2.Visible = false;
+            // 
+            // button_mini_1
+            // 
+            this.button_mini_1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button_mini_1.Location = new System.Drawing.Point(35, 55);
+            this.button_mini_1.Margin = new System.Windows.Forms.Padding(2);
+            this.button_mini_1.Name = "button_mini_1";
+            this.button_mini_1.Size = new System.Drawing.Size(186, 19);
+            this.button_mini_1.TabIndex = 1;
+            this.button_mini_1.Text = "Laden";
+            this.button_mini_1.UseVisualStyleBackColor = true;
+            this.button_mini_1.Visible = false;
+            this.button_mini_1.Click += new System.EventHandler(this.load_test);
+            // 
+            // textBox_mini_field
+            // 
+            this.textBox_mini_field.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_mini_field.Location = new System.Drawing.Point(61, 13);
+            this.textBox_mini_field.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_mini_field.Name = "textBox_mini_field";
+            this.textBox_mini_field.ReadOnly = true;
+            this.textBox_mini_field.Size = new System.Drawing.Size(127, 20);
+            this.textBox_mini_field.TabIndex = 0;
+            this.textBox_mini_field.Visible = false;
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button5.Location = new System.Drawing.Point(65, 144);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(224, 23);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Spielstand Test";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.neues_Spiel_open);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Snow;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(120, 69);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(101, 20);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "Spiel des Lebens";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button7
+            // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button7.Location = new System.Drawing.Point(65, 244);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(224, 23);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "Neues Spiel";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.neues_Spiel_open);
+            // 
+            // button6
+            // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button6.Location = new System.Drawing.Point(65, 350);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(224, 23);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Neues Spiel";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.neues_Spiel_open);
+            // 
             // Layout_neues_Spiel
             // 
             this.Layout_neues_Spiel.BackColor = System.Drawing.Color.Transparent;
             this.Layout_neues_Spiel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.Layout_neues_Spiel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Layout_neues_Spiel.Controls.Add(this.pictureBox1);
-            this.Layout_neues_Spiel.Controls.Add(this.pictureBox2);
-            this.Layout_neues_Spiel.Controls.Add(this.pictureBox3);
-            this.Layout_neues_Spiel.Controls.Add(this.pictureBox4);
-            this.Layout_neues_Spiel.Controls.Add(this.pictureBox5);
-            this.Layout_neues_Spiel.Controls.Add(this.pictureBox6);
+            this.Layout_neues_Spiel.Controls.Add(this.avatarBox1);
+            this.Layout_neues_Spiel.Controls.Add(this.avatarBox2);
+            this.Layout_neues_Spiel.Controls.Add(this.avatarBox3);
+            this.Layout_neues_Spiel.Controls.Add(this.avatarBox4);
+            this.Layout_neues_Spiel.Controls.Add(this.avatarBox5);
+            this.Layout_neues_Spiel.Controls.Add(this.avatarBox6);
             this.Layout_neues_Spiel.Controls.Add(this.button1);
             this.Layout_neues_Spiel.Controls.Add(this.button2);
             this.Layout_neues_Spiel.Controls.Add(this.button3);
@@ -127,63 +271,74 @@
             this.Layout_neues_Spiel.TabIndex = 0;
             this.Layout_neues_Spiel.Visible = false;
             // 
-            // pictureBox1
+            // avatarBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox1.ErrorImage = global::Spiel_Des_Lebens.Properties.Resources.avatare_boy_0;
+            this.avatarBox1.Image = global::Spiel_Des_Lebens.Properties.Resources.avatare_boy_0;
+            this.avatarBox1.Location = new System.Drawing.Point(13, 13);
+            this.avatarBox1.Name = "avatarBox1";
+            this.avatarBox1.Size = new System.Drawing.Size(100, 124);
+            this.avatarBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatarBox1.TabIndex = 0;
+            this.avatarBox1.TabStop = false;
+            this.avatarBox1.Click += new System.EventHandler(this.changeAvatar);
             // 
-            // pictureBox2
+            // avatarBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(119, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox2.Image = global::Spiel_Des_Lebens.Properties.Resources.avatare_boy_1;
+            this.avatarBox2.Location = new System.Drawing.Point(119, 13);
+            this.avatarBox2.Name = "avatarBox2";
+            this.avatarBox2.Size = new System.Drawing.Size(100, 124);
+            this.avatarBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatarBox2.TabIndex = 1;
+            this.avatarBox2.TabStop = false;
+            this.avatarBox2.Click += new System.EventHandler(this.changeAvatar);
             // 
-            // pictureBox3
+            // avatarBox3
             // 
-            this.pictureBox3.ErrorImage = null;
-            this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(225, 13);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox3.ErrorImage = null;
+            this.avatarBox3.Image = global::Spiel_Des_Lebens.Properties.Resources.avatare_boy_2;
+            this.avatarBox3.InitialImage = null;
+            this.avatarBox3.Location = new System.Drawing.Point(225, 13);
+            this.avatarBox3.Name = "avatarBox3";
+            this.avatarBox3.Size = new System.Drawing.Size(100, 124);
+            this.avatarBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatarBox3.TabIndex = 2;
+            this.avatarBox3.TabStop = false;
+            this.avatarBox3.Click += new System.EventHandler(this.changeAvatar);
             // 
-            // pictureBox4
+            // avatarBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(13, 143);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox4.Image = global::Spiel_Des_Lebens.Properties.Resources.avatare_girl_0;
+            this.avatarBox4.Location = new System.Drawing.Point(13, 143);
+            this.avatarBox4.Name = "avatarBox4";
+            this.avatarBox4.Size = new System.Drawing.Size(100, 124);
+            this.avatarBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatarBox4.TabIndex = 3;
+            this.avatarBox4.TabStop = false;
+            this.avatarBox4.Click += new System.EventHandler(this.changeAvatar);
             // 
-            // pictureBox5
+            // avatarBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(119, 143);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox5.Image = global::Spiel_Des_Lebens.Properties.Resources.avatare_girl_1;
+            this.avatarBox5.Location = new System.Drawing.Point(119, 143);
+            this.avatarBox5.Name = "avatarBox5";
+            this.avatarBox5.Size = new System.Drawing.Size(100, 124);
+            this.avatarBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatarBox5.TabIndex = 4;
+            this.avatarBox5.TabStop = false;
+            this.avatarBox5.Click += new System.EventHandler(this.changeAvatar);
             // 
-            // pictureBox6
+            // avatarBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(225, 143);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox6.Image = global::Spiel_Des_Lebens.Properties.Resources.avatare_girl_2;
+            this.avatarBox6.Location = new System.Drawing.Point(225, 143);
+            this.avatarBox6.Name = "avatarBox6";
+            this.avatarBox6.Size = new System.Drawing.Size(100, 124);
+            this.avatarBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatarBox6.TabIndex = 5;
+            this.avatarBox6.TabStop = false;
+            this.avatarBox6.Click += new System.EventHandler(this.changeAvatar);
             // 
             // button1
             // 
@@ -338,183 +493,38 @@
             this.weiter_button.UseVisualStyleBackColor = false;
             this.weiter_button.Click += new System.EventHandler(this.open_next);
             // 
-            // fiction_panel
-            // 
-            this.fiction_panel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
-            this.fiction_panel.Controls.Add(this.accept_fict_btn);
-            this.fiction_panel.Controls.Add(this.fiction_txt_box);
-            this.fiction_panel.Location = new System.Drawing.Point(0, 3);
-            this.fiction_panel.Name = "fiction_panel";
-            this.fiction_panel.Size = new System.Drawing.Size(343, 497);
-            this.fiction_panel.TabIndex = 4;
-            // 
-            // accept_fict_btn
-            // 
-            this.accept_fict_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.accept_fict_btn.Location = new System.Drawing.Point(65, 352);
-            this.accept_fict_btn.Margin = new System.Windows.Forms.Padding(2);
-            this.accept_fict_btn.Name = "accept_fict_btn";
-            this.accept_fict_btn.Size = new System.Drawing.Size(209, 19);
-            this.accept_fict_btn.TabIndex = 1;
-            this.accept_fict_btn.Text = "Vestanden";
-            this.accept_fict_btn.UseVisualStyleBackColor = true;
-            this.accept_fict_btn.Click += new System.EventHandler(this.accept_fict_btn_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Brown;
-            this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
-            this.panel1.Controls.Add(this.fiction_panel);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(504, 31);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 497);
-            this.panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
-            this.panel2.Controls.Add(this.button_mini_3);
-            this.panel2.Controls.Add(this.button_mini_2);
-            this.panel2.Controls.Add(this.button_mini_1);
-            this.panel2.Controls.Add(this.textBox_mini_field);
-            this.panel2.Location = new System.Drawing.Point(43, 170);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(262, 175);
-            this.panel2.TabIndex = 6;
-            this.panel2.Visible = false;
-            // 
-            // button_mini_3
-            // 
-            this.button_mini_3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button_mini_3.Location = new System.Drawing.Point(35, 130);
-            this.button_mini_3.Margin = new System.Windows.Forms.Padding(2);
-            this.button_mini_3.Name = "button_mini_3";
-            this.button_mini_3.Size = new System.Drawing.Size(186, 19);
-            this.button_mini_3.TabIndex = 3;
-            this.button_mini_3.Text = "Zurück";
-            this.button_mini_3.UseVisualStyleBackColor = true;
-            this.button_mini_3.Visible = false;
-            this.button_mini_3.Click += new System.EventHandler(this.Close_option_spiel_start);
-            // 
-            // button_mini_2
-            // 
-            this.button_mini_2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button_mini_2.Location = new System.Drawing.Point(35, 93);
-            this.button_mini_2.Margin = new System.Windows.Forms.Padding(2);
-            this.button_mini_2.Name = "button_mini_2";
-            this.button_mini_2.Size = new System.Drawing.Size(186, 19);
-            this.button_mini_2.TabIndex = 2;
-            this.button_mini_2.Text = "Löschen";
-            this.button_mini_2.UseVisualStyleBackColor = true;
-            this.button_mini_2.Visible = false;
-            // 
-            // button_mini_1
-            // 
-            this.button_mini_1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button_mini_1.Location = new System.Drawing.Point(35, 55);
-            this.button_mini_1.Margin = new System.Windows.Forms.Padding(2);
-            this.button_mini_1.Name = "button_mini_1";
-            this.button_mini_1.Size = new System.Drawing.Size(186, 19);
-            this.button_mini_1.TabIndex = 1;
-            this.button_mini_1.Text = "Laden";
-            this.button_mini_1.UseVisualStyleBackColor = true;
-            this.button_mini_1.Visible = false;
-            this.button_mini_1.Click += new System.EventHandler(this.load_test);
-            // 
-            // textBox_mini_field
-            // 
-            this.textBox_mini_field.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_mini_field.Location = new System.Drawing.Point(61, 13);
-            this.textBox_mini_field.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_mini_field.Name = "textBox_mini_field";
-            this.textBox_mini_field.ReadOnly = true;
-            this.textBox_mini_field.Size = new System.Drawing.Size(127, 20);
-            this.textBox_mini_field.TabIndex = 0;
-            this.textBox_mini_field.Visible = false;
-            // 
-            // button5
-            // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button5.Location = new System.Drawing.Point(65, 144);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(224, 23);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Spielstand Test";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.neues_Spiel_open);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Snow;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(120, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(101, 20);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Spiel des Lebens";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // button7
-            // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button7.Location = new System.Drawing.Point(65, 244);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(224, 23);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "Neues Spiel";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.neues_Spiel_open);
-            // 
-            // button6
-            // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button6.Location = new System.Drawing.Point(65, 350);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(224, 23);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Neues Spiel";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.neues_Spiel_open);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 664);
+            this.Controls.Add(this.fiction_panel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Layout_neues_Spiel);
             this.Name = "Form1";
             this.Text = "Spiel des Lebens";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            this.Layout_neues_Spiel.ResumeLayout(false);
-            this.Layout_neues_Spiel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.fiction_panel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.Layout_neues_Spiel.ResumeLayout(false);
+            this.Layout_neues_Spiel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarBox6)).EndInit();
             this.ResumeLayout(false);
 
       }
 
       #endregion
-      private System.Windows.Forms.PictureBox pictureBox1;
-      private System.Windows.Forms.PictureBox pictureBox2;
-      private System.Windows.Forms.PictureBox pictureBox3;
+      private System.Windows.Forms.PictureBox avatarBox1;
+      private System.Windows.Forms.PictureBox avatarBox2;
+      private System.Windows.Forms.PictureBox avatarBox3;
       private System.Windows.Forms.Button button1;
       private System.Windows.Forms.Button button2;
       private System.Windows.Forms.Button button3;
@@ -540,9 +550,9 @@
       private System.Windows.Forms.Panel fiction_panel;
       private System.Windows.Forms.RichTextBox fiction_txt_box;
       private System.Windows.Forms.Button accept_fict_btn;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox avatarBox4;
+        private System.Windows.Forms.PictureBox avatarBox5;
+        private System.Windows.Forms.PictureBox avatarBox6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox education_path;
         private System.Windows.Forms.Label label3;

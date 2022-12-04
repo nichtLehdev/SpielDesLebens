@@ -132,7 +132,14 @@ namespace Spiel_Des_Lebens
       {
          action_panel.Visible = true;
          all_options_disable();
-         update_aktionpoints();
+         if ("Derzeitige Phase: " + ui_interface.getCurrentPhase() != current_phase_txt.Text)
+         {
+            btnLoadEvent_Click();
+         }
+         else
+         {
+            update_aktionpoints();
+         }
       }
 
       private void btnLoadEvent_Click()
@@ -235,13 +242,22 @@ namespace Spiel_Des_Lebens
 
       private void update_aktionpoints()
       {
+         if (ui_interface.isInSchool() == true)
+         {
+            panelActiveChild.BackgroundImage = Spiel_Des_Lebens.Properties.Resources.uni_table;
+         }
+         else
+         {
+            panelActiveChild.BackgroundImage = Spiel_Des_Lebens.Properties.Resources.coworking;
+         }
          int action_points = ui_interface.getActionPoints();
          int cur_phase = ui_interface.getCurrentPhase();
          int overall_phase = ui_interface.getMaxPhaseLength();
+         lblPlayerAge.Text = Convert.ToString(ui_interface.getPlayerAge());
          current_phase_txt.Text = "Derzeitige Phase: " + cur_phase;
-         action_points_txt.Text = "Benutzte Aktionspunkte: " + (ui_interface.getMaxActionPoints() - action_points);
+         action_points_txt.Text = "Benutzte Aktionspunkte:" + (ui_interface.getMaxActionPoints() - action_points);
          left_phase_txt.Text = "Verbleibene Länge der Phase: " + action_points;
-         progress_prog_bar.Value = 1;
+         progress_prog_bar.Value = ((100 * ui_interface.getMaxActionPoints() * cur_phase + 100 * action_points) / (ui_interface.getMaxPhaseNumber() * ui_interface.getMaxActionPoints()));
          money_prog_bar.Text = ui_interface.getPlayerMoney().ToString() + "€";
          learn_prog_bar.Value = ui_interface.getPlayerSuccess();
          motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
@@ -314,11 +330,11 @@ namespace Spiel_Des_Lebens
       }
       private void game_over_check()
       {
-         if (ui_interface.getGameOver() != "")
+         if (ui_interface.getGameEnd() != "")
          {
             game_over_panel.Visible = true;
             all_options_disable();
-            game_over_txt.Text = ui_interface.getGameOver();
+            game_over_txt.Text = ui_interface.getGameEnd();
          }
       }
 
@@ -402,6 +418,14 @@ namespace Spiel_Des_Lebens
       {
          action_panel.Visible = false;
          all_options_enable();
+         if (ui_interface.getActionPoints() == 1)
+         {
+            option_1_btn.Enabled = false;
+            option_2_btn.Enabled = false;
+            option_3_btn.Enabled = false;
+            option_4_btn.Enabled = false;
+            show_info_btn.Enabled = false;
+         }
       }
 
       private void hover_action_txt_show_0(object sender, EventArgs e)
@@ -492,11 +516,11 @@ namespace Spiel_Des_Lebens
          }
          if (new_profession_profession_combo_box.Text == "Pharmazeutisch Technische Assistenz" || new_profession_profession_combo_box.Text == "Angewandte Physik" || new_profession_profession_combo_box.Text == "Physikstudium")
          {
-            refrence_profession = "Stem";
+            refrence_profession = "Science";
          }
          if (new_profession_profession_combo_box.Text == "Fachinformatiker" || new_profession_profession_combo_box.Text == "Angewandtes Informatikstudium" || new_profession_profession_combo_box.Text == "Informatikstudium")
          {
-            refrence_profession = "Science";
+            refrence_profession = "Stem";
          }
          if (new_profession_profession_combo_box.Text == "Jurastudium" || new_profession_profession_combo_box.Text == "Steuerwesen" || new_profession_profession_combo_box.Text == "Rechtanwaltsfachangestellter")
          {
@@ -506,17 +530,19 @@ namespace Spiel_Des_Lebens
 
       private void new_profession_path_comboBox_TextChanged(object sender, EventArgs e)
       {
+         new_profession_profession_combo_box.Items.Clear();
+         new_profession_profession_combo_box.Text = null;
          if (new_profession_path_combo_box.Text == "Ausbildung")
          {
             refrence_training = "Training";
             new_profession_profession_combo_box.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
          }
-         else if (new_profession_path_combo_box.Text == "DualStudy")
+         else if (new_profession_path_combo_box.Text == "Duales Studium")
          {
             refrence_training = "Duales Studium";
             new_profession_profession_combo_box.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
          }
-         else if (new_profession_path_combo_box.Text == "Study")
+         else if (new_profession_path_combo_box.Text == "Studium")
          {
             refrence_training = "Studium";
             new_profession_profession_combo_box.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
@@ -567,7 +593,7 @@ namespace Spiel_Des_Lebens
          ui_interface.nextPhase();
          btnLoadEvent_Click();
          get_new_actions();
-         ui_interface.nextEvent();
       }
+
    }
 }
