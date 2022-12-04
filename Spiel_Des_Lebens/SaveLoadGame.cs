@@ -21,8 +21,15 @@ namespace Spiel_Des_Lebens
                 case 3:
                     if (File.Exists(filename))
                     {
-                        loadPlayer lPlayer = JsonConvert.DeserializeObject<loadPlayer>(File.ReadAllText(filename));
-                        return Converter.convertLoadPlayerToPlayer(lPlayer);
+                        try
+                        {
+                            loadPlayer lPlayer = JsonConvert.DeserializeObject<loadPlayer>(File.ReadAllText(filename));
+                            return Converter.convertLoadPlayerToPlayer(lPlayer);
+                        }
+                        catch
+                        {
+                            throw new Error("No player instance in this savegame");
+                        }
                     }
                     else
                     {
