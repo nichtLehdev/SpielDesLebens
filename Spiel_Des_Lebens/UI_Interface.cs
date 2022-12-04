@@ -225,7 +225,7 @@ namespace Spiel_Des_Lebens
 
         public void saveGame(int slot)
         {
-            SaveGame.saveGame(player, slot);
+            SaveLoadGame.saveGame(player, slot);
         }
 
     }

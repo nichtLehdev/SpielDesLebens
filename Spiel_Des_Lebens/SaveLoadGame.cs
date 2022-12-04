@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,8 +9,32 @@ using System.Threading.Tasks;
 namespace Spiel_Des_Lebens
 {
 
-    internal class SaveGame
+    internal class SaveLoadGame
     {
+        public static Player loadGame(int slot)
+        {
+            string filename = "..//..//..//data//savegames//sg" + slot + ".json";
+            switch (slot)
+            {
+                case 1:
+                case 2:
+                case 3:
+                    if (File.Exists(filename))
+                    {
+                        loadPlayer lPlayer = JsonConvert.DeserializeObject<loadPlayer>(File.ReadAllText(filename));
+                        return Converter.convertLoadPlayerToPlayer(lPlayer);
+                    }
+                    else
+                    {
+                        throw new Error("SaveGame not found");
+                    }
+                    break;
+                default:
+                    throw new Error("Not a playable slot");
+            }
+        }
+
+        #region saveGame
         public static void saveGame(Player player, int slot)
         {
             switch (slot)
@@ -72,6 +97,7 @@ namespace Spiel_Des_Lebens
                     data = data.Remove(data.Length - 1);
                     data += "]},";
                 }
+                data = data.Remove(data.Length - 1);
                 data += "],";
                 data += "\"stats_min\": {";
                 data += "\"mentalHealth\":" + e.requirements.reqStatMin.getStats()[0].getValue() + ",";
@@ -99,17 +125,18 @@ namespace Spiel_Des_Lebens
                     data += "}},";
                 }
                 data = data.Remove(data.Length - 1);
-                data += "],},";
+                data += "]},";
             }
             data = data.Remove(data.Length - 1);
             data += "],";
             data += "\"edu_path\":{";
-            data += "\"path\":\"" + player.getEducationPath().getPath().ToString() + "\",";
-            data += "\"profession\":\"" + player.getEducationPath().getProfession().ToString() + "\",";
+            data += "\"path\":" + (int)player.getEducationPath().getPath() + ",";
+            data += "\"profession\":" + (int)player.getEducationPath().getProfession() + ",";
             data += "\"phase\":" + player.getEducationPath().getPhase().getCurrentPhase() +"}}";
 
 
             return data;
         }
+        #endregion
     }
 }

@@ -19,6 +19,17 @@ namespace Spiel_Des_Lebens
             resetCareer(path, profession);
         }
 
+        public Player(bool avatar, int age, string name, Stat playerStat, Eventgenerator eventGen, EducationPath eduPath)
+        {
+            this.avatar = avatar;
+            this.age = age;
+            this.name = name;
+            this.playerStat = playerStat;
+            this.eventgenerator = eventGen;
+            createActionGenerator();
+            this.eduPath = eduPath;
+        }
+
         #region create_or_reset
 
         public void resetCareer(Data.Path path, Data.Profession profession)
