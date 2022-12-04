@@ -171,7 +171,7 @@ namespace Spiel_Des_Lebens
             }
             else
             {
-                button5.Text = "Neues Spiel 1";
+                button5.Text = "Neues Spiel";
             }
 
             if (this.uiMenu.hasValidData(2))
@@ -180,7 +180,7 @@ namespace Spiel_Des_Lebens
             }
             else
             {
-                button7.Text = "Neues Spiel 2";
+                button7.Text = "Neues Spiel";
             }
 
             if (this.uiMenu.hasValidData(3))
@@ -189,7 +189,7 @@ namespace Spiel_Des_Lebens
             }
             else
             {
-                button6.Text = "Neues Spiel 3";
+                button6.Text = "Neues Spiel";
             }
 
         }
