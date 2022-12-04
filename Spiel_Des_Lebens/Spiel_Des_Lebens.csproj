@@ -78,7 +78,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="UI_Interface.cs" />
+    <Compile Include="UiInterface.cs" />
     <Compile Include="Action.cs" />
     <Compile Include="ActionGenerator.cs" />
     <Compile Include="ActionListConverter.cs" />
@@ -131,6 +131,7 @@
     <Compile Include="Stat.cs" />
     <Compile Include="StatParameter.cs" />
     <Compile Include="loadTiming.cs" />
+    <Compile Include="UiInterfaceMenu.cs" />
     <Compile Include="UnitTest.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -6,57 +6,22 @@ using System.Windows.Forms;
 
 namespace Spiel_Des_Lebens
 {
-   public partial class Form1 : Form
-   {
+    public partial class Form1 : Form
+    {
         private String profession = null;
         private String training = null;
+        private UiInterfaceMenu uiMenu = new UiInterfaceMenu();
         public Form1()
-      {
-         InitializeComponent();
-         var carrer = new EducationPath(Data.Path.Training, Data.Profession.Social);
-         var eventgenerator = new Eventgenerator(carrer);
-         var test = eventgenerator.loadEvents();
-         string output = "";
-         foreach (var item in test)
-         {
-            output += item.id + "\r\n";
-            foreach (var timings in item.requirements.timings)
-            {
-               output += "path: ";
-               foreach (var path in timings.path)
-               {
-                  output += path;
-                  output += " ";
-               }
-               output += "\r\n";
-
-               output += "profession: ";
-               foreach (var profession in timings.profession)
-               {
-                  output += profession;
-                  output += " ";
-               }
-               output += "\r\n";
-
-               output += "phase: ";
-               foreach (var phase in timings.phase)
-               {
-                  output += phase;
-                  output += " ";
-               }
-               output += "\r\n";
-               output += "\r\n";
-            }
-         }
-         textBox1.Text = output;
-      }
+        {
+            InitializeComponent();
+        }
 
         private void open_next(object sender, EventArgs e)
         {
-            
+
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
-                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss, true, training,  profession, profession_path.Text);
+                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss, true, training, profession, profession_path.Text);
                 mainForm.TopLevel = false;
                 mainForm.FormBorderStyle = FormBorderStyle.None;
                 mainForm.Dock = DockStyle.Fill;
@@ -76,37 +41,37 @@ namespace Spiel_Des_Lebens
             avatarBox5.BorderStyle = BorderStyle.None;
             avatarBox6.BorderStyle = BorderStyle.None;
         }
-      private Image avatar;
-      private void changeAvatar(object sender, EventArgs e)
-      {
-         no_border();
-             if(sender == avatarBox1)
-             {
-                 avatarBox1.BorderStyle = BorderStyle.FixedSingle;
-             }
-             else if (sender == avatarBox2)
-             {
-                 avatarBox2.BorderStyle = BorderStyle.FixedSingle;
-             }
-             else if (sender == avatarBox3)
-             {
+        private Image avatar;
+        private void changeAvatar(object sender, EventArgs e)
+        {
+            no_border();
+            if (sender == avatarBox1)
+            {
+                avatarBox1.BorderStyle = BorderStyle.FixedSingle;
+            }
+            else if (sender == avatarBox2)
+            {
+                avatarBox2.BorderStyle = BorderStyle.FixedSingle;
+            }
+            else if (sender == avatarBox3)
+            {
                 avatarBox3.BorderStyle = BorderStyle.FixedSingle;
-             }
-             else if (sender == avatarBox4)
-             {
+            }
+            else if (sender == avatarBox4)
+            {
                 avatarBox4.BorderStyle = BorderStyle.FixedSingle;
-             }
-             else if (sender == avatarBox5)
-             {
+            }
+            else if (sender == avatarBox5)
+            {
                 avatarBox5.BorderStyle = BorderStyle.FixedSingle;
-             }
-             else if (sender == avatarBox6)
-             {
+            }
+            else if (sender == avatarBox6)
+            {
                 avatarBox6.BorderStyle = BorderStyle.FixedSingle;
-             }
+            }
             PictureBox img = (PictureBox)sender;
-         avatar = img.Image;
-      }
+            avatar = img.Image;
+        }
 
         private void load_test(object sender, EventArgs e)
         {
@@ -117,7 +82,7 @@ namespace Spiel_Des_Lebens
         }
 
 
-      private string abschluss;
+        private string abschluss;
         private void changePath(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -135,79 +100,111 @@ namespace Spiel_Des_Lebens
             }
             else
             {
-                education_path.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium"});
+                education_path.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium" });
             }
         }
 
-      private void neues_Spiel_open(Object sender, EventArgs e)
-      {
-         Button btn = sender as Button;
-         if (btn.Text == "Neues Spiel")
-         {
-            Layout_neues_Spiel.Visible = true;
-            panel1.Visible = false;
-         }
-         else
-         {
-            textBox_mini_field.Text = btn.Text;
-            panel2.Visible = true;
-            button_mini_1.Visible = true;
-            button_mini_2.Visible = true;
-            button_mini_3.Visible = true;
-            textBox_mini_field.Visible = true;
-         }
+        private void neues_Spiel_open(Object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            if (btn.Text == "Neues Spiel")
+            {
+                Layout_neues_Spiel.Visible = true;
+                panel1.Visible = false;
+            }
+            else
+            {
+                textBox_mini_field.Text = btn.Text;
+                panel2.Visible = true;
+                button_mini_1.Visible = true;
+                button_mini_2.Visible = true;
+                button_mini_3.Visible = true;
+                textBox_mini_field.Visible = true;
+            }
 
-      }
-      private void open_main_menu(object sender, EventArgs e)
-      {
-         panel1.Visible = true;
-         Layout_neues_Spiel.Visible = false;
-      }
+        }
+        private void open_main_menu(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            Layout_neues_Spiel.Visible = false;
+        }
 
-      private void txt_alter_KeyPress(object sender, KeyPressEventArgs e)
-      {
-         e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
-      }
+        private void txt_alter_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
 
-      private void Close_option_spiel_start(object sender, EventArgs e)
-      {
-         panel2.Visible = false;
-         button_mini_1.Visible = false;
-         button_mini_2.Visible = false;
-         button_mini_3.Visible = false;
-         textBox_mini_field.Visible = false;
-      }
-      public void CustomizeLinearGradients(PaintEventArgs e)
-      {
-         LinearGradientBrush linGrBrush = new LinearGradientBrush(
-            new Point(0, 10),
-            new Point(200, 10),
-            Color.FromArgb(255, 0, 0, 0),     // Opaque black
-            Color.FromArgb(255, 255, 0, 0));  // Opaque red
+        private void Close_option_spiel_start(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            button_mini_1.Visible = false;
+            button_mini_2.Visible = false;
+            button_mini_3.Visible = false;
+            textBox_mini_field.Visible = false;
+        }
+        public void CustomizeLinearGradients(PaintEventArgs e)
+        {
+            LinearGradientBrush linGrBrush = new LinearGradientBrush(
+               new Point(0, 10),
+               new Point(200, 10),
+               Color.FromArgb(255, 0, 0, 0),     // Opaque black
+               Color.FromArgb(255, 255, 0, 0));  // Opaque red
 
-         float[] relativeIntensities = { 0.0f, 0.5f, 1.0f };
-         float[] relativePositions = { 0.0f, 0.2f, 1.0f };
+            float[] relativeIntensities = { 0.0f, 0.5f, 1.0f };
+            float[] relativePositions = { 0.0f, 0.2f, 1.0f };
 
-         //Create a Blend object and assign it to linGrBrush.
-         Blend blend = new Blend();
-         blend.Factors = relativeIntensities;
-         blend.Positions = relativePositions;
-         linGrBrush.Blend = blend;
+            //Create a Blend object and assign it to linGrBrush.
+            Blend blend = new Blend();
+            blend.Factors = relativeIntensities;
+            blend.Positions = relativePositions;
+            linGrBrush.Blend = blend;
 
-         e.Graphics.FillEllipse(linGrBrush, 0, 30, 200, 100);
-         e.Graphics.FillRectangle(linGrBrush, 0, 155, 500, 30);
-      }
-      private void accept_fict_btn_Click(object sender, EventArgs e)
-      {
-         fiction_panel.Visible = false;
-      }
+            e.Graphics.FillEllipse(linGrBrush, 0, 30, 200, 100);
+            e.Graphics.FillRectangle(linGrBrush, 0, 155, 500, 30);
+        }
+        private void accept_fict_btn_Click(object sender, EventArgs e)
+        {
+            fiction_panel.Visible = false;
+            if (this.uiMenu.hasValidData(1))
+            {
+                button5.Text = "Spielstand 1";
+            }
+            else
+            {
+                button5.Text = "Neues Spiel 1";
+            }
+
+            if (this.uiMenu.hasValidData(2))
+            {
+                button7.Text = "Spielstand 2";
+            }
+            else
+            {
+                button7.Text = "Neues Spiel 2";
+            }
+
+            if (this.uiMenu.hasValidData(3))
+            {
+                button6.Text = "Spielstand3";
+            }
+            else
+            {
+                button6.Text = "Neues Spiel 3";
+            }
+
+        }
+
+
+
+
+
         private void education_path_TextChanged(object sender, EventArgs e)
         {
             profession_path.Text = null;
             profession_path.Items.Clear();
             if (education_path.Text == "Ausbildung")
             {
-                
+
                 training = "Training";
                 profession_path.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
             }

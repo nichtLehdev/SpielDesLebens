@@ -6,13 +6,13 @@ namespace Spiel_Des_Lebens
     [TestClass]
     public class UnitTest
     {
-        private UI_Interface UiInterface;
+        private UiInterface UiInterface;
 
 
         [TestInitialize]
         public void SetUp()
         {
-            this.UiInterface = new UI_Interface(0, 20, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem, Data.Graduation.AllgemeineHochschulreife);
+            this.UiInterface = new UiInterface(0, 20, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem, Data.Graduation.AllgemeineHochschulreife);
 
         }
 

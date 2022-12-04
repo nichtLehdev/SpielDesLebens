@@ -12,7 +12,7 @@ namespace Spiel_Des_Lebens.Forms
 {
     public partial class FormActions : Form
     {
-        private UI_Interface ui_interface = new UI_Interface(0, 4, "Fritz", 0, 0, 0);
+        private UiInterface ui_interface = new UiInterface(0, 4, "Fritz", 0, 0, 0);
         public FormActions()
         {
             InitializeComponent();
