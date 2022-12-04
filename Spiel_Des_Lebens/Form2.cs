@@ -238,6 +238,7 @@ namespace Spiel_Des_Lebens
             int action_points = ui_interface.getActionPoints();
             int cur_phase = ui_interface.getCurrentPhase();
             int overall_phase = ui_interface.getMaxPhaseLength();
+            lblPlayerAge.Text = Convert.ToString(ui_interface.getPlayerAge());
             current_phase_txt.Text = "Derzeitige Phase: " + cur_phase;
             action_points_txt.Text = "Benutzte Aktionspunkte:" + (ui_interface.getMaxActionPoints() - action_points);
             left_phase_txt.Text = "Verbleibene Länge der Phase: " + action_points;
