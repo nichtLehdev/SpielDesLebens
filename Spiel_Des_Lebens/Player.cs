@@ -1,109 +1,134 @@
 namespace Spiel_Des_Lebens
 {
-    internal class Player
-    {
-        private bool avatar;
-        private int age;
-        private string name;
-        private Data.Graduation graduation;
-        private Stat playerStat;
-        public Eventgenerator eventgenerator;
-        public ActionGenerator actiongenerator;
-        private EducationPath eduPath;
+   internal class Player
+   {
+      private bool avatar;
+      private int age;
+      private string name;
+      private Data.Graduation graduation;
+      private Stat playerStat;
+      public Eventgenerator eventgenerator;
+      public ActionGenerator actiongenerator;
+      private EducationPath eduPath;
 
-        public Player(bool avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
-        {
-            this.age = age;
-            this.avatar = avatar;
-            this.name = name;
-            this.graduation = graduation;
-            playerStat = new Stat(70, 70, 70, 70);
-            resetCareer(path, profession);
-        }
+      public Player(bool avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
+      {
+         this.age = age;
+         this.avatar = avatar;
+         this.name = name;
+         this.graduation = graduation;
+         playerStat = new Stat(70, 70, 70, 70);
+         resetCareer(path, profession);
+      }
 
-        #region create_or_reset
+      public Player(bool avatar, int age, string name, Stat playerStat, Eventgenerator eventGen, EducationPath eduPath)
+      {
+         this.avatar = avatar;
+         this.age = age;
+         this.name = name;
+         this.playerStat = playerStat;
+         this.eventgenerator = eventGen;
+         createActionGenerator();
+         this.eduPath = eduPath;
+      }
 
-        public void resetCareer(Data.Path path, Data.Profession profession)
-        {
-            createEducationPath(path, profession);
-            createEventgenerator(eduPath);
-            createActionGenerator();
-        }
+      #region create_or_reset
 
-        private void createEducationPath(Data.Path path, Data.Profession profession)
-        {
-            eduPath = new EducationPath(path, profession);
-        }
+      public void resetCareer(Data.Path path, Data.Profession profession)
+      {
+         createEducationPath(path, profession);
+         createEventgenerator(eduPath);
+         createActionGenerator();
+      }
 
-        private void createEventgenerator(EducationPath eduPath)
-        {
-            eventgenerator = new Eventgenerator(eduPath);
-        }
+      private void createEducationPath(Data.Path path, Data.Profession profession)
+      {
+         eduPath = new EducationPath(path, profession);
+      }
 
-        private void createActionGenerator()
-        {
-            actiongenerator = new ActionGenerator();
-        }
+      private void createEventgenerator(EducationPath eduPath)
+      {
+         eventgenerator = new Eventgenerator(eduPath);
+      }
 
-        #endregion
+      private void createActionGenerator()
+      {
+         actiongenerator = new ActionGenerator();
+      }
 
-        public void nextPhase() //muss bei jeder neuen Phase aufgerufen
-        {
-            eduPath.getPhase().nextPhase();
-            increaseAge();
-        }
+      #endregion
 
-        public void setPlayerStat(Stat stats)
-        {
-            this.playerStat = stats;
-        }
+      public void nextPhase() //muss bei jeder neuen Phase aufgerufen
+      {
+         eduPath.getPhase().nextPhase();
+         increaseAge();
+      }
 
-        public Stat getPlayerStat()
-        {
-            return this.playerStat;
-        }
+      public void setPlayerStat(Stat stats)
+      {
+         this.playerStat = stats;
+      }
 
-        public void changePlayerStat(Stat stats)
-        {
-            this.playerStat.change(stats);
-        }
+      public Stat getPlayerStat()
+      {
+         return this.playerStat;
+      }
 
-        public void setEducationPath(EducationPath eduPath)
-        {
-            this.eduPath = eduPath;
-        }
+      public void changePlayerStat(Stat stats)
+      {
+         this.playerStat.change(stats);
+      }
 
-        public EducationPath getEducationPath()
-        {
-            return this.eduPath;
-        }
+      public void setEducationPath(EducationPath eduPath)
+      {
+         this.eduPath = eduPath;
+      }
 
-        public Data.Graduation getGraduation()
-        {
-            return this.graduation;
-        }
+      public EducationPath getEducationPath()
+      {
+         return this.eduPath;
+      }
 
-        private void increaseAge()
-        {
-            if (eduPath.getPhase().getCurrentPhase() != 0)
+      public string getName()
+      {
+         return this.name;
+      }
+
+      public int getAge()
+      {
+         return this.age;
+      }
+
+      public bool getAvatar()
+      {
+         return this.avatar;
+      }
+      public Data.Graduation getGraduation()
+      {
+         return this.graduation;
+      }
+
+      private void increaseAge()
+      {
+         if (eduPath.getPhase().getCurrentPhase() != 0)
+         {
+            if ((eduPath.getPhase().getCurrentPhase() * Data.phaseL[(int)eduPath.getPath()]) % 12 == 0)
             {
-                if ((eduPath.getPhase().getCurrentPhase() * Data.phaseL[(int)eduPath.getPath()]) % 12 == 0)
-                {
-                    age++;
-                }
+               age++;
             }
-        }
+         }
+      }
 
-        public Data.StatType? checkStatSmaller(int statValue)
-        {
-            foreach(StatParameter statParameter in this.playerStat.getStats())
+      public Data.StatType? checkStatSmaller(int statValue)
+      {
+         foreach (StatParameter statParameter in this.playerStat.getStats())
+         {
+            if (statParameter.getValue() < statValue)
             {
-                if(statParameter.getValue() < statValue)
-                {
-                    return statParameter.getName();
-                }
+               return statParameter.getName();
             }
-            return null;
-        }
-    }
+         }
+         return null;
+      }
+   }
 }

@@ -1,0 +1,2412 @@
+{
+    "name": "Fritz",
+    "age": 18,
+    "avatar": "True",
+    "stats": {
+        "mentalHealth": 70,
+        "money": 70,
+        "motivation": 70,
+        "success": 70
+    },
+    "eventGenList": [
+        {
+            "id": "E-001",
+            "title": "Bewerbung schreiben",
+            "text": "Was gehört NICHT in ein Bewerbungsschreiben?",
+            "info": "hat Auswirkungen auf den Erfolg",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "0"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-001_1",
+                    "title": "Lebenslauf nacherzählen",
+                    "text": "korrekt, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug.",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 5
+                    }
+                },
+                {
+                    "id": "E-001_2",
+                    "title": "Unternehmensbezug",
+                    "text": "falsch, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug. Unter https://www.arbeitsagentur.de/erfolgreich-bewerben/bewerbung-schreiben findest du weitere Infos zum Bewerbungsschreiben",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -5
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-002",
+            "title": "Bewerbung schreiben",
+            "text": "Was kommt in ein Bewerbungsschreiben?",
+            "info": "hat Auswirkungen auf den Erfolg",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "0"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-002_1",
+                    "title": "Motivation & Unternehmensbezug",
+                    "text": "korrekt, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug.",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 5
+                    }
+                },
+                {
+                    "id": "E-002_2",
+                    "title": "Beziehungsstatus & Kontostand",
+                    "text": "falsch, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug. weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -5
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-003",
+            "title": "Lebenslauf erstellen",
+            "text": "Was kommt in den Lebenslauf?",
+            "info": "hat Auswirkungen auf den Erfolg",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "0"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-003_1",
+                    "title": "Informationen über andere Familienmitglieder",
+                    "text": "falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -5
+                    }
+                },
+                {
+                    "id": "E-003_2",
+                    "title": "Religionszugehörigkeit",
+                    "text": "falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -5
+                    }
+                },
+                {
+                    "id": "E-003_3",
+                    "title": "höchster Schulabschluss, relevante Praktika, geeignetes Porträt, sonstige Qualifikationen, evtl. Freizeitaktivitäten",
+                    "text": "korrekt, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 5
+                    }
+                },
+                {
+                    "id": "E-003_4",
+                    "title": "Selbstfindungsphase",
+                    "text": "falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -5
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-004",
+            "title": "Bildauswahl für den Lebenslauf",
+            "text": "Wähle ein Bild für deinen Lebenslauf aus:",
+            "info": "hat Auswirkungen auf den Erfolg",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "0"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-004_1",
+                    "title": "5 Jahre altes neutrales Porträt von dir",
+                    "text": "falsch, zu verwenden ist ein aktuelles Porträt von dir",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -5
+                    }
+                },
+                {
+                    "id": "E-004_2",
+                    "title": "aktuelles Porträt von dir",
+                    "text": "richtig, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 5
+                    }
+                },
+                {
+                    "id": "E-004_3",
+                    "title": "Freizeitfoto",
+                    "text": "falsch, zu verwenden ist ein aktuelles Porträt von dir",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 5
+                    }
+                },
+                {
+                    "id": "E-004_4",
+                    "title": "sehr Freizügiges Foto... ;)",
+                    "text": "falsch, zu verwenden ist ein aktuelles Porträt von dir mit Klamotten!",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -10
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-005",
+            "title": "Hobbys für den Lebenslauf",
+            "text": "welche Hobbys kommen für einen Lebenslauf in Frage?:",
+            "info": "hat Auswirkungen auf den Erfolg",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "0"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-005_1",
+                    "title": "Sport, Nähen, Programmieren, Lesen, Kochen, ehrenamtliche Aktivitäten",
+                    "text": "korrekt, dies sind zulässige Hobbys falls Sie einen Berufsbezug haben oder als Ausgleich dienen können",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 5
+                    }
+                },
+                {
+                    "id": "E-005_2",
+                    "title": "mit Freunden treffen, Sex, Drogen nehmen",
+                    "text": "falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -10
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-006",
+            "title": "Frage Bewerbungsgespräch",
+            "text": "Wo sehen Sie sich in 5 Jahren",
+            "info": "hat Auswirkungen auf den Erfolg",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "0"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-006_1",
+                    "title": "weiß ich nicht",
+                    "text": "schlechte Antwort, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -5
+                    }
+                },
+                {
+                    "id": "E-006_2",
+                    "title": "in diesem Unternehmen in Position x",
+                    "text": "so, oder so ähnlich kann die Antwort ausfallen. Die Frage zielt auf die Beruflichen Ambitionen ab.",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 5
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-007",
+            "title": "Frage Bewerbungsgespräch",
+            "text": "Warum haben Sie sich für diese Berufsrichtung entschieden?",
+            "info": "hat Auswirkungen auf den Erfolg",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "0"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-007_1",
+                    "title": "klang ganz gut",
+                    "text": "schlechte Antwort, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -5
+                    }
+                },
+                {
+                    "id": "E-007_2",
+                    "title": "persönliche Motivation und Bezug zu der angestrebten Tätigkeit nennen",
+                    "text": "gute Antwort",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 5
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-010",
+            "title": "1. Arbeitstag",
+            "text": "Du kommst in dem Unternehmen an, weißt aber nicht wo dein Arbeitsplatz ist",
+            "info": "betrifft Erfolg, Mentale Gesundheit, Motivation",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1"
+                        ]
+                    },
+                    {
+                        "path": [
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "2"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-010_1",
+                    "title": "höflich an der Rezeption nachfragen",
+                    "text": "Du gehst an die Rezeption, stellst dich vor und fragst wo du hinmusst. Die Rezeptionistin bringt dich an deinen Arbeitsplatz und ihr führt ein kurzes Gespräch.",
+                    "stats": {
+                        "mentalHealth": 3,
+                        "money": 0,
+                        "motivation": 3,
+                        "success": 7
+                    }
+                },
+                {
+                    "id": "E-010_2",
+                    "title": "du begibst dich planlos auf die Suche",
+                    "text": "du irrst durch die Firma bis dich ein Mitarbeiter anspricht und an deinen Platz bringt.",
+                    "stats": {
+                        "mentalHealth": -5,
+                        "money": 0,
+                        "motivation": -2,
+                        "success": -5
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-011",
+            "title": "Mittagspause",
+            "text": "Wie verbringst du deine Mittagspause?",
+            "info": "potentieller sozialer Kontakt",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "3",
+                            "5",
+                            "7",
+                            "9",
+                            "11",
+                            "13",
+                            "15",
+                            "17"
+                        ]
+                    },
+                    {
+                        "path": [
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "2",
+                            "4",
+                            "6",
+                            "8",
+                            "10",
+                            "12"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-011_1",
+                    "title": "mit Kollegen",
+                    "text": "du gesellst dich zu deinen Kollegen",
+                    "stats": {
+                        "mentalHealth": 10,
+                        "money": 0,
+                        "motivation": 30,
+                        "success": -15
+                    }
+                },
+                {
+                    "id": "E-011_2",
+                    "title": "alleine",
+                    "text": "du verkriechst dich alleine in einer Ecke und isst dein Butterbrot",
+                    "stats": {
+                        "mentalHealth": -10,
+                        "money": 0,
+                        "motivation": -10,
+                        "success": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-012",
+            "title": "Läster Schwestern",
+            "text": "Ihre Kollegin Tanja redet schlecht über ihre Kollegin Meike.",
+            "info": "soziales Event",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "3",
+                            "5",
+                            "7",
+                            "9",
+                            "11",
+                            "13",
+                            "15",
+                            "17"
+                        ]
+                    },
+                    {
+                        "path": [
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "2",
+                            "4",
+                            "6",
+                            "8",
+                            "10",
+                            "12"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-012_1",
+                    "title": "mit Lästern",
+                    "text": "du Lästerst eifrig mit und lässt einen sehr unangemessenen Kommentar über Meike fallen als der Chef dazukommt.",
+                    "stats": {
+                        "mentalHealth": -5,
+                        "money": 0,
+                        "motivation": -5,
+                        "success": -30
+                    }
+                },
+                {
+                    "id": "E-012_2",
+                    "title": "nicht darauf eingehen",
+                    "text": "du Lästerst nicht mit.",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-012_3",
+                    "title": "Tanja wiedersprechen",
+                    "text": "Du teilst Tanja mit, dass du anderer Meinung bist. Sie ist plötzlich ganz still",
+                    "stats": {
+                        "mentalHealth": 5,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-012_4",
+                    "title": "Meike mitteilen dass Tanja über sie gelästert hat.",
+                    "text": "Meike ist entsetzt und läuft wutentbrannt zu Tanja und es fliegen die Fetzen.",
+                    "stats": {
+                        "mentalHealth": -2,
+                        "money": 0,
+                        "motivation": -5,
+                        "success": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-013",
+            "title": "Überstunden",
+            "text": "Du hast Feierabend aber deine Tagesaufgabe noch nicht erledigt.",
+            "info": "soziales Event",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "3",
+                            "5",
+                            "7",
+                            "9",
+                            "11",
+                            "13",
+                            "15",
+                            "17"
+                        ]
+                    },
+                    {
+                        "path": [
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "2",
+                            "4",
+                            "6",
+                            "8",
+                            "10",
+                            "12"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-013_1",
+                    "title": "Überstunden machen",
+                    "text": "du bleibst 2 h länger auf der Arbeit um die Aufgabe fertigzustellen. Dein Chef ist Glücklich.",
+                    "stats": {
+                        "mentalHealth": 5,
+                        "money": 0,
+                        "motivation": 5,
+                        "success": 5
+                    }
+                },
+                {
+                    "id": "E-013_2",
+                    "title": "morgen fertigstellen",
+                    "text": "du machst Feierabend und erledigt die Aufgabe am nächsten Tag.",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": -5,
+                        "success": -5
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-014",
+            "title": "Deadline",
+            "text": "das Projekt an dem du aktuell arbeitest wird nicht rechtzeitig fertig werden.",
+            "info": "hat Auswirkungen auf den Erfolg",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0"
+                        ],
+                        "profession": [
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "3",
+                            "5",
+                            "7",
+                            "9",
+                            "11",
+                            "13",
+                            "15",
+                            "17"
+                        ]
+                    },
+                    {
+                        "path": [
+                            "1"
+                        ],
+                        "profession": [
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "2",
+                            "4",
+                            "6",
+                            "8",
+                            "10",
+                            "12"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-014_1",
+                    "title": "dem Chef Bescheid geben",
+                    "text": "du gibst deinem Chef Bescheid, dass du ds Projekt nicht rechtzeitig fertig bekommen wirst. Und ihr findet gemeinsam eine Lösung.",
+                    "stats": {
+                        "mentalHealth": 10,
+                        "money": 0,
+                        "motivation": 5,
+                        "success": 10
+                    }
+                },
+                {
+                    "id": "E-014_2",
+                    "title": "Überstunden schieben",
+                    "text": "du machst sehr viele Überstunden, das Projekt wird rechtzeitig fertig, die Qualität ist gerade so ausreichend und du bist überarbeitet. ",
+                    "stats": {
+                        "mentalHealth": 10,
+                        "money": 0,
+                        "motivation": 5,
+                        "success": 10
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-016",
+            "title": "neuer Mitschüler",
+            "text": "Im Klassenzimmer triffst du auf einen neuen Mitschüler, er sieht unsicher aus.",
+            "info": "potentieller sozialer Kontakt",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "4",
+                            "6",
+                            "8",
+                            "10",
+                            "12",
+                            "14",
+                            "16",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-016_1",
+                    "title": "Ansprechen",
+                    "text": "du stellst dich dem neuen Mitschüler/Kommilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde bildet eine Lerngruppe",
+                    "stats": {
+                        "mentalHealth": 10,
+                        "money": 0,
+                        "motivation": 30,
+                        "success": 15
+                    }
+                },
+                {
+                    "id": "E-016_2",
+                    "title": "Ignorieren",
+                    "text": "du gehst an dem neuen Mitschüler vorbei ohne ihn zu beachten und setzt dich auf deinen Platz",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-017",
+            "title": "Einladung zur Party",
+            "text": "Du wirst zu einer Party eingeladen",
+            "info": "potentieller sozialer Kontakt, Absturz Gefahr",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 60,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 60,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-017_1",
+                    "title": "zusagen",
+                    "text": "du kommst zur Party und hast eine tolle Zeit aber der Morgen danach bringt das böse Erwachen",
+                    "stats": {
+                        "mentalHealth": 15,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -15
+                    }
+                },
+                {
+                    "id": "E-017_2",
+                    "title": "absagen",
+                    "text": "du sagst ab und verbringst das Wochenende mit lernen",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": -10,
+                        "success": 20
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-018",
+            "title": "Lerngruppe oder Nachhilfe",
+            "text": "Du möchtest beim Lernen besser vorankommen",
+            "info": "Steigerung des Erfolgs",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-018_1",
+                    "title": "Lerngruppe",
+                    "text": "du trittst einer Lerngruppe bei",
+                    "stats": {
+                        "mentalHealth": 15,
+                        "money": 0,
+                        "motivation": 15,
+                        "success": 20
+                    }
+                },
+                {
+                    "id": "E-018_2",
+                    "title": "professionelle Nachhilfe",
+                    "text": "du nimmst dir Nachhilfe und zahlst Monatlich Geld",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": -20,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-019",
+            "title": "Mobbing  eines Freundes",
+            "text": "einer deiner Freunde wird gemobbt",
+            "info": "verletzungsgefahr",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-019_1",
+                    "title": "verteidigen",
+                    "text": "du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
+                    "stats": {
+                        "mentalHealth": 15,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-019_2",
+                    "title": "weglaufen",
+                    "text": "du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
+                    "stats": {
+                        "mentalHealth": -10,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-019_3",
+                    "title": "mitmachen",
+                    "text": "du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
+                    "stats": {
+                        "mentalHealth": -30,
+                        "money": 15,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-019_4",
+                    "title": "zuschauen und danach helfen",
+                    "text": "du schaust zu wie dein Freund fertig gemacht wird und bietest ihm danach ein Pflaster für seine Wunde an.",
+                    "stats": {
+                        "mentalHealth": -10,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-020",
+            "title": "Mobbing  eines Freundes",
+            "text": "einer deiner Freunde wird gemobbt",
+            "info": "verletzungsgefahr",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-020_1",
+                    "title": "verteidigen",
+                    "text": "du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
+                    "stats": {
+                        "mentalHealth": 10,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-020_2",
+                    "title": "weglaufen",
+                    "text": "du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
+                    "stats": {
+                        "mentalHealth": -10,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-020_3",
+                    "title": "mitmachen",
+                    "text": "du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
+                    "stats": {
+                        "mentalHealth": -30,
+                        "money": 15,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-022",
+            "title": "Klausuren Phase",
+            "text": "Die Prüfungen stehen an, du wirst zu einer Geburtstagsfeier eingeladen.",
+            "info": "hat Auswirkungen auf Erfolg",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "2",
+                            "4",
+                            "6",
+                            "8",
+                            "10",
+                            "12",
+                            "14",
+                            "16",
+                            "18"
+                        ]
+                    },
+                    {
+                        "path": [
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "3",
+                            "5",
+                            "7",
+                            "9",
+                            "11"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 60
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 60
+                }
+            },
+            "options": [
+                {
+                    "id": "E-022_1",
+                    "title": "zusagen & abschießen",
+                    "text": "Du bringst ein Geschenk mit und genießt die Party in vollen Zügen. Am nächsten Tag dröhnt dir der Schädel.",
+                    "stats": {
+                        "mentalHealth": 15,
+                        "money": -15,
+                        "motivation": 10,
+                        "success": -10
+                    }
+                },
+                {
+                    "id": "E-022_2",
+                    "title": "absagen",
+                    "text": "Du gehst nicht auf die Party und lernst das ganze Wochenende.",
+                    "stats": {
+                        "mentalHealth": -5,
+                        "money": 0,
+                        "motivation": -10,
+                        "success": 25
+                    }
+                },
+                {
+                    "id": "E-022_3",
+                    "title": "für 3h auf die Party",
+                    "text": "Du gehst 3 Stunden auf die Party, überreichst ein Geschenk und trinkst nur 2 Bier.",
+                    "stats": {
+                        "mentalHealth": 5,
+                        "money": -10,
+                        "motivation": 10,
+                        "success": 20
+                    }
+                },
+                {
+                    "id": "E-022_4",
+                    "title": "zusagen & kein Alkohol trinken",
+                    "text": "Du gehst auf die Party, überreichst ein Geschenk und lernst am nächsten Tag.",
+                    "stats": {
+                        "mentalHealth": 10,
+                        "money": -10,
+                        "motivation": 0,
+                        "success": 15
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-023",
+            "title": "Klausuren Phase",
+            "text": "Die Prüfungen stehen an, du kommst in einem Fach nicht gut voran.",
+            "info": "hat Auswirkungen auf Erfolg",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "2",
+                            "4",
+                            "6",
+                            "8",
+                            "10",
+                            "12",
+                            "14",
+                            "16",
+                            "18"
+                        ]
+                    },
+                    {
+                        "path": [
+                            "1"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "3",
+                            "5",
+                            "7",
+                            "9",
+                            "11"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 60
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 60
+                }
+            },
+            "options": [
+                {
+                    "id": "E-023_1",
+                    "title": "aufgeben",
+                    "text": "Du gibst auf und nimmst eine schlechte Note in Kauf.",
+                    "stats": {
+                        "mentalHealth": -15,
+                        "money": 0,
+                        "motivation": -10,
+                        "success": -10
+                    }
+                },
+                {
+                    "id": "E-023_2",
+                    "title": "weiter lernen",
+                    "text": "Du versuchst weiterhin dir den Stoff einzuverleiben. Kommst aber nur langsam voran.",
+                    "stats": {
+                        "mentalHealth": -5,
+                        "money": 0,
+                        "motivation": 5,
+                        "success": 10
+                    }
+                },
+                {
+                    "id": "E-023_3",
+                    "title": "Ein Mitschüler um Hilfe bitten.",
+                    "text": "Du holst dir Hilfe beim lernen.",
+                    "stats": {
+                        "mentalHealth": 10,
+                        "money": 0,
+                        "motivation": 15,
+                        "success": 20
+                    }
+                },
+                {
+                    "id": "E-023_4",
+                    "title": "weinen",
+                    "text": "Du fängst an zu weinen.",
+                    "stats": {
+                        "mentalHealth": -15,
+                        "money": 0,
+                        "motivation": -20,
+                        "success": -15
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-025",
+            "title": "Freizeit",
+            "text": "Du planst eine Freizeitaktivität.",
+            "info": "hat Auswirkungen auf Mental Health & Geld",
+            "priority": 3,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 90,
+                    "motivation": 0,
+                    "success": 60
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 90,
+                    "motivation": 0,
+                    "success": 60
+                }
+            },
+            "options": [
+                {
+                    "id": "E-025_1",
+                    "title": "Metal Konzert",
+                    "text": "Du gehst auf ein Konzert der Band Helloween. Die Stimmung ist super, das Bier schmeckt gut und du hast sehr viel Spaß im Moshpit.",
+                    "stats": {
+                        "mentalHealth": 40,
+                        "money": -90,
+                        "motivation": 30,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-025_2",
+                    "title": "Pop Konzert",
+                    "text": "Du gehst auf ein Pop Konzert. Die Stimmung ist ausgelassen, der Alkohol schmeckt schrecklich und du erhälst eine Bierdusche. ",
+                    "stats": {
+                        "mentalHealth": 20,
+                        "money": -70,
+                        "motivation": 15,
+                        "success": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-026",
+            "title": "Urlaub",
+            "text": "Du hast dir eine Woche Urlaub genommen, was machst du?",
+            "info": "hat Auswirkungen auf Mental Health & Geld",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "3",
+                            "5",
+                            "7",
+                            "9",
+                            "11",
+                            "13",
+                            "15",
+                            "17"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 350,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 350,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-026_1",
+                    "title": "Urlaub mit anderen Azubis",
+                    "text": "Du fährst mit einer kleine Gruppe aus deinem Kurs nach Italien.",
+                    "stats": {
+                        "mentalHealth": 45,
+                        "money": -200,
+                        "motivation": 30,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-026_2",
+                    "title": "Lernurlaub",
+                    "text": "Du lernst in deinem Urlaub.",
+                    "stats": {
+                        "mentalHealth": -20,
+                        "money": 0,
+                        "motivation": 20,
+                        "success": 50
+                    }
+                },
+                {
+                    "id": "E-026_3",
+                    "title": "Urlaub mit einer Freundin / einem Freund",
+                    "text": "Du machst gemeinsam mit einem deiner Freunde Urlaub in Norwegen.",
+                    "stats": {
+                        "mentalHealth": 40,
+                        "money": -250,
+                        "motivation": 20,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-026_4",
+                    "title": "alleine Urlaub machen",
+                    "text": "Du fährst alleine an die Ostsee.",
+                    "stats": {
+                        "mentalHealth": 25,
+                        "money": -300,
+                        "motivation": 15,
+                        "success": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-028",
+            "title": "Illegale Aktivitäten",
+            "text": "Du stehst an der Bushaltestelle. Ein junger Mann kommt auf dich zu und bietet dir Gras an.",
+            "info": "hat Auswirkungen auf Mental Health & Geld.",
+            "priority": 2,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 5,
+                    "money": 50,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 5,
+                    "money": 50,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-028_1",
+                    "title": "Das Gras kaufen",
+                    "text": "Du rauchst einen Joint jetzt und hebst dir den Rest für später auf. Du bist aktuell sehr Glücklich, verpasst den Bus den du nehmen wolltest aber das ist dir egal.",
+                    "stats": {
+                        "mentalHealth": 3,
+                        "money": -50,
+                        "motivation": 5,
+                        "success": -25
+                    }
+                },
+                {
+                    "id": "E-028_2",
+                    "title": "mit einem Messer bedrohen um das Gras zu bekommen.",
+                    "text": "Du bedrohst den Dealer mit deinem Taschenmesser und verlangst das Gras von Ihm. Doch er beherrscht Kampfsport, verprügelt dich und klaut dein Geld",
+                    "stats": {
+                        "mentalHealth": -10,
+                        "money": -50,
+                        "motivation": -20,
+                        "success": -20
+                    }
+                },
+                {
+                    "id": "E-028_3",
+                    "title": "entsetzt ablehnen",
+                    "text": "Du kaufst kein Gras und wirfst dem Dealer einen schockierten Blick zu. Er ist ein wenig irritiert und macht sich davon.",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-028_4",
+                    "title": "ihn beschimpfen",
+                    "text": "Du nennst ihn einen Junkie, sagst ihm dass er es im Leben nie zu etwas bringen wird und er sich zum Teufel scheren soll. Der Dealer hat eine sehr starke Rechte...",
+                    "stats": {
+                        "mentalHealth": -5,
+                        "money": -20,
+                        "motivation": -15,
+                        "success": -15
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-029",
+            "title": "Illegale Aktivitäten",
+            "text": "Du bist auf der Neckarwiese. Ein junger Mann kommt auf dich zu und bietet dir Koks an.",
+            "info": "hat Auswirkungen auf Mental Health & Geld.",
+            "priority": 2,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 5,
+                    "money": -1,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 5,
+                    "money": -1,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-029_1",
+                    "title": "Das Koks kaufen",
+                    "text": "Du nimmst einen Zug jetzt und hebst dir den Rest für später auf. Du bist aktuell sehr Glücklich, verläufst dich aber auf dem Heimweg.",
+                    "stats": {
+                        "mentalHealth": 5,
+                        "money": -100,
+                        "motivation": 6,
+                        "success": -23
+                    }
+                },
+                {
+                    "id": "E-029_2",
+                    "title": "mit einem Messer bedrohen um das Koks zu bekommen.",
+                    "text": "Du bedrohst den Dealer mit deinem Taschenmesser und verlangst das Koks von Ihm. Doch er beherrscht Kampfsport, verprügelt dich, klaut dein Geld und lässt dich bewusstlos zurück.",
+                    "stats": {
+                        "mentalHealth": -16,
+                        "money": -70,
+                        "motivation": -25,
+                        "success": -20
+                    }
+                },
+                {
+                    "id": "E-029_3",
+                    "title": "entsetzt ablehnen",
+                    "text": "Du kaufst kein Koks und wirfst dem Dealer einen schockierten Blick zu. Er ist ein genervt und macht sich davon.",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-029_4",
+                    "title": "ihn beschimpfen",
+                    "text": "Du nennst ihn einen Junkie, sagst ihm dass er es im Leben nie zu etwas bringen wird und er sich zum Teufel scheren soll. Ein paar Tage später wachst du im Krankenhaus auf.",
+                    "stats": {
+                        "mentalHealth": -20,
+                        "money": -90,
+                        "motivation": -40,
+                        "success": -26
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-030",
+            "title": "neuer Mitschüler",
+            "text": "Im Klassenzimmer triffst du auf einen neuen Mitschüler, er sieht unsicher aus.",
+            "info": "potentieller sozialer Kontakt",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "6",
+                            "8",
+                            "10",
+                            "12",
+                            "14",
+                            "16",
+                            "18",
+                            "6",
+                            "8",
+                            "10",
+                            "12",
+                            "14",
+                            "16",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-030_1",
+                    "title": "Ansprechen",
+                    "text": "du stellst dich dem neuen Mitschüler/Kommilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde bildet eine Lerngruppe",
+                    "stats": {
+                        "mentalHealth": 10,
+                        "money": 0,
+                        "motivation": 30,
+                        "success": 15
+                    }
+                },
+                {
+                    "id": "E-030_2",
+                    "title": "Ignorieren",
+                    "text": "du gehst an dem neuen Mitschüler vorbei ohne ihn zu beachten und setzt dich auf deinen Platz",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-031",
+            "title": "Einladung zur Party",
+            "text": "Du wirst zu einer Party eingeladen",
+            "info": "potentieller sozialer Kontakt, Absturz Gefahr",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 60,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 60,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-031_1",
+                    "title": "zusagen",
+                    "text": "du kommst zur Party und hast eine tolle Zeit aber der Morgen danach bringt das böse Erwachen",
+                    "stats": {
+                        "mentalHealth": 15,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": -15
+                    }
+                },
+                {
+                    "id": "E-031_2",
+                    "title": "absagen",
+                    "text": "du sagst ab und verbringst das Wochenende mit lernen",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": 0,
+                        "motivation": -10,
+                        "success": 20
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-032",
+            "title": "Lerngruppe oder Nachhilfe",
+            "text": "Du möchtest beim Lernen besser vorankommen",
+            "info": "Steigerung des Erfolgs",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-032_1",
+                    "title": "Lerngruppe",
+                    "text": "du trittst einer Lerngruppe bei",
+                    "stats": {
+                        "mentalHealth": 15,
+                        "money": 0,
+                        "motivation": 15,
+                        "success": 20
+                    }
+                },
+                {
+                    "id": "E-032_2",
+                    "title": "professionelle Nachhilfe",
+                    "text": "du nimmst dir Nachhilfe und zahlst Monatlich Geld",
+                    "stats": {
+                        "mentalHealth": 0,
+                        "money": -20,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-033",
+            "title": "Mobbing  eines Freundes",
+            "text": "einer deiner Freunde wird gemobbt",
+            "info": "verletzungsgefahr",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-033_1",
+                    "title": "verteidigen",
+                    "text": "du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
+                    "stats": {
+                        "mentalHealth": 15,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-033_2",
+                    "title": "weglaufen",
+                    "text": "du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
+                    "stats": {
+                        "mentalHealth": -10,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-033_3",
+                    "title": "mitmachen",
+                    "text": "du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
+                    "stats": {
+                        "mentalHealth": -30,
+                        "money": 15,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                },
+                {
+                    "id": "E-033_4",
+                    "title": "zuschauen und danach helfen",
+                    "text": "du schaust zu wie dein Freund fertig gemacht wird und bietest ihm danach ein Pflaster für seine Wunde an.",
+                    "stats": {
+                        "mentalHealth": -10,
+                        "money": 0,
+                        "motivation": 0,
+                        "success": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E-998",
+            "title": "Hofmann ist im Urlaub",
+            "text": "Der Hofmann ist mal wieder im Urlaub. Was willst du tun ?",
+            "info": "Wenn du den Hofmman verletzt passiert nichts",
+            "priority": 1,
+            "requirements": {
+                "timings": [
+                    {
+                        "path": [
+                            "0",
+                            "1",
+                            "2"
+                        ],
+                        "profession": [
+                            "0",
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ],
+                        "phase": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "16",
+                            "17",
+                            "18"
+                        ]
+                    }
+                ],
+                "stats_min": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                },
+                "stats_max": {
+                    "mentalHealth": 0,
+                    "money": 0,
+                    "motivation": 0,
+                    "success": 0
+                }
+            },
+            "options": [
+                {
+                    "id": "E-998_1",
+                    "title": "Ich zücke mein Messer und stelle mich vor den Hofmann",
+                    "text": "Der Hofmann ist überrascht und schreit laut auf. Er rennt weg und du hast ihn verletzt.",
+                    "stats": {
+                        "mentalHealth": -50,
+                        "money": 0,
+                        "motivation": 30,
+                        "success": -15
+                    }
+                },
+                {
+                    "id": "E-998_2",
+                    "title": "Ich renne hinterher",
+                    "text": "Du rennst hinterher und verletzt den Hofmann. Er rennt weg und du hast ihn verletzt.",
+                    "stats": {
+                        "mentalHealth": -50,
+                        "money": 0,
+                        "motivation": 30,
+                        "success": -15
+                    }
+                }
+            ]
+        }
+    ],
+    "edu_path": {
+        "path": 0,
+        "profession": 1,
+        "phase": 0
+    }
+}
