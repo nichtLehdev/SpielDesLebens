@@ -13,8 +13,19 @@ namespace Spiel_Des_Lebens
          player = new Player(avatar, age, name, path, profession, graduation);
          nextAction();
       }
+      public void saveGame(int slot)
+      {
+            SaveLoadGame.saveGame(this.player, slot);
+      }
+      public void loadGame(int slot)
+      {
+            if (SaveLoadGame.hasValidData(slot))
+            {
+                this.player = SaveLoadGame.loadGame(slot);
 
-      public int getMaxActionPoints()
+            }
+      }
+        public int getMaxActionPoints()
       {
          return player.getEducationPath().getPhase().getMaxActionPoints();
       }
