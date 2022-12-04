@@ -50,20 +50,21 @@
             this.avatarBox4 = new System.Windows.Forms.PictureBox();
             this.avatarBox5 = new System.Windows.Forms.PictureBox();
             this.avatarBox6 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnHauptschule = new System.Windows.Forms.Button();
+            this.btnRealschule = new System.Windows.Forms.Button();
+            this.btnFachabi = new System.Windows.Forms.Button();
+            this.btnAbi = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.education_path = new System.Windows.Forms.ComboBox();
+            this.dropDown_profession = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.profession_path = new System.Windows.Forms.ComboBox();
+            this.dropDown_path = new System.Windows.Forms.ComboBox();
             this.lable_1 = new System.Windows.Forms.Label();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_alter = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.weiter_button = new System.Windows.Forms.Button();
+            this.txt_age = new System.Windows.Forms.TextBox();
+            this.btn_back = new System.Windows.Forms.Button();
+            this.btn_next = new System.Windows.Forms.Button();
+            this.lbl_userInfo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.fiction_panel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -194,7 +195,6 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.Snow;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(120, 69);
             this.textBox1.Name = "textBox1";
@@ -237,20 +237,21 @@
             this.Layout_neues_Spiel.Controls.Add(this.avatarBox4);
             this.Layout_neues_Spiel.Controls.Add(this.avatarBox5);
             this.Layout_neues_Spiel.Controls.Add(this.avatarBox6);
-            this.Layout_neues_Spiel.Controls.Add(this.button1);
-            this.Layout_neues_Spiel.Controls.Add(this.button2);
-            this.Layout_neues_Spiel.Controls.Add(this.button3);
-            this.Layout_neues_Spiel.Controls.Add(this.button4);
+            this.Layout_neues_Spiel.Controls.Add(this.btnHauptschule);
+            this.Layout_neues_Spiel.Controls.Add(this.btnRealschule);
+            this.Layout_neues_Spiel.Controls.Add(this.btnFachabi);
+            this.Layout_neues_Spiel.Controls.Add(this.btnAbi);
             this.Layout_neues_Spiel.Controls.Add(this.label2);
-            this.Layout_neues_Spiel.Controls.Add(this.education_path);
+            this.Layout_neues_Spiel.Controls.Add(this.dropDown_profession);
             this.Layout_neues_Spiel.Controls.Add(this.label3);
-            this.Layout_neues_Spiel.Controls.Add(this.profession_path);
+            this.Layout_neues_Spiel.Controls.Add(this.dropDown_path);
             this.Layout_neues_Spiel.Controls.Add(this.lable_1);
             this.Layout_neues_Spiel.Controls.Add(this.txt_name);
             this.Layout_neues_Spiel.Controls.Add(this.label1);
-            this.Layout_neues_Spiel.Controls.Add(this.txt_alter);
-            this.Layout_neues_Spiel.Controls.Add(this.button9);
-            this.Layout_neues_Spiel.Controls.Add(this.weiter_button);
+            this.Layout_neues_Spiel.Controls.Add(this.txt_age);
+            this.Layout_neues_Spiel.Controls.Add(this.btn_back);
+            this.Layout_neues_Spiel.Controls.Add(this.btn_next);
+            this.Layout_neues_Spiel.Controls.Add(this.lbl_userInfo);
             this.Layout_neues_Spiel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Layout_neues_Spiel.Location = new System.Drawing.Point(504, 31);
             this.Layout_neues_Spiel.Name = "Layout_neues_Spiel";
@@ -328,49 +329,49 @@
             this.avatarBox6.TabStop = false;
             this.avatarBox6.Click += new System.EventHandler(this.changeAvatar);
             // 
-            // button1
+            // btnHauptschule
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(13, 273);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Hauptschulabschluss";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.changePath);
+            this.btnHauptschule.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnHauptschule.Location = new System.Drawing.Point(13, 273);
+            this.btnHauptschule.Name = "btnHauptschule";
+            this.btnHauptschule.Size = new System.Drawing.Size(152, 23);
+            this.btnHauptschule.TabIndex = 6;
+            this.btnHauptschule.Text = "Hauptschulabschluss";
+            this.btnHauptschule.UseVisualStyleBackColor = true;
+            this.btnHauptschule.Click += new System.EventHandler(this.changePath);
             // 
-            // button2
+            // btnRealschule
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Location = new System.Drawing.Point(171, 273);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Realschulabschluss";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.changePath);
+            this.btnRealschule.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnRealschule.Location = new System.Drawing.Point(171, 273);
+            this.btnRealschule.Name = "btnRealschule";
+            this.btnRealschule.Size = new System.Drawing.Size(154, 23);
+            this.btnRealschule.TabIndex = 7;
+            this.btnRealschule.Text = "Realschulabschluss";
+            this.btnRealschule.UseVisualStyleBackColor = true;
+            this.btnRealschule.Click += new System.EventHandler(this.changePath);
             // 
-            // button3
+            // btnFachabi
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button3.Location = new System.Drawing.Point(13, 302);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(152, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Fachhochschulreife";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.changePath);
+            this.btnFachabi.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnFachabi.Location = new System.Drawing.Point(13, 302);
+            this.btnFachabi.Name = "btnFachabi";
+            this.btnFachabi.Size = new System.Drawing.Size(152, 23);
+            this.btnFachabi.TabIndex = 8;
+            this.btnFachabi.Text = "Fachhochschulreife";
+            this.btnFachabi.UseVisualStyleBackColor = true;
+            this.btnFachabi.Click += new System.EventHandler(this.changePath);
             // 
-            // button4
+            // btnAbi
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button4.Location = new System.Drawing.Point(171, 302);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(154, 23);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "allg. Hochschulreife";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.changePath);
+            this.btnAbi.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnAbi.Location = new System.Drawing.Point(171, 302);
+            this.btnAbi.Name = "btnAbi";
+            this.btnAbi.Size = new System.Drawing.Size(154, 23);
+            this.btnAbi.TabIndex = 9;
+            this.btnAbi.Text = "allg. Hochschulreife";
+            this.btnAbi.UseVisualStyleBackColor = true;
+            this.btnAbi.Click += new System.EventHandler(this.changePath);
             // 
             // label2
             // 
@@ -384,14 +385,14 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Bildungsweg";
             // 
-            // education_path
+            // dropDown_profession
             // 
-            this.education_path.FormattingEnabled = true;
-            this.education_path.Location = new System.Drawing.Point(97, 331);
-            this.education_path.Name = "education_path";
-            this.education_path.Size = new System.Drawing.Size(224, 21);
-            this.education_path.TabIndex = 17;
-            this.education_path.TextChanged += new System.EventHandler(this.education_path_TextChanged);
+            this.dropDown_profession.FormattingEnabled = true;
+            this.dropDown_profession.Location = new System.Drawing.Point(13, 351);
+            this.dropDown_profession.Name = "dropDown_profession";
+            this.dropDown_profession.Size = new System.Drawing.Size(224, 21);
+            this.dropDown_profession.TabIndex = 17;
+            this.dropDown_profession.TextChanged += new System.EventHandler(this.education_path_TextChanged);
             // 
             // label3
             // 
@@ -405,14 +406,14 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "Karriereweg";
             // 
-            // profession_path
+            // dropDown_path
             // 
-            this.profession_path.FormattingEnabled = true;
-            this.profession_path.Location = new System.Drawing.Point(97, 358);
-            this.profession_path.Name = "profession_path";
-            this.profession_path.Size = new System.Drawing.Size(224, 21);
-            this.profession_path.TabIndex = 19;
-            this.profession_path.TextChanged += new System.EventHandler(this.profession_path_TextChanged);
+            this.dropDown_path.FormattingEnabled = true;
+            this.dropDown_path.Location = new System.Drawing.Point(13, 398);
+            this.dropDown_path.Name = "dropDown_path";
+            this.dropDown_path.Size = new System.Drawing.Size(224, 21);
+            this.dropDown_path.TabIndex = 19;
+            this.dropDown_path.TextChanged += new System.EventHandler(this.profession_path_TextChanged);
             // 
             // lable_1
             // 
@@ -445,41 +446,50 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Alter";
             // 
-            // txt_alter
+            // txt_age
             // 
-            this.txt_alter.Location = new System.Drawing.Point(59, 411);
-            this.txt_alter.Name = "txt_alter";
-            this.txt_alter.Size = new System.Drawing.Size(266, 20);
-            this.txt_alter.TabIndex = 14;
-            this.txt_alter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_alter_KeyPress);
+            this.txt_age.Location = new System.Drawing.Point(62, 451);
+            this.txt_age.Name = "txt_age";
+            this.txt_age.Size = new System.Drawing.Size(266, 20);
+            this.txt_age.TabIndex = 14;
+            this.txt_age.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_alter_KeyPress);
             // 
-            // button9
+            // btn_back
             // 
-            this.button9.BackColor = System.Drawing.Color.RosyBrown;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button9.Location = new System.Drawing.Point(55, 437);
-            this.button9.Margin = new System.Windows.Forms.Padding(45, 3, 3, 3);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(132, 48);
-            this.button9.TabIndex = 16;
-            this.button9.Text = "Zurück";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.open_main_menu);
+            this.btn_back.BackColor = System.Drawing.Color.RosyBrown;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_back.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_back.Location = new System.Drawing.Point(55, 477);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(45, 3, 3, 3);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(132, 48);
+            this.btn_back.TabIndex = 16;
+            this.btn_back.Text = "Zurück";
+            this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.open_main_menu);
             // 
-            // weiter_button
+            // btn_next
             // 
-            this.weiter_button.BackColor = System.Drawing.Color.RosyBrown;
-            this.weiter_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.weiter_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.weiter_button.Location = new System.Drawing.Point(195, 437);
-            this.weiter_button.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
-            this.weiter_button.Name = "weiter_button";
-            this.weiter_button.Size = new System.Drawing.Size(132, 48);
-            this.weiter_button.TabIndex = 15;
-            this.weiter_button.Text = "Weiter";
-            this.weiter_button.UseVisualStyleBackColor = false;
-            this.weiter_button.Click += new System.EventHandler(this.open_next);
+            this.btn_next.BackColor = System.Drawing.Color.RosyBrown;
+            this.btn_next.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_next.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_next.Location = new System.Drawing.Point(195, 477);
+            this.btn_next.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.btn_next.Name = "btn_next";
+            this.btn_next.Size = new System.Drawing.Size(132, 48);
+            this.btn_next.TabIndex = 15;
+            this.btn_next.Text = "Weiter";
+            this.btn_next.UseVisualStyleBackColor = false;
+            this.btn_next.Click += new System.EventHandler(this.open_next);
+            // 
+            // lbl_userInfo
+            // 
+            this.lbl_userInfo.AutoSize = true;
+            this.lbl_userInfo.Location = new System.Drawing.Point(13, 528);
+            this.lbl_userInfo.Name = "lbl_userInfo";
+            this.lbl_userInfo.Size = new System.Drawing.Size(125, 13);
+            this.lbl_userInfo.TabIndex = 21;
+            this.lbl_userInfo.Text = "Erstelle deinen Charakter";
             // 
             // Form1
             // 
@@ -512,22 +522,22 @@
       private System.Windows.Forms.PictureBox avatarBox1;
       private System.Windows.Forms.PictureBox avatarBox2;
       private System.Windows.Forms.PictureBox avatarBox3;
-      private System.Windows.Forms.Button button1;
-      private System.Windows.Forms.Button button2;
-      private System.Windows.Forms.Button button3;
-      private System.Windows.Forms.Button button4;
+      private System.Windows.Forms.Button btnHauptschule;
+      private System.Windows.Forms.Button btnRealschule;
+      private System.Windows.Forms.Button btnFachabi;
+      private System.Windows.Forms.Button btnAbi;
       private System.Windows.Forms.Label lable_1;
       private System.Windows.Forms.TextBox txt_name;
       private System.Windows.Forms.Label label1;
-      private System.Windows.Forms.TextBox txt_alter;
-      private System.Windows.Forms.Button weiter_button;
+      private System.Windows.Forms.TextBox txt_age;
+      private System.Windows.Forms.Button btn_next;
       private System.Windows.Forms.FlowLayoutPanel Layout_neues_Spiel;
       private System.Windows.Forms.Panel panel1;
       private System.Windows.Forms.Button slot_btn_1;
       private System.Windows.Forms.Button slot_btn_2;
       private System.Windows.Forms.Button slot_btn_3;
       private System.Windows.Forms.TextBox textBox1;
-      private System.Windows.Forms.Button button9;
+      private System.Windows.Forms.Button btn_back;
       private System.Windows.Forms.ErrorProvider errorProvider1;
       private System.Windows.Forms.Panel panel2;
       private System.Windows.Forms.Button button_mini_3;
@@ -540,8 +550,9 @@
         private System.Windows.Forms.PictureBox avatarBox5;
         private System.Windows.Forms.PictureBox avatarBox6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox education_path;
+        private System.Windows.Forms.ComboBox dropDown_profession;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox profession_path;
+        private System.Windows.Forms.ComboBox dropDown_path;
+        private System.Windows.Forms.Label lbl_userInfo;
     }
 }

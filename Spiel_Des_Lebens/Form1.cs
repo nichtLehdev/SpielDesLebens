@@ -21,7 +21,7 @@ namespace Spiel_Des_Lebens
         private void open_next(object sender, EventArgs e)
         {
 
-            if (ValidateChildren(ValidationConstraints.Enabled))
+            if (validateInputs())
             {
                 Form2 mainForm = createForm2();
                 mainForm.TopLevel = false;
@@ -98,20 +98,20 @@ namespace Spiel_Des_Lebens
         {
             Button btn = (Button)sender;
             abschluss = btn.Text;
-            education_path.Items.Clear();
-            education_path.Text = null;
-            profession_path.Text = null;
+            dropDown_profession.Items.Clear();
+            dropDown_profession.Text = null;
+            dropDown_path.Text = null;
             if (abschluss == "Hauptschulabschluss")
             {
-                education_path.Items.AddRange(new object[] { "Ausbildung" });
+                dropDown_profession.Items.AddRange(new object[] { "Ausbildung" });
             }
             else if (abschluss == "Realschulabschluss")
             {
-                education_path.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
+                dropDown_profession.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
             }
             else
             {
-                education_path.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium" });
+                dropDown_profession.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium" });
             }
         }
 
@@ -223,131 +223,135 @@ namespace Spiel_Des_Lebens
 
         private void education_path_TextChanged(object sender, EventArgs e)
         {
-            profession_path.Text = null;
-            profession_path.Items.Clear();
-            if (education_path.Text == "Ausbildung")
+            dropDown_path.Text = null;
+            dropDown_path.Items.Clear();
+            if (dropDown_profession.Text == "Ausbildung")
             {
 
                 training = "Training";
-                profession_path.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
+                dropDown_path.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
             }
-            else if (education_path.Text == "Duales Studium")
+            else if (dropDown_profession.Text == "Duales Studium")
             {
                 training = "DualStudy";
-                profession_path.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
+                dropDown_path.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
             }
-            else if (education_path.Text == "Studium")
+            else if (dropDown_profession.Text == "Studium")
             {
                 training = "Study";
-                profession_path.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
+                dropDown_path.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
             }
         }
 
         private void profession_path_TextChanged(object sender, EventArgs e)
         {
-            if (education_path.Text == "Ausbildung")
+            if (dropDown_profession.Text == "Ausbildung")
             {
-                if (profession_path.Text == "Krankenpflege")
+                if (dropDown_path.Text == "Krankenpflege")
                 {
                     profession = "Social";
                 }
-                else if (profession_path.Text == "Industriekaufmann")
+                else if (dropDown_path.Text == "Industriekaufmann")
                 {
                     profession = "Business";
                 }
-                else if (profession_path.Text == "Pharmazeutisch Technische Assistenz")
+                else if (dropDown_path.Text == "Pharmazeutisch Technische Assistenz")
                 {
                     profession = "Science";
                 }
-                else if (profession_path.Text == "Fachinformatiker")
+                else if (dropDown_path.Text == "Fachinformatiker")
                 {
                     profession = "Stem";
                 }
-                else if (profession_path.Text == "Rechtanwaltsfachangestellter")
+                else if (dropDown_path.Text == "Rechtanwaltsfachangestellter")
                 {
                     profession = "Civil";
                 }
             }
-            else if (education_path.Text == "Duales Studium")
+            else if (dropDown_profession.Text == "Duales Studium")
             {
-                if (profession_path.Text == "Angewandte Gesundheits- und Pflegewissenschaften")
+                if (dropDown_path.Text == "Angewandte Gesundheits- und Pflegewissenschaften")
                 {
                     profession = "Social";
                 }
-                else if (profession_path.Text == "BWL")
+                else if (dropDown_path.Text == "BWL")
                 {
                     profession = "Business";
                 }
-                else if (profession_path.Text == "Angewandte Physik")
+                else if (dropDown_path.Text == "Angewandte Physik")
                 {
                     profession = "Science";
                 }
-                else if (profession_path.Text == "Angewandtes Informatikstudium")
+                else if (dropDown_path.Text == "Angewandtes Informatikstudium")
                 {
                     profession = "Stem";
                 }
-                else if (profession_path.Text == "Steuerwesen")
+                else if (dropDown_path.Text == "Steuerwesen")
                 {
                     profession = "Civil";
                 }
             }
-            else if (education_path.Text == "Studium")
+            else if (dropDown_profession.Text == "Studium")
             {
-                if (profession_path.Text == "Medizinstudium")
+                if (dropDown_path.Text == "Medizinstudium")
                 {
                     profession = "Social";
                 }
-                else if (profession_path.Text == "BWL")
+                else if (dropDown_path.Text == "BWL")
                 {
                     profession = "Business";
                 }
-                else if (profession_path.Text == "Physikstudium")
+                else if (dropDown_path.Text == "Physikstudium")
                 {
                     profession = "Science";
                 }
-                else if (profession_path.Text == "Informatikstudium")
+                else if (dropDown_path.Text == "Informatikstudium")
                 {
                     profession = "Stem";
                 }
-                else if (profession_path.Text == "Jurastudium")
+                else if (dropDown_path.Text == "Jurastudium")
                 {
                     profession = "Civil";
                 }
             }
         }
 
-        private void button2_Validating(object sender, CancelEventArgs e)
+        private Boolean validateInputs()
         {
-            if (string.IsNullOrEmpty(abschluss))
+
+            if (string.IsNullOrEmpty(txt_name.Text))
             {
-                e.Cancel = true;
-                errorProvider1.SetError(weiter_button, "Wähle einen Schulabschluss");
+                lbl_userInfo.Text = "!!! Wähle einen Namen !!!";
+                return false;
+
             }
-            else if (string.IsNullOrEmpty(txt_name.Text))
+            else if (string.IsNullOrEmpty(txt_age.Text) || Convert.ToInt16(txt_age.Text) > 60 || Convert.ToInt16(txt_age.Text) < 15)
             {
-                e.Cancel = true;
-                errorProvider1.SetError(weiter_button, "Bitte gebe einen namen ein");
+                lbl_userInfo.Text = "!!! Wähle ein Alter zwischen 15 und 60!!!";
+                return false;
             }
-            else if (string.IsNullOrEmpty(txt_alter.Text) || Convert.ToInt16(txt_alter.Text) > 60 || Convert.ToInt16(txt_alter.Text) < 15)
+            else if (string.IsNullOrEmpty(abschluss))
             {
-                e.Cancel = true;
-                errorProvider1.SetError(weiter_button, "Wähle ein Alter zwischen 15 und 60");
+                lbl_userInfo.Text = "!!! Wähle einen Schulabschluss !!!";
+                return false;
+
             }
             else if (string.IsNullOrEmpty(training))
             {
-                e.Cancel = true;
-                errorProvider1.SetError(weiter_button, "Wähle einen Bildungsweg");
+                lbl_userInfo.Text = "!!! Wähle einen Bildungsweg !!!";
+                return false;
             }
             else if (string.IsNullOrEmpty(profession))
             {
-                e.Cancel = true;
-                errorProvider1.SetError(weiter_button, "Wähle einen Karriereweg");
+                lbl_userInfo.Text = "!!! Wähle einen Karriereweg !!!";
+                return false;
             }
-            else
+            else if(avatar == null)
             {
-                e.Cancel = false;
-                errorProvider1.SetError(weiter_button, null);
+                lbl_userInfo.Text = "!!! Wähle einen Avatar !!!";
+                return false;
             }
+            return true;
         }
 
         private void button_mini_2_Click(object sender, EventArgs e)
