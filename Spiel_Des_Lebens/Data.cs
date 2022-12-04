@@ -14,7 +14,7 @@
                                                      {"Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium"} };
         public static int[] phaseL = new int[3] { 2, 3, 3 };
 
-        public static Stat[] statarray = new Stat[3] { new Stat(0, 75, 0, -40), new Stat(0, 100, 0, -40), new Stat(0, 20, 0, -40) };
+        public static Stat[] statarray = new Stat[3] { new Stat(0, 75, 0, -50), new Stat(0, 100, 0, -50), new Stat(0, 20, 0, -50) };
 
     }
 }

@@ -250,45 +250,58 @@ namespace Spiel_Des_Lebens
                 switch ((int)statType)
                 {
                     case 0:
-                        warning = "Achtung!! Deine Mentale Gesundheit hat einen kritischen Zustand erreicht";
+                        warning = "Achtung! Deine Mentale Gesundheit hat einen kritischen Zustand erreicht";
                         break;
                     case 1:
-                        warning = "Achtung!! Du bist fast Pleite";
+                        warning = "Achtung! Du bist fast Pleite";
                         break;
                     case 2:
-                        warning = "Achtung!! Deine Motivation hat einen kritischen Zustand erreicht";
+                        warning = "Achtung! Deine Motivation hat einen kritischen Zustand erreicht";
                         break;
                     case 3:
-                        warning = "Achtung!! Dein Lernstand lässt vermuten, dass du die kommenden Klausuren nicht bestehen wirst";
+                        warning = "Achtung! Dein Lernstand lässt vermuten, dass du die kommenden Klausuren nicht bestehen wirst";
                         break;
                 }
             }
             return warning;
         }
 
-        public String getGameOver()
+        public String getGameEnd()
         {
             Data.StatType? statType = player.checkStatSmaller(1);
-            string gameOver = "";
+            string gameEnd = "";
             if (statType != null)
             {
                 switch ((int)statType)
                 {
                     case 0:
-                        gameOver = "Game Over!! Du hast nicht auf deine Mentale Gesundheit geachtet und hast daher Selbstmord begangen";
+                        gameEnd = "Game Over!!! Du hast nicht auf deine Mentale Gesundheit geachtet und hast daher Selbstmord begangen";
                         break;
                     case 1:
-                        gameOver = "Game Over!! Du bist Pleite und kannst deine laufenden Kosten nicht mehr tragen";
+                        gameEnd = "Game Over!!! Du bist Pleite und kannst deine laufenden Kosten nicht mehr tragen";
                         break;
                     case 2:
-                        gameOver = "Game Over!! Du hast keine Motivation mehr und dein Leben macht kein Sinn mehr";
+                        gameEnd = "Game Over!!! Du hast keine Motivation mehr und dein Leben macht kein Sinn mehr";
                         break;
                     case 3:
-                        gameOver = "Game Over!! Du hast zu wenig gelernt und hast deine Prüfungen nicht bestanden";
+                        gameEnd = "Game Over!!! Du hast zu wenig gelernt und hast deine Prüfungen nicht bestanden";
                         break;
                 }
             }
-            return gameOver;
+            if (player.getEducationPath().getPhase().getCurrentPhase() > getMaxPhaseNumber())
+            {
+                if (player.getEducationPath().getPath() == Data.Path.Training)
+                {
+                    gameEnd = "Erfolg!!! Du hast deine Ausbildung ";
+                }
+                else
+                {
+                    gameEnd = "Erfolg!!! Du hast dein Studium ";
+                }
+                gameEnd += "\"" + player.getEducationPath().getProfessionName() + "\" erfolgreich absolviert!";
+
+            }
+            return gameEnd;
         }
         public void resetPath(Data.Path path, Data.Profession profession)
         {

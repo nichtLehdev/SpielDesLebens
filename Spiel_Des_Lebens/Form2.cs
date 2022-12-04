@@ -239,8 +239,8 @@ namespace Spiel_Des_Lebens
             int cur_phase = ui_interface.getCurrentPhase();
             int overall_phase = ui_interface.getMaxPhaseLength();
             current_phase_txt.Text = "Derzeitige Phase: " + cur_phase;
-            action_points_txt.Text = "Benutzte Aktionspunkte: " + (ui_interface.getMaxActionPoints() - action_points);
-            left_phase_txt.Text = "Verbleibene Länge der Phase: " + action_points;
+            action_points_txt.Text = "Aktionspunkte: " + action_points;
+            left_phase_txt.Text = "Verbleibene Länge der Phase: " + (12 - action_points);
             progress_prog_bar.Value = 1;
             money_prog_bar.Text = ui_interface.getPlayerMoney().ToString() + "€";
             learn_prog_bar.Value = ui_interface.getPlayerSuccess();
@@ -314,11 +314,11 @@ namespace Spiel_Des_Lebens
         }
         private void game_over_check()
         {
-            if (ui_interface.getGameOver() != "")
+            if (ui_interface.getGameEnd() != "")
             {
                 game_over_panel.Visible = true;
                 all_options_disable();
-                game_over_txt.Text = ui_interface.getGameOver();
+                game_over_txt.Text = ui_interface.getGameEnd();
             }
         }
 
@@ -565,9 +565,7 @@ namespace Spiel_Des_Lebens
         private void next_phase(object sender, EventArgs e)
         {
             ui_interface.nextPhase();
-            btnLoadEvent_Click();
-            get_new_actions();
-            ui_interface.nextEvent();
+            update_aktionpoints();
         }
     }
 }
