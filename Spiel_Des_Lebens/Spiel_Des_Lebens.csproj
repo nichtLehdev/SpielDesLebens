@@ -190,5 +190,23 @@
   <ItemGroup>
     <None Include="Resources\uni-table.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatare_boy_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatare_boy_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatare_boy_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatare_girl_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatare_girl_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatare_girl_2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

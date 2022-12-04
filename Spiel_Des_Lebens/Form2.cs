@@ -529,17 +529,19 @@ namespace Spiel_Des_Lebens
 
         private void new_profession_path_comboBox_TextChanged(object sender, EventArgs e)
         {
+            new_profession_profession_combo_box.Items.Clear();
+            new_profession_profession_combo_box.Text = null;
             if (new_profession_path_combo_box.Text == "Ausbildung")
             {
                 refrence_training = "Training";
                 new_profession_profession_combo_box.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
             }
-            else if (new_profession_path_combo_box.Text == "DualStudy")
+            else if (new_profession_path_combo_box.Text == "Duales Studium")
             {
                 refrence_training = "Duales Studium";
                 new_profession_profession_combo_box.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
             }
-            else if (new_profession_path_combo_box.Text == "Study")
+            else if (new_profession_path_combo_box.Text == "Studium")
             {
                 refrence_training = "Studium";
                 new_profession_profession_combo_box.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
@@ -591,5 +593,6 @@ namespace Spiel_Des_Lebens
             btnLoadEvent_Click();
             get_new_actions();
         }
+
     }
 }

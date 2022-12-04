@@ -67,18 +67,51 @@ namespace Spiel_Des_Lebens
             }
 
         }
-
+        private void no_border()
+        {
+            avatarBox1.BorderStyle = BorderStyle.None;
+            avatarBox2.BorderStyle = BorderStyle.None;
+            avatarBox3.BorderStyle = BorderStyle.None;
+            avatarBox4.BorderStyle = BorderStyle.None;
+            avatarBox5.BorderStyle = BorderStyle.None;
+            avatarBox6.BorderStyle = BorderStyle.None;
+        }
       private Image avatar;
       private void changeAvatar(object sender, EventArgs e)
       {
-         PictureBox img = (PictureBox)sender;
+         no_border();
+             if(sender == avatarBox1)
+             {
+                 avatarBox1.BorderStyle = BorderStyle.FixedSingle;
+             }
+             else if (sender == avatarBox2)
+             {
+                 avatarBox2.BorderStyle = BorderStyle.FixedSingle;
+             }
+             else if (sender == avatarBox3)
+             {
+                avatarBox3.BorderStyle = BorderStyle.FixedSingle;
+             }
+             else if (sender == avatarBox4)
+             {
+                avatarBox4.BorderStyle = BorderStyle.FixedSingle;
+             }
+             else if (sender == avatarBox5)
+             {
+                avatarBox5.BorderStyle = BorderStyle.FixedSingle;
+             }
+             else if (sender == avatarBox6)
+             {
+                avatarBox6.BorderStyle = BorderStyle.FixedSingle;
+             }
+            PictureBox img = (PictureBox)sender;
          avatar = img.Image;
       }
 
         private void load_test(object sender, EventArgs e)
         {
             //für das Bsp werden sie vorher gestzt
-            Form2 t = new Form2("Mia Münstermann", "20", pictureBox1.Image, "Testaschlusss", false, "Training", "Stem", "Pharmazeutisch Technische Assistenz");
+            Form2 t = new Form2("Mia Münstermann", "20", avatarBox1.Image, "Testaschlusss", false, "Training", "Stem", "Pharmazeutisch Technische Assistenz");
             t.Show();
             this.Hide();
         }

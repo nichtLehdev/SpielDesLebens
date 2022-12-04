@@ -77,7 +77,6 @@
             this.option_4_btn = new System.Windows.Forms.Button();
             this.option_3_btn = new System.Windows.Forms.Button();
             this.option_2_btn = new System.Windows.Forms.Button();
-            this.event_title = new System.Windows.Forms.TextBox();
             this.show_info_btn = new System.Windows.Forms.Button();
             this.event_txt_box = new System.Windows.Forms.TextBox();
             this.option_1_btn = new System.Windows.Forms.Button();
@@ -120,6 +119,7 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblPlayerAge = new System.Windows.Forms.Label();
             this.btnAktion = new System.Windows.Forms.Button();
+            this.event_title = new System.Windows.Forms.Label();
             this.panelActiveChild.SuspendLayout();
             this.info_action_panel_0.SuspendLayout();
             this.info_action_panel_2.SuspendLayout();
@@ -381,6 +381,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.farbverlauf;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.event_title);
             this.panel1.Controls.Add(this.action_panel);
             this.panel1.Controls.Add(this.new_profession_panel);
             this.panel1.Controls.Add(this.close_opt_end_txt);
@@ -390,7 +391,6 @@
             this.panel1.Controls.Add(this.option_4_btn);
             this.panel1.Controls.Add(this.option_3_btn);
             this.panel1.Controls.Add(this.option_2_btn);
-            this.panel1.Controls.Add(this.event_title);
             this.panel1.Controls.Add(this.show_info_btn);
             this.panel1.Controls.Add(this.event_txt_box);
             this.panel1.Controls.Add(this.option_1_btn);
@@ -553,7 +553,7 @@
             this.new_profession_txt.ReadOnly = true;
             this.new_profession_txt.Size = new System.Drawing.Size(300, 103);
             this.new_profession_txt.TabIndex = 10;
-            this.new_profession_txt.Text = "Möchtest du deine Profession ändern?";
+            this.new_profession_txt.Text = "Möchtest du deine Karriere ändern?";
             this.new_profession_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // close_opt_end_txt
@@ -746,17 +746,6 @@
             this.option_2_btn.Text = "option_1_btn";
             this.option_2_btn.UseVisualStyleBackColor = false;
             this.option_2_btn.Click += new System.EventHandler(this.option_2_click);
-            // 
-            // event_title
-            // 
-            this.event_title.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.event_title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.event_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.event_title.Location = new System.Drawing.Point(59, 35);
-            this.event_title.Name = "event_title";
-            this.event_title.ReadOnly = true;
-            this.event_title.Size = new System.Drawing.Size(185, 20);
-            this.event_title.TabIndex = 4;
             // 
             // show_info_btn
             // 
@@ -1255,9 +1244,9 @@
             // avatar_pic
             // 
             this.avatar_pic.InitialImage = null;
-            this.avatar_pic.Location = new System.Drawing.Point(55, 11);
+            this.avatar_pic.Location = new System.Drawing.Point(64, 11);
             this.avatar_pic.Name = "avatar_pic";
-            this.avatar_pic.Size = new System.Drawing.Size(120, 109);
+            this.avatar_pic.Size = new System.Drawing.Size(98, 106);
             this.avatar_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.avatar_pic.TabIndex = 5;
             this.avatar_pic.TabStop = false;
@@ -1297,6 +1286,18 @@
             this.btnAktion.TabIndex = 0;
             this.btnAktion.Text = "Aktionsfenster";
             this.btnAktion.UseVisualStyleBackColor = false;
+            // 
+            // event_title
+            // 
+            this.event_title.AutoSize = true;
+            this.event_title.BackColor = System.Drawing.Color.Transparent;
+            this.event_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.event_title.ForeColor = System.Drawing.Color.Black;
+            this.event_title.Location = new System.Drawing.Point(56, 47);
+            this.event_title.Name = "event_title";
+            this.event_title.Size = new System.Drawing.Size(52, 17);
+            this.event_title.TabIndex = 13;
+            this.event_title.Text = "label6";
             // 
             // Form2
             // 
@@ -1391,7 +1392,6 @@
         private System.Windows.Forms.Label action_points_txt;
         private System.Windows.Forms.Label left_phase_txt;
         private System.Windows.Forms.Label current_phase_txt;
-        private System.Windows.Forms.TextBox event_title;
         private System.Windows.Forms.Button option_2_btn;
         private System.Windows.Forms.Button option_4_btn;
         private System.Windows.Forms.Button option_3_btn;
@@ -1448,6 +1448,7 @@
         private System.Windows.Forms.ComboBox new_profession_path_combo_box;
         private System.Windows.Forms.Label new_profession_path_lable;
         private System.Windows.Forms.Button next_phase_btn;
+        private System.Windows.Forms.Label event_title;
     }
 }
 
