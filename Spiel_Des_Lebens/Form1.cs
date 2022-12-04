@@ -111,7 +111,7 @@ namespace Spiel_Des_Lebens
         private void load_test(object sender, EventArgs e)
         {
             //für das Bsp werden sie vorher gestzt
-            Form2 t = new Form2("Mia Münstermann", "20", avatarBox1.Image, "Testaschlusss", false, "Training", "Stem", "Pharmazeutisch Technische Assistenz");
+            Form2 t = new Form2("Mia Münstermann", "20", avatarBox1.Image, "Testabschluss", false, "Training", "Stem", "Pharmazeutisch Technische Assistenz");
             t.Show();
             this.Hide();
         }

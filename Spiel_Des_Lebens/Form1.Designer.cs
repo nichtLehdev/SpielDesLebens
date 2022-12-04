@@ -31,9 +31,9 @@
       {
             this.components = new System.ComponentModel.Container();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.fiction_txt_box = new System.Windows.Forms.RichTextBox();
             this.fiction_panel = new System.Windows.Forms.Panel();
             this.accept_fict_btn = new System.Windows.Forms.Button();
-            this.fiction_txt_box = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button_mini_3 = new System.Windows.Forms.Button();
@@ -82,12 +82,23 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // fiction_txt_box
+            // 
+            this.errorProvider1.SetIconAlignment(this.fiction_txt_box, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
+            this.fiction_txt_box.Location = new System.Drawing.Point(65, 95);
+            this.fiction_txt_box.Name = "fiction_txt_box";
+            this.fiction_txt_box.ReadOnly = true;
+            this.fiction_txt_box.Size = new System.Drawing.Size(209, 159);
+            this.fiction_txt_box.TabIndex = 0;
+            this.fiction_txt_box.Text = "\nDies ist ein rein fiktives Spiel. Alle Namen, Charakter, Geschichten und Events " +
+    "sind fiktiv.";
+            // 
             // fiction_panel
             // 
             this.fiction_panel.BackgroundImage = global::Spiel_Des_Lebens.Properties.Resources.rotschwarzimg;
             this.fiction_panel.Controls.Add(this.accept_fict_btn);
             this.fiction_panel.Controls.Add(this.fiction_txt_box);
-            this.fiction_panel.Location = new System.Drawing.Point(966, 100);
+            this.fiction_panel.Location = new System.Drawing.Point(504, 28);
             this.fiction_panel.Name = "fiction_panel";
             this.fiction_panel.Size = new System.Drawing.Size(343, 497);
             this.fiction_panel.TabIndex = 4;
@@ -104,17 +115,6 @@
             this.accept_fict_btn.UseVisualStyleBackColor = true;
             this.accept_fict_btn.Click += new System.EventHandler(this.accept_fict_btn_Click);
             // 
-            // fiction_txt_box
-            // 
-            this.errorProvider1.SetIconAlignment(this.fiction_txt_box, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
-            this.fiction_txt_box.Location = new System.Drawing.Point(65, 95);
-            this.fiction_txt_box.Name = "fiction_txt_box";
-            this.fiction_txt_box.ReadOnly = true;
-            this.fiction_txt_box.Size = new System.Drawing.Size(209, 159);
-            this.fiction_txt_box.TabIndex = 0;
-            this.fiction_txt_box.Text = "\nDies ist ein rein fiktives Spiel. Alle Namen, Charakter, Geschichten und Events " +
-    "sind fiktiv.";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Brown;
@@ -124,7 +124,7 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(155, 221);
+            this.panel1.Location = new System.Drawing.Point(504, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(343, 497);
             this.panel1.TabIndex = 1;
