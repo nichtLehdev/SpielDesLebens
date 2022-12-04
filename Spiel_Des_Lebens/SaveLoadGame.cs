@@ -11,6 +11,35 @@ namespace Spiel_Des_Lebens
 
     internal class SaveLoadGame
     {
+        public static bool hasValidData(int slot)
+        {
+            string filename = "..//..//..//data//savegames//sg" + slot + ".json";
+            switch (slot)
+            {
+                case 1:
+                case 2:
+                case 3:
+                    if (File.Exists(filename))
+                    {
+                        try
+                        {
+                            loadPlayer lPlayer = JsonConvert.DeserializeObject<loadPlayer>(File.ReadAllText(filename));
+                            return lPlayer != null;
+                        }
+                        catch
+                        {
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                default:
+                    return false;
+            }
+        }
+
         public static Player loadGame(int slot)
         {
             string filename = "..//..//..//data//savegames//sg" + slot + ".json";
