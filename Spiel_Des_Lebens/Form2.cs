@@ -565,7 +565,9 @@ namespace Spiel_Des_Lebens
         private void next_phase(object sender, EventArgs e)
         {
             ui_interface.nextPhase();
-            update_aktionpoints();
+            btnLoadEvent_Click();
+            get_new_actions();
+            ui_interface.nextEvent();
         }
     }
 }
