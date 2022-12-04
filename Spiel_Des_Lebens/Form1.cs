@@ -90,6 +90,8 @@ namespace Spiel_Des_Lebens
             Button btn = (Button)sender;
             abschluss = btn.Text;
             education_path.Items.Clear();
+            education_path.Text = null;
+            profession_path.Text = null;
             if (abschluss == "Hauptschulabschluss")
             {
                 education_path.Items.AddRange(new object[] { "Ausbildung" });
@@ -168,9 +170,11 @@ namespace Spiel_Des_Lebens
       }
         private void education_path_TextChanged(object sender, EventArgs e)
         {
+            profession_path.Text = null;
             profession_path.Items.Clear();
             if (education_path.Text == "Ausbildung")
             {
+                
                 training = "Training";
                 profession_path.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
             }
