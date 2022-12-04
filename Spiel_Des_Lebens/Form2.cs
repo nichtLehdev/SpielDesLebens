@@ -241,7 +241,7 @@ namespace Spiel_Des_Lebens
             current_phase_txt.Text = "Derzeitige Phase: " + cur_phase;
             action_points_txt.Text = "Benutzte Aktionspunkte:" + (ui_interface.getMaxActionPoints() - action_points);
             left_phase_txt.Text = "Verbleibene Länge der Phase: " + action_points;
-            progress_prog_bar.Value = 1;
+            progress_prog_bar.Value =  ((100*ui_interface.getMaxActionPoints() * cur_phase + 100 * action_points)/ (ui_interface.getMaxPhaseNumber() * ui_interface.getMaxActionPoints()));
             money_prog_bar.Text = ui_interface.getPlayerMoney().ToString() + "€";
             learn_prog_bar.Value = ui_interface.getPlayerSuccess();
             motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
