@@ -4,16 +4,14 @@ using System.Windows.Forms;
 
 namespace Spiel_Des_Lebens
 {
-    public partial class Form2 : Form
+    internal partial class Form2 : Form
     {
         private int alter;
         private string name;
         private string abschluss;
-        private Image avatar;
         private Form activeForm;
         private UiInterface ui_interface;
         private Boolean new_game = false;
-        private String[] option = new String[4];
         private Data.Profession profession;
         private Data.Path training;
         private string job;
@@ -21,41 +19,14 @@ namespace Spiel_Des_Lebens
         private string refrence_profession;
         private Data.Graduation graduation;
         private int slot;
-        public Form2(string name, string alter, Image avatar, string abschluss, bool new_game, String path, String profession, String job, int slot)
+        public Form2(UiInterface ui_Interface)
         {
             InitializeComponent();
-            avatar_pic.Image = avatar;
-            this.name = name;
-            this.alter = Convert.ToInt16(alter);
-            this.abschluss = abschluss;
-            this.avatar = avatar;
-            this.new_game = new_game;
-            this.job = job;
-            this.refrence_training = path;
-            this.slot = slot;
-            profession_set(profession);
-            path_set(path);
-            if (abschluss == "Realschulabschluss")
-            {
-                this.graduation = Data.Graduation.Realschulabschluss;
-            }
-            else if (abschluss == "Hauptschulabschluss")
-            {
-                this.graduation = Data.Graduation.Hauptschulabschluss;
-            }
-            else if (abschluss == "Fachhochschulreife")
-            {
-                this.graduation = Data.Graduation.Fachhochschulreife;
-            }
-            else if (abschluss == "allg. Hochschulreife")
-            {
-                this.graduation = Data.Graduation.AllgemeineHochschulreife;
-            }
+            this.ui_interface = ui_Interface;
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            ui_interface = new UiInterface(0, alter, name, training, profession, graduation);
             lblPlayerAge.Text = Convert.ToString(this.alter);
             lblPlayerName.Text = this.name;
             lblPlayerPath.Text = this.job;

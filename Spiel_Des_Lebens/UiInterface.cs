@@ -8,9 +8,9 @@ namespace Spiel_Des_Lebens
         private Player player;
         private Event currentEvent;
         private List<Action> currentActions;
-        public UiInterface(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
+        public UiInterface(Player player)
         {
-            player = new Player(avatar, age, name, path, profession, graduation);
+            this.player = player;
             nextAction();
         }
 

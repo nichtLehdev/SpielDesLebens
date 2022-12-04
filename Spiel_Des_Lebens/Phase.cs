@@ -20,6 +20,7 @@
         {
             this.actionPoints = length * 7;
             this.currentPhase = currentPhase;
+            maxActionPoints = actionPoints;
         }
 
         public int getActionPoints()

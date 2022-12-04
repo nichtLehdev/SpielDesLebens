@@ -6,12 +6,13 @@ using System.Windows.Forms;
 
 namespace Spiel_Des_Lebens
 {
-    public partial class Form1 : Form
+    internal partial class Form1 : Form
     {
         private String profession = null;
         private String training = null;
         private int slot;
         private UiInterfaceMenu uiMenu = new UiInterfaceMenu();
+        private UiInterface ui_interface;
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace Spiel_Des_Lebens
 
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
-                Form2 mainForm = new Form2(txt_name.Text, txt_alter.Text, avatar, abschluss, true, training, profession, profession_path.Text, slot);
+                Form2 mainForm = createForm2();
                 mainForm.TopLevel = false;
                 mainForm.FormBorderStyle = FormBorderStyle.None;
                 mainForm.Dock = DockStyle.Fill;
@@ -33,6 +34,14 @@ namespace Spiel_Des_Lebens
             }
 
         }
+
+
+        public Form2 createForm2()
+        {
+            return new Form2(ui_interface);
+        }
+
+
         private void no_border()
         {
             avatarBox1.BorderStyle = BorderStyle.None;
@@ -74,10 +83,11 @@ namespace Spiel_Des_Lebens
             avatar = img.Image;
         }
 
-        private void load_test(object sender, EventArgs e)
+        private void loadSaveGame(Object sender, EventArgs e)
         {
-            //für das Bsp werden sie vorher gestzt
-            Form2 t = new Form2("Mia Münstermann", "20", avatarBox1.Image, "Testabschluss", false, "Training", "Stem", "Pharmazeutisch Technische Assistenz", 1);
+            uiMenu.loadGame(slot);
+            ui_interface = uiMenu.createUiInterface();
+            Form2 t = createForm2();
             t.Show();
             this.Hide();
         }
@@ -108,7 +118,7 @@ namespace Spiel_Des_Lebens
         private void neues_Spiel_open(Object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            if(sender == slot_btn_1)
+            if (sender == slot_btn_1)
             {
                 slot = 1;
             }

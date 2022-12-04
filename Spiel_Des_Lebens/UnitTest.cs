@@ -12,7 +12,7 @@ namespace Spiel_Des_Lebens
         [TestInitialize]
         public void SetUp()
         {
-            this.UiInterface = new UiInterface(0, 20, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem, Data.Graduation.AllgemeineHochschulreife);
+            this.UiInterface = new UiInterface(new Player(0, 21, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem, Data.Graduation.AllgemeineHochschulreife));
 
         }
 
@@ -29,7 +29,7 @@ namespace Spiel_Des_Lebens
             Console.WriteLine(UiInterface.getEventText());
             //Assert.AreNotEqual("", UiInterface.getEventText());
             Assert.IsNotNull(UiInterface.getEventText());
-            
+
         }
 
     }

@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Spiel_Des_Lebens.Forms
 {
     public partial class FormActions : Form
     {
-        private UiInterface ui_interface = new UiInterface(0, 4, "Fritz", 0, 0, 0);
+        // private UiInterface ui_interface = new UiInterface(0, 4, "Fritz", 0, 0, 0);
         public FormActions()
         {
             InitializeComponent();
