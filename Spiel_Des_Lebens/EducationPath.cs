@@ -15,6 +15,14 @@
             phase = new Phase(phaseLength);
         }
 
+        public EducationPath(Data.Path path, Data.Profession profession, int currentPhase)
+        {
+            setPath(path);
+            setProfession(profession);
+            phaseLength = Data.phaseL[(int)path];
+            phase = new Phase(phaseLength, currentPhase);
+        }
+
         private void setPath(Data.Path path)
         {
             this.path = path;

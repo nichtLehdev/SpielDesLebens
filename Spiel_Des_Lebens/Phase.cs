@@ -16,6 +16,12 @@
             return maxActionPoints;
         }
 
+        public Phase(int length, int currentPhase)
+        {
+            this.actionPoints = length * 7;
+            this.currentPhase = currentPhase;
+        }
+
         public int getActionPoints()
         {
             return actionPoints;
