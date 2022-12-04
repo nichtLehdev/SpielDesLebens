@@ -132,7 +132,14 @@ namespace Spiel_Des_Lebens
         {
             action_panel.Visible = true;
             all_options_disable();
-            update_aktionpoints();
+            if ("Derzeitige Phase: " + ui_interface.getCurrentPhase() != current_phase_txt.Text)
+            {
+                btnLoadEvent_Click();
+            }
+            else
+            {
+                update_aktionpoints();
+            }
         }
 
         private void btnLoadEvent_Click()
