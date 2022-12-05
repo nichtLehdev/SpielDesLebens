@@ -29,7 +29,7 @@ namespace Spiel_Des_Lebens
             lblPlayerAge.Text = Convert.ToString(ui_interface.getPlayerAge());
             lblPlayerName.Text = ui_interface.getPlayerName();
             lblPlayerPath.Text = ui_interface.getPlayerCareer();
-            setAvatar();
+            avatar_pic.Image = setAvatar();
             btnLoadEvent_Click();
             update_aktionpoints();
             if (new_game == true)
@@ -39,16 +39,16 @@ namespace Spiel_Des_Lebens
             }
             get_new_actions();
         }
-        private void setAvatar()
+        private Image setAvatar()
         {
             switch (ui_interface.getAvatar())
             {
-                case 0: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_boy_0; break;
-                case 1: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_boy_1; break;
-                case 2: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_boy_2; break;
-                case 3: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_girl_0; break;
-                case 4: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_girl_1; break;
-                case 5: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_girl_2; break;
+                case 0: return Spiel_Des_Lebens.Properties.Resources.avatare_boy_0;
+                case 1: return Spiel_Des_Lebens.Properties.Resources.avatare_boy_1;
+                case 2: return Spiel_Des_Lebens.Properties.Resources.avatare_boy_2;
+                case 3: return Spiel_Des_Lebens.Properties.Resources.avatare_girl_0;
+                case 4: return Spiel_Des_Lebens.Properties.Resources.avatare_girl_1;
+                case 5: return Spiel_Des_Lebens.Properties.Resources.avatare_girl_2;
                 default: throw new Error("There has to be an avatar");
             }
         }
@@ -286,25 +286,14 @@ namespace Spiel_Des_Lebens
         }
         private Image get_right_icon(int r)
         {
-            if (r == 0)
+            switch (r)
             {
-                //mental health
-                return Spiel_Des_Lebens.Properties.Resources.mentalhealth_48px;
-            }
-            else if (r == 1)
-            {
-                return Spiel_Des_Lebens.Properties.Resources.motivation_48px;
-                //moneyyyyy
-            }
-            else if (r == 2)
-            {
-                return Spiel_Des_Lebens.Properties.Resources.money_48px;
-                //motivation
-            }
-            else
-            {
-                return Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
-                //lernstand
+                case -1: return Spiel_Des_Lebens.Properties.Resources.criminal_48px;
+                case 0: return Spiel_Des_Lebens.Properties.Resources.mentalhealth_48px;
+                case 1: return Spiel_Des_Lebens.Properties.Resources.money_48px;
+                case 2: return Spiel_Des_Lebens.Properties.Resources.motivation_48px;
+                case 3: return Spiel_Des_Lebens.Properties.Resources.Homework_Icon_small3;
+                default: throw new Error("There has to be an icon for actions");
             }
         }
         private void close_opt_txt(object sender, EventArgs e)

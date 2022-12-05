@@ -97,20 +97,35 @@ namespace Spiel_Des_Lebens
         private void changePath(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
+            btnAbi.FlatStyle = FlatStyle.System;
+            btnHauptschule.FlatStyle = FlatStyle.System;
+            btnRealschule.FlatStyle = FlatStyle.System;
+            btnFachabi.FlatStyle = FlatStyle.System;
             abschluss = btn.Text;
             dropDown_profession.Items.Clear();
             dropDown_profession.Text = null;
             dropDown_path.Text = null;
             if (abschluss == "Hauptschulabschluss")
             {
+                btnHauptschule.FlatStyle = FlatStyle.Popup;
                 dropDown_profession.Items.AddRange(new object[] { "Ausbildung" });
             }
             else if (abschluss == "Realschulabschluss")
             {
+                btnRealschule.FlatStyle = FlatStyle.Popup;
+                btnHauptschule.BackColor = Color.Gray;
                 dropDown_profession.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
             }
             else
             {
+                if(abschluss == "Fachhochschulreife")
+                {
+                    btnFachabi.FlatStyle = FlatStyle.Popup;
+                }
+                else
+                {
+                    btnAbi.FlatStyle = FlatStyle.Popup;
+                }
                 dropDown_profession.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium" });
             }
         }

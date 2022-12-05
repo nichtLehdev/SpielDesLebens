@@ -107,6 +107,8 @@
             this.motivation_prog_bar = new System.Windows.Forms.ProgressBar();
             this.learn_prog_bar = new System.Windows.Forms.ProgressBar();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.back_to_menu_btn = new System.Windows.Forms.Button();
+            this.save_btn = new System.Windows.Forms.Button();
             this.action_3_btn = new System.Windows.Forms.Button();
             this.action_2_btn = new System.Windows.Forms.Button();
             this.action_1_btn = new System.Windows.Forms.Button();
@@ -120,8 +122,6 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblPlayerAge = new System.Windows.Forms.Label();
             this.btnAktion = new System.Windows.Forms.Button();
-            this.save_btn = new System.Windows.Forms.Button();
-            this.back_to_menu_btn = new System.Windows.Forms.Button();
             this.panelActiveChild.SuspendLayout();
             this.info_action_panel_0.SuspendLayout();
             this.info_action_panel_2.SuspendLayout();
@@ -1120,6 +1120,28 @@
             this.panel2.Size = new System.Drawing.Size(240, 642);
             this.panel2.TabIndex = 6;
             // 
+            // back_to_menu_btn
+            // 
+            this.back_to_menu_btn.BackColor = System.Drawing.Color.Transparent;
+            this.back_to_menu_btn.Location = new System.Drawing.Point(30, 585);
+            this.back_to_menu_btn.Name = "back_to_menu_btn";
+            this.back_to_menu_btn.Size = new System.Drawing.Size(185, 23);
+            this.back_to_menu_btn.TabIndex = 17;
+            this.back_to_menu_btn.Text = "Zurück zum Hauptmenu";
+            this.back_to_menu_btn.UseVisualStyleBackColor = false;
+            this.back_to_menu_btn.Click += new System.EventHandler(this.back_to_menu_btn_Click);
+            // 
+            // save_btn
+            // 
+            this.save_btn.BackColor = System.Drawing.Color.Transparent;
+            this.save_btn.Location = new System.Drawing.Point(30, 542);
+            this.save_btn.Name = "save_btn";
+            this.save_btn.Size = new System.Drawing.Size(185, 23);
+            this.save_btn.TabIndex = 16;
+            this.save_btn.Text = "Speichern";
+            this.save_btn.UseVisualStyleBackColor = false;
+            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
+            // 
             // action_3_btn
             // 
             this.action_3_btn.BackColor = System.Drawing.Color.Transparent;
@@ -1147,7 +1169,7 @@
             this.action_2_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.action_2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.action_2_btn.ForeColor = System.Drawing.Color.Black;
-            this.action_2_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.mentalhealth_48px;
+            this.action_2_btn.Image = global::Spiel_Des_Lebens.Properties.Resources.criminal_48px;
             this.action_2_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.action_2_btn.Location = new System.Drawing.Point(0, 398);
             this.action_2_btn.Name = "action_2_btn";
@@ -1302,28 +1324,6 @@
             this.btnAktion.TabIndex = 0;
             this.btnAktion.Text = "Aktionsfenster";
             this.btnAktion.UseVisualStyleBackColor = false;
-            // 
-            // save_btn
-            // 
-            this.save_btn.BackColor = System.Drawing.Color.Transparent;
-            this.save_btn.Location = new System.Drawing.Point(30, 542);
-            this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(185, 23);
-            this.save_btn.TabIndex = 16;
-            this.save_btn.Text = "Speichern";
-            this.save_btn.UseVisualStyleBackColor = false;
-            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
-            // 
-            // back_to_menu_btn
-            // 
-            this.back_to_menu_btn.BackColor = System.Drawing.Color.Transparent;
-            this.back_to_menu_btn.Location = new System.Drawing.Point(30, 585);
-            this.back_to_menu_btn.Name = "back_to_menu_btn";
-            this.back_to_menu_btn.Size = new System.Drawing.Size(185, 23);
-            this.back_to_menu_btn.TabIndex = 17;
-            this.back_to_menu_btn.Text = "Zurück zum Hauptmenu";
-            this.back_to_menu_btn.UseVisualStyleBackColor = false;
-            this.back_to_menu_btn.Click += new System.EventHandler(this.back_to_menu_btn_Click);
             // 
             // Form2
             // 

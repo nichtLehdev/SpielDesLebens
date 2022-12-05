@@ -124,6 +124,9 @@
   <data name="Homework_Icon_small3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Homework_Icon_small3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="avatare_girl_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avatare_girl_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="avatare_girl_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avatare_girl_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -132,6 +135,9 @@
   </data>
   <data name="money_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avatare_boy_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avatare_boy_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rotschwarzimg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rotschwarzimg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -144,9 +150,6 @@
   </data>
   <data name="uni-table" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\uni-table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mentalhealth_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mentalhealth_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="avatare_boy_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avatare_boy_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,10 +175,10 @@
   <data name="farbverlauf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\farbverlauf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="avatare_boy_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avatare_boy_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mentalhealth_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mentalhealth_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="avatare_girl_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avatare_girl_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="criminal_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\criminal_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
