@@ -1,6 +1,6 @@
 ﻿namespace Spiel_Des_Lebens
 {
-    internal class loadStat
+    internal class LoadStat
     {
         public int mentalHealth { get; set; }
         public int money { get; set; }

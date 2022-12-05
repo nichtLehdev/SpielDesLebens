@@ -2,24 +2,24 @@
 {
     internal class Action
     {
-        private string id;
-        private string title;
-        private string info;
-        private Option result;
+        private readonly string Id;
+        private readonly string Title;
+        private readonly string Info;
+        private readonly Option Result;
 
         #region getters
-        public string getId() { return id; }
-        public string getTitle() { return title; }
-        public string getInfo() { return info; }
-        public Option getResult() { return result; }
+        public string GetId() { return Id; }
+        public string GetTitle() { return Title; }
+        public string GetInfo() { return Info; }
+        public Option GetResult() { return Result; }
         #endregion
 
         public Action(string id, string title, string info, Option result)
         {
-            this.id = id;
-            this.title = title;
-            this.info = info;
-            this.result = result;
+            this.Id = id;
+            this.Title = title;
+            this.Info = info;
+            this.Result = result;
         }
     }
 }

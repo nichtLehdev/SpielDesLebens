@@ -6,42 +6,42 @@ namespace Spiel_Des_Lebens
 {
     internal partial class Form2 : Form
     {
-        private int alter;
-        private string name;
-        private string abschluss;
         private Form activeForm;
-        private UiInterface ui_interface;
-        private Boolean new_game = false;
-        private Data.Profession profession;
+        private readonly UiInterface uiInterface;
+        private readonly Boolean new_game = false;
+
         private Data.Path training;
+        private Data.Profession profession;
+
+        private readonly string abschluss;
         private string refrence_training;
         private string refrence_profession;
-        private Data.Graduation graduation;
-        private int slot;
-        public Form2(UiInterface ui_Interface)
+        private readonly int slot;
+
+        public Form2(UiInterface uiInterface)
         {
             InitializeComponent();
-            this.ui_interface = ui_Interface;
+            this.uiInterface = uiInterface;
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            lblPlayerAge.Text = Convert.ToString(ui_interface.getPlayerAge());
-            lblPlayerName.Text = ui_interface.getPlayerName();
-            lblPlayerPath.Text = ui_interface.getPlayerCareer();
-            avatar_pic.Image = setAvatar();
-            btnLoadEvent_Click();
-            update_aktionpoints();
+            lblPlayerAge.Text = Convert.ToString(uiInterface.GetPlayerAge());
+            lblPlayerName.Text = uiInterface.GetPlayerName();
+            lblPlayerPath.Text = uiInterface.RetPlayerCareer();
+            avatar_pic.Image = SetAvatar();
+            BtnLoadEventClick();
+            UpdateActionpoints();
             if (new_game == true)
             {
-                all_options_disable();
+                AllOptionsDisable();
                 tutorial_ask_panel.Visible = true;
             }
-            get_new_actions();
+            GetNewActions();
         }
-        private Image setAvatar()
+        private Image SetAvatar()
         {
-            switch (ui_interface.getAvatar())
+            switch (uiInterface.GetAvatar())
             {
                 case 0: return Spiel_Des_Lebens.Properties.Resources.avatare_boy_0;
                 case 1: return Spiel_Des_Lebens.Properties.Resources.avatare_boy_1;
@@ -54,10 +54,12 @@ namespace Spiel_Des_Lebens
         }
         public void OpenChildForm(Form childForm, object btnSender)
         {
-            if (activeForm != null)
+            if (btnSender is null)
             {
-                activeForm.Close();
+                throw new ArgumentNullException(nameof(btnSender));
             }
+
+            activeForm?.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -69,87 +71,87 @@ namespace Spiel_Des_Lebens
 
         }
 
-        private void show_info(object sender, EventArgs e)
+        private void ShowInfo(object sender, EventArgs e)
         {
             info_panel.Visible = true;
             info_close_button.Visible = true;
             info_text.Visible = true;
-            all_options_disable();
+            AllOptionsDisable();
         }
 
-        private void info_close(object sender, EventArgs e)
+        private void InfoClose(object sender, EventArgs e)
         {
             info_panel.Visible = false;
             info_close_button.Visible = false;
             info_text.Visible = false;
-            all_options_enable();
+            AllOptionsEnable();
         }
 
-        private void action_0_click(object sender, EventArgs e)
+        private void Action0Click(object sender, EventArgs e)
         {
-            action_text.Text = ui_interface.getActionOptionText(0);
-            action_title.Text = ui_interface.getActionTitle(0);
-            action_text_show();
+            action_text.Text = uiInterface.GetActionOptionText(0);
+            action_title.Text = uiInterface.GetActionTitle(0);
+            ActionTextShow();
         }
 
-        private void action_1_click(object sender, EventArgs e)
+        private void Action1Click(object sender, EventArgs e)
         {
-            action_text.Text = ui_interface.getActionOptionText(1);
-            action_title.Text = ui_interface.getActionTitle(1);
-            action_text_show();
+            action_text.Text = uiInterface.GetActionOptionText(1);
+            action_title.Text = uiInterface.GetActionTitle(1);
+            ActionTextShow();
         }
 
-        private void action_2_click(object sender, EventArgs e)
+        private void Action2Click(object sender, EventArgs e)
         {
-            action_text.Text = ui_interface.getActionOptionText(2);
-            action_title.Text = ui_interface.getActionTitle(2);
-            action_text_show();
+            action_text.Text = uiInterface.GetActionOptionText(2);
+            action_title.Text = uiInterface.GetActionTitle(2);
+            ActionTextShow();
         }
 
-        private void action_3_click(object sender, EventArgs e)
+        private void Action3Click(object sender, EventArgs e)
         {
-            action_text.Text = ui_interface.getActionOptionText(3);
-            action_title.Text = ui_interface.getActionTitle(3);
-            action_text_show();
+            action_text.Text = uiInterface.GetActionOptionText(3);
+            action_title.Text = uiInterface.GetActionTitle(3);
+            ActionTextShow();
         }
-        private void action_text_show()
+        private void ActionTextShow()
         {
             action_panel.Visible = true;
-            all_options_disable();
-            if ("Derzeitige Phase: " + ui_interface.getCurrentPhase() != current_phase_txt.Text)
+            AllOptionsDisable();
+            if ("Derzeitige Phase: " + uiInterface.GetCurrentPhase() != current_phase_txt.Text)
             {
-                btnLoadEvent_Click();
+                BtnLoadEventClick();
             }
             else
             {
-                update_aktionpoints();
+                UpdateActionpoints();
             }
         }
 
-        private void btnLoadEvent_Click()
+        private void BtnLoadEventClick()
         {
-            update_aktionpoints();
-            ui_interface.nextEvent();
-            event_title.Text = ui_interface.getEventTitle();
-            event_txt_box.Text = ui_interface.getEventText();
-            if (ui_interface.getEventInfo() != "")
+            UpdateActionpoints();
+            uiInterface.NextEvent();
+            event_title.Text = uiInterface.GetEventTitle();
+            event_txt_box.Text = uiInterface.GetEventText();
+            if (uiInterface.GetEventInfo() != "")
             {
                 show_info_btn.Visible = true;
-                info_text.Text = ui_interface.getEventInfo();
+                info_text.Text = uiInterface.GetEventInfo();
             }
             option_1_btn.Visible = true;
             option_2_btn.Visible = true;
-            option_1_btn.Text = ui_interface.getEventOptionTitle(0);
-            option_2_btn.Text = ui_interface.getEventOptionTitle(1);
-            if (ui_interface.getEventOptionTitle(2) != "")
+            option_1_btn.Text = uiInterface.GetEventOptionTitle(0);
+            option_2_btn.Text = uiInterface.GetEventOptionTitle(1);
+            if (uiInterface.GetEventOptionTitle(2) != "")
             {
                 option_3_btn.Visible = true;
-                option_3_btn.Text = ui_interface.getEventOptionTitle(2);
+                option_3_btn.Text = uiInterface.GetEventOptionTitle(2);
                 option_4_btn.Visible = false;
-                if (ui_interface.getEventOptionTitle(3) != "")
+                if (uiInterface.GetEventOptionTitle(3) != "")
                 {
                     option_4_btn.Visible = true;
-                    option_4_btn.Text = ui_interface.getEventOptionTitle(3);
+                    option_4_btn.Text = uiInterface.GetEventOptionTitle(3);
                 }
                 else
                 {
@@ -162,7 +164,7 @@ namespace Spiel_Des_Lebens
                 option_4_btn.Visible = false;
             }
         }
-        private void all_options_disable()
+        private void AllOptionsDisable()
         {
             option_1_btn.Enabled = false;
             option_2_btn.Enabled = false;
@@ -174,7 +176,7 @@ namespace Spiel_Des_Lebens
             action_2_btn.Enabled = false;
             action_3_btn.Enabled = false;
         }
-        private void all_options_enable()
+        private void AllOptionsEnable()
         {
             option_1_btn.Enabled = true;
             option_2_btn.Enabled = true;
@@ -187,46 +189,46 @@ namespace Spiel_Des_Lebens
             action_3_btn.Enabled = true;
 
         }
-        private void all_options_hide()
+        private void AllOptionsHide()
         {
             option_1_btn.Visible = false;
             option_2_btn.Visible = false;
             option_3_btn.Visible = false;
             option_4_btn.Visible = false;
         }
-        private void option_1_click(object sender, EventArgs e)
+        private void Option1Click(object sender, EventArgs e)
         {
-            event_txt_box.Text = ui_interface.getEventOptionText(0);
+            event_txt_box.Text = uiInterface.GetEventOptionText(0);
             show_info_btn.Visible = false;
             close_opt_end_txt.Visible = true;
-            all_options_hide();
+            AllOptionsHide();
         }
-        private void option_2_click(object sender, EventArgs e)
+        private void Option2Click(object sender, EventArgs e)
         {
-            event_txt_box.Text = ui_interface.getEventOptionText(1);
+            event_txt_box.Text = uiInterface.GetEventOptionText(1);
             show_info_btn.Visible = false;
             close_opt_end_txt.Visible = true;
-            all_options_hide();
+            AllOptionsHide();
         }
-        private void option_3_click(object sender, EventArgs e)
+        private void Option3Click(object sender, EventArgs e)
         {
-            event_txt_box.Text = ui_interface.getEventOptionText(2);
+            event_txt_box.Text = uiInterface.GetEventOptionText(2);
             show_info_btn.Visible = false;
             close_opt_end_txt.Visible = true;
-            all_options_hide();
-        }
-
-        private void option_4_click(object sender, EventArgs e)
-        {
-            event_txt_box.Text = ui_interface.getEventOptionText(3);
-            show_info_btn.Visible = false;
-            close_opt_end_txt.Visible = true;
-            all_options_hide();
+            AllOptionsHide();
         }
 
-        private void update_aktionpoints()
+        private void Option4Click(object sender, EventArgs e)
         {
-            if (ui_interface.isInSchool() == true)
+            event_txt_box.Text = uiInterface.GetEventOptionText(3);
+            show_info_btn.Visible = false;
+            close_opt_end_txt.Visible = true;
+            AllOptionsHide();
+        }
+
+        private void UpdateActionpoints()
+        {
+            if (uiInterface.IsInSchool() == true)
             {
                 panelActiveChild.BackgroundImage = Spiel_Des_Lebens.Properties.Resources.uni_table;
             }
@@ -234,18 +236,18 @@ namespace Spiel_Des_Lebens
             {
                 panelActiveChild.BackgroundImage = Spiel_Des_Lebens.Properties.Resources.coworking;
             }
-            int action_points = ui_interface.getActionPoints();
-            int cur_phase = ui_interface.getCurrentPhase();
-            int overall_phase = ui_interface.getMaxPhaseLength();
-            lblPlayerAge.Text = Convert.ToString(ui_interface.getPlayerAge());
+            int action_points = uiInterface.GetActionPoints();
+            int cur_phase = uiInterface.GetCurrentPhase();
+            _ = uiInterface.GetMaxPhaseLength();
+            lblPlayerAge.Text = Convert.ToString(uiInterface.GetPlayerAge());
             current_phase_txt.Text = "Derzeitige Phase: " + cur_phase;
-            action_points_txt.Text = "Benutzte Aktionspunkte:" + (ui_interface.getMaxActionPoints() - action_points);
+            action_points_txt.Text = "Benutzte Aktionspunkte:" + (uiInterface.GetMaxActionPoints() - action_points);
             left_phase_txt.Text = "Verbleibene Länge der Phase: " + action_points;
-            progress_prog_bar.Value = ((100 * ui_interface.getMaxActionPoints() * cur_phase + 100 * action_points) / (ui_interface.getMaxPhaseNumber() * ui_interface.getMaxActionPoints()));
-            money_prog_bar.Text = ui_interface.getPlayerMoney().ToString() + "€";
-            learn_prog_bar.Value = ui_interface.getPlayerSuccess();
-            motivation_prog_bar.Value = ui_interface.getPlayerMotivation();
-            mental_prog_bar.Value = ui_interface.getPlayerMentalHealth();
+            progress_prog_bar.Value = ((100 * uiInterface.GetMaxActionPoints() * cur_phase + 100 * action_points) / (uiInterface.GetMaxPhaseNumber() * uiInterface.GetMaxActionPoints()));
+            money_prog_bar.Text = uiInterface.GetPlayerMoney().ToString() + "€";
+            learn_prog_bar.Value = uiInterface.GetPlayerSuccess();
+            motivation_prog_bar.Value = uiInterface.GetPlayerMotivation();
+            mental_prog_bar.Value = uiInterface.GetPlayerMentalHealth();
             if (action_points == 1)
             {
                 option_1_btn.Enabled = false;
@@ -262,29 +264,29 @@ namespace Spiel_Des_Lebens
                 option_4_btn.Enabled = true;
                 show_info_btn.Enabled = true;
             }
-            string warning_check = ui_interface.getStatWarning();
+            string warning_check = uiInterface.GetStatWarning();
             if (warning_check != "")
             {
                 tutorial_panel_2.Visible = true;
                 tutorial_txt_2.Text = warning_check;
                 tutorial_btn_2.Text = "Schließen";
             }
-            game_over_check();
+            GameOverCheck();
         }
-        private void get_new_actions()
+        private void GetNewActions()
         {
-            action_0_btn.Text = ui_interface.getActionTitle(0);
-            action_1_btn.Text = ui_interface.getActionTitle(1);
-            action_2_btn.Text = ui_interface.getActionTitle(2);
-            action_3_btn.Text = ui_interface.getActionTitle(3);
+            action_0_btn.Text = uiInterface.GetActionTitle(0);
+            action_1_btn.Text = uiInterface.GetActionTitle(1);
+            action_2_btn.Text = uiInterface.GetActionTitle(2);
+            action_3_btn.Text = uiInterface.GetActionTitle(3);
 
-            action_0_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(0));
-            action_1_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(1));
-            action_2_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(2));
-            action_3_btn.Image = get_right_icon(ui_interface.getActionOptionMainStat(3));
+            action_0_btn.Image = GetActionIcon(uiInterface.GetActionOptionMainStat(0));
+            action_1_btn.Image = GetActionIcon(uiInterface.GetActionOptionMainStat(1));
+            action_2_btn.Image = GetActionIcon(uiInterface.GetActionOptionMainStat(2));
+            action_3_btn.Image = GetActionIcon(uiInterface.GetActionOptionMainStat(3));
 
         }
-        private Image get_right_icon(int r)
+        private Image GetActionIcon(int r)
         {
             switch (r)
             {
@@ -296,44 +298,44 @@ namespace Spiel_Des_Lebens
                 default: throw new Error("There has to be an icon for actions");
             }
         }
-        private void close_opt_txt(object sender, EventArgs e)
+        private void CloseOptTxt(object sender, EventArgs e)
         {
             close_opt_end_txt.Visible = false;
-            btnLoadEvent_Click();
+            BtnLoadEventClick();
         }
-        private void game_over_check()
+        private void GameOverCheck()
         {
-            if (ui_interface.getGameEnd() != "")
+            if (uiInterface.GetGameEnd() != "")
             {
                 game_over_panel.Visible = true;
-                all_options_disable();
-                game_over_txt.Text = ui_interface.getGameEnd();
+                AllOptionsDisable();
+                game_over_txt.Text = uiInterface.GetGameEnd();
             }
         }
 
-        private void game_over_btn_Click(object sender, EventArgs e)
+        private void GameOverBtnClick(object sender, EventArgs e)
         {
-            to_menu();
+            ToMenu();
         }
-        private void to_menu()
+        private void ToMenu()
         {
             Form1 t = new Form1();
             t.Show();
             Hide();
         }
-        private void end_tutorial(object sender, EventArgs e)
+        private void EndTutorial(object sender, EventArgs e)
         {
             tutorial_ask_panel.Visible = false;
-            all_options_enable();
+            AllOptionsEnable();
         }
 
-        private void start_tutorial(object sender, EventArgs e)
+        private void StartTutorial(object sender, EventArgs e)
         {
             tutorial_ask_panel.Visible = false;
             tutorial_panel_1.Visible = true;
         }
 
-        private void continue_tutorial_1(object sender, EventArgs e)
+        private void ContinueTutorial1(object sender, EventArgs e)
         {
             if (tutorial_txt_1.Text == "Links wird dein Charakter angezeigt")
             {
@@ -345,7 +347,7 @@ namespace Spiel_Des_Lebens
                 tutorial_panel_1.Visible = false;
             }
         }
-        private void continue_tutorial_2(object sender, EventArgs e)
+        private void ContinueTutorial2(object sender, EventArgs e)
         {
             if (tutorial_btn_2.Text == "Weiter")
             {
@@ -353,12 +355,12 @@ namespace Spiel_Des_Lebens
             }
             tutorial_panel_2.Visible = false;
         }
-        private void continue_tutorial_3(object sender, EventArgs e)
+        private void ContinueTutorial3(object sender, EventArgs e)
         {
             tutorial_panel_4.Visible = true;
             tutorial_panel_3.Visible = false;
         }
-        private void continue_tutorial_4(object sender, EventArgs e)
+        private void ContinueTutorial4(object sender, EventArgs e)
         {
             tutorial_panel_5.Visible = true;
             tutorial_panel_4.Visible = false;
@@ -368,7 +370,7 @@ namespace Spiel_Des_Lebens
                 show_info_btn.Visible = false;
             }
         }
-        private void continue_tutorial_5(object sender, EventArgs e)
+        private void ContinueTutorial5(object sender, EventArgs e)
         {
             if (show_info_btn.Visible == false)
             {
@@ -377,7 +379,7 @@ namespace Spiel_Des_Lebens
             tutorial_panel_6.Visible = true;
             tutorial_panel_5.Visible = false;
         }
-        private void continue_tutorial_6(object sender, EventArgs e)
+        private void ContinueTutorial6(object sender, EventArgs e)
         {
             if (tutorial_txt_6.Text == "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase gibt eine Semesterlänge an.")
             {
@@ -386,15 +388,15 @@ namespace Spiel_Des_Lebens
             else
             {
                 tutorial_panel_6.Visible = false;
-                all_options_enable();
+                AllOptionsEnable();
             }
         }
 
-        private void action_close(object sender, EventArgs e)
+        private void ActionClose(object sender, EventArgs e)
         {
             action_panel.Visible = false;
-            all_options_enable();
-            if (ui_interface.getActionPoints() == 1)
+            AllOptionsEnable();
+            if (uiInterface.GetActionPoints() == 1)
             {
                 option_1_btn.Enabled = false;
                 option_2_btn.Enabled = false;
@@ -404,28 +406,28 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private void hover_action_txt_show_0(object sender, EventArgs e)
+        private void HoverActionTxtShow0(object sender, EventArgs e)
         {
             info_action_panel_0.Visible = true;
-            info_action_txt_0.Text = ui_interface.getActionInfo(0);
+            info_action_txt_0.Text = uiInterface.GetActionInfo(0);
         }
-        private void hover_action_txt_show_1(object sender, EventArgs e)
+        private void HoverActionTxtShow1(object sender, EventArgs e)
         {
             info_action_panel_1.Visible = true;
-            info_action_txt_1.Text = ui_interface.getActionInfo(1);
+            info_action_txt_1.Text = uiInterface.GetActionInfo(1);
         }
-        private void hover_action_txt_show_2(object sender, EventArgs e)
+        private void HoverActionTxtShow2(object sender, EventArgs e)
         {
             info_action_panel_2.Visible = true;
-            info_action_txt_2.Text = ui_interface.getActionInfo(2);
+            info_action_txt_2.Text = uiInterface.GetActionInfo(2);
         }
-        private void hover_action_txt_show_3(object sender, EventArgs e)
+        private void HoverActionTxtShow3(object sender, EventArgs e)
         {
             info_action_panel_3.Visible = true;
-            info_action_txt_3.Text = ui_interface.getActionInfo(3);
+            info_action_txt_3.Text = uiInterface.GetActionInfo(3);
         }
 
-        private void close_hover_action(object sender, EventArgs e)
+        private void CloseHoverAction(object sender, EventArgs e)
         {
             info_action_panel_0.Visible = false;
             info_action_panel_1.Visible = false;
@@ -433,28 +435,28 @@ namespace Spiel_Des_Lebens
             info_action_panel_3.Visible = false;
         }
 
-        private void new_profession_no_btn_Click(object sender, EventArgs e)
+        private void NewProfessionNoBtnClick(object sender, EventArgs e)
         {
             if (new_profession_no_btn.Text == "Weiter")
             {
                 lblPlayerPath.Text = new_profession_profession_combo_box.Text;
-                path_set(refrence_training);
-                profession_set(refrence_profession);
-                ui_interface.resetPath(training, profession);
+                PathSet(refrence_training);
+                ProfessionSet(refrence_profession);
+                uiInterface.ResetPath(training, profession);
             }
             new_profession_panel.Visible = false;
-            all_options_enable();
+            AllOptionsEnable();
         }
 
-        private void new_profession_opt_open(object sender, EventArgs e)
+        private void NewProfessionOptOpen(object sender, EventArgs e)
         {
-            all_options_disable();
+            AllOptionsDisable();
             new_profession_panel.Visible = true;
             new_profession_no_btn.Text = "Nein";
             new_profession_yes_btn.Visible = true;
         }
 
-        private void new_profession_yes_opt(object sender, EventArgs e)
+        private void NewProfessionYesOpt(object sender, EventArgs e)
         {
             new_profession_profession_combo_box.Visible = true;
             new_profession_yes_btn.Visible = false;
@@ -479,7 +481,7 @@ namespace Spiel_Des_Lebens
             new_profession_profession_combo_box.Enabled = false;
         }
 
-        private void new_profession_txt_change(object sender, EventArgs e)
+        private void NewProfessionTxtChange(object sender, EventArgs e)
         {
             new_profession_no_btn.Enabled = true;
             if (new_profession_profession_combo_box.Text == "Krankenpflege" || new_profession_profession_combo_box.Text == "Angewandte Gesundheits- und Pflegewissenschaften" || new_profession_profession_combo_box.Text == "Medizinstudium")
@@ -504,7 +506,7 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private void new_profession_path_comboBox_TextChanged(object sender, EventArgs e)
+        private void NewProfessionPathComboBoxTextChanged(object sender, EventArgs e)
         {
             new_profession_profession_combo_box.Items.Clear();
             new_profession_profession_combo_box.Text = null;
@@ -525,7 +527,7 @@ namespace Spiel_Des_Lebens
             }
             new_profession_profession_combo_box.Enabled = true;
         }
-        private void profession_set(string given_profession)
+        private void ProfessionSet(string given_profession)
         {
             if (given_profession == "Social")
             {
@@ -548,7 +550,7 @@ namespace Spiel_Des_Lebens
                 profession = Data.Profession.Civil;
             }
         }
-        private void path_set(string given_path)
+        private void PathSet(string given_path)
         {
             if (given_path == "Training")
             {
@@ -564,21 +566,21 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private void next_phase(object sender, EventArgs e)
+        private void NextPhase(object sender, EventArgs e)
         {
-            ui_interface.nextPhase();
-            btnLoadEvent_Click();
-            get_new_actions();
+            uiInterface.NextPhase();
+            BtnLoadEventClick();
+            GetNewActions();
         }
 
-        private void save_btn_Click(object sender, EventArgs e)
+        private void SaveBtnClick(object sender, EventArgs e)
         {
-            ui_interface.saveGame(slot);
+            uiInterface.SaveGame(slot);
         }
 
-        private void back_to_menu_btn_Click(object sender, EventArgs e)
+        private void BackToMenuBtnClick(object sender, EventArgs e)
         {
-            to_menu();
+            ToMenu();
         }
     }
 }

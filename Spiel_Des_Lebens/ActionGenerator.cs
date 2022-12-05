@@ -7,23 +7,23 @@ namespace Spiel_Des_Lebens
 {
     internal class ActionGenerator
     {
-        private List<Action> actions;
+        private readonly List<Action> actions;
         private List<Action> oldActions = new List<Action>();
         private int seed;
 
         public ActionGenerator()
         {
-            actions = loadActions();
+            actions = LoadActions();
         }
 
-        private List<Action> loadActions()
+        private List<Action> LoadActions()
         {
             // saves all events from JSON to events in list saves all loadEvents as events
             string filename = "..//..//..//data//actions.json";
             if (File.Exists(filename))
             {
-                List<loadAction> loadActions = JsonConvert.DeserializeObject<List<loadAction>>(File.ReadAllText(filename));
-                return ActionListConverter.convertLoadActionsToActions(loadActions);
+                List<LoadAction> loadActions = JsonConvert.DeserializeObject<List<LoadAction>>(File.ReadAllText(filename));
+                return ActionListConverter.ConvertLoadActionsToActions(loadActions);
             }
             else
             {
@@ -32,12 +32,12 @@ namespace Spiel_Des_Lebens
 
         }
 
-        public List<Action> getActions()
+        public List<Action> GetActions()
         {
             List<Action> nextActions = new List<Action>();
             while (nextActions.Count < 4)
             {
-                Action action = randomAction();
+                Action action = RandomAction();
                 if (!nextActions.Contains(action) && !oldActions.Contains(action))
                 {
                     nextActions.Add(action);
@@ -47,7 +47,7 @@ namespace Spiel_Des_Lebens
             return nextActions;
         }
 
-        private Action randomAction()
+        private Action RandomAction()
         {
             seed = DateTime.Now.Millisecond;
             Random random = new Random(seed);

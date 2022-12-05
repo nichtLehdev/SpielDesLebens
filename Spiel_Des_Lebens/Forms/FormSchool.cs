@@ -2,7 +2,7 @@
 
 namespace Spiel_Des_Lebens.Forms
 {
-    public partial class FormSchool : Form
+    internal partial class FormSchool : Form
     {
         public FormSchool()
         {

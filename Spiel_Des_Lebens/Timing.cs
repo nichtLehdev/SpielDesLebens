@@ -4,15 +4,15 @@ namespace Spiel_Des_Lebens
 {
     internal class Timing
     {
-        public List<int> path { get; set; }
-        public List<int> profession { get; set; }
-        public List<int> phase { get; set; }
+        public List<int> Path { get; set; }
+        public List<int> Profession { get; set; }
+        public List<int> Phase { get; set; }
 
         public Timing(List<int> path, List<int> profession, List<int> phase)
         {
-            this.path = path;
-            this.profession = profession;
-            this.phase = phase;
+            this.Path = path;
+            this.Profession = profession;
+            this.Phase = phase;
         }
     }
 }

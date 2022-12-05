@@ -144,7 +144,7 @@
             this.button_mini_2.Text = "Löschen";
             this.button_mini_2.UseVisualStyleBackColor = true;
             this.button_mini_2.Visible = false;
-            this.button_mini_2.Click += new System.EventHandler(this.button_mini_2_Click);
+            this.button_mini_2.Click += new System.EventHandler(this.ButtonMini2Click);
             // 
             // button_mini_1
             // 
@@ -157,7 +157,7 @@
             this.button_mini_1.Text = "Laden";
             this.button_mini_1.UseVisualStyleBackColor = true;
             this.button_mini_1.Visible = false;
-            this.button_mini_1.Click += new System.EventHandler(this.loadSaveGame);
+            this.button_mini_1.Click += new System.EventHandler(this.LoadSaveGame);
             // 
             // slot_btn_1
             // 
@@ -168,7 +168,7 @@
             this.slot_btn_1.TabIndex = 0;
             this.slot_btn_1.Text = "Spielstand Test";
             this.slot_btn_1.UseVisualStyleBackColor = true;
-            this.slot_btn_1.Click += new System.EventHandler(this.neues_Spiel_open);
+            this.slot_btn_1.Click += new System.EventHandler(this.NewGameOpen);
             // 
             // slot_btn_2
             // 
@@ -179,7 +179,7 @@
             this.slot_btn_2.TabIndex = 3;
             this.slot_btn_2.Text = "Neues Spiel";
             this.slot_btn_2.UseVisualStyleBackColor = true;
-            this.slot_btn_2.Click += new System.EventHandler(this.neues_Spiel_open);
+            this.slot_btn_2.Click += new System.EventHandler(this.NewGameOpen);
             // 
             // slot_btn_3
             // 
@@ -190,7 +190,7 @@
             this.slot_btn_3.TabIndex = 2;
             this.slot_btn_3.Text = "Neues Spiel";
             this.slot_btn_3.UseVisualStyleBackColor = true;
-            this.slot_btn_3.Click += new System.EventHandler(this.neues_Spiel_open);
+            this.slot_btn_3.Click += new System.EventHandler(this.NewGameOpen);
             // 
             // fiction_panel
             // 
@@ -212,7 +212,7 @@
             this.accept_fict_btn.TabIndex = 1;
             this.accept_fict_btn.Text = "Vestanden";
             this.accept_fict_btn.UseVisualStyleBackColor = true;
-            this.accept_fict_btn.Click += new System.EventHandler(this.accept_fict_btn_Click);
+            this.accept_fict_btn.Click += new System.EventHandler(this.AcceptFictBtnClick);
             // 
             // Layout_neues_Spiel
             // 
@@ -258,7 +258,7 @@
             this.avatarBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.avatarBox1.TabIndex = 0;
             this.avatarBox1.TabStop = false;
-            this.avatarBox1.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox1.Click += new System.EventHandler(this.ChangeAvatar);
             // 
             // avatarBox2
             // 
@@ -269,7 +269,7 @@
             this.avatarBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.avatarBox2.TabIndex = 1;
             this.avatarBox2.TabStop = false;
-            this.avatarBox2.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox2.Click += new System.EventHandler(this.ChangeAvatar);
             // 
             // avatarBox3
             // 
@@ -282,7 +282,7 @@
             this.avatarBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.avatarBox3.TabIndex = 2;
             this.avatarBox3.TabStop = false;
-            this.avatarBox3.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox3.Click += new System.EventHandler(this.ChangeAvatar);
             // 
             // avatarBox4
             // 
@@ -293,7 +293,7 @@
             this.avatarBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.avatarBox4.TabIndex = 3;
             this.avatarBox4.TabStop = false;
-            this.avatarBox4.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox4.Click += new System.EventHandler(this.ChangeAvatar);
             // 
             // avatarBox5
             // 
@@ -304,7 +304,7 @@
             this.avatarBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.avatarBox5.TabIndex = 4;
             this.avatarBox5.TabStop = false;
-            this.avatarBox5.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox5.Click += new System.EventHandler(this.ChangeAvatar);
             // 
             // avatarBox6
             // 
@@ -315,7 +315,7 @@
             this.avatarBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.avatarBox6.TabIndex = 5;
             this.avatarBox6.TabStop = false;
-            this.avatarBox6.Click += new System.EventHandler(this.changeAvatar);
+            this.avatarBox6.Click += new System.EventHandler(this.ChangeAvatar);
             // 
             // btnHauptschule
             // 
@@ -326,7 +326,7 @@
             this.btnHauptschule.TabIndex = 6;
             this.btnHauptschule.Text = "Hauptschulabschluss";
             this.btnHauptschule.UseVisualStyleBackColor = true;
-            this.btnHauptschule.Click += new System.EventHandler(this.changePath);
+            this.btnHauptschule.Click += new System.EventHandler(this.ChangePath);
             // 
             // btnRealschule
             // 
@@ -337,7 +337,7 @@
             this.btnRealschule.TabIndex = 7;
             this.btnRealschule.Text = "Realschulabschluss";
             this.btnRealschule.UseVisualStyleBackColor = true;
-            this.btnRealschule.Click += new System.EventHandler(this.changePath);
+            this.btnRealschule.Click += new System.EventHandler(this.ChangePath);
             // 
             // btnFachabi
             // 
@@ -348,7 +348,7 @@
             this.btnFachabi.TabIndex = 8;
             this.btnFachabi.Text = "Fachhochschulreife";
             this.btnFachabi.UseVisualStyleBackColor = true;
-            this.btnFachabi.Click += new System.EventHandler(this.changePath);
+            this.btnFachabi.Click += new System.EventHandler(this.ChangePath);
             // 
             // btnAbi
             // 
@@ -359,7 +359,7 @@
             this.btnAbi.TabIndex = 9;
             this.btnAbi.Text = "allg. Hochschulreife";
             this.btnAbi.UseVisualStyleBackColor = true;
-            this.btnAbi.Click += new System.EventHandler(this.changePath);
+            this.btnAbi.Click += new System.EventHandler(this.ChangePath);
             // 
             // label2
             // 
@@ -381,7 +381,7 @@
             this.dropDown_profession.Name = "dropDown_profession";
             this.dropDown_profession.Size = new System.Drawing.Size(224, 21);
             this.dropDown_profession.TabIndex = 17;
-            this.dropDown_profession.TextChanged += new System.EventHandler(this.education_path_TextChanged);
+            this.dropDown_profession.TextChanged += new System.EventHandler(this.EducationPathTextChanged);
             // 
             // label3
             // 
@@ -403,7 +403,7 @@
             this.dropDown_path.Name = "dropDown_path";
             this.dropDown_path.Size = new System.Drawing.Size(224, 21);
             this.dropDown_path.TabIndex = 19;
-            this.dropDown_path.TextChanged += new System.EventHandler(this.profession_path_TextChanged);
+            this.dropDown_path.TextChanged += new System.EventHandler(this.ProfessionPathTextChanged);
             // 
             // lable_1
             // 
@@ -442,7 +442,7 @@
             this.txt_age.Name = "txt_age";
             this.txt_age.Size = new System.Drawing.Size(266, 20);
             this.txt_age.TabIndex = 14;
-            this.txt_age.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_alter_KeyPress);
+            this.txt_age.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtOldKeyPress);
             // 
             // btn_back
             // 
@@ -456,7 +456,7 @@
             this.btn_back.TabIndex = 16;
             this.btn_back.Text = "Zurück";
             this.btn_back.UseVisualStyleBackColor = false;
-            this.btn_back.Click += new System.EventHandler(this.open_main_menu);
+            this.btn_back.Click += new System.EventHandler(this.OpenMainMenu);
             // 
             // btn_next
             // 
@@ -470,7 +470,7 @@
             this.btn_next.TabIndex = 15;
             this.btn_next.Text = "Weiter";
             this.btn_next.UseVisualStyleBackColor = false;
-            this.btn_next.Click += new System.EventHandler(this.open_next);
+            this.btn_next.Click += new System.EventHandler(this.OpenNext);
             // 
             // title
             // 

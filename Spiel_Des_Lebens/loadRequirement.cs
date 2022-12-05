@@ -2,11 +2,11 @@
 
 namespace Spiel_Des_Lebens
 {
-    internal class loadRequirement
+    internal class LoadRequirement
     {
-        public List<loadTiming> timings { get; set; }
-        public loadStat stats_min { get; set; }
-        public loadStat stats_max { get; set; }
+        public List<LoadTiming> timings { get; set; }
+        public LoadStat statsMin { get; set; }
+        public LoadStat statsMax { get; set; }
     }
 
 }

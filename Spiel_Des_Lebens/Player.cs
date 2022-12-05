@@ -2,10 +2,10 @@ namespace Spiel_Des_Lebens
 {
     internal class Player
     {
-        private int avatar;
+        private readonly int avatar;
         private int age;
-        private string name;
-        private Data.Graduation graduation;
+        private readonly string name;
+        private readonly Data.Graduation graduation;
         private Stat playerStat;
         public Eventgenerator eventgenerator;
         public ActionGenerator actiongenerator;
@@ -18,7 +18,7 @@ namespace Spiel_Des_Lebens
             this.name = name;
             this.graduation = graduation;
             playerStat = new Stat(70, 70, 70, 70);
-            resetCareer(path, profession);
+            ResetCareer(path, profession);
         }
 
         public Player(int avatar, int age, string name, Stat playerStat, Eventgenerator eventGen, EducationPath eduPath)
@@ -28,106 +28,106 @@ namespace Spiel_Des_Lebens
             this.name = name;
             this.playerStat = playerStat;
             this.eventgenerator = eventGen;
-            createActionGenerator();
+            CreateActionGenerator();
             this.eduPath = eduPath;
         }
 
         #region create_or_reset
 
-        public void resetCareer(Data.Path path, Data.Profession profession)
+        public void ResetCareer(Data.Path path, Data.Profession profession)
         {
-            createEducationPath(path, profession);
-            createEventgenerator(eduPath);
-            createActionGenerator();
+            CreateEducationPath(path, profession);
+            CreateEventgenerator(eduPath);
+            CreateActionGenerator();
         }
 
-        private void createEducationPath(Data.Path path, Data.Profession profession)
+        private void CreateEducationPath(Data.Path path, Data.Profession profession)
         {
             eduPath = new EducationPath(path, profession);
         }
 
-        private void createEventgenerator(EducationPath eduPath)
+        private void CreateEventgenerator(EducationPath eduPath)
         {
             eventgenerator = new Eventgenerator(eduPath);
         }
 
-        private void createActionGenerator()
+        private void CreateActionGenerator()
         {
             actiongenerator = new ActionGenerator();
         }
 
         #endregion
-        public void nextPhase() //muss bei jeder neuen Phase aufgerufen
+        public void NextPhase() //muss bei jeder neuen Phase aufgerufen
         {
-            eduPath.getPhase().nextPhase();
-            increaseAge();
+            eduPath.GetPhase().NextPhase();
+            IncreaseAge();
             //edit stats depending on Path
-            changePlayerStat(Data.statarray[(int)eduPath.getPath()]);
+            ChangePlayerStat(Data.statarray[(int)eduPath.GetPath()]);
 
         }
 
-        public void setPlayerStat(Stat stats)
+        public void SetPlayerStat(Stat stats)
         {
             this.playerStat = stats;
         }
 
-        public Stat getPlayerStat()
+        public Stat GetPlayerStat()
         {
             return this.playerStat;
         }
 
-        public void changePlayerStat(Stat stats)
+        public void ChangePlayerStat(Stat stats)
         {
-            this.playerStat.change(stats);
+            this.playerStat.Change(stats);
         }
 
-        public void setEducationPath(EducationPath eduPath)
+        public void SetEducationPath(EducationPath eduPath)
         {
             this.eduPath = eduPath;
         }
 
-        public EducationPath getEducationPath()
+        public EducationPath GetEducationPath()
         {
             return this.eduPath;
         }
 
-        public string getName()
+        public string GetName()
         {
             return this.name;
         }
 
-        public int getAge()
+        public int GetAge()
         {
             return this.age;
         }
 
-        public int getAvatar()
+        public int GetAvatar()
         {
             return this.avatar;
         }
-        public Data.Graduation getGraduation()
+        public Data.Graduation GetGraduation()
         {
             return this.graduation;
         }
 
-        private void increaseAge()
+        private void IncreaseAge()
         {
-            if (eduPath.getPhase().getCurrentPhase() != 0)
+            if (eduPath.GetPhase().GetCurrentPhase() != 0)
             {
-                if ((eduPath.getPhase().getCurrentPhase() * Data.phaseL[(int)eduPath.getPath()]) % 12 == 0)
+                if ((eduPath.GetPhase().GetCurrentPhase() * Data.phaseL[(int)eduPath.GetPath()]) % 12 == 0)
                 {
                     age++;
                 }
             }
         }
 
-        public Data.StatType? checkStatSmaller(int statValue)
+        public Data.StatType? CheckStatSmaller(int statValue)
         {
-            foreach (StatParameter statParameter in this.playerStat.getStats())
+            foreach (StatParameter statParameter in this.playerStat.GetStats())
             {
-                if (statParameter.getValue() < statValue)
+                if (statParameter.GetValue() < statValue)
                 {
-                    return statParameter.getName();
+                    return statParameter.GetName();
                 }
             }
             return null;

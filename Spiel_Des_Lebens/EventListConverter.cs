@@ -12,24 +12,24 @@ namespace Spiel_Des_Lebens
 
         public EventListConverter() { }
 
-        public List<Event> convertLoadEventToEvent(List<loadEvent> eList)
+        public List<Event> ConvertLoadEventToEvent(List<LoadEvent> eList)
         {
             List<Event> events = new List<Event>();
-            foreach (loadEvent e in eList)
+            foreach (LoadEvent e in eList)
             {
                 this.id = e.id;
                 List<Timing> timings = new List<Timing>();
-                foreach (loadTiming lt in e.requirements.timings)
+                foreach (LoadTiming lt in e.requirements.timings)
                 {
-                    timings.Add(evaluateTimings(lt));
+                    timings.Add(EvaluateTimings(lt));
                 }
 
-                Requirement r = new Requirement(timings, convertLoadStatToStat(e.requirements.stats_min), convertLoadStatToStat(e.requirements.stats_max));
+                Requirement r = new Requirement(timings, ConvertLoadStatToStat(e.requirements.statsMin), ConvertLoadStatToStat(e.requirements.statsMax));
 
                 List<Option> oList = new List<Option>();
-                foreach (loadOption o in e.options)
+                foreach (LoadOption o in e.options)
                 {
-                    oList.Add(convertLoadOptionToOption(o));
+                    oList.Add(ConvertLoadOptionToOption(o));
                 }
 
 
@@ -39,21 +39,21 @@ namespace Spiel_Des_Lebens
             return events;
         }
 
-        private Timing evaluateTimings(loadTiming lTiming)
+        private Timing EvaluateTimings(LoadTiming lTiming)
         {
             List<string> path = lTiming.path;
             List<string> profession = lTiming.profession;
             List<string> phase = lTiming.phase;
 
-            int[] ePaths = evaluatePaths(path).ToArray();
-            int[] eProfessions = evaluateProfessions(profession).ToArray();
-            int[] ePhases = evaluatePhaseList(phase, ePaths).ToArray();
+            int[] ePaths = EvaluatePaths(path).ToArray();
+            int[] eProfessions = EvaluateProfessions(profession).ToArray();
+            int[] ePhases = EvaluatePhaseList(phase, ePaths).ToArray();
 
             return new Timing(ePaths.ToList(), eProfessions.ToList(), ePhases.ToList());
 
         }
 
-        private int[] evaluatePaths(List<string> paths)
+        private int[] EvaluatePaths(List<string> paths)
         {
             if (paths != null)
             {
@@ -79,7 +79,7 @@ namespace Spiel_Des_Lebens
                         {
                             parsedPaths.Add(int.Parse(path));
                         }
-                        catch (Exception ex)
+                        catch (Exception)
                         {
                             // throw new Error(ex.Message.ToString());
                             throw new Error("EventListConverter: Error parsing path in event " + this.id);
@@ -94,7 +94,7 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private int[] evaluateProfessions(List<string> paths)
+        private int[] EvaluateProfessions(List<string> paths)
         {
             if (paths != null)
             {
@@ -133,7 +133,7 @@ namespace Spiel_Des_Lebens
                 throw new Error("Profession is empty (Event_ID: " + this.id + ")");
             }
         }
-        private int[] evaluatePhaseList(List<string> phases, int[] paths)
+        private int[] EvaluatePhaseList(List<string> phases, int[] paths)
         {
             possibleValues = new List<int>();
             exeptedValues = new List<int>();
@@ -142,23 +142,23 @@ namespace Spiel_Des_Lebens
             {
                 if (phases.IndexOf("*") != -1)
                 {
-                    int length = getGreatestPhaseCount(paths);
-                    return fillList(length).ToArray();
+                    int length = GetGreatestPhaseCount(paths);
+                    return FillList(length).ToArray();
 
                 }
                 else
                 {
                     foreach (string phase in phases)
                     {
-                        evaluatePhase(phase, paths);
+                        EvaluatePhase(phase, paths);
                     }
-                    return compareLists(possibleValues, exeptedValues).ToArray();
+                    return CompareLists(possibleValues, exeptedValues).ToArray();
                 }
             }
             throw new Error("No Phases given (Event_ID: " + this.id + ")");
         }
 
-        private void evaluatePhase(string phase, int[] paths)
+        private void EvaluatePhase(string phase, int[] paths)
         {
             int bracketCount = 0;
 
@@ -185,27 +185,27 @@ namespace Spiel_Des_Lebens
                 //% before !
                 if (moduloIdx < exMarkIdx)
                 {
-                    possibleValues.AddRange(moduloCheck(phase, paths));
-                    exeptedValues.AddRange(exMarkCheck(phase, paths));
+                    possibleValues.AddRange(ModuloCheck(phase, paths));
+                    exeptedValues.AddRange(ExMarkCheck(phase, paths));
                 }
                 else
                 {
-                    possibleValues.AddRange(fillList(getGreatestPhaseCount(paths)));
-                    exeptedValues.AddRange(exMarkCheck(phase, paths));
+                    possibleValues.AddRange(FillList(GetGreatestPhaseCount(paths)));
+                    exeptedValues.AddRange(ExMarkCheck(phase, paths));
                 }
             }
             else if (exMarkIdx != -1 && moduloIdx == -1)
             {
-                possibleValues.AddRange(fillList(getGreatestPhaseCount(paths)));
-                exeptedValues.AddRange(exMarkCheck(phase, paths));
+                possibleValues.AddRange(FillList(GetGreatestPhaseCount(paths)));
+                exeptedValues.AddRange(ExMarkCheck(phase, paths));
             }
             else if (moduloIdx != -1 && exMarkIdx == -1)
             {
-                possibleValues.AddRange(moduloCheck(phase, paths));
+                possibleValues.AddRange(ModuloCheck(phase, paths));
             }
             else
             {
-                if (Int32.TryParse(phase, out int res))
+                if (Int32.TryParse(phase, out _))
                 {
                     possibleValues.Add(Int32.Parse(phase));
                 }
@@ -213,7 +213,7 @@ namespace Spiel_Des_Lebens
 
         }
 
-        private List<int> compareLists(List<int> pList, List<int> eList)
+        private List<int> CompareLists(List<int> pList, List<int> eList)
         {
             List<int> comparedList = new List<int>();
             foreach (int pVal in pList)
@@ -227,7 +227,7 @@ namespace Spiel_Des_Lebens
         }
 
 
-        private List<int> fillList(int length)
+        private List<int> FillList(int length)
         {
             List<int> list = new List<int>();
             for (int i = 1; i < length + 1; i++)
@@ -238,7 +238,7 @@ namespace Spiel_Des_Lebens
         }
 
 
-        private List<int> exMarkCheck(string phase, int[] paths)
+        private List<int> ExMarkCheck(string phase, int[] paths)
         {
             int exMarkIdx = phase.IndexOf('!');
             List<int> exMarkCheck = new List<int>();
@@ -260,11 +260,11 @@ namespace Spiel_Des_Lebens
                 }
                 else if (phase[exMarkIdx + 1] != '(')
                 {
-                    if (exMarkIdx + 2 < phase.Length && Int32.TryParse(phase.Substring(exMarkIdx + 1, 2), out int res1))
+                    if (exMarkIdx + 2 < phase.Length && Int32.TryParse(phase.Substring(exMarkIdx + 1, 2), out _))
                     {
                         exMarkCheck.Add(Int32.Parse(phase.Substring(exMarkIdx + 1, 2)));
                     }
-                    else if (Int32.TryParse(phase.Substring(exMarkIdx + 1, 1), out int res2))
+                    else if (Int32.TryParse(phase.Substring(exMarkIdx + 1, 1), out _))
                     {
                         exMarkCheck.Add(Int32.Parse(phase.Substring(exMarkIdx + 1, 1)));
                     }
@@ -284,7 +284,7 @@ namespace Spiel_Des_Lebens
                         }
                         else
                         {
-                            exMarkCheck = moduloCheck(phase.Substring(exMarkIdx + 1, 5), paths);
+                            exMarkCheck = ModuloCheck(phase.Substring(exMarkIdx + 1, 5), paths);
                         }
                     }
                 }
@@ -292,7 +292,7 @@ namespace Spiel_Des_Lebens
             return exMarkCheck;
         }
 
-        private List<int> moduloCheck(string phase, int[] paths)
+        private List<int> ModuloCheck(string phase, int[] paths)
         {
             List<int> moduloCheck = new List<int>();
             int moduloIdx = phase.IndexOf('%');
@@ -317,7 +317,7 @@ namespace Spiel_Des_Lebens
                 }
                 else
                 {
-                    int length = getGreatestPhaseCount(paths);
+                    int length = GetGreatestPhaseCount(paths);
                     int moduloValue = Int32.Parse(phase[moduloIdx + 1].ToString());
                     for (int i = 1; i < length + 1; i++)
                     {
@@ -337,7 +337,7 @@ namespace Spiel_Des_Lebens
         }
 
 
-        private int getGreatestPhaseCount(int[] paths)
+        private int GetGreatestPhaseCount(int[] paths)
         {
             int greatestCount = 0;
             foreach (int path in paths)
@@ -349,12 +349,12 @@ namespace Spiel_Des_Lebens
         }
 
 
-        private Option convertLoadOptionToOption(loadOption lOption)
+        private Option ConvertLoadOptionToOption(LoadOption lOption)
         {
-            return new Option(lOption.id, lOption.title, lOption.text, convertLoadStatToStat(lOption.stats));
+            return new Option(lOption.id, lOption.title, lOption.text, ConvertLoadStatToStat(lOption.stats));
         }
 
-        private Stat convertLoadStatToStat(loadStat lStat)
+        private Stat ConvertLoadStatToStat(LoadStat lStat)
         {
             return new Stat(lStat.mentalHealth, lStat.money, lStat.motivation, lStat.success);
         }

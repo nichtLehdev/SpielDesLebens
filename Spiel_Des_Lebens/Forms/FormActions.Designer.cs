@@ -45,7 +45,7 @@
             this.panelSchool.Name = "panelSchool";
             this.panelSchool.Size = new System.Drawing.Size(260, 228);
             this.panelSchool.TabIndex = 1;
-            this.panelSchool.Click += new System.EventHandler(this.panelSchool_Click);
+            this.panelSchool.Click += new System.EventHandler(this.PanelSchoolClick);
             // 
             // lblSchool
             // 
@@ -77,7 +77,7 @@
             this.btnLoadEvent.TabIndex = 2;
             this.btnLoadEvent.Text = "Load Event";
             this.btnLoadEvent.UseVisualStyleBackColor = true;
-            this.btnLoadEvent.Click += new System.EventHandler(this.btnLoadEvent_Click);
+            this.btnLoadEvent.Click += new System.EventHandler(this.BtnLoadEventClick);
             // 
             // FormActions
             // 

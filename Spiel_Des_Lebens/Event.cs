@@ -4,33 +4,33 @@ namespace Spiel_Des_Lebens
 {
     internal class Event
     {
-        public string id;
-        public string title;
-        public string text;
-        public string info;
-        public int priority;
-        public Requirement requirements;
-        public List<Option> options;
+        public string Id;
+        public string Title;
+        public string Text;
+        public string Info;
+        public int Priority;
+        public Requirement Requirements;
+        public List<Option> Options;
 
         public Event(string id, string title, string text, string info, int priority, Requirement req, List<Option> options)
         {
-            this.id = id;
-            this.title = title;
-            this.text = text;
-            this.info = info;
-            this.priority = priority;
-            this.requirements = req;
-            this.options = options;
+            this.Id = id;
+            this.Title = title;
+            this.Text = text;
+            this.Info = info;
+            this.Priority = priority;
+            this.Requirements = req;
+            this.Options = options;
         }
 
-        public List<Option> getOption()
+        public List<Option> GetOption()
         {
-            return this.options;
+            return this.Options;
         }
 
-        public void setOption()
+        public void SetOption()
         {
-            this.options = new List<Option>();
+            this.Options = new List<Option>();
         }
     }
 }

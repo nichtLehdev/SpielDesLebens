@@ -4,7 +4,7 @@ using System;
 namespace Spiel_Des_Lebens
 {
     [TestClass]
-    public class UnitTest
+    internal class UnitTest
     {
         private UiInterface UiInterface;
 
@@ -17,18 +17,18 @@ namespace Spiel_Des_Lebens
         }
 
         [TestMethod]
-        public void createPlayer()
+        public void CreatePlayer()
         {
             Player player = new Player(0, 21, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem, Data.Graduation.AllgemeineHochschulreife);
         }
 
         [TestMethod]
-        public void getEventText()
+        public void GetEventText()
         {
-            UiInterface.nextEvent();
-            Console.WriteLine(UiInterface.getEventText());
-            //Assert.AreNotEqual("", UiInterface.getEventText());
-            Assert.IsNotNull(UiInterface.getEventText());
+            UiInterface.NextEvent();
+            Console.WriteLine(UiInterface.GetEventText());
+            Assert.AreNotEqual("", UiInterface.GetEventText());
+            Assert.IsNotNull(UiInterface.GetEventText());
 
         }
 

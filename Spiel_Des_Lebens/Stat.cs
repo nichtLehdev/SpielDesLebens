@@ -5,7 +5,7 @@ namespace Spiel_Des_Lebens
 {
     internal class Stat
     {
-        private List<StatParameter> stats = new List<StatParameter>();
+        private readonly List<StatParameter> stats = new List<StatParameter>();
 
         public Stat(int mentalHealth, int money, int motivation, int success)
         {
@@ -15,26 +15,26 @@ namespace Spiel_Des_Lebens
             stats.Add(new StatParameter(Data.StatType.success, success, true, true));
         }
 
-        public void change(Stat stat)
+        public void Change(Stat stat)
         {
             for (int i = 0; i < stats.Count; i++)
             {
-                stats[i].setValue(stats[i].getValue() + stat.getStats()[i].getValue());
-                stats[i].clampBottom();
-                stats[i].clampTop();
+                stats[i].SetValue(stats[i].GetValue() + stat.GetStats()[i].GetValue());
+                stats[i].ClampBottom();
+                stats[i].ClampTop();
             }
         }
 
-        public List<StatParameter> getStats()
+        public List<StatParameter> GetStats()
         {
             return stats;
         }
 
-        public bool isGreater(Stat stats1)
+        public bool IsGreater(Stat stats1)
         {
             for (int i = 0; i < stats.Count; i++)
             {
-                if (!stats[i].isGreater(stats1.stats[i]))
+                if (!stats[i].IsGreater(stats1.stats[i]))
                 {
                     return false;
                 }
@@ -42,11 +42,11 @@ namespace Spiel_Des_Lebens
             return true;
         }
 
-        public bool isSmaller(Stat stats1)
+        public bool IsSmaller(Stat stats1)
         {
             for (int i = 0; i < stats.Count; i++)
             {
-                if (!stats[i].isSmaller(stats1.stats[i]))
+                if (!stats[i].IsSmaller(stats1.stats[i]))
                 {
                     return false;
                 }

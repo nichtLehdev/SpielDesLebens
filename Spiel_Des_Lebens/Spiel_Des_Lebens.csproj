@@ -52,9 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="loadEduPath.cs" />
-    <Compile Include="loadPlayer.cs" />
-    <Compile Include="SaveLoadGame.cs" />
+    <Compile Include="LoadEducationPath.cs" />
+    <Compile Include="LoadPlayer.cs" />
+    <Compile Include="SaveLoadDeleteGame.cs" />
     <Compile Include="Forms\FormActions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,11 +101,11 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="loadAction.cs" />
-    <Compile Include="loadOption.cs" />
-    <Compile Include="loadStat.cs" />
-    <Compile Include="loadRequirement.cs" />
-    <Compile Include="loadEvent.cs" />
+    <Compile Include="LoadAction.cs" />
+    <Compile Include="LoadOption.cs" />
+    <Compile Include="LoadStat.cs" />
+    <Compile Include="LoadRequirement.cs" />
+    <Compile Include="LoadEvent.cs" />
     <Compile Include="Timing.cs" />
     <Compile Include="Option.cs" />
     <Compile Include="Phase.cs" />
@@ -130,7 +130,7 @@
     <Compile Include="Requirement.cs" />
     <Compile Include="Stat.cs" />
     <Compile Include="StatParameter.cs" />
-    <Compile Include="loadTiming.cs" />
+    <Compile Include="LoadTiming.cs" />
     <Compile Include="UiInterfaceMenu.cs" />
     <Compile Include="UnitTest.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Spiel_Des_Lebens.Forms
 {
-    public partial class FormActions : Form
+    internal partial class FormActions : Form
     {
         // private UiInterface ui_interface = new UiInterface(0, 4, "Fritz", 0, 0, 0);
         public FormActions()
@@ -15,23 +15,23 @@ namespace Spiel_Des_Lebens.Forms
             panelSchool.BackColor = Color.Transparent;
         }
 
-        private void panelSchool_Click(object sender, EventArgs e)
+        private void PanelSchoolClick(object sender, EventArgs e)
         {
-            FormSchool school = new FormSchool();
-            school.TopLevel = false;
-            school.FormBorderStyle = FormBorderStyle.None;
-            school.Dock = DockStyle.Fill;
+            FormSchool school = new FormSchool
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
             this.Controls.Add(school);
             this.Tag = school;
             school.BringToFront();
             school.Show();
         }
 
-        private void btnLoadEvent_Click(object sender, EventArgs e)
+        private void BtnLoadEventClick(object sender, EventArgs e)
         {
-            //ui_interface.getNextEvent();
             Console.WriteLine("sdfg");
-            //Console.WriteLine("Chosen Event: " + ui_interface.getNextEvent().ToString());
         }
     }
 }

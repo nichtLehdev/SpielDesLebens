@@ -15,17 +15,17 @@
             this.optionStat = optionStat;
         }
 
-        public string getTitle()
+        public string GetTitle()
         {
             return this.title;
         }
 
-        public string getText()
+        public string GetText()
         {
             return this.text;
         }
 
-        public Stat getStats()
+        public Stat GetStats()
         {
             return this.optionStat;
         }

@@ -4,7 +4,6 @@ namespace Spiel_Des_Lebens
 {
     internal class Requirement
     {
-        //public int[,,] timings;
         public List<Timing> timings;
         public Stat reqStatMin;
         public Stat reqStatMax;

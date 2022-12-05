@@ -2,58 +2,58 @@
 {
     internal class EducationPath
     {
-        private int phaseLength;
+        private readonly int phaseLength;
         private Data.Path path;
         private Data.Profession profession;
-        private Phase phase;
+        private readonly Phase phase;
 
         public EducationPath(Data.Path path, Data.Profession profession)
         {
-            setPath(path);
-            setProfession(profession);
+            SetPath(path);
+            SetProfession(profession);
             phaseLength = Data.phaseL[(int)path];
             phase = new Phase(phaseLength);
         }
 
         public EducationPath(Data.Path path, Data.Profession profession, int currentPhase)
         {
-            setPath(path);
-            setProfession(profession);
+            SetPath(path);
+            SetProfession(profession);
             phaseLength = Data.phaseL[(int)path];
             phase = new Phase(phaseLength, currentPhase);
         }
 
-        private void setPath(Data.Path path)
+        private void SetPath(Data.Path path)
         {
             this.path = path;
         }
 
-        private void setProfession(Data.Profession profession)
+        private void SetProfession(Data.Profession profession)
         {
             this.profession = profession;
         }
 
-        public string getProfessionName()
+        public string GetProfessionName()
         {
             return Data.career[(int)path, (int)profession];
         }
 
-        public Data.Profession getProfession()
+        public Data.Profession GetProfession()
         {
             return profession;
         }
 
-        public Data.Path getPath()
+        public Data.Path GetPath()
         {
             return this.path;
         }
 
-        public int getPhaseLength()
+        public int GetPhaseLength()
         {
             return phaseLength;
         }
 
-        public Phase getPhase()
+        public Phase GetPhase()
         {
             return phase;
         }

@@ -4,36 +4,33 @@
     {
         private Player player;
 
-        public bool hasValidData(int slot)
+        public bool HasValidData(int slot)
         {
-            return SaveLoadGame.hasValidData(slot);
+            return SaveLoadDeleteGame.HasValidData(slot);
         }
 
-        public void deleteSaveGame(int slot)
+        public void DeleteSaveGame(int slot)
         {
-            SaveLoadGame.deleteSaveGame(slot);
+            SaveLoadDeleteGame.DeleteSaveGame(slot);
         }
 
 
-        public void loadGame(int slot)
+        public void LoadGame(int slot)
         {
-            if (SaveLoadGame.hasValidData(slot))
+            if (SaveLoadDeleteGame.HasValidData(slot))
             {
-                player = SaveLoadGame.loadGame(slot);
+                player = SaveLoadDeleteGame.LoadGame(slot);
             }
         }
 
-        public void createPlayer(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
+        public void CreatePlayer(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
         {
             player = new Player(avatar, age, name, path, profession, graduation);
         }
 
-        public UiInterface createUiInterface()
+        public UiInterface CreateUiInterface()
         {
             return new UiInterface(this.player);
         }
-
-
-
     }
 }

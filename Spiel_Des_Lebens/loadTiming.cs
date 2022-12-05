@@ -2,7 +2,7 @@
 
 namespace Spiel_Des_Lebens
 {
-    internal class loadTiming
+    internal class LoadTiming
     {
         public List<string> path { get; set; }
         public List<string> profession { get; set; }

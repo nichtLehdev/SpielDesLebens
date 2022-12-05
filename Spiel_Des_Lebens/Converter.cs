@@ -4,27 +4,25 @@ namespace Spiel_Des_Lebens
 {
     internal class Converter
     {
-        public static Player convertLoadPlayerToPlayer(loadPlayer lPlayer)
+        public static Player ConvertLoadPlayerToPlayer(LoadPlayer lPlayer)
         {
             EventListConverter eventListConverter = new EventListConverter();
-            List<Event> filteredEvents = eventListConverter.convertLoadEventToEvent(lPlayer.eventGenList);
-            bool avatar;
-
-            EducationPath eduPath = convertloadEduPathToEduPath(lPlayer.edu_path);
-            return new Player(lPlayer.avatar, lPlayer.age, lPlayer.name, convertLoadStatToStat(lPlayer.stats), new Eventgenerator(eduPath, filteredEvents), eduPath);
+            List<Event> filteredEvents = eventListConverter.ConvertLoadEventToEvent(lPlayer.eventGenList);
+            EducationPath eduPath = ConvertloadEduPathToEduPath(lPlayer.eduPath);
+            return new Player(lPlayer.avatar, lPlayer.age, lPlayer.name, ConvertLoadStatToStat(lPlayer.stats), new Eventgenerator(eduPath, filteredEvents), eduPath);
         }
 
-        private static EducationPath convertloadEduPathToEduPath(loadEduPath lEduPath)
+        private static EducationPath ConvertloadEduPathToEduPath(LoadEducationPath lEduPath)
         {
-            return new EducationPath((Data.Path)lEduPath.path, (Data.Profession)lEduPath.profession, lEduPath.phase);
+            return new EducationPath((Data.Path)lEduPath.Path, (Data.Profession)lEduPath.Profession, lEduPath.Phase);
         }
 
-        public static Option convertLoadOptionToOption(loadOption lOption)
+        public static Option ConvertLoadOptionToOption(LoadOption lOption)
         {
-            return new Option(lOption.id, lOption.title, lOption.text, convertLoadStatToStat(lOption.stats));
+            return new Option(lOption.id, lOption.title, lOption.text, ConvertLoadStatToStat(lOption.stats));
         }
 
-        public static Stat convertLoadStatToStat(loadStat lStat)
+        public static Stat ConvertLoadStatToStat(LoadStat lStat)
         {
             return new Stat(lStat.mentalHealth, lStat.money, lStat.motivation, lStat.success);
         }

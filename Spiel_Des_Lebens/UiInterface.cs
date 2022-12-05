@@ -5,36 +5,36 @@ namespace Spiel_Des_Lebens
 {
     internal class UiInterface
     {
-        private Player player;
+        private readonly Player player;
         private Event currentEvent;
         private List<Action> currentActions;
         public UiInterface(Player player)
         {
             this.player = player;
-            nextAction();
+            NextAction();
         }
 
-        public void saveGame(int slot)
+        public void SaveGame(int slot)
         {
-            SaveLoadGame.saveGame(this.player, slot);
+            SaveLoadDeleteGame.SaveGame(this.player, slot);
         }
 
-        public int getMaxActionPoints()
+        public int GetMaxActionPoints()
         {
-            return player.getEducationPath().getPhase().getMaxActionPoints();
+            return player.GetEducationPath().GetPhase().GetMaxActionPoints();
         }
-        public void nextEvent()
+        public void NextEvent()
         {
-            currentEvent = player.eventgenerator.nextEvent(player.getPlayerStat());
+            currentEvent = player.eventgenerator.NextEvent(player.GetPlayerStat());
         }
 
-        private void nextAction()
+        private void NextAction()
         {
-            currentActions = player.actiongenerator.getActions();
+            currentActions = player.actiongenerator.GetActions();
         }
 
         #region getActionString        
-        public String getActionTitle(int action)
+        public String GetActionTitle(int action)
         {
             if (action >= currentActions.Count)
             {
@@ -42,35 +42,23 @@ namespace Spiel_Des_Lebens
             }
             else
             {
-                return currentActions[action].getTitle();
+                return currentActions[action].GetTitle();
             }
         }
 
-        public String getActionInfo(int action)
+        public String GetActionInfo(int action)
         {
-            if (action >= currentActions.Count || currentActions[action].getInfo() == null)
+            if (action >= currentActions.Count || currentActions[action].GetInfo() == null)
             {
                 return "";
             }
             else
             {
-                return currentActions[action].getInfo();
+                return currentActions[action].GetInfo();
             }
         }
 
-        public String getActionOptionTitle(int action)
-        {
-            if (action >= currentActions.Count)
-            {
-                return "";
-            }
-            else
-            {
-                return currentActions[action].getResult().getTitle();
-            }
-        }
-
-        public String getActionOptionText(int action)
+        public String GetActionOptionTitle(int action)
         {
             if (action >= currentActions.Count)
             {
@@ -78,13 +66,25 @@ namespace Spiel_Des_Lebens
             }
             else
             {
-                subtractActionPoints(1);
-                this.player.changePlayerStat(currentActions[action].getResult().getStats());
-                return currentActions[action].getResult().getText();
+                return currentActions[action].GetResult().GetTitle();
             }
         }
 
-        public int getActionOptionMainStat(int action)
+        public String GetActionOptionText(int action)
+        {
+            if (action >= currentActions.Count)
+            {
+                return "";
+            }
+            else
+            {
+                SubtractActionPoints(1);
+                this.player.ChangePlayerStat(currentActions[action].GetResult().GetStats());
+                return currentActions[action].GetResult().GetText();
+            }
+        }
+
+        public int GetActionOptionMainStat(int action)
         {
             int highStat = 0;
             if (action >= currentActions.Count)
@@ -93,18 +93,18 @@ namespace Spiel_Des_Lebens
             }
             else
             {
-                Stat optionStat = currentActions[action].getResult().getStats();
+                Stat optionStat = currentActions[action].GetResult().GetStats();
 
-                for (int i = 0; i < optionStat.getStats().Count; i++)
+                for (int i = 0; i < optionStat.GetStats().Count; i++)
                 {
-                    if (optionStat.getStats()[highStat].getValue() < optionStat.getStats()[i].getValue())
+                    if (optionStat.GetStats()[highStat].GetValue() < optionStat.GetStats()[i].GetValue())
                     {
                         highStat = i;
                     }
                 }
 
                 // test if no stat ist positive for criminal actions to display a custom / diffreent icon
-                if (optionStat.getStats()[highStat].getValue() <= 0)
+                if (optionStat.GetStats()[highStat].GetValue() <= 0)
                 {
                     highStat = -1;
                 }
@@ -120,144 +120,144 @@ namespace Spiel_Des_Lebens
 
 
         #region getEventString
-        public String getEventOptionTitle(int option)
+        public String GetEventOptionTitle(int option)
         {
-            if (option >= currentEvent.getOption().Count)
+            if (option >= currentEvent.GetOption().Count)
             {
                 return "";
             }
             else
             {
-                return currentEvent.getOption()[option].getTitle();
+                return currentEvent.GetOption()[option].GetTitle();
             }
         }
 
-        public String getEventOptionText(int option)
+        public String GetEventOptionText(int option)
         {
             //Player stats verändern
-            if (option >= currentEvent.getOption().Count)
+            if (option >= currentEvent.GetOption().Count)
             {
                 return "";
             }
             else
             {
-                subtractActionPoints(2);
-                changePlayerStats(option);
-                return currentEvent.getOption()[option].getText();
+                SubtractActionPoints(2);
+                ChangePlayerStats(option);
+                return currentEvent.GetOption()[option].GetText();
             }
         }
 
-        public String getEventText()
+        public String GetEventText()
         {
-            return currentEvent.text;
+            return currentEvent.Text;
         }
-        public String getEventTitle()
+        public String GetEventTitle()
         {
-            return currentEvent.title;
+            return currentEvent.Title;
         }
 
-        public String getEventInfo()
+        public String GetEventInfo()
         {
-            if (currentEvent.info == null)
+            if (currentEvent.Info == null)
             {
                 return "";
             }
             else
             {
-                return currentEvent.info;
+                return currentEvent.Info;
             }
         }
         #endregion
-        public int getActionPoints()
+        public int GetActionPoints()
         {
-            return player.getEducationPath().getPhase().getActionPoints();
+            return player.GetEducationPath().GetPhase().GetActionPoints();
         }
-        public int getCurrentPhase()
+        public int GetCurrentPhase()
         {
-            return player.getEducationPath().getPhase().getCurrentPhase();
-        }
-
-        public int getMaxPhaseLength()
-        {
-            return player.getEducationPath().getPhaseLength();
+            return player.GetEducationPath().GetPhase().GetCurrentPhase();
         }
 
-        public int getMaxPhaseNumber()
+        public int GetMaxPhaseLength()
         {
-            return player.getEducationPath().getPhase().getMaxPhaseNumber();
+            return player.GetEducationPath().GetPhaseLength();
         }
 
-        public Data.Graduation getGraduation()
+        public int GetMaxPhaseNumber()
         {
-            return player.getGraduation();
+            return player.GetEducationPath().GetPhase().GetMaxPhaseNumber();
+        }
+
+        public Data.Graduation GetGraduation()
+        {
+            return player.GetGraduation();
         }
 
 
         #region getPlayerStats
-        public int getPlayerMoney()
+        public int GetPlayerMoney()
         {
-            foreach (StatParameter statsp in player.getPlayerStat().getStats())
+            foreach (StatParameter statsp in player.GetPlayerStat().GetStats())
             {
-                if (statsp.getName().ToString() == "money")
+                if (statsp.GetName().ToString() == "money")
                 {
-                    return statsp.getValue();
+                    return statsp.GetValue();
                 }
             }
             return 0;
         }
-        public int getPlayerMentalHealth()
+        public int GetPlayerMentalHealth()
         {
-            foreach (StatParameter statsp in player.getPlayerStat().getStats())
+            foreach (StatParameter statsp in player.GetPlayerStat().GetStats())
             {
-                if (statsp.getName().ToString() == "mentalHealth")
+                if (statsp.GetName().ToString() == "mentalHealth")
                 {
-                    return statsp.getValue();
+                    return statsp.GetValue();
                 }
             }
             return 0;
         }
-        public int getPlayerMotivation()
+        public int GetPlayerMotivation()
         {
-            foreach (StatParameter statsp in player.getPlayerStat().getStats())
+            foreach (StatParameter statsp in player.GetPlayerStat().GetStats())
             {
-                if (statsp.getName().ToString() == "motivation")
+                if (statsp.GetName().ToString() == "motivation")
                 {
-                    return statsp.getValue();
+                    return statsp.GetValue();
                 }
             }
             return 0;
         }
-        public int getPlayerSuccess()
+        public int GetPlayerSuccess()
         {
-            foreach (StatParameter statsp in player.getPlayerStat().getStats())
+            foreach (StatParameter statsp in player.GetPlayerStat().GetStats())
             {
-                if (statsp.getName().ToString() == "success")
+                if (statsp.GetName().ToString() == "success")
                 {
-                    return statsp.getValue();
+                    return statsp.GetValue();
                 }
             }
             return 0;
         }
         #endregion
-        private void changePlayerStats(int option)
+        private void ChangePlayerStats(int option)
         {
-            Stat currentOptionStats = currentEvent.options[option].getStats();
-            this.player.changePlayerStat(currentOptionStats);
+            Stat currentOptionStats = currentEvent.Options[option].GetStats();
+            this.player.ChangePlayerStat(currentOptionStats);
         }
 
-        private void subtractActionPoints(int cost)
+        private void SubtractActionPoints(int cost)
         {
-            player.getEducationPath().getPhase().subtractPoints(cost);
-            if (player.getEducationPath().getPhase().getActionPoints() <= 0)
+            player.GetEducationPath().GetPhase().SubtractPoints(cost);
+            if (player.GetEducationPath().GetPhase().GetActionPoints() <= 0)
             {
-                player.nextPhase();
-                nextAction();
+                player.NextPhase();
+                NextAction();
             }
         }
 
-        public String getStatWarning()
+        public String GetStatWarning()
         {
-            Data.StatType? statType = player.checkStatSmaller(11);
+            Data.StatType? statType = player.CheckStatSmaller(11);
             string warning = "";
             if (statType != null)
             {
@@ -280,9 +280,9 @@ namespace Spiel_Des_Lebens
             return warning;
         }
 
-        public String getGameEnd()
+        public String GetGameEnd()
         {
-            Data.StatType? statType = player.checkStatSmaller(1);
+            Data.StatType? statType = player.CheckStatSmaller(1);
             string gameEnd = "";
             if (statType != null)
             {
@@ -302,9 +302,9 @@ namespace Spiel_Des_Lebens
                         break;
                 }
             }
-            if (player.getEducationPath().getPhase().getCurrentPhase() > getMaxPhaseNumber())
+            if (player.GetEducationPath().GetPhase().GetCurrentPhase() > GetMaxPhaseNumber())
             {
-                if (player.getEducationPath().getPath() == Data.Path.Training)
+                if (player.GetEducationPath().GetPath() == Data.Path.Training)
                 {
                     gameEnd = "Erfolg!!! Du hast deine Ausbildung ";
                 }
@@ -312,46 +312,46 @@ namespace Spiel_Des_Lebens
                 {
                     gameEnd = "Erfolg!!! Du hast dein Studium ";
                 }
-                gameEnd += "\"" + player.getEducationPath().getProfessionName() + "\" erfolgreich absolviert!";
+                gameEnd += "\"" + player.GetEducationPath().GetProfessionName() + "\" erfolgreich absolviert!";
 
             }
             return gameEnd;
         }
-        public void resetPath(Data.Path path, Data.Profession profession)
+        public void ResetPath(Data.Path path, Data.Profession profession)
         {
-            player.resetCareer(path, profession);
+            player.ResetCareer(path, profession);
             Stat stats = new Stat(10, 10, 10, 10);
-            player.changePlayerStat(stats);
-            nextAction();
+            player.ChangePlayerStat(stats);
+            NextAction();
         }
-        public void nextPhase()
+        public void NextPhase()
         {
-            player.nextPhase();
-            nextAction();
+            player.NextPhase();
+            NextAction();
         }
 
-        public bool isInSchool()
+        public bool IsInSchool()
         {
-            int currentPhase = player.getEducationPath().getPhase().getCurrentPhase();
+            int currentPhase = player.GetEducationPath().GetPhase().GetCurrentPhase();
             if (currentPhase == 0)
             {
                 return false;
             }
-            if (player.getEducationPath().getPath() == Data.Path.Training)
+            if (player.GetEducationPath().GetPath() == Data.Path.Training)
             {
                 if (currentPhase % 2 == 0)
                 {
                     return true;
                 }
             }
-            else if (player.getEducationPath().getPath() == Data.Path.DualStudy)
+            else if (player.GetEducationPath().GetPath() == Data.Path.DualStudy)
             {
                 if (currentPhase % 2 != 0)
                 {
                     return true;
                 }
             }
-            else if (player.getEducationPath().getPath() == Data.Path.Study) // seperatly in case of changes in the future
+            else if (player.GetEducationPath().GetPath() == Data.Path.Study) // seperatly in case of changes in the future
             {
                 if (currentPhase % 2 != 0)
                 {
@@ -361,21 +361,21 @@ namespace Spiel_Des_Lebens
             return false;
         }
 
-        public int getPlayerAge()
+        public int GetPlayerAge()
         {
-            return player.getAge();
+            return player.GetAge();
         }
-        public string getPlayerName()
+        public string GetPlayerName()
         {
-            return player.getName();
+            return player.GetName();
         }
-        public string getPlayerCareer()
+        public string RetPlayerCareer()
         {
-            return player.getEducationPath().getProfessionName();
+            return player.GetEducationPath().GetProfessionName();
         }
-        public int getAvatar()
+        public int GetAvatar()
         {
-            return player.getAvatar();
+            return player.GetAvatar();
         }
     }
 }

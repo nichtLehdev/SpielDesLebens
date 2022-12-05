@@ -235,7 +235,7 @@
             this.button7.TabIndex = 13;
             this.button7.Text = "Weiter";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.continue_tutorial_4);
+            this.button7.Click += new System.EventHandler(this.ContinueTutorial4);
             // 
             // textBox5
             // 
@@ -323,7 +323,7 @@
             this.button8.TabIndex = 13;
             this.button8.Text = "Weiter";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.continue_tutorial_5);
+            this.button8.Click += new System.EventHandler(this.ContinueTutorial5);
             // 
             // textBox6
             // 
@@ -360,7 +360,7 @@
             this.button4.TabIndex = 13;
             this.button4.Text = "Weiter";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.continue_tutorial_3);
+            this.button4.Click += new System.EventHandler(this.ContinueTutorial3);
             // 
             // textBox2
             // 
@@ -434,7 +434,7 @@
             this.button9.TabIndex = 11;
             this.button9.Text = "Weiter";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.action_close);
+            this.button9.Click += new System.EventHandler(this.ActionClose);
             // 
             // action_title
             // 
@@ -489,7 +489,7 @@
             this.new_profession_path_combo_box.Size = new System.Drawing.Size(204, 21);
             this.new_profession_path_combo_box.TabIndex = 16;
             this.new_profession_path_combo_box.Visible = false;
-            this.new_profession_path_combo_box.TextChanged += new System.EventHandler(this.new_profession_path_comboBox_TextChanged);
+            this.new_profession_path_combo_box.TextChanged += new System.EventHandler(this.NewProfessionPathComboBoxTextChanged);
             // 
             // new_profession_path_lable
             // 
@@ -521,7 +521,7 @@
             this.new_profession_profession_combo_box.Size = new System.Drawing.Size(204, 21);
             this.new_profession_profession_combo_box.TabIndex = 13;
             this.new_profession_profession_combo_box.Visible = false;
-            this.new_profession_profession_combo_box.TextChanged += new System.EventHandler(this.new_profession_txt_change);
+            this.new_profession_profession_combo_box.TextChanged += new System.EventHandler(this.NewProfessionTxtChange);
             // 
             // new_profession_yes_btn
             // 
@@ -531,7 +531,7 @@
             this.new_profession_yes_btn.TabIndex = 12;
             this.new_profession_yes_btn.Text = "Ja";
             this.new_profession_yes_btn.UseVisualStyleBackColor = true;
-            this.new_profession_yes_btn.Click += new System.EventHandler(this.new_profession_yes_opt);
+            this.new_profession_yes_btn.Click += new System.EventHandler(this.NewProfessionYesOpt);
             // 
             // new_profession_no_btn
             // 
@@ -541,7 +541,7 @@
             this.new_profession_no_btn.TabIndex = 11;
             this.new_profession_no_btn.Text = "Nein";
             this.new_profession_no_btn.UseVisualStyleBackColor = true;
-            this.new_profession_no_btn.Click += new System.EventHandler(this.new_profession_no_btn_Click);
+            this.new_profession_no_btn.Click += new System.EventHandler(this.NewProfessionNoBtnClick);
             // 
             // new_profession_title
             // 
@@ -579,7 +579,7 @@
             this.close_opt_end_txt.Text = "Nächstes Event";
             this.close_opt_end_txt.UseVisualStyleBackColor = true;
             this.close_opt_end_txt.Visible = false;
-            this.close_opt_end_txt.Click += new System.EventHandler(this.close_opt_txt);
+            this.close_opt_end_txt.Click += new System.EventHandler(this.CloseOptTxt);
             // 
             // tutorial_ask_panel
             // 
@@ -602,7 +602,7 @@
             this.tutorial_ask_btn.TabIndex = 12;
             this.tutorial_ask_btn.Text = "Ja";
             this.tutorial_ask_btn.UseVisualStyleBackColor = true;
-            this.tutorial_ask_btn.Click += new System.EventHandler(this.start_tutorial);
+            this.tutorial_ask_btn.Click += new System.EventHandler(this.StartTutorial);
             // 
             // button2
             // 
@@ -612,7 +612,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Nein";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.end_tutorial);
+            this.button2.Click += new System.EventHandler(this.EndTutorial);
             // 
             // tutorial_ask_title
             // 
@@ -661,7 +661,7 @@
             this.game_over_btn.TabIndex = 10;
             this.game_over_btn.Text = "Zum Main Menu";
             this.game_over_btn.UseVisualStyleBackColor = true;
-            this.game_over_btn.Click += new System.EventHandler(this.game_over_btn_Click);
+            this.game_over_btn.Click += new System.EventHandler(this.GameOverBtnClick);
             // 
             // game_over_title
             // 
@@ -705,7 +705,7 @@
             this.info_close_button.Text = "Schließen";
             this.info_close_button.UseVisualStyleBackColor = true;
             this.info_close_button.Visible = false;
-            this.info_close_button.Click += new System.EventHandler(this.info_close);
+            this.info_close_button.Click += new System.EventHandler(this.InfoClose);
             // 
             // info_text
             // 
@@ -730,7 +730,7 @@
             this.option_4_btn.Text = "option_1_btn";
             this.option_4_btn.UseVisualStyleBackColor = false;
             this.option_4_btn.Visible = false;
-            this.option_4_btn.Click += new System.EventHandler(this.option_4_click);
+            this.option_4_btn.Click += new System.EventHandler(this.Option4Click);
             // 
             // option_3_btn
             // 
@@ -745,7 +745,7 @@
             this.option_3_btn.Text = "option_1_btn";
             this.option_3_btn.UseVisualStyleBackColor = false;
             this.option_3_btn.Visible = false;
-            this.option_3_btn.Click += new System.EventHandler(this.option_3_click);
+            this.option_3_btn.Click += new System.EventHandler(this.Option3Click);
             // 
             // option_2_btn
             // 
@@ -759,7 +759,7 @@
             this.option_2_btn.TabIndex = 6;
             this.option_2_btn.Text = "option_1_btn";
             this.option_2_btn.UseVisualStyleBackColor = false;
-            this.option_2_btn.Click += new System.EventHandler(this.option_2_click);
+            this.option_2_btn.Click += new System.EventHandler(this.Option2Click);
             // 
             // show_info_btn
             // 
@@ -774,7 +774,7 @@
             this.show_info_btn.Text = "Info";
             this.show_info_btn.UseVisualStyleBackColor = false;
             this.show_info_btn.Visible = false;
-            this.show_info_btn.Click += new System.EventHandler(this.show_info);
+            this.show_info_btn.Click += new System.EventHandler(this.ShowInfo);
             // 
             // event_txt_box
             // 
@@ -800,7 +800,7 @@
             this.option_1_btn.TabIndex = 0;
             this.option_1_btn.Text = "option_1_btn";
             this.option_1_btn.UseVisualStyleBackColor = false;
-            this.option_1_btn.Click += new System.EventHandler(this.option_1_click);
+            this.option_1_btn.Click += new System.EventHandler(this.Option1Click);
             // 
             // panel4
             // 
@@ -836,7 +836,7 @@
             this.button5.TabIndex = 13;
             this.button5.Text = "Weiter";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.continue_tutorial_6);
+            this.button5.Click += new System.EventHandler(this.ContinueTutorial6);
             // 
             // tutorial_txt_6
             // 
@@ -873,7 +873,7 @@
             this.button3.TabIndex = 13;
             this.button3.Text = "Weiter";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.continue_tutorial_1);
+            this.button3.Click += new System.EventHandler(this.ContinueTutorial1);
             // 
             // tutorial_txt_1
             // 
@@ -941,7 +941,7 @@
             this.next_phase_btn.TabIndex = 16;
             this.next_phase_btn.Text = "Nächste Phase";
             this.next_phase_btn.UseVisualStyleBackColor = true;
-            this.next_phase_btn.Click += new System.EventHandler(this.next_phase);
+            this.next_phase_btn.Click += new System.EventHandler(this.NextPhase);
             // 
             // money_prog_bar
             // 
@@ -975,7 +975,7 @@
             this.tutorial_btn_2.TabIndex = 13;
             this.tutorial_btn_2.Text = "Weiter";
             this.tutorial_btn_2.UseVisualStyleBackColor = true;
-            this.tutorial_btn_2.Click += new System.EventHandler(this.continue_tutorial_2);
+            this.tutorial_btn_2.Click += new System.EventHandler(this.ContinueTutorial2);
             // 
             // tutorial_txt_2
             // 
@@ -1129,7 +1129,7 @@
             this.back_to_menu_btn.TabIndex = 17;
             this.back_to_menu_btn.Text = "Zurück zum Hauptmenu";
             this.back_to_menu_btn.UseVisualStyleBackColor = false;
-            this.back_to_menu_btn.Click += new System.EventHandler(this.back_to_menu_btn_Click);
+            this.back_to_menu_btn.Click += new System.EventHandler(this.BackToMenuBtnClick);
             // 
             // save_btn
             // 
@@ -1140,7 +1140,7 @@
             this.save_btn.TabIndex = 16;
             this.save_btn.Text = "Speichern";
             this.save_btn.UseVisualStyleBackColor = false;
-            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
+            this.save_btn.Click += new System.EventHandler(this.SaveBtnClick);
             // 
             // action_3_btn
             // 
@@ -1158,9 +1158,9 @@
             this.action_3_btn.TabIndex = 15;
             this.action_3_btn.Text = "andere Aktion";
             this.action_3_btn.UseVisualStyleBackColor = false;
-            this.action_3_btn.Click += new System.EventHandler(this.action_3_click);
-            this.action_3_btn.MouseLeave += new System.EventHandler(this.close_hover_action);
-            this.action_3_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_3);
+            this.action_3_btn.Click += new System.EventHandler(this.Action3Click);
+            this.action_3_btn.MouseLeave += new System.EventHandler(this.CloseHoverAction);
+            this.action_3_btn.MouseHover += new System.EventHandler(this.HoverActionTxtShow3);
             // 
             // action_2_btn
             // 
@@ -1178,9 +1178,9 @@
             this.action_2_btn.TabIndex = 14;
             this.action_2_btn.Text = "Musik";
             this.action_2_btn.UseVisualStyleBackColor = false;
-            this.action_2_btn.Click += new System.EventHandler(this.action_2_click);
-            this.action_2_btn.MouseLeave += new System.EventHandler(this.close_hover_action);
-            this.action_2_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_2);
+            this.action_2_btn.Click += new System.EventHandler(this.Action2Click);
+            this.action_2_btn.MouseLeave += new System.EventHandler(this.CloseHoverAction);
+            this.action_2_btn.MouseHover += new System.EventHandler(this.HoverActionTxtShow2);
             // 
             // action_1_btn
             // 
@@ -1198,9 +1198,9 @@
             this.action_1_btn.TabIndex = 13;
             this.action_1_btn.Text = "Sport";
             this.action_1_btn.UseVisualStyleBackColor = false;
-            this.action_1_btn.Click += new System.EventHandler(this.action_1_click);
-            this.action_1_btn.MouseLeave += new System.EventHandler(this.close_hover_action);
-            this.action_1_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_1);
+            this.action_1_btn.Click += new System.EventHandler(this.Action1Click);
+            this.action_1_btn.MouseLeave += new System.EventHandler(this.CloseHoverAction);
+            this.action_1_btn.MouseHover += new System.EventHandler(this.HoverActionTxtShow1);
             // 
             // action_0_btn
             // 
@@ -1219,9 +1219,9 @@
             this.action_0_btn.TabIndex = 12;
             this.action_0_btn.Text = "Hausaufgaben";
             this.action_0_btn.UseVisualStyleBackColor = false;
-            this.action_0_btn.Click += new System.EventHandler(this.action_0_click);
-            this.action_0_btn.MouseLeave += new System.EventHandler(this.close_hover_action);
-            this.action_0_btn.MouseHover += new System.EventHandler(this.hover_action_txt_show_0);
+            this.action_0_btn.Click += new System.EventHandler(this.Action0Click);
+            this.action_0_btn.MouseLeave += new System.EventHandler(this.CloseHoverAction);
+            this.action_0_btn.MouseHover += new System.EventHandler(this.HoverActionTxtShow0);
             // 
             // userInfo
             // 
@@ -1288,7 +1288,7 @@
             this.avatar_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.avatar_pic.TabIndex = 5;
             this.avatar_pic.TabStop = false;
-            this.avatar_pic.Click += new System.EventHandler(this.new_profession_opt_open);
+            this.avatar_pic.Click += new System.EventHandler(this.NewProfessionOptOpen);
             // 
             // lblName
             // 

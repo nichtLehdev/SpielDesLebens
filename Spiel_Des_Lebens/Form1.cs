@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -11,19 +10,19 @@ namespace Spiel_Des_Lebens
         private String profession = null;
         private String training = null;
         private int slot;
-        private UiInterfaceMenu uiMenu = new UiInterfaceMenu();
-        private UiInterface ui_interface;
+        private readonly UiInterfaceMenu uiMenu = new UiInterfaceMenu();
+        private UiInterface uiInterface;
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void open_next(object sender, EventArgs e)
+        private void OpenNext(object sender, EventArgs e)
         {
 
-            if (validateInputs())
+            if (ValidateInputs())
             {
-                Form2 mainForm = createForm2();
+                Form2 mainForm = CreateForm2();
                 mainForm.TopLevel = false;
                 mainForm.FormBorderStyle = FormBorderStyle.None;
                 mainForm.Dock = DockStyle.Fill;
@@ -36,13 +35,13 @@ namespace Spiel_Des_Lebens
         }
 
 
-        public Form2 createForm2()
+        public Form2 CreateForm2()
         {
-            return new Form2(ui_interface);
+            return new Form2(uiInterface);
         }
 
 
-        private void no_border()
+        private void NoBorder()
         {
             avatarBox1.BorderStyle = BorderStyle.None;
             avatarBox2.BorderStyle = BorderStyle.None;
@@ -52,9 +51,9 @@ namespace Spiel_Des_Lebens
             avatarBox6.BorderStyle = BorderStyle.None;
         }
         private Image avatar;
-        private void changeAvatar(object sender, EventArgs e)
+        private void ChangeAvatar(object sender, EventArgs e)
         {
-            no_border();
+            NoBorder();
             if (sender == avatarBox1)
             {
                 avatarBox1.BorderStyle = BorderStyle.FixedSingle;
@@ -83,18 +82,18 @@ namespace Spiel_Des_Lebens
             avatar = img.Image;
         }
 
-        private void loadSaveGame(Object sender, EventArgs e)
+        private void LoadSaveGame(Object sender, EventArgs e)
         {
-            uiMenu.loadGame(slot);
-            ui_interface = uiMenu.createUiInterface();
-            Form2 t = createForm2();
+            uiMenu.LoadGame(slot);
+            uiInterface = uiMenu.CreateUiInterface();
+            Form2 t = CreateForm2();
             t.Show();
             this.Hide();
         }
 
 
         private string abschluss;
-        private void changePath(object sender, EventArgs e)
+        private void ChangePath(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             btnAbi.FlatStyle = FlatStyle.System;
@@ -118,7 +117,7 @@ namespace Spiel_Des_Lebens
             }
             else
             {
-                if(abschluss == "Fachhochschulreife")
+                if (abschluss == "Fachhochschulreife")
                 {
                     btnFachabi.FlatStyle = FlatStyle.Popup;
                 }
@@ -130,7 +129,7 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private void neues_Spiel_open(Object sender, EventArgs e)
+        private void NewGameOpen(Object sender, EventArgs e)
         {
             Button btn = sender as Button;
             if (sender == slot_btn_1)
@@ -159,13 +158,13 @@ namespace Spiel_Des_Lebens
             }
 
         }
-        private void open_main_menu(object sender, EventArgs e)
+        private void OpenMainMenu(object sender, EventArgs e)
         {
             panel1.Visible = true;
             Layout_neues_Spiel.Visible = false;
         }
 
-        private void txt_alter_KeyPress(object sender, KeyPressEventArgs e)
+        private void TxtOldKeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
@@ -189,23 +188,25 @@ namespace Spiel_Des_Lebens
             float[] relativePositions = { 0.0f, 0.2f, 1.0f };
 
             //Create a Blend object and assign it to linGrBrush.
-            Blend blend = new Blend();
-            blend.Factors = relativeIntensities;
-            blend.Positions = relativePositions;
+            Blend blend = new Blend
+            {
+                Factors = relativeIntensities,
+                Positions = relativePositions
+            };
             linGrBrush.Blend = blend;
 
             e.Graphics.FillEllipse(linGrBrush, 0, 30, 200, 100);
             e.Graphics.FillRectangle(linGrBrush, 0, 155, 500, 30);
         }
-        private void accept_fict_btn_Click(object sender, EventArgs e)
+        private void AcceptFictBtnClick(object sender, EventArgs e)
         {
             fiction_panel.Visible = false;
-            load_saves();
+            LoadSaves();
 
         }
-        private void load_saves()
+        private void LoadSaves()
         {
-            if (this.uiMenu.hasValidData(1))
+            if (this.uiMenu.HasValidData(1))
             {
                 slot_btn_1.Text = "Spielstand 1";
             }
@@ -214,7 +215,7 @@ namespace Spiel_Des_Lebens
                 slot_btn_1.Text = "Neues Spiel";
             }
 
-            if (this.uiMenu.hasValidData(2))
+            if (this.uiMenu.HasValidData(2))
             {
                 slot_btn_2.Text = "Spielstand 2";
             }
@@ -223,7 +224,7 @@ namespace Spiel_Des_Lebens
                 slot_btn_2.Text = "Neues Spiel";
             }
 
-            if (this.uiMenu.hasValidData(3))
+            if (this.uiMenu.HasValidData(3))
             {
                 slot_btn_3.Text = "Spielstand 3";
             }
@@ -236,7 +237,7 @@ namespace Spiel_Des_Lebens
 
 
 
-        private void education_path_TextChanged(object sender, EventArgs e)
+        private void EducationPathTextChanged(object sender, EventArgs e)
         {
             dropDown_path.Text = null;
             dropDown_path.Items.Clear();
@@ -258,7 +259,7 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private void profession_path_TextChanged(object sender, EventArgs e)
+        private void ProfessionPathTextChanged(object sender, EventArgs e)
         {
             if (dropDown_profession.Text == "Ausbildung")
             {
@@ -331,7 +332,7 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        private Boolean validateInputs()
+        private Boolean ValidateInputs()
         {
 
             if (string.IsNullOrEmpty(txt_name.Text))
@@ -361,7 +362,7 @@ namespace Spiel_Des_Lebens
                 lbl_userInfo.Text = "!!! Wähle einen Karriereweg !!!";
                 return false;
             }
-            else if(avatar == null)
+            else if (avatar == null)
             {
                 lbl_userInfo.Text = "!!! Wähle einen Avatar !!!";
                 return false;
@@ -369,11 +370,11 @@ namespace Spiel_Des_Lebens
             return true;
         }
 
-        private void button_mini_2_Click(object sender, EventArgs e)
+        private void ButtonMini2Click(object sender, EventArgs e)
         {
-            uiMenu.deleteSaveGame(slot);
+            uiMenu.DeleteSaveGame(slot);
             panel2.Visible = false;
-            load_saves();
+            LoadSaves();
         }
     }
 }

@@ -2,10 +2,10 @@ namespace Spiel_Des_Lebens
 {
     internal class StatParameter
     {
-        private Data.StatType name;
+        private readonly Data.StatType name;
         private int value;
-        private bool toBeClampedBottom;
-        private bool toBeClampedTop;
+        private readonly bool toBeClampedBottom;
+        private readonly bool toBeClampedTop;
 
         public StatParameter(Data.StatType name, int value, bool clampBottom, bool clampTop)
         {
@@ -16,7 +16,7 @@ namespace Spiel_Des_Lebens
         }
 
 
-        public void clampBottom()
+        public void ClampBottom()
         {
             if (toBeClampedBottom)
             {
@@ -24,7 +24,7 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        public void clampTop()
+        public void ClampTop()
         {
             if (toBeClampedTop)
             {
@@ -32,7 +32,7 @@ namespace Spiel_Des_Lebens
             }
         }
 
-        public bool isGreater(StatParameter statParamenter)
+        public bool IsGreater(StatParameter statParamenter)
         {
             if (this.value == -1)
             {
@@ -45,7 +45,7 @@ namespace Spiel_Des_Lebens
             return false;
         }
 
-        public bool isSmaller(StatParameter statParamenter)
+        public bool IsSmaller(StatParameter statParamenter)
         {
             if (this.value <= statParamenter.value)
             {
@@ -57,17 +57,17 @@ namespace Spiel_Des_Lebens
 
 
 
-        public Data.StatType getName()
+        public Data.StatType GetName()
         {
             return name;
         }
 
-        public int getValue()
+        public int GetValue()
         {
             return value;
         }
 
-        public void setValue(int value)
+        public void SetValue(int value)
         {
             this.value = value;
         }

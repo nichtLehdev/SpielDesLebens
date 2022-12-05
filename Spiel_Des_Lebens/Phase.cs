@@ -4,14 +4,14 @@
     {
         private int actionPoints;
         private int currentPhase;
-        private int maxActionPoints;
+        private readonly int maxActionPoints;
         public Phase(int length)
         {
             actionPoints = length * 7;
             maxActionPoints = actionPoints;
         }
 
-        public int getMaxActionPoints()
+        public int GetMaxActionPoints()
         {
             return maxActionPoints;
         }
@@ -23,28 +23,28 @@
             maxActionPoints = actionPoints;
         }
 
-        public int getActionPoints()
+        public int GetActionPoints()
         {
             return actionPoints;
         }
 
-        public void subtractPoints(int points)
+        public void SubtractPoints(int points)
         {
             actionPoints -= points;
         }
 
-        public void nextPhase()
+        public void NextPhase()
         {
             currentPhase++;
             actionPoints = maxActionPoints;
         }
 
-        public int getCurrentPhase()
+        public int GetCurrentPhase()
         {
             return currentPhase;
         }
 
-        public int getMaxPhaseNumber()
+        public int GetMaxPhaseNumber()
         {
             return (int)((3 * 12) / (maxActionPoints / 7));
         }
