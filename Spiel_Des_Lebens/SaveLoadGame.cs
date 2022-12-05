@@ -157,10 +157,10 @@ namespace Spiel_Des_Lebens
                 data += "\"success\":" + e.requirements.reqStatMin.getStats()[3].getValue();
                 data += "},";
                 data += "\"stats_max\": {";
-                data += "\"mentalHealth\":" + e.requirements.reqStatMin.getStats()[0].getValue() + ",";
-                data += "\"money\":" + e.requirements.reqStatMin.getStats()[1].getValue() + ",";
-                data += "\"motivation\":" + e.requirements.reqStatMin.getStats()[2].getValue() + ",";
-                data += "\"success\":" + e.requirements.reqStatMin.getStats()[3].getValue();
+                data += "\"mentalHealth\":" + e.requirements.reqStatMax.getStats()[0].getValue() + ",";
+                data += "\"money\":" + e.requirements.reqStatMax.getStats()[1].getValue() + ",";
+                data += "\"motivation\":" + e.requirements.reqStatMax.getStats()[2].getValue() + ",";
+                data += "\"success\":" + e.requirements.reqStatMax.getStats()[3].getValue();
                 data += "}},";
                 data += "\"options\":[";
                 foreach (Option o in e.options)
