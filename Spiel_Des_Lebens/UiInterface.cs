@@ -89,7 +89,7 @@ namespace Spiel_Des_Lebens
             int highStat = 0;
             if (action >= currentActions.Count)
             {
-                return highStat;
+                // there in case no valid action is selected
             }
             else
             {
@@ -102,7 +102,16 @@ namespace Spiel_Des_Lebens
                         highStat = i;
                     }
                 }
+
+                // test if no stat ist positive for criminal actions to display a custom / diffreent icon
+                if (optionStat.getStats()[highStat].getValue() <= 0)
+                {
+                    highStat = -1;
+                }
+
             }
+
+
             return highStat;
         }
 
