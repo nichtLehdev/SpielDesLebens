@@ -14,7 +14,6 @@ namespace Spiel_Des_Lebens
         private Boolean new_game = false;
         private Data.Profession profession;
         private Data.Path training;
-        private string job;
         private string refrence_training;
         private string refrence_profession;
         private Data.Graduation graduation;
@@ -27,9 +26,10 @@ namespace Spiel_Des_Lebens
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            lblPlayerAge.Text = Convert.ToString(this.alter);
-            lblPlayerName.Text = this.name;
-            lblPlayerPath.Text = this.job;
+            lblPlayerAge.Text = Convert.ToString(ui_interface.getPlayerAge());
+            lblPlayerName.Text = ui_interface.getPlayerName();
+            lblPlayerPath.Text = ui_interface.getPlayerCareer();
+            setAvatar();
             btnLoadEvent_Click();
             update_aktionpoints();
             if (new_game == true)
@@ -39,7 +39,19 @@ namespace Spiel_Des_Lebens
             }
             get_new_actions();
         }
-
+        private void setAvatar()
+        {
+            switch (ui_interface.getAvatar())
+            {
+                case 0: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_boy_0; break;
+                case 1: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_boy_1; break;
+                case 2: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_boy_2; break;
+                case 3: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_girl_0; break;
+                case 4: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_girl_1; break;
+                case 5: avatar_pic.Image = Spiel_Des_Lebens.Properties.Resources.avatare_girl_2; break;
+                default: throw new Error("There has to be an avatar");
+            }
+        }
         public void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)

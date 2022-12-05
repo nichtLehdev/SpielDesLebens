@@ -356,5 +356,17 @@ namespace Spiel_Des_Lebens
         {
             return player.getAge();
         }
+        public string getPlayerName()
+        {
+            return player.getName();
+        }
+        public string getPlayerCareer()
+        {
+            return player.getEducationPath().getProfessionName();
+        }
+        public int getAvatar()
+        {
+            return player.getAvatar();
+        }
     }
 }
