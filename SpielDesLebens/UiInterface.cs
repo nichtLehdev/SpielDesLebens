@@ -178,10 +178,6 @@ namespace SpielDesLebens
             return player.GetEducationPath().GetPhase().GetCurrentPhase();
         }
 
-        public int GetMaxPhaseLength()
-        {
-            return player.GetEducationPath().GetPhaseLength();
-        }
 
         public int GetMaxPhaseNumber()
         {
