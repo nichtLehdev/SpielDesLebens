@@ -12,6 +12,7 @@ namespace SpielDesLebens
         private int profession;
         private int path;
         private int graduation;
+        private int avatar;
         private int slot;
         private readonly UiInterfaceMenu uiMenu = new UiInterfaceMenu();
         private UiInterface uiInterface;
@@ -59,7 +60,6 @@ namespace SpielDesLebens
             avatarBox5.BackColor = Color.Transparent;
             avatarBox6.BackColor = Color.Transparent;
         }
-        private Image avatar;
         private void ChangeAvatar(object sender, EventArgs e)
         {
             NoBorder();
@@ -67,34 +67,38 @@ namespace SpielDesLebens
             {
                 avatarBox1.BorderStyle = BorderStyle.FixedSingle;
                 avatarBox1.BackColor = Color.RosyBrown;
+                avatar = 0;
             }
             else if (sender == avatarBox2)
             {
                 avatarBox2.BorderStyle = BorderStyle.FixedSingle;
                 avatarBox2.BackColor = Color.RosyBrown;
+                avatar = 1;
             }
             else if (sender == avatarBox3)
             {
                 avatarBox3.BorderStyle = BorderStyle.FixedSingle;
-                avatarBox3.BackColor = Color.RosyBrown;
+                avatarBox3.BackColor = Color.RosyBrown; 
+                avatar = 2;
             }
             else if (sender == avatarBox4)
             {
                 avatarBox4.BorderStyle = BorderStyle.FixedSingle;
                 avatarBox4.BackColor = Color.RosyBrown;
+                avatar = 3;
             }
             else if (sender == avatarBox5)
             {
                 avatarBox5.BorderStyle = BorderStyle.FixedSingle;
                 avatarBox5.BackColor = Color.RosyBrown;
+                avatar = 4;
             }
             else if (sender == avatarBox6)
             {
                 avatarBox6.BackColor = Color.RosyBrown;
                 avatarBox6.BorderStyle = BorderStyle.FixedSingle;
+                avatar = 5;
             }
-            PictureBox img = (PictureBox)sender;
-            avatar = img.Image;
         }
 
         private void LoadSaveGame(Object sender, EventArgs e)
@@ -385,7 +389,7 @@ namespace SpielDesLebens
                 lblUserInfo.Text = "!!! Wähle einen Avatar !!!";
                 return false;
             }
-            uiMenu.CreatePlayer(1, Convert.ToInt16(txtAge.Text), txtName.Text, (Data.Path)path, (Data.Profession)profession, (Data.Graduation)graduation);
+            uiMenu.CreatePlayer(avatar, Convert.ToInt16(txtAge.Text), txtName.Text, (Data.Path)path, (Data.Profession)profession, (Data.Graduation)graduation);
             uiInterface = uiMenu.CreateUiInterface();
             return true;
         }
