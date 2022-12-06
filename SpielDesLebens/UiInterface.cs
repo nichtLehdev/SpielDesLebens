@@ -24,12 +24,12 @@ namespace SpielDesLebens
         }
         public void NextEvent()
         {
-            currentEvent = player.eventgenerator.NextEvent(player.GetPlayerStat());
+            currentEvent = player.Eventgenerator.NextEvent(player.GetPlayerStat());
         }
 
         private void NextAction()
         {
-            currentActions = player.actiongenerator.GetActions();
+            currentActions = player.Actiongenerator.GetActions();
         }
 
         #region getActionString        
@@ -368,7 +368,7 @@ namespace SpielDesLebens
         {
             return player.GetName();
         }
-        public string RetPlayerCareer()
+        public string GetPlayerProfessionName()
         {
             return player.GetEducationPath().GetProfessionName();
         }

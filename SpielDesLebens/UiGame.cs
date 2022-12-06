@@ -28,7 +28,7 @@ namespace SpielDesLebens
         {
             lblPlayerAge.Text = Convert.ToString(uiInterface.GetPlayerAge());
             lblPlayerName.Text = uiInterface.GetPlayerName();
-            lblPlayerPath.Text = uiInterface.RetPlayerCareer();
+            lblPlayerPath.Text = uiInterface.GetPlayerProfessionName();
             avatarPic.Image = SetAvatar();
             BtnLoadEventClick();
             UpdateActionpoints();

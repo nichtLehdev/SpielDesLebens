@@ -7,8 +7,8 @@ namespace SpielDesLebens
         private readonly string name;
         private readonly Data.Graduation graduation;
         private Stat playerStat;
-        public Eventgenerator eventgenerator;
-        public ActionGenerator actiongenerator;
+        public Eventgenerator Eventgenerator;
+        public ActionGenerator Actiongenerator;
         private EducationPath eduPath;
 
         public Player(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
@@ -27,7 +27,7 @@ namespace SpielDesLebens
             this.age = age;
             this.name = name;
             this.playerStat = playerStat;
-            this.eventgenerator = eventGen;
+            this.Eventgenerator = eventGen;
             CreateActionGenerator();
             this.eduPath = eduPath;
         }
@@ -48,12 +48,12 @@ namespace SpielDesLebens
 
         private void CreateEventgenerator(EducationPath eduPath)
         {
-            eventgenerator = new Eventgenerator(eduPath);
+            Eventgenerator = new Eventgenerator(eduPath);
         }
 
         private void CreateActionGenerator()
         {
-            actiongenerator = new ActionGenerator();
+            Actiongenerator = new ActionGenerator();
         }
 
         #endregion
@@ -62,7 +62,7 @@ namespace SpielDesLebens
             eduPath.GetPhase().NextPhase();
             IncreaseAge();
             //edit stats depending on Path
-            ChangePlayerStat(Data.statarray[(int)eduPath.GetPath()]);
+            ChangePlayerStat(Data.StatArray[(int)eduPath.GetPath()]);
 
         }
 
@@ -114,7 +114,7 @@ namespace SpielDesLebens
         {
             if (eduPath.GetPhase().GetCurrentPhase() != 0)
             {
-                if ((eduPath.GetPhase().GetCurrentPhase() * Data.phaseL[(int)eduPath.GetPath()]) % 12 == 0)
+                if ((eduPath.GetPhase().GetCurrentPhase() * Data.PhaseL[(int)eduPath.GetPath()]) % 12 == 0)
                 {
                     age++;
                 }

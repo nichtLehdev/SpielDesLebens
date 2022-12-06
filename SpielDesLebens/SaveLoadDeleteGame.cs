@@ -111,7 +111,7 @@ namespace SpielDesLebens
             data += "\"success\":" + player.GetPlayerStat().GetStats()[3].GetValue();
             data += "},";
             data += "\"eventGenList\": [";
-            foreach (Event e in player.eventgenerator.GetFilteredEventsPathProf())
+            foreach (Event e in player.Eventgenerator.GetFilteredEventsPathProf())
             {
                 data += "{";
                 data += "\"id\":\"" + e.Id + "\",";
@@ -121,7 +121,7 @@ namespace SpielDesLebens
                 data += "\"priority\":" + e.Priority + ",";
                 data += "\"requirements\":{";
                 data += "\"timings\":[";
-                foreach (Timing t in e.Requirements.timings)
+                foreach (Timing t in e.Requirements.Timings)
                 {
                     data += "{\"path\":[";
                     foreach (int p in t.Path)
@@ -150,23 +150,23 @@ namespace SpielDesLebens
                 data = data.Remove(data.Length - 1);
                 data += "],";
                 data += "\"statsMin\": {";
-                data += "\"mentalHealth\":" + e.Requirements.reqStatMin.GetStats()[0].GetValue() + ",";
-                data += "\"money\":" + e.Requirements.reqStatMin.GetStats()[1].GetValue() + ",";
-                data += "\"motivation\":" + e.Requirements.reqStatMin.GetStats()[2].GetValue() + ",";
-                data += "\"success\":" + e.Requirements.reqStatMin.GetStats()[3].GetValue();
+                data += "\"mentalHealth\":" + e.Requirements.ReqStatMin.GetStats()[0].GetValue() + ",";
+                data += "\"money\":" + e.Requirements.ReqStatMin.GetStats()[1].GetValue() + ",";
+                data += "\"motivation\":" + e.Requirements.ReqStatMin.GetStats()[2].GetValue() + ",";
+                data += "\"success\":" + e.Requirements.ReqStatMin.GetStats()[3].GetValue();
                 data += "},";
                 data += "\"statsMax\": {";
-                data += "\"mentalHealth\":" + e.Requirements.reqStatMax.GetStats()[0].GetValue() + ",";
-                data += "\"money\":" + e.Requirements.reqStatMax.GetStats()[1].GetValue() + ",";
-                data += "\"motivation\":" + e.Requirements.reqStatMax.GetStats()[2].GetValue() + ",";
-                data += "\"success\":" + e.Requirements.reqStatMax.GetStats()[3].GetValue();
+                data += "\"mentalHealth\":" + e.Requirements.ReqStatMax.GetStats()[0].GetValue() + ",";
+                data += "\"money\":" + e.Requirements.ReqStatMax.GetStats()[1].GetValue() + ",";
+                data += "\"motivation\":" + e.Requirements.ReqStatMax.GetStats()[2].GetValue() + ",";
+                data += "\"success\":" + e.Requirements.ReqStatMax.GetStats()[3].GetValue();
                 data += "}},";
                 data += "\"options\":[";
                 foreach (Option o in e.Options)
                 {
-                    data += "{\"id\":\"" + o.id + "\",";
-                    data += "\"title\":\"" + o.title + "\",";
-                    data += "\"text\":\"" + o.text + "\",";
+                    data += "{\"id\":\"" + o.Id + "\",";
+                    data += "\"title\":\"" + o.Title + "\",";
+                    data += "\"text\":\"" + o.Text + "\",";
                     data += "\"stats\":{";
                     data += "\"mentalHealth\":" + o.GetStats().GetStats()[0].GetValue() + ",";
                     data += "\"money\":" + o.GetStats().GetStats()[1].GetValue() + ",";

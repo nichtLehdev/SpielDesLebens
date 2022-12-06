@@ -96,8 +96,7 @@ namespace SpielDesLebens
         }
 
         #region load career events
-        // public temp. for testing
-        public List<Event> LoadEvents()
+        private List<Event> LoadEvents()
         {
             // saves all events from JSON to events in list saves all loadEvents as events
             string filename = "..//..//..//data//events.json";
@@ -121,7 +120,7 @@ namespace SpielDesLebens
         {
             foreach (Event e in events)
             {
-                foreach (Timing t in e.Requirements.timings)
+                foreach (Timing t in e.Requirements.Timings)
                 {
                     if (t.Path.Contains((int)edupath.GetPath()) && t.Profession.Contains((int)edupath.GetProfession()))
                     {
@@ -140,7 +139,7 @@ namespace SpielDesLebens
             //filters out all Events, which are valid for the current Phase and puts these in filteredList
             foreach (Event e in FilteredEventsPathProfession)
             {
-                foreach (Timing t in e.Requirements.timings)
+                foreach (Timing t in e.Requirements.Timings)
                 {
                     if (t.Phase.Contains(edupath.GetPhase().GetCurrentPhase()) && t.Path.Contains((int)edupath.GetPath()) && t.Profession.Contains((int)edupath.GetProfession()))
                     {
@@ -156,8 +155,8 @@ namespace SpielDesLebens
             List<Event> fEvents = new List<Event>();
             foreach (Event e in FilteredEventsPhase)
             {
-                if (e.Requirements.reqStatMin.IsSmaller(playerStats)
-                    && e.Requirements.reqStatMax.IsGreater(playerStats))
+                if (e.Requirements.ReqStatMin.IsSmaller(playerStats)
+                    && e.Requirements.ReqStatMax.IsGreater(playerStats))
                 {
                     fEvents.Add(e);
                 }

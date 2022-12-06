@@ -11,7 +11,7 @@
         {
             SetPath(path);
             SetProfession(profession);
-            phaseLength = Data.phaseL[(int)path];
+            phaseLength = Data.PhaseL[(int)path];
             phase = new Phase(phaseLength);
         }
 
@@ -19,7 +19,7 @@
         {
             SetPath(path);
             SetProfession(profession);
-            phaseLength = Data.phaseL[(int)path];
+            phaseLength = Data.PhaseL[(int)path];
             phase = new Phase(phaseLength, currentPhase);
         }
 
@@ -35,7 +35,7 @@
 
         public string GetProfessionName()
         {
-            return Data.career[(int)path, (int)profession];
+            return Data.Career[(int)path, (int)profession];
         }
 
         public Data.Profession GetProfession()

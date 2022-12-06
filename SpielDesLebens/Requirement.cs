@@ -4,15 +4,15 @@ namespace SpielDesLebens
 {
     internal class Requirement
     {
-        public List<Timing> timings;
-        public Stat reqStatMin;
-        public Stat reqStatMax;
+        public List<Timing> Timings;
+        public Stat ReqStatMin;
+        public Stat ReqStatMax;
 
         public Requirement(List<Timing> timings, Stat minStats, Stat maxStats)
         {
-            this.timings = timings;
-            reqStatMin = minStats;
-            reqStatMax = maxStats;
+            this.Timings = timings;
+            ReqStatMin = minStats;
+            ReqStatMax = maxStats;
         }
     }
 }

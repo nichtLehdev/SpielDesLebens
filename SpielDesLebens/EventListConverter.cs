@@ -342,7 +342,7 @@ namespace SpielDesLebens
             int greatestCount = 0;
             foreach (int path in paths)
             {
-                int count = (int)((3 * 12) / Data.phaseL[path]);
+                int count = (int)((3 * 12) / Data.PhaseL[path]);
                 if (count > greatestCount) greatestCount = count;
             }
             return greatestCount;

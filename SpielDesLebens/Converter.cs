@@ -14,7 +14,7 @@ namespace SpielDesLebens
 
         private static EducationPath ConvertloadEduPathToEduPath(LoadEducationPath lEduPath)
         {
-            return new EducationPath((Data.Path)lEduPath.Path, (Data.Profession)lEduPath.Profession, lEduPath.Phase);
+            return new EducationPath((Data.Path)lEduPath.path, (Data.Profession)lEduPath.profession, lEduPath.phase);
         }
 
         public static Option ConvertLoadOptionToOption(LoadOption lOption)
