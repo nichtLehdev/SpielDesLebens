@@ -52,6 +52,12 @@ namespace SpielDesLebens
             avatarBox4.BorderStyle = BorderStyle.None;
             avatarBox5.BorderStyle = BorderStyle.None;
             avatarBox6.BorderStyle = BorderStyle.None;
+            avatarBox1.BackColor = Color.Transparent;
+            avatarBox2.BackColor = Color.Transparent;
+            avatarBox3.BackColor = Color.Transparent;
+            avatarBox4.BackColor = Color.Transparent;
+            avatarBox5.BackColor = Color.Transparent;
+            avatarBox6.BackColor = Color.Transparent;
         }
         private Image avatar;
         private void ChangeAvatar(object sender, EventArgs e)
@@ -60,25 +66,31 @@ namespace SpielDesLebens
             if (sender == avatarBox1)
             {
                 avatarBox1.BorderStyle = BorderStyle.FixedSingle;
+                avatarBox1.BackColor = Color.RosyBrown;
             }
             else if (sender == avatarBox2)
             {
                 avatarBox2.BorderStyle = BorderStyle.FixedSingle;
+                avatarBox2.BackColor = Color.RosyBrown;
             }
             else if (sender == avatarBox3)
             {
                 avatarBox3.BorderStyle = BorderStyle.FixedSingle;
+                avatarBox3.BackColor = Color.RosyBrown;
             }
             else if (sender == avatarBox4)
             {
                 avatarBox4.BorderStyle = BorderStyle.FixedSingle;
+                avatarBox4.BackColor = Color.RosyBrown;
             }
             else if (sender == avatarBox5)
             {
                 avatarBox5.BorderStyle = BorderStyle.FixedSingle;
+                avatarBox5.BackColor = Color.RosyBrown;
             }
             else if (sender == avatarBox6)
             {
+                avatarBox6.BackColor = Color.RosyBrown;
                 avatarBox6.BorderStyle = BorderStyle.FixedSingle;
             }
             PictureBox img = (PictureBox)sender;
