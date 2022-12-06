@@ -315,6 +315,10 @@ namespace SpielDesLebens
             if (uiInterface.GetGameEnd() != "")
             {
                 gameOverPanel.Visible = true;
+                nextPhaseBtn.Enabled = false;
+                saveBtn.Enabled = false;
+                backToMenuBtn.Enabled = false;
+                tutorialBtn2.Enabled = false;
                 AllOptionsDisable();
                 gameOverTxt.Text = uiInterface.GetGameEnd();
             }
