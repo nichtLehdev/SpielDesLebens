@@ -278,6 +278,7 @@ namespace SpielDesLebens
                 tutorialBtn2.Text = "Schließen";
             }
             GameOverCheck();
+            GetNewActions();
         }
         private void GetNewActions()
         {
@@ -576,7 +577,6 @@ namespace SpielDesLebens
         {
             uiInterface.NextPhase();
             BtnLoadEventClick();
-            GetNewActions();
         }
 
         private void SaveBtnClick(object sender, EventArgs e)
