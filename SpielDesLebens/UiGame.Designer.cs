@@ -31,6 +31,9 @@ namespace SpielDesLebens
       private void InitializeComponent()
       {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UiGame));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.panelActiveChild = new System.Windows.Forms.Panel();
             this.infoActionPanel0 = new System.Windows.Forms.Panel();
             this.infoActionTxt0 = new System.Windows.Forms.TextBox();
@@ -1067,7 +1070,7 @@ namespace SpielDesLebens
             this.actionPointsTxt.AutoSize = true;
             this.actionPointsTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.267326F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionPointsTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.actionPointsTxt.Location = new System.Drawing.Point(48, 190);
+            this.actionPointsTxt.Location = new System.Drawing.Point(40, 190);
             this.actionPointsTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actionPointsTxt.Name = "actionPointsTxt";
             this.actionPointsTxt.Size = new System.Drawing.Size(219, 20);
@@ -1079,7 +1082,7 @@ namespace SpielDesLebens
             this.leftPhaseTxt.AutoSize = true;
             this.leftPhaseTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.leftPhaseTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.leftPhaseTxt.Location = new System.Drawing.Point(24, 138);
+            this.leftPhaseTxt.Location = new System.Drawing.Point(40, 138);
             this.leftPhaseTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.leftPhaseTxt.Name = "leftPhaseTxt";
             this.leftPhaseTxt.Size = new System.Drawing.Size(266, 20);
@@ -1091,7 +1094,7 @@ namespace SpielDesLebens
             this.currentPhaseTxt.AutoSize = true;
             this.currentPhaseTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentPhaseTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.currentPhaseTxt.Location = new System.Drawing.Point(37, 86);
+            this.currentPhaseTxt.Location = new System.Drawing.Point(40, 86);
             this.currentPhaseTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.currentPhaseTxt.Name = "currentPhaseTxt";
             this.currentPhaseTxt.Size = new System.Drawing.Size(247, 20);

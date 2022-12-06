@@ -248,7 +248,7 @@ namespace SpielDesLebens
             lblPlayerAge.Text = Convert.ToString(uiInterface.GetPlayerAge());
             currentPhaseTxt.Text = "Derzeitige Phase: " + curPhase;
             actionPointsTxt.Text = "Benutzte Aktionspunkte:" + (uiInterface.GetMaxActionPoints() - actionPoints);
-            leftPhaseTxt.Text = "Verbleibene Länge der Phase: " + actionPoints;
+            leftPhaseTxt.Text = "Verbleibene Aktionspunkte: " + actionPoints;
             progressProgBar.Value = (int) progBarValue;
             moneyProgBar.Text = uiInterface.GetPlayerMoney().ToString() + "€";
             learnProgBar.Value = uiInterface.GetPlayerSuccess();
@@ -331,7 +331,7 @@ namespace SpielDesLebens
         private void ToMenu()
         {
             UiMenu t = new UiMenu();
-            t.Show();
+            t.BringToFront();
             Hide();
         }
         private void EndTutorial(object sender, EventArgs e)

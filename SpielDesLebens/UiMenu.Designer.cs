@@ -31,6 +31,9 @@ namespace SpielDesLebens
       /// </summary>
       private void InitializeComponent()
       {
+         this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+         this.MaximizeBox = false;
+         this.MinimizeBox = false;
          this.components = new System.ComponentModel.Container();
          this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
          this.fictionTxtBox = new System.Windows.Forms.RichTextBox();
