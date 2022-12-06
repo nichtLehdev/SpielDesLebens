@@ -1333,7 +1333,7 @@ namespace SpielDesLebens
             this.btnAktion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAktion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAktion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAktion.Location = new System.Drawing.Point(3, 198);
+            this.btnAktion.Location = new System.Drawing.Point(0, 198);
             this.btnAktion.Name = "btnAktion";
             this.btnAktion.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnAktion.Size = new System.Drawing.Size(240, 60);
