@@ -111,20 +111,20 @@ namespace SpielDesLebens
             data += "\"success\":" + player.GetPlayerStat().GetStats()[3].GetValue();
             data += "},";
             data += "\"eventGenList\": [";
-            foreach (Event e in player.Eventgenerator.GetFilteredEventsPathProf())
+            foreach (Event e in player.GetEventgenerator().GetFilteredEventsPathProf())
             {
                 data += "{";
-                data += "\"id\":\"" + e.Id + "\",";
-                data += "\"title\":\"" + e.Title + "\",";
-                data += "\"text\":\"" + e.Text + "\",";
-                data += "\"info\":\"" + e.Info + "\",";
-                data += "\"priority\":" + e.Priority + ",";
+                data += "\"id\":\"" + e.GetId() + "\",";
+                data += "\"title\":\"" + e.GetTitle() + "\",";
+                data += "\"text\":\"" + e.GetText() + "\",";
+                data += "\"info\":\"" + e.GetInfo() + "\",";
+                data += "\"priority\":" + e.GetPriority() + ",";
                 data += "\"requirements\":{";
                 data += "\"timings\":[";
-                foreach (Timing t in e.Requirements.Timings)
+                foreach (Timing t in e.GetRequirements().GetTimings())
                 {
                     data += "{\"path\":[";
-                    foreach (int p in t.Path)
+                    foreach (int p in t.GetPath())
                     {
                         data += "\"" + p + "\",";
                     }
@@ -132,7 +132,7 @@ namespace SpielDesLebens
                     data += "],";
 
                     data += "\"profession\":[";
-                    foreach (int p in t.Profession)
+                    foreach (int p in t.GetProfession())
                     {
                         data += "\"" + p + "\",";
                     }
@@ -140,7 +140,7 @@ namespace SpielDesLebens
                     data += "],";
 
                     data += "\"phase\":[";
-                    foreach (int p in t.Phase)
+                    foreach (int p in t.GetPhase())
                     {
                         data += "\"" + p + "\",";
                     }
@@ -150,28 +150,28 @@ namespace SpielDesLebens
                 data = data.Remove(data.Length - 1);
                 data += "],";
                 data += "\"statsMin\": {";
-                data += "\"mentalHealth\":" + e.Requirements.ReqStatMin.GetStats()[0].GetValue() + ",";
-                data += "\"money\":" + e.Requirements.ReqStatMin.GetStats()[1].GetValue() + ",";
-                data += "\"motivation\":" + e.Requirements.ReqStatMin.GetStats()[2].GetValue() + ",";
-                data += "\"success\":" + e.Requirements.ReqStatMin.GetStats()[3].GetValue();
+                data += "\"mentalHealth\":" + e.GetRequirements().GetReqStatMin().GetStats()[0].GetValue() + ",";
+                data += "\"money\":" + e.GetRequirements().GetReqStatMin().GetStats()[1].GetValue() + ",";
+                data += "\"motivation\":" + e.GetRequirements().GetReqStatMin().GetStats()[2].GetValue() + ",";
+                data += "\"success\":" + e.GetRequirements().GetReqStatMin().GetStats()[3].GetValue();
                 data += "},";
                 data += "\"statsMax\": {";
-                data += "\"mentalHealth\":" + e.Requirements.ReqStatMax.GetStats()[0].GetValue() + ",";
-                data += "\"money\":" + e.Requirements.ReqStatMax.GetStats()[1].GetValue() + ",";
-                data += "\"motivation\":" + e.Requirements.ReqStatMax.GetStats()[2].GetValue() + ",";
-                data += "\"success\":" + e.Requirements.ReqStatMax.GetStats()[3].GetValue();
+                data += "\"mentalHealth\":" + e.GetRequirements().GetReqStatMax().GetStats()[0].GetValue() + ",";
+                data += "\"money\":" + e.GetRequirements().GetReqStatMax().GetStats()[1].GetValue() + ",";
+                data += "\"motivation\":" + e.GetRequirements().GetReqStatMax().GetStats()[2].GetValue() + ",";
+                data += "\"success\":" + e.GetRequirements().GetReqStatMax().GetStats()[3].GetValue();
                 data += "}},";
                 data += "\"options\":[";
-                foreach (Option o in e.Options)
+                foreach (Option o in e.GetOptions())
                 {
-                    data += "{\"id\":\"" + o.Id + "\",";
-                    data += "\"title\":\"" + o.Title + "\",";
-                    data += "\"text\":\"" + o.Text + "\",";
+                    data += "{\"id\":\"" + o.GetId() + "\",";
+                    data += "\"title\":\"" + o.GetTitle() + "\",";
+                    data += "\"text\":\"" + o.GetText() + "\",";
                     data += "\"stats\":{";
-                    data += "\"mentalHealth\":" + o.GetStats().GetStats()[0].GetValue() + ",";
-                    data += "\"money\":" + o.GetStats().GetStats()[1].GetValue() + ",";
-                    data += "\"motivation\":" + o.GetStats().GetStats()[2].GetValue() + ",";
-                    data += "\"success\":" + o.GetStats().GetStats()[3].GetValue();
+                    data += "\"mentalHealth\":" + o.GetOptionStat().GetStats()[0].GetValue() + ",";
+                    data += "\"money\":" + o.GetOptionStat().GetStats()[1].GetValue() + ",";
+                    data += "\"motivation\":" + o.GetOptionStat().GetStats()[2].GetValue() + ",";
+                    data += "\"success\":" + o.GetOptionStat().GetStats()[3].GetValue();
                     data += "}},";
                 }
                 data = data.Remove(data.Length - 1);

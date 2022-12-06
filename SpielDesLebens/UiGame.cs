@@ -8,7 +8,7 @@ namespace SpielDesLebens
     {
         private Form activeForm;
         private readonly UiInterface uiInterface;
-        private readonly Boolean newGame = false;
+        private readonly bool newGame = false;
 
         private Data.Path training;
         private Data.Profession profession;
@@ -16,7 +16,9 @@ namespace SpielDesLebens
         private readonly string abschluss;
         private string refrenceTraining;
         private string refrenceProfession;
+
         private readonly int slot;
+
 
         public UiGame(UiInterface uiInterface)
         {

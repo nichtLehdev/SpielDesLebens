@@ -10,8 +10,6 @@ namespace SpielDesLebens
         private List<int> possibleValues;
         private List<int> exeptedValues;
 
-        public EventListConverter() { }
-
         public List<Event> ConvertLoadEventToEvent(List<LoadEvent> eList)
         {
             List<Event> events = new List<Event>();

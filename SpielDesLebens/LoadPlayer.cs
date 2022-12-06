@@ -4,11 +4,11 @@ namespace SpielDesLebens
 {
     internal class LoadPlayer
     {
-        public string name;
-        public int age;
-        public int avatar;
-        public LoadStat stats;
-        public List<LoadEvent> eventGenList;
-        public LoadEducationPath eduPath;
+        public string name { get; set; }
+        public int age { get; set; }
+        public int avatar { get; set; }
+        public LoadStat stats { get; set; }
+        public List<LoadEvent> eventGenList { get; set; }
+        public LoadEducationPath eduPath { get; set; }
     }
 }

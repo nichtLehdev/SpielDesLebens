@@ -24,12 +24,12 @@ namespace SpielDesLebens
         }
         public void NextEvent()
         {
-            currentEvent = player.Eventgenerator.NextEvent(player.GetPlayerStat());
+            currentEvent = player.GetEventgenerator().NextEvent(player.GetPlayerStat());
         }
 
         private void NextAction()
         {
-            currentActions = player.Actiongenerator.GetActions();
+            currentActions = player.GetActionGenerator().GetActions();
         }
 
         #region getActionString        
@@ -78,7 +78,7 @@ namespace SpielDesLebens
             else
             {
                 SubtractActionPoints(1);
-                this.player.ChangePlayerStat(currentActions[action].GetResult().GetStats());
+                this.player.ChangePlayerStat(currentActions[action].GetResult().GetOptionStat());
                 return currentActions[action].GetResult().GetText();
             }
         }
@@ -92,7 +92,7 @@ namespace SpielDesLebens
             }
             else
             {
-                Stat optionStat = currentActions[action].GetResult().GetStats();
+                Stat optionStat = currentActions[action].GetResult().GetOptionStat();
 
                 for (int i = 0; i < optionStat.GetStats().Count; i++)
                 {
@@ -121,20 +121,20 @@ namespace SpielDesLebens
         #region getEventString
         public string GetEventOptionTitle(int option)
         {
-            if (option >= currentEvent.GetOption().Count)
+            if (option >= currentEvent.GetOptions().Count)
             {
                 return "";
             }
             else
             {
-                return currentEvent.GetOption()[option].GetTitle();
+                return currentEvent.GetOptions()[option].GetTitle();
             }
         }
 
         public string GetEventOptionText(int option)
         {
             //Player stats verändern
-            if (option >= currentEvent.GetOption().Count)
+            if (option >= currentEvent.GetOptions().Count)
             {
                 return "";
             }
@@ -142,28 +142,28 @@ namespace SpielDesLebens
             {
                 SubtractActionPoints(2);
                 ChangePlayerStats(option);
-                return currentEvent.GetOption()[option].GetText();
+                return currentEvent.GetOptions()[option].GetText();
             }
         }
 
         public string GetEventText()
         {
-            return currentEvent.Text;
+            return currentEvent.GetText();
         }
         public string GetEventTitle()
         {
-            return currentEvent.Title;
+            return currentEvent.GetTitle();
         }
 
         public string GetEventInfo()
         {
-            if (currentEvent.Info == null)
+            if (currentEvent.GetInfo() == null)
             {
                 return "";
             }
             else
             {
-                return currentEvent.Info;
+                return currentEvent.GetInfo();
             }
         }
         #endregion
@@ -240,7 +240,7 @@ namespace SpielDesLebens
         #endregion
         private void ChangePlayerStats(int option)
         {
-            Stat currentOptionStats = currentEvent.Options[option].GetStats();
+            Stat currentOptionStats = currentEvent.GetOptions()[option].GetOptionStat();
             this.player.ChangePlayerStat(currentOptionStats);
         }
 

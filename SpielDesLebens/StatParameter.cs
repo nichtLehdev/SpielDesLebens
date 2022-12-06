@@ -11,8 +11,8 @@ namespace SpielDesLebens
         {
             this.name = name;
             this.value = value;
-            this.toBeClampedBottom = clampBottom;
-            this.toBeClampedTop = clampTop;
+            toBeClampedBottom = clampBottom;
+            toBeClampedTop = clampTop;
         }
 
 

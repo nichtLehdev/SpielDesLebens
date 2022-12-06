@@ -2,32 +2,37 @@
 {
     internal class Option
     {
-        public string Id;
-        public string Title;
-        public string Text;
-        public Stat OptionStat;
+        private readonly string id;
+        private readonly string title;
+        private readonly string text;
+        private readonly Stat optionStat;
 
         public Option(string id, string title, string text, Stat optionStat)
         {
-            this.Id = id;
-            this.Title = title;
-            this.Text = text;
-            this.OptionStat = optionStat;
+            this.id = id;
+            this.title = title;
+            this.text = text;
+            this.optionStat = optionStat;
+        }
+
+        public string GetId()
+        {
+            return id;
         }
 
         public string GetTitle()
         {
-            return this.Title;
+            return this.title;
         }
 
         public string GetText()
         {
-            return this.Text;
+            return this.text;
         }
 
-        public Stat GetStats()
+        public Stat GetOptionStat()
         {
-            return this.OptionStat;
+            return this.optionStat;
         }
 
 

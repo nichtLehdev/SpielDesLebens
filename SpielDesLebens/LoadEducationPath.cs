@@ -2,8 +2,8 @@
 {
     internal class LoadEducationPath
     {
-        public int path;
-        public int profession;
-        public int phase;
+        public int path { get; set; }
+        public int profession { get; set; }
+        public int phase { get; set; }
     }
 }

@@ -7,8 +7,8 @@ namespace SpielDesLebens
         private readonly string name;
         private readonly Data.Graduation graduation;
         private Stat playerStat;
-        public Eventgenerator Eventgenerator;
-        public ActionGenerator Actiongenerator;
+        private Eventgenerator eventGenerator;
+        private ActionGenerator actionGenerator;
         private EducationPath eduPath;
 
         public Player(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
@@ -27,7 +27,7 @@ namespace SpielDesLebens
             this.age = age;
             this.name = name;
             this.playerStat = playerStat;
-            this.Eventgenerator = eventGen;
+            this.eventGenerator = eventGen;
             CreateActionGenerator();
             this.eduPath = eduPath;
         }
@@ -48,12 +48,12 @@ namespace SpielDesLebens
 
         private void CreateEventgenerator(EducationPath eduPath)
         {
-            Eventgenerator = new Eventgenerator(eduPath);
+            eventGenerator = new Eventgenerator(eduPath);
         }
 
         private void CreateActionGenerator()
         {
-            Actiongenerator = new ActionGenerator();
+            actionGenerator = new ActionGenerator();
         }
 
         #endregion
@@ -131,6 +131,16 @@ namespace SpielDesLebens
                 }
             }
             return null;
+        }
+
+        public Eventgenerator GetEventgenerator()
+        {
+            return eventGenerator;
+        }
+
+        public ActionGenerator GetActionGenerator()
+        {
+            return actionGenerator;
         }
     }
 }
