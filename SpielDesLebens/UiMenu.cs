@@ -372,6 +372,7 @@ namespace SpielDesLebens
                 return false;
             }
             uiMenu.CreatePlayer(1, Convert.ToInt16(txtAge.Text), txtName.Text, (Data.Path)path, (Data.Profession)profession, (Data.Graduation)graduation);
+            uiInterface = uiMenu.CreateUiInterface();
             return true;
         }
 
