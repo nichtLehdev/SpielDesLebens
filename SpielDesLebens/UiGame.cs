@@ -240,14 +240,16 @@ namespace SpielDesLebens
             {
                 panelActiveChild.BackgroundImage = SpielDesLebens.Properties.Resources.coworking;
             }
-            int actionPoints = uiInterface.GetActionPoints();
-            int curPhase = uiInterface.GetCurrentPhase();
-            _ = uiInterface.GetMaxPhaseLength();
+            double actionPoints = uiInterface.GetActionPoints();
+            double curPhase = uiInterface.GetCurrentPhase();
+            double maxPhaseLength = uiInterface.GetMaxPhaseLength();
+            double maxActionPoints = uiInterface.GetMaxActionPoints();
+            double progBarValue = 100 * (( maxActionPoints * curPhase + maxActionPoints - actionPoints) / (maxActionPoints * maxPhaseLength)); ;
             lblPlayerAge.Text = Convert.ToString(uiInterface.GetPlayerAge());
             currentPhaseTxt.Text = "Derzeitige Phase: " + curPhase;
             actionPointsTxt.Text = "Benutzte Aktionspunkte:" + (uiInterface.GetMaxActionPoints() - actionPoints);
             leftPhaseTxt.Text = "Verbleibene Länge der Phase: " + actionPoints;
-            progressProgBar.Value = ((100 * uiInterface.GetMaxActionPoints() * curPhase + 100 * actionPoints) / (uiInterface.GetMaxPhaseNumber() * uiInterface.GetMaxActionPoints()));
+            progressProgBar.Value = (int) progBarValue;
             moneyProgBar.Text = uiInterface.GetPlayerMoney().ToString() + "€";
             learnProgBar.Value = uiInterface.GetPlayerSuccess();
             motivationProgBar.Value = uiInterface.GetPlayerMotivation();
