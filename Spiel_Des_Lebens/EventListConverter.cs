@@ -18,22 +18,22 @@ namespace Spiel_Des_Lebens
             foreach (LoadEvent e in eList)
             {
                 this.id = e.id;
-                    List<Timing> timings = new List<Timing>();
-                    foreach (LoadTiming lt in e.requirements.timings)
-                    {
-                        timings.Add(EvaluateTimings(lt));
-                    }
-                    //TODO: find out why e.requirements.statsmin/max is null
-                    Requirement r = new Requirement(timings, ConvertLoadStatToStat(e.requirements.statsMin), ConvertLoadStatToStat(e.requirements.statsMax));
+                List<Timing> timings = new List<Timing>();
+                foreach (LoadTiming lt in e.requirements.timings)
+                {
+                    timings.Add(EvaluateTimings(lt));
+                }
+                //TODO: find out why e.requirements.statsmin/max is null
+                Requirement r = new Requirement(timings, ConvertLoadStatToStat(e.requirements.statsMin), ConvertLoadStatToStat(e.requirements.statsMax));
 
-                    List<Option> oList = new List<Option>();
-                    foreach (LoadOption o in e.options)
-                    {
-                        oList.Add(ConvertLoadOptionToOption(o));
-                    }
+                List<Option> oList = new List<Option>();
+                foreach (LoadOption o in e.options)
+                {
+                    oList.Add(ConvertLoadOptionToOption(o));
+                }
 
 
-                    events.Add(new Event(e.id, e.title, e.text, e.info, e.priority, r, oList));
+                events.Add(new Event(e.id, e.title, e.text, e.info, e.priority, r, oList));
 
             }
             return events;
