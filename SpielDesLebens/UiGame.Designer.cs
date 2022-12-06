@@ -463,7 +463,7 @@ namespace SpielDesLebens
             this.actionText.ReadOnly = true;
             this.actionText.Size = new System.Drawing.Size(300, 103);
             this.actionText.TabIndex = 10;
-            this.actionText.Text = "Erklärungvon Aktionen";
+            this.actionText.Text = "Erklärung von Aktionen";
             this.actionText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // newProfessionPanel
