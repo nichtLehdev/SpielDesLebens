@@ -1,3 +1,5 @@
+// @author: Kevin Kern, Maximilian Koch
+
 namespace SpielDesLebens
 {
     internal class StatParameter

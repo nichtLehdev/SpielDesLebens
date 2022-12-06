@@ -1,4 +1,6 @@
-﻿namespace SpielDesLebens
+﻿// @author: Joel Dag, Kevin Kern
+
+namespace SpielDesLebens
 {
     internal class Phase
     {

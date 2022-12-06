@@ -1,4 +1,6 @@
-﻿using System;
+﻿// @author: Kevin Kern
+
+using System;
 
 namespace SpielDesLebens
 {

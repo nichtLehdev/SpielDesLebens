@@ -1,4 +1,6 @@
-﻿namespace SpielDesLebens
+﻿// @author: Maximilian Koch, Lars Lehmann
+
+namespace SpielDesLebens
 {
     internal class LoadOption
     {

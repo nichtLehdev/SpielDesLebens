@@ -1,4 +1,6 @@
-﻿using System;
+﻿// @author: Joel Dag, Liz Wellhausen
+
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 

@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
+﻿// @author: Kevin Kern, Maximilian Koch
 
+using System.Collections.Generic;
 namespace SpielDesLebens
 {
     internal class Event

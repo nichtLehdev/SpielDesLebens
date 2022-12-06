@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿// @author: Maximilian Koch, Lars Lehmann
+
+using System.Collections.Generic;
 
 namespace SpielDesLebens
 {

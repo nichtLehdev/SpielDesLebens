@@ -1,3 +1,5 @@
+// @author: Joel Dag, Kevin Kern, Maximilian Koch
+
 namespace SpielDesLebens
 {
     internal class Player

@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿// @author: Joel Dag, Kevin Kern, Liz Wellhausen
+
+using System.Collections.Generic;
 
 namespace SpielDesLebens
 {

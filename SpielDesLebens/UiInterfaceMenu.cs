@@ -1,4 +1,6 @@
-﻿namespace SpielDesLebens
+﻿// @author: Maximilian Koch, Liz Wellhausen
+
+namespace SpielDesLebens
 {
     internal class UiInterfaceMenu
     {

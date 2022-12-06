@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿// @author: Lars Lehmann
+
+using Newtonsoft.Json;
 using System.IO;
 
 namespace SpielDesLebens

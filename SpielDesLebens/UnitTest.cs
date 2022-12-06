@@ -1,4 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿// @author: Kevin Kern
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace SpielDesLebens

@@ -1,4 +1,6 @@
-﻿using System;
+﻿// @author: Maximilian Koch, Lars Lehmann
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -21,7 +23,6 @@ namespace SpielDesLebens
                 {
                     timings.Add(EvaluateTimings(lt));
                 }
-                //TODO: find out why e.requirements.statsmin/max is null
                 Requirement r = new Requirement(timings, ConvertLoadStatToStat(e.requirements.statsMin), ConvertLoadStatToStat(e.requirements.statsMax));
 
                 List<Option> oList = new List<Option>();

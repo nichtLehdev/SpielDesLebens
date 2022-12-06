@@ -1,4 +1,7 @@
-﻿using System;
+﻿// @author events.json: Joel Dag, Viktoria Gönnheimer, Maximilian Koch
+// @author actions.json: Maximilian Koch
+
+using System;
 using System.Windows.Forms;
 
 namespace SpielDesLebens

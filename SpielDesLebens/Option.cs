@@ -1,4 +1,6 @@
-﻿namespace SpielDesLebens
+﻿// @author: Kevin Kern, Maximilian Koch
+
+namespace SpielDesLebens
 {
     internal class Option
     {

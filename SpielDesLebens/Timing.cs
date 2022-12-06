@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿// @author: Lars Lehmann
+
+using System.Collections.Generic;
 
 namespace SpielDesLebens
 {

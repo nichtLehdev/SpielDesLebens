@@ -1,4 +1,6 @@
-﻿namespace SpielDesLebens
+﻿// @author: Joel Dag, Kevin Kern, Maximilian Koch
+
+namespace SpielDesLebens
 {
     internal static class Data
     {

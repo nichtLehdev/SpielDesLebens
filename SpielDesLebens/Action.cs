@@ -1,4 +1,6 @@
-﻿namespace SpielDesLebens
+﻿// @author: Lars Lehmann
+
+namespace SpielDesLebens
 {
     internal class Action
     {

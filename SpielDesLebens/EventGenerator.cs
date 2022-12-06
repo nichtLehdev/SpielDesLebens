@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿// @author: Joel Dag, Kevin Kern, Maximilian Koch
+
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
