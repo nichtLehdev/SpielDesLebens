@@ -1140,7 +1140,7 @@ namespace SpielDesLebens
             // 
             this.saveBtn.BackColor = System.Drawing.Color.Transparent;
             this.saveBtn.ForeColor = System.Drawing.Color.White;
-            this.saveBtn.Location = new System.Drawing.Point(30, 542);
+            this.saveBtn.Location = new System.Drawing.Point(30, 555);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(185, 23);
             this.saveBtn.TabIndex = 16;
