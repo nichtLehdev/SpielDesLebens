@@ -60,24 +60,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SaveLoadDeleteGame.cs" />
-    <Compile Include="Forms\FormActions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormActions.Designer.cs">
-      <DependentUpon>FormActions.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormFreetime.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormFreetime.Designer.cs">
-      <DependentUpon>FormFreetime.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormSchool.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormSchool.Designer.cs">
-      <DependentUpon>FormSchool.cs</DependentUpon>
-    </Compile>
     <Compile Include="UiInterface.cs" />
     <Compile Include="Action.cs" />
     <Compile Include="ActionGenerator.cs" />
@@ -118,15 +100,6 @@
     <EmbeddedResource Include="UiGame.resx">
       <DependentUpon>UiGame.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormActions.resx">
-      <DependentUpon>FormActions.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormFreetime.resx">
-      <DependentUpon>FormFreetime.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormSchool.resx">
-      <DependentUpon>FormSchool.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Requirement.cs" />
     <Compile Include="Stat.cs" />

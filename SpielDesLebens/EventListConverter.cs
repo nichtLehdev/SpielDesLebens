@@ -358,6 +358,5 @@ namespace SpielDesLebens
         {
             return new Stat(lStat.mentalHealth, lStat.money, lStat.motivation, lStat.success);
         }
-
     }
 }

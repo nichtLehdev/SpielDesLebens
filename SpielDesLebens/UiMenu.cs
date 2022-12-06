@@ -7,8 +7,6 @@ namespace SpielDesLebens
 {
     internal partial class UiMenu : Form
     {
-        //private String profession = null;
-        //private String training = null;
         private int profession;
         private int path;
         private int graduation;

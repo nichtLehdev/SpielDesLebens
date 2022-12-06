@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace SpielDesLebens
 {
@@ -34,7 +33,7 @@ namespace SpielDesLebens
         }
 
         #region getActionString        
-        public String GetActionTitle(int action)
+        public string GetActionTitle(int action)
         {
             if (action >= currentActions.Count)
             {
@@ -46,7 +45,7 @@ namespace SpielDesLebens
             }
         }
 
-        public String GetActionInfo(int action)
+        public string GetActionInfo(int action)
         {
             if (action >= currentActions.Count || currentActions[action].GetInfo() == null)
             {
@@ -58,7 +57,7 @@ namespace SpielDesLebens
             }
         }
 
-        public String GetActionOptionTitle(int action)
+        public string GetActionOptionTitle(int action)
         {
             if (action >= currentActions.Count)
             {
@@ -70,7 +69,7 @@ namespace SpielDesLebens
             }
         }
 
-        public String GetActionOptionText(int action)
+        public string GetActionOptionText(int action)
         {
             if (action >= currentActions.Count)
             {
@@ -120,7 +119,7 @@ namespace SpielDesLebens
 
 
         #region getEventString
-        public String GetEventOptionTitle(int option)
+        public string GetEventOptionTitle(int option)
         {
             if (option >= currentEvent.GetOption().Count)
             {
@@ -132,7 +131,7 @@ namespace SpielDesLebens
             }
         }
 
-        public String GetEventOptionText(int option)
+        public string GetEventOptionText(int option)
         {
             //Player stats verändern
             if (option >= currentEvent.GetOption().Count)
@@ -147,16 +146,16 @@ namespace SpielDesLebens
             }
         }
 
-        public String GetEventText()
+        public string GetEventText()
         {
             return currentEvent.Text;
         }
-        public String GetEventTitle()
+        public string GetEventTitle()
         {
             return currentEvent.Title;
         }
 
-        public String GetEventInfo()
+        public string GetEventInfo()
         {
             if (currentEvent.Info == null)
             {
@@ -255,7 +254,7 @@ namespace SpielDesLebens
             }
         }
 
-        public String GetStatWarning()
+        public string GetStatWarning()
         {
             Data.StatType? statType = player.CheckStatSmaller(11);
             string warning = "";
@@ -280,7 +279,7 @@ namespace SpielDesLebens
             return warning;
         }
 
-        public String GetGameEnd()
+        public string GetGameEnd()
         {
             Data.StatType? statType = player.CheckStatSmaller(1);
             string gameEnd = "";
