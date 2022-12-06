@@ -1150,7 +1150,7 @@ namespace SpielDesLebens
             this.action3Btn.FlatAppearance.BorderSize = 0;
             this.action3Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.action3Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.action3Btn.ForeColor = System.Drawing.Color.Black;
+            this.action3Btn.ForeColor = System.Drawing.Color.White;
             this.action3Btn.Image = global::SpielDesLebens.Properties.Resources.homeworkIconSmall;
             this.action3Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.action3Btn.Location = new System.Drawing.Point(0, 464);
@@ -1171,7 +1171,7 @@ namespace SpielDesLebens
             this.action2Btn.FlatAppearance.BorderSize = 0;
             this.action2Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.action2Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.action2Btn.ForeColor = System.Drawing.Color.Black;
+            this.action2Btn.ForeColor = System.Drawing.Color.White;
             this.action2Btn.Image = global::SpielDesLebens.Properties.Resources.criminal48Px;
             this.action2Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.action2Btn.Location = new System.Drawing.Point(0, 398);
@@ -1192,10 +1192,10 @@ namespace SpielDesLebens
             this.action1Btn.FlatAppearance.BorderSize = 0;
             this.action1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.action1Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.action1Btn.ForeColor = System.Drawing.Color.Black;
+            this.action1Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.action1Btn.Image = ((System.Drawing.Image)(resources.GetObject("action1Btn.Image")));
             this.action1Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.action1Btn.Location = new System.Drawing.Point(-7, 332);
+            this.action1Btn.Location = new System.Drawing.Point(0, 332);
             this.action1Btn.Name = "action1Btn";
             this.action1Btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.action1Btn.Size = new System.Drawing.Size(240, 60);
@@ -1213,7 +1213,7 @@ namespace SpielDesLebens
             this.action0Btn.FlatAppearance.BorderSize = 0;
             this.action0Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.action0Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.action0Btn.ForeColor = System.Drawing.Color.Black;
+            this.action0Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.action0Btn.Image = global::SpielDesLebens.Properties.Resources.motivation48Px;
             this.action0Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.action0Btn.Location = new System.Drawing.Point(0, 266);
@@ -1250,6 +1250,7 @@ namespace SpielDesLebens
             // lblPlayerPath
             // 
             this.lblPlayerPath.AutoSize = true;
+            this.lblPlayerPath.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblPlayerPath.Location = new System.Drawing.Point(112, 163);
             this.lblPlayerPath.Name = "lblPlayerPath";
             this.lblPlayerPath.Size = new System.Drawing.Size(102, 13);
@@ -1260,6 +1261,7 @@ namespace SpielDesLebens
             // 
             this.lblPath.AutoSize = true;
             this.lblPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPath.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblPath.Location = new System.Drawing.Point(52, 163);
             this.lblPath.Name = "lblPath";
             this.lblPath.Size = new System.Drawing.Size(37, 13);
@@ -1269,6 +1271,7 @@ namespace SpielDesLebens
             // lblPlayerName
             // 
             this.lblPlayerName.AutoSize = true;
+            this.lblPlayerName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblPlayerName.Location = new System.Drawing.Point(112, 123);
             this.lblPlayerName.Name = "lblPlayerName";
             this.lblPlayerName.Size = new System.Drawing.Size(70, 13);
@@ -1279,6 +1282,7 @@ namespace SpielDesLebens
             // 
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAge.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblAge.Location = new System.Drawing.Point(52, 143);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(37, 13);
@@ -1300,6 +1304,7 @@ namespace SpielDesLebens
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblName.Location = new System.Drawing.Point(52, 123);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(43, 13);
@@ -1309,6 +1314,7 @@ namespace SpielDesLebens
             // lblPlayerAge
             // 
             this.lblPlayerAge.AutoSize = true;
+            this.lblPlayerAge.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblPlayerAge.Location = new System.Drawing.Point(112, 143);
             this.lblPlayerAge.Name = "lblPlayerAge";
             this.lblPlayerAge.Size = new System.Drawing.Size(63, 13);
@@ -1321,7 +1327,7 @@ namespace SpielDesLebens
             this.btnAktion.FlatAppearance.BorderSize = 0;
             this.btnAktion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAktion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAktion.ForeColor = System.Drawing.Color.Black;
+            this.btnAktion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAktion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAktion.Location = new System.Drawing.Point(3, 198);
             this.btnAktion.Name = "btnAktion";
