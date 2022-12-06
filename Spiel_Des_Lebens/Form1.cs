@@ -7,8 +7,11 @@ namespace Spiel_Des_Lebens
 {
     internal partial class Form1 : Form
     {
-        private String profession = null;
-        private String training = null;
+        //private String profession = null;
+        //private String training = null;
+        private int profession;
+        private int path;
+        private int graduation;
         private int slot;
         private readonly UiInterfaceMenu uiMenu = new UiInterfaceMenu();
         private UiInterface uiInterface;
@@ -106,11 +109,13 @@ namespace Spiel_Des_Lebens
             dropDown_path.Text = null;
             if (abschluss == "Hauptschulabschluss")
             {
+                graduation = 0;
                 btnHauptschule.FlatStyle = FlatStyle.Popup;
                 dropDown_profession.Items.AddRange(new object[] { "Ausbildung" });
             }
             else if (abschluss == "Realschulabschluss")
             {
+                graduation = 1;
                 btnRealschule.FlatStyle = FlatStyle.Popup;
                 btnHauptschule.BackColor = Color.Gray;
                 dropDown_profession.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
@@ -119,10 +124,12 @@ namespace Spiel_Des_Lebens
             {
                 if (abschluss == "Fachhochschulreife")
                 {
+                    graduation = 2;
                     btnFachabi.FlatStyle = FlatStyle.Popup;
                 }
                 else
                 {
+                    graduation = 3;
                     btnAbi.FlatStyle = FlatStyle.Popup;
                 }
                 dropDown_profession.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium" });
@@ -244,17 +251,17 @@ namespace Spiel_Des_Lebens
             if (dropDown_profession.Text == "Ausbildung")
             {
 
-                training = "Training";
+                path = 0;
                 dropDown_path.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
             }
             else if (dropDown_profession.Text == "Duales Studium")
             {
-                training = "DualStudy";
+                path = 1;
                 dropDown_path.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
             }
             else if (dropDown_profession.Text == "Studium")
             {
-                training = "Study";
+                path = 2;
                 dropDown_path.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
             }
         }
@@ -265,76 +272,75 @@ namespace Spiel_Des_Lebens
             {
                 if (dropDown_path.Text == "Krankenpflege")
                 {
-                    profession = "Social";
+                    profession = 0;
                 }
                 else if (dropDown_path.Text == "Industriekaufmann")
                 {
-                    profession = "Business";
+                    profession = 1;
                 }
                 else if (dropDown_path.Text == "Pharmazeutisch Technische Assistenz")
                 {
-                    profession = "Science";
+                    profession = 2;
                 }
                 else if (dropDown_path.Text == "Fachinformatiker")
                 {
-                    profession = "Stem";
+                    profession = 3;
                 }
                 else if (dropDown_path.Text == "Rechtanwaltsfachangestellter")
                 {
-                    profession = "Civil";
+                    profession = 4;
                 }
             }
             else if (dropDown_profession.Text == "Duales Studium")
             {
                 if (dropDown_path.Text == "Angewandte Gesundheits- und Pflegewissenschaften")
                 {
-                    profession = "Social";
+                    profession = 0;
                 }
                 else if (dropDown_path.Text == "BWL")
                 {
-                    profession = "Business";
+                    profession = 1;
                 }
                 else if (dropDown_path.Text == "Angewandte Physik")
                 {
-                    profession = "Science";
+                    profession = 2;
                 }
                 else if (dropDown_path.Text == "Angewandtes Informatikstudium")
                 {
-                    profession = "Stem";
+                    profession = 3;
                 }
                 else if (dropDown_path.Text == "Steuerwesen")
                 {
-                    profession = "Civil";
+                    profession = 4;
                 }
             }
             else if (dropDown_profession.Text == "Studium")
             {
                 if (dropDown_path.Text == "Medizinstudium")
                 {
-                    profession = "Social";
+                    profession = 0;
                 }
                 else if (dropDown_path.Text == "BWL")
                 {
-                    profession = "Business";
+                    profession = 1;
                 }
                 else if (dropDown_path.Text == "Physikstudium")
                 {
-                    profession = "Science";
+                    profession = 2;
                 }
                 else if (dropDown_path.Text == "Informatikstudium")
                 {
-                    profession = "Stem";
+                    profession = 3;
                 }
                 else if (dropDown_path.Text == "Jurastudium")
                 {
-                    profession = "Civil";
+                    profession = 4;
                 }
             }
         }
 
         private Boolean ValidateInputs()
         {
-
             if (string.IsNullOrEmpty(txt_name.Text))
             {
                 lbl_userInfo.Text = "!!! Wähle einen Namen !!!";
@@ -352,12 +358,12 @@ namespace Spiel_Des_Lebens
                 return false;
 
             }
-            else if (string.IsNullOrEmpty(training))
+            else if (path.Equals(null))
             {
                 lbl_userInfo.Text = "!!! Wähle einen Bildungsweg !!!";
                 return false;
             }
-            else if (string.IsNullOrEmpty(profession))
+            else if (profession.Equals(null))
             {
                 lbl_userInfo.Text = "!!! Wähle einen Karriereweg !!!";
                 return false;
@@ -367,6 +373,7 @@ namespace Spiel_Des_Lebens
                 lbl_userInfo.Text = "!!! Wähle einen Avatar !!!";
                 return false;
             }
+            uiMenu.CreatePlayer(1, Convert.ToInt16(txt_age.Text), txt_name.Text, (Data.Path)path, (Data.Profession)profession, (Data.Graduation)graduation);
             return true;
         }
 
