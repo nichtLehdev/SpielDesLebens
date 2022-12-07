@@ -32,6 +32,9 @@ namespace SpielDesLebens
       {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UiGame));
             this.panelActiveChild = new System.Windows.Forms.Panel();
+            this.tutorialPanel7 = new System.Windows.Forms.Panel();
+            this.tutorialButton7 = new System.Windows.Forms.Button();
+            this.tutorialText7 = new System.Windows.Forms.TextBox();
             this.infoActionPanel0 = new System.Windows.Forms.Panel();
             this.infoActionTxt0 = new System.Windows.Forms.TextBox();
             this.infoActionPanel2 = new System.Windows.Forms.Panel();
@@ -83,12 +86,12 @@ namespace SpielDesLebens
             this.showInfoBtn = new System.Windows.Forms.Button();
             this.eventTxtBox = new System.Windows.Forms.TextBox();
             this.option1Btn = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tutorialPanel6 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.tutorialTxt6 = new System.Windows.Forms.TextBox();
             this.tutorialPanel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.tutorialTxt1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.progressProgBar = new System.Windows.Forms.ProgressBar();
@@ -124,6 +127,7 @@ namespace SpielDesLebens
             this.lblName = new System.Windows.Forms.Label();
             this.lblPlayerAge = new System.Windows.Forms.Label();
             this.panelActiveChild.SuspendLayout();
+            this.tutorialPanel7.SuspendLayout();
             this.infoActionPanel0.SuspendLayout();
             this.infoActionPanel2.SuspendLayout();
             this.tutorialPanel4.SuspendLayout();
@@ -151,6 +155,7 @@ namespace SpielDesLebens
             // 
             this.panelActiveChild.BackColor = System.Drawing.Color.SeaShell;
             this.panelActiveChild.BackgroundImage = global::SpielDesLebens.Properties.Resources.uniTable;
+            this.panelActiveChild.Controls.Add(this.tutorialPanel7);
             this.panelActiveChild.Controls.Add(this.infoActionPanel0);
             this.panelActiveChild.Controls.Add(this.infoActionPanel2);
             this.panelActiveChild.Controls.Add(this.tutorialPanel4);
@@ -164,6 +169,42 @@ namespace SpielDesLebens
             this.panelActiveChild.Name = "panelActiveChild";
             this.panelActiveChild.Size = new System.Drawing.Size(835, 523);
             this.panelActiveChild.TabIndex = 1;
+            // 
+            // tutorialPanel7
+            // 
+            this.tutorialPanel7.BackColor = System.Drawing.Color.FloralWhite;
+            this.tutorialPanel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tutorialPanel7.Controls.Add(this.tutorialButton7);
+            this.tutorialPanel7.Controls.Add(this.tutorialText7);
+            this.tutorialPanel7.Location = new System.Drawing.Point(0, 422);
+            this.tutorialPanel7.Name = "tutorialPanel7";
+            this.tutorialPanel7.Size = new System.Drawing.Size(190, 98);
+            this.tutorialPanel7.TabIndex = 18;
+            this.tutorialPanel7.Visible = false;
+            // 
+            // tutorialButton7
+            // 
+            this.tutorialButton7.Location = new System.Drawing.Point(116, 69);
+            this.tutorialButton7.Name = "tutorialButton7";
+            this.tutorialButton7.Size = new System.Drawing.Size(62, 25);
+            this.tutorialButton7.TabIndex = 14;
+            this.tutorialButton7.Text = "Weiter";
+            this.tutorialButton7.UseVisualStyleBackColor = true;
+            this.tutorialButton7.Click += new System.EventHandler(this.ContinueTutorial7);
+            // 
+            // tutorialText7
+            // 
+            this.tutorialText7.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.tutorialText7.BackColor = System.Drawing.SystemColors.Control;
+            this.tutorialText7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tutorialText7.Location = new System.Drawing.Point(8, 6);
+            this.tutorialText7.Multiline = true;
+            this.tutorialText7.Name = "tutorialText7";
+            this.tutorialText7.ReadOnly = true;
+            this.tutorialText7.Size = new System.Drawing.Size(170, 57);
+            this.tutorialText7.TabIndex = 11;
+            this.tutorialText7.Text = "Du kannst deinen derzeitigen Spielstand durch\r\n Klicken auf \"Speichern\" sicher.";
+            this.tutorialText7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // infoActionPanel0
             // 
@@ -375,8 +416,8 @@ namespace SpielDesLebens
             this.textBox2.Size = new System.Drawing.Size(163, 102);
             this.textBox2.TabIndex = 11;
             this.textBox2.Text = "Auf der linken Seite wird das Aktionsfenster angezeigt.  Wenn du auf eine Aktion " +
-    "dückst, werden sich deine Stats ändern. Die Icons geben dir Hinweise, welche Sta" +
-    "t unteranderem geändert wird.";
+    "drückst, werden sich deine Stats ändern. Die Icons geben dir Hinweise, welche St" +
+    "ats unteranderem geändert wird.";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
@@ -804,6 +845,16 @@ namespace SpielDesLebens
             this.option1Btn.UseVisualStyleBackColor = false;
             this.option1Btn.Click += new System.EventHandler(this.Option1Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(116, 90);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(62, 25);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Weiter";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.ContinueTutorial1);
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -861,34 +912,25 @@ namespace SpielDesLebens
             this.tutorialPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tutorialPanel1.Controls.Add(this.button3);
             this.tutorialPanel1.Controls.Add(this.tutorialTxt1);
-            this.tutorialPanel1.Location = new System.Drawing.Point(0, 22);
+            this.tutorialPanel1.Location = new System.Drawing.Point(0, 0);
             this.tutorialPanel1.Name = "tutorialPanel1";
-            this.tutorialPanel1.Size = new System.Drawing.Size(190, 97);
+            this.tutorialPanel1.Size = new System.Drawing.Size(190, 128);
             this.tutorialPanel1.TabIndex = 0;
             this.tutorialPanel1.Visible = false;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(116, 68);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(62, 25);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Weiter";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.ContinueTutorial1);
             // 
             // tutorialTxt1
             // 
             this.tutorialTxt1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.tutorialTxt1.BackColor = System.Drawing.Color.White;
             this.tutorialTxt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tutorialTxt1.Location = new System.Drawing.Point(15, 14);
+            this.tutorialTxt1.Location = new System.Drawing.Point(15, 5);
             this.tutorialTxt1.Multiline = true;
             this.tutorialTxt1.Name = "tutorialTxt1";
             this.tutorialTxt1.ReadOnly = true;
-            this.tutorialTxt1.Size = new System.Drawing.Size(163, 48);
+            this.tutorialTxt1.Size = new System.Drawing.Size(163, 82);
             this.tutorialTxt1.TabIndex = 11;
-            this.tutorialTxt1.Text = "Links wird dein Charakter angezeigt";
+            this.tutorialTxt1.Text = "Links wird dein Charakter angezeigt. Wenn du auf das Bild deines Charakters klick" +
+    "st, hast du die Möglichkeit deinen Karriereweg zu wechseln.";
             this.tutorialTxt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
@@ -1341,6 +1383,8 @@ namespace SpielDesLebens
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormGameUiLoad);
             this.panelActiveChild.ResumeLayout(false);
+            this.tutorialPanel7.ResumeLayout(false);
+            this.tutorialPanel7.PerformLayout();
             this.infoActionPanel0.ResumeLayout(false);
             this.infoActionPanel0.PerformLayout();
             this.infoActionPanel2.ResumeLayout(false);
@@ -1478,5 +1522,8 @@ namespace SpielDesLebens
       private System.Windows.Forms.Label eventTitle;
       private System.Windows.Forms.Button saveBtn;
       private System.Windows.Forms.Button backToMenuBtn;
-   }
+        private System.Windows.Forms.Panel tutorialPanel7;
+        private System.Windows.Forms.Button tutorialButton7;
+        private System.Windows.Forms.TextBox tutorialText7;
+    }
 }

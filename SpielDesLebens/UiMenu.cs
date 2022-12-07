@@ -385,7 +385,7 @@ namespace SpielDesLebens
                 lblUserInfo.Text = "!!! Wähle einen Karriereweg !!!";
                 return false;
             }
-            else if (Enumerable.Range(0, 5).Contains(avatar))
+            else if (avatar <= 0 || avatar >= 5)
             {
                 lblUserInfo.Text = "!!! Wähle einen Avatar !!!";
                 return false;

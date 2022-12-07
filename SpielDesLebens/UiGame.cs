@@ -10,7 +10,7 @@ namespace SpielDesLebens
     {
         private Form activeForm;
         private readonly UiInterface uiInterface;
-        private readonly bool newGame = false;
+        private readonly bool newGame = true;
 
         private Data.Path training;
         private Data.Profession profession;
@@ -346,9 +346,9 @@ namespace SpielDesLebens
 
         private void ContinueTutorial1(object sender, EventArgs e)
         {
-            if (tutorialTxt1.Text == "Links wird dein Charakter angezeigt")
+            if (tutorialTxt1.Text == "Links wird dein Charakter angezeigt. Wenn du auf das Bild deines Charakters klickst, hast du die Möglichkeit deinen Karriereweg zu wechseln.")
             {
-                tutorialTxt1.Text = "Auf der Rechten Seite siehtstd deien Fortschritt im Spiel.";
+                tutorialTxt1.Text = "Auf der Rechten Seite siehtst du deinen Fortschritt im Spiel.";
             }
             else
             {
@@ -394,9 +394,19 @@ namespace SpielDesLebens
             {
                 tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei einem. Ein Event erhöht die Anzahl der Aktionspnkte bei zwei.";
             }
+            tutorialPanel6.Visible = false;
+            tutorialPanel7.Visible = true;
+        }
+
+        private void ContinueTutorial7(object sender, EventArgs e)
+        {
+            if (tutorialTxt6.Text == "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase gibt eine Semesterlänge an.")
+            {
+                tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei einem. Ein Event erhöht die Anzahl der Aktionspnkte bei zwei.";
+            }
             else
             {
-                tutorialPanel6.Visible = false;
+                tutorialPanel7.Visible = false;
                 AllOptionsEnable();
             }
         }
@@ -460,6 +470,7 @@ namespace SpielDesLebens
         private void NewProfessionOptOpen(object sender, EventArgs e)
         {
             AllOptionsDisable();
+            nextPhaseBtn.Enabled = false;
             newProfessionPanel.Visible = true;
             newProfessionNoBtn.Text = "Nein";
             newProfessionYesBtn.Visible = true;
