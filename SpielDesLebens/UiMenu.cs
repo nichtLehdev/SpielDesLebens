@@ -3,6 +3,7 @@
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace SpielDesLebens
@@ -384,7 +385,7 @@ namespace SpielDesLebens
                 lblUserInfo.Text = "!!! Wähle einen Karriereweg !!!";
                 return false;
             }
-            else if (avatar == null)
+            else if (Enumerable.Range(0, 5).Contains(avatar))
             {
                 lblUserInfo.Text = "!!! Wähle einen Avatar !!!";
                 return false;

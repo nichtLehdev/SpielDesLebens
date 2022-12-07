@@ -280,10 +280,10 @@ namespace SpielDesLebens
         }
         private void GetNewActions()
         {
-            action0Btn.Text = uiInterface.GetActionTitle(0);
-            action1Btn.Text = uiInterface.GetActionTitle(1);
-            action2Btn.Text = uiInterface.GetActionTitle(2);
-            action3Btn.Text = uiInterface.GetActionTitle(3);
+            action0Btn.Text = "     " + uiInterface.GetActionTitle(0);
+            action1Btn.Text = "     " + uiInterface.GetActionTitle(1);
+            action2Btn.Text = "     " + uiInterface.GetActionTitle(2);
+            action3Btn.Text = "     " + uiInterface.GetActionTitle(3);
 
             action0Btn.Image = GetActionIcon(uiInterface.GetActionOptionMainStat(0));
             action1Btn.Image = GetActionIcon(uiInterface.GetActionOptionMainStat(1));

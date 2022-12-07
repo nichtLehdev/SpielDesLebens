@@ -123,7 +123,6 @@ namespace SpielDesLebens
             this.avatarPic = new System.Windows.Forms.PictureBox();
             this.lblName = new System.Windows.Forms.Label();
             this.lblPlayerAge = new System.Windows.Forms.Label();
-            this.btnAktion = new System.Windows.Forms.Button();
             this.panelActiveChild.SuspendLayout();
             this.infoActionPanel0.SuspendLayout();
             this.infoActionPanel2.SuspendLayout();
@@ -412,7 +411,7 @@ namespace SpielDesLebens
             this.eventTitle.Location = new System.Drawing.Point(56, 47);
             this.eventTitle.MaximumSize = new System.Drawing.Size(412, 0);
             this.eventTitle.Name = "eventTitle";
-            this.eventTitle.Size = new System.Drawing.Size(52, 17);
+            this.eventTitle.Size = new System.Drawing.Size(52, 18);
             this.eventTitle.TabIndex = 13;
             this.eventTitle.Text = "label6";
             // 
@@ -448,7 +447,7 @@ namespace SpielDesLebens
             this.actionTitle.Location = new System.Drawing.Point(33, 17);
             this.actionTitle.Name = "actionTitle";
             this.actionTitle.ReadOnly = true;
-            this.actionTitle.Size = new System.Drawing.Size(185, 20);
+            this.actionTitle.Size = new System.Drawing.Size(185, 21);
             this.actionTitle.TabIndex = 10;
             this.actionTitle.Text = "ActionTitle";
             // 
@@ -555,7 +554,7 @@ namespace SpielDesLebens
             this.newProfessionTitle.Location = new System.Drawing.Point(33, 17);
             this.newProfessionTitle.Name = "newProfessionTitle";
             this.newProfessionTitle.ReadOnly = true;
-            this.newProfessionTitle.Size = new System.Drawing.Size(185, 20);
+            this.newProfessionTitle.Size = new System.Drawing.Size(185, 21);
             this.newProfessionTitle.TabIndex = 10;
             this.newProfessionTitle.Text = "Neue Karriere";
             // 
@@ -626,7 +625,7 @@ namespace SpielDesLebens
             this.tutorialAskTitle.Location = new System.Drawing.Point(33, 17);
             this.tutorialAskTitle.Name = "tutorialAskTitle";
             this.tutorialAskTitle.ReadOnly = true;
-            this.tutorialAskTitle.Size = new System.Drawing.Size(185, 20);
+            this.tutorialAskTitle.Size = new System.Drawing.Size(185, 21);
             this.tutorialAskTitle.TabIndex = 10;
             this.tutorialAskTitle.Text = "Tutorial";
             // 
@@ -674,7 +673,7 @@ namespace SpielDesLebens
             this.gameOverTitle.Location = new System.Drawing.Point(33, 17);
             this.gameOverTitle.Name = "gameOverTitle";
             this.gameOverTitle.ReadOnly = true;
-            this.gameOverTitle.Size = new System.Drawing.Size(185, 20);
+            this.gameOverTitle.Size = new System.Drawing.Size(185, 21);
             this.gameOverTitle.TabIndex = 5;
             this.gameOverTitle.Text = "GameOver";
             // 
@@ -899,7 +898,7 @@ namespace SpielDesLebens
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(193, 22);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 20);
+            this.label5.Size = new System.Drawing.Size(97, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Fortschritt";
             // 
@@ -955,7 +954,7 @@ namespace SpielDesLebens
             this.moneyProgBar.Location = new System.Drawing.Point(31, 221);
             this.moneyProgBar.Name = "moneyProgBar";
             this.moneyProgBar.ReadOnly = true;
-            this.moneyProgBar.Size = new System.Drawing.Size(162, 20);
+            this.moneyProgBar.Size = new System.Drawing.Size(162, 21);
             this.moneyProgBar.TabIndex = 15;
             // 
             // tutorialPanel2
@@ -1036,7 +1035,7 @@ namespace SpielDesLebens
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(28, 411);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 13);
+            this.label4.Size = new System.Drawing.Size(97, 15);
             this.label4.TabIndex = 7;
             this.label4.Text = "Mental Health";
             // 
@@ -1047,7 +1046,7 @@ namespace SpielDesLebens
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(28, 341);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.Size = new System.Drawing.Size(73, 15);
             this.label3.TabIndex = 6;
             this.label3.Text = "Motivation";
             // 
@@ -1058,7 +1057,7 @@ namespace SpielDesLebens
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(28, 268);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.Size = new System.Drawing.Size(71, 15);
             this.label2.TabIndex = 5;
             this.label2.Text = "Lernstand";
             // 
@@ -1069,7 +1068,7 @@ namespace SpielDesLebens
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(28, 204);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.Size = new System.Drawing.Size(37, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Geld";
             // 
@@ -1117,7 +1116,6 @@ namespace SpielDesLebens
             this.panel2.Controls.Add(this.action1Btn);
             this.panel2.Controls.Add(this.action0Btn);
             this.panel2.Controls.Add(this.userInfo);
-            this.panel2.Controls.Add(this.btnAktion);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -1128,7 +1126,7 @@ namespace SpielDesLebens
             // 
             this.backToMenuBtn.BackColor = System.Drawing.Color.Transparent;
             this.backToMenuBtn.ForeColor = System.Drawing.Color.White;
-            this.backToMenuBtn.Location = new System.Drawing.Point(30, 585);
+            this.backToMenuBtn.Location = new System.Drawing.Point(30, 570);
             this.backToMenuBtn.Name = "backToMenuBtn";
             this.backToMenuBtn.Size = new System.Drawing.Size(185, 23);
             this.backToMenuBtn.TabIndex = 17;
@@ -1140,7 +1138,7 @@ namespace SpielDesLebens
             // 
             this.saveBtn.BackColor = System.Drawing.Color.Transparent;
             this.saveBtn.ForeColor = System.Drawing.Color.White;
-            this.saveBtn.Location = new System.Drawing.Point(30, 555);
+            this.saveBtn.Location = new System.Drawing.Point(30, 540);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(185, 23);
             this.saveBtn.TabIndex = 16;
@@ -1157,12 +1155,12 @@ namespace SpielDesLebens
             this.action3Btn.ForeColor = System.Drawing.Color.White;
             this.action3Btn.Image = global::SpielDesLebens.Properties.Resources.homeworkIconSmall;
             this.action3Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.action3Btn.Location = new System.Drawing.Point(0, 464);
+            this.action3Btn.Location = new System.Drawing.Point(0, 450);
             this.action3Btn.Name = "action3Btn";
             this.action3Btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.action3Btn.Size = new System.Drawing.Size(240, 60);
             this.action3Btn.TabIndex = 15;
-            this.action3Btn.Text = "andere Aktion";
+            this.action3Btn.Text = "     andere Aktion";
             this.action3Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.action3Btn.UseVisualStyleBackColor = false;
             this.action3Btn.Click += new System.EventHandler(this.Action3Click);
@@ -1178,12 +1176,12 @@ namespace SpielDesLebens
             this.action2Btn.ForeColor = System.Drawing.Color.White;
             this.action2Btn.Image = global::SpielDesLebens.Properties.Resources.criminal48Px;
             this.action2Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.action2Btn.Location = new System.Drawing.Point(0, 398);
+            this.action2Btn.Location = new System.Drawing.Point(0, 380);
             this.action2Btn.Name = "action2Btn";
             this.action2Btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.action2Btn.Size = new System.Drawing.Size(240, 60);
             this.action2Btn.TabIndex = 14;
-            this.action2Btn.Text = "Musik";
+            this.action2Btn.Text = "     Musik";
             this.action2Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.action2Btn.UseVisualStyleBackColor = false;
             this.action2Btn.Click += new System.EventHandler(this.Action2Click);
@@ -1199,12 +1197,12 @@ namespace SpielDesLebens
             this.action1Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.action1Btn.Image = ((System.Drawing.Image)(resources.GetObject("action1Btn.Image")));
             this.action1Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.action1Btn.Location = new System.Drawing.Point(0, 332);
+            this.action1Btn.Location = new System.Drawing.Point(0, 310);
             this.action1Btn.Name = "action1Btn";
             this.action1Btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.action1Btn.Size = new System.Drawing.Size(240, 60);
             this.action1Btn.TabIndex = 13;
-            this.action1Btn.Text = "Sport";
+            this.action1Btn.Text = "     Sport";
             this.action1Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.action1Btn.UseVisualStyleBackColor = false;
             this.action1Btn.Click += new System.EventHandler(this.Action1Click);
@@ -1220,7 +1218,7 @@ namespace SpielDesLebens
             this.action0Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.action0Btn.Image = global::SpielDesLebens.Properties.Resources.motivation48Px;
             this.action0Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.action0Btn.Location = new System.Drawing.Point(0, 266);
+            this.action0Btn.Location = new System.Drawing.Point(0, 240);
             this.action0Btn.Name = "action0Btn";
             this.action0Btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.action0Btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1248,7 +1246,7 @@ namespace SpielDesLebens
             this.userInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.userInfo.Location = new System.Drawing.Point(0, 0);
             this.userInfo.Name = "userInfo";
-            this.userInfo.Size = new System.Drawing.Size(238, 188);
+            this.userInfo.Size = new System.Drawing.Size(238, 217);
             this.userInfo.TabIndex = 2;
             // 
             // lblPlayerPath
@@ -1256,6 +1254,7 @@ namespace SpielDesLebens
             this.lblPlayerPath.AutoSize = true;
             this.lblPlayerPath.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblPlayerPath.Location = new System.Drawing.Point(112, 163);
+            this.lblPlayerPath.MaximumSize = new System.Drawing.Size(150, 0);
             this.lblPlayerPath.Name = "lblPlayerPath";
             this.lblPlayerPath.Size = new System.Drawing.Size(102, 13);
             this.lblPlayerPath.TabIndex = 11;
@@ -1268,9 +1267,9 @@ namespace SpielDesLebens
             this.lblPath.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblPath.Location = new System.Drawing.Point(52, 163);
             this.lblPath.Name = "lblPath";
-            this.lblPath.Size = new System.Drawing.Size(37, 13);
+            this.lblPath.Size = new System.Drawing.Size(55, 13);
             this.lblPath.TabIndex = 10;
-            this.lblPath.Text = "Path:";
+            this.lblPath.Text = "Karriere:";
             // 
             // lblPlayerName
             // 
@@ -1324,22 +1323,6 @@ namespace SpielDesLebens
             this.lblPlayerAge.Size = new System.Drawing.Size(63, 13);
             this.lblPlayerAge.TabIndex = 7;
             this.lblPlayerAge.Text = "Spieler Alter";
-            // 
-            // btnAktion
-            // 
-            this.btnAktion.BackColor = System.Drawing.Color.Transparent;
-            this.btnAktion.FlatAppearance.BorderSize = 0;
-            this.btnAktion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAktion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAktion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAktion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAktion.Location = new System.Drawing.Point(0, 198);
-            this.btnAktion.Name = "btnAktion";
-            this.btnAktion.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnAktion.Size = new System.Drawing.Size(240, 60);
-            this.btnAktion.TabIndex = 0;
-            this.btnAktion.Text = "Aktionsfenster";
-            this.btnAktion.UseVisualStyleBackColor = false;
             // 
             // UiGame
             // 
@@ -1419,7 +1402,6 @@ namespace SpielDesLebens
       private System.Windows.Forms.Label label3;
       private System.Windows.Forms.Label label2;
       private System.Windows.Forms.Label label5;
-      private System.Windows.Forms.Button btnAktion;
       private System.Windows.Forms.Panel infoPanel;
       private System.Windows.Forms.Button infoCloseButton;
       private System.Windows.Forms.RichTextBox infoText;
