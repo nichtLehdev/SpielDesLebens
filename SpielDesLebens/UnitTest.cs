@@ -14,7 +14,7 @@ namespace SpielDesLebens
         [TestInitialize]
         public void SetUp()
         {
-            UiInterface = new UiInterface(new Player(0, 21, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem, Data.Graduation.AllgemeineHochschulreife));
+            UiInterface = new UiInterface(new Player(0, 21, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem, Data.Graduation.AllgemeineHochschulreife), 3);
 
         }
 

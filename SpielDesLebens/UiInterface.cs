@@ -7,17 +7,19 @@ namespace SpielDesLebens
     internal class UiInterface
     {
         private readonly Player player;
+        private readonly int slot;
         private Event currentEvent;
         private List<Action> currentActions;
-        public UiInterface(Player player)
+        public UiInterface(Player player, int slot)
         {
             this.player = player;
+            this.slot = slot;
             NextAction();
         }
 
-        public void SaveGame(int slot)
+        public void SaveGame()
         {
-            SaveLoadDeleteGame.SaveGame(this.player, slot);
+            SaveLoadDeleteGame.SaveGame(this.player, this.slot);
         }
 
         public int GetMaxActionPoints()
@@ -374,5 +376,6 @@ namespace SpielDesLebens
         {
             return player.GetAvatar();
         }
+
     }
 }

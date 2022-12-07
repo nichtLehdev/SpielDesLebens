@@ -30,9 +30,9 @@ namespace SpielDesLebens
             player = new Player(avatar, age, name, path, profession, graduation);
         }
 
-        public UiInterface CreateUiInterface()
+        public UiInterface CreateUiInterface(int slot)
         {
-            return new UiInterface(this.player);
+            return new UiInterface(this.player, slot);
         }
     }
 }

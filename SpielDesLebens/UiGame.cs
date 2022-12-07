@@ -19,8 +19,6 @@ namespace SpielDesLebens
         private string refrenceTraining;
         private string refrenceProfession;
 
-        private readonly int slot;
-
 
         public UiGame(UiInterface uiInterface)
         {
@@ -585,7 +583,7 @@ namespace SpielDesLebens
 
         private void SaveBtnClick(object sender, EventArgs e)
         {
-            uiInterface.SaveGame(slot);
+            uiInterface.SaveGame();
         }
 
         private void BackToMenuBtnClick(object sender, EventArgs e)

@@ -104,7 +104,7 @@ namespace SpielDesLebens
         private void LoadSaveGame(Object sender, EventArgs e)
         {
             uiMenu.LoadGame(slot);
-            uiInterface = uiMenu.CreateUiInterface();
+            uiInterface = uiMenu.CreateUiInterface(slot);
             UiGame t = CreateFormUiGame();
             t.Show();
             this.Hide();
@@ -355,7 +355,7 @@ namespace SpielDesLebens
             }
         }
 
-        private Boolean ValidateInputs()
+        private bool ValidateInputs()
         {
             if (string.IsNullOrEmpty(txtName.Text))
             {
@@ -390,7 +390,7 @@ namespace SpielDesLebens
                 return false;
             }
             uiMenu.CreatePlayer(avatar, Convert.ToInt16(txtAge.Text), txtName.Text, (Data.Path)path, (Data.Profession)profession, (Data.Graduation)graduation);
-            uiInterface = uiMenu.CreateUiInterface();
+            uiInterface = uiMenu.CreateUiInterface(slot);
             return true;
         }
 
