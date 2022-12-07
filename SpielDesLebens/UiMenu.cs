@@ -78,7 +78,7 @@ namespace SpielDesLebens
             else if (sender == avatarBox3)
             {
                 avatarBox3.BorderStyle = BorderStyle.FixedSingle;
-                avatarBox3.BackColor = Color.RosyBrown; 
+                avatarBox3.BackColor = Color.RosyBrown;
                 avatar = 2;
             }
             else if (sender == avatarBox4)
