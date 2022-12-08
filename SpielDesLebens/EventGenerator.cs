@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace SpielDesLebens
 {
@@ -42,54 +43,71 @@ namespace SpielDesLebens
         public Event NextEvent(Stat stats)
         {
             FilterEventsByPhase();
-            List<Event> events = FilterEventsByStats(stats);
-            for (int i = 0; i < events.Count; i++)
+            List<Event> events = FilterEventsByStats(stats).OrderBy(x => x.GetPriority()).ToList();
+
+            if (events[0].GetPriority() == 0)
             {
-                if (events[i].GetPriority() == 0)
-                {
-                    DeleteEventByID(events[i].GetId());
-                    return events[i];
-                }
+                DeleteEventByID(events[0].GetId());
+                return events[0];
             }
-            while (true)
+
+            seed = DateTime.Now.Millisecond;
+            Random random = new Random(seed);
+            double chance = random.NextDouble() * (100 - 0);
+            double percentage = 50;
+            int prio = 1;
+            while (percentage >= chance)
             {
-                seed = DateTime.Now.Millisecond;
-                Random random = new Random(seed);
-                double chance = random.NextDouble() * (100 - 0);
-                double percentage = 50;
-                int prio = 1;
-                while (percentage >= chance)
+                prio++;
+                percentage /= 2;
+            }
+
+            for (int i = 0; i < events.Count(); i++)
+            {
+                if (events[i].GetPriority() > prio)
                 {
-                    prio++;
-                    percentage /= 2;
-                }
-                List<Event> prioEvents = new List<Event>();
-                for (int i = 0; i < events.Count; i++)
-                {
-                    if (events[i].GetPriority() == prio)
+                    if (i != 0)
                     {
-                        prioEvents.Add(events[i]);
+                        prio = events[i - 1].GetPriority();
                     }
+                    else
+                    {
+                        prio = events[i].GetPriority();
+                    }
+                    break;
                 }
-                if (prioEvents.Count != 0)
+                else if (i + 1 == events.Count())
                 {
-                    int eventIndex = random.Next(prioEvents.Count);
-                    int index = FindEventIndexByID(prioEvents[eventIndex].GetId());
-                    filteredEventsPathProfession[index].SetPriority((filteredEventsPathProfession[index].GetPriority() + 1));
-                    return prioEvents[eventIndex];
+                    prio = events[i].GetPriority();
                 }
             }
+
+            List<Event> prioEvents = new List<Event>();
+            foreach (Event e in events)
+            {
+                if (e.GetPriority() == prio)
+                {
+                    prioEvents.Add(e);
+                }
+            }
+
+            int rand = random.Next(0, prioEvents.Count());
+            int idx = FindEventIndexByID(prioEvents[rand].GetId());
+            filteredEventsPathProfession[idx].SetPriority((filteredEventsPathProfession[idx].GetPriority() * Data.SPrioFactor));
+            return prioEvents[rand];
         }
+
 
         private int FindEventIndexByID(string id)
         {
-            for (int i = 0; i < filteredEventsPathProfession.Count; i++)
+            foreach (Event e in filteredEventsPathProfession)
             {
-                if (filteredEventsPathProfession[i].GetId() == id)
+                if (e.GetId() == id)
                 {
-                    return i;
+                    return filteredEventsPathProfession.IndexOf(e);
                 }
             }
+
             throw new Error("Event ID could not be found: " + id);
         }
 
