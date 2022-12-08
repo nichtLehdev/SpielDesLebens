@@ -46,12 +46,12 @@ namespace SpielDesLebens
         {
             switch (uiInterface.GetAvatar())
             {
-                case 0: return SpielDesLebens.Properties.Resources.avatarBoy0;
-                case 1: return SpielDesLebens.Properties.Resources.avatarBoy1;
-                case 2: return SpielDesLebens.Properties.Resources.avatarBoy2;
-                case 3: return SpielDesLebens.Properties.Resources.avatarGirl0;
-                case 4: return SpielDesLebens.Properties.Resources.avatarGirl1;
-                case 5: return SpielDesLebens.Properties.Resources.avatarGirl2;
+                case 1: return SpielDesLebens.Properties.Resources.avatarBoy0;
+                case 2: return SpielDesLebens.Properties.Resources.avatarBoy1;
+                case 3: return SpielDesLebens.Properties.Resources.avatarBoy2;
+                case 4: return SpielDesLebens.Properties.Resources.avatarGirl0;
+                case 5: return SpielDesLebens.Properties.Resources.avatarGirl1;
+                case 6: return SpielDesLebens.Properties.Resources.avatarGirl2;
                 default: throw new Error("There has to be an avatar");
             }
         }

@@ -3,7 +3,6 @@
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace SpielDesLebens
@@ -68,37 +67,37 @@ namespace SpielDesLebens
             {
                 avatarBox1.BorderStyle = BorderStyle.FixedSingle;
                 avatarBox1.BackColor = Color.RosyBrown;
-                avatar = 0;
+                avatar = 1;
             }
             else if (sender == avatarBox2)
             {
                 avatarBox2.BorderStyle = BorderStyle.FixedSingle;
                 avatarBox2.BackColor = Color.RosyBrown;
-                avatar = 1;
+                avatar = 2;
             }
             else if (sender == avatarBox3)
             {
                 avatarBox3.BorderStyle = BorderStyle.FixedSingle;
                 avatarBox3.BackColor = Color.RosyBrown;
-                avatar = 2;
+                avatar = 3;
             }
             else if (sender == avatarBox4)
             {
                 avatarBox4.BorderStyle = BorderStyle.FixedSingle;
                 avatarBox4.BackColor = Color.RosyBrown;
-                avatar = 3;
+                avatar = 4;
             }
             else if (sender == avatarBox5)
             {
                 avatarBox5.BorderStyle = BorderStyle.FixedSingle;
                 avatarBox5.BackColor = Color.RosyBrown;
-                avatar = 4;
+                avatar = 5;
             }
             else if (sender == avatarBox6)
             {
                 avatarBox6.BackColor = Color.RosyBrown;
                 avatarBox6.BorderStyle = BorderStyle.FixedSingle;
-                avatar = 5;
+                avatar = 6;
             }
         }
 
@@ -385,7 +384,7 @@ namespace SpielDesLebens
                 lblUserInfo.Text = "!!! Wähle einen Karriereweg !!!";
                 return false;
             }
-            else if (avatar < 0 || avatar > 5)
+            else if (avatar < 1 || avatar > 6)
             {
                 lblUserInfo.Text = "!!! Wähle einen Avatar !!!";
                 return false;
