@@ -376,12 +376,12 @@ namespace SpielDesLebens
             }
             else if (dropDownPath.Text == "")
             {
-                lblUserInfo.Text = "!!! Wähle einen Bildungsweg !!!";
+                lblUserInfo.Text = "!!! Wähle Bilundgs- und Karriereweg!!!";
                 return false;
             }
             else if (dropDownProfession.Text == "")
             {
-                lblUserInfo.Text = "!!! Wähle einen Karriereweg !!!";
+                lblUserInfo.Text = "!!! Wähle Bilundgs- und Karriereweg!!!";
                 return false;
             }
             else if (avatar < 1 || avatar > 6)

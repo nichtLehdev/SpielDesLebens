@@ -319,8 +319,6 @@ namespace SpielDesLebens
         public void ResetPath(Data.Path path, Data.Profession profession)
         {
             player.ResetCareer(path, profession);
-            Stat stats = new Stat(10, 10, 10, 10);
-            player.ChangePlayerStat(stats);
             NextAction();
         }
         public void NextPhase()
