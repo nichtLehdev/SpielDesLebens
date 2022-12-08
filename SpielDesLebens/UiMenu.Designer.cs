@@ -104,7 +104,7 @@ namespace SpielDesLebens
             this.panel1.Controls.Add(this.slotBtn1);
             this.panel1.Controls.Add(this.slotBtn2);
             this.panel1.Controls.Add(this.SlotBtn3);
-            this.panel1.Location = new System.Drawing.Point(155, 31);
+            this.panel1.Location = new System.Drawing.Point(504, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(343, 511);
             this.panel1.TabIndex = 1;
@@ -212,7 +212,7 @@ namespace SpielDesLebens
             this.fictionPanel.BackgroundImage = global::SpielDesLebens.Properties.Resources.redBlack;
             this.fictionPanel.Controls.Add(this.acceptFictBtn);
             this.fictionPanel.Controls.Add(this.fictionTxtBox);
-            this.fictionPanel.Location = new System.Drawing.Point(986, 59);
+            this.fictionPanel.Location = new System.Drawing.Point(504, 31);
             this.fictionPanel.Name = "fictionPanel";
             this.fictionPanel.Size = new System.Drawing.Size(343, 511);
             this.fictionPanel.TabIndex = 4;
@@ -259,7 +259,7 @@ namespace SpielDesLebens
             this.layouNewGame.Location = new System.Drawing.Point(504, 31);
             this.layouNewGame.Name = "layouNewGame";
             this.layouNewGame.Padding = new System.Windows.Forms.Padding(10);
-            this.layouNewGame.Size = new System.Drawing.Size(343, 560);
+            this.layouNewGame.Size = new System.Drawing.Size(343, 511);
             this.layouNewGame.TabIndex = 0;
             this.layouNewGame.Visible = false;
             // 

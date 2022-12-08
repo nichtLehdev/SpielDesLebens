@@ -38,6 +38,7 @@ namespace SpielDesLebens
             {
                 AllOptionsDisable();
                 tutorialAskPanel.Visible = true;
+                tutorialAskPanel.BringToFront();
             }
             GetNewActions();
         }
@@ -480,6 +481,7 @@ namespace SpielDesLebens
             newProfessionProfessionLable.Visible = false;
             newProfessionProfessionComboBox.Visible = false;
             AllOptionsEnable();
+            UpdateActionpoints();
         }
 
         private void NewProfessionOptOpen(object sender, EventArgs e)
