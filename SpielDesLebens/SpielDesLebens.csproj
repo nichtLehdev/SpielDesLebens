@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7308C2D2-2BD2-4238-ACD4-519C8ACE84E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SpielDesLebens</RootNamespace>
+    <AssemblyName>SpielDesLebens</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UiDebug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UiDebug.Designer.cs">
+      <DependentUpon>UiDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadEducationPath.cs" />
+    <Compile Include="LoadPlayer.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SaveLoadDeleteGame.cs" />
+    <Compile Include="UiInterface.cs" />
+    <Compile Include="Action.cs" />
+    <Compile Include="ActionGenerator.cs" />
+    <Compile Include="ActionListConverter.cs" />
+    <Compile Include="Converter.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="EducationPath.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="EventListConverter.cs" />
+    <Compile Include="Eventgenerator.cs" />
+    <Compile Include="UiMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UiMenu.Designer.cs">
+      <DependentUpon>UiMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UiGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UiGame.Designer.cs">
+      <DependentUpon>UiGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadAction.cs" />
+    <Compile Include="LoadOption.cs" />
+    <Compile Include="LoadStat.cs" />
+    <Compile Include="LoadRequirement.cs" />
+    <Compile Include="LoadEvent.cs" />
+    <Compile Include="Timing.cs" />
+    <Compile Include="Option.cs" />
+    <Compile Include="Phase.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UiDebug.resx">
+      <DependentUpon>UiDebug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UiMenu.resx">
+      <DependentUpon>UiMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UiGame.resx">
+      <DependentUpon>UiGame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Requirement.cs" />
+    <Compile Include="Stat.cs" />
+    <Compile Include="StatParameter.cs" />
+    <Compile Include="LoadTiming.cs" />
+    <Compile Include="UiInterfaceMenu.cs" />
+    <Compile Include="UnitTest.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatarBoy0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatarBoy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatarBoy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatarGirl0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatarGirl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatarGirl2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coworking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\criminal48Px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradientLight1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradientLight2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeworkIconSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mentalHealth48Px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money48Px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motivation48Px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musicIconSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redBlack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sportsIconSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uniTable.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
