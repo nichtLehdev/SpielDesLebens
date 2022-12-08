@@ -23,11 +23,12 @@ namespace SpielDesLebens
             ResetCareer(path, profession);
         }
 
-        public Player(int avatar, int age, string name, Stat playerStat, EventGenerator eventGen, EducationPath eduPath)
+        public Player(int avatar, int age, int graduation, string name, Stat playerStat, EventGenerator eventGen, EducationPath eduPath)
         {
             this.avatar = avatar;
             this.age = age;
             this.name = name;
+            this.graduation = (Data.Graduation) graduation;
             this.playerStat = playerStat;
             this.eventGenerator = eventGen;
             CreateActionGenerator();
