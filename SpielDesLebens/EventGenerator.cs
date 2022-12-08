@@ -36,7 +36,7 @@ namespace SpielDesLebens
             FilterEventsByPathProfession(LoadEvents());
         }
 
-        // priority handling:
+        // Priority handling:
         // priority = 0: the first event of the events list, whith priority = 0 is returned directly and deleted using the id from filteredEventsPathProfession.
         // priotity != 0: for loop queries randomized number, if(randNum > 50...) priority 1, then halve 50 and again...
         public Event NextEvent(Stat stats)
@@ -101,7 +101,7 @@ namespace SpielDesLebens
         #region load career events
         private List<Event> LoadEvents()
         {
-            // saves all events from JSON to LoadEvents in a list, saves all LoadEvents as Events
+            // Saves all events from JSON to LoadEvents in a list, saves all LoadEvents as Events.
             string filename = "..//..//..//data//events.json";
             if (File.Exists(filename))
             {
@@ -118,7 +118,7 @@ namespace SpielDesLebens
         }
 
 
-        // filters by Path and Profession, leaves Phases
+        // Filters by Path and Profession, leaves Phases.
         private void FilterEventsByPathProfession(List<Event> events)
         {
             foreach (Event e in events)
@@ -139,7 +139,7 @@ namespace SpielDesLebens
         private void FilterEventsByPhase()
         {
             filteredEventsPhase.Clear();
-            //filters out all Events, which are valid for the current Phase and puts these in filteredEventsPhase List
+            // Filters out all Events, which are valid for the current Phase and puts these in filteredEventsPhase List.
             foreach (Event e in filteredEventsPathProfession)
             {
                 foreach (Timing t in e.GetRequirements().GetTimings())
@@ -153,7 +153,7 @@ namespace SpielDesLebens
             }
         }
 
-        // filters by Stats
+        // Filters by Stats.
         private List<Event> FilterEventsByStats(Stat playerStats)
         {
             List<Event> fEvents = new List<Event>();
@@ -170,19 +170,19 @@ namespace SpielDesLebens
         #endregion
 
 
-        // for Debugging only !!!
+        // For Debugging only !!!
         public List<Event> LoadEventsDebug()
         {
             return LoadEvents();
         }
 
-        // for Debugging only !!!
+        // For Debugging only !!!
         public void FilterEventsByPhaseDebug()
         {
             FilterEventsByPhase();
         }
 
-        // for Debugging only !!!
+        // For Debugging only !!!
         public List<Event> GetFilteredEventsPhase()
         {
             return filteredEventsPhase;

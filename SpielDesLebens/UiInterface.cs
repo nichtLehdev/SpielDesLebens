@@ -92,7 +92,7 @@ namespace SpielDesLebens
             int highStat = 0;
             if (action >= currentActions.Count)
             {
-                // there in case no valid action is selected
+                // There in case no valid action is selected.
             }
             else
             {
@@ -106,7 +106,7 @@ namespace SpielDesLebens
                     }
                 }
 
-                // test if no stat ist positive for criminal actions to display a custom / diffreent icon
+                // Test if no stat ist positive for criminal actions to display a custom / diffreent icon.
                 if (optionStat.GetStats()[highStat].GetValue() <= 0)
                 {
                     highStat = -1;
@@ -137,7 +137,7 @@ namespace SpielDesLebens
 
         public string GetEventOptionText(int option)
         {
-            // change player stats
+            // Change player stats.
             if (option >= currentEvent.GetOptions().Count)
             {
                 return "";
@@ -186,7 +186,7 @@ namespace SpielDesLebens
             return player.GetEducationPath().GetPhase().GetMaxPhaseNumber();
         }
 
-        public Data.Graduation GetGraduation()
+        public Data.SGraduation GetGraduation()
         {
             return player.GetGraduation();
         }
@@ -256,7 +256,7 @@ namespace SpielDesLebens
 
         public string GetStatWarning()
         {
-            Data.StatType? statType = player.CheckStatSmaller(11);
+            Data.SStatType? statType = player.CheckStatSmaller(11);
             string warning = "";
             if (statType != null)
             {
@@ -281,7 +281,7 @@ namespace SpielDesLebens
 
         public string GetGameEnd()
         {
-            Data.StatType? statType = player.CheckStatSmaller(1);
+            Data.SStatType? statType = player.CheckStatSmaller(1);
             string gameEnd = "";
             if (statType != null)
             {
@@ -303,7 +303,7 @@ namespace SpielDesLebens
             }
             if (player.GetEducationPath().GetPhase().GetCurrentPhase() > GetMaxPhaseNumber())
             {
-                if (player.GetEducationPath().GetPath() == Data.Path.Training)
+                if (player.GetEducationPath().GetPath() == Data.SPath.Training)
                 {
                     gameEnd = "Erfolg!!! Du hast deine Ausbildung ";
                 }
@@ -316,7 +316,7 @@ namespace SpielDesLebens
             }
             return gameEnd;
         }
-        public void ResetPath(Data.Path path, Data.Profession profession)
+        public void ResetPath(Data.SPath path, Data.SProfession profession)
         {
             player.ResetCareer(path, profession);
             Stat stats = new Stat(10, 10, 10, 10);
@@ -336,21 +336,21 @@ namespace SpielDesLebens
             {
                 return false;
             }
-            if (player.GetEducationPath().GetPath() == Data.Path.Training)
+            if (player.GetEducationPath().GetPath() == Data.SPath.Training)
             {
                 if (currentPhase % 2 == 0)
                 {
                     return true;
                 }
             }
-            else if (player.GetEducationPath().GetPath() == Data.Path.DualStudy)
+            else if (player.GetEducationPath().GetPath() == Data.SPath.DualStudy)
             {
                 if (currentPhase % 2 != 0)
                 {
                     return true;
                 }
             }
-            else if (player.GetEducationPath().GetPath() == Data.Path.Study) // seperatly in case of changes in the future
+            else if (player.GetEducationPath().GetPath() == Data.SPath.Study) // seperatly in case of changes in the future
             {
                 if (currentPhase % 2 != 0)
                 {

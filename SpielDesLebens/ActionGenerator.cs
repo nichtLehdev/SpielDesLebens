@@ -20,7 +20,7 @@ namespace SpielDesLebens
 
         private List<Action> LoadActions()
         {
-            // saves all actions from JSON to LoadActions in a list, saves all LoadActions as Actions
+            // Saves all actions from JSON to LoadActions in a list, saves all LoadActions as Actions.
             string filename = "..//..//..//data//actions.json";
             if (File.Exists(filename))
             {
@@ -57,7 +57,7 @@ namespace SpielDesLebens
             return actions[actionIndex];
         }
 
-        // for Debugging only !!!
+        // For Debugging only !!!
         public List<Action> GetActionsDebug()
         {
             return actions;

@@ -1,6 +1,6 @@
 ﻿// @author: Maximilian Koch
 
-// for Debugging only !!!
+// For Debugging only !!!
 
 using System;
 using System.Collections.Generic;
@@ -36,7 +36,7 @@ namespace SpielDesLebens
 
         private void EventPrinter()
         {
-            EducationPath eventsC = new EducationPath(Data.Path.Training, Data.Profession.Social);
+            EducationPath eventsC = new EducationPath(Data.SPath.Training, Data.SProfession.Social);
             Eventgenerator eventgenerator = new Eventgenerator(eventsC);
             List<Event> eventsL = eventgenerator.LoadEventsDebug();
             string eventsO = "EVENTS (" + eventsL.Count + ") \r\n------------------------------------------------------------------------ \r\n \r\n";
@@ -86,7 +86,7 @@ namespace SpielDesLebens
             int sJ = 0;
             int sK = 0;
 
-            // fill matrix with -1
+            // Fill matrix with -1.
             for (int i = 0; i < emA.GetLength(0); i++)
             {
                 for (int j = 0; j < emA.GetLength(1); j++)
@@ -103,10 +103,10 @@ namespace SpielDesLebens
             {
                 for (int j = 0; j <= 4; j++)
                 {
-                    EducationPath emC = new EducationPath((Data.Path)i, (Data.Profession)j);
+                    EducationPath emC = new EducationPath((Data.SPath)i, (Data.SProfession)j);
                     Eventgenerator emEventgenerator = new Eventgenerator(emC);
 
-                    for (int k = 0; k <= ((int)((3 * 12) / Data.PhaseL[i])); k++)
+                    for (int k = 0; k <= ((int)((3 * 12) / Data.SPhaseL[i])); k++)
                     {
                         emEventgenerator.FilterEventsByPhaseDebug();
                         List<Event> emL = emEventgenerator.GetFilteredEventsPhase();
@@ -133,7 +133,7 @@ namespace SpielDesLebens
 
             }
 
-            string emO = "EVENT MATRIX \r\n---------------------------------------------------------------------------------- \r\n \r\nThe least events are in the path " + (Data.Path)sI + " (" + sI + "), with the profession " + (Data.Profession)sJ + " (" + sJ + ") in the phase " + sK + " with " + emA[sI, sJ, sK] + " events. \r\n \r\n \r\n";
+            string emO = "EVENT MATRIX \r\n---------------------------------------------------------------------------------- \r\n \r\nThe least events are in the path " + (Data.SPath)sI + " (" + sI + "), with the profession " + (Data.SProfession)sJ + " (" + sJ + ") in the phase " + sK + " with " + emA[sI, sJ, sK] + " events. \r\n \r\n \r\n";
             emO += "\t \t \t \t0 \t1 \t2 \t3 \t4 \t5 \t6 \t7  \t8 \t9 \t10 \t11 \t12 \t13 \t14 \t15 \t16 \t17 \t18 \r\n";
 
             for (int i = 0; i < emA.GetLength(0); i++)
@@ -143,14 +143,14 @@ namespace SpielDesLebens
                 for (int j = 0; j < emA.GetLength(1); j++)
                 {
 
-                    emO += +i + " " + (Data.Path)i + "\t";
+                    emO += +i + " " + (Data.SPath)i + "\t";
 
                     if (i == 0 || i == 2)
                     {
                         emO += "\t";
                     }
 
-                    emO += +j + " " + (Data.Profession)j + "\t";
+                    emO += +j + " " + (Data.SProfession)j + "\t";
 
                     if (j == 0 || j == 3 || j == 4)
                     {

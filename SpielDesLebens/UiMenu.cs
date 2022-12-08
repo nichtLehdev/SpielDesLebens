@@ -210,7 +210,7 @@ namespace SpielDesLebens
             float[] relativeIntensities = { 0.0f, 0.5f, 1.0f };
             float[] relativePositions = { 0.0f, 0.2f, 1.0f };
 
-            // create a Blend object and assign it to linGrBrush.
+            // Create a Blend object and assign it to linGrBrush.
             Blend blend = new Blend
             {
                 Factors = relativeIntensities,
@@ -389,7 +389,7 @@ namespace SpielDesLebens
                 lblUserInfo.Text = "!!! Wähle einen Avatar !!!";
                 return false;
             }
-            uiMenu.CreatePlayer(avatar, Convert.ToInt16(txtAge.Text), txtName.Text, (Data.Path)path, (Data.Profession)profession, (Data.Graduation)graduation);
+            uiMenu.CreatePlayer(avatar, Convert.ToInt16(txtAge.Text), txtName.Text, (Data.SPath)path, (Data.SProfession)profession, (Data.SGraduation)graduation);
             uiInterface = uiMenu.CreateUiInterface(slot);
             return true;
         }

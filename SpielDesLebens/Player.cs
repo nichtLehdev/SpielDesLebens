@@ -7,13 +7,13 @@ namespace SpielDesLebens
         private readonly int avatar;
         private int age;
         private readonly string name;
-        private readonly Data.Graduation graduation;
+        private readonly Data.SGraduation graduation;
         private Stat playerStat;
         private Eventgenerator eventGenerator;
         private ActionGenerator actionGenerator;
         private EducationPath eduPath;
 
-        public Player(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
+        public Player(int avatar, int age, string name, Data.SPath path, Data.SProfession profession, Data.SGraduation graduation)
         {
             this.age = age;
             this.avatar = avatar;
@@ -36,14 +36,14 @@ namespace SpielDesLebens
 
         #region createOrReset
 
-        public void ResetCareer(Data.Path path, Data.Profession profession)
+        public void ResetCareer(Data.SPath path, Data.SProfession profession)
         {
             CreateEducationPath(path, profession);
             CreateEventgenerator(eduPath);
             CreateActionGenerator();
         }
 
-        private void CreateEducationPath(Data.Path path, Data.Profession profession)
+        private void CreateEducationPath(Data.SPath path, Data.SProfession profession)
         {
             eduPath = new EducationPath(path, profession);
         }
@@ -59,13 +59,13 @@ namespace SpielDesLebens
         }
 
         #endregion
-        // have to be called for every new phase
+        // Have to be called for every new phase.
         public void NextPhase()
         {
             eduPath.GetPhase().NextPhase();
             IncreaseAge();
-            // edit stats depending on path
-            ChangePlayerStat(Data.StatArray[(int)eduPath.GetPath()]);
+            // Edit stats depending on path.
+            ChangePlayerStat(Data.SStatArray[(int)eduPath.GetPath()]);
 
         }
 
@@ -108,7 +108,7 @@ namespace SpielDesLebens
         {
             return this.avatar;
         }
-        public Data.Graduation GetGraduation()
+        public Data.SGraduation GetGraduation()
         {
             return this.graduation;
         }
@@ -117,14 +117,14 @@ namespace SpielDesLebens
         {
             if (eduPath.GetPhase().GetCurrentPhase() != 0)
             {
-                if ((eduPath.GetPhase().GetCurrentPhase() * Data.PhaseL[(int)eduPath.GetPath()]) % 12 == 0)
+                if ((eduPath.GetPhase().GetCurrentPhase() * Data.SPhaseL[(int)eduPath.GetPath()]) % 12 == 0)
                 {
                     age++;
                 }
             }
         }
 
-        public Data.StatType? CheckStatSmaller(int statValue)
+        public Data.SStatType? CheckStatSmaller(int statValue)
         {
             foreach (StatParameter statParameter in this.playerStat.GetStats())
             {
