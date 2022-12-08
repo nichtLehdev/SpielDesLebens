@@ -36,8 +36,9 @@ namespace SpielDesLebens
             FilterEventsByPathProfession(LoadEvents());
         }
 
-        // Prio: for loop frägt Randomized Num ab, if(Randomized>50...) ist prio 1, dann 50 halbieren und nochmal
-        // Bei Priority = 0 Event wird direkt das erste Event der events Liste ausgeführt und gelöscht mittels Id aus filteredEventsPathProfession
+        // priority handling:
+        // priority = 0: the first event of the events list, whith priority = 0 is returned directly and deleted using the id from filteredEventsPathProfession.
+        // priotity != 0: for loop queries randomized number, if(randNum > 50...) priority 1, then halve 50 and again...
         public Event NextEvent(Stat stats)
         {
             FilterEventsByPhase();
