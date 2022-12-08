@@ -53,11 +53,6 @@ namespace SpielDesLebens
             this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.eventTitle = new System.Windows.Forms.Label();
-            this.actionPanel = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.actionTitle = new System.Windows.Forms.TextBox();
-            this.actionText = new System.Windows.Forms.TextBox();
             this.newProfessionPanel = new System.Windows.Forms.Panel();
             this.newProfessionPathComboBox = new System.Windows.Forms.ComboBox();
             this.newProfessionPathLable = new System.Windows.Forms.Label();
@@ -67,6 +62,11 @@ namespace SpielDesLebens
             this.newProfessionNoBtn = new System.Windows.Forms.Button();
             this.newProfessionTitle = new System.Windows.Forms.TextBox();
             this.newProfessionTxt = new System.Windows.Forms.TextBox();
+            this.eventTitle = new System.Windows.Forms.Label();
+            this.actionPanel = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.actionTitle = new System.Windows.Forms.TextBox();
+            this.actionText = new System.Windows.Forms.TextBox();
             this.closeOptEndTxt = new System.Windows.Forms.Button();
             this.tutorialAskPanel = new System.Windows.Forms.Panel();
             this.tutorialAskBtn = new System.Windows.Forms.Button();
@@ -136,8 +136,8 @@ namespace SpielDesLebens
             this.tutorialPanel5.SuspendLayout();
             this.tutorialPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.actionPanel.SuspendLayout();
             this.newProfessionPanel.SuspendLayout();
+            this.actionPanel.SuspendLayout();
             this.tutorialAskPanel.SuspendLayout();
             this.gameOverPanel.SuspendLayout();
             this.infoPanel.SuspendLayout();
@@ -425,9 +425,9 @@ namespace SpielDesLebens
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BackgroundImage = global::SpielDesLebens.Properties.Resources.gradient1;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.newProfessionPanel);
             this.panel1.Controls.Add(this.eventTitle);
             this.panel1.Controls.Add(this.actionPanel);
-            this.panel1.Controls.Add(this.newProfessionPanel);
             this.panel1.Controls.Add(this.closeOptEndTxt);
             this.panel1.Controls.Add(this.tutorialAskPanel);
             this.panel1.Controls.Add(this.gameOverPanel);
@@ -442,69 +442,6 @@ namespace SpielDesLebens
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(589, 426);
             this.panel1.TabIndex = 4;
-            // 
-            // eventTitle
-            // 
-            this.eventTitle.AutoSize = true;
-            this.eventTitle.BackColor = System.Drawing.Color.Transparent;
-            this.eventTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eventTitle.ForeColor = System.Drawing.Color.White;
-            this.eventTitle.Location = new System.Drawing.Point(56, 47);
-            this.eventTitle.MaximumSize = new System.Drawing.Size(412, 0);
-            this.eventTitle.Name = "eventTitle";
-            this.eventTitle.Size = new System.Drawing.Size(52, 18);
-            this.eventTitle.TabIndex = 13;
-            this.eventTitle.Text = "label6";
-            // 
-            // actionPanel
-            // 
-            this.actionPanel.BackColor = System.Drawing.Color.FloralWhite;
-            this.actionPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.actionPanel.Controls.Add(this.button9);
-            this.actionPanel.Controls.Add(this.actionTitle);
-            this.actionPanel.Controls.Add(this.actionText);
-            this.actionPanel.Location = new System.Drawing.Point(136, 62);
-            this.actionPanel.Name = "actionPanel";
-            this.actionPanel.Size = new System.Drawing.Size(369, 218);
-            this.actionPanel.TabIndex = 10;
-            this.actionPanel.Visible = false;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(233, 165);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(100, 40);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Weiter";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.ActionClose);
-            // 
-            // actionTitle
-            // 
-            this.actionTitle.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.actionTitle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.actionTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.actionTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actionTitle.Location = new System.Drawing.Point(33, 17);
-            this.actionTitle.Name = "actionTitle";
-            this.actionTitle.ReadOnly = true;
-            this.actionTitle.Size = new System.Drawing.Size(185, 21);
-            this.actionTitle.TabIndex = 10;
-            this.actionTitle.Text = "ActionTitle";
-            // 
-            // actionText
-            // 
-            this.actionText.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.actionText.BackColor = System.Drawing.SystemColors.Control;
-            this.actionText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.actionText.Location = new System.Drawing.Point(33, 52);
-            this.actionText.Multiline = true;
-            this.actionText.Name = "actionText";
-            this.actionText.ReadOnly = true;
-            this.actionText.Size = new System.Drawing.Size(300, 103);
-            this.actionText.TabIndex = 10;
-            this.actionText.Text = "Erklärung von Aktionen";
-            this.actionText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // newProfessionPanel
             // 
@@ -612,6 +549,69 @@ namespace SpielDesLebens
             this.newProfessionTxt.TabIndex = 10;
             this.newProfessionTxt.Text = "Möchtest du deine Karriere ändern?";
             this.newProfessionTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // eventTitle
+            // 
+            this.eventTitle.AutoSize = true;
+            this.eventTitle.BackColor = System.Drawing.Color.Transparent;
+            this.eventTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eventTitle.ForeColor = System.Drawing.Color.White;
+            this.eventTitle.Location = new System.Drawing.Point(56, 47);
+            this.eventTitle.MaximumSize = new System.Drawing.Size(412, 0);
+            this.eventTitle.Name = "eventTitle";
+            this.eventTitle.Size = new System.Drawing.Size(52, 18);
+            this.eventTitle.TabIndex = 13;
+            this.eventTitle.Text = "label6";
+            // 
+            // actionPanel
+            // 
+            this.actionPanel.BackColor = System.Drawing.Color.FloralWhite;
+            this.actionPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.actionPanel.Controls.Add(this.button9);
+            this.actionPanel.Controls.Add(this.actionTitle);
+            this.actionPanel.Controls.Add(this.actionText);
+            this.actionPanel.Location = new System.Drawing.Point(136, 62);
+            this.actionPanel.Name = "actionPanel";
+            this.actionPanel.Size = new System.Drawing.Size(369, 218);
+            this.actionPanel.TabIndex = 10;
+            this.actionPanel.Visible = false;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(233, 165);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(100, 40);
+            this.button9.TabIndex = 11;
+            this.button9.Text = "Weiter";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.ActionClose);
+            // 
+            // actionTitle
+            // 
+            this.actionTitle.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.actionTitle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.actionTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.actionTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actionTitle.Location = new System.Drawing.Point(33, 17);
+            this.actionTitle.Name = "actionTitle";
+            this.actionTitle.ReadOnly = true;
+            this.actionTitle.Size = new System.Drawing.Size(185, 21);
+            this.actionTitle.TabIndex = 10;
+            this.actionTitle.Text = "ActionTitle";
+            // 
+            // actionText
+            // 
+            this.actionText.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.actionText.BackColor = System.Drawing.SystemColors.Control;
+            this.actionText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.actionText.Location = new System.Drawing.Point(33, 52);
+            this.actionText.Multiline = true;
+            this.actionText.Name = "actionText";
+            this.actionText.ReadOnly = true;
+            this.actionText.Size = new System.Drawing.Size(300, 103);
+            this.actionText.TabIndex = 10;
+            this.actionText.Text = "Erklärung von Aktionen";
+            this.actionText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // closeOptEndTxt
             // 
@@ -1401,10 +1401,10 @@ namespace SpielDesLebens
             this.tutorialPanel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.actionPanel.ResumeLayout(false);
-            this.actionPanel.PerformLayout();
             this.newProfessionPanel.ResumeLayout(false);
             this.newProfessionPanel.PerformLayout();
+            this.actionPanel.ResumeLayout(false);
+            this.actionPanel.PerformLayout();
             this.tutorialAskPanel.ResumeLayout(false);
             this.tutorialAskPanel.PerformLayout();
             this.gameOverPanel.ResumeLayout(false);

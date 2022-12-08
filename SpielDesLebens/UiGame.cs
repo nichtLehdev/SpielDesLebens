@@ -177,6 +177,9 @@ namespace SpielDesLebens
             action1Btn.Enabled = false;
             action2Btn.Enabled = false;
             action3Btn.Enabled = false;
+            saveBtn.Enabled = false;
+            backToMenuBtn.Enabled = false;
+            nextPhaseBtn.Enabled = false;
         }
         private void AllOptionsEnable()
         {
@@ -189,6 +192,9 @@ namespace SpielDesLebens
             action1Btn.Enabled = true;
             action2Btn.Enabled = true;
             action3Btn.Enabled = true;
+            saveBtn.Enabled = true;
+            backToMenuBtn.Enabled = true;
+            nextPhaseBtn.Enabled = true;
 
         }
         private void AllOptionsHide()
@@ -462,8 +468,17 @@ namespace SpielDesLebens
                 PathSet(refrenceTraining);
                 ProfessionSet(refrenceProfession);
                 uiInterface.ResetPath(training, profession);
+                newProfessionYesBtn.Text = "Ja";
             }
             newProfessionPanel.Visible = false;
+            newProfessionPathLable.Visible = false;
+            newProfessionPathComboBox.Visible = false;
+            newProfessionPathComboBox.Text = "";
+            newProfessionProfessionComboBox.Text = "";
+            newProfessionProfessionComboBox.Items.Clear();
+            newProfessionPathComboBox.Items.Clear();
+            newProfessionProfessionLable.Visible = false;
+            newProfessionProfessionComboBox.Visible = false;
             AllOptionsEnable();
         }
 
@@ -473,24 +488,37 @@ namespace SpielDesLebens
             nextPhaseBtn.Enabled = false;
             newProfessionPanel.Visible = true;
             newProfessionNoBtn.Text = "Nein";
+            newProfessionNoBtn.Enabled = true;
             newProfessionYesBtn.Visible = true;
         }
 
         private void NewProfessionYesOpt(object sender, EventArgs e)
         {
-            newProfessionProfessionComboBox.Visible = true;
-            newProfessionYesBtn.Visible = false;
-            newProfessionNoBtn.Text = "Weiter";
-            newProfessionYesBtn.Visible = false;
-            newProfessionProfessionLable.Visible = true;
-            newProfessionPathLable.Visible = true;
-            newProfessionPathComboBox.Visible = true;
-            newProfessionNoBtn.Enabled = false;
-            if (abschluss == "Hauptschulabschluss")
+            if (newProfessionYesBtn.Text == "Abbrechen")
+            {
+                newProfessionPathLable.Visible = false;
+                newProfessionPathComboBox.Visible = false;
+                newProfessionProfessionLable.Visible = false;
+                newProfessionProfessionComboBox.Visible = false;
+                newProfessionPanel.Visible = false;
+                newProfessionYesBtn.Text = "Ja";
+            }
+            else
+            {
+                newProfessionProfessionComboBox.Visible = true;
+                newProfessionNoBtn.Text = "Weiter";
+                newProfessionYesBtn.Text = "Abbrechen";
+                newProfessionProfessionLable.Visible = true;
+                newProfessionPathLable.Visible = true;
+                newProfessionPathComboBox.Visible = true;
+                newProfessionNoBtn.Enabled = false;
+            }
+            Data.Graduation currentGraduation = uiInterface.GetGraduation();
+            if (currentGraduation.Equals(Data.Graduation.Hauptschulabschluss))
             {
                 newProfessionPathComboBox.Items.AddRange(new object[] { "Ausbildung" });
             }
-            else if (abschluss == "Realschulabschluss")
+            else if (currentGraduation.Equals(Data.Graduation.Realschulabschluss))
             {
                 newProfessionPathComboBox.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
             }
