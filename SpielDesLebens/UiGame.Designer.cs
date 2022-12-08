@@ -1295,8 +1295,8 @@ namespace SpielDesLebens
             // 
             this.lblPlayerPath.AutoSize = true;
             this.lblPlayerPath.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPlayerPath.Location = new System.Drawing.Point(112, 163);
-            this.lblPlayerPath.MaximumSize = new System.Drawing.Size(150, 0);
+            this.lblPlayerPath.Location = new System.Drawing.Point(100, 167);
+            this.lblPlayerPath.MaximumSize = new System.Drawing.Size(120, 0);
             this.lblPlayerPath.Name = "lblPlayerPath";
             this.lblPlayerPath.Size = new System.Drawing.Size(102, 13);
             this.lblPlayerPath.TabIndex = 11;
@@ -1307,7 +1307,7 @@ namespace SpielDesLebens
             this.lblPath.AutoSize = true;
             this.lblPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPath.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPath.Location = new System.Drawing.Point(52, 163);
+            this.lblPath.Location = new System.Drawing.Point(42, 167);
             this.lblPath.Name = "lblPath";
             this.lblPath.Size = new System.Drawing.Size(55, 13);
             this.lblPath.TabIndex = 10;
@@ -1317,7 +1317,7 @@ namespace SpielDesLebens
             // 
             this.lblPlayerName.AutoSize = true;
             this.lblPlayerName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPlayerName.Location = new System.Drawing.Point(112, 123);
+            this.lblPlayerName.Location = new System.Drawing.Point(100, 127);
             this.lblPlayerName.Name = "lblPlayerName";
             this.lblPlayerName.Size = new System.Drawing.Size(70, 13);
             this.lblPlayerName.TabIndex = 6;
@@ -1328,7 +1328,7 @@ namespace SpielDesLebens
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAge.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAge.Location = new System.Drawing.Point(52, 143);
+            this.lblAge.Location = new System.Drawing.Point(42, 147);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(37, 13);
             this.lblAge.TabIndex = 9;
@@ -1350,7 +1350,7 @@ namespace SpielDesLebens
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblName.Location = new System.Drawing.Point(52, 123);
+            this.lblName.Location = new System.Drawing.Point(42, 127);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(43, 13);
             this.lblName.TabIndex = 8;
@@ -1360,7 +1360,7 @@ namespace SpielDesLebens
             // 
             this.lblPlayerAge.AutoSize = true;
             this.lblPlayerAge.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPlayerAge.Location = new System.Drawing.Point(112, 143);
+            this.lblPlayerAge.Location = new System.Drawing.Point(100, 147);
             this.lblPlayerAge.Name = "lblPlayerAge";
             this.lblPlayerAge.Size = new System.Drawing.Size(63, 13);
             this.lblPlayerAge.TabIndex = 7;
