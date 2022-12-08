@@ -19,5 +19,7 @@ namespace SpielDesLebens
 
         public static Stat[] SStatArray = new Stat[3] { new Stat(0, 25, -15, -45), new Stat(0, 50, -30, -45), new Stat(0, 0, -40, -45) };
 
+        public static int SPrioFactor = 100;
+
     }
 }
