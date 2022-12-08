@@ -532,7 +532,7 @@ namespace SpielDesLebens
             this.newProfessionTitle.Location = new System.Drawing.Point(33, 17);
             this.newProfessionTitle.Name = "newProfessionTitle";
             this.newProfessionTitle.ReadOnly = true;
-            this.newProfessionTitle.Size = new System.Drawing.Size(185, 21);
+            this.newProfessionTitle.Size = new System.Drawing.Size(185, 20);
             this.newProfessionTitle.TabIndex = 10;
             this.newProfessionTitle.Text = "Neue Karriere";
             // 
@@ -559,7 +559,7 @@ namespace SpielDesLebens
             this.eventTitle.Location = new System.Drawing.Point(56, 47);
             this.eventTitle.MaximumSize = new System.Drawing.Size(412, 0);
             this.eventTitle.Name = "eventTitle";
-            this.eventTitle.Size = new System.Drawing.Size(52, 18);
+            this.eventTitle.Size = new System.Drawing.Size(52, 17);
             this.eventTitle.TabIndex = 13;
             this.eventTitle.Text = "label6";
             // 
@@ -595,7 +595,7 @@ namespace SpielDesLebens
             this.actionTitle.Location = new System.Drawing.Point(33, 17);
             this.actionTitle.Name = "actionTitle";
             this.actionTitle.ReadOnly = true;
-            this.actionTitle.Size = new System.Drawing.Size(185, 21);
+            this.actionTitle.Size = new System.Drawing.Size(185, 20);
             this.actionTitle.TabIndex = 10;
             this.actionTitle.Text = "ActionTitle";
             // 
@@ -666,7 +666,7 @@ namespace SpielDesLebens
             this.tutorialAskTitle.Location = new System.Drawing.Point(33, 17);
             this.tutorialAskTitle.Name = "tutorialAskTitle";
             this.tutorialAskTitle.ReadOnly = true;
-            this.tutorialAskTitle.Size = new System.Drawing.Size(185, 21);
+            this.tutorialAskTitle.Size = new System.Drawing.Size(185, 20);
             this.tutorialAskTitle.TabIndex = 10;
             this.tutorialAskTitle.Text = "Tutorial";
             // 
@@ -714,7 +714,7 @@ namespace SpielDesLebens
             this.gameOverTitle.Location = new System.Drawing.Point(33, 17);
             this.gameOverTitle.Name = "gameOverTitle";
             this.gameOverTitle.ReadOnly = true;
-            this.gameOverTitle.Size = new System.Drawing.Size(185, 21);
+            this.gameOverTitle.Size = new System.Drawing.Size(185, 20);
             this.gameOverTitle.TabIndex = 5;
             this.gameOverTitle.Text = "GameOver";
             // 
@@ -902,8 +902,8 @@ namespace SpielDesLebens
             this.tutorialTxt6.ReadOnly = true;
             this.tutorialTxt6.Size = new System.Drawing.Size(163, 68);
             this.tutorialTxt6.TabIndex = 11;
-            this.tutorialTxt6.Text = "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase gibt ein" +
-    "e Semesterlänge an.";
+            this.tutorialTxt6.Text = "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase ist ein " +
+    "Ausbildungsabschnitt.";
             this.tutorialTxt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tutorialPanel1
@@ -940,7 +940,7 @@ namespace SpielDesLebens
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(193, 22);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 20);
+            this.label5.Size = new System.Drawing.Size(92, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Fortschritt";
             // 
@@ -996,7 +996,7 @@ namespace SpielDesLebens
             this.moneyProgBar.Location = new System.Drawing.Point(31, 221);
             this.moneyProgBar.Name = "moneyProgBar";
             this.moneyProgBar.ReadOnly = true;
-            this.moneyProgBar.Size = new System.Drawing.Size(162, 21);
+            this.moneyProgBar.Size = new System.Drawing.Size(162, 20);
             this.moneyProgBar.TabIndex = 15;
             // 
             // tutorialPanel2
@@ -1077,7 +1077,7 @@ namespace SpielDesLebens
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(28, 411);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 15);
+            this.label4.Size = new System.Drawing.Size(86, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Mental Health";
             // 
@@ -1088,7 +1088,7 @@ namespace SpielDesLebens
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(28, 341);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 15);
+            this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Motivation";
             // 
@@ -1099,7 +1099,7 @@ namespace SpielDesLebens
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(28, 268);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 15);
+            this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Lernstand";
             // 
@@ -1110,7 +1110,7 @@ namespace SpielDesLebens
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(28, 204);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 15);
+            this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Geld";
             // 
@@ -1168,7 +1168,7 @@ namespace SpielDesLebens
             // 
             this.backToMenuBtn.BackColor = System.Drawing.Color.Transparent;
             this.backToMenuBtn.ForeColor = System.Drawing.Color.White;
-            this.backToMenuBtn.Location = new System.Drawing.Point(30, 570);
+            this.backToMenuBtn.Location = new System.Drawing.Point(30, 585);
             this.backToMenuBtn.Name = "backToMenuBtn";
             this.backToMenuBtn.Size = new System.Drawing.Size(185, 23);
             this.backToMenuBtn.TabIndex = 17;
@@ -1180,7 +1180,7 @@ namespace SpielDesLebens
             // 
             this.saveBtn.BackColor = System.Drawing.Color.Transparent;
             this.saveBtn.ForeColor = System.Drawing.Color.White;
-            this.saveBtn.Location = new System.Drawing.Point(30, 540);
+            this.saveBtn.Location = new System.Drawing.Point(30, 548);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(185, 23);
             this.saveBtn.TabIndex = 16;

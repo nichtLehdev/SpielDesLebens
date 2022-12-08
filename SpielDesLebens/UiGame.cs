@@ -10,7 +10,7 @@ namespace SpielDesLebens
     {
         private Form activeForm;
         private readonly UiInterface uiInterface;
-        private readonly bool newGame = true;
+        private readonly bool newGame;
 
         private Data.Path training;
         private Data.Profession profession;
@@ -20,10 +20,11 @@ namespace SpielDesLebens
         private string refrenceProfession;
 
 
-        public UiGame(UiInterface uiInterface)
+        public UiGame(UiInterface uiInterface, bool newGame)
         {
             InitializeComponent();
             this.uiInterface = uiInterface;
+            this.newGame = newGame;
         }
 
         private void FormGameUiLoad(object sender, EventArgs e)
@@ -397,7 +398,7 @@ namespace SpielDesLebens
         }
         private void ContinueTutorial6(object sender, EventArgs e)
         {
-            if (tutorialTxt6.Text == "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase gibt eine Semesterlänge an.")
+            if (tutorialTxt6.Text == "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
             {
                 tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei einem. Ein Event erhöht die Anzahl der Aktionspnkte bei zwei.";
             }
@@ -407,7 +408,7 @@ namespace SpielDesLebens
 
         private void ContinueTutorial7(object sender, EventArgs e)
         {
-            if (tutorialTxt6.Text == "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase gibt eine Semesterlänge an.")
+            if (tutorialTxt6.Text == "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
             {
                 tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei einem. Ein Event erhöht die Anzahl der Aktionspnkte bei zwei.";
             }

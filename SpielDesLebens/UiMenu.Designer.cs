@@ -118,7 +118,7 @@ namespace SpielDesLebens
             this.title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.title.Location = new System.Drawing.Point(100, 91);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(172, 24);
+            this.title.Size = new System.Drawing.Size(164, 22);
             this.title.TabIndex = 7;
             this.title.Text = "Spiel des Lebens";
             // 
@@ -128,7 +128,7 @@ namespace SpielDesLebens
             this.panel2.Controls.Add(this.buttonMini3);
             this.panel2.Controls.Add(this.buttonMini2);
             this.panel2.Controls.Add(this.buttonMini1);
-            this.panel2.Location = new System.Drawing.Point(60, 170);
+            this.panel2.Location = new System.Drawing.Point(45, 170);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(262, 175);
@@ -384,7 +384,7 @@ namespace SpielDesLebens
             this.label2.Location = new System.Drawing.Point(13, 333);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 15);
+            this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 18;
             this.label2.Text = "Bildungsweg";
             // 
@@ -392,7 +392,7 @@ namespace SpielDesLebens
             // 
             this.dropDownProfession.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.dropDownProfession.FormattingEnabled = true;
-            this.dropDownProfession.Location = new System.Drawing.Point(13, 351);
+            this.dropDownProfession.Location = new System.Drawing.Point(97, 331);
             this.dropDownProfession.Name = "dropDownProfession";
             this.dropDownProfession.Size = new System.Drawing.Size(224, 21);
             this.dropDownProfession.TabIndex = 17;
@@ -403,10 +403,10 @@ namespace SpielDesLebens
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(13, 380);
+            this.label3.Location = new System.Drawing.Point(13, 360);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 5, 7, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 15);
+            this.label3.Size = new System.Drawing.Size(74, 13);
             this.label3.TabIndex = 20;
             this.label3.Text = "Karriereweg";
             // 
@@ -414,7 +414,7 @@ namespace SpielDesLebens
             // 
             this.dropDownPath.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.dropDownPath.FormattingEnabled = true;
-            this.dropDownPath.Location = new System.Drawing.Point(13, 398);
+            this.dropDownPath.Location = new System.Drawing.Point(97, 358);
             this.dropDownPath.Name = "dropDownPath";
             this.dropDownPath.Size = new System.Drawing.Size(224, 21);
             this.dropDownPath.TabIndex = 19;
@@ -425,16 +425,16 @@ namespace SpielDesLebens
             this.lable4.AutoSize = true;
             this.lable4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lable4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lable4.Location = new System.Drawing.Point(243, 400);
+            this.lable4.Location = new System.Drawing.Point(13, 387);
             this.lable4.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.lable4.Name = "lable4";
-            this.lable4.Size = new System.Drawing.Size(45, 15);
+            this.lable4.Size = new System.Drawing.Size(39, 13);
             this.lable4.TabIndex = 10;
             this.lable4.Text = "Name";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(13, 425);
+            this.txtName.Location = new System.Drawing.Point(58, 385);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(267, 20);
             this.txtName.TabIndex = 11;
@@ -444,16 +444,16 @@ namespace SpielDesLebens
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(13, 453);
+            this.label1.Location = new System.Drawing.Point(13, 413);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 5, 10, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 15);
+            this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 13;
             this.label1.Text = "Alter";
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(62, 451);
+            this.txtAge.Location = new System.Drawing.Point(59, 411);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(266, 20);
             this.txtAge.TabIndex = 14;
@@ -464,7 +464,7 @@ namespace SpielDesLebens
             this.btnBack.BackColor = System.Drawing.Color.RosyBrown;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnBack.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBack.Location = new System.Drawing.Point(55, 477);
+            this.btnBack.Location = new System.Drawing.Point(55, 437);
             this.btnBack.Margin = new System.Windows.Forms.Padding(45, 3, 3, 3);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(132, 48);
@@ -478,7 +478,7 @@ namespace SpielDesLebens
             this.btnNext.BackColor = System.Drawing.Color.RosyBrown;
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnNext.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnNext.Location = new System.Drawing.Point(195, 477);
+            this.btnNext.Location = new System.Drawing.Point(195, 437);
             this.btnNext.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(132, 48);
@@ -491,7 +491,7 @@ namespace SpielDesLebens
             // 
             this.lblUserInfo.AutoSize = true;
             this.lblUserInfo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUserInfo.Location = new System.Drawing.Point(13, 528);
+            this.lblUserInfo.Location = new System.Drawing.Point(13, 488);
             this.lblUserInfo.Name = "lblUserInfo";
             this.lblUserInfo.Size = new System.Drawing.Size(119, 13);
             this.lblUserInfo.TabIndex = 21;

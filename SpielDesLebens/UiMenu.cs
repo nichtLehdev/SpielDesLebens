@@ -26,7 +26,7 @@ namespace SpielDesLebens
 
             if (ValidateInputs())
             {
-                UiGame mainForm = CreateFormUiGame();
+                UiGame mainForm = CreateFormUiGame(true);
                 mainForm.TopLevel = false;
                 mainForm.FormBorderStyle = FormBorderStyle.None;
                 mainForm.Dock = DockStyle.Fill;
@@ -39,9 +39,9 @@ namespace SpielDesLebens
         }
 
 
-        public UiGame CreateFormUiGame()
+        public UiGame CreateFormUiGame(bool newGame)
         {
-            return new UiGame(uiInterface);
+            return new UiGame(uiInterface, newGame);
         }
 
 
@@ -105,7 +105,7 @@ namespace SpielDesLebens
         {
             uiMenu.LoadGame(slot);
             uiInterface = uiMenu.CreateUiInterface(slot);
-            UiGame t = CreateFormUiGame();
+            UiGame t = CreateFormUiGame(false);
             t.Show();
             this.Hide();
         }
