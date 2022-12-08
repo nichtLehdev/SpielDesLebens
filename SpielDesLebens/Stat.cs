@@ -32,11 +32,11 @@ namespace SpielDesLebens
             return stats;
         }
 
-        public bool IsGreater(Stat stats1)
+        public bool IsGreater(Stat statsToCompare)
         {
             for (int i = 0; i < stats.Count; i++)
             {
-                if (!stats[i].IsGreater(stats1.stats[i]))
+                if (!stats[i].IsGreater(statsToCompare.stats[i]))
                 {
                     return false;
                 }
@@ -44,11 +44,11 @@ namespace SpielDesLebens
             return true;
         }
 
-        public bool IsSmaller(Stat stats1)
+        public bool IsSmaller(Stat statsToCompare)
         {
             for (int i = 0; i < stats.Count; i++)
             {
-                if (!stats[i].IsSmaller(stats1.stats[i]))
+                if (!stats[i].IsSmaller(statsToCompare.stats[i]))
                 {
                     return false;
                 }
