@@ -56,5 +56,11 @@ namespace SpielDesLebens
             int actionIndex = random.Next(actions.Count);
             return actions[actionIndex];
         }
+
+        // for Debugging only !!!
+        public List<Action> GetActionsDebug()
+        {
+            return actions;
+        }
     }
 }

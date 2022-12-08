@@ -168,6 +168,25 @@ namespace SpielDesLebens
         }
         #endregion
 
+
+        // for Debugging only !!!
+        public List<Event> LoadEventsDebug()
+        {
+            return LoadEvents();
+        }
+
+        // for Debugging only !!!
+        public void FilterEventsByPhaseDebug()
+        {
+            FilterEventsByPhase();
+        }
+
+        // for Debugging only !!!
+        public List<Event> GetFilteredEventsPhase()
+        {
+            return filteredEventsPhase;
+        }
+
     }
 }
 

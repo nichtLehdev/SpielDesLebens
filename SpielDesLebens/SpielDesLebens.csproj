@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UiDebug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UiDebug.Designer.cs">
+      <DependentUpon>UiDebug.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoadEducationPath.cs" />
     <Compile Include="LoadPlayer.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -94,6 +100,9 @@
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UiDebug.resx">
+      <DependentUpon>UiDebug.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UiMenu.resx">
       <DependentUpon>UiMenu.cs</DependentUpon>
     </EmbeddedResource>

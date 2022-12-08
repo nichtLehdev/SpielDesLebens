@@ -16,6 +16,7 @@ namespace SpielDesLebens
         {
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new UiMenu());
+            // Application.Run(new UiDebug()); // for Debugging only !!!
         }
     }
 }
