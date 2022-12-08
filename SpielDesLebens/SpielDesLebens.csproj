@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventGenerator.cs" />
     <Compile Include="UiDebug.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,7 +77,6 @@
     <Compile Include="Error.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="EventListConverter.cs" />
-    <Compile Include="Eventgenerator.cs" />
     <Compile Include="UiMenu.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace SpielDesLebens
 {
-    internal class Eventgenerator
+    internal class EventGenerator
     {
         private readonly EducationPath edupath;
 
@@ -25,13 +25,13 @@ namespace SpielDesLebens
         #endregion
 
 
-        public Eventgenerator(EducationPath eduPath, List<Event> filteredEvents)
+        public EventGenerator(EducationPath eduPath, List<Event> filteredEvents)
         {
             this.edupath = eduPath;
             this.filteredEventsPathProfession = filteredEvents;
         }
 
-        public Eventgenerator(EducationPath edupath)
+        public EventGenerator(EducationPath edupath)
         {
             this.edupath = edupath;
             FilterEventsByPathProfession(LoadEvents());

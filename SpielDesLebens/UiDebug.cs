@@ -37,7 +37,7 @@ namespace SpielDesLebens
         private void EventPrinter()
         {
             EducationPath eventsC = new EducationPath(Data.Path.Training, Data.Profession.Social);
-            Eventgenerator eventgenerator = new Eventgenerator(eventsC);
+            EventGenerator eventgenerator = new EventGenerator(eventsC);
             List<Event> eventsL = eventgenerator.LoadEventsDebug();
             string eventsO = "EVENTS (" + eventsL.Count + ") \r\n------------------------------------------------------------------------ \r\n \r\n";
             foreach (Event item in eventsL)
@@ -104,7 +104,7 @@ namespace SpielDesLebens
                 for (int j = 0; j <= 4; j++)
                 {
                     EducationPath emC = new EducationPath((Data.Path)i, (Data.Profession)j);
-                    Eventgenerator emEventgenerator = new Eventgenerator(emC);
+                    EventGenerator emEventgenerator = new EventGenerator(emC);
 
                     for (int k = 0; k <= ((int)((3 * 12) / Data.SPhaseL[i])); k++)
                     {

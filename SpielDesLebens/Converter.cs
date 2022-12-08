@@ -11,7 +11,7 @@ namespace SpielDesLebens
             EventListConverter eventListConverter = new EventListConverter();
             List<Event> filteredEvents = eventListConverter.ConvertLoadEventToEvent(lPlayer.eventGenList);
             EducationPath eduPath = ConvertloadEduPathToEduPath(lPlayer.eduPath);
-            return new Player(lPlayer.avatar, lPlayer.age, lPlayer.name, ConvertLoadStatToStat(lPlayer.stats), new Eventgenerator(eduPath, filteredEvents), eduPath);
+            return new Player(lPlayer.avatar, lPlayer.age, lPlayer.name, ConvertLoadStatToStat(lPlayer.stats), new EventGenerator(eduPath, filteredEvents), eduPath);
         }
 
         private static EducationPath ConvertloadEduPathToEduPath(LoadEducationPath lEduPath)
