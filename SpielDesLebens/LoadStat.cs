@@ -8,7 +8,7 @@ namespace SpielDesLebens
         public int money { get; set; }
         public int motivation { get; set; }
         public int success { get; set; }
-    
+
         public LoadStat(int mentalHealth, int money, int motivation, int success)
         {
             this.mentalHealth = mentalHealth;

@@ -13,7 +13,7 @@ namespace SpielDesLebens
         public int priority { get; set; }
         public LoadRequirement requirements { get; set; }
         public List<LoadOption> options { get; set; }
-    
+
         public LoadEvent(string id, string title, string text, string info, int priority, LoadRequirement requirements, List<LoadOption> options)
         {
             this.id = id;

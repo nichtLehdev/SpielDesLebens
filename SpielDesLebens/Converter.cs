@@ -1,7 +1,6 @@
 ﻿// @author: Maximilian Koch, Lars Lehmann
 
 using System.Collections.Generic;
-using System.ComponentModel;
 
 namespace SpielDesLebens
 {
@@ -12,7 +11,7 @@ namespace SpielDesLebens
             EventListConverter eventListConverter = new EventListConverter();
             List<Event> filteredEvents = eventListConverter.ConvertLoadEventToEvent(lPlayer.eventGenList);
             EducationPath eduPath = ConvertloadEduPathToEduPath(lPlayer.eduPath);
-            return new Player(lPlayer.avatar, lPlayer.age, lPlayer.graduation, lPlayer.name,  ConvertLoadStatToStat(lPlayer.stats), new EventGenerator(eduPath, filteredEvents), eduPath);
+            return new Player(lPlayer.avatar, lPlayer.age, lPlayer.graduation, lPlayer.name, ConvertLoadStatToStat(lPlayer.stats), new EventGenerator(eduPath, filteredEvents), eduPath);
         }
 
         private static EducationPath ConvertloadEduPathToEduPath(LoadEducationPath lEduPath)
@@ -38,7 +37,7 @@ namespace SpielDesLebens
         private static LoadEvent ConvertEventToLoadEvent(Event e)
         {
             List<LoadOption> loadOptions = new List<LoadOption>();
-            foreach(Option o in e.GetOptions())
+            foreach (Option o in e.GetOptions())
             {
                 loadOptions.Add(ConvertOptionToLoadOption(o));
             }
@@ -48,11 +47,11 @@ namespace SpielDesLebens
         public static LoadPlayer ConvertPlayerToLoadPlayer(Player p)
         {
             List<LoadEvent> loadEvents = new List<LoadEvent>();
-            foreach(Event e in p.GetEventgenerator().GetFilteredEventsPathProf())
+            foreach (Event e in p.GetEventgenerator().GetFilteredEventsPathProf())
             {
                 loadEvents.Add(ConvertEventToLoadEvent(e));
             }
-            return new LoadPlayer(p.GetName(), p.GetAge(), p.GetAvatar(), (int) p.GetGraduation(), ConvertStatToLoadStat(p.GetPlayerStat()), loadEvents, ConvertEducationPathToLoadEducationPath(p.GetEducationPath()));
+            return new LoadPlayer(p.GetName(), p.GetAge(), p.GetAvatar(), (int)p.GetGraduation(), ConvertStatToLoadStat(p.GetPlayerStat()), loadEvents, ConvertEducationPathToLoadEducationPath(p.GetEducationPath()));
         }
 
         private static LoadOption ConvertOptionToLoadOption(Option o)
@@ -68,7 +67,7 @@ namespace SpielDesLebens
         private static LoadRequirement ConvertRequirementToLoadRequirement(Requirement req)
         {
             List<LoadTiming> loadTimings = new List<LoadTiming>();
-            foreach(Timing t in req.GetTimings())
+            foreach (Timing t in req.GetTimings())
             {
                 loadTimings.Add(ConvertTimingToLoadTiming(t));
             }
@@ -83,7 +82,7 @@ namespace SpielDesLebens
         private static List<string> ConvertIntListToStringList(List<int> list)
         {
             List<string> result = new List<string>();
-            foreach(int item in list)
+            foreach (int item in list)
             {
                 result.Add(item.ToString());
             }

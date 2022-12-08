@@ -28,7 +28,7 @@ namespace SpielDesLebens
             this.avatar = avatar;
             this.age = age;
             this.name = name;
-            this.graduation = (Data.Graduation) graduation;
+            this.graduation = (Data.Graduation)graduation;
             this.playerStat = playerStat;
             this.eventGenerator = eventGen;
             CreateActionGenerator();

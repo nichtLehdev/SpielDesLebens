@@ -9,7 +9,7 @@ namespace SpielDesLebens
         public List<LoadTiming> timings { get; set; }
         public LoadStat statsMin { get; set; }
         public LoadStat statsMax { get; set; }
-    
+
         public LoadRequirement(List<LoadTiming> timings, LoadStat statsMin, LoadStat statsMax)
         {
             this.timings = timings;

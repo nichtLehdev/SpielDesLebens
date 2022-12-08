@@ -103,7 +103,7 @@ namespace SpielDesLebens
         private static string SerializePlayer(Player player)
         {
             LoadPlayer lPlayer = Converter.ConvertPlayerToLoadPlayer(player);
-           string s =  JsonConvert.SerializeObject(lPlayer);
+            string s = JsonConvert.SerializeObject(lPlayer);
 
             return s;
         }
