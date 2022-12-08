@@ -5,11 +5,11 @@ namespace SpielDesLebens
     internal static class Data
     {
 
-        public enum SPath { Training = 0, DualStudy = 1, Study = 2 };
-        public enum SProfession { Social = 0, Business = 1, Science = 2, Stem = 3, Civil = 4 };
-        public enum SStatType { mentalHealth = 0, money = 1, motivation = 2, success = 3 };
+        public enum Path { Training = 0, DualStudy = 1, Study = 2 };
+        public enum Profession { Social = 0, Business = 1, Science = 2, Stem = 3, Civil = 4 };
+        public enum StatType { mentalHealth = 0, money = 1, motivation = 2, success = 3 };
         // In german, because translation is not valid.
-        public enum SGraduation { Hauptschulabschluss = 0, Realschulabschluss = 1, Fachhochschulreife = 2, AllgemeineHochschulreife = 3 };
+        public enum Graduation { Hauptschulabschluss = 0, Realschulabschluss = 1, Fachhochschulreife = 2, AllgemeineHochschulreife = 3 };
 
 
         public static string[,] SCareer = new string[3, 5] { { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" },

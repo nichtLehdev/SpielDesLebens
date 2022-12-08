@@ -389,7 +389,7 @@ namespace SpielDesLebens
                 lblUserInfo.Text = "!!! Wähle einen Avatar !!!";
                 return false;
             }
-            uiMenu.CreatePlayer(avatar, Convert.ToInt16(txtAge.Text), txtName.Text, (Data.SPath)path, (Data.SProfession)profession, (Data.SGraduation)graduation);
+            uiMenu.CreatePlayer(avatar, Convert.ToInt16(txtAge.Text), txtName.Text, (Data.Path)path, (Data.Profession)profession, (Data.Graduation)graduation);
             uiInterface = uiMenu.CreateUiInterface(slot);
             return true;
         }

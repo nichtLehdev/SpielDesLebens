@@ -25,7 +25,7 @@ namespace SpielDesLebens
             }
         }
 
-        public void CreatePlayer(int avatar, int age, string name, Data.SPath path, Data.SProfession profession, Data.SGraduation graduation)
+        public void CreatePlayer(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
         {
             player = new Player(avatar, age, name, path, profession, graduation);
         }

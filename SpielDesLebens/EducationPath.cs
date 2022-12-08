@@ -5,11 +5,11 @@ namespace SpielDesLebens
     internal class EducationPath
     {
         private readonly int phaseLength;
-        private Data.SPath path;
-        private Data.SProfession profession;
+        private Data.Path path;
+        private Data.Profession profession;
         private readonly Phase phase;
 
-        public EducationPath(Data.SPath path, Data.SProfession profession)
+        public EducationPath(Data.Path path, Data.Profession profession)
         {
             SetPath(path);
             SetProfession(profession);
@@ -17,7 +17,7 @@ namespace SpielDesLebens
             phase = new Phase(phaseLength);
         }
 
-        public EducationPath(Data.SPath path, Data.SProfession profession, int currentPhase)
+        public EducationPath(Data.Path path, Data.Profession profession, int currentPhase)
         {
             SetPath(path);
             SetProfession(profession);
@@ -25,12 +25,12 @@ namespace SpielDesLebens
             phase = new Phase(phaseLength, currentPhase);
         }
 
-        private void SetPath(Data.SPath path)
+        private void SetPath(Data.Path path)
         {
             this.path = path;
         }
 
-        private void SetProfession(Data.SProfession profession)
+        private void SetProfession(Data.Profession profession)
         {
             this.profession = profession;
         }
@@ -40,12 +40,12 @@ namespace SpielDesLebens
             return Data.SCareer[(int)path, (int)profession];
         }
 
-        public Data.SProfession GetProfession()
+        public Data.Profession GetProfession()
         {
             return profession;
         }
 
-        public Data.SPath GetPath()
+        public Data.Path GetPath()
         {
             return this.path;
         }

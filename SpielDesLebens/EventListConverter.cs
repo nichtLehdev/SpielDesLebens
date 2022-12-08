@@ -58,7 +58,7 @@ namespace SpielDesLebens
             {
                 if (paths.IndexOf("*") != -1)
                 {
-                    int length = Enum.GetNames(typeof(Data.SPath)).Length;
+                    int length = Enum.GetNames(typeof(Data.Path)).Length;
                     int[] newPaths = new int[length];
 
                     for (int i = 0; i < length; i++)
@@ -98,7 +98,7 @@ namespace SpielDesLebens
             {
                 if (paths.IndexOf("*") != -1)
                 {
-                    int length = Enum.GetNames(typeof(Data.SProfession)).Length;
+                    int length = Enum.GetNames(typeof(Data.Profession)).Length;
                     int[] newProfessions = new int[length];
 
                     for (int i = 0; i < length; i++)

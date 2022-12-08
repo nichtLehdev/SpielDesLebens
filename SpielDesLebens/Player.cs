@@ -7,13 +7,13 @@ namespace SpielDesLebens
         private readonly int avatar;
         private int age;
         private readonly string name;
-        private readonly Data.SGraduation graduation;
+        private readonly Data.Graduation graduation;
         private Stat playerStat;
         private Eventgenerator eventGenerator;
         private ActionGenerator actionGenerator;
         private EducationPath eduPath;
 
-        public Player(int avatar, int age, string name, Data.SPath path, Data.SProfession profession, Data.SGraduation graduation)
+        public Player(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
         {
             this.age = age;
             this.avatar = avatar;
@@ -36,14 +36,14 @@ namespace SpielDesLebens
 
         #region createOrReset
 
-        public void ResetCareer(Data.SPath path, Data.SProfession profession)
+        public void ResetCareer(Data.Path path, Data.Profession profession)
         {
             CreateEducationPath(path, profession);
             CreateEventgenerator(eduPath);
             CreateActionGenerator();
         }
 
-        private void CreateEducationPath(Data.SPath path, Data.SProfession profession)
+        private void CreateEducationPath(Data.Path path, Data.Profession profession)
         {
             eduPath = new EducationPath(path, profession);
         }
@@ -108,7 +108,7 @@ namespace SpielDesLebens
         {
             return this.avatar;
         }
-        public Data.SGraduation GetGraduation()
+        public Data.Graduation GetGraduation()
         {
             return this.graduation;
         }
@@ -124,7 +124,7 @@ namespace SpielDesLebens
             }
         }
 
-        public Data.SStatType? CheckStatSmaller(int statValue)
+        public Data.StatType? CheckStatSmaller(int statValue)
         {
             foreach (StatParameter statParameter in this.playerStat.GetStats())
             {

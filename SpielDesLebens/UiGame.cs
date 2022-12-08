@@ -12,8 +12,8 @@ namespace SpielDesLebens
         private readonly UiInterface uiInterface;
         private readonly bool newGame;
 
-        private Data.SPath training;
-        private Data.SProfession profession;
+        private Data.Path training;
+        private Data.Profession profession;
 
         private readonly string abschluss;
         private string refrenceTraining;
@@ -516,12 +516,12 @@ namespace SpielDesLebens
                 newProfessionPathComboBox.Visible = true;
                 newProfessionNoBtn.Enabled = false;
             }
-            Data.SGraduation currentGraduation = uiInterface.GetGraduation();
-            if (currentGraduation.Equals(Data.SGraduation.Hauptschulabschluss))
+            Data.Graduation currentGraduation = uiInterface.GetGraduation();
+            if (currentGraduation.Equals(Data.Graduation.Hauptschulabschluss))
             {
                 newProfessionPathComboBox.Items.AddRange(new object[] { "Ausbildung" });
             }
-            else if (currentGraduation.Equals(Data.SGraduation.Realschulabschluss))
+            else if (currentGraduation.Equals(Data.Graduation.Realschulabschluss))
             {
                 newProfessionPathComboBox.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
             }
@@ -582,38 +582,38 @@ namespace SpielDesLebens
         {
             if (givenProfession == "Social")
             {
-                profession = Data.SProfession.Social;
+                profession = Data.Profession.Social;
             }
             else if (givenProfession == "Buisness")
             {
-                profession = Data.SProfession.Business;
+                profession = Data.Profession.Business;
             }
             else if (givenProfession == "Stem")
             {
-                profession = Data.SProfession.Stem;
+                profession = Data.Profession.Stem;
             }
             else if (givenProfession == "Science")
             {
-                profession = Data.SProfession.Science;
+                profession = Data.Profession.Science;
             }
             else if (givenProfession == "Civil")
             {
-                profession = Data.SProfession.Civil;
+                profession = Data.Profession.Civil;
             }
         }
         private void PathSet(string givenPath)
         {
             if (givenPath == "Training")
             {
-                training = Data.SPath.Training;
+                training = Data.Path.Training;
             }
             else if (givenPath == "DualStudy")
             {
-                training = Data.SPath.DualStudy;
+                training = Data.Path.DualStudy;
             }
             else if (givenPath == "Study")
             {
-                training = Data.SPath.Study;
+                training = Data.Path.Study;
             }
         }
 

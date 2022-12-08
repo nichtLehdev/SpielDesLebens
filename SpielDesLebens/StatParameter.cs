@@ -4,12 +4,12 @@ namespace SpielDesLebens
 {
     internal class StatParameter
     {
-        private readonly Data.SStatType name;
+        private readonly Data.StatType name;
         private int value;
         private readonly bool toBeClampedBottom;
         private readonly bool toBeClampedTop;
 
-        public StatParameter(Data.SStatType name, int value, bool clampBottom, bool clampTop)
+        public StatParameter(Data.StatType name, int value, bool clampBottom, bool clampTop)
         {
             this.name = name;
             this.value = value;
@@ -59,7 +59,7 @@ namespace SpielDesLebens
 
 
 
-        public Data.SStatType GetName()
+        public Data.StatType GetName()
         {
             return name;
         }
