@@ -41,7 +41,7 @@ namespace SpielDesLebens
 
         public UiGame CreateFormUiGame(bool newGame)
         {
-            return new UiGame(uiInterface, newGame);
+            return new UiGame(uiInterface, newGame, this);
         }
 
 
@@ -374,12 +374,12 @@ namespace SpielDesLebens
                 return false;
 
             }
-            else if (path.Equals(null))
+            else if (dropDownPath.Text == "")
             {
                 lblUserInfo.Text = "!!! Wähle einen Bildungsweg !!!";
                 return false;
             }
-            else if (profession.Equals(null))
+            else if (dropDownProfession.Text == "")
             {
                 lblUserInfo.Text = "!!! Wähle einen Karriereweg !!!";
                 return false;
@@ -399,6 +399,47 @@ namespace SpielDesLebens
             uiMenu.DeleteSaveGame(slot);
             panel2.Visible = false;
             LoadSaves();
+        }
+
+        public void ResetForm()
+        {
+            txtAge.Clear();
+            txtName.Clear();
+            Console.WriteLine(txtAge.Text);
+            path = 10;
+            profession = 10;
+            graduation = 10;
+            btnAbi.FlatStyle = FlatStyle.System;
+            btnHauptschule.FlatStyle = FlatStyle.System;
+            btnRealschule.FlatStyle = FlatStyle.System;
+            btnFachAbi.FlatStyle = FlatStyle.System;
+            abschluss = "";
+            avatar = 10;
+
+            avatarBox1.BackColor = Color.Transparent;
+            avatarBox2.BackColor = Color.Transparent;
+            avatarBox3.BackColor = Color.Transparent;
+            avatarBox4.BackColor = Color.Transparent;
+            avatarBox5.BackColor = Color.Transparent;
+            avatarBox6.BackColor = Color.Transparent;
+            avatarBox1.BorderStyle = BorderStyle.None;
+            avatarBox2.BorderStyle = BorderStyle.None;
+            avatarBox3.BorderStyle = BorderStyle.None;
+            avatarBox4.BorderStyle = BorderStyle.None;
+            avatarBox5.BorderStyle = BorderStyle.None;
+            avatarBox6.BorderStyle = BorderStyle.None;
+
+
+
+
+
+            dropDownPath.Items.Clear();
+            dropDownProfession.Items.Clear();
+
+            fictionPanel.Visible = true;
+            panel1.Visible = true;
+            panel1.BringToFront();
+            fictionPanel.BringToFront();
         }
     }
 }

@@ -563,5 +563,5 @@ namespace SpielDesLebens
       private System.Windows.Forms.ComboBox dropDownPath;
       private System.Windows.Forms.Label title;
       private System.Windows.Forms.Label lblUserInfo;
-   }
+    }
 }

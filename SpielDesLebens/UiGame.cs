@@ -18,13 +18,15 @@ namespace SpielDesLebens
         private readonly string abschluss;
         private string refrenceTraining;
         private string refrenceProfession;
+        private UiMenu uiMenu;
 
 
-        public UiGame(UiInterface uiInterface, bool newGame)
+        public UiGame(UiInterface uiInterface, bool newGame, UiMenu uiMenu)
         {
             InitializeComponent();
             this.uiInterface = uiInterface;
             this.newGame = newGame;
+            this.uiMenu = uiMenu;
         }
 
         private void FormGameUiLoad(object sender, EventArgs e)
@@ -336,8 +338,9 @@ namespace SpielDesLebens
         }
         private void ToMenu()
         {
-            UiMenu t = new UiMenu();
-            t.BringToFront();
+            uiMenu.ResetForm();
+            uiMenu.Show();
+            uiMenu.BringToFront();
             Hide();
         }
         private void EndTutorial(object sender, EventArgs e)
@@ -504,6 +507,7 @@ namespace SpielDesLebens
                 newProfessionProfessionLable.Visible = false;
                 newProfessionProfessionComboBox.Visible = false;
                 newProfessionPanel.Visible = false;
+                AllOptionsEnable();
                 newProfessionYesBtn.Text = "Ja";
             }
             else
