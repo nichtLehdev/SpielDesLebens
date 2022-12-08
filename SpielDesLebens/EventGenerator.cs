@@ -29,16 +29,15 @@ namespace SpielDesLebens
             this.edupath = eduPath;
             this.filteredEventsPathProfession = filteredEvents;
         }
+
         public Eventgenerator(EducationPath edupath)
         {
             this.edupath = edupath;
             FilterEventsByPathProfession(LoadEvents());
-            // TODO cleanup constructur, change player reset
-            // TODO relative path to json file in package
         }
 
-        //Prio: for loop frägt Randomized Num ab, if(Randomized>50...) ist prio 1, dann 50 halbieren und nochmal
-        //Bei Priority = 0 Event wird direkt das erste Event der events Liste ausgeführt und gelöscht mittels Id aus filteredEventsPathProfession
+        // Prio: for loop frägt Randomized Num ab, if(Randomized>50...) ist prio 1, dann 50 halbieren und nochmal
+        // Bei Priority = 0 Event wird direkt das erste Event der events Liste ausgeführt und gelöscht mittels Id aus filteredEventsPathProfession
         public Event NextEvent(Stat stats)
         {
             FilterEventsByPhase();
@@ -101,7 +100,7 @@ namespace SpielDesLebens
         #region load career events
         private List<Event> LoadEvents()
         {
-            // saves all events from JSON to events in list saves all loadEvents as events
+            // saves all events from JSON to LoadEvents in a list, saves all LoadEvents as Events
             string filename = "..//..//..//data//events.json";
             if (File.Exists(filename))
             {
@@ -118,7 +117,7 @@ namespace SpielDesLebens
         }
 
 
-        // (filter by path and profession), leaves phases
+        // filters by Path and Profession, leaves Phases
         private void FilterEventsByPathProfession(List<Event> events)
         {
             foreach (Event e in events)
@@ -139,7 +138,7 @@ namespace SpielDesLebens
         private void FilterEventsByPhase()
         {
             filteredEventsPhase.Clear();
-            //filters out all Events, which are valid for the current Phase and puts these in filteredList
+            //filters out all Events, which are valid for the current Phase and puts these in filteredEventsPhase List
             foreach (Event e in filteredEventsPathProfession)
             {
                 foreach (Timing t in e.GetRequirements().GetTimings())
@@ -153,7 +152,8 @@ namespace SpielDesLebens
             }
         }
 
-        private List<Event> FilterEventsByStats(Stat playerStats)  //filters by Stats, change later, so that it removes false elements
+        // filters by Stats
+        private List<Event> FilterEventsByStats(Stat playerStats)
         {
             List<Event> fEvents = new List<Event>();
             foreach (Event e in filteredEventsPhase)

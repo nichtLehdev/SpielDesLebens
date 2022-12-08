@@ -59,11 +59,12 @@ namespace SpielDesLebens
         }
 
         #endregion
-        public void NextPhase() //muss bei jeder neuen Phase aufgerufen
+        // have to be called for every new phase
+        public void NextPhase()
         {
             eduPath.GetPhase().NextPhase();
             IncreaseAge();
-            //edit stats depending on Path
+            // edit stats depending on path
             ChangePlayerStat(Data.StatArray[(int)eduPath.GetPath()]);
 
         }

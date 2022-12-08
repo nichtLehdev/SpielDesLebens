@@ -80,7 +80,6 @@ namespace SpielDesLebens
                         }
                         catch (Exception)
                         {
-                            // throw new Error(ex.Message.ToString());
                             throw new Error("EventListConverter: Error parsing path in event " + this.id);
                         }
                     }
@@ -181,7 +180,7 @@ namespace SpielDesLebens
 
             if (exMarkIdx != -1 && moduloIdx != -1)
             {
-                //% before !
+                // % before !
                 if (moduloIdx < exMarkIdx)
                 {
                     possibleValues.AddRange(ModuloCheck(phase, paths));
@@ -274,7 +273,7 @@ namespace SpielDesLebens
                 }
                 else if (phase[exMarkIdx + 1] == '(')
                 {
-                    //!(*%2)
+                    // !(*%2)
                     if (exMarkIdx + 5 < phase.Length)
                     {
                         if (phase[exMarkIdx + 5] != ')')

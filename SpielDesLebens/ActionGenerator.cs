@@ -20,7 +20,7 @@ namespace SpielDesLebens
 
         private List<Action> LoadActions()
         {
-            // saves all events from JSON to events in list saves all loadEvents as events
+            // saves all actions from JSON to LoadActions in a list, saves all LoadActions as Actions
             string filename = "..//..//..//data//actions.json";
             if (File.Exists(filename))
             {

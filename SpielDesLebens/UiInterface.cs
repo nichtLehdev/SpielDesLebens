@@ -137,7 +137,7 @@ namespace SpielDesLebens
 
         public string GetEventOptionText(int option)
         {
-            //Player stats verändern
+            // change player stats
             if (option >= currentEvent.GetOptions().Count)
             {
                 return "";
