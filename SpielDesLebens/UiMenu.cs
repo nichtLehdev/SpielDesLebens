@@ -105,6 +105,7 @@ namespace SpielDesLebens
         {
             uiMenu.LoadGame(slot);
             uiInterface = uiMenu.CreateUiInterface(slot);
+            panel2.Visible = false;
             UiGame t = CreateFormUiGame(false);
             t.Show();
             this.Hide();
