@@ -1381,6 +1381,7 @@ namespace SpielDesLebens
             this.MinimizeBox = false;
             this.Name = "UiGame";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UiGame_FormClosing);
             this.Load += new System.EventHandler(this.FormGameUiLoad);
             this.panelActiveChild.ResumeLayout(false);
             this.tutorialPanel7.ResumeLayout(false);

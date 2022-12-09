@@ -79,6 +79,7 @@ namespace SpielDesLebens
 
         private void ShowInfo(object sender, EventArgs e)
         {
+            infoText.Text = uiInterface.GetEventInfo();
             infoPanel.Visible = true;
             infoCloseButton.Visible = true;
             infoText.Visible = true;
@@ -630,11 +631,22 @@ namespace SpielDesLebens
         private void SaveBtnClick(object sender, EventArgs e)
         {
             uiInterface.SaveGame();
+            infoPanel.Visible = true;
+            infoCloseButton.Visible = true;
+            infoText.Visible = true;
+            infoText.Text = "Dein Spielstand wurde erfolgreich gespeichert.";
+            AllOptionsDisable();
+
         }
 
         private void BackToMenuBtnClick(object sender, EventArgs e)
         {
             ToMenu();
+        }
+
+        private void UiGame_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
