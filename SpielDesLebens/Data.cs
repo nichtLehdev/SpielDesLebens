@@ -2,7 +2,7 @@
 
 namespace SpielDesLebens
 {
-    internal static class Data
+    internal class Data
     {
 
         public enum Path { Training = 0, DualStudy = 1, Study = 2 };

@@ -230,7 +230,7 @@ namespace SpielDesLebens
         }
         private void LoadSaves()
         {
-            if (this.uiMenu.HasValidData(1))
+            if (UiInterfaceMenu.HasValidData(1))
             {
                 slotBtn1.Text = "Spielstand 1";
             }
@@ -239,7 +239,7 @@ namespace SpielDesLebens
                 slotBtn1.Text = "Neues Spiel";
             }
 
-            if (this.uiMenu.HasValidData(2))
+            if (UiInterfaceMenu.HasValidData(2))
             {
                 slotBtn2.Text = "Spielstand 2";
             }
@@ -248,7 +248,7 @@ namespace SpielDesLebens
                 slotBtn2.Text = "Neues Spiel";
             }
 
-            if (this.uiMenu.HasValidData(3))
+            if (UiInterfaceMenu.HasValidData(3))
             {
                 SlotBtn3.Text = "Spielstand 3";
             }

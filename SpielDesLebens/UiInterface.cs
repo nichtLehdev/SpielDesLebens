@@ -22,6 +22,11 @@ namespace SpielDesLebens
             SaveLoadDeleteGame.SaveGame(this.player, this.slot);
         }
 
+        public bool HasValidData()
+        {
+            return UiInterfaceMenu.HasValidData(slot);
+        }
+
         public int GetMaxActionPoints()
         {
             return player.GetEducationPath().GetPhase().GetMaxActionPoints();

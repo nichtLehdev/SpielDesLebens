@@ -6,7 +6,7 @@ namespace SpielDesLebens
     {
         private Player player;
 
-        public bool HasValidData(int slot)
+        public static bool HasValidData(int slot)
         {
             return SaveLoadDeleteGame.HasValidData(slot);
         }

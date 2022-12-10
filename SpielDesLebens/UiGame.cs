@@ -629,12 +629,14 @@ namespace SpielDesLebens
         private void SaveBtnClick(object sender, EventArgs e)
         {
             uiInterface.SaveGame();
-            infoPanel.Visible = true;
-            infoCloseButton.Visible = true;
-            infoText.Visible = true;
-            infoText.Text = "Dein Spielstand wurde erfolgreich gespeichert.";
-            AllOptionsDisable();
-
+            if (uiInterface.HasValidData())
+            {
+                infoPanel.Visible = true;
+                infoCloseButton.Visible = true;
+                infoText.Visible = true;
+                infoText.Text = "Dein Spielstand wurde erfolgreich gespeichert.";
+                AllOptionsDisable();
+            }
         }
 
         private void BackToMenuBtnClick(object sender, EventArgs e)
