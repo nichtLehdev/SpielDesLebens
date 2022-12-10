@@ -2,7 +2,7 @@
    {
       "id": "A-001",
       "title": "Sport machen",
-      "info": "gibt Motivation und Mental Health",
+      "info": "Gibt Motivation und Mental Health",
       "result": {
          "id": "A-001_1",
          "title": "Auf dem Weg zu Olympia",
@@ -18,7 +18,7 @@
    {
       "id": "A-002",
       "title": "UNO mit Familie spielen",
-      "info": "gibt eine geringe Steigerung der Motivation",
+      "info": "Gibt eine geringe Steigerung der Motivation",
       "result": {
          "id": "A-002_1",
          "title": "Väter können unfassbar nerven",
@@ -81,7 +81,7 @@
    },
    {
       "id": "A-006",
-      "title": "ins Kino gehen",
+      "title": "Ins Kino gehen",
       "info": "Glück ist kaufbar",
       "result": {
          "id": "A-006_1",
@@ -113,7 +113,7 @@
    },
    {
       "id": "A-008",
-      "title": "eine Party feiern",
+      "title": "Eine Party feiern",
       "info": "Bedenke die Folgen des Alkoholkonsums",
       "result": {
          "id": "A-008_1",
@@ -129,7 +129,7 @@
    },
    {
       "id": "A-009",
-      "title": "einen spaziergang machen",
+      "title": "Einen spaziergang machen",
       "info": "Kostenlos und gut für die Gesundheit",
       "result": {
          "id": "A-009_1",
@@ -145,7 +145,7 @@
    },
    {
       "id": "A-010",
-      "title": "gut essen gehen",
+      "title": "Gut essen gehen",
       "info": "Gute Essen gehen ist teuer, aber es lohnt sich",
       "result": {
          "id": "A-010_1",
@@ -178,7 +178,7 @@
    {
       "id": "A-012",
       "title": "Podcast hören",
-      "info": "ist wie Musik nur manchmal mit Bildung",
+      "info": "Ist wie Musik nur manchmal mit Bildung",
       "result": {
          "id": "A-012_1",
          "title": "Kostenfreie Bildung mit Motivationsschub",
@@ -193,8 +193,8 @@
    },
    {
       "id": "A-013",
-      "title": "eine(n) Film / Serie zuhause schauen",
-      "info": "kostengünstige Unterhaltung",
+      "title": "Eine(n) Film / Serie zuhause schauen",
+      "info": "Kostengünstige Unterhaltung",
       "result": {
          "id": "A-013_1",
          "title": "Netflix & Chill",
@@ -226,7 +226,7 @@
    {
       "id": "A-015",
       "title": "Videogames spielen",
-      "info": "gute Indiegames gibt es schon für 10€",
+      "info": "Gute Indiegames gibt es schon für 10€",
       "result": {
          "id": "A-015_1",
          "title": "Du hast eine neuen Highscore erreicht",
@@ -257,8 +257,8 @@
    },
    {
       "id": "A-017",
-      "title": "lange ausschlafen",
-      "info": "mal richtig ausschlafen ist gut für die Gesundheit und lohnt sich",
+      "title": "Lange ausschlafen",
+      "info": "Mal richtig ausschlafen ist gut für die Gesundheit und lohnt sich",
       "result": {
          "id": "A-017_1",
          "title": "Auch die schönste Nacht hat ein Ende",
@@ -274,7 +274,7 @@
    {
       "id": "A-018",
       "title": "Wohnung / Zimmer putzen",
-      "info": "muss leider auch gemacht werden",
+      "info": "Muss leider auch gemacht werden",
       "result": {
          "id": "A-018_1",
          "title": "Du hast dein Leben im Griff.",
@@ -289,12 +289,12 @@
    },
    {
       "id": "A-019",
-      "title": "einen Ausflug mit der Familie machen",
+      "title": "Einen Ausflug mit der Familie machen",
       "info": "Familie ist wichtig, aber anstrengend",
       "result": {
          "id": "A-099_1",
-         "title": "immerhin kostenlos",
-         "text": "deine Mental Health ist gesunken, dafür bist du immerhin wieder motiviert.",
+         "title": "Immerhin kostenlos",
+         "text": "Deine Mental Health ist gesunken, dafür bist du immerhin wieder motiviert.",
          "stats": {
             "mentalHealth": -5,
             "motivation": 10,
@@ -305,8 +305,8 @@
    },
    {
       "id": "A-020",
-      "title": "ein Bad nehmen",
-      "info": "mal richtig entspannen ist gut für die Gesundheit und lohnt sich",
+      "title": "Ein Bad nehmen",
+      "info": "Mal richtig entspannen ist gut für die Gesundheit und lohnt sich",
       "result": {
          "id": "A-020_1",
          "title": "Du hast dich entspannt",
@@ -337,11 +337,11 @@
    },
    {
       "id": "A-022",
-      "title": "etwas reparieren",
-      "info": "defekte Dinge zu reparieren ist nicht nur gut für die Umwelt, sondern auch für die Motivation und den Erfolg",
+      "title": "Etwas reparieren",
+      "info": "Defekte Dinge zu reparieren ist nicht nur gut für die Umwelt, sondern auch für die Motivation und den Erfolg",
       "result": {
          "id": "A-022_1",
-         "title": "umweltbewusst sparen - gewusst wie",
+         "title": "Umweltbewusst sparen - gewusst wie",
          "text": "Du hast erfolgreich etwas repariert. Deine Motivation und dein Erfolg haben sich verbessert.",
          "stats": {
             "mentalHealth": 0,
@@ -353,11 +353,11 @@
    },
    {
       "id": "A-023",
-      "title": "unnötige Dinge aussortieren",
-      "info": "vielleicht kann davon noch etwas verkaufen",
+      "title": "Unnötige Dinge aussortieren",
+      "info": "Vielleicht kann davon noch etwas verkaufen",
       "result": {
          "id": "A-023_1",
-         "title": "anstrengend, aber erfolgreich",
+         "title": "Anstrengend, aber erfolgreich",
          "text": "Du bist zwar jetzt müde, hast aber erfolgreich ausgemistet und sogar noch 10€ verdient.",
          "stats": {
             "mentalHealth": -5,
@@ -370,7 +370,7 @@
    {
       "id": "A-024",
       "title": "Faulenzen und nichts tun",
-      "info": "mal richtig faulenzen ist bestimmt gut für die Gesundheit",
+      "info": "Mal richtig faulenzen ist bestimmt gut für die Gesundheit",
       "result": {
          "id": "A-024_1",
          "title": "Erholt, aber wenig motiviert und erfolglos",
@@ -386,7 +386,7 @@
    {
       "id": "A-025",
       "title": "Meditieren",
-      "info": "faulenzen nur in gesellschaftlich akzeptierter Form",
+      "info": "Faulenzen nur in gesellschaftlich akzeptierter Form",
       "result": {
          "id": "A-025_1",
          "title": "Erholt und motiviert",
@@ -401,8 +401,8 @@
    },
    {
       "id": "A-026",
-      "title": "ein Buch lesen",
-      "info": "bildet und macht glücklich, gibt es leider aber nicht kostenlos",
+      "title": "Ein Buch lesen",
+      "info": "Bildet und macht glücklich, gibt es leider aber nicht kostenlos",
       "result": {
          "id": "A-026_1",
          "title": "Jener, der keine guten Bücher liest, hat keinen Vorteil gegenüber jenem, der gar nicht liest. - Mark Twain",
@@ -418,11 +418,11 @@
    {
       "id": "A-027",
       "title": "Tagebuch schreiben",
-      "info": "die eigenen Gedanken aufschreiben hilft manchmal, die eigenen Gedanken zu ordnen - Github Copilot",
+      "info": "Die eigenen Gedanken aufschreiben hilft manchmal, die eigenen Gedanken zu ordnen - Github Copilot",
       "result": {
          "id": "A-027_1",
-         "title": "kostenneutrale Psychotherapie mit negativen Nebenwirkungen",
-         "text": "nach der Beschäftigung mit deinen Gedanken und Erlebnissen von heute, hast du realisiert, dass das Leben eine Qual ist. Morgen bist du wieder motiviert.",
+         "title": "Kostenneutrale Psychotherapie mit negativen Nebenwirkungen",
+         "text": "Nach der Beschäftigung mit deinen Gedanken und Erlebnissen von heute, hast du realisiert, dass das Leben eine Qual ist. Morgen bist du wieder motiviert.",
          "stats": {
             "mentalHealth": -10,
             "motivation": 5,
@@ -433,8 +433,8 @@
    },
    {
       "id": "A-028",
-      "title": "ein Kreuzworträtsel lösen",
-      "info": "bildet und motiviert",
+      "title": "Ein Kreuzworträtsel lösen",
+      "info": "Bildet und motiviert",
       "result": {
          "id": "A-028_1",
          "title": "Glückwunsch, du hast sogar den 10€ Amazon Gutschein fürs einsenden gewonnen",
@@ -449,8 +449,8 @@
    },
    {
       "id": "A-029",
-      "title": "einen Udemy-Kurs absolvieren",
-      "info": "bildet für kleines Geld",
+      "title": "Einen Udemy-Kurs absolvieren",
+      "info": "Bildet für kleines Geld",
       "result": {
          "id": "A-029_1",
          "title": "Ob sich der Aufwand gelohnt hat ?",
@@ -465,8 +465,8 @@
    },
    {
       "id": "A-030",
-      "title": "ein Musikinstrument spielen",
-      "info": "ein Musikinstrument zu spielen ist gesellschaftlich hoch angesehen",
+      "title": "Ein Musikinstrument spielen",
+      "info": "Ein Musikinstrument zu spielen ist gesellschaftlich hoch angesehen",
       "result": {
          "id": "A-030_1",
          "title": "Übung macht den Meister",
@@ -513,7 +513,7 @@
    },
    {
       "id": "A-033",
-      "title": "im Laden klauen",
+      "title": "Im Laden klauen",
       "info": "Klauen ist illegal, aber es ist ja nur ein kleiner Gegenstand - Github Copilot",
       "result": {
          "id": "A-033_1",
@@ -545,11 +545,11 @@
    },
    {
       "id": "A-035",
-      "title": "eine Schlägerei veranstalten",
+      "title": "Eine Schlägerei veranstalten",
       "info": "Gewalt ist die Lösung. - Github Copilot",
       "result": {
          "id": "A-035_1",
-         "title": "nächstes Mal vorher mehr trainieren",
+         "title": "Nächstes Mal vorher mehr trainieren",
          "text": "Leider hast du den Kürzeren gezogen. Deine Motivation und Mental Health sind gefallen. Du bist nun auch noch verletzt und fällst 2 Wochen aus.",
          "stats": {
             "mentalHealth": -8,
