@@ -4,25 +4,26 @@ namespace SpielDesLebens
 {
     internal class Phase
     {
-        private int actionPoints;
         private int currentPhase;
+        private int actionPoints;
         private readonly int maxActionPoints;
+
         public Phase(int length)
         {
             actionPoints = length * 7;
             maxActionPoints = actionPoints;
         }
 
+        public Phase(int currentPhase, int actionPoints, int length)
+        {
+            this.currentPhase = currentPhase;
+            this.actionPoints = actionPoints;
+            maxActionPoints = length * 7;
+        }
+
         public int GetMaxActionPoints()
         {
             return maxActionPoints;
-        }
-
-        public Phase(int length, int currentPhase, int actionPoints)
-        {
-            maxActionPoints = length * 7;
-            this.currentPhase = currentPhase;
-            this.actionPoints = actionPoints;
         }
 
         public int GetActionPoints()

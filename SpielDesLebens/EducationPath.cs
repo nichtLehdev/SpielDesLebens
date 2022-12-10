@@ -22,7 +22,7 @@ namespace SpielDesLebens
             SetPath(path);
             SetProfession(profession);
             phaseLength = Data.SPhaseL[(int)path];
-            phase = new Phase(phaseLength, currentPhase, actionPoints);
+            phase = new Phase(currentPhase, actionPoints, phaseLength);
         }
 
         private void SetPath(Data.Path path)

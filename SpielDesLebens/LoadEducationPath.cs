@@ -7,7 +7,6 @@ namespace SpielDesLebens
         public int path { get; set; }
         public int profession { get; set; }
         public int phase { get; set; }
-
         public int actionPoints { get; set; }
 
         public LoadEducationPath(int path, int profession, int phase, int actionPoints)

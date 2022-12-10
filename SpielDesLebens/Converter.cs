@@ -61,7 +61,7 @@ namespace SpielDesLebens
 
         private static LoadEducationPath ConvertEducationPathToLoadEducationPath(EducationPath educationPath)
         {
-            return new LoadEducationPath((int)educationPath.GetPath(), (int)educationPath.GetProfession(), (int)educationPath.GetPhase().GetCurrentPhase(), (int) educationPath.GetPhase().GetActionPoints());
+            return new LoadEducationPath((int)educationPath.GetPath(), (int)educationPath.GetProfession(), (int)educationPath.GetPhase().GetCurrentPhase(), (int)educationPath.GetPhase().GetActionPoints());
         }
 
         private static LoadRequirement ConvertRequirementToLoadRequirement(Requirement req)
