@@ -185,9 +185,9 @@
          "text": "Deine Motivation und Erfolg haben sich verbessert.",
          "stats": {
             "mentalHealth": 0,
-            "motivation": 5,
+            "motivation": 10,
             "money": 0,
-            "success": 5
+            "success": 3
          }
       }
    },

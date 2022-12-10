@@ -3,7 +3,7 @@
       "id": "E-001",
       "title": "Bewerbung schreiben",
       "text": "Was gehört NICHT in ein Bewerbungsschreiben?",
-      "info": "Hat Auswirkungen auf deinen Erfolg",
+      "info": "Hat Auswirkungen auf deinen Erfolg.",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -30,7 +30,7 @@
          {
             "id": "E-001_1",
             "title": "Lebenslauf nacherzählen",
-            "text": "Korrekt, in ein Bewerbungsschreiben gehört die persönliche Motivation und den Unternehmensbezug.",
+            "text": "Korrekt, in ein Bewerbungsschreiben gehört die persönliche Motivation und der Unternehmensbezug.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -55,7 +55,7 @@
       "id": "E-002",
       "title": "Bewerbung schreiben",
       "text": "Was kommt in ein Bewerbungsschreiben?",
-      "info": "Hat Auswirkungen auf den Erfolg",
+      "info": "Hat Auswirkungen auf den Erfolg.",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -306,7 +306,7 @@
    {
       "id": "E-006",
       "title": "Frage Bewerbungsgespräch",
-      "text": "Wo sehen Sie sich in 5 Jahren",
+      "text": "Wo sehen Sie sich in 5 Jahren?",
       "info": "Hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
@@ -615,7 +615,7 @@
          {
             "id": "E-011_2",
             "title": "Alleine",
-            "text": "Du verkriechst dich alleine in einer Ecke und isst dein Butterbrot",
+            "text": "Du verkriechst dich alleine in einer Ecke und isst dein Butterbrot.",
             "stats": {
                "mentalHealth": -10,
                "motivation": -10,
@@ -1032,7 +1032,7 @@
          {
             "id": "E-018_1",
             "title": "Lerngruppe",
-            "text": "Du trittst einer Lerngruppe bei",
+            "text": "Du trittst einer Lerngruppe bei.",
             "stats": {
                "mentalHealth": 15,
                "motivation": 15,
@@ -1056,7 +1056,7 @@
    {
       "id": "E-019",
       "title": "Mobbing eines Freundes",
-      "text": "Einer deiner Freunde wird gemobbt",
+      "text": "Einer deiner Freunde wird gemobbt.",
       "info": "Verletzungsgefahr",
       "priority": 1,
       "requirements": {
@@ -1130,7 +1130,7 @@
    {
       "id": "E-020",
       "title": "Mobbing eines Freundes",
-      "text": "Einer deiner Freunde wird gemobbt",
+      "text": "Einer deiner Freunde wird gemobbt.",
       "info": "Verletzungsgefahr",
       "priority": 1,
       "requirements": {
@@ -1946,7 +1946,7 @@
          {
             "id": "E-032_1",
             "title": "Lerngruppe",
-            "text": "Du trittst einer Lerngruppe bei",
+            "text": "Du trittst einer Lerngruppe bei.",
             "stats": {
                "mentalHealth": 15,
                "motivation": 15,
@@ -8545,7 +8545,7 @@
          },
          {
             "id": "E-120_3",
-            "title": "Das Alte doch geht noch",
+            "title": "Das Alte geht doch noch",
             "text": "Dein Umweltbewusstsein ist zwar löblich, aber dein Chef erwartet von dir, dass du dich professionell und entsprechend deines Aufgabengebiets kleidest.",
             "stats": {
                "mentalHealth": 0,
@@ -8926,7 +8926,7 @@
          },
          {
             "id": "E-126_3",
-            "title": "Du arbeitest bist du alles auf deinem Schreibtisch erledigt hast",
+            "title": "Du arbeitest bist du alles auf deinem Schreibtisch erledigt hast.",
             "text": "Das war leider zu viel, 7 Stunden später wachst du auf dem Boden auf wieder auf. Du bist wohl umgekippt. Eine Krankschreibung für zwei Wochen ist unvermeidbar.",
             "stats": {
                "mentalHealth": -20,
@@ -9518,7 +9518,7 @@
    },
    {
       "id": "E-137",
-      "title": "Dein Prüfung steht an, du bekommst folgende Frage gestellt",
+      "title": "Deine Prüfung steht an, du bekommst folgende Frage gestellt:",
       "text": "Wie ist die Mindestbestellmenge zu berechnen?",
       "info": "Hat Auswirkungen auf den Erfolg",
       "priority": 2,
@@ -9592,7 +9592,7 @@
    },
    {
       "id": "E-138",
-      "title": "Dein Prüfung steht an, du bekommst folgende Frage gestellt",
+      "title": "Deine Prüfung steht an, du bekommst folgende Frage gestellt:",
       "text": "Was bedeutet die Angabe 'Brutto für Netto' ?",
       "info": "Hat Auswirkungen auf den Erfolg",
       "priority": 2,
@@ -9621,7 +9621,7 @@
          {
             "id": "E-138_1",
             "title": "Die Verpackungskosten werden extra berechnet.",
-            "text": "Falsch! Bei der Angabe 'Brutto für Netto' werden die Verpackungskosten wie die Ware berechnet",
+            "text": "Falsch! Bei der Angabe 'Brutto für Netto' werden die Verpackungskosten wie die Ware berechnet.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -9632,7 +9632,7 @@
          {
             "id": "E-138_2",
             "title": "Die Verpackungskosten werden wie die Ware berechnet.",
-            "text": "Richtig! Bei der Angabe 'Brutto für Netto' werden die Verpackungskosten wie die Ware berechnet",
+            "text": "Richtig! Bei der Angabe 'Brutto für Netto' werden die Verpackungskosten wie die Ware berechnet.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -9643,7 +9643,7 @@
          {
             "id": "E-138_3",
             "title": "Die Verpackungskosten werden nicht berechnet",
-            "text": "Falsch! Bei der Angabe 'Brutto für Netto' werden die Verpackungskosten wie die Ware berechnet",
+            "text": "Falsch! Bei der Angabe 'Brutto für Netto' werden die Verpackungskosten wie die Ware berechnet.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -9654,7 +9654,7 @@
          {
             "id": "E-138_4",
             "title": "Über die Verpackungskosten muss extra verhandelt werden. ",
-            "text": "Falsch! Bei der Angabe 'Brutto für Netto' werden die Verpackungskosten wie die Ware berechnet",
+            "text": "Falsch! Bei der Angabe 'Brutto für Netto' werden die Verpackungskosten wie die Ware berechnet.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -9666,7 +9666,7 @@
    },
    {
       "id": "E-139",
-      "title": "Dein Prüfung steht an, du bekommst folgende Frage gestellt",
+      "title": "Deine Prüfung steht an, du bekommst folgende Frage gestellt:",
       "text": "Was bedeutet die Angabe 'Brutto für Netto' ?",
       "info": "Hat Auswirkungen auf den Erfolg",
       "priority": 2,
@@ -9740,7 +9740,7 @@
    },
    {
       "id": "E-140",
-      "title": "Dein Prüfung steht an, du bekommst folgende Frage gestellt",
+      "title": "Deine Prüfung steht an, du bekommst folgende Frage gestellt:",
       "text": "Für einen neuen Industriekaufmann im Außendienst wird ein PKW über die Firma 'Miko Leasing' beschafft. Welche Aussage zum Leasing ist richtig?",
       "info": "Hat Auswirkungen auf den Erfolg",
       "priority": 2,
@@ -9814,7 +9814,7 @@
    },
    {
       "id": "E-141",
-      "title": "Dein Prüfung steht an, du bekommst folgende Frage gestellt",
+      "title": "Deine Prüfung steht an, du bekommst folgende Frage gestellt:",
       "text": "Bei welchem Beispiel ist ein Kaufvertrag zustande gekommen?",
       "info": "Hat Auswirkungen auf den Erfolg",
       "priority": 2,
@@ -9917,7 +9917,7 @@
          {
             "id": "E-142_1",
             "title": "Aufstehen",
-            "text": "Du stehst auf und packst deine Aufgaben an, dein Tag ist sehr produktiv",
+            "text": "Du stehst auf und packst deine Aufgaben an, dein Tag ist sehr produktiv.",
             "stats": {
                "mentalHealth": -13,
                "motivation": -13,
@@ -10269,7 +10269,7 @@
    {
       "id": "E-149",
       "title": "Angebot des Arbeitgebers zur Fortbildung",
-      "text": "Dein Arbeitgeber bietet dir an eine Fortbildung zu machen, die deine Karrierechancen verbessern kann. Ein Teil Kosten musst du selbst tragen. Was tust du?",
+      "text": "Dein Arbeitgeber bietet dir an, eine Fortbildung zu machen, die deine Karrierechancen verbessern kann. Ein Teil der Kosten musst du selbst tragen. Was tust du?",
       "info": "Hat Auswirkungen auf den Erfolg",
       "priority": 2,
       "requirements": {
@@ -10434,7 +10434,7 @@
    },
    {
       "id": "E-152",
-      "title": "Du hast ein Job-Angebot für eine Ausbildungsplatz erhalten",
+      "title": "Du hast ein Job-Angebot für einen Ausbildungsplatz erhalten",
       "text": "Du hast ein Job-Angebot erhalten und hast die Wahl es anzunehmen oder die Anstellung abzulehnen.",
       "info": "Hat Auswirkungen auf den Erfolg",
       "priority": 3,
@@ -10647,7 +10647,7 @@
          {
             "id": "E-155_1",
             "title": "Ja!",
-            "text": "Du gehst nach draußen und beobachtest die Schneeflocken. Es ist ein sehr entspannendes Erlebnis, leider hast du aber die Zeit vergessen und nicht mehr zu deinen heutiigen Aufgaben.",
+            "text": "Du gehst nach draußen und beobachtest die Schneeflocken. Es ist ein sehr entspannendes Erlebnis, leider hast du aber die Zeit vergessen und nicht mehr zu deinen heutigen Aufgaben.",
             "stats": {
                "mentalHealth": 15,
                "motivation": 15,
@@ -10857,7 +10857,7 @@
       "options": [
          {
             "id": "E-158_1",
-            "title": "Du steigst auf den Bus um",
+            "title": "Du steigst auf den Bus um.",
             "text": "Mit dem Bus kommst du gerade noch rechtzeitg zum Arbeitsbeginn.",
             "stats": {
                "mentalHealth": 0,
@@ -10868,7 +10868,7 @@
          },
          {
             "id": "E-158_2",
-            "title": "Du versuchts dein Fahrrad zu reparieren",
+            "title": "Du versuchst dein Fahrrad zu reparieren.",
             "text": "Handwerklich bist du leider nicht so begabt und du brauchtst 2,5h für die Reperatur. Du kommst zur spät zur Arbeit und bekommst eine Abmahnung.",
             "stats": {
                "mentalHealth": -5,
@@ -10879,7 +10879,7 @@
          },
          {
             "id": "E-158_3",
-            "title": "Du bemühst das Elterntaxi",
+            "title": "Du bemühst das Elterntaxi.",
             "text": "Deine Eltern haben zwar eingentlich keine Zeit, aber sie fahren dich und du kommst rechtzeitig zur Arbeit.",
             "stats": {
                "mentalHealth": -5,
@@ -11140,7 +11140,7 @@
          },
          {
             "id": "E-162_3",
-            "title": "Gespräche mit allen Beteiligten",
+            "title": "Gespräch mit allen Beteiligten",
             "text": "Du suchst das Gespräch mit allen Beteiligten und legst deine Situation dar. Ihr findet gemeinsam eine Lösung, wann du deinen Urlaub nehmen darfst. Du gewinnst Mental Health, Motivation und Erfolg.",
             "stats": {
                "mentalHealth": 10,
@@ -11271,7 +11271,7 @@
          },
          {
             "id": "E-164_3",
-            "title": "Du gehst die Stadt und fütterst die Tauben",
+            "title": "Du gehst in die Stadt und fütterst die Tauben",
             "text": "Deine Tierliebe ist löblich, allerdings kommen die Ratten der Lüfte hervorand ohne dein Futter aus.",
             "stats": {
                "mentalHealth": 10,
@@ -11485,7 +11485,7 @@
    {
       "id": "E-168",
       "title": "Lernrückstand",
-      "text": "Da Lernerfolg aktuell nicht besonders hoch ist, solltest du gegensteuern.",
+      "text": "Da dein Lernerfolg aktuell nicht besonders hoch ist, solltest du gegensteuern.",
       "info": "Willkommen in der leistungsorientierten Gesellschaft",
       "priority": 0,
       "requirements": {
@@ -11534,7 +11534,7 @@
          },
          {
             "id": "E-168_3",
-            "title": "Du tritts einer Lerngruppe bei",
+            "title": "Einer Lerngruppe beitreten",
             "text": "Eine Lerngruppe hilft dir deine Leistungen langsam zu verbessern. Du gewinnst etwas Erfolg.",
             "stats": {
                "mentalHealth": 3,
