@@ -18,18 +18,17 @@ namespace SpielDesLebens
             actions = LoadActions();
         }
 
+        // Saves all actions from JSON to LoadActions in a list, saves all LoadActions as Actions.
         private List<Action> LoadActions()
         {
-            // Saves all actions from JSON to LoadActions in a list, saves all LoadActions as Actions.
-            string filename = "..//..//..//data//actions.json";
-            if (File.Exists(filename))
+            if (File.Exists(Data.filenameActions))
             {
-                List<LoadAction> loadActions = JsonConvert.DeserializeObject<List<LoadAction>>(File.ReadAllText(filename));
+                List<LoadAction> loadActions = JsonConvert.DeserializeObject<List<LoadAction>>(File.ReadAllText(Data.filenameActions));
                 return ActionListConverter.ConvertLoadActionsToActions(loadActions);
             }
             else
             {
-                throw new Error("Actiongenerator: File not found");
+                throw new Error("ActionGenerator: File not found");
             }
 
         }

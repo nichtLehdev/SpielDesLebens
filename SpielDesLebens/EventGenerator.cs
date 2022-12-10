@@ -117,20 +117,19 @@ namespace SpielDesLebens
         }
 
         #region load career events
+        // Saves all events from JSON to LoadEvents in a list, saves all LoadEvents as Events.
         private List<Event> LoadEvents()
         {
-            // Saves all events from JSON to LoadEvents in a list, saves all LoadEvents as Events.
-            string filename = "..//..//..//data//events.json";
-            if (File.Exists(filename))
+            if (File.Exists(Data.filenameEvents))
             {
-                List<LoadEvent> loadEvents = JsonConvert.DeserializeObject<List<LoadEvent>>(File.ReadAllText(filename));
+                List<LoadEvent> loadEvents = JsonConvert.DeserializeObject<List<LoadEvent>>(File.ReadAllText(Data.filenameEvents));
 
                 EventListConverter eConverter = new EventListConverter();
                 return eConverter.ConvertLoadEventToEvent(loadEvents);
             }
             else
             {
-                throw new Error("Eventgenerator: File not found");
+                throw new Error("EventGenerator: File not found");
             }
 
         }

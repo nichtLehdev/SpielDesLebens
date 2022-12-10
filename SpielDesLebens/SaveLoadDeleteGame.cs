@@ -10,7 +10,7 @@ namespace SpielDesLebens
     {
         public static void DeleteSaveGame(int slot)
         {
-            string filename = "..//..//..//data//savegames//sg" + slot + ".json";
+            string filename = Data.filenameSavegames + slot + ".json";
             switch (slot)
             {
                 case 1:
@@ -28,7 +28,7 @@ namespace SpielDesLebens
 
         public static bool HasValidData(int slot)
         {
-            string filename = "..//..//..//data//savegames//sg" + slot + ".json";
+            string filename = Data.filenameSavegames + slot + ".json";
             switch (slot)
             {
                 case 1:
@@ -57,7 +57,7 @@ namespace SpielDesLebens
 
         public static Player LoadGame(int slot)
         {
-            string filename = "..//..//..//data//savegames//sg" + slot + ".json";
+            string filename = Data.filenameSavegames + slot + ".json";
             switch (slot)
             {
                 case 1:
@@ -92,7 +92,7 @@ namespace SpielDesLebens
                 case 1:
                 case 2:
                 case 3:
-                    File.WriteAllText("..//..//..//data//savegames//sg" + slot + ".json", SerializePlayer(player));
+                    File.WriteAllText(Data.filenameSavegames + slot + ".json", SerializePlayer(player));
                     break;
 
                 default:
