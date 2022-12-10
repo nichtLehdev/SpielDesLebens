@@ -17,12 +17,12 @@ namespace SpielDesLebens
             phase = new Phase(phaseLength);
         }
 
-        public EducationPath(Data.Path path, Data.Profession profession, int currentPhase)
+        public EducationPath(Data.Path path, Data.Profession profession, int currentPhase, int actionPoints)
         {
             SetPath(path);
             SetProfession(profession);
             phaseLength = Data.SPhaseL[(int)path];
-            phase = new Phase(phaseLength, currentPhase);
+            phase = new Phase(phaseLength, currentPhase, actionPoints);
         }
 
         private void SetPath(Data.Path path)

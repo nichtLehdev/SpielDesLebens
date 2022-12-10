@@ -18,11 +18,11 @@ namespace SpielDesLebens
             return maxActionPoints;
         }
 
-        public Phase(int length, int currentPhase)
+        public Phase(int length, int currentPhase, int actionPoints)
         {
-            this.actionPoints = length * 7;
+            maxActionPoints = length * 7;
             this.currentPhase = currentPhase;
-            maxActionPoints = actionPoints;
+            this.actionPoints = actionPoints;
         }
 
         public int GetActionPoints()
