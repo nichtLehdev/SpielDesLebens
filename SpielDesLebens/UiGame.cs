@@ -14,17 +14,17 @@ namespace SpielDesLebens
 
         private Data.Path training;
         private Data.Profession profession;
-
-        private readonly string abschluss;
         private string refrenceTraining;
         private string refrenceProfession;
+        private readonly UiMenu uiMenu;
 
 
-        public UiGame(UiInterface uiInterface, bool newGame)
+        public UiGame(UiInterface uiInterface, bool newGame, UiMenu uiMenu)
         {
             InitializeComponent();
             this.uiInterface = uiInterface;
             this.newGame = newGame;
+            this.uiMenu = uiMenu;
         }
 
         private void FormGameUiLoad(object sender, EventArgs e)
@@ -77,6 +77,7 @@ namespace SpielDesLebens
 
         private void ShowInfo(object sender, EventArgs e)
         {
+            infoText.Text = uiInterface.GetEventInfo();
             infoPanel.Visible = true;
             infoCloseButton.Visible = true;
             infoText.Visible = true;
@@ -336,8 +337,9 @@ namespace SpielDesLebens
         }
         private void ToMenu()
         {
-            UiMenu t = new UiMenu();
-            t.BringToFront();
+            uiMenu.ResetForm();
+            uiMenu.Show();
+            uiMenu.BringToFront();
             Hide();
         }
         private void EndTutorial(object sender, EventArgs e)
@@ -504,6 +506,7 @@ namespace SpielDesLebens
                 newProfessionProfessionLable.Visible = false;
                 newProfessionProfessionComboBox.Visible = false;
                 newProfessionPanel.Visible = false;
+                AllOptionsEnable();
                 newProfessionYesBtn.Text = "Ja";
             }
             else
@@ -626,11 +629,22 @@ namespace SpielDesLebens
         private void SaveBtnClick(object sender, EventArgs e)
         {
             uiInterface.SaveGame();
+            infoPanel.Visible = true;
+            infoCloseButton.Visible = true;
+            infoText.Visible = true;
+            infoText.Text = "Dein Spielstand wurde erfolgreich gespeichert.";
+            AllOptionsDisable();
+
         }
 
         private void BackToMenuBtnClick(object sender, EventArgs e)
         {
             ToMenu();
+        }
+
+        private void UiGameFormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

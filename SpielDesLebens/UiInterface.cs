@@ -272,7 +272,7 @@ namespace SpielDesLebens
                         warning = "Achtung! Deine Motivation hat einen kritischen Zustand erreicht";
                         break;
                     case 3:
-                        warning = "Achtung! Dein Lernstand lässt vermuten, dass du die kommenden Klausuren nicht bestehen wirst";
+                        warning = "Achtung! Dein Lernstand lässt vermuten, dass du die kommenden Prüfungen nicht bestehen wirst";
                         break;
                 }
             }
@@ -319,8 +319,6 @@ namespace SpielDesLebens
         public void ResetPath(Data.Path path, Data.Profession profession)
         {
             player.ResetCareer(path, profession);
-            Stat stats = new Stat(10, 10, 10, 10);
-            player.ChangePlayerStat(stats);
             NextAction();
         }
         public void NextPhase()

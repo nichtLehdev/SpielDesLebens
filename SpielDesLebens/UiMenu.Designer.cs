@@ -34,6 +34,8 @@ namespace SpielDesLebens
             this.components = new System.ComponentModel.Container();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.fictionTxtBox = new System.Windows.Forms.RichTextBox();
+            this.fictionPanel = new System.Windows.Forms.Panel();
+            this.acceptFictBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.title = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,8 +45,6 @@ namespace SpielDesLebens
             this.slotBtn1 = new System.Windows.Forms.Button();
             this.slotBtn2 = new System.Windows.Forms.Button();
             this.SlotBtn3 = new System.Windows.Forms.Button();
-            this.fictionPanel = new System.Windows.Forms.Panel();
-            this.acceptFictBtn = new System.Windows.Forms.Button();
             this.layouNewGame = new System.Windows.Forms.FlowLayoutPanel();
             this.avatarBox1 = new System.Windows.Forms.PictureBox();
             this.avatarBox2 = new System.Windows.Forms.PictureBox();
@@ -68,9 +68,9 @@ namespace SpielDesLebens
             this.btnNext = new System.Windows.Forms.Button();
             this.lblUserInfo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.fictionPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.fictionPanel.SuspendLayout();
             this.layouNewGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avatarBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.avatarBox2)).BeginInit();
@@ -94,6 +94,28 @@ namespace SpielDesLebens
             this.fictionTxtBox.TabIndex = 0;
             this.fictionTxtBox.Text = "\nDies ist ein rein fiktives Spiel. Alle Namen, Charakter, Geschichten und Events " +
     "sind fiktiv.";
+            // 
+            // fictionPanel
+            // 
+            this.fictionPanel.BackgroundImage = global::SpielDesLebens.Properties.Resources.redBlack;
+            this.fictionPanel.Controls.Add(this.acceptFictBtn);
+            this.fictionPanel.Controls.Add(this.fictionTxtBox);
+            this.fictionPanel.Location = new System.Drawing.Point(504, 31);
+            this.fictionPanel.Name = "fictionPanel";
+            this.fictionPanel.Size = new System.Drawing.Size(343, 511);
+            this.fictionPanel.TabIndex = 4;
+            // 
+            // acceptFictBtn
+            // 
+            this.acceptFictBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.acceptFictBtn.Location = new System.Drawing.Point(65, 352);
+            this.acceptFictBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.acceptFictBtn.Name = "acceptFictBtn";
+            this.acceptFictBtn.Size = new System.Drawing.Size(209, 19);
+            this.acceptFictBtn.TabIndex = 1;
+            this.acceptFictBtn.Text = "Vestanden";
+            this.acceptFictBtn.UseVisualStyleBackColor = true;
+            this.acceptFictBtn.Click += new System.EventHandler(this.AcceptFictBtnClick);
             // 
             // panel1
             // 
@@ -206,28 +228,6 @@ namespace SpielDesLebens
             this.SlotBtn3.Text = "Neues Spiel";
             this.SlotBtn3.UseVisualStyleBackColor = true;
             this.SlotBtn3.Click += new System.EventHandler(this.NewGameOpen);
-            // 
-            // fictionPanel
-            // 
-            this.fictionPanel.BackgroundImage = global::SpielDesLebens.Properties.Resources.redBlack;
-            this.fictionPanel.Controls.Add(this.acceptFictBtn);
-            this.fictionPanel.Controls.Add(this.fictionTxtBox);
-            this.fictionPanel.Location = new System.Drawing.Point(504, 31);
-            this.fictionPanel.Name = "fictionPanel";
-            this.fictionPanel.Size = new System.Drawing.Size(343, 511);
-            this.fictionPanel.TabIndex = 4;
-            // 
-            // acceptFictBtn
-            // 
-            this.acceptFictBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.acceptFictBtn.Location = new System.Drawing.Point(65, 352);
-            this.acceptFictBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.acceptFictBtn.Name = "acceptFictBtn";
-            this.acceptFictBtn.Size = new System.Drawing.Size(209, 19);
-            this.acceptFictBtn.TabIndex = 1;
-            this.acceptFictBtn.Text = "Vestanden";
-            this.acceptFictBtn.UseVisualStyleBackColor = true;
-            this.acceptFictBtn.Click += new System.EventHandler(this.AcceptFictBtnClick);
             // 
             // layouNewGame
             // 
@@ -511,10 +511,10 @@ namespace SpielDesLebens
             this.Name = "UiMenu";
             this.Text = "Spiel des Lebens";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.fictionPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.fictionPanel.ResumeLayout(false);
             this.layouNewGame.ResumeLayout(false);
             this.layouNewGame.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avatarBox1)).EndInit();
@@ -563,5 +563,5 @@ namespace SpielDesLebens
       private System.Windows.Forms.ComboBox dropDownPath;
       private System.Windows.Forms.Label title;
       private System.Windows.Forms.Label lblUserInfo;
-   }
+    }
 }
