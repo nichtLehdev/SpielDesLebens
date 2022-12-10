@@ -10,30 +10,30 @@ namespace SpielDesLebens
 {
     internal class EventGenerator
     {
-        private readonly EducationPath edupath;
+        private readonly EducationPath _eduPath;
 
-        private readonly List<Event> filteredEventsPathProfession = new List<Event>();
-        private readonly List<Event> filteredEventsPhase = new List<Event>();
-        private int seed;
+        private readonly List<Event> _filteredEventsPathProfession = new List<Event>();
+        private readonly List<Event> _filteredEventsPhase = new List<Event>();
+        private int _seed;
 
 
         #region Getter and Setter
         public List<Event> GetFilteredEventsPathProf()
         {
-            return filteredEventsPathProfession;
+            return _filteredEventsPathProfession;
         }
         #endregion
 
 
         public EventGenerator(EducationPath eduPath, List<Event> filteredEvents)
         {
-            this.edupath = eduPath;
-            this.filteredEventsPathProfession = filteredEvents;
+            _eduPath = eduPath;
+            _filteredEventsPathProfession = filteredEvents;
         }
 
         public EventGenerator(EducationPath edupath)
         {
-            this.edupath = edupath;
+            _eduPath = edupath;
             FilterEventsByPathProfession(LoadEvents());
         }
 
@@ -51,8 +51,8 @@ namespace SpielDesLebens
                 return events[0];
             }
 
-            seed = DateTime.Now.Millisecond;
-            Random random = new Random(seed);
+            _seed = DateTime.Now.Millisecond;
+            Random random = new Random(_seed);
             double chance = random.NextDouble() * (100 - 0);
             double percentage = 50;
             int prio = 1;
@@ -93,18 +93,18 @@ namespace SpielDesLebens
 
             int rand = random.Next(0, prioEvents.Count());
             int idx = FindEventIndexByID(prioEvents[rand].GetId());
-            filteredEventsPathProfession[idx].SetPriority((filteredEventsPathProfession[idx].GetPriority() * Data.SPrioFactor));
+            _filteredEventsPathProfession[idx].SetPriority((_filteredEventsPathProfession[idx].GetPriority() * Data.SPrioFactor));
             return prioEvents[rand];
         }
 
 
         private int FindEventIndexByID(string id)
         {
-            foreach (Event e in filteredEventsPathProfession)
+            foreach (Event e in _filteredEventsPathProfession)
             {
                 if (e.GetId() == id)
                 {
-                    return filteredEventsPathProfession.IndexOf(e);
+                    return _filteredEventsPathProfession.IndexOf(e);
                 }
             }
 
@@ -113,7 +113,7 @@ namespace SpielDesLebens
 
         private void DeleteEventByID(string id)
         {
-            filteredEventsPathProfession.RemoveAt(FindEventIndexByID(id));
+            _filteredEventsPathProfession.RemoveAt(FindEventIndexByID(id));
         }
 
         #region load career events
@@ -142,9 +142,9 @@ namespace SpielDesLebens
             {
                 foreach (Timing t in e.GetRequirements().GetTimings())
                 {
-                    if (t.GetPath().Contains((int)edupath.GetPath()) && t.GetProfession().Contains((int)edupath.GetProfession()))
+                    if (t.GetPath().Contains((int)_eduPath.GetPath()) && t.GetProfession().Contains((int)_eduPath.GetProfession()))
                     {
-                        filteredEventsPathProfession.Add(e);
+                        _filteredEventsPathProfession.Add(e);
                         break;
                     }
                 }
@@ -155,15 +155,15 @@ namespace SpielDesLebens
         #region filter
         private void FilterEventsByPhase()
         {
-            filteredEventsPhase.Clear();
+            _filteredEventsPhase.Clear();
             // Filters out all Events, which are valid for the current Phase and puts these in filteredEventsPhase List.
-            foreach (Event e in filteredEventsPathProfession)
+            foreach (Event e in _filteredEventsPathProfession)
             {
                 foreach (Timing t in e.GetRequirements().GetTimings())
                 {
-                    if (t.GetPhase().Contains(edupath.GetPhase().GetCurrentPhase()) && t.GetPath().Contains((int)edupath.GetPath()) && t.GetProfession().Contains((int)edupath.GetProfession()))
+                    if (t.GetPhase().Contains(_eduPath.GetPhase().GetCurrentPhase()) && t.GetPath().Contains((int)_eduPath.GetPath()) && t.GetProfession().Contains((int)_eduPath.GetProfession()))
                     {
-                        filteredEventsPhase.Add(e);
+                        _filteredEventsPhase.Add(e);
                         break;
                     }
                 }
@@ -174,7 +174,7 @@ namespace SpielDesLebens
         private List<Event> FilterEventsByStats(Stat playerStats)
         {
             List<Event> fEvents = new List<Event>();
-            foreach (Event e in filteredEventsPhase)
+            foreach (Event e in _filteredEventsPhase)
             {
                 if (e.GetRequirements().GetReqStatMin().IsSmaller(playerStats)
                     && e.GetRequirements().GetReqStatMax().IsGreater(playerStats))
@@ -202,7 +202,7 @@ namespace SpielDesLebens
         // For Debugging only !!!
         public List<Event> GetFilteredEventsPhase()
         {
-            return filteredEventsPhase;
+            return _filteredEventsPhase;
         }
 
     }

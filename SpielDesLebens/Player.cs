@@ -4,35 +4,35 @@ namespace SpielDesLebens
 {
     internal class Player
     {
-        private readonly int avatar;
-        private int age;
-        private readonly string name;
-        private readonly Data.Graduation graduation;
-        private Stat playerStat;
-        private EventGenerator eventGenerator;
-        private ActionGenerator actionGenerator;
-        private EducationPath eduPath;
+        private readonly int _avatar;
+        private int _age;
+        private readonly string _name;
+        private readonly Data.Graduation _graduation;
+        private Stat _playerStat;
+        private EventGenerator _eventGenerator;
+        private ActionGenerator _actionGenerator;
+        private EducationPath _eduPath;
 
         public Player(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
         {
-            this.age = age;
-            this.avatar = avatar;
-            this.name = name;
-            this.graduation = graduation;
-            playerStat = new Stat(70, 70, 70, 70);
+            _age = age;
+            _avatar = avatar;
+            _name = name;
+            _graduation = graduation;
+            _playerStat = new Stat(70, 70, 70, 70);
             ResetCareer(path, profession);
         }
 
         public Player(int avatar, int age, int graduation, string name, Stat playerStat, EventGenerator eventGen, EducationPath eduPath)
         {
-            this.avatar = avatar;
-            this.age = age;
-            this.name = name;
-            this.graduation = (Data.Graduation)graduation;
-            this.playerStat = playerStat;
-            this.eventGenerator = eventGen;
+            _avatar = avatar;
+            _age = age;
+            _name = name;
+            _graduation = (Data.Graduation)graduation;
+            _playerStat = playerStat;
+            _eventGenerator = eventGen;
             CreateActionGenerator();
-            this.eduPath = eduPath;
+            _eduPath = eduPath;
         }
 
         #region createOrReset
@@ -40,94 +40,94 @@ namespace SpielDesLebens
         public void ResetCareer(Data.Path path, Data.Profession profession)
         {
             CreateEducationPath(path, profession);
-            CreateEventgenerator(eduPath);
+            CreateEventgenerator(_eduPath);
             CreateActionGenerator();
         }
 
         private void CreateEducationPath(Data.Path path, Data.Profession profession)
         {
-            eduPath = new EducationPath(path, profession);
+            _eduPath = new EducationPath(path, profession);
         }
 
         private void CreateEventgenerator(EducationPath eduPath)
         {
-            eventGenerator = new EventGenerator(eduPath);
+            _eventGenerator = new EventGenerator(eduPath);
         }
 
         private void CreateActionGenerator()
         {
-            actionGenerator = new ActionGenerator();
+            _actionGenerator = new ActionGenerator();
         }
 
         #endregion
         // Have to be called for every new phase.
         public void NextPhase()
         {
-            eduPath.GetPhase().NextPhase();
+            _eduPath.GetPhase().NextPhase();
             IncreaseAge();
             // Edit stats depending on path.
-            ChangePlayerStat(Data.SStatArray[(int)eduPath.GetPath()]);
+            ChangePlayerStat(Data.SStatArray[(int)_eduPath.GetPath()]);
 
         }
 
         public void SetPlayerStat(Stat stats)
         {
-            this.playerStat = stats;
+            _playerStat = stats;
         }
 
         public Stat GetPlayerStat()
         {
-            return this.playerStat;
+            return _playerStat;
         }
 
         public void ChangePlayerStat(Stat stats)
         {
-            this.playerStat.Change(stats);
+            _playerStat.Change(stats);
         }
 
         public void SetEducationPath(EducationPath eduPath)
         {
-            this.eduPath = eduPath;
+            _eduPath = eduPath;
         }
 
         public EducationPath GetEducationPath()
         {
-            return this.eduPath;
+            return _eduPath;
         }
 
         public string GetName()
         {
-            return this.name;
+            return _name;
         }
 
         public int GetAge()
         {
-            return this.age;
+            return _age;
         }
 
         public int GetAvatar()
         {
-            return this.avatar;
+            return _avatar;
         }
         public Data.Graduation GetGraduation()
         {
-            return this.graduation;
+            return _graduation;
         }
 
         private void IncreaseAge()
         {
-            if (eduPath.GetPhase().GetCurrentPhase() != 0)
+            if (_eduPath.GetPhase().GetCurrentPhase() != 0)
             {
-                if ((eduPath.GetPhase().GetCurrentPhase() * Data.SPhaseL[(int)eduPath.GetPath()]) % 12 == 0)
+                if ((_eduPath.GetPhase().GetCurrentPhase() * Data.SPhaseL[(int)_eduPath.GetPath()]) % 12 == 0)
                 {
-                    age++;
+                    _age++;
                 }
             }
         }
 
         public Data.StatType? CheckStatSmaller(int statValue)
         {
-            foreach (StatParameter statParameter in this.playerStat.GetStats())
+            foreach (StatParameter statParameter in _playerStat.GetStats())
             {
                 if (statParameter.GetValue() < statValue)
                 {
@@ -139,12 +139,12 @@ namespace SpielDesLebens
 
         public EventGenerator GetEventgenerator()
         {
-            return eventGenerator;
+            return _eventGenerator;
         }
 
         public ActionGenerator GetActionGenerator()
         {
-            return actionGenerator;
+            return _actionGenerator;
         }
     }
 }

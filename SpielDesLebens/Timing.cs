@@ -6,30 +6,30 @@ namespace SpielDesLebens
 {
     internal class Timing
     {
-        private readonly List<int> path;
-        private readonly List<int> profession;
-        private readonly List<int> phase;
+        private readonly List<int> _path;
+        private readonly List<int> _profession;
+        private readonly List<int> _phase;
 
         public List<int> GetPath()
         {
-            return path;
+            return _path;
         }
 
         public List<int> GetProfession()
         {
-            return profession;
+            return _profession;
         }
 
         public List<int> GetPhase()
         {
-            return phase;
+            return _phase;
         }
 
         public Timing(List<int> path, List<int> profession, List<int> phase)
         {
-            this.path = path;
-            this.profession = profession;
-            this.phase = phase;
+            _path = path;
+            _profession = profession;
+            _phase = phase;
         }
     }
 }

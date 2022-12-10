@@ -9,13 +9,15 @@ namespace SpielDesLebens
 {
     internal partial class UiMenu : Form
     {
-        private int profession;
-        private int path;
-        private int graduation;
-        private int avatar;
-        private int slot;
-        private readonly UiInterfaceMenu uiMenu = new UiInterfaceMenu();
-        private UiInterface uiInterface;
+        private int _slot;
+        private int _avatar;
+        private int _path;
+        private int _profession;
+        private int _graduation;
+        private string _graduationString;
+        private readonly UiInterfaceMenu _uiMenu = new UiInterfaceMenu();
+        private UiInterface _uiInterface;
+
         public UiMenu()
         {
             InitializeComponent();
@@ -41,151 +43,149 @@ namespace SpielDesLebens
 
         public UiGame CreateFormUiGame(bool newGame)
         {
-            return new UiGame(uiInterface, newGame, this);
+            return new UiGame(_uiInterface, newGame, this);
         }
 
 
         private void NoBorder()
         {
-            avatarBox1.BorderStyle = BorderStyle.None;
-            avatarBox2.BorderStyle = BorderStyle.None;
-            avatarBox3.BorderStyle = BorderStyle.None;
-            avatarBox4.BorderStyle = BorderStyle.None;
-            avatarBox5.BorderStyle = BorderStyle.None;
-            avatarBox6.BorderStyle = BorderStyle.None;
-            avatarBox1.BackColor = Color.Transparent;
-            avatarBox2.BackColor = Color.Transparent;
-            avatarBox3.BackColor = Color.Transparent;
-            avatarBox4.BackColor = Color.Transparent;
-            avatarBox5.BackColor = Color.Transparent;
-            avatarBox6.BackColor = Color.Transparent;
+            _avatarBox1.BorderStyle = BorderStyle.None;
+            _avatarBox2.BorderStyle = BorderStyle.None;
+            _avatarBox3.BorderStyle = BorderStyle.None;
+            _avatarBox4.BorderStyle = BorderStyle.None;
+            _avatarBox5.BorderStyle = BorderStyle.None;
+            _avatarBox6.BorderStyle = BorderStyle.None;
+            _avatarBox1.BackColor = Color.Transparent;
+            _avatarBox2.BackColor = Color.Transparent;
+            _avatarBox3.BackColor = Color.Transparent;
+            _avatarBox4.BackColor = Color.Transparent;
+            _avatarBox5.BackColor = Color.Transparent;
+            _avatarBox6.BackColor = Color.Transparent;
         }
         private void ChangeAvatar(object sender, EventArgs e)
         {
             NoBorder();
-            if (sender == avatarBox1)
+            if (sender == _avatarBox1)
             {
-                avatarBox1.BorderStyle = BorderStyle.FixedSingle;
-                avatarBox1.BackColor = Color.RosyBrown;
-                avatar = 1;
+                _avatarBox1.BorderStyle = BorderStyle.FixedSingle;
+                _avatarBox1.BackColor = Color.RosyBrown;
+                _avatar = 1;
             }
-            else if (sender == avatarBox2)
+            else if (sender == _avatarBox2)
             {
-                avatarBox2.BorderStyle = BorderStyle.FixedSingle;
-                avatarBox2.BackColor = Color.RosyBrown;
-                avatar = 2;
+                _avatarBox2.BorderStyle = BorderStyle.FixedSingle;
+                _avatarBox2.BackColor = Color.RosyBrown;
+                _avatar = 2;
             }
-            else if (sender == avatarBox3)
+            else if (sender == _avatarBox3)
             {
-                avatarBox3.BorderStyle = BorderStyle.FixedSingle;
-                avatarBox3.BackColor = Color.RosyBrown;
-                avatar = 3;
+                _avatarBox3.BorderStyle = BorderStyle.FixedSingle;
+                _avatarBox3.BackColor = Color.RosyBrown;
+                _avatar = 3;
             }
-            else if (sender == avatarBox4)
+            else if (sender == _avatarBox4)
             {
-                avatarBox4.BorderStyle = BorderStyle.FixedSingle;
-                avatarBox4.BackColor = Color.RosyBrown;
-                avatar = 4;
+                _avatarBox4.BorderStyle = BorderStyle.FixedSingle;
+                _avatarBox4.BackColor = Color.RosyBrown;
+                _avatar = 4;
             }
-            else if (sender == avatarBox5)
+            else if (sender == _avatarBox5)
             {
-                avatarBox5.BorderStyle = BorderStyle.FixedSingle;
-                avatarBox5.BackColor = Color.RosyBrown;
-                avatar = 5;
+                _avatarBox5.BorderStyle = BorderStyle.FixedSingle;
+                _avatarBox5.BackColor = Color.RosyBrown;
+                _avatar = 5;
             }
-            else if (sender == avatarBox6)
+            else if (sender == _avatarBox6)
             {
-                avatarBox6.BackColor = Color.RosyBrown;
-                avatarBox6.BorderStyle = BorderStyle.FixedSingle;
-                avatar = 6;
+                _avatarBox6.BackColor = Color.RosyBrown;
+                _avatarBox6.BorderStyle = BorderStyle.FixedSingle;
+                _avatar = 6;
             }
         }
 
         private void LoadSaveGame(Object sender, EventArgs e)
         {
-            uiMenu.LoadGame(slot);
-            uiInterface = uiMenu.CreateUiInterface(slot);
-            panel2.Visible = false;
+            _uiMenu.LoadGame(_slot);
+            _uiInterface = _uiMenu.CreateUiInterface(_slot);
+            _panel2.Visible = false;
             UiGame t = CreateFormUiGame(false);
             t.Show();
             this.Hide();
         }
 
-
-        private string abschluss;
         private void ChangePath(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            btnAbi.FlatStyle = FlatStyle.System;
-            btnHauptschule.FlatStyle = FlatStyle.System;
-            btnRealschule.FlatStyle = FlatStyle.System;
-            btnFachAbi.FlatStyle = FlatStyle.System;
-            abschluss = btn.Text;
-            dropDownProfession.Items.Clear();
-            dropDownProfession.Text = null;
-            dropDownPath.Text = null;
-            if (abschluss == "Hauptschulabschluss")
+            _btnAbi.FlatStyle = FlatStyle.System;
+            _btnHauptschule.FlatStyle = FlatStyle.System;
+            _btnRealschule.FlatStyle = FlatStyle.System;
+            _btnFachAbi.FlatStyle = FlatStyle.System;
+            _graduationString = btn.Text;
+            _dropDownProfession.Items.Clear();
+            _dropDownProfession.Text = null;
+            _dropDownPath.Text = null;
+            if (_graduationString == "Hauptschulabschluss")
             {
-                graduation = 0;
-                btnHauptschule.FlatStyle = FlatStyle.Popup;
-                dropDownProfession.Items.AddRange(new object[] { "Ausbildung" });
+                _graduation = 0;
+                _btnHauptschule.FlatStyle = FlatStyle.Popup;
+                _dropDownProfession.Items.AddRange(new object[] { "Ausbildung" });
             }
-            else if (abschluss == "Realschulabschluss")
+            else if (_graduationString == "Realschulabschluss")
             {
-                graduation = 1;
-                btnRealschule.FlatStyle = FlatStyle.Popup;
-                btnHauptschule.BackColor = Color.Gray;
-                dropDownProfession.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
+                _graduation = 1;
+                _btnRealschule.FlatStyle = FlatStyle.Popup;
+                _btnHauptschule.BackColor = Color.Gray;
+                _dropDownProfession.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
             }
             else
             {
-                if (abschluss == "Fachhochschulreife")
+                if (_graduationString == "Fachhochschulreife")
                 {
-                    graduation = 2;
-                    btnFachAbi.FlatStyle = FlatStyle.Popup;
+                    _graduation = 2;
+                    _btnFachAbi.FlatStyle = FlatStyle.Popup;
                 }
                 else
                 {
-                    graduation = 3;
-                    btnAbi.FlatStyle = FlatStyle.Popup;
+                    _graduation = 3;
+                    _btnAbi.FlatStyle = FlatStyle.Popup;
                 }
-                dropDownProfession.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium" });
+                _dropDownProfession.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium" });
             }
         }
 
         private void NewGameOpen(Object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            if (sender == slotBtn1)
+            if (sender == _slotBtn1)
             {
-                slot = 1;
+                _slot = 1;
             }
-            else if (sender == slotBtn2)
+            else if (sender == _slotBtn2)
             {
-                slot = 2;
+                _slot = 2;
             }
-            else if (sender == SlotBtn3)
+            else if (sender == _slotBtn3)
             {
-                slot = 3;
+                _slot = 3;
             }
             if (btn.Text == "Neues Spiel")
             {
-                layouNewGame.Visible = true;
-                panel1.Visible = false;
+                _layouNewGame.Visible = true;
+                _panel1.Visible = false;
             }
             else
             {
-                panel2.Visible = true;
-                buttonMini1.Visible = true;
-                buttonMini2.Visible = true;
-                buttonMini3.Visible = true;
+                _panel2.Visible = true;
+                _buttonMini1.Visible = true;
+                _buttonMini2.Visible = true;
+                _buttonMini3.Visible = true;
             }
 
         }
         private void OpenMainMenu(object sender, EventArgs e)
         {
-            panel1.Visible = true;
-            layouNewGame.Visible = false;
+            _panel1.Visible = true;
+            _layouNewGame.Visible = false;
         }
 
         private void TxtOldKeyPress(object sender, KeyPressEventArgs e)
@@ -195,10 +195,10 @@ namespace SpielDesLebens
 
         private void CloseOptionSpielStart(object sender, EventArgs e)
         {
-            panel2.Visible = false;
-            buttonMini1.Visible = false;
-            buttonMini2.Visible = false;
-            buttonMini3.Visible = false;
+            _panel2.Visible = false;
+            _buttonMini1.Visible = false;
+            _buttonMini2.Visible = false;
+            _buttonMini3.Visible = false;
         }
         public void CustomizeLinearGradients(PaintEventArgs e)
         {
@@ -224,7 +224,7 @@ namespace SpielDesLebens
         }
         private void AcceptFictBtnClick(object sender, EventArgs e)
         {
-            fictionPanel.Visible = false;
+            _fictionPanel.Visible = false;
             LoadSaves();
 
         }
@@ -232,29 +232,29 @@ namespace SpielDesLebens
         {
             if (UiInterfaceMenu.HasValidData(1))
             {
-                slotBtn1.Text = "Spielstand 1";
+                _slotBtn1.Text = "Spielstand 1";
             }
             else
             {
-                slotBtn1.Text = "Neues Spiel";
+                _slotBtn1.Text = "Neues Spiel";
             }
 
             if (UiInterfaceMenu.HasValidData(2))
             {
-                slotBtn2.Text = "Spielstand 2";
+                _slotBtn2.Text = "Spielstand 2";
             }
             else
             {
-                slotBtn2.Text = "Neues Spiel";
+                _slotBtn2.Text = "Neues Spiel";
             }
 
             if (UiInterfaceMenu.HasValidData(3))
             {
-                SlotBtn3.Text = "Spielstand 3";
+                _slotBtn3.Text = "Spielstand 3";
             }
             else
             {
-                SlotBtn3.Text = "Neues Spiel";
+                _slotBtn3.Text = "Neues Spiel";
             }
         }
 
@@ -263,184 +263,184 @@ namespace SpielDesLebens
 
         private void EducationPathTextChanged(object sender, EventArgs e)
         {
-            dropDownPath.Text = null;
-            dropDownPath.Items.Clear();
-            if (dropDownProfession.Text == "Ausbildung")
+            _dropDownPath.Text = null;
+            _dropDownPath.Items.Clear();
+            if (_dropDownProfession.Text == "Ausbildung")
             {
 
-                path = 0;
-                dropDownPath.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
+                _path = 0;
+                _dropDownPath.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
             }
-            else if (dropDownProfession.Text == "Duales Studium")
+            else if (_dropDownProfession.Text == "Duales Studium")
             {
-                path = 1;
-                dropDownPath.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
+                _path = 1;
+                _dropDownPath.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
             }
-            else if (dropDownProfession.Text == "Studium")
+            else if (_dropDownProfession.Text == "Studium")
             {
-                path = 2;
-                dropDownPath.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
+                _path = 2;
+                _dropDownPath.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
             }
         }
 
         private void ProfessionPathTextChanged(object sender, EventArgs e)
         {
-            if (dropDownProfession.Text == "Ausbildung")
+            if (_dropDownProfession.Text == "Ausbildung")
             {
-                if (dropDownPath.Text == "Krankenpflege")
+                if (_dropDownPath.Text == "Krankenpflege")
                 {
-                    profession = 0;
+                    _profession = 0;
                 }
-                else if (dropDownPath.Text == "Industriekaufmann")
+                else if (_dropDownPath.Text == "Industriekaufmann")
                 {
-                    profession = 1;
+                    _profession = 1;
                 }
-                else if (dropDownPath.Text == "Pharmazeutisch Technische Assistenz")
+                else if (_dropDownPath.Text == "Pharmazeutisch Technische Assistenz")
                 {
-                    profession = 2;
+                    _profession = 2;
                 }
-                else if (dropDownPath.Text == "Fachinformatiker")
+                else if (_dropDownPath.Text == "Fachinformatiker")
                 {
-                    profession = 3;
+                    _profession = 3;
                 }
-                else if (dropDownPath.Text == "Rechtanwaltsfachangestellter")
+                else if (_dropDownPath.Text == "Rechtanwaltsfachangestellter")
                 {
-                    profession = 4;
+                    _profession = 4;
                 }
             }
-            else if (dropDownProfession.Text == "Duales Studium")
+            else if (_dropDownProfession.Text == "Duales Studium")
             {
-                if (dropDownPath.Text == "Angewandte Gesundheits- und Pflegewissenschaften")
+                if (_dropDownPath.Text == "Angewandte Gesundheits- und Pflegewissenschaften")
                 {
-                    profession = 0;
+                    _profession = 0;
                 }
-                else if (dropDownPath.Text == "BWL")
+                else if (_dropDownPath.Text == "BWL")
                 {
-                    profession = 1;
+                    _profession = 1;
                 }
-                else if (dropDownPath.Text == "Angewandte Physik")
+                else if (_dropDownPath.Text == "Angewandte Physik")
                 {
-                    profession = 2;
+                    _profession = 2;
                 }
-                else if (dropDownPath.Text == "Angewandtes Informatikstudium")
+                else if (_dropDownPath.Text == "Angewandtes Informatikstudium")
                 {
-                    profession = 3;
+                    _profession = 3;
                 }
-                else if (dropDownPath.Text == "Steuerwesen")
+                else if (_dropDownPath.Text == "Steuerwesen")
                 {
-                    profession = 4;
+                    _profession = 4;
                 }
             }
-            else if (dropDownProfession.Text == "Studium")
+            else if (_dropDownProfession.Text == "Studium")
             {
-                if (dropDownPath.Text == "Medizinstudium")
+                if (_dropDownPath.Text == "Medizinstudium")
                 {
-                    profession = 0;
+                    _profession = 0;
                 }
-                else if (dropDownPath.Text == "BWL")
+                else if (_dropDownPath.Text == "BWL")
                 {
-                    profession = 1;
+                    _profession = 1;
                 }
-                else if (dropDownPath.Text == "Physikstudium")
+                else if (_dropDownPath.Text == "Physikstudium")
                 {
-                    profession = 2;
+                    _profession = 2;
                 }
-                else if (dropDownPath.Text == "Informatikstudium")
+                else if (_dropDownPath.Text == "Informatikstudium")
                 {
-                    profession = 3;
+                    _profession = 3;
                 }
-                else if (dropDownPath.Text == "Jurastudium")
+                else if (_dropDownPath.Text == "Jurastudium")
                 {
-                    profession = 4;
+                    _profession = 4;
                 }
             }
         }
 
         private bool ValidateInputs()
         {
-            if (string.IsNullOrEmpty(txtName.Text))
+            if (string.IsNullOrEmpty(_txtName.Text))
             {
-                lblUserInfo.Text = "!!! Wähle einen Namen !!!";
+                _lblUserInfo.Text = "!!! Wähle einen Namen !!!";
                 return false;
 
             }
-            else if (string.IsNullOrEmpty(txtAge.Text) || Convert.ToInt16(txtAge.Text) > 60 || Convert.ToInt16(txtAge.Text) < 15)
+            else if (string.IsNullOrEmpty(_txtAge.Text) || Convert.ToInt16(_txtAge.Text) > 60 || Convert.ToInt16(_txtAge.Text) < 15)
             {
-                lblUserInfo.Text = "!!! Wähle ein Alter zwischen 15 und 60!!!";
+                _lblUserInfo.Text = "!!! Wähle ein Alter zwischen 15 und 60!!!";
                 return false;
             }
-            else if (string.IsNullOrEmpty(abschluss))
+            else if (string.IsNullOrEmpty(_graduationString))
             {
-                lblUserInfo.Text = "!!! Wähle einen Schulabschluss !!!";
+                _lblUserInfo.Text = "!!! Wähle einen Schulabschluss !!!";
                 return false;
 
             }
-            else if (dropDownPath.Text == "")
+            else if (_dropDownPath.Text == "")
             {
-                lblUserInfo.Text = "!!! Wähle Bilundgs- und Karriereweg!!!";
+                _lblUserInfo.Text = "!!! Wähle Bilundgs- und Karriereweg!!!";
                 return false;
             }
-            else if (dropDownProfession.Text == "")
+            else if (_dropDownProfession.Text == "")
             {
-                lblUserInfo.Text = "!!! Wähle Bilundgs- und Karriereweg!!!";
+                _lblUserInfo.Text = "!!! Wähle Bilundgs- und Karriereweg!!!";
                 return false;
             }
-            else if (avatar < 1 || avatar > 6)
+            else if (_avatar < 1 || _avatar > 6)
             {
-                lblUserInfo.Text = "!!! Wähle einen Avatar !!!";
+                _lblUserInfo.Text = "!!! Wähle einen Avatar !!!";
                 return false;
             }
-            uiMenu.CreatePlayer(avatar, Convert.ToInt16(txtAge.Text), txtName.Text, (Data.Path)path, (Data.Profession)profession, (Data.Graduation)graduation);
-            uiInterface = uiMenu.CreateUiInterface(slot);
+            _uiMenu.CreatePlayer(_avatar, Convert.ToInt16(_txtAge.Text), _txtName.Text, (Data.Path)_path, (Data.Profession)_profession, (Data.Graduation)_graduation);
+            _uiInterface = _uiMenu.CreateUiInterface(_slot);
             return true;
         }
 
         private void ButtonMini2Click(object sender, EventArgs e)
         {
-            uiMenu.DeleteSaveGame(slot);
-            panel2.Visible = false;
+            _uiMenu.DeleteSaveGame(_slot);
+            _panel2.Visible = false;
             LoadSaves();
         }
 
         public void ResetForm()
         {
-            txtAge.Clear();
-            txtName.Clear();
-            Console.WriteLine(txtAge.Text);
-            path = 10;
-            profession = 10;
-            graduation = 10;
-            btnAbi.FlatStyle = FlatStyle.System;
-            btnHauptschule.FlatStyle = FlatStyle.System;
-            btnRealschule.FlatStyle = FlatStyle.System;
-            btnFachAbi.FlatStyle = FlatStyle.System;
-            abschluss = "";
-            avatar = 10;
+            _txtAge.Clear();
+            _txtName.Clear();
+            Console.WriteLine(_txtAge.Text);
+            _path = 10;
+            _profession = 10;
+            _graduation = 10;
+            _btnAbi.FlatStyle = FlatStyle.System;
+            _btnHauptschule.FlatStyle = FlatStyle.System;
+            _btnRealschule.FlatStyle = FlatStyle.System;
+            _btnFachAbi.FlatStyle = FlatStyle.System;
+            _graduationString = "";
+            _avatar = 10;
 
-            avatarBox1.BackColor = Color.Transparent;
-            avatarBox2.BackColor = Color.Transparent;
-            avatarBox3.BackColor = Color.Transparent;
-            avatarBox4.BackColor = Color.Transparent;
-            avatarBox5.BackColor = Color.Transparent;
-            avatarBox6.BackColor = Color.Transparent;
-            avatarBox1.BorderStyle = BorderStyle.None;
-            avatarBox2.BorderStyle = BorderStyle.None;
-            avatarBox3.BorderStyle = BorderStyle.None;
-            avatarBox4.BorderStyle = BorderStyle.None;
-            avatarBox5.BorderStyle = BorderStyle.None;
-            avatarBox6.BorderStyle = BorderStyle.None;
-
-
+            _avatarBox1.BackColor = Color.Transparent;
+            _avatarBox2.BackColor = Color.Transparent;
+            _avatarBox3.BackColor = Color.Transparent;
+            _avatarBox4.BackColor = Color.Transparent;
+            _avatarBox5.BackColor = Color.Transparent;
+            _avatarBox6.BackColor = Color.Transparent;
+            _avatarBox1.BorderStyle = BorderStyle.None;
+            _avatarBox2.BorderStyle = BorderStyle.None;
+            _avatarBox3.BorderStyle = BorderStyle.None;
+            _avatarBox4.BorderStyle = BorderStyle.None;
+            _avatarBox5.BorderStyle = BorderStyle.None;
+            _avatarBox6.BorderStyle = BorderStyle.None;
 
 
 
-            dropDownPath.Items.Clear();
-            dropDownProfession.Items.Clear();
 
-            fictionPanel.Visible = true;
-            panel1.Visible = true;
-            panel1.BringToFront();
-            fictionPanel.BringToFront();
+
+            _dropDownPath.Items.Clear();
+            _dropDownProfession.Items.Clear();
+
+            _fictionPanel.Visible = true;
+            _panel1.Visible = true;
+            _panel1.BringToFront();
+            _fictionPanel.BringToFront();
         }
     }
 }

@@ -4,7 +4,7 @@ namespace SpielDesLebens
 {
     internal class UiInterfaceMenu
     {
-        private Player player;
+        private Player _player;
 
         public static bool HasValidData(int slot)
         {
@@ -21,18 +21,18 @@ namespace SpielDesLebens
         {
             if (SaveLoadDeleteGame.HasValidData(slot))
             {
-                player = SaveLoadDeleteGame.LoadGame(slot);
+                _player = SaveLoadDeleteGame.LoadGame(slot);
             }
         }
 
         public void CreatePlayer(int avatar, int age, string name, Data.Path path, Data.Profession profession, Data.Graduation graduation)
         {
-            player = new Player(avatar, age, name, path, profession, graduation);
+            _player = new Player(avatar, age, name, path, profession, graduation);
         }
 
         public UiInterface CreateUiInterface(int slot)
         {
-            return new UiInterface(this.player, slot);
+            return new UiInterface(_player, slot);
         }
     }
 }

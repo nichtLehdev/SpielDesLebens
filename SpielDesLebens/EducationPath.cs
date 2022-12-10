@@ -4,60 +4,60 @@ namespace SpielDesLebens
 {
     internal class EducationPath
     {
-        private readonly int phaseLength;
-        private Data.Path path;
-        private Data.Profession profession;
-        private readonly Phase phase;
+        private readonly int _phaseLength;
+        private Data.Path _path;
+        private Data.Profession _profession;
+        private readonly Phase _phase;
 
         public EducationPath(Data.Path path, Data.Profession profession)
         {
             SetPath(path);
             SetProfession(profession);
-            phaseLength = Data.SPhaseL[(int)path];
-            phase = new Phase(phaseLength);
+            _phaseLength = Data.SPhaseL[(int)path];
+            _phase = new Phase(_phaseLength);
         }
 
         public EducationPath(Data.Path path, Data.Profession profession, int currentPhase, int actionPoints)
         {
             SetPath(path);
             SetProfession(profession);
-            phaseLength = Data.SPhaseL[(int)path];
-            phase = new Phase(currentPhase, actionPoints, phaseLength);
+            _phaseLength = Data.SPhaseL[(int)path];
+            _phase = new Phase(currentPhase, actionPoints, _phaseLength);
         }
 
         private void SetPath(Data.Path path)
         {
-            this.path = path;
+            _path = path;
         }
 
         private void SetProfession(Data.Profession profession)
         {
-            this.profession = profession;
+            _profession = profession;
         }
 
         public string GetProfessionName()
         {
-            return Data.SCareer[(int)path, (int)profession];
+            return Data.SCareer[(int)_path, (int)_profession];
         }
 
         public Data.Profession GetProfession()
         {
-            return profession;
+            return _profession;
         }
 
         public Data.Path GetPath()
         {
-            return this.path;
+            return _path;
         }
 
         public int GetPhaseLength()
         {
-            return phaseLength;
+            return _phaseLength;
         }
 
         public Phase GetPhase()
         {
-            return phase;
+            return _phase;
         }
     }
 }

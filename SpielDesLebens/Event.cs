@@ -5,42 +5,42 @@ namespace SpielDesLebens
 {
     internal class Event
     {
-        private readonly string id;
-        private readonly string title;
-        private readonly string text;
-        private readonly string info;
-        private int priority;
-        private readonly Requirement requirements;
-        private List<Option> options;
+        private readonly string _id;
+        private readonly string _title;
+        private readonly string _text;
+        private readonly string _info;
+        private int _priority;
+        private readonly Requirement _requirements;
+        private List<Option> _options;
 
         public Event(string id, string title, string text, string info, int priority, Requirement req, List<Option> options)
         {
-            this.id = id;
-            this.title = title;
-            this.text = text;
-            this.info = info;
-            this.priority = priority;
-            this.requirements = req;
-            this.options = options;
+            _id = id;
+            _title = title;
+            _text = text;
+            _info = info;
+            _priority = priority;
+            _requirements = req;
+            _options = options;
         }
 
 
-        public string GetId() { return id; }
-        public string GetTitle() { return title; }
-        public string GetText() { return text; }
-        public string GetInfo() { return info; }
-        public int GetPriority() { return priority; }
-        public Requirement GetRequirements() { return requirements; }
-        public List<Option> GetOptions() { return this.options; }
+        public string GetId() { return _id; }
+        public string GetTitle() { return _title; }
+        public string GetText() { return _text; }
+        public string GetInfo() { return _info; }
+        public int GetPriority() { return _priority; }
+        public Requirement GetRequirements() { return _requirements; }
+        public List<Option> GetOptions() { return _options; }
 
         public void SetPriority(int priority)
         {
-            this.priority = priority;
+            _priority = priority;
         }
 
         public void SetOption()
         {
-            this.options = new List<Option>();
+            _options = new List<Option>();
         }
 
 

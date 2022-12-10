@@ -8,13 +8,13 @@ namespace SpielDesLebens
     [TestClass]
     internal class UnitTest
     {
-        private UiInterface UiInterface;
+        private UiInterface _uiInterface;
 
 
         [TestInitialize]
         public void SetUp()
         {
-            UiInterface = new UiInterface(new Player(0, 21, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem, Data.Graduation.AllgemeineHochschulreife), 3);
+            _uiInterface = new UiInterface(new Player(0, 21, "Maximilian Koch", Data.Path.DualStudy, Data.Profession.Stem, Data.Graduation.AllgemeineHochschulreife), 3);
 
         }
 
@@ -27,10 +27,10 @@ namespace SpielDesLebens
         [TestMethod]
         public void GetEventText()
         {
-            UiInterface.NextEvent();
-            Console.WriteLine(UiInterface.GetEventText());
-            Assert.AreNotEqual("", UiInterface.GetEventText());
-            Assert.IsNotNull(UiInterface.GetEventText());
+            _uiInterface.NextEvent();
+            Console.WriteLine(_uiInterface.GetEventText());
+            Assert.AreNotEqual("", _uiInterface.GetEventText());
+            Assert.IsNotNull(_uiInterface.GetEventText());
 
         }
 

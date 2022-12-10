@@ -4,43 +4,43 @@ namespace SpielDesLebens
 {
     internal class StatParameter
     {
-        private readonly Data.StatType name;
-        private int value;
-        private readonly bool toBeClampedBottom;
-        private readonly bool toBeClampedTop;
+        private readonly Data.StatType _name;
+        private int _value;
+        private readonly bool _toBeClampedBottom;
+        private readonly bool _toBeClampedTop;
 
         public StatParameter(Data.StatType name, int value, bool clampBottom, bool clampTop)
         {
-            this.name = name;
-            this.value = value;
-            toBeClampedBottom = clampBottom;
-            toBeClampedTop = clampTop;
+            _name = name;
+            _value = value;
+            _toBeClampedBottom = clampBottom;
+            _toBeClampedTop = clampTop;
         }
 
 
         public void ClampBottom()
         {
-            if (toBeClampedBottom)
+            if (_toBeClampedBottom)
             {
-                if (value < 0) { value = 0; }
+                if (_value < 0) { _value = 0; }
             }
         }
 
         public void ClampTop()
         {
-            if (toBeClampedTop)
+            if (_toBeClampedTop)
             {
-                if (value > 100) { value = 100; }
+                if (_value > 100) { _value = 100; }
             }
         }
 
         public bool IsGreater(StatParameter statParamenter)
         {
-            if (this.value == -1)
+            if (_value == -1)
             {
                 return true;
             }
-            if (this.value >= statParamenter.value)
+            if (_value >= statParamenter._value)
             {
                 return true;
             }
@@ -49,7 +49,7 @@ namespace SpielDesLebens
 
         public bool IsSmaller(StatParameter statParamenter)
         {
-            if (this.value <= statParamenter.value)
+            if (_value <= statParamenter._value)
             {
                 return true;
             }
@@ -61,17 +61,17 @@ namespace SpielDesLebens
 
         public Data.StatType GetName()
         {
-            return name;
+            return _name;
         }
 
         public int GetValue()
         {
-            return value;
+            return _value;
         }
 
         public void SetValue(int value)
         {
-            this.value = value;
+            _value = value;
         }
 
 

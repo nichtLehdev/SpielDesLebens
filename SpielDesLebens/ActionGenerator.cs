@@ -9,13 +9,13 @@ namespace SpielDesLebens
 {
     internal class ActionGenerator
     {
-        private readonly List<Action> actions;
-        private List<Action> oldActions = new List<Action>();
-        private int seed;
+        private readonly List<Action> _actions;
+        private List<Action> _oldActions = new List<Action>();
+        private int _seed;
 
         public ActionGenerator()
         {
-            actions = LoadActions();
+            _actions = LoadActions();
         }
 
         // Saves all actions from JSON to LoadActions in a list, saves all LoadActions as Actions.
@@ -39,27 +39,27 @@ namespace SpielDesLebens
             while (nextActions.Count < 4)
             {
                 Action action = RandomAction();
-                if (!nextActions.Contains(action) && !oldActions.Contains(action))
+                if (!nextActions.Contains(action) && !_oldActions.Contains(action))
                 {
                     nextActions.Add(action);
                 }
             }
-            oldActions = nextActions;
+            _oldActions = nextActions;
             return nextActions;
         }
 
         private Action RandomAction()
         {
-            seed = DateTime.Now.Millisecond;
-            Random random = new Random(seed);
-            int actionIndex = random.Next(actions.Count);
-            return actions[actionIndex];
+            _seed = DateTime.Now.Millisecond;
+            Random random = new Random(_seed);
+            int actionIndex = random.Next(_actions.Count);
+            return _actions[actionIndex];
         }
 
         // For Debugging only !!!
         public List<Action> GetActionsDebug()
         {
-            return actions;
+            return _actions;
         }
     }
 }

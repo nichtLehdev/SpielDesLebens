@@ -8,16 +8,16 @@ namespace SpielDesLebens
 {
     internal class EventListConverter
     {
-        private string id;
-        private List<int> possibleValues;
-        private List<int> exeptedValues;
+        private string _id;
+        private List<int> _possibleValues;
+        private List<int> _exeptedValues;
 
         public List<Event> ConvertLoadEventToEvent(List<LoadEvent> eList)
         {
             List<Event> events = new List<Event>();
             foreach (LoadEvent e in eList)
             {
-                this.id = e.id;
+                _id = e.id;
                 List<Timing> timings = new List<Timing>();
                 foreach (LoadTiming lt in e.requirements.timings)
                 {
@@ -80,7 +80,7 @@ namespace SpielDesLebens
                         }
                         catch (Exception)
                         {
-                            throw new Error("EventListConverter: Error parsing path in event " + this.id);
+                            throw new Error("EventListConverter: Error parsing path in event " + _id);
                         }
                     }
                     return parsedPaths.ToArray();
@@ -88,7 +88,7 @@ namespace SpielDesLebens
             }
             else
             {
-                throw new Error("Path is empty (Event ID: " + this.id + ")");
+                throw new Error("Path is empty (Event ID: " + _id + ")");
             }
         }
 
@@ -128,13 +128,13 @@ namespace SpielDesLebens
             }
             else
             {
-                throw new Error("Profession is empty (Event ID: " + this.id + ")");
+                throw new Error("Profession is empty (Event ID: " + _id + ")");
             }
         }
         private int[] EvaluatePhaseList(List<string> phases, int[] paths)
         {
-            possibleValues = new List<int>();
-            exeptedValues = new List<int>();
+            _possibleValues = new List<int>();
+            _exeptedValues = new List<int>();
 
             if (phases != null)
             {
@@ -150,10 +150,10 @@ namespace SpielDesLebens
                     {
                         EvaluatePhase(phase, paths);
                     }
-                    return CompareLists(possibleValues, exeptedValues).ToArray();
+                    return CompareLists(_possibleValues, _exeptedValues).ToArray();
                 }
             }
-            throw new Error("No Phases given (Event ID: " + this.id + ")");
+            throw new Error("No Phases given (Event ID: " + _id + ")");
         }
 
         private void EvaluatePhase(string phase, int[] paths)
@@ -173,7 +173,7 @@ namespace SpielDesLebens
             }
             if (bracketCount != 0)
             {
-                throw new Error("Unequal count of brackets in phase '" + phase + "' (Event ID: " + this.id + ")");
+                throw new Error("Unequal count of brackets in phase '" + phase + "' (Event ID: " + _id + ")");
             }
             int exMarkIdx = phase.IndexOf('!');
             int moduloIdx = phase.IndexOf('%');
@@ -183,29 +183,29 @@ namespace SpielDesLebens
                 // % before !
                 if (moduloIdx < exMarkIdx)
                 {
-                    possibleValues.AddRange(ModuloCheck(phase, paths));
-                    exeptedValues.AddRange(ExMarkCheck(phase, paths));
+                    _possibleValues.AddRange(ModuloCheck(phase, paths));
+                    _exeptedValues.AddRange(ExMarkCheck(phase, paths));
                 }
                 else
                 {
-                    possibleValues.AddRange(FillList(GetGreatestPhaseCount(paths)));
-                    exeptedValues.AddRange(ExMarkCheck(phase, paths));
+                    _possibleValues.AddRange(FillList(GetGreatestPhaseCount(paths)));
+                    _exeptedValues.AddRange(ExMarkCheck(phase, paths));
                 }
             }
             else if (exMarkIdx != -1 && moduloIdx == -1)
             {
-                possibleValues.AddRange(FillList(GetGreatestPhaseCount(paths)));
-                exeptedValues.AddRange(ExMarkCheck(phase, paths));
+                _possibleValues.AddRange(FillList(GetGreatestPhaseCount(paths)));
+                _exeptedValues.AddRange(ExMarkCheck(phase, paths));
             }
             else if (moduloIdx != -1 && exMarkIdx == -1)
             {
-                possibleValues.AddRange(ModuloCheck(phase, paths));
+                _possibleValues.AddRange(ModuloCheck(phase, paths));
             }
             else
             {
                 if (Int32.TryParse(phase, out _))
                 {
-                    possibleValues.Add(Int32.Parse(phase));
+                    _possibleValues.Add(Int32.Parse(phase));
                 }
             }
 
@@ -246,15 +246,15 @@ namespace SpielDesLebens
             {
                 if (exMarkIdx == 0)
                 {
-                    throw new Error("Char ! in phase '" + phase + "' at wrong position(" + exMarkIdx + "). * is missing infront of !. (Event ID: " + this.id + ")");
+                    throw new Error("Char ! in phase '" + phase + "' at wrong position(" + exMarkIdx + "). * is missing infront of !. (Event ID: " + _id + ")");
                 }
                 else if (exMarkIdx == phase.Length)
                 {
-                    throw new Error("Char ! in phase '" + phase + "' at wrong position(" + exMarkIdx + "). something is missing behind !. (Event ID: " + this.id + ")");
+                    throw new Error("Char ! in phase '" + phase + "' at wrong position(" + exMarkIdx + "). something is missing behind !. (Event ID: " + _id + ")");
                 }
                 else if (phase[exMarkIdx - 1] != '*' && phase[exMarkIdx - 1] != ')')
                 {
-                    throw new Error("Wrong char infront  of ! at pos: " + exMarkIdx + " in phase '" + phase + "'. (Event ID: " + this.id + ")");
+                    throw new Error("Wrong char infront  of ! at pos: " + exMarkIdx + " in phase '" + phase + "'. (Event ID: " + _id + ")");
                 }
                 else if (phase[exMarkIdx + 1] != '(')
                 {
@@ -268,7 +268,7 @@ namespace SpielDesLebens
                     }
                     else
                     {
-                        throw new Error("Char ! in phase '" + phase + "' at wrong position(" + exMarkIdx + "). something is missing or wrong behind !. (Event ID: " + this.id + ")");
+                        throw new Error("Char ! in phase '" + phase + "' at wrong position(" + exMarkIdx + "). something is missing or wrong behind !. (Event ID: " + _id + ")");
                     }
                 }
                 else if (phase[exMarkIdx + 1] == '(')
@@ -278,7 +278,7 @@ namespace SpielDesLebens
                     {
                         if (phase[exMarkIdx + 5] != ')')
                         {
-                            throw new Error("Wrong Char (not ')') at idx: " + exMarkIdx + 5 + " in phase '" + phase + "'. (Event ID: " + this.id + ")");
+                            throw new Error("Wrong Char (not ')') at idx: " + exMarkIdx + 5 + " in phase '" + phase + "'. (Event ID: " + _id + ")");
                         }
                         else
                         {
@@ -299,19 +299,19 @@ namespace SpielDesLebens
 
                 if (phase[moduloIdx + 1] != '2' && phase[moduloIdx + 1] != '3')
                 {
-                    throw new Error("Wrong char after % in phase '" + phase + "' (only 2,3 possible) (Event ID: " + this.id + ")");
+                    throw new Error("Wrong char after % in phase '" + phase + "' (only 2,3 possible) (Event ID: " + _id + ")");
                 }
                 else if (moduloIdx == 0)
                 {
-                    throw new Error("Char % in phase '" + phase + "' at wrong position(0). * is missing infront of %. (Event ID: " + this.id + ")");
+                    throw new Error("Char % in phase '" + phase + "' at wrong position(0). * is missing infront of %. (Event ID: " + _id + ")");
                 }
                 else if (moduloIdx == phase.Length)
                 {
-                    throw new Error("Char % in phase '" + phase + "' at wrong position(" + moduloIdx + "). something is missing behind %. (Event ID: " + this.id + ")");
+                    throw new Error("Char % in phase '" + phase + "' at wrong position(" + moduloIdx + "). something is missing behind %. (Event ID: " + _id + ")");
                 }
                 else if (moduloIdx >= 1 && phase[moduloIdx - 1] != '*')
                 {
-                    throw new Error("Wrong char infront of % in phase '" + phase + "' at idx: " + moduloIdx + " (Event ID: " + this.id + ")");
+                    throw new Error("Wrong char infront of % in phase '" + phase + "' at idx: " + moduloIdx + " (Event ID: " + _id + ")");
                 }
                 else
                 {

@@ -8,44 +8,44 @@ namespace SpielDesLebens
 {
     internal partial class UiGame : Form
     {
-        private Form activeForm;
-        private readonly UiInterface uiInterface;
-        private readonly bool newGame;
+        private Form _activeForm;
+        private readonly UiInterface _uiInterface;
+        private readonly bool _newGame;
 
-        private Data.Path training;
-        private Data.Profession profession;
-        private string refrenceTraining;
-        private string refrenceProfession;
-        private readonly UiMenu uiMenu;
+        private Data.Path _training;
+        private Data.Profession _profession;
+        private string _refrenceTraining;
+        private string _refrenceProfession;
+        private readonly UiMenu _uiMenu;
 
 
         public UiGame(UiInterface uiInterface, bool newGame, UiMenu uiMenu)
         {
             InitializeComponent();
-            this.uiInterface = uiInterface;
-            this.newGame = newGame;
-            this.uiMenu = uiMenu;
+            _uiInterface = uiInterface;
+            _newGame = newGame;
+            _uiMenu = uiMenu;
         }
 
         private void FormGameUiLoad(object sender, EventArgs e)
         {
-            lblPlayerAge.Text = Convert.ToString(uiInterface.GetPlayerAge());
-            lblPlayerName.Text = uiInterface.GetPlayerName();
-            lblPlayerPath.Text = uiInterface.GetPlayerProfessionName();
-            avatarPic.Image = SetAvatar();
+            _lblPlayerAge.Text = Convert.ToString(_uiInterface.GetPlayerAge());
+            _lblPlayerName.Text = _uiInterface.GetPlayerName();
+            _lblPlayerPath.Text = _uiInterface.GetPlayerProfessionName();
+            _avatarPic.Image = SetAvatar();
             BtnLoadEventClick();
             UpdateActionpoints();
-            if (newGame == true)
+            if (_newGame == true)
             {
                 AllOptionsDisable();
-                tutorialAskPanel.Visible = true;
-                tutorialAskPanel.BringToFront();
+                _tutorialAskPanel.Visible = true;
+                _tutorialAskPanel.BringToFront();
             }
             GetNewActions();
         }
         private Image SetAvatar()
         {
-            switch (uiInterface.GetAvatar())
+            switch (_uiInterface.GetAvatar())
             {
                 case 1: return SpielDesLebens.Properties.Resources.avatarBoy0;
                 case 2: return SpielDesLebens.Properties.Resources.avatarBoy1;
@@ -63,13 +63,13 @@ namespace SpielDesLebens
                 throw new ArgumentNullException(nameof(btnSender));
             }
 
-            activeForm?.Close();
-            activeForm = childForm;
+            _activeForm?.Close();
+            _activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            this.panelActiveChild.Controls.Add(childForm);
-            this.panelActiveChild.Tag = childForm;
+            _panelActiveChild.Controls.Add(childForm);
+            _panelActiveChild.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
 
@@ -77,53 +77,53 @@ namespace SpielDesLebens
 
         private void ShowInfo(object sender, EventArgs e)
         {
-            infoText.Text = uiInterface.GetEventInfo();
-            infoPanel.Visible = true;
-            infoCloseButton.Visible = true;
-            infoText.Visible = true;
+            _infoText.Text = _uiInterface.GetEventInfo();
+            _infoPanel.Visible = true;
+            _infoCloseButton.Visible = true;
+            _infoText.Visible = true;
             AllOptionsDisable();
         }
 
         private void InfoClose(object sender, EventArgs e)
         {
-            infoPanel.Visible = false;
-            infoCloseButton.Visible = false;
-            infoText.Visible = false;
+            _infoPanel.Visible = false;
+            _infoCloseButton.Visible = false;
+            _infoText.Visible = false;
             AllOptionsEnable();
         }
 
         private void Action0Click(object sender, EventArgs e)
         {
-            actionText.Text = uiInterface.GetActionOptionText(0);
-            actionTitle.Text = uiInterface.GetActionTitle(0);
+            _actionText.Text = _uiInterface.GetActionOptionText(0);
+            _actionTitle.Text = _uiInterface.GetActionTitle(0);
             ActionTextShow();
         }
 
         private void Action1Click(object sender, EventArgs e)
         {
-            actionText.Text = uiInterface.GetActionOptionText(1);
-            actionTitle.Text = uiInterface.GetActionTitle(1);
+            _actionText.Text = _uiInterface.GetActionOptionText(1);
+            _actionTitle.Text = _uiInterface.GetActionTitle(1);
             ActionTextShow();
         }
 
         private void Action2Click(object sender, EventArgs e)
         {
-            actionText.Text = uiInterface.GetActionOptionText(2);
-            actionTitle.Text = uiInterface.GetActionTitle(2);
+            _actionText.Text = _uiInterface.GetActionOptionText(2);
+            _actionTitle.Text = _uiInterface.GetActionTitle(2);
             ActionTextShow();
         }
 
         private void Action3Click(object sender, EventArgs e)
         {
-            actionText.Text = uiInterface.GetActionOptionText(3);
-            actionTitle.Text = uiInterface.GetActionTitle(3);
+            _actionText.Text = _uiInterface.GetActionOptionText(3);
+            _actionTitle.Text = _uiInterface.GetActionTitle(3);
             ActionTextShow();
         }
         private void ActionTextShow()
         {
-            actionPanel.Visible = true;
+            _actionPanel.Visible = true;
             AllOptionsDisable();
-            if ("Derzeitige Phase: " + uiInterface.GetCurrentPhase() != currentPhaseTxt.Text)
+            if ("Derzeitige Phase: " + _uiInterface.GetCurrentPhase() != _currentPhaseTxt.Text)
             {
                 BtnLoadEventClick();
             }
@@ -136,168 +136,168 @@ namespace SpielDesLebens
         private void BtnLoadEventClick()
         {
             UpdateActionpoints();
-            uiInterface.NextEvent();
-            eventTitle.Text = uiInterface.GetEventTitle();
-            eventTxtBox.Text = uiInterface.GetEventText();
-            if (uiInterface.GetEventInfo() != "")
+            _uiInterface.NextEvent();
+            _eventTitle.Text = _uiInterface.GetEventTitle();
+            _eventTxtBox.Text = _uiInterface.GetEventText();
+            if (_uiInterface.GetEventInfo() != "")
             {
-                showInfoBtn.Visible = true;
-                infoText.Text = uiInterface.GetEventInfo();
+                _showInfoBtn.Visible = true;
+                _infoText.Text = _uiInterface.GetEventInfo();
             }
-            option1Btn.Visible = true;
-            option2Btn.Visible = true;
-            option1Btn.Text = uiInterface.GetEventOptionTitle(0);
-            option2Btn.Text = uiInterface.GetEventOptionTitle(1);
-            if (uiInterface.GetEventOptionTitle(2) != "")
+            _option1Btn.Visible = true;
+            _option2Btn.Visible = true;
+            _option1Btn.Text = _uiInterface.GetEventOptionTitle(0);
+            _option2Btn.Text = _uiInterface.GetEventOptionTitle(1);
+            if (_uiInterface.GetEventOptionTitle(2) != "")
             {
-                option3Btn.Visible = true;
-                option3Btn.Text = uiInterface.GetEventOptionTitle(2);
-                option4Btn.Visible = false;
-                if (uiInterface.GetEventOptionTitle(3) != "")
+                _option3Btn.Visible = true;
+                _option3Btn.Text = _uiInterface.GetEventOptionTitle(2);
+                _option4Btn.Visible = false;
+                if (_uiInterface.GetEventOptionTitle(3) != "")
                 {
-                    option4Btn.Visible = true;
-                    option4Btn.Text = uiInterface.GetEventOptionTitle(3);
+                    _option4Btn.Visible = true;
+                    _option4Btn.Text = _uiInterface.GetEventOptionTitle(3);
                 }
                 else
                 {
-                    option4Btn.Visible = false;
+                    _option4Btn.Visible = false;
                 }
             }
             else
             {
-                option3Btn.Visible = false;
-                option4Btn.Visible = false;
+                _option3Btn.Visible = false;
+                _option4Btn.Visible = false;
             }
         }
         private void AllOptionsDisable()
         {
-            option1Btn.Enabled = false;
-            option2Btn.Enabled = false;
-            option3Btn.Enabled = false;
-            option4Btn.Enabled = false;
-            showInfoBtn.Enabled = false;
-            action0Btn.Enabled = false;
-            action1Btn.Enabled = false;
-            action2Btn.Enabled = false;
-            action3Btn.Enabled = false;
-            saveBtn.Enabled = false;
-            backToMenuBtn.Enabled = false;
-            nextPhaseBtn.Enabled = false;
+            _option1Btn.Enabled = false;
+            _option2Btn.Enabled = false;
+            _option3Btn.Enabled = false;
+            _option4Btn.Enabled = false;
+            _showInfoBtn.Enabled = false;
+            _action0Btn.Enabled = false;
+            _action1Btn.Enabled = false;
+            _action2Btn.Enabled = false;
+            _action3Btn.Enabled = false;
+            _saveBtn.Enabled = false;
+            _backToMenuBtn.Enabled = false;
+            _nextPhaseBtn.Enabled = false;
         }
         private void AllOptionsEnable()
         {
-            option1Btn.Enabled = true;
-            option2Btn.Enabled = true;
-            option3Btn.Enabled = true;
-            option4Btn.Enabled = true;
-            showInfoBtn.Enabled = true;
-            action0Btn.Enabled = true;
-            action1Btn.Enabled = true;
-            action2Btn.Enabled = true;
-            action3Btn.Enabled = true;
-            saveBtn.Enabled = true;
-            backToMenuBtn.Enabled = true;
-            nextPhaseBtn.Enabled = true;
+            _option1Btn.Enabled = true;
+            _option2Btn.Enabled = true;
+            _option3Btn.Enabled = true;
+            _option4Btn.Enabled = true;
+            _showInfoBtn.Enabled = true;
+            _action0Btn.Enabled = true;
+            _action1Btn.Enabled = true;
+            _action2Btn.Enabled = true;
+            _action3Btn.Enabled = true;
+            _saveBtn.Enabled = true;
+            _backToMenuBtn.Enabled = true;
+            _nextPhaseBtn.Enabled = true;
 
         }
         private void AllOptionsHide()
         {
-            option1Btn.Visible = false;
-            option2Btn.Visible = false;
-            option3Btn.Visible = false;
-            option4Btn.Visible = false;
+            _option1Btn.Visible = false;
+            _option2Btn.Visible = false;
+            _option3Btn.Visible = false;
+            _option4Btn.Visible = false;
         }
         private void Option1Click(object sender, EventArgs e)
         {
-            eventTxtBox.Text = uiInterface.GetEventOptionText(0);
-            showInfoBtn.Visible = false;
-            closeOptEndTxt.Visible = true;
+            _eventTxtBox.Text = _uiInterface.GetEventOptionText(0);
+            _showInfoBtn.Visible = false;
+            _closeOptEndTxt.Visible = true;
             AllOptionsHide();
         }
         private void Option2Click(object sender, EventArgs e)
         {
-            eventTxtBox.Text = uiInterface.GetEventOptionText(1);
-            showInfoBtn.Visible = false;
-            closeOptEndTxt.Visible = true;
+            _eventTxtBox.Text = _uiInterface.GetEventOptionText(1);
+            _showInfoBtn.Visible = false;
+            _closeOptEndTxt.Visible = true;
             AllOptionsHide();
         }
         private void Option3Click(object sender, EventArgs e)
         {
-            eventTxtBox.Text = uiInterface.GetEventOptionText(2);
-            showInfoBtn.Visible = false;
-            closeOptEndTxt.Visible = true;
+            _eventTxtBox.Text = _uiInterface.GetEventOptionText(2);
+            _showInfoBtn.Visible = false;
+            _closeOptEndTxt.Visible = true;
             AllOptionsHide();
         }
 
         private void Option4Click(object sender, EventArgs e)
         {
-            eventTxtBox.Text = uiInterface.GetEventOptionText(3);
-            showInfoBtn.Visible = false;
-            closeOptEndTxt.Visible = true;
+            _eventTxtBox.Text = _uiInterface.GetEventOptionText(3);
+            _showInfoBtn.Visible = false;
+            _closeOptEndTxt.Visible = true;
             AllOptionsHide();
         }
 
         private void UpdateActionpoints()
         {
-            if (uiInterface.IsInSchool() == true)
+            if (_uiInterface.IsInSchool() == true)
             {
-                panelActiveChild.BackgroundImage = SpielDesLebens.Properties.Resources.uniTable;
+                _panelActiveChild.BackgroundImage = SpielDesLebens.Properties.Resources.uniTable;
             }
             else
             {
-                panelActiveChild.BackgroundImage = SpielDesLebens.Properties.Resources.coworking;
+                _panelActiveChild.BackgroundImage = SpielDesLebens.Properties.Resources.coworking;
             }
-            double actionPoints = uiInterface.GetActionPoints();
-            double curPhase = uiInterface.GetCurrentPhase();
-            double maxPhaseLength = uiInterface.GetMaxPhaseNumber();
-            double maxActionPoints = uiInterface.GetMaxActionPoints();
+            double actionPoints = _uiInterface.GetActionPoints();
+            double curPhase = _uiInterface.GetCurrentPhase();
+            double maxPhaseLength = _uiInterface.GetMaxPhaseNumber();
+            double maxActionPoints = _uiInterface.GetMaxActionPoints();
             double progBarValue = 100 * ((maxActionPoints * curPhase + maxActionPoints - actionPoints) / (maxActionPoints * maxPhaseLength)); ;
-            lblPlayerAge.Text = Convert.ToString(uiInterface.GetPlayerAge());
-            currentPhaseTxt.Text = "Derzeitige Phase: " + curPhase;
-            actionPointsTxt.Text = "Benutzte Aktionspunkte:" + (uiInterface.GetMaxActionPoints() - actionPoints);
-            leftPhaseTxt.Text = "Verbleibene Aktionspunkte: " + actionPoints;
-            progressProgBar.Value = (int)progBarValue;
-            moneyProgBar.Text = uiInterface.GetPlayerMoney().ToString() + "€";
-            learnProgBar.Value = uiInterface.GetPlayerSuccess();
-            motivationProgBar.Value = uiInterface.GetPlayerMotivation();
-            mentalProgBar.Value = uiInterface.GetPlayerMentalHealth();
+            _lblPlayerAge.Text = Convert.ToString(_uiInterface.GetPlayerAge());
+            _currentPhaseTxt.Text = "Derzeitige Phase: " + curPhase;
+            _actionPointsTxt.Text = "Benutzte Aktionspunkte:" + (_uiInterface.GetMaxActionPoints() - actionPoints);
+            _leftPhaseTxt.Text = "Verbleibene Aktionspunkte: " + actionPoints;
+            _progressProgBar.Value = (int)progBarValue;
+            _moneyProgBar.Text = _uiInterface.GetPlayerMoney().ToString() + "€";
+            _learnProgBar.Value = _uiInterface.GetPlayerSuccess();
+            _motivationProgBar.Value = _uiInterface.GetPlayerMotivation();
+            _mentalProgBar.Value = _uiInterface.GetPlayerMentalHealth();
             if (actionPoints == 1)
             {
-                option1Btn.Enabled = false;
-                option2Btn.Enabled = false;
-                option3Btn.Enabled = false;
-                option4Btn.Enabled = false;
-                showInfoBtn.Enabled = false;
+                _option1Btn.Enabled = false;
+                _option2Btn.Enabled = false;
+                _option3Btn.Enabled = false;
+                _option4Btn.Enabled = false;
+                _showInfoBtn.Enabled = false;
             }
-            if (actionPoints == 14 && option1Btn.Enabled == false)
+            if (actionPoints == 14 && _option1Btn.Enabled == false)
             {
-                option1Btn.Enabled = true;
-                option2Btn.Enabled = true;
-                option3Btn.Enabled = true;
-                option4Btn.Enabled = true;
-                showInfoBtn.Enabled = true;
+                _option1Btn.Enabled = true;
+                _option2Btn.Enabled = true;
+                _option3Btn.Enabled = true;
+                _option4Btn.Enabled = true;
+                _showInfoBtn.Enabled = true;
             }
-            string warningCheck = uiInterface.GetStatWarning();
+            string warningCheck = _uiInterface.GetStatWarning();
             if (warningCheck != "")
             {
-                tutorialPanel2.Visible = true;
-                tutorialTxt2.Text = warningCheck;
-                tutorialBtn2.Text = "Schließen";
+                _tutorialPanel2.Visible = true;
+                _tutorialTxt2.Text = warningCheck;
+                _tutorialBtn2.Text = "Schließen";
             }
             GameOverCheck();
             GetNewActions();
         }
         private void GetNewActions()
         {
-            action0Btn.Text = "     " + uiInterface.GetActionTitle(0);
-            action1Btn.Text = "     " + uiInterface.GetActionTitle(1);
-            action2Btn.Text = "     " + uiInterface.GetActionTitle(2);
-            action3Btn.Text = "     " + uiInterface.GetActionTitle(3);
+            _action0Btn.Text = "     " + _uiInterface.GetActionTitle(0);
+            _action1Btn.Text = "     " + _uiInterface.GetActionTitle(1);
+            _action2Btn.Text = "     " + _uiInterface.GetActionTitle(2);
+            _action3Btn.Text = "     " + _uiInterface.GetActionTitle(3);
 
-            action0Btn.Image = GetActionIcon(uiInterface.GetActionOptionMainStat(0));
-            action1Btn.Image = GetActionIcon(uiInterface.GetActionOptionMainStat(1));
-            action2Btn.Image = GetActionIcon(uiInterface.GetActionOptionMainStat(2));
-            action3Btn.Image = GetActionIcon(uiInterface.GetActionOptionMainStat(3));
+            _action0Btn.Image = GetActionIcon(_uiInterface.GetActionOptionMainStat(0));
+            _action1Btn.Image = GetActionIcon(_uiInterface.GetActionOptionMainStat(1));
+            _action2Btn.Image = GetActionIcon(_uiInterface.GetActionOptionMainStat(2));
+            _action3Btn.Image = GetActionIcon(_uiInterface.GetActionOptionMainStat(3));
 
         }
         private Image GetActionIcon(int r)
@@ -314,20 +314,20 @@ namespace SpielDesLebens
         }
         private void CloseOptTxt(object sender, EventArgs e)
         {
-            closeOptEndTxt.Visible = false;
+            _closeOptEndTxt.Visible = false;
             BtnLoadEventClick();
         }
         private void GameOverCheck()
         {
-            if (uiInterface.GetGameEnd() != "")
+            if (_uiInterface.GetGameEnd() != "")
             {
-                gameOverPanel.Visible = true;
-                nextPhaseBtn.Enabled = false;
-                saveBtn.Enabled = false;
-                backToMenuBtn.Enabled = false;
-                tutorialBtn2.Enabled = false;
+                _gameOverPanel.Visible = true;
+                _nextPhaseBtn.Enabled = false;
+                _saveBtn.Enabled = false;
+                _backToMenuBtn.Enabled = false;
+                _tutorialBtn2.Enabled = false;
                 AllOptionsDisable();
-                gameOverTxt.Text = uiInterface.GetGameEnd();
+                _gameOverTxt.Text = _uiInterface.GetGameEnd();
             }
         }
 
@@ -337,152 +337,152 @@ namespace SpielDesLebens
         }
         private void ToMenu()
         {
-            uiMenu.ResetForm();
-            uiMenu.Show();
-            uiMenu.BringToFront();
+            _uiMenu.ResetForm();
+            _uiMenu.Show();
+            _uiMenu.BringToFront();
             Hide();
         }
         private void EndTutorial(object sender, EventArgs e)
         {
-            tutorialAskPanel.Visible = false;
+            _tutorialAskPanel.Visible = false;
             AllOptionsEnable();
         }
 
         private void StartTutorial(object sender, EventArgs e)
         {
-            tutorialAskPanel.Visible = false;
-            tutorialPanel1.Visible = true;
+            _tutorialAskPanel.Visible = false;
+            _tutorialPanel1.Visible = true;
         }
 
         private void ContinueTutorial1(object sender, EventArgs e)
         {
-            if (tutorialTxt1.Text == "Links wird dein Charakter angezeigt. Wenn du auf das Bild deines Charakters klickst, hast du die Möglichkeit deinen Karriereweg zu wechseln.")
+            if (_tutorialTxt1.Text == "Links wird dein Charakter angezeigt. Wenn du auf das Bild deines Charakters klickst, hast du die Möglichkeit deinen Karriereweg zu wechseln.")
             {
-                tutorialTxt1.Text = "Auf der Rechten Seite siehtst du deinen Fortschritt im Spiel.";
+                _tutorialTxt1.Text = "Auf der Rechten Seite siehtst du deinen Fortschritt im Spiel.";
             }
             else
             {
-                tutorialPanel2.Visible = true;
-                tutorialPanel1.Visible = false;
+                _tutorialPanel2.Visible = true;
+                _tutorialPanel1.Visible = false;
             }
         }
         private void ContinueTutorial2(object sender, EventArgs e)
         {
-            if (tutorialBtn2.Text == "Weiter")
+            if (_tutorialBtn2.Text == "Weiter")
             {
-                tutorialPanel3.Visible = true;
+                _tutorialPanel3.Visible = true;
             }
-            tutorialPanel2.Visible = false;
+            _tutorialPanel2.Visible = false;
         }
         private void ContinueTutorial3(object sender, EventArgs e)
         {
-            tutorialPanel4.Visible = true;
-            tutorialPanel3.Visible = false;
+            _tutorialPanel4.Visible = true;
+            _tutorialPanel3.Visible = false;
         }
         private void ContinueTutorial4(object sender, EventArgs e)
         {
-            tutorialPanel5.Visible = true;
-            tutorialPanel4.Visible = false;
-            if (showInfoBtn.Visible == false)
+            _tutorialPanel5.Visible = true;
+            _tutorialPanel4.Visible = false;
+            if (_showInfoBtn.Visible == false)
             {
-                showInfoBtn.Visible = true;
-                showInfoBtn.Visible = false;
+                _showInfoBtn.Visible = true;
+                _showInfoBtn.Visible = false;
             }
         }
         private void ContinueTutorial5(object sender, EventArgs e)
         {
-            if (showInfoBtn.Visible == false)
+            if (_showInfoBtn.Visible == false)
             {
-                showInfoBtn.Visible = false;
+                _showInfoBtn.Visible = false;
             }
-            tutorialPanel6.Visible = true;
-            tutorialPanel5.Visible = false;
+            _tutorialPanel6.Visible = true;
+            _tutorialPanel5.Visible = false;
         }
         private void ContinueTutorial6(object sender, EventArgs e)
         {
-            if (tutorialTxt6.Text == "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
+            if (_tutorialTxt6.Text == "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
             {
-                tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei einem. Ein Event erhöht die Anzahl der Aktionspnkte bei zwei.";
+                _tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei einem. Ein Event erhöht die Anzahl der Aktionspnkte bei zwei.";
             }
-            tutorialPanel6.Visible = false;
-            tutorialPanel7.Visible = true;
+            _tutorialPanel6.Visible = false;
+            _tutorialPanel7.Visible = true;
         }
 
         private void ContinueTutorial7(object sender, EventArgs e)
         {
-            if (tutorialTxt6.Text == "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
+            if (_tutorialTxt6.Text == "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
             {
-                tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei einem. Ein Event erhöht die Anzahl der Aktionspnkte bei zwei.";
+                _tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei einem. Ein Event erhöht die Anzahl der Aktionspnkte bei zwei.";
             }
             else
             {
-                tutorialPanel7.Visible = false;
+                _tutorialPanel7.Visible = false;
                 AllOptionsEnable();
             }
         }
 
         private void ActionClose(object sender, EventArgs e)
         {
-            actionPanel.Visible = false;
+            _actionPanel.Visible = false;
             AllOptionsEnable();
-            if (uiInterface.GetActionPoints() == 1)
+            if (_uiInterface.GetActionPoints() == 1)
             {
-                option1Btn.Enabled = false;
-                option2Btn.Enabled = false;
-                option3Btn.Enabled = false;
-                option4Btn.Enabled = false;
-                showInfoBtn.Enabled = false;
+                _option1Btn.Enabled = false;
+                _option2Btn.Enabled = false;
+                _option3Btn.Enabled = false;
+                _option4Btn.Enabled = false;
+                _showInfoBtn.Enabled = false;
             }
         }
 
         private void HoverActionTxtShow0(object sender, EventArgs e)
         {
-            infoActionPanel0.Visible = true;
-            infoActionTxt0.Text = uiInterface.GetActionInfo(0);
+            _infoActionPanel0.Visible = true;
+            _infoActionTxt0.Text = _uiInterface.GetActionInfo(0);
         }
         private void HoverActionTxtShow1(object sender, EventArgs e)
         {
-            infoActionPanel1.Visible = true;
-            infoActionTxt1.Text = uiInterface.GetActionInfo(1);
+            _infoActionPanel1.Visible = true;
+            _infoActionTxt1.Text = _uiInterface.GetActionInfo(1);
         }
         private void HoverActionTxtShow2(object sender, EventArgs e)
         {
-            infoActionPanel2.Visible = true;
-            infoActionTxt2.Text = uiInterface.GetActionInfo(2);
+            _infoActionPanel2.Visible = true;
+            _infoActionTxt2.Text = _uiInterface.GetActionInfo(2);
         }
         private void HoverActionTxtShow3(object sender, EventArgs e)
         {
-            infoActionPanel3.Visible = true;
-            infoActionTxt3.Text = uiInterface.GetActionInfo(3);
+            _infoActionPanel3.Visible = true;
+            _infoActionTxt3.Text = _uiInterface.GetActionInfo(3);
         }
 
         private void CloseHoverAction(object sender, EventArgs e)
         {
-            infoActionPanel0.Visible = false;
-            infoActionPanel1.Visible = false;
-            infoActionPanel2.Visible = false;
-            infoActionPanel3.Visible = false;
+            _infoActionPanel0.Visible = false;
+            _infoActionPanel1.Visible = false;
+            _infoActionPanel2.Visible = false;
+            _infoActionPanel3.Visible = false;
         }
 
         private void NewProfessionNoBtnClick(object sender, EventArgs e)
         {
-            if (newProfessionNoBtn.Text == "Weiter")
+            if (_newProfessionNoBtn.Text == "Weiter")
             {
-                lblPlayerPath.Text = newProfessionProfessionComboBox.Text;
-                PathSet(refrenceTraining);
-                ProfessionSet(refrenceProfession);
-                uiInterface.ResetPath(training, profession);
-                newProfessionYesBtn.Text = "Ja";
+                _lblPlayerPath.Text = _newProfessionProfessionComboBox.Text;
+                PathSet(_refrenceTraining);
+                ProfessionSet(_refrenceProfession);
+                _uiInterface.ResetPath(_training, _profession);
+                _newProfessionYesBtn.Text = "Ja";
             }
-            newProfessionPanel.Visible = false;
-            newProfessionPathLable.Visible = false;
-            newProfessionPathComboBox.Visible = false;
-            newProfessionPathComboBox.Text = "";
-            newProfessionProfessionComboBox.Text = "";
-            newProfessionProfessionComboBox.Items.Clear();
-            newProfessionPathComboBox.Items.Clear();
-            newProfessionProfessionLable.Visible = false;
-            newProfessionProfessionComboBox.Visible = false;
+            _newProfessionPanel.Visible = false;
+            _newProfessionPathLable.Visible = false;
+            _newProfessionPathComboBox.Visible = false;
+            _newProfessionPathComboBox.Text = "";
+            _newProfessionProfessionComboBox.Text = "";
+            _newProfessionProfessionComboBox.Items.Clear();
+            _newProfessionPathComboBox.Items.Clear();
+            _newProfessionProfessionLable.Visible = false;
+            _newProfessionProfessionComboBox.Visible = false;
             AllOptionsEnable();
             UpdateActionpoints();
         }
@@ -490,151 +490,151 @@ namespace SpielDesLebens
         private void NewProfessionOptOpen(object sender, EventArgs e)
         {
             AllOptionsDisable();
-            nextPhaseBtn.Enabled = false;
-            newProfessionPanel.Visible = true;
-            newProfessionNoBtn.Text = "Nein";
-            newProfessionNoBtn.Enabled = true;
-            newProfessionYesBtn.Visible = true;
+            _nextPhaseBtn.Enabled = false;
+            _newProfessionPanel.Visible = true;
+            _newProfessionNoBtn.Text = "Nein";
+            _newProfessionNoBtn.Enabled = true;
+            _newProfessionYesBtn.Visible = true;
         }
 
         private void NewProfessionYesOpt(object sender, EventArgs e)
         {
-            if (newProfessionYesBtn.Text == "Abbrechen")
+            if (_newProfessionYesBtn.Text == "Abbrechen")
             {
-                newProfessionPathLable.Visible = false;
-                newProfessionPathComboBox.Visible = false;
-                newProfessionProfessionLable.Visible = false;
-                newProfessionProfessionComboBox.Visible = false;
-                newProfessionPanel.Visible = false;
+                _newProfessionPathLable.Visible = false;
+                _newProfessionPathComboBox.Visible = false;
+                _newProfessionProfessionLable.Visible = false;
+                _newProfessionProfessionComboBox.Visible = false;
+                _newProfessionPanel.Visible = false;
                 AllOptionsEnable();
-                newProfessionYesBtn.Text = "Ja";
+                _newProfessionYesBtn.Text = "Ja";
             }
             else
             {
-                newProfessionProfessionComboBox.Visible = true;
-                newProfessionNoBtn.Text = "Weiter";
-                newProfessionYesBtn.Text = "Abbrechen";
-                newProfessionProfessionLable.Visible = true;
-                newProfessionPathLable.Visible = true;
-                newProfessionPathComboBox.Visible = true;
-                newProfessionNoBtn.Enabled = false;
+                _newProfessionProfessionComboBox.Visible = true;
+                _newProfessionNoBtn.Text = "Weiter";
+                _newProfessionYesBtn.Text = "Abbrechen";
+                _newProfessionProfessionLable.Visible = true;
+                _newProfessionPathLable.Visible = true;
+                _newProfessionPathComboBox.Visible = true;
+                _newProfessionNoBtn.Enabled = false;
             }
-            Data.Graduation currentGraduation = uiInterface.GetGraduation();
+            Data.Graduation currentGraduation = _uiInterface.GetGraduation();
             if (currentGraduation.Equals(Data.Graduation.Hauptschulabschluss))
             {
-                newProfessionPathComboBox.Items.AddRange(new object[] { "Ausbildung" });
+                _newProfessionPathComboBox.Items.AddRange(new object[] { "Ausbildung" });
             }
             else if (currentGraduation.Equals(Data.Graduation.Realschulabschluss))
             {
-                newProfessionPathComboBox.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
+                _newProfessionPathComboBox.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
             }
             else
             {
-                newProfessionPathComboBox.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium" });
+                _newProfessionPathComboBox.Items.AddRange(new object[] { "Ausbildung", "Duales Studium", "Studium" });
             }
-            newProfessionProfessionComboBox.Enabled = false;
+            _newProfessionProfessionComboBox.Enabled = false;
         }
 
         private void NewProfessionTxtChange(object sender, EventArgs e)
         {
-            newProfessionNoBtn.Enabled = true;
-            if (newProfessionProfessionComboBox.Text == "Krankenpflege" || newProfessionProfessionComboBox.Text == "Angewandte Gesundheits- und Pflegewissenschaften" || newProfessionProfessionComboBox.Text == "Medizinstudium")
+            _newProfessionNoBtn.Enabled = true;
+            if (_newProfessionProfessionComboBox.Text == "Krankenpflege" || _newProfessionProfessionComboBox.Text == "Angewandte Gesundheits- und Pflegewissenschaften" || _newProfessionProfessionComboBox.Text == "Medizinstudium")
             {
-                refrenceProfession = "Social";
+                _refrenceProfession = "Social";
             }
-            if (newProfessionProfessionComboBox.Text == "BWL" || newProfessionProfessionComboBox.Text == "Industriekaufmann")
+            if (_newProfessionProfessionComboBox.Text == "BWL" || _newProfessionProfessionComboBox.Text == "Industriekaufmann")
             {
-                refrenceProfession = "Buisness";
+                _refrenceProfession = "Buisness";
             }
-            if (newProfessionProfessionComboBox.Text == "Pharmazeutisch Technische Assistenz" || newProfessionProfessionComboBox.Text == "Angewandte Physik" || newProfessionProfessionComboBox.Text == "Physikstudium")
+            if (_newProfessionProfessionComboBox.Text == "Pharmazeutisch Technische Assistenz" || _newProfessionProfessionComboBox.Text == "Angewandte Physik" || _newProfessionProfessionComboBox.Text == "Physikstudium")
             {
-                refrenceProfession = "Science";
+                _refrenceProfession = "Science";
             }
-            if (newProfessionProfessionComboBox.Text == "Fachinformatiker" || newProfessionProfessionComboBox.Text == "Angewandtes Informatikstudium" || newProfessionProfessionComboBox.Text == "Informatikstudium")
+            if (_newProfessionProfessionComboBox.Text == "Fachinformatiker" || _newProfessionProfessionComboBox.Text == "Angewandtes Informatikstudium" || _newProfessionProfessionComboBox.Text == "Informatikstudium")
             {
-                refrenceProfession = "Stem";
+                _refrenceProfession = "Stem";
             }
-            if (newProfessionProfessionComboBox.Text == "Jurastudium" || newProfessionProfessionComboBox.Text == "Steuerwesen" || newProfessionProfessionComboBox.Text == "Rechtanwaltsfachangestellter")
+            if (_newProfessionProfessionComboBox.Text == "Jurastudium" || _newProfessionProfessionComboBox.Text == "Steuerwesen" || _newProfessionProfessionComboBox.Text == "Rechtanwaltsfachangestellter")
             {
-                refrenceProfession = "Civil";
+                _refrenceProfession = "Civil";
             }
         }
 
         private void NewProfessionPathComboBoxTextChanged(object sender, EventArgs e)
         {
-            newProfessionProfessionComboBox.Items.Clear();
-            newProfessionProfessionComboBox.Text = null;
-            if (newProfessionPathComboBox.Text == "Ausbildung")
+            _newProfessionProfessionComboBox.Items.Clear();
+            _newProfessionProfessionComboBox.Text = null;
+            if (_newProfessionPathComboBox.Text == "Ausbildung")
             {
-                refrenceTraining = "Training";
-                newProfessionProfessionComboBox.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
+                _refrenceTraining = "Training";
+                _newProfessionProfessionComboBox.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
             }
-            else if (newProfessionPathComboBox.Text == "Duales Studium")
+            else if (_newProfessionPathComboBox.Text == "Duales Studium")
             {
-                refrenceTraining = "Duales Studium";
-                newProfessionProfessionComboBox.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
+                _refrenceTraining = "Duales Studium";
+                _newProfessionProfessionComboBox.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
             }
-            else if (newProfessionPathComboBox.Text == "Studium")
+            else if (_newProfessionPathComboBox.Text == "Studium")
             {
-                refrenceTraining = "Studium";
-                newProfessionProfessionComboBox.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
+                _refrenceTraining = "Studium";
+                _newProfessionProfessionComboBox.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
             }
-            newProfessionProfessionComboBox.Enabled = true;
+            _newProfessionProfessionComboBox.Enabled = true;
         }
         private void ProfessionSet(string givenProfession)
         {
             if (givenProfession == "Social")
             {
-                profession = Data.Profession.Social;
+                _profession = Data.Profession.Social;
             }
             else if (givenProfession == "Buisness")
             {
-                profession = Data.Profession.Business;
+                _profession = Data.Profession.Business;
             }
             else if (givenProfession == "Stem")
             {
-                profession = Data.Profession.Stem;
+                _profession = Data.Profession.Stem;
             }
             else if (givenProfession == "Science")
             {
-                profession = Data.Profession.Science;
+                _profession = Data.Profession.Science;
             }
             else if (givenProfession == "Civil")
             {
-                profession = Data.Profession.Civil;
+                _profession = Data.Profession.Civil;
             }
         }
         private void PathSet(string givenPath)
         {
             if (givenPath == "Training")
             {
-                training = Data.Path.Training;
+                _training = Data.Path.Training;
             }
             else if (givenPath == "DualStudy")
             {
-                training = Data.Path.DualStudy;
+                _training = Data.Path.DualStudy;
             }
             else if (givenPath == "Study")
             {
-                training = Data.Path.Study;
+                _training = Data.Path.Study;
             }
         }
 
         private void NextPhase(object sender, EventArgs e)
         {
-            uiInterface.NextPhase();
+            _uiInterface.NextPhase();
             BtnLoadEventClick();
         }
 
         private void SaveBtnClick(object sender, EventArgs e)
         {
-            uiInterface.SaveGame();
-            if (uiInterface.HasValidData())
+            _uiInterface.SaveGame();
+            if (_uiInterface.HasValidData())
             {
-                infoPanel.Visible = true;
-                infoCloseButton.Visible = true;
-                infoText.Visible = true;
-                infoText.Text = "Dein Spielstand wurde erfolgreich gespeichert.";
+                _infoPanel.Visible = true;
+                _infoCloseButton.Visible = true;
+                _infoText.Visible = true;
+                _infoText.Text = "Dein Spielstand wurde erfolgreich gespeichert.";
                 AllOptionsDisable();
             }
         }

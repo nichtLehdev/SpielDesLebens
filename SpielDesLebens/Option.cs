@@ -4,37 +4,37 @@ namespace SpielDesLebens
 {
     internal class Option
     {
-        private readonly string id;
-        private readonly string title;
-        private readonly string text;
-        private readonly Stat optionStat;
+        private readonly string _id;
+        private readonly string _title;
+        private readonly string _text;
+        private readonly Stat _optionStat;
 
         public Option(string id, string title, string text, Stat optionStat)
         {
-            this.id = id;
-            this.title = title;
-            this.text = text;
-            this.optionStat = optionStat;
+            _id = id;
+            _title = title;
+            _text = text;
+            _optionStat = optionStat;
         }
 
         public string GetId()
         {
-            return id;
+            return _id;
         }
 
         public string GetTitle()
         {
-            return this.title;
+            return _title;
         }
 
         public string GetText()
         {
-            return this.text;
+            return _text;
         }
 
         public Stat GetOptionStat()
         {
-            return this.optionStat;
+            return _optionStat;
         }
 
 

@@ -4,24 +4,24 @@ namespace SpielDesLebens
 {
     internal class Action
     {
-        private readonly string id;
-        private readonly string title;
-        private readonly string info;
-        private readonly Option result;
+        private readonly string _id;
+        private readonly string _title;
+        private readonly string _info;
+        private readonly Option _result;
 
         #region getters
-        public string GetId() { return id; }
-        public string GetTitle() { return title; }
-        public string GetInfo() { return info; }
-        public Option GetResult() { return result; }
+        public string GetId() { return _id; }
+        public string GetTitle() { return _title; }
+        public string GetInfo() { return _info; }
+        public Option GetResult() { return _result; }
         #endregion
 
         public Action(string id, string title, string info, Option result)
         {
-            this.id = id;
-            this.title = title;
-            this.info = info;
-            this.result = result;
+            _id = id;
+            _title = title;
+            _info = info;
+            _result = result;
         }
     }
 }

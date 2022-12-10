@@ -6,102 +6,102 @@ namespace SpielDesLebens
 {
     internal class UiInterface
     {
-        private readonly Player player;
-        private readonly int slot;
-        private Event currentEvent;
-        private List<Action> currentActions;
+        private readonly Player _player;
+        private readonly int _slot;
+        private Event _currentEvent;
+        private List<Action> _currentActions;
         public UiInterface(Player player, int slot)
         {
-            this.player = player;
-            this.slot = slot;
+            _player = player;
+            _slot = slot;
             NextAction();
         }
 
         public void SaveGame()
         {
-            SaveLoadDeleteGame.SaveGame(this.player, this.slot);
+            SaveLoadDeleteGame.SaveGame(_player, _slot);
         }
 
         public bool HasValidData()
         {
-            return UiInterfaceMenu.HasValidData(slot);
+            return UiInterfaceMenu.HasValidData(_slot);
         }
 
         public int GetMaxActionPoints()
         {
-            return player.GetEducationPath().GetPhase().GetMaxActionPoints();
+            return _player.GetEducationPath().GetPhase().GetMaxActionPoints();
         }
         public void NextEvent()
         {
-            currentEvent = player.GetEventgenerator().NextEvent(player.GetPlayerStat());
+            _currentEvent = _player.GetEventgenerator().NextEvent(_player.GetPlayerStat());
         }
 
         private void NextAction()
         {
-            currentActions = player.GetActionGenerator().GetActions();
+            _currentActions = _player.GetActionGenerator().GetActions();
         }
 
         #region getActionString        
         public string GetActionTitle(int action)
         {
-            if (action >= currentActions.Count)
+            if (action >= _currentActions.Count)
             {
                 return "";
             }
             else
             {
-                return currentActions[action].GetTitle();
+                return _currentActions[action].GetTitle();
             }
         }
 
         public string GetActionInfo(int action)
         {
-            if (action >= currentActions.Count || currentActions[action].GetInfo() == null)
+            if (action >= _currentActions.Count || _currentActions[action].GetInfo() == null)
             {
                 return "";
             }
             else
             {
-                return currentActions[action].GetInfo();
+                return _currentActions[action].GetInfo();
             }
         }
 
         public string GetActionOptionTitle(int action)
         {
-            if (action >= currentActions.Count)
+            if (action >= _currentActions.Count)
             {
                 return "";
             }
             else
             {
-                return currentActions[action].GetResult().GetTitle();
+                return _currentActions[action].GetResult().GetTitle();
             }
         }
 
         public string GetActionOptionText(int action)
         {
-            if (action >= currentActions.Count)
+            if (action >= _currentActions.Count)
             {
                 return "";
             }
             else
             {
                 SubtractActionPoints(1);
-                this.player.ChangePlayerStat(currentActions[action].GetResult().GetOptionStat());
-                return currentActions[action].GetResult().GetText();
+                _player.ChangePlayerStat(_currentActions[action].GetResult().GetOptionStat());
+                return _currentActions[action].GetResult().GetText();
             }
         }
 
         public int GetActionOptionMainStat(int action)
         {
             int highStat = 0;
-            if (action >= currentActions.Count)
+            if (action >= _currentActions.Count)
             {
                 // There in case no valid action is selected.
             }
             else
             {
-                Stat optionStat = currentActions[action].GetResult().GetOptionStat();
+                Stat optionStat = _currentActions[action].GetResult().GetOptionStat();
 
                 for (int i = 0; i < optionStat.GetStats().Count; i++)
                 {
@@ -130,20 +130,20 @@ namespace SpielDesLebens
         #region getEventString
         public string GetEventOptionTitle(int option)
         {
-            if (option >= currentEvent.GetOptions().Count)
+            if (option >= _currentEvent.GetOptions().Count)
             {
                 return "";
             }
             else
             {
-                return currentEvent.GetOptions()[option].GetTitle();
+                return _currentEvent.GetOptions()[option].GetTitle();
             }
         }
 
         public string GetEventOptionText(int option)
         {
             // Change player stats.
-            if (option >= currentEvent.GetOptions().Count)
+            if (option >= _currentEvent.GetOptions().Count)
             {
                 return "";
             }
@@ -151,56 +151,56 @@ namespace SpielDesLebens
             {
                 SubtractActionPoints(2);
                 ChangePlayerStats(option);
-                return currentEvent.GetOptions()[option].GetText();
+                return _currentEvent.GetOptions()[option].GetText();
             }
         }
 
         public string GetEventText()
         {
-            return currentEvent.GetText();
+            return _currentEvent.GetText();
         }
         public string GetEventTitle()
         {
-            return currentEvent.GetTitle();
+            return _currentEvent.GetTitle();
         }
 
         public string GetEventInfo()
         {
-            if (currentEvent.GetInfo() == null)
+            if (_currentEvent.GetInfo() == null)
             {
                 return "";
             }
             else
             {
-                return currentEvent.GetInfo();
+                return _currentEvent.GetInfo();
             }
         }
         #endregion
         public int GetActionPoints()
         {
-            return player.GetEducationPath().GetPhase().GetActionPoints();
+            return _player.GetEducationPath().GetPhase().GetActionPoints();
         }
         public int GetCurrentPhase()
         {
-            return player.GetEducationPath().GetPhase().GetCurrentPhase();
+            return _player.GetEducationPath().GetPhase().GetCurrentPhase();
         }
 
 
         public int GetMaxPhaseNumber()
         {
-            return player.GetEducationPath().GetPhase().GetMaxPhaseNumber();
+            return _player.GetEducationPath().GetPhase().GetMaxPhaseNumber();
         }
 
         public Data.Graduation GetGraduation()
         {
-            return player.GetGraduation();
+            return _player.GetGraduation();
         }
 
 
         #region getPlayerStats
         public int GetPlayerMoney()
         {
-            foreach (StatParameter statsp in player.GetPlayerStat().GetStats())
+            foreach (StatParameter statsp in _player.GetPlayerStat().GetStats())
             {
                 if (statsp.GetName().ToString() == "money")
                 {
@@ -211,7 +211,7 @@ namespace SpielDesLebens
         }
         public int GetPlayerMentalHealth()
         {
-            foreach (StatParameter statsp in player.GetPlayerStat().GetStats())
+            foreach (StatParameter statsp in _player.GetPlayerStat().GetStats())
             {
                 if (statsp.GetName().ToString() == "mentalHealth")
                 {
@@ -222,7 +222,7 @@ namespace SpielDesLebens
         }
         public int GetPlayerMotivation()
         {
-            foreach (StatParameter statsp in player.GetPlayerStat().GetStats())
+            foreach (StatParameter statsp in _player.GetPlayerStat().GetStats())
             {
                 if (statsp.GetName().ToString() == "motivation")
                 {
@@ -233,7 +233,7 @@ namespace SpielDesLebens
         }
         public int GetPlayerSuccess()
         {
-            foreach (StatParameter statsp in player.GetPlayerStat().GetStats())
+            foreach (StatParameter statsp in _player.GetPlayerStat().GetStats())
             {
                 if (statsp.GetName().ToString() == "success")
                 {
@@ -245,23 +245,23 @@ namespace SpielDesLebens
         #endregion
         private void ChangePlayerStats(int option)
         {
-            Stat currentOptionStats = currentEvent.GetOptions()[option].GetOptionStat();
-            this.player.ChangePlayerStat(currentOptionStats);
+            Stat currentOptionStats = _currentEvent.GetOptions()[option].GetOptionStat();
+            _player.ChangePlayerStat(currentOptionStats);
         }
 
         private void SubtractActionPoints(int cost)
         {
-            player.GetEducationPath().GetPhase().SubtractPoints(cost);
-            if (player.GetEducationPath().GetPhase().GetActionPoints() <= 0)
+            _player.GetEducationPath().GetPhase().SubtractPoints(cost);
+            if (_player.GetEducationPath().GetPhase().GetActionPoints() <= 0)
             {
-                player.NextPhase();
+                _player.NextPhase();
                 NextAction();
             }
         }
 
         public string GetStatWarning()
         {
-            Data.StatType? statType = player.CheckStatSmaller(11);
+            Data.StatType? statType = _player.CheckStatSmaller(11);
             string warning = "";
             if (statType != null)
             {
@@ -286,7 +286,7 @@ namespace SpielDesLebens
 
         public string GetGameEnd()
         {
-            Data.StatType? statType = player.CheckStatSmaller(1);
+            Data.StatType? statType = _player.CheckStatSmaller(1);
             string gameEnd = "";
             if (statType != null)
             {
@@ -306,9 +306,9 @@ namespace SpielDesLebens
                         break;
                 }
             }
-            if (player.GetEducationPath().GetPhase().GetCurrentPhase() > GetMaxPhaseNumber())
+            if (_player.GetEducationPath().GetPhase().GetCurrentPhase() > GetMaxPhaseNumber())
             {
-                if (player.GetEducationPath().GetPath() == Data.Path.Training)
+                if (_player.GetEducationPath().GetPath() == Data.Path.Training)
                 {
                     gameEnd = "Erfolg!!! Du hast deine Ausbildung ";
                 }
@@ -316,44 +316,44 @@ namespace SpielDesLebens
                 {
                     gameEnd = "Erfolg!!! Du hast dein Studium ";
                 }
-                gameEnd += "\"" + player.GetEducationPath().GetProfessionName() + "\" erfolgreich absolviert!";
+                gameEnd += "\"" + _player.GetEducationPath().GetProfessionName() + "\" erfolgreich absolviert!";
 
             }
             return gameEnd;
         }
         public void ResetPath(Data.Path path, Data.Profession profession)
         {
-            player.ResetCareer(path, profession);
+            _player.ResetCareer(path, profession);
             NextAction();
         }
         public void NextPhase()
         {
-            player.NextPhase();
+            _player.NextPhase();
             NextAction();
         }
 
         public bool IsInSchool()
         {
-            int currentPhase = player.GetEducationPath().GetPhase().GetCurrentPhase();
+            int currentPhase = _player.GetEducationPath().GetPhase().GetCurrentPhase();
             if (currentPhase == 0)
             {
                 return false;
             }
-            if (player.GetEducationPath().GetPath() == Data.Path.Training)
+            if (_player.GetEducationPath().GetPath() == Data.Path.Training)
             {
                 if (currentPhase % 2 == 0)
                 {
                     return true;
                 }
             }
-            else if (player.GetEducationPath().GetPath() == Data.Path.DualStudy)
+            else if (_player.GetEducationPath().GetPath() == Data.Path.DualStudy)
             {
                 if (currentPhase % 2 != 0)
                 {
                     return true;
                 }
             }
-            else if (player.GetEducationPath().GetPath() == Data.Path.Study) // seperatly in case of changes in the future
+            else if (_player.GetEducationPath().GetPath() == Data.Path.Study) // seperatly in case of changes in the future
             {
                 if (currentPhase % 2 != 0)
                 {
@@ -365,19 +365,19 @@ namespace SpielDesLebens
 
         public int GetPlayerAge()
         {
-            return player.GetAge();
+            return _player.GetAge();
         }
         public string GetPlayerName()
         {
-            return player.GetName();
+            return _player.GetName();
         }
         public string GetPlayerProfessionName()
         {
-            return player.GetEducationPath().GetProfessionName();
+            return _player.GetEducationPath().GetProfessionName();
         }
         public int GetAvatar()
         {
-            return player.GetAvatar();
+            return _player.GetAvatar();
         }
 
     }

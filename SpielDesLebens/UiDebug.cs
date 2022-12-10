@@ -30,7 +30,7 @@ namespace SpielDesLebens
                 actionsO += "-------------------------------------------------------- \r\n \r\n";
             }
 
-            textBox1.Text = actionsO;
+            _textBox1.Text = actionsO;
 
         }
 
@@ -75,7 +75,7 @@ namespace SpielDesLebens
             }
 
 
-            textBox2.Text = eventsO;
+            _textBox2.Text = eventsO;
         }
 
         private void EventMatrix()
@@ -168,7 +168,7 @@ namespace SpielDesLebens
 
             }
 
-            textBox3.Text = emO;
+            _textBox3.Text = emO;
 
         }
 

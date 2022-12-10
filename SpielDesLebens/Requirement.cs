@@ -6,30 +6,30 @@ namespace SpielDesLebens
 {
     internal class Requirement
     {
-        private readonly List<Timing> timings;
-        private readonly Stat reqStatMin;
-        private readonly Stat reqStatMax;
+        private readonly List<Timing> _timings;
+        private readonly Stat _reqStatMin;
+        private readonly Stat _reqStatMax;
 
         public Requirement(List<Timing> timings, Stat minStats, Stat maxStats)
         {
-            this.timings = timings;
-            reqStatMin = minStats;
-            reqStatMax = maxStats;
+            _timings = timings;
+            _reqStatMin = minStats;
+            _reqStatMax = maxStats;
         }
 
         public List<Timing> GetTimings()
         {
-            return this.timings;
+            return _timings;
         }
 
         public Stat GetReqStatMin()
         {
-            return this.reqStatMin;
+            return _reqStatMin;
         }
 
         public Stat GetReqStatMax()
         {
-            return this.reqStatMax;
+            return _reqStatMax;
         }
     }
 }

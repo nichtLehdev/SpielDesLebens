@@ -4,52 +4,52 @@ namespace SpielDesLebens
 {
     internal class Phase
     {
-        private int currentPhase;
-        private int actionPoints;
-        private readonly int maxActionPoints;
+        private int _currentPhase;
+        private int _actionPoints;
+        private readonly int _maxActionPoints;
 
         public Phase(int length)
         {
-            actionPoints = length * 7;
-            maxActionPoints = actionPoints;
+            _actionPoints = length * 7;
+            _maxActionPoints = _actionPoints;
         }
 
         public Phase(int currentPhase, int actionPoints, int length)
         {
-            this.currentPhase = currentPhase;
-            this.actionPoints = actionPoints;
-            maxActionPoints = length * 7;
+            _currentPhase = currentPhase;
+            _actionPoints = actionPoints;
+            _maxActionPoints = length * 7;
         }
 
         public int GetMaxActionPoints()
         {
-            return maxActionPoints;
+            return _maxActionPoints;
         }
 
         public int GetActionPoints()
         {
-            return actionPoints;
+            return _actionPoints;
         }
 
         public void SubtractPoints(int points)
         {
-            actionPoints -= points;
+            _actionPoints -= points;
         }
 
         public void NextPhase()
         {
-            currentPhase++;
-            actionPoints = maxActionPoints;
+            _currentPhase++;
+            _actionPoints = _maxActionPoints;
         }
 
         public int GetCurrentPhase()
         {
-            return currentPhase;
+            return _currentPhase;
         }
 
         public int GetMaxPhaseNumber()
         {
-            return (int)((3 * 12) / (maxActionPoints / 7));
+            return (int)((3 * 12) / (_maxActionPoints / 7));
         }
     }
 }
