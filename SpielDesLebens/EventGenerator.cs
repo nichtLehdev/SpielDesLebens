@@ -100,11 +100,11 @@ namespace SpielDesLebens
 
         private int FindEventIndexByID(string id)
         {
-            foreach (Event e in _filteredEventsPathProfession)
+            for (int i = 0; i < _filteredEventsPathProfession.Count; i++)
             {
-                if (e.GetId() == id)
+                if (_filteredEventsPathProfession[i].GetId() == id)
                 {
-                    return _filteredEventsPathProfession.IndexOf(e);
+                    return i;
                 }
             }
 

@@ -160,17 +160,20 @@ namespace SpielDesLebens
         {
             int bracketCount = 0;
 
-            for (int i = 0; i < phase.Length; i++)
+
+            foreach (char c in phase)
             {
-                if (phase[i] == '(')
+                if (c == '(')
                 {
                     bracketCount++;
                 }
-                else if (phase[i] == ')')
+                else if (c == ')')
                 {
                     bracketCount--;
                 }
             }
+
+
             if (bracketCount != 0)
             {
                 throw new Error("Unequal count of brackets in phase '" + phase + "' (Event ID: " + _id + ")");
