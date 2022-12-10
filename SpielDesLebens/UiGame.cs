@@ -14,11 +14,9 @@ namespace SpielDesLebens
 
         private Data.Path training;
         private Data.Profession profession;
-
-        private readonly string abschluss;
         private string refrenceTraining;
         private string refrenceProfession;
-        private UiMenu uiMenu;
+        private readonly UiMenu uiMenu;
 
 
         public UiGame(UiInterface uiInterface, bool newGame, UiMenu uiMenu)
@@ -644,7 +642,7 @@ namespace SpielDesLebens
             ToMenu();
         }
 
-        private void UiGame_FormClosing(object sender, FormClosingEventArgs e)
+        private void UiGameFormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
         }
