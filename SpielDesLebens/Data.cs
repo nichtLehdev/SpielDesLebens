@@ -21,9 +21,19 @@ namespace SpielDesLebens
 
         public static int SPrioFactor = 100;
 
-        public static string filenameActions = "..//..//..//data//actions.json";
-        public static string filenameEvents = "..//..//..//data//events.json";
-        public static string filenameSavegames = "..//..//..//data//savegames//sg";
+        public static string filenameActions = "data//actions.json";
+        public static string filenameEvents = "data//events.json";
+        public static string filenameSavegames = "data//savegames//sg";
+
+        // For Debugging only !!!
+#if DEBUG
+        public static void SetFilePathsDebug()
+        {
+            filenameActions = "..//..//..//data//actions.json";
+            filenameEvents = "..//..//..//data//events.json";
+            filenameSavegames = "..//..//..//data//savegames//sg";
+        }
+#endif
 
     }
 }
