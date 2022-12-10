@@ -1,7 +1,12 @@
-﻿namespace SpielDesLebens
+﻿// @author: Maximilian Koch
+
+// For Debugging only !!!
+
+namespace SpielDesLebens
 {
     partial class UiDebug
     {
+#if DEBUG
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -77,5 +82,6 @@
         private System.Windows.Forms.TextBox _textBox1;
         private System.Windows.Forms.TextBox _textBox3;
         private System.Windows.Forms.TextBox _textBox2;
+#endif
     }
 }

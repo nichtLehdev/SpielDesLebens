@@ -9,6 +9,7 @@ namespace SpielDesLebens
 {
     public partial class UiDebug : System.Windows.Forms.Form
     {
+#if DEBUG
         public UiDebug()
         {
             InitializeComponent();
@@ -185,12 +186,6 @@ namespace SpielDesLebens
         {
 
         }
-
-
+#endif
     }
 }
-
-
-
-
-

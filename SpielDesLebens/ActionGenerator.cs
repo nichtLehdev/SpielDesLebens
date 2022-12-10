@@ -57,9 +57,11 @@ namespace SpielDesLebens
         }
 
         // For Debugging only !!!
+#if DEBUG
         public List<Action> GetActionsDebug()
         {
             return _actions;
         }
+#endif
     }
 }
