@@ -292,7 +292,7 @@
          },
          {
             "id": "E-005_2",
-            "title": "mit Freunden treffen, Sex, Drogen nehmen",
+            "title": "Mit Freunden treffen, Sex, Drogen nehmen",
             "text": "Falsch, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
@@ -333,7 +333,7 @@
       "options": [
          {
             "id": "E-006_1",
-            "title": "weiß ich nicht",
+            "title": "Weiß ich nicht",
             "text": "Schlechte Antwort, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
@@ -385,7 +385,7 @@
       "options": [
          {
             "id": "E-007_1",
-            "title": "klang ganz gut",
+            "title": "Klang ganz gut",
             "text": "Schlechte Antwort, weitere Informationen findest du unter https://web.arbeitsagentur.de/",
             "stats": {
                "mentalHealth": 0,
@@ -396,8 +396,8 @@
          },
          {
             "id": "E-007_2",
-            "title": "persönliche Motivation und Bezug zu der angestrebten Tätigkeit nennen",
-            "text": "gute Antwort",
+            "title": "Persönliche Motivation und Bezug zu der angestrebten Tätigkeit nennen",
+            "text": "Gute Antwort",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -515,7 +515,7 @@
       "id": "E-010",
       "title": "1. Arbeitstag",
       "text": "Du kommst in dem Unternehmen an, weißt aber nicht wo dein Arbeitsplatz ist",
-      "info": "betrifft Erfolg, Mentale Gesundheit, Motivation",
+      "info": "Betrifft Erfolg, Mentale Gesundheit, Motivation",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -546,7 +546,7 @@
       "options": [
          {
             "id": "E-010_1",
-            "title": "höflich an der Rezeption nachfragen",
+            "title": "Höflich an der Rezeption nachfragen",
             "text": "Du gehst an die Rezeption, stellst dich vor und fragst wo du hinmusst. Die Rezeptionistin bringt dich an deinen Arbeitsplatz und ihr führt ein kurzes Gespräch.",
             "stats": {
                "mentalHealth": 3,
@@ -572,7 +572,7 @@
       "id": "E-011",
       "title": "Mittagspause",
       "text": "Wie verbringst du deine Mittagspause?",
-      "info": "potentieller sozialer Kontakt",
+      "info": "Potentieller sozialer Kontakt",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -603,8 +603,8 @@
       "options": [
          {
             "id": "E-011_1",
-            "title": "mit Kollegen",
-            "text": "du gesellst dich zu deinen Kollegen",
+            "title": "Mit Kollegen",
+            "text": "Du gesellst dich zu deinen Kollegen",
             "stats": {
                "mentalHealth": 10,
                "motivation": 30,
@@ -614,8 +614,8 @@
          },
          {
             "id": "E-011_2",
-            "title": "alleine",
-            "text": "du verkriechst dich alleine in einer Ecke und isst dein Butterbrot",
+            "title": "Alleine",
+            "text": "Du verkriechst dich alleine in einer Ecke und isst dein Butterbrot",
             "stats": {
                "mentalHealth": -10,
                "motivation": -10,
@@ -629,7 +629,7 @@
       "id": "E-012",
       "title": "Läster Schwestern",
       "text": "Ihre Kollegin Tanja redet schlecht über ihre Kollegin Meike.",
-      "info": "soziales Event",
+      "info": "Soziales Event",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -660,7 +660,7 @@
       "options": [
          {
             "id": "E-012_1",
-            "title": "mit Lästern",
+            "title": "Mit Lästern",
             "text": "Du lästerst eifrig mit und lässt einen sehr unangemessenen Kommentar über Meike fallen als der Chef dazukommt.",
             "stats": {
                "mentalHealth": -5,
@@ -671,7 +671,7 @@
          },
          {
             "id": "E-012_2",
-            "title": "nicht darauf eingehen",
+            "title": "Nicht darauf eingehen",
             "text": "Du Lästerst nicht mit.",
             "stats": {
                "mentalHealth": 0,
@@ -708,7 +708,7 @@
       "id": "E-013",
       "title": "Überstunden",
       "text": "Du hast Feierabend aber deine Tagesaufgabe noch nicht erledigt.",
-      "info": "soziales Event",
+      "info": "Soziales Event",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -796,7 +796,7 @@
       "options": [
          {
             "id": "E-014_1",
-            "title": "dem Chef Bescheid geben",
+            "title": "Dem Chef Bescheid geben",
             "text": "Du gibst deinem Chef Bescheid, dass du das Projekt nicht rechtzeitig fertig bekommen wirst. Und ihr findet gemeinsam eine Lösung.",
             "stats": {
                "mentalHealth": 10,
@@ -853,7 +853,7 @@
       "options": [
          {
             "id": "E-015_1",
-            "title": "die Geduld verlieren",
+            "title": "Die Geduld verlieren",
             "text": "Du verlierst die Geduld und schreist die Patientin an. Deine Chefin ist nicht begeistert und mahnt dich ab.",
             "stats": {
                "mentalHealth": -10,
@@ -864,7 +864,7 @@
          },
          {
             "id": "E-015_2",
-            "title": "du antwortest",
+            "title": "Antworten",
             "text": "Du lässt dir dein genervt sein nicht anmerken und antwortest. Deine Chefin ist von deiner Geduld beeindruckt.",
             "stats": {
                "mentalHealth": 10,
@@ -875,7 +875,7 @@
          },
          {
             "id": "E-015_3",
-            "title": "du ignorierst die Frage",
+            "title": "Die Frage ignorieren",
             "text": "Du lässt dir dein genervt sein nicht anmerken und antwortest. Deine Chefin ist von deiner Geduld beeindruckt.",
             "stats": {
                "mentalHealth": 10,
@@ -886,7 +886,7 @@
          },
          {
             "id": "E-015_4",
-            "title": "auf die Wiederholung hinweisen",
+            "title": "Auf die Wiederholung hinweisen",
             "text": "Du sagst ihr, dass sie diese Frage nun zum 100. Mal stellt und sich dein Alter in den letzten paar Minuten nicht geändert hat. Die Patientin fängt an zu weinen.",
             "stats": {
                "mentalHealth": -10,
@@ -901,7 +901,7 @@
       "id": "E-016",
       "title": "Neuer Kommilitone",
       "text": "In der Vorlesung triffst du auf einen neuen Kommilitonen, er sieht unsicher aus.",
-      "info": "potentieller sozialer Kontakt",
+      "info": "Potentieller sozialer Kontakt",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -953,7 +953,7 @@
       "id": "E-017",
       "title": "Einladung zur Party",
       "text": "Du wirst zu einer Party eingeladen",
-      "info": "potentieller sozialer Kontakt, Absturzgefahr",
+      "info": "Potentieller sozialer Kontakt, Absturzgefahr",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -1042,7 +1042,7 @@
          },
          {
             "id": "E-018_2",
-            "title": "professionelle Nachhilfe",
+            "title": "Professionelle Nachhilfe",
             "text": "Du nimmst dir Nachhilfe und zahlst Monatlich Geld",
             "stats": {
                "mentalHealth": 0,
@@ -1242,7 +1242,7 @@
          },
          {
             "id": "E-021_3",
-            "title": "im Code suchen",
+            "title": "Im Code suchen",
             "text": "Du durchsuchst den Code nach dem Fehler und grübelst 90 Minuten darüber nach, bis du schließlich doch googelst.",
             "stats": {
                "mentalHealth": -5,
@@ -1288,7 +1288,7 @@
       "options": [
          {
             "id": "E-022_1",
-            "title": "zusagen und abschießen",
+            "title": "Zusagen und abschießen",
             "text": "Du bringst ein Geschenk mit und genießt die Party in vollen Zügen. Am nächsten Tag dröhnt dir der Schädel.",
             "stats": {
                "mentalHealth": 15,
@@ -1299,7 +1299,7 @@
          },
          {
             "id": "E-022_2",
-            "title": "absagen",
+            "title": "Absagen",
             "text": "Du gehst nicht auf die Party und lernst das ganze Wochenende.",
             "stats": {
                "mentalHealth": -5,
@@ -1310,7 +1310,7 @@
          },
          {
             "id": "E-022_3",
-            "title": "für 3h auf die Party",
+            "title": "Für 3h auf die Party",
             "text": "Du gehst 3 Stunden auf die Party, überreichst ein Geschenk und trinkst nur 2 Bier.",
             "stats": {
                "mentalHealth": 5,
@@ -1321,7 +1321,7 @@
          },
          {
             "id": "E-022_4",
-            "title": "zusagen und kein Alkohol trinken",
+            "title": "Zusagen und kein Alkohol trinken",
             "text": "Du gehst auf die Party, überreichst ein Geschenk und lernst am nächsten Tag.",
             "stats": {
                "mentalHealth": 10,
@@ -1367,7 +1367,7 @@
       "options": [
          {
             "id": "E-023_1",
-            "title": "aufgeben",
+            "title": "Aufgeben",
             "text": "Du gibst auf und nimmst eine schlechte Note in Kauf.",
             "stats": {
                "mentalHealth": -15,
@@ -1378,7 +1378,7 @@
          },
          {
             "id": "E-023_2",
-            "title": "weiter lernen",
+            "title": "Weiter lernen",
             "text": "Du versuchst weiterhin dir den Stoff einzuverleiben. Kommst aber nur langsam voran.",
             "stats": {
                "mentalHealth": -5,
@@ -1400,7 +1400,7 @@
          },
          {
             "id": "E-023_4",
-            "title": "weinen",
+            "title": "Weinen",
             "text": "Du fängst an zu weinen.",
             "stats": {
                "mentalHealth": -15,
@@ -1474,7 +1474,7 @@
          },
          {
             "id": "E-024_4",
-            "title": "alleine Urlaub machen",
+            "title": "Alleine Urlaub machen",
             "text": "Du fährst alleine an die Ostsee.",
             "stats": {
                "mentalHealth": 25,
@@ -1600,7 +1600,7 @@
          },
          {
             "id": "E-026_4",
-            "title": "alleine Urlaub machen",
+            "title": "Alleine Urlaub machen",
             "text": "Du fährst alleine an die Ostsee.",
             "stats": {
                "mentalHealth": 25,
@@ -1652,7 +1652,7 @@
          },
          {
             "id": "E-027_2",
-            "title": "ablehnen",
+            "title": "Ablehnen",
             "text": "Du dankst dem Professor für sein Angebot und lehnst höflich ab.",
             "stats": {
                "mentalHealth": 15,
@@ -1704,7 +1704,7 @@
          },
          {
             "id": "E-028_2",
-            "title": "mit einem Messer bedrohen um das Gras zu bekommen.",
+            "title": "Mit einem Messer bedrohen um das Gras zu bekommen.",
             "text": "Du bedrohst den Dealer mit deinem Taschenmesser und verlangst das Gras von Ihm. Doch er beherrscht Kampfsport, verprügelt dich und klaut dein Geld",
             "stats": {
                "mentalHealth": -10,
@@ -1715,7 +1715,7 @@
          },
          {
             "id": "E-028_3",
-            "title": "entsetzt ablehnen",
+            "title": "Entsetzt ablehnen",
             "text": "Du kaufst kein Gras und wirfst dem Dealer einen schockierten Blick zu. Er ist ein wenig irritiert und macht sich davon.",
             "stats": {
                "mentalHealth": 0,
@@ -1726,7 +1726,7 @@
          },
          {
             "id": "E-028_4",
-            "title": "ihn beschimpfen",
+            "title": "Ihn beschimpfen",
             "text": "Du nennst ihn einen Junkie, sagst ihm, dass er es im Leben nie zu etwas bringen wird und er sich zum Teufel scheren soll. Der Dealer hat eine sehr starke Rechte...",
             "stats": {
                "mentalHealth": -5,
@@ -1778,7 +1778,7 @@
          },
          {
             "id": "E-029_2",
-            "title": "mit einem Messer bedrohen um das Koks zu bekommen.",
+            "title": "Mit einem Messer bedrohen um das Koks zu bekommen.",
             "text": "Du bedrohst den Dealer mit deinem Taschenmesser und verlangst das Koks von Ihm. Doch er beherrscht Kampfsport, verprügelt dich, klaut dein Geld und lässt dich bewusstlos zurück.",
             "stats": {
                "mentalHealth": -16,
@@ -1789,7 +1789,7 @@
          },
          {
             "id": "E-029_3",
-            "title": "entsetzt ablehnen",
+            "title": "Entsetzt ablehnen",
             "text": "Du kaufst kein Koks und wirfst dem Dealer einen schockierten Blick zu. Er ist ein genervt und macht sich davon.",
             "stats": {
                "mentalHealth": 0,
@@ -1800,7 +1800,7 @@
          },
          {
             "id": "E-029_4",
-            "title": "ihn beschimpfen",
+            "title": "Ihn beschimpfen",
             "text": "Du nennst ihn einen Junkie, sagst ihm dass er es im Leben nie zu etwas bringen wird und er sich zum Teufel scheren soll. Ein paar Tage später wachst du im Krankenhaus auf.",
             "stats": {
                "mentalHealth": -20,
@@ -1815,7 +1815,7 @@
       "id": "E-030",
       "title": "Neuer Mitschüler",
       "text": "Im Klassenzimmer triffst du auf einen neuen Mitschüler, er sieht unsicher aus.",
-      "info": "potentieller sozialer Kontakt",
+      "info": "Potentieller sozialer Kontakt",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -1867,7 +1867,7 @@
       "id": "E-031",
       "title": "Einladung zur Party",
       "text": "Du wirst zu einer Party eingeladen",
-      "info": "potentieller sozialer Kontakt, Absturz Gefahr",
+      "info": "Potentieller sozialer Kontakt, Absturz Gefahr",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -1893,7 +1893,7 @@
       "options": [
          {
             "id": "E-031_1",
-            "title": "zusagen",
+            "title": "Zusagen",
             "text": "Du kommst zur Party und hast eine tolle Zeit aber der Morgen danach bringt das böse Erwachen",
             "stats": {
                "mentalHealth": 15,
@@ -1904,7 +1904,7 @@
          },
          {
             "id": "E-031_2",
-            "title": "absagen",
+            "title": "Absagen",
             "text": "Du sagst ab und verbringst das Wochenende mit lernen",
             "stats": {
                "mentalHealth": 0,
@@ -1956,7 +1956,7 @@
          },
          {
             "id": "E-032_2",
-            "title": "professionelle Nachhilfe",
+            "title": "Professionelle Nachhilfe",
             "text": "Du nimmst dir Nachhilfe und zahlst Monatlich Geld",
             "stats": {
                "mentalHealth": 0,
@@ -1997,7 +1997,7 @@
       "options": [
          {
             "id": "E-033_1",
-            "title": "verteidigen",
+            "title": "Verteidigen",
             "text": "Du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
             "stats": {
                "mentalHealth": 15,
@@ -2008,7 +2008,7 @@
          },
          {
             "id": "E-033_2",
-            "title": "weglaufen",
+            "title": "Weglaufen",
             "text": "Du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
             "stats": {
                "mentalHealth": -10,
@@ -2019,7 +2019,7 @@
          },
          {
             "id": "E-033_3",
-            "title": "mitmachen",
+            "title": "Mitmachen",
             "text": "Du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
             "stats": {
                "mentalHealth": -30,
@@ -2030,7 +2030,7 @@
          },
          {
             "id": "E-033_4",
-            "title": "zuschauen und danach helfen",
+            "title": "Zuschauen und danach helfen",
             "text": "Du schaust zu wie dein Freund fertig gemacht wird und bietest ihm danach ein Pflaster für seine Wunde an.",
             "stats": {
                "mentalHealth": -10,
@@ -2219,7 +2219,7 @@
       "options": [
          {
             "id": "E-036_1",
-            "title": "essen und lernen",
+            "title": "Essen und lernen",
             "text": "Du kauft dir etwas zu essen und lernst.",
             "stats": {
                "mentalHealth": 5,
@@ -2230,7 +2230,7 @@
          },
          {
             "id": "E-036_2",
-            "title": "essen und schlafen",
+            "title": "Essen und schlafen",
             "text": "Du kauft dir etwas zu essen und schläfst im Vorlesungsraum. Es ist nicht sehr bequem aber geht.",
             "stats": {
                "mentalHealth": 10,
@@ -2241,7 +2241,7 @@
          },
          {
             "id": "E-036_3",
-            "title": "essen und Computer spielen",
+            "title": "Essen und Computer spielen",
             "text": "Du kauft dir etwas zu essen und spielst the Binding of Issac.",
             "stats": {
                "mentalHealth": 10,
@@ -2252,7 +2252,7 @@
          },
          {
             "id": "E-036_4",
-            "title": "schlafen und lernen",
+            "title": "Schlafen und lernen",
             "text": "Du schläft im Vorlesungsraum und lernst anschließend.",
             "stats": {
                "mentalHealth": 5,
@@ -2293,7 +2293,7 @@
       "options": [
          {
             "id": "E-037_1",
-            "title": "schlafen",
+            "title": "Schlafen",
             "text": "Da du bis 5 Uhr Morgens Hellblade Seuna`s Sacrifice gespielt hast bist du müde und schläft in der Vorlesung. Du hast Albträume vom Höllenbiest.",
             "stats": {
                "mentalHealth": -5,
@@ -2315,7 +2315,7 @@
          },
          {
             "id": "E-037_3",
-            "title": "zuhören und mitschreiben",
+            "title": "Zuhören und mitschreiben",
             "text": "Du beteiligst dich aktiv am Unterricht und machst dir Notizen.",
             "stats": {
                "mentalHealth": 10,
@@ -2341,7 +2341,7 @@
       "id": "E-038",
       "title": "Online Vorlesung",
       "text": "Herr Prof. Dr. Hofmann möchte mal wieder nicht an die Uni kommen und unterrichtet online Java. Was machst du?",
-      "info": "zuhören bei diesem Professor senkt den IQ.",
+      "info": "Zuhören bei diesem Professor senkt den IQ.",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -2367,7 +2367,7 @@
       "options": [
          {
             "id": "E-038_1",
-            "title": "zuhören",
+            "title": "Zuhören",
             "text": "Du folgst dem Unterricht aufmerksam und suchst vergeblich nach guten Inhalten. Am Ende der Vorlesung bist du fix und fertig.",
             "stats": {
                "mentalHealth": -20,
@@ -2400,7 +2400,7 @@
          },
          {
             "id": "E-038_4",
-            "title": "für Mathe lernen",
+            "title": "Für Mathe lernen",
             "text": "Du lernst währenddessen für Mathe.",
             "stats": {
                "mentalHealth": 5,
@@ -2441,7 +2441,7 @@
       "options": [
          {
             "id": "E-039_1",
-            "title": "zuhören",
+            "title": "Zuhören",
             "text": "Du beteiligst dich aktiv an der Vorlesung und hast sehr viel Spaß beim Programmieren in C.",
             "stats": {
                "mentalHealth": 20,
@@ -2493,7 +2493,7 @@
       "options": [
          {
             "id": "E-040_1",
-            "title": "zuhören",
+            "title": "Zuhören",
             "text": "Du beteiligst dich aktiv an der Vorlesung. Die Professorin nimmt dich zur Kenntnis.",
             "stats": {
                "mentalHealth": 15,
@@ -2519,7 +2519,7 @@
       "id": "E-041",
       "title": "Klausurfragen von Martin",
       "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Wie oft denkt ein Mensch durchschnittlich an Sex?",
-      "info": "nur die richtige Antwort Hat Auswirkungen.",
+      "info": "Nur die richtige Antwort hat Auswirkungen.",
       "priority": 3,
       "requirements": {
          "timings": [
@@ -2550,7 +2550,7 @@
       "options": [
          {
             "id": "E-041_1",
-            "title": "alle 30 Minuten",
+            "title": "Alle 30 Minuten",
             "text": "Falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
             "stats": {
                "mentalHealth": 0,
@@ -2561,7 +2561,7 @@
          },
          {
             "id": "E-041_2",
-            "title": "alle 7 Minuten",
+            "title": "Alle 7 Minuten",
             "text": "Korrekt, du hast im Unterricht gut aufgepasst. Martin ist stolz auf dich.",
             "stats": {
                "mentalHealth": 5,
@@ -2572,7 +2572,7 @@
          },
          {
             "id": "E-041_3",
-            "title": "alle 10 Minuten",
+            "title": "Alle 10 Minuten",
             "text": "Falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
             "stats": {
                "mentalHealth": 10,
@@ -2583,7 +2583,7 @@
          },
          {
             "id": "E-041_4",
-            "title": "alle 5 Minuten",
+            "title": "Alle 5 Minuten",
             "text": "Falsch, man denkt durchschnittlich alle 7 Minuten an Sex.",
             "stats": {
                "mentalHealth": 0,
@@ -2598,7 +2598,7 @@
       "id": "E-042",
       "title": "Klausurfragen von Martin",
       "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Wie bringt man sich am besten um?",
-      "info": "nur die richtige Antwort Hat Auswirkungen.",
+      "info": "Nur die richtige Antwort hat Auswirkungen.",
       "priority": 3,
       "requirements": {
          "timings": [
@@ -2629,7 +2629,7 @@
       "options": [
          {
             "id": "E-042_1",
-            "title": "vor einen Zug schmeißen",
+            "title": "Vor einen Zug schmeißen",
             "text": "Falsch, selbst wenn der zug schnell genug ist, damit man keine Schmerzen hat ist diese Methode eine sehr große Sauerei. Deine Leichenteile müssen aufgesammelt werden, der Zugfahrer ist traumatisiert und die Passagiere haben keinen schönen Tag.",
             "stats": {
                "mentalHealth": 0,
@@ -2640,7 +2640,7 @@
          },
          {
             "id": "E-042_2",
-            "title": "erschießen",
+            "title": "Erschießen",
             "text": "Falsch, diese Methode ist zu aufwändig. Der Aufwand eine Waffe zu besorgen ist unnötig, die Methode ist nicht schmerzfrei und es gibt eine Sauerei. ",
             "stats": {
                "mentalHealth": 0,
@@ -2651,7 +2651,7 @@
          },
          {
             "id": "E-042_3",
-            "title": "in der Badewanne einschlafen",
+            "title": "In der Badewanne einschlafen",
             "text": "Korrekt, diese Methode ist schmerzfrei und hinterlässt keine Sauerei. Man füllt die Badewanne mit lauwarmem Wasser, nimmt eine Schlaftablette, gönnt sich noch ein Glas Wein und schläft friedlich ein.",
             "stats": {
                "mentalHealth": 0,
@@ -2662,7 +2662,7 @@
          },
          {
             "id": "E-042_4",
-            "title": "ertrinken",
+            "title": "Ertrinken",
             "text": "Falsch, ertrinken dauert recht lange und man gerät in Panik. Außerdem ist es recht aufwändig die Leiche aus dem Gewässer zu holen.",
             "stats": {
                "mentalHealth": 0,
@@ -2677,7 +2677,7 @@
       "id": "E-043",
       "title": "Klausurfragen von Martin",
       "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. In welchem Zustand bekommt man jemanden am besten zu Bettsport überredet?",
-      "info": "nur die richtige Antwort Hat Auswirkungen.",
+      "info": "Nur die richtige Antwort hat Auswirkungen.",
       "priority": 3,
       "requirements": {
          "timings": [
@@ -2708,7 +2708,7 @@
       "options": [
          {
             "id": "E-043_1",
-            "title": "nach sportlichen Aktivitäten oder einem Horrorfilm.",
+            "title": "Nach sportlichen Aktivitäten oder einem Horrorfilm.",
             "text": "Richtig, wenn die Person wieder bei Kräften ist aber das Adrenalin noch Wirkung zeigt steigert dies die Chancen, dass sie Lust auf Bettsport hat.",
             "stats": {
                "mentalHealth": 0,
@@ -2719,7 +2719,7 @@
          },
          {
             "id": "E-043_2",
-            "title": "bei Kaffee und Kuchen",
+            "title": "Bei Kaffee und Kuchen",
             "text": "Falsch, mit Kaffee und Kuchen kann man die Person besser kennenlernen doch es steigert nicht die Libido.",
             "stats": {
                "mentalHealth": 0,
@@ -2734,7 +2734,7 @@
       "id": "E-044",
       "title": "Klausurfragen von Martin",
       "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Welche Filmart ist für ein Date mit gewissen Absichten am förderlichsten?",
-      "info": "nur die richtige Antwort Hat Auswirkungen.",
+      "info": "Bur die richtige Antwort hat Auswirkungen.",
       "priority": 3,
       "requirements": {
          "timings": [
@@ -2879,7 +2879,7 @@
       "options": [
          {
             "id": "E-046_1",
-            "title": "den selben Charme wie ein Rocker",
+            "title": "Den selben Charme wie ein Rocker",
             "text": "Korrekt, erfolgreiche Informatiker haben den Charme eines Rockers (alte, weiße, stinkende Männer). Sowohl Informatiker als auch Rocker haben in ihrem Beruf sehr viel Freiheiten und potenziell ein hohes Gehalt.",
             "stats": {
                "mentalHealth": 10,
@@ -2890,7 +2890,7 @@
          },
          {
             "id": "E-046_2",
-            "title": "den selben Charme wie ein BWLer",
+            "title": "Den selben Charme wie ein BWLer",
             "text": "Falsch, ein Informatiker hat rein gar nichts mit einem BWLer gemeinsam.",
             "stats": {
                "mentalHealth": 0,
@@ -2905,7 +2905,7 @@
       "id": "E-047",
       "title": "Klausurfragen von Martin",
       "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Was ist ein Synonym für einen BWLer?",
-      "info": "nur die richtige Antwort Hat Auswirkungen.",
+      "info": "Nur die richtige Antwort hat Auswirkungen.",
       "priority": 3,
       "requirements": {
          "timings": [
@@ -2936,7 +2936,7 @@
       "options": [
          {
             "id": "E-047_1",
-            "title": "traurige Gestalten",
+            "title": "Traurige Gestalten",
             "text": "Korrekt.",
             "stats": {
                "mentalHealth": 0,
@@ -2962,7 +2962,7 @@
       "id": "E-048",
       "title": "Klausurfragen von Martin",
       "text": "Martin stellt dir eine Frage um zu prüfen wie gut du im Unterricht aufgepasst hast. Was deutet auf einen grundlegenden Fehler in der Denkweise hin?",
-      "info": "nur die richtige Antwort Hat Auswirkungen.",
+      "info": "Nur die richtige Antwort hat Auswirkungen.",
       "priority": 3,
       "requirements": {
          "timings": [
@@ -2993,7 +2993,7 @@
       "options": [
          {
             "id": "E-048_1",
-            "title": "wenn man Psychologie studiert",
+            "title": "Wenn man Psychologie studiert",
             "text": "Falsch.",
             "stats": {
                "mentalHealth": 0,
@@ -3004,7 +3004,7 @@
          },
          {
             "id": "E-048_2",
-            "title": "wenn man BWL studiert",
+            "title": "Wenn man BWL studiert",
             "text": "Richtig.",
             "stats": {
                "mentalHealth": 0,
@@ -5407,7 +5407,7 @@
       "options": [
          {
             "id": "E-077_1",
-            "title": "einer Blasenentzündung",
+            "title": "Einer Blasenentzündung",
             "text": "Richtig!",
             "stats": {
                "mentalHealth": 0,
@@ -5418,7 +5418,7 @@
          },
          {
             "id": "E-077_2",
-            "title": "einer Magenentzündung",
+            "title": "Einer Magenentzündung",
             "text": "Falsch. Bei einer Tonsillitis handelt es sich um eine ansteckende Entzündung der Gaumenmandeln.",
             "stats": {
                "mentalHealth": 0,
@@ -5429,7 +5429,7 @@
          },
          {
             "id": "E-077_3",
-            "title": "einer Nierenbeckenentzündung",
+            "title": "Einer Nierenbeckenentzündung",
             "text": "Falsch. Bei einer Tonsillitis handelt es sich um eine ansteckende Entzündung der Gaumenmandeln.",
             "stats": {
                "mentalHealth": 0,
@@ -5440,7 +5440,7 @@
          },
          {
             "id": "E-077_4",
-            "title": "einer Mandelentzündung",
+            "title": "Einer Mandelentzündung",
             "text": "Richtig. Bei einer Tonsillitis handelt es sich um eine ansteckende Entzündung der Gaumenmandeln.",
             "stats": {
                "mentalHealth": 0,
@@ -5491,7 +5491,7 @@
       "options": [
          {
             "id": "E-078_1",
-            "title": "des Leerdarms",
+            "title": "Des Leerdarms",
             "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
             "stats": {
                "mentalHealth": 0,
@@ -5502,7 +5502,7 @@
          },
          {
             "id": "E-078_2",
-            "title": "des Blinddarms",
+            "title": "Des Blinddarms",
             "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
             "stats": {
                "mentalHealth": 0,
@@ -5513,7 +5513,7 @@
          },
          {
             "id": "E-078_3",
-            "title": "des Dickdarms",
+            "title": "Des Dickdarms",
             "text": "Richtig. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
             "stats": {
                "mentalHealth": 0,
@@ -5524,7 +5524,7 @@
          },
          {
             "id": "E-078_4",
-            "title": "des Dünndarms",
+            "title": "Des Dünndarms",
             "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
             "stats": {
                "mentalHealth": 0,
@@ -5575,7 +5575,7 @@
       "options": [
          {
             "id": "E-079_1",
-            "title": "des Leerdarms",
+            "title": "Des Leerdarms",
             "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
             "stats": {
                "mentalHealth": 0,
@@ -5586,7 +5586,7 @@
          },
          {
             "id": "E-079_2",
-            "title": "des Blinddarms",
+            "title": "Des Blinddarms",
             "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
             "stats": {
                "mentalHealth": 0,
@@ -5597,7 +5597,7 @@
          },
          {
             "id": "E-079_3",
-            "title": "des Dickdarms",
+            "title": "Des Dickdarms",
             "text": "Richtig. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
             "stats": {
                "mentalHealth": 0,
@@ -5608,7 +5608,7 @@
          },
          {
             "id": "E-079_4",
-            "title": "des Dünndarms",
+            "title": "Des Dünndarms",
             "text": "Falsch. Der Mastdarm ist Teil des Enddarms, also auch des Dickdarms, und dient der Zwischenspeicherung von Kot und unverdauter Nahrung.",
             "stats": {
                "mentalHealth": 0,
@@ -5659,7 +5659,7 @@
       "options": [
          {
             "id": "E-080_1",
-            "title": "sozial inkompetent",
+            "title": "Sozial inkompetent",
             "text": "Falsch, dies ist ein Vorurteil das nicht von ungefähr kommt.",
             "stats": {
                "mentalHealth": 0,
@@ -5670,7 +5670,7 @@
          },
          {
             "id": "E-080_2",
-            "title": "kann Hacken",
+            "title": "Kann Hacken",
             "text": "Falsch, nur wenige Informatiker sind Hacker. Oder vielleicht wollen sie nur, dass du das glaubst? Muhahahahaaa",
             "stats": {
                "mentalHealth": 0,
@@ -5681,7 +5681,7 @@
          },
          {
             "id": "E-080_3",
-            "title": "mag Dinosaurier",
+            "title": "Mag Dinosaurier",
             "text": "Richtig, die ist kein Vorurteil gegenüber Informatikern, aber vielleicht sollte es eins sein?",
             "stats": {
                "mentalHealth": 0,
@@ -5692,7 +5692,7 @@
          },
          {
             "id": "E-080_4",
-            "title": "lichtscheu",
+            "title": "Lichtscheu",
             "text": "Falsch, Informatiker werden auch oft mit Vampiren verwechselt.",
             "stats": {
                "mentalHealth": 0,
@@ -5743,7 +5743,7 @@
       "options": [
          {
             "id": "E-081_1",
-            "title": "er ist faul",
+            "title": "Er ist faul",
             "text": "Richtig. Desto fauler der Programmierer, desto effizienter der Code.",
             "stats": {
                "mentalHealth": 0,
@@ -5754,7 +5754,7 @@
          },
          {
             "id": "E-081_2",
-            "title": "kann Hacken und Drucker reparieren",
+            "title": "Kann Hacken und Drucker reparieren",
             "text": "NEIN!!!!",
             "stats": {
                "mentalHealth": 0,
@@ -5922,7 +5922,7 @@
          },
          {
             "id": "E-083_4",
-            "title": "blonde Weiber Lehrer",
+            "title": "Blonde Weiber Lehrer",
             "text": "Falsch.",
             "stats": {
                "mentalHealth": 0,
@@ -5984,7 +5984,7 @@
          },
          {
             "id": "E-084_2",
-            "title": "zur Produktion von anderen Gütern.",
+            "title": "Zur Produktion von anderen Gütern.",
             "text": "Falsch, das ist die Verwendung von Funktionsgütern.",
             "stats": {
                "mentalHealth": 0,
@@ -6046,7 +6046,7 @@
          },
          {
             "id": "E-085_2",
-            "title": "zur Produktion von anderen Gütern.",
+            "title": "Zur Produktion von anderen Gütern.",
             "text": "Richtig.",
             "stats": {
                "mentalHealth": 0,
@@ -6937,7 +6937,7 @@
       "options": [
          {
             "id": "E-099_1",
-            "title": "die Struktur von Angebot und Nachfrage",
+            "title": "Die Struktur von Angebot und Nachfrage",
             "text": "Richtig.",
             "stats": {
                "mentalHealth": 0,
@@ -6948,7 +6948,7 @@
          },
          {
             "id": "E-099_2",
-            "title": "den Handelsort z.B. Online, lokal.",
+            "title": "Den Handelsort z.B. Online, lokal.",
             "text": "Falsch",
             "stats": {
                "mentalHealth": 0,
@@ -6989,7 +6989,7 @@
       "options": [
          {
             "id": "E-100_1",
-            "title": "kostengünstiger Erwerb einer fragwürdigen Windows Lizenz",
+            "title": "Kostengünstiger Erwerb einer fragwürdigen Windows Lizenz",
             "text": "Leider nicht optimal, dein Windows ist zwar nun aktiviert und funktioniert, aber die Lizenz ist nicht legal.",
             "stats": {
                "mentalHealth": 0,
@@ -7131,7 +7131,7 @@
          },
          {
             "id": "E-102_2",
-            "title": "per Fernwartungssoftware den PC fernsteuern lassen",
+            "title": "Per Fernwartungssoftware den PC fernsteuern lassen",
             "text": "Du hast dich auf den Betrug eingelassen und die Kontrolle über dein PC verloren. Deine Daten sind nun in fremde Hände geraten, sowie du dir ein völlig nutzlosen Virenschutz verkaufen hast lassen.",
             "stats": {
                "mentalHealth": -20,
@@ -7146,7 +7146,7 @@
       "id": "E-103",
       "title": "Du kennst dich doch mit Computern aus",
       "text": "Eine Freundin hat ein Problem mit ihrem Computer. Sie fragt dich ob du ihr helfen kannst. Was tust du?",
-      "info": "manchmal kann man auch dankend ablehnen.",
+      "info": "Manchmal kann man auch dankend ablehnen.",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -7245,7 +7245,7 @@
          },
          {
             "id": "E-104_2",
-            "title": "der Wasserspielgel sinkt",
+            "title": "Der Wasserspielgel sinkt",
             "text": "Falsch!",
             "stats": {
                "mentalHealth": 0,
@@ -7256,7 +7256,7 @@
          },
          {
             "id": "E-106_3",
-            "title": "der Wasserspielgel steigt",
+            "title": "Der Wasserspielgel steigt",
             "text": "Richtig!",
             "stats": {
                "mentalHealth": 0,
@@ -7267,7 +7267,7 @@
          },
          {
             "id": "E-104_4",
-            "title": "das Glas zieht sich zusammen.",
+            "title": "Das Glas zieht sich zusammen.",
             "text": "Falsch!",
             "stats": {
                "mentalHealth": 0,
@@ -7329,7 +7329,7 @@
          },
          {
             "id": "E-105_2",
-            "title": "der Luftballon bläht auf, bis er von der Flasche fliegt.",
+            "title": "Der Luftballon bläht auf, bis er von der Flasche fliegt.",
             "text": "Falsch! Beim Abkühlen wird die Luft in der Flasche durch den äußeren Luftdruck zusammengepresst. Der Ballon wird in die Flasche hineingedrückt und bläht sich auf.",
             "stats": {
                "mentalHealth": 0,
@@ -7340,7 +7340,7 @@
          },
          {
             "id": "E-105_3",
-            "title": "der Luftballon wird in die Flasche gedrückt.",
+            "title": "Der Luftballon wird in die Flasche gedrückt.",
             "text": "Richtig! Beim Abkühlen wird die Luft in der Flasche durch den äußeren Luftdruck zusammengepresst. Der Ballon wird in die Flasche hineingedrückt und bläht sich auf.",
             "stats": {
                "mentalHealth": 0,
@@ -7351,7 +7351,7 @@
          },
          {
             "id": "E-105_4",
-            "title": "der Luftballon reißt ab.",
+            "title": "Der Luftballon reißt ab.",
             "text": "Falsch! Beim Abkühlen wird die Luft in der Flasche durch den äußeren Luftdruck zusammengepresst. Der Ballon wird in die Flasche hineingedrückt und bläht sich auf.",
             "stats": {
                "mentalHealth": 0,
@@ -7413,7 +7413,7 @@
          },
          {
             "id": "E-106_2",
-            "title": "schnell aus der Wanne steigen.",
+            "title": "Schnell aus der Wanne steigen.",
             "text": "Falsch. Du musst in der Wanne bleiben um einen möglichst hohen Wasserspiegel zu erreichen. Durch den höheren Wasserspiegel erhöht sich der Druck auf den Abfluss und das Wasser fließt schneller ab.",
             "stats": {
                "mentalHealth": 0,
@@ -7687,7 +7687,7 @@
          },
          {
             "id": "E-109_4",
-            "title": "actio und reactio.",
+            "title": "Actio und Reactio.",
             "text": "Richtig. Formuliert im dritten Newtonschen Axiom: Bei der Wechselwirkung zwischen zwei Körpern erzeugt jede Aktion eine gleich große Reaktion auf den Verursacher. Bei Scheinkräften wie der Zentrifugalkraft existieren keine Kräfte erzeugenden Körper.",
             "stats": {
                "mentalHealth": 0,
@@ -8444,7 +8444,7 @@
       "options": [
          {
             "id": "E-119_1",
-            "title": "zwei Jahre",
+            "title": "Zwei Jahre",
             "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
             "stats": {
                "mentalHealth": 0,
@@ -8455,7 +8455,7 @@
          },
          {
             "id": "E-119_2",
-            "title": "zwei Wochen",
+            "title": "Zwei Wochen",
             "text": "Richtig! Die Widerrufsfrist beträgt zwei Wochen.",
             "stats": {
                "mentalHealth": 0,
@@ -8466,7 +8466,7 @@
          },
          {
             "id": "E-119_3",
-            "title": "zwei Tage",
+            "title": "Zwei Tage",
             "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
             "stats": {
                "mentalHealth": 0,
@@ -8477,7 +8477,7 @@
          },
          {
             "id": "E-119_4",
-            "title": "zwei Monate",
+            "title": "Zwei Monate",
             "text": "Falsch! Die Widerrufsfrist beträgt zwei Wochen.",
             "stats": {
                "mentalHealth": 0,
@@ -8558,7 +8558,7 @@
    },
    {
       "id": "E-121",
-      "title": "schlechte Vorlesung",
+      "title": "Schlechte Vorlesung",
       "text": "Du bist nicht zufrieden mit der Qualität der Vorlesung und möchtest deine Kritik an den Dozenten äußern. Was tust du?",
       "info": "Hat Auswirkungen auf das Verhältnis zum Dozenten (Erfolg)",
       "priority": 1,
@@ -8939,7 +8939,7 @@
    },
    {
       "id": "E-127",
-      "title": "neue Auszubildende",
+      "title": "Neue Auszubildende",
       "text": "Die neuen Auszubildenden kommen und du musst die Firmenführung leiten",
       "info": "Einen guten ersten Eindruck zu hinterlassen ist das Ziel",
       "priority": 1,
@@ -8991,7 +8991,7 @@
    },
    {
       "id": "E-128",
-      "title": "neue duale Studenten",
+      "title": "Neue duale Studenten",
       "text": "Die neuen dualen Studenten kommen und du musst die Firmenführung leiten",
       "info": "Einen guten ersten Eindruck zu hinterlassen ist das Ziel",
       "priority": 1,
@@ -9043,7 +9043,7 @@
    },
    {
       "id": "E-129",
-      "title": "halber Berufsschultag",
+      "title": "Halber Berufsschultag",
       "text": "Alle aus deiner Berufsschulklasse dürfen nach dem halben Berufsschultag gehen. Nur du musst noch bis um 17:00 Uhr arbeiten.",
       "info": "Überlege genau!",
       "priority": 1,
@@ -9106,7 +9106,7 @@
    },
    {
       "id": "E-130",
-      "title": "unfreundlicher Kunde",
+      "title": "Unfreundlicher Kunde",
       "text": "Du hast es mit einem unfreundlichem Kunden zu tun. Wie reagierst du?",
       "info": "Der Kunde ist König",
       "priority": 1,
@@ -9327,7 +9327,7 @@
       "options": [
          {
             "id": "E-133_1",
-            "title": "schlafen gehen",
+            "title": "Schlafen gehen",
             "text": "Am nächsten morgen kommst du gut aus dem Bett, bist motiviert und voller Energie für einen neuen Tag",
             "stats": {
                "mentalHealth": 20,
@@ -9338,7 +9338,7 @@
          },
          {
             "id": "E-133_2",
-            "title": "noch eine Runde",
+            "title": "Noch eine Runde",
             "text": "Aus einer Runde wurden zwei, aus zwei wurden drei und aus drei wurden vier. Du kommst erst um 2 Uhr ins Bett und bist am nächsten morgen total müde und unkonzentriert.",
             "stats": {
                "mentalHealth": -15,
@@ -9379,7 +9379,7 @@
       "options": [
          {
             "id": "E-134_1",
-            "title": "die Stadt mit mehr Party",
+            "title": "Die Stadt mit mehr Party",
             "text": "Dies tut zwar deiner Mental Health und Motivation gut, aber dein Erfolg ist nicht garantiert.",
             "stats": {
                "mentalHealth": 20,
@@ -9390,7 +9390,7 @@
          },
          {
             "id": "E-134_2",
-            "title": "die Stadt mit der besseren Uni",
+            "title": "Die Stadt mit der besseren Uni",
             "text": "Eine Universität mit gutem Ruf ist zwar keine Garantie für Erfolg, wenn du aber motiviert bist wirst du es schaffen.",
             "stats": {
                "mentalHealth": -15,
@@ -9401,7 +9401,7 @@
          },
          {
             "id": "E-134_3",
-            "title": "die günstigere Stadt",
+            "title": "Die günstigere Stadt",
             "text": "Die beste Uni ist meists nicht in der günstigsten Stadt. Deine Wahl ist dennoch gut, denn du sparst Geld und kannst dir eine Wohnung in guter Lage leisten.",
             "stats": {
                "mentalHealth": 10,
@@ -9942,7 +9942,7 @@
       "id": "E-143",
       "title": "Raus aus den Federn",
       "text": "7 Uhr aufstehen, duschen, frühstücken, fertig machen, losfahren. Du hast keine Lust auf den Tag. Was machst du?",
-      "info": "Unpünktlichkeit / Verspätung Hat Auswirkungen auf dein Erfolg.",
+      "info": "Unpünktlichkeit / Verspätung hat Auswirkungen auf dein Erfolg.",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -10036,7 +10036,7 @@
          },
          {
             "id": "E-144_2",
-            "title": "auf später verschieben",
+            "title": "Auf später verschieben",
             "text": "Du entscheidest dich dafür, deiner jetzigen Tätigkeit Vorzug zu geben und das Geschirr später zu erledigen. Prokrastination ist nicht gut für deine Motivation und deinen Erfolg.",
             "stats": {
                "mentalHealth": 0,
@@ -10714,7 +10714,7 @@
          },
          {
             "id": "E-156_2",
-            "title": "zu Fuß",
+            "title": "Zu Fuß",
             "text": "Du nutzt deine Beine und kommst einige Minuten zur spät zur Arbeit. Dein Chef ist sehr begeistert, dass du trotz des Schneechaos zur Arbeit gekommen bist.",
             "stats": {
                "mentalHealth": -15,
@@ -10725,7 +10725,7 @@
          },
          {
             "id": "E-156_3",
-            "title": "mit dem Fahrrad",
+            "title": "Mit dem Fahrrad",
             "text": "Du nutzt dein Fahrrad, rutschts aus und verletzt dich. Du bist zwei Wochen krankgeschrieben.",
             "stats": {
                "mentalHealth": 0,
@@ -10788,7 +10788,7 @@
          },
          {
             "id": "E-157_2",
-            "title": "zu Fuß",
+            "title": "Zu Fuß",
             "text": "Du nutzt deine Beine und brauchst zwei Stunden länger als sonst. In der Bibliothek hast du aber genug Platz und kannst dich gut konzentrieren.",
             "stats": {
                "mentalHealth": 0,
@@ -10799,7 +10799,7 @@
          },
          {
             "id": "E-157_3",
-            "title": "mit dem Fahrrad",
+            "title": "Mit dem Fahrrad",
             "text": "Du nutzt dein Fahrrad, rutschts aus und verletzt dich. Du bist zwei Wochen krankgeschrieben.",
             "stats": {
                "mentalHealth": 0,
@@ -11035,7 +11035,7 @@
       "id": "E-161",
       "title": "Handyverbot in der Berufsschule",
       "text": "Deine Lehrerin möchte ein Handyverbot in der Berufsschule durchsetzen. Was tust du?",
-      "info": "hat Auswirkungen auf den Erfolg",
+      "info": "Hat Auswirkungen auf den Erfolg",
       "priority": 1,
       "requirements": {
          "timings": [
@@ -11221,7 +11221,7 @@
    },
    {
       "id": "E-164",
-      "title": "tierische Enspannung",
+      "title": "Tierische Enspannung",
       "text": "Du hast einen stressigen Tag hinter dir. Was machst du um dich zu entspannen?",
       "info": "Entspannung ist wichtig",
       "priority": 3,
