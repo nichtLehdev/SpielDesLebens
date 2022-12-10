@@ -203,7 +203,7 @@ namespace SpielDesLebens
             this._tutorialText7.ReadOnly = true;
             this._tutorialText7.Size = new System.Drawing.Size(170, 57);
             this._tutorialText7.TabIndex = 11;
-            this._tutorialText7.Text = "Du kannst deinen derzeitigen Spielstand durch\r\n Klicken auf \"Speichern\" sicher.";
+            this._tutorialText7.Text = "Du kannst deinen derzeitigen Spielstand durch\r\n Klicken auf \"Speichern\" sichern.";
             this._tutorialText7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // infoActionPanel0
@@ -290,7 +290,7 @@ namespace SpielDesLebens
             this._textBox5.ReadOnly = true;
             this._textBox5.Size = new System.Drawing.Size(165, 83);
             this._textBox5.TabIndex = 11;
-            this._textBox5.Text = "Dies sind Events, du hast die Möglichkeit bei einem Event eine Option zu wählen. " +
+            this._textBox5.Text = "Dies sind Events. Du hast die Möglichkeit bei einem Event eine Option zu wählen. " +
     "Die Entscheidung einer Option zu dem Event hat einen Effekt auf die Stats deines" +
     " Charakters.";
             this._textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -378,7 +378,7 @@ namespace SpielDesLebens
             this._textBox6.ReadOnly = true;
             this._textBox6.Size = new System.Drawing.Size(163, 48);
             this._textBox6.TabIndex = 11;
-            this._textBox6.Text = "Manche Events haben eine Info Option, um mehr wissen zu dem Event zu bekommen.";
+            this._textBox6.Text = "Manche Events haben eine Info Option, um mehr Wissen zu dem Event zu bekommen.";
             this._textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tutorialPanel3
@@ -416,8 +416,8 @@ namespace SpielDesLebens
             this._textBox2.Size = new System.Drawing.Size(163, 102);
             this._textBox2.TabIndex = 11;
             this._textBox2.Text = "Auf der linken Seite wird das Aktionsfenster angezeigt.  Wenn du auf eine Aktion " +
-    "drückst, werden sich deine Stats ändern. Die Icons geben dir Hinweise, welche St" +
-    "ats unteranderem geändert wird.";
+    "drückst, werden sich deine Stats ändern. Die Icons geben dir Hinweise, welcher St" +
+    "at unter anderem geändert wird.";
             this._textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
@@ -681,7 +681,7 @@ namespace SpielDesLebens
             this._tutorialAskTxt.ReadOnly = true;
             this._tutorialAskTxt.Size = new System.Drawing.Size(300, 103);
             this._tutorialAskTxt.TabIndex = 10;
-            this._tutorialAskTxt.Text = "Möchtest du eine Erklärung zu den Mölichkeiten des Spiel bekommen?";
+            this._tutorialAskTxt.Text = "Möchtest du eine Erklärung zu den Möglichkeiten des Spiels bekommen?";
             this._tutorialAskTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gameOverPanel
@@ -902,7 +902,7 @@ namespace SpielDesLebens
             this._tutorialTxt6.ReadOnly = true;
             this._tutorialTxt6.Size = new System.Drawing.Size(163, 68);
             this._tutorialTxt6.TabIndex = 11;
-            this._tutorialTxt6.Text = "Rechts kannst du erkennen in welcher Phase du dich befindest. Eine Phase ist ein " +
+            this._tutorialTxt6.Text = "Rechts kannst du erkennen in welcher Phase, du dich befindest. Eine Phase ist ein " +
     "Ausbildungsabschnitt.";
             this._tutorialTxt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1033,7 +1033,7 @@ namespace SpielDesLebens
             this._tutorialTxt2.ReadOnly = true;
             this._tutorialTxt2.Size = new System.Drawing.Size(139, 83);
             this._tutorialTxt2.TabIndex = 11;
-            this._tutorialTxt2.Text = "Oben werden die Stats deines Charakters angezeigt. Wenn mindestens eine der Attri" +
+            this._tutorialTxt2.Text = "Oben werden die Stats deines Charakters angezeigt. Wenn mindestens einer der Attri" +
     "bute auf 0 fällt, ist das Spiel verloren.";
             this._tutorialTxt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

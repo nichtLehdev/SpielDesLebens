@@ -92,7 +92,7 @@ namespace SpielDesLebens
             _fictionTxtBox.ReadOnly = true;
             this._fictionTxtBox.Size = new System.Drawing.Size(209, 159);
             this._fictionTxtBox.TabIndex = 0;
-            this._fictionTxtBox.Text = "\nDies ist ein rein fiktives Spiel. Alle Namen, Charakter, Geschichten und Events " +
+            this._fictionTxtBox.Text = "\nDies ist ein rein fiktives Spiel. Alle Namen, Charaktere, Geschichten und Events " +
     "sind fiktiv.";
             // 
             // fictionPanel
