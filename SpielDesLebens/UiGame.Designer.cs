@@ -30,7 +30,6 @@ namespace SpielDesLebens
       /// </summary>
       private void InitializeComponent()
       {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UiGame));
             this._panelActiveChild = new System.Windows.Forms.Panel();
             this._tutorialPanel7 = new System.Windows.Forms.Panel();
             this._tutorialButton7 = new System.Windows.Forms.Button();
@@ -151,7 +150,7 @@ namespace SpielDesLebens
             ((System.ComponentModel.ISupportInitialize)(this._avatarPic)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelActiveChild
+            // _panelActiveChild
             // 
             this._panelActiveChild.BackColor = System.Drawing.Color.SeaShell;
             this._panelActiveChild.BackgroundImage = global::SpielDesLebens.Properties.Resources.uniTable;
@@ -166,97 +165,97 @@ namespace SpielDesLebens
             this._panelActiveChild.Controls.Add(this._panel1);
             this._panelActiveChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this._panelActiveChild.Location = new System.Drawing.Point(240, 119);
-            this._panelActiveChild.Name = "panelActiveChild";
+            this._panelActiveChild.Name = "_panelActiveChild";
             this._panelActiveChild.Size = new System.Drawing.Size(835, 523);
             this._panelActiveChild.TabIndex = 1;
             // 
-            // tutorialPanel7
+            // _tutorialPanel7
             // 
             this._tutorialPanel7.BackColor = System.Drawing.Color.FloralWhite;
             this._tutorialPanel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialPanel7.Controls.Add(this._tutorialButton7);
             this._tutorialPanel7.Controls.Add(this._tutorialText7);
             this._tutorialPanel7.Location = new System.Drawing.Point(0, 422);
-            this._tutorialPanel7.Name = "tutorialPanel7";
+            this._tutorialPanel7.Name = "_tutorialPanel7";
             this._tutorialPanel7.Size = new System.Drawing.Size(190, 98);
             this._tutorialPanel7.TabIndex = 18;
             this._tutorialPanel7.Visible = false;
             // 
-            // tutorialButton7
+            // _tutorialButton7
             // 
             this._tutorialButton7.Location = new System.Drawing.Point(116, 69);
-            this._tutorialButton7.Name = "tutorialButton7";
+            this._tutorialButton7.Name = "_tutorialButton7";
             this._tutorialButton7.Size = new System.Drawing.Size(62, 25);
             this._tutorialButton7.TabIndex = 14;
             this._tutorialButton7.Text = "Weiter";
             this._tutorialButton7.UseVisualStyleBackColor = true;
             this._tutorialButton7.Click += new System.EventHandler(this.ContinueTutorial7);
             // 
-            // tutorialText7
+            // _tutorialText7
             // 
             this._tutorialText7.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._tutorialText7.BackColor = System.Drawing.SystemColors.Control;
             this._tutorialText7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialText7.Location = new System.Drawing.Point(8, 6);
             this._tutorialText7.Multiline = true;
-            this._tutorialText7.Name = "tutorialText7";
+            this._tutorialText7.Name = "_tutorialText7";
             this._tutorialText7.ReadOnly = true;
             this._tutorialText7.Size = new System.Drawing.Size(170, 57);
             this._tutorialText7.TabIndex = 11;
             this._tutorialText7.Text = "Du kannst deinen derzeitigen Spielstand durch\r\n Klicken auf \"Speichern\" sichern.";
             this._tutorialText7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // infoActionPanel0
+            // _infoActionPanel0
             // 
             this._infoActionPanel0.BackColor = System.Drawing.Color.FloralWhite;
             this._infoActionPanel0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._infoActionPanel0.Controls.Add(this._infoActionTxt0);
             this._infoActionPanel0.Location = new System.Drawing.Point(0, 202);
-            this._infoActionPanel0.Name = "infoActionPanel0";
+            this._infoActionPanel0.Name = "_infoActionPanel0";
             this._infoActionPanel0.Size = new System.Drawing.Size(145, 61);
             this._infoActionPanel0.TabIndex = 14;
             this._infoActionPanel0.Visible = false;
             // 
-            // infoActionTxt0
+            // _infoActionTxt0
             // 
             this._infoActionTxt0.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._infoActionTxt0.BackColor = System.Drawing.SystemColors.Control;
             this._infoActionTxt0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._infoActionTxt0.Location = new System.Drawing.Point(8, 6);
             this._infoActionTxt0.Multiline = true;
-            this._infoActionTxt0.Name = "infoActionTxt0";
+            this._infoActionTxt0.Name = "_infoActionTxt0";
             this._infoActionTxt0.ReadOnly = true;
             this._infoActionTxt0.Size = new System.Drawing.Size(131, 48);
             this._infoActionTxt0.TabIndex = 11;
             this._infoActionTxt0.Text = "Links wird dein Charakter angezeigt";
             this._infoActionTxt0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // infoActionPanel2
+            // _infoActionPanel2
             // 
             this._infoActionPanel2.BackColor = System.Drawing.Color.FloralWhite;
             this._infoActionPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._infoActionPanel2.Controls.Add(this._infoActionTxt2);
             this._infoActionPanel2.Location = new System.Drawing.Point(0, 325);
-            this._infoActionPanel2.Name = "infoActionPanel2";
+            this._infoActionPanel2.Name = "_infoActionPanel2";
             this._infoActionPanel2.Size = new System.Drawing.Size(145, 61);
             this._infoActionPanel2.TabIndex = 17;
             this._infoActionPanel2.Visible = false;
             // 
-            // infoActionTxt2
+            // _infoActionTxt2
             // 
             this._infoActionTxt2.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._infoActionTxt2.BackColor = System.Drawing.SystemColors.Control;
             this._infoActionTxt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._infoActionTxt2.Location = new System.Drawing.Point(8, 6);
             this._infoActionTxt2.Multiline = true;
-            this._infoActionTxt2.Name = "infoActionTxt2";
+            this._infoActionTxt2.Name = "_infoActionTxt2";
             this._infoActionTxt2.ReadOnly = true;
             this._infoActionTxt2.Size = new System.Drawing.Size(131, 48);
             this._infoActionTxt2.TabIndex = 11;
             this._infoActionTxt2.Text = "Links wird dein Charakter angezeigt";
             this._infoActionTxt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tutorialPanel4
+            // _tutorialPanel4
             // 
             this._tutorialPanel4.BackColor = System.Drawing.Color.FloralWhite;
             this._tutorialPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -264,29 +263,29 @@ namespace SpielDesLebens
             this._tutorialPanel4.Controls.Add(this._button7);
             this._tutorialPanel4.Controls.Add(this._textBox5);
             this._tutorialPanel4.Location = new System.Drawing.Point(540, 39);
-            this._tutorialPanel4.Name = "tutorialPanel4";
+            this._tutorialPanel4.Name = "_tutorialPanel4";
             this._tutorialPanel4.Size = new System.Drawing.Size(195, 133);
             this._tutorialPanel4.TabIndex = 12;
             this._tutorialPanel4.Visible = false;
             // 
-            // button7
+            // _button7
             // 
             this._button7.Location = new System.Drawing.Point(118, 103);
-            this._button7.Name = "button7";
+            this._button7.Name = "_button7";
             this._button7.Size = new System.Drawing.Size(62, 25);
             this._button7.TabIndex = 13;
             this._button7.Text = "Weiter";
             this._button7.UseVisualStyleBackColor = true;
             this._button7.Click += new System.EventHandler(this.ContinueTutorial4);
             // 
-            // textBox5
+            // _textBox5
             // 
             this._textBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._textBox5.BackColor = System.Drawing.SystemColors.Control;
             this._textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._textBox5.Location = new System.Drawing.Point(15, 14);
             this._textBox5.Multiline = true;
-            this._textBox5.Name = "textBox5";
+            this._textBox5.Name = "_textBox5";
             this._textBox5.ReadOnly = true;
             this._textBox5.Size = new System.Drawing.Size(165, 83);
             this._textBox5.TabIndex = 11;
@@ -295,93 +294,93 @@ namespace SpielDesLebens
     " Charakters.";
             this._textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // infoActionPanel3
+            // _infoActionPanel3
             // 
             this._infoActionPanel3.BackColor = System.Drawing.Color.FloralWhite;
             this._infoActionPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._infoActionPanel3.Controls.Add(this._infoActionTxt3);
             this._infoActionPanel3.Location = new System.Drawing.Point(0, 386);
-            this._infoActionPanel3.Name = "infoActionPanel3";
+            this._infoActionPanel3.Name = "_infoActionPanel3";
             this._infoActionPanel3.Size = new System.Drawing.Size(145, 61);
             this._infoActionPanel3.TabIndex = 16;
             this._infoActionPanel3.Visible = false;
             // 
-            // infoActionTxt3
+            // _infoActionTxt3
             // 
             this._infoActionTxt3.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._infoActionTxt3.BackColor = System.Drawing.SystemColors.Control;
             this._infoActionTxt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._infoActionTxt3.Location = new System.Drawing.Point(8, 6);
             this._infoActionTxt3.Multiline = true;
-            this._infoActionTxt3.Name = "infoActionTxt3";
+            this._infoActionTxt3.Name = "_infoActionTxt3";
             this._infoActionTxt3.ReadOnly = true;
             this._infoActionTxt3.Size = new System.Drawing.Size(131, 48);
             this._infoActionTxt3.TabIndex = 11;
             this._infoActionTxt3.Text = "Links wird dein Charakter angezeigt";
             this._infoActionTxt3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // infoActionPanel1
+            // _infoActionPanel1
             // 
             this._infoActionPanel1.BackColor = System.Drawing.Color.FloralWhite;
             this._infoActionPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._infoActionPanel1.Controls.Add(this._infoActionTxt1);
             this._infoActionPanel1.Location = new System.Drawing.Point(0, 263);
-            this._infoActionPanel1.Name = "infoActionPanel1";
+            this._infoActionPanel1.Name = "_infoActionPanel1";
             this._infoActionPanel1.Size = new System.Drawing.Size(145, 61);
             this._infoActionPanel1.TabIndex = 15;
             this._infoActionPanel1.Visible = false;
             // 
-            // infoActionTxt1
+            // _infoActionTxt1
             // 
             this._infoActionTxt1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._infoActionTxt1.BackColor = System.Drawing.SystemColors.Control;
             this._infoActionTxt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._infoActionTxt1.Location = new System.Drawing.Point(8, 6);
             this._infoActionTxt1.Multiline = true;
-            this._infoActionTxt1.Name = "infoActionTxt1";
+            this._infoActionTxt1.Name = "_infoActionTxt1";
             this._infoActionTxt1.ReadOnly = true;
             this._infoActionTxt1.Size = new System.Drawing.Size(131, 48);
             this._infoActionTxt1.TabIndex = 11;
             this._infoActionTxt1.Text = "Links wird dein Charakter angezeigt";
             this._infoActionTxt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tutorialPanel5
+            // _tutorialPanel5
             // 
             this._tutorialPanel5.BackColor = System.Drawing.Color.FloralWhite;
             this._tutorialPanel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialPanel5.Controls.Add(this._button8);
             this._tutorialPanel5.Controls.Add(this._textBox6);
             this._tutorialPanel5.Location = new System.Drawing.Point(306, 36);
-            this._tutorialPanel5.Name = "tutorialPanel5";
+            this._tutorialPanel5.Name = "_tutorialPanel5";
             this._tutorialPanel5.Size = new System.Drawing.Size(190, 97);
             this._tutorialPanel5.TabIndex = 14;
             this._tutorialPanel5.Visible = false;
             // 
-            // button8
+            // _button8
             // 
             this._button8.Location = new System.Drawing.Point(116, 68);
-            this._button8.Name = "button8";
+            this._button8.Name = "_button8";
             this._button8.Size = new System.Drawing.Size(62, 25);
             this._button8.TabIndex = 13;
             this._button8.Text = "Weiter";
             this._button8.UseVisualStyleBackColor = true;
             this._button8.Click += new System.EventHandler(this.ContinueTutorial5);
             // 
-            // textBox6
+            // _textBox6
             // 
             this._textBox6.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._textBox6.BackColor = System.Drawing.SystemColors.Control;
             this._textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._textBox6.Location = new System.Drawing.Point(15, 14);
             this._textBox6.Multiline = true;
-            this._textBox6.Name = "textBox6";
+            this._textBox6.Name = "_textBox6";
             this._textBox6.ReadOnly = true;
             this._textBox6.Size = new System.Drawing.Size(163, 48);
             this._textBox6.TabIndex = 11;
             this._textBox6.Text = "Manche Events haben eine Info Option, um mehr Wissen zu dem Event zu bekommen.";
             this._textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tutorialPanel3
+            // _tutorialPanel3
             // 
             this._tutorialPanel3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this._tutorialPanel3.BackColor = System.Drawing.Color.FloralWhite;
@@ -389,38 +388,38 @@ namespace SpielDesLebens
             this._tutorialPanel3.Controls.Add(this._button4);
             this._tutorialPanel3.Controls.Add(this._textBox2);
             this._tutorialPanel3.Location = new System.Drawing.Point(0, 113);
-            this._tutorialPanel3.Name = "tutorialPanel3";
+            this._tutorialPanel3.Name = "_tutorialPanel3";
             this._tutorialPanel3.Size = new System.Drawing.Size(190, 155);
             this._tutorialPanel3.TabIndex = 10;
             this._tutorialPanel3.Visible = false;
             // 
-            // button4
+            // _button4
             // 
             this._button4.Location = new System.Drawing.Point(116, 122);
-            this._button4.Name = "button4";
+            this._button4.Name = "_button4";
             this._button4.Size = new System.Drawing.Size(62, 25);
             this._button4.TabIndex = 13;
             this._button4.Text = "Weiter";
             this._button4.UseVisualStyleBackColor = true;
             this._button4.Click += new System.EventHandler(this.ContinueTutorial3);
             // 
-            // textBox2
+            // _textBox2
             // 
             this._textBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._textBox2.BackColor = System.Drawing.SystemColors.Control;
             this._textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._textBox2.Location = new System.Drawing.Point(15, 14);
             this._textBox2.Multiline = true;
-            this._textBox2.Name = "textBox2";
+            this._textBox2.Name = "_textBox2";
             this._textBox2.ReadOnly = true;
             this._textBox2.Size = new System.Drawing.Size(163, 102);
             this._textBox2.TabIndex = 11;
             this._textBox2.Text = "Auf der linken Seite wird das Aktionsfenster angezeigt.  Wenn du auf eine Aktion " +
-    "drückst, werden sich deine Stats ändern. Die Icons geben dir Hinweise, welcher St" +
-    "at unter anderem geändert wird.";
+    "drückst, werden sich deine Stats ändern. Die Icons geben dir Hinweise, welcher S" +
+    "tat unter anderem geändert wird.";
             this._textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel1
+            // _panel1
             // 
             this._panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this._panel1.BackgroundImage = global::SpielDesLebens.Properties.Resources.gradient1;
@@ -439,11 +438,11 @@ namespace SpielDesLebens
             this._panel1.Controls.Add(this._eventTxtBox);
             this._panel1.Controls.Add(this._option1Btn);
             this._panel1.Location = new System.Drawing.Point(146, 39);
-            this._panel1.Name = "panel1";
+            this._panel1.Name = "_panel1";
             this._panel1.Size = new System.Drawing.Size(589, 426);
             this._panel1.TabIndex = 4;
             // 
-            // newProfessionPanel
+            // _newProfessionPanel
             // 
             this._newProfessionPanel.BackColor = System.Drawing.Color.FloralWhite;
             this._newProfessionPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -456,101 +455,101 @@ namespace SpielDesLebens
             this._newProfessionPanel.Controls.Add(this._newProfessionTitle);
             this._newProfessionPanel.Controls.Add(this._newProfessionTxt);
             this._newProfessionPanel.Location = new System.Drawing.Point(132, 69);
-            this._newProfessionPanel.Name = "newProfessionPanel";
+            this._newProfessionPanel.Name = "_newProfessionPanel";
             this._newProfessionPanel.Size = new System.Drawing.Size(369, 218);
             this._newProfessionPanel.TabIndex = 12;
             this._newProfessionPanel.Visible = false;
             // 
-            // newProfessionPathComboBox
+            // _newProfessionPathComboBox
             // 
             this._newProfessionPathComboBox.FormattingEnabled = true;
             this._newProfessionPathComboBox.Location = new System.Drawing.Point(128, 85);
-            this._newProfessionPathComboBox.Name = "newProfessionPathComboBox";
+            this._newProfessionPathComboBox.Name = "_newProfessionPathComboBox";
             this._newProfessionPathComboBox.Size = new System.Drawing.Size(204, 21);
             this._newProfessionPathComboBox.TabIndex = 16;
             this._newProfessionPathComboBox.Visible = false;
             this._newProfessionPathComboBox.TextChanged += new System.EventHandler(this.NewProfessionPathComboBoxTextChanged);
             // 
-            // newProfessionPathLable
+            // _newProfessionPathLable
             // 
             this._newProfessionPathLable.AutoSize = true;
             this._newProfessionPathLable.BackColor = System.Drawing.Color.Transparent;
             this._newProfessionPathLable.Location = new System.Drawing.Point(41, 85);
-            this._newProfessionPathLable.Name = "newProfessionPathLable";
+            this._newProfessionPathLable.Name = "_newProfessionPathLable";
             this._newProfessionPathLable.Size = new System.Drawing.Size(67, 13);
             this._newProfessionPathLable.TabIndex = 15;
             this._newProfessionPathLable.Text = "Bildungsweg";
             this._newProfessionPathLable.Visible = false;
             // 
-            // newProfessionProfessionLable
+            // _newProfessionProfessionLable
             // 
             this._newProfessionProfessionLable.AutoSize = true;
             this._newProfessionProfessionLable.BackColor = System.Drawing.Color.Transparent;
             this._newProfessionProfessionLable.Location = new System.Drawing.Point(44, 119);
-            this._newProfessionProfessionLable.Name = "newProfessionProfessionLable";
+            this._newProfessionProfessionLable.Name = "_newProfessionProfessionLable";
             this._newProfessionProfessionLable.Size = new System.Drawing.Size(63, 13);
             this._newProfessionProfessionLable.TabIndex = 14;
             this._newProfessionProfessionLable.Text = "Karriereweg";
             this._newProfessionProfessionLable.Visible = false;
             // 
-            // newProfessionProfessionComboBox
+            // _newProfessionProfessionComboBox
             // 
             this._newProfessionProfessionComboBox.FormattingEnabled = true;
             this._newProfessionProfessionComboBox.Location = new System.Drawing.Point(129, 116);
-            this._newProfessionProfessionComboBox.Name = "newProfessionProfessionComboBox";
+            this._newProfessionProfessionComboBox.Name = "_newProfessionProfessionComboBox";
             this._newProfessionProfessionComboBox.Size = new System.Drawing.Size(204, 21);
             this._newProfessionProfessionComboBox.TabIndex = 13;
             this._newProfessionProfessionComboBox.Visible = false;
             this._newProfessionProfessionComboBox.TextChanged += new System.EventHandler(this.NewProfessionTxtChange);
             // 
-            // newProfessionYesBtn
+            // _newProfessionYesBtn
             // 
             this._newProfessionYesBtn.Location = new System.Drawing.Point(33, 163);
-            this._newProfessionYesBtn.Name = "newProfessionYesBtn";
+            this._newProfessionYesBtn.Name = "_newProfessionYesBtn";
             this._newProfessionYesBtn.Size = new System.Drawing.Size(100, 40);
             this._newProfessionYesBtn.TabIndex = 12;
             this._newProfessionYesBtn.Text = "Ja";
             this._newProfessionYesBtn.UseVisualStyleBackColor = true;
             this._newProfessionYesBtn.Click += new System.EventHandler(this.NewProfessionYesOpt);
             // 
-            // newProfessionNoBtn
+            // _newProfessionNoBtn
             // 
             this._newProfessionNoBtn.Location = new System.Drawing.Point(233, 165);
-            this._newProfessionNoBtn.Name = "newProfessionNoBtn";
+            this._newProfessionNoBtn.Name = "_newProfessionNoBtn";
             this._newProfessionNoBtn.Size = new System.Drawing.Size(100, 40);
             this._newProfessionNoBtn.TabIndex = 11;
             this._newProfessionNoBtn.Text = "Nein";
             this._newProfessionNoBtn.UseVisualStyleBackColor = true;
             this._newProfessionNoBtn.Click += new System.EventHandler(this.NewProfessionNoBtnClick);
             // 
-            // newProfessionTitle
+            // _newProfessionTitle
             // 
             this._newProfessionTitle.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this._newProfessionTitle.BackColor = System.Drawing.Color.WhiteSmoke;
             this._newProfessionTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._newProfessionTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._newProfessionTitle.Location = new System.Drawing.Point(33, 17);
-            this._newProfessionTitle.Name = "newProfessionTitle";
+            this._newProfessionTitle.Name = "_newProfessionTitle";
             this._newProfessionTitle.ReadOnly = true;
             this._newProfessionTitle.Size = new System.Drawing.Size(185, 20);
             this._newProfessionTitle.TabIndex = 10;
             this._newProfessionTitle.Text = "Neue Karriere";
             // 
-            // newProfessionTxt
+            // _newProfessionTxt
             // 
             this._newProfessionTxt.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._newProfessionTxt.BackColor = System.Drawing.SystemColors.Control;
             this._newProfessionTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._newProfessionTxt.Location = new System.Drawing.Point(33, 52);
             this._newProfessionTxt.Multiline = true;
-            this._newProfessionTxt.Name = "newProfessionTxt";
+            this._newProfessionTxt.Name = "_newProfessionTxt";
             this._newProfessionTxt.ReadOnly = true;
             this._newProfessionTxt.Size = new System.Drawing.Size(300, 103);
             this._newProfessionTxt.TabIndex = 10;
             this._newProfessionTxt.Text = "Möchtest du deine Karriere ändern?";
             this._newProfessionTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // eventTitle
+            // _eventTitle
             // 
             this._eventTitle.AutoSize = true;
             this._eventTitle.BackColor = System.Drawing.Color.Transparent;
@@ -558,12 +557,12 @@ namespace SpielDesLebens
             this._eventTitle.ForeColor = System.Drawing.Color.White;
             this._eventTitle.Location = new System.Drawing.Point(56, 47);
             this._eventTitle.MaximumSize = new System.Drawing.Size(412, 0);
-            this._eventTitle.Name = "eventTitle";
+            this._eventTitle.Name = "_eventTitle";
             this._eventTitle.Size = new System.Drawing.Size(52, 17);
             this._eventTitle.TabIndex = 13;
             this._eventTitle.Text = "label6";
             // 
-            // actionPanel
+            // _actionPanel
             // 
             this._actionPanel.BackColor = System.Drawing.Color.FloralWhite;
             this._actionPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -571,52 +570,52 @@ namespace SpielDesLebens
             this._actionPanel.Controls.Add(this._actionTitle);
             this._actionPanel.Controls.Add(this._actionText);
             this._actionPanel.Location = new System.Drawing.Point(136, 62);
-            this._actionPanel.Name = "actionPanel";
+            this._actionPanel.Name = "_actionPanel";
             this._actionPanel.Size = new System.Drawing.Size(369, 218);
             this._actionPanel.TabIndex = 10;
             this._actionPanel.Visible = false;
             // 
-            // button9
+            // _button9
             // 
             this._button9.Location = new System.Drawing.Point(233, 165);
-            this._button9.Name = "button9";
+            this._button9.Name = "_button9";
             this._button9.Size = new System.Drawing.Size(100, 40);
             this._button9.TabIndex = 11;
             this._button9.Text = "Weiter";
             this._button9.UseVisualStyleBackColor = true;
             this._button9.Click += new System.EventHandler(this.ActionClose);
             // 
-            // actionTitle
+            // _actionTitle
             // 
             this._actionTitle.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this._actionTitle.BackColor = System.Drawing.Color.WhiteSmoke;
             this._actionTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._actionTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._actionTitle.Location = new System.Drawing.Point(33, 17);
-            this._actionTitle.Name = "actionTitle";
+            this._actionTitle.Name = "_actionTitle";
             this._actionTitle.ReadOnly = true;
             this._actionTitle.Size = new System.Drawing.Size(185, 20);
             this._actionTitle.TabIndex = 10;
             this._actionTitle.Text = "ActionTitle";
             // 
-            // actionText
+            // _actionText
             // 
             this._actionText.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._actionText.BackColor = System.Drawing.SystemColors.Control;
             this._actionText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._actionText.Location = new System.Drawing.Point(33, 52);
             this._actionText.Multiline = true;
-            this._actionText.Name = "actionText";
+            this._actionText.Name = "_actionText";
             this._actionText.ReadOnly = true;
             this._actionText.Size = new System.Drawing.Size(300, 103);
             this._actionText.TabIndex = 10;
             this._actionText.Text = "Erklärung von Aktionen";
             this._actionText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // closeOptEndTxt
+            // _closeOptEndTxt
             // 
             this._closeOptEndTxt.Location = new System.Drawing.Point(472, 23);
-            this._closeOptEndTxt.Name = "closeOptEndTxt";
+            this._closeOptEndTxt.Name = "_closeOptEndTxt";
             this._closeOptEndTxt.Size = new System.Drawing.Size(75, 40);
             this._closeOptEndTxt.TabIndex = 8;
             this._closeOptEndTxt.Text = "Nächstes Event";
@@ -624,7 +623,7 @@ namespace SpielDesLebens
             this._closeOptEndTxt.Visible = false;
             this._closeOptEndTxt.Click += new System.EventHandler(this.CloseOptTxt);
             // 
-            // tutorialAskPanel
+            // _tutorialAskPanel
             // 
             this._tutorialAskPanel.BackColor = System.Drawing.Color.FloralWhite;
             this._tutorialAskPanel.Controls.Add(this._tutorialAskBtn);
@@ -632,117 +631,117 @@ namespace SpielDesLebens
             this._tutorialAskPanel.Controls.Add(this._tutorialAskTitle);
             this._tutorialAskPanel.Controls.Add(this._tutorialAskTxt);
             this._tutorialAskPanel.Location = new System.Drawing.Point(143, 58);
-            this._tutorialAskPanel.Name = "tutorialAskPanel";
+            this._tutorialAskPanel.Name = "_tutorialAskPanel";
             this._tutorialAskPanel.Size = new System.Drawing.Size(365, 217);
             this._tutorialAskPanel.TabIndex = 10;
             this._tutorialAskPanel.Visible = false;
             // 
-            // tutorialAskBtn
+            // _tutorialAskBtn
             // 
             this._tutorialAskBtn.Location = new System.Drawing.Point(33, 165);
-            this._tutorialAskBtn.Name = "tutorialAskBtn";
+            this._tutorialAskBtn.Name = "_tutorialAskBtn";
             this._tutorialAskBtn.Size = new System.Drawing.Size(100, 40);
             this._tutorialAskBtn.TabIndex = 12;
             this._tutorialAskBtn.Text = "Ja";
             this._tutorialAskBtn.UseVisualStyleBackColor = true;
             this._tutorialAskBtn.Click += new System.EventHandler(this.StartTutorial);
             // 
-            // button2
+            // _button2
             // 
             this._button2.Location = new System.Drawing.Point(233, 165);
-            this._button2.Name = "button2";
+            this._button2.Name = "_button2";
             this._button2.Size = new System.Drawing.Size(100, 40);
             this._button2.TabIndex = 11;
             this._button2.Text = "Nein";
             this._button2.UseVisualStyleBackColor = true;
             this._button2.Click += new System.EventHandler(this.EndTutorial);
             // 
-            // tutorialAskTitle
+            // _tutorialAskTitle
             // 
             this._tutorialAskTitle.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this._tutorialAskTitle.BackColor = System.Drawing.Color.WhiteSmoke;
             this._tutorialAskTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialAskTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._tutorialAskTitle.Location = new System.Drawing.Point(33, 17);
-            this._tutorialAskTitle.Name = "tutorialAskTitle";
+            this._tutorialAskTitle.Name = "_tutorialAskTitle";
             this._tutorialAskTitle.ReadOnly = true;
             this._tutorialAskTitle.Size = new System.Drawing.Size(185, 20);
             this._tutorialAskTitle.TabIndex = 10;
             this._tutorialAskTitle.Text = "Tutorial";
             // 
-            // tutorialAskTxt
+            // _tutorialAskTxt
             // 
             this._tutorialAskTxt.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._tutorialAskTxt.BackColor = System.Drawing.SystemColors.Control;
             this._tutorialAskTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialAskTxt.Location = new System.Drawing.Point(33, 52);
             this._tutorialAskTxt.Multiline = true;
-            this._tutorialAskTxt.Name = "tutorialAskTxt";
+            this._tutorialAskTxt.Name = "_tutorialAskTxt";
             this._tutorialAskTxt.ReadOnly = true;
             this._tutorialAskTxt.Size = new System.Drawing.Size(300, 103);
             this._tutorialAskTxt.TabIndex = 10;
             this._tutorialAskTxt.Text = "Möchtest du eine Erklärung zu den Möglichkeiten des Spiels bekommen?";
             this._tutorialAskTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gameOverPanel
+            // _gameOverPanel
             // 
             this._gameOverPanel.BackColor = System.Drawing.Color.FloralWhite;
             this._gameOverPanel.Controls.Add(this._gameOverBtn);
             this._gameOverPanel.Controls.Add(this._gameOverTitle);
             this._gameOverPanel.Controls.Add(this._gameOverTxt);
             this._gameOverPanel.Location = new System.Drawing.Point(115, 65);
-            this._gameOverPanel.Name = "gameOverPanel";
+            this._gameOverPanel.Name = "_gameOverPanel";
             this._gameOverPanel.Size = new System.Drawing.Size(365, 217);
             this._gameOverPanel.TabIndex = 9;
             this._gameOverPanel.Visible = false;
             // 
-            // gameOverBtn
+            // _gameOverBtn
             // 
             this._gameOverBtn.Location = new System.Drawing.Point(233, 161);
-            this._gameOverBtn.Name = "gameOverBtn";
+            this._gameOverBtn.Name = "_gameOverBtn";
             this._gameOverBtn.Size = new System.Drawing.Size(100, 40);
             this._gameOverBtn.TabIndex = 10;
             this._gameOverBtn.Text = "Zum Main Menu";
             this._gameOverBtn.UseVisualStyleBackColor = true;
             this._gameOverBtn.Click += new System.EventHandler(this.GameOverBtnClick);
             // 
-            // gameOverTitle
+            // _gameOverTitle
             // 
             this._gameOverTitle.BackColor = System.Drawing.Color.White;
             this._gameOverTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._gameOverTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._gameOverTitle.Location = new System.Drawing.Point(33, 17);
-            this._gameOverTitle.Name = "gameOverTitle";
+            this._gameOverTitle.Name = "_gameOverTitle";
             this._gameOverTitle.ReadOnly = true;
             this._gameOverTitle.Size = new System.Drawing.Size(185, 20);
             this._gameOverTitle.TabIndex = 5;
             this._gameOverTitle.Text = "GameOver";
             // 
-            // gameOverTxt
+            // _gameOverTxt
             // 
             this._gameOverTxt.Location = new System.Drawing.Point(33, 52);
-            this._gameOverTxt.Name = "gameOverTxt";
+            this._gameOverTxt.Name = "_gameOverTxt";
             this._gameOverTxt.ReadOnly = true;
             this._gameOverTxt.Size = new System.Drawing.Size(300, 102);
             this._gameOverTxt.TabIndex = 0;
             this._gameOverTxt.Text = "";
             // 
-            // infoPanel
+            // _infoPanel
             // 
             this._infoPanel.BackColor = System.Drawing.Color.FloralWhite;
             this._infoPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._infoPanel.Controls.Add(this._infoCloseButton);
             this._infoPanel.Controls.Add(this._infoText);
             this._infoPanel.Location = new System.Drawing.Point(111, 76);
-            this._infoPanel.Name = "infoPanel";
+            this._infoPanel.Name = "_infoPanel";
             this._infoPanel.Size = new System.Drawing.Size(365, 208);
             this._infoPanel.TabIndex = 9;
             this._infoPanel.Visible = false;
             // 
-            // infoCloseButton
+            // _infoCloseButton
             // 
             this._infoCloseButton.Location = new System.Drawing.Point(257, 22);
-            this._infoCloseButton.Name = "infoCloseButton";
+            this._infoCloseButton.Name = "_infoCloseButton";
             this._infoCloseButton.Size = new System.Drawing.Size(75, 23);
             this._infoCloseButton.TabIndex = 6;
             this._infoCloseButton.Text = "Schließen";
@@ -750,24 +749,24 @@ namespace SpielDesLebens
             this._infoCloseButton.Visible = false;
             this._infoCloseButton.Click += new System.EventHandler(this.InfoClose);
             // 
-            // infoText
+            // _infoText
             // 
             this._infoText.Location = new System.Drawing.Point(32, 61);
-            this._infoText.Name = "infoText";
+            this._infoText.Name = "_infoText";
             this._infoText.ReadOnly = true;
             this._infoText.Size = new System.Drawing.Size(300, 118);
             this._infoText.TabIndex = 0;
             this._infoText.Text = "";
             this._infoText.Visible = false;
             // 
-            // option4Btn
+            // _option4Btn
             // 
             this._option4Btn.BackColor = System.Drawing.Color.RosyBrown;
             this._option4Btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this._option4Btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._option4Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._option4Btn.Location = new System.Drawing.Point(325, 329);
-            this._option4Btn.Name = "option4Btn";
+            this._option4Btn.Name = "_option4Btn";
             this._option4Btn.Size = new System.Drawing.Size(222, 57);
             this._option4Btn.TabIndex = 6;
             this._option4Btn.Text = "option1Btn";
@@ -775,14 +774,14 @@ namespace SpielDesLebens
             this._option4Btn.Visible = false;
             this._option4Btn.Click += new System.EventHandler(this.Option4Click);
             // 
-            // option3Btn
+            // _option3Btn
             // 
             this._option3Btn.BackColor = System.Drawing.Color.RosyBrown;
             this._option3Btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this._option3Btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._option3Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._option3Btn.Location = new System.Drawing.Point(59, 329);
-            this._option3Btn.Name = "option3Btn";
+            this._option3Btn.Name = "_option3Btn";
             this._option3Btn.Size = new System.Drawing.Size(222, 57);
             this._option3Btn.TabIndex = 7;
             this._option3Btn.Text = "option1Btn";
@@ -790,27 +789,27 @@ namespace SpielDesLebens
             this._option3Btn.Visible = false;
             this._option3Btn.Click += new System.EventHandler(this.Option3Click);
             // 
-            // option2Btn
+            // _option2Btn
             // 
             this._option2Btn.BackColor = System.Drawing.Color.RosyBrown;
             this._option2Btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this._option2Btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._option2Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._option2Btn.Location = new System.Drawing.Point(325, 230);
-            this._option2Btn.Name = "option2Btn";
+            this._option2Btn.Name = "_option2Btn";
             this._option2Btn.Size = new System.Drawing.Size(222, 57);
             this._option2Btn.TabIndex = 6;
             this._option2Btn.Text = "option1Btn";
             this._option2Btn.UseVisualStyleBackColor = false;
             this._option2Btn.Click += new System.EventHandler(this.Option2Click);
             // 
-            // showInfoBtn
+            // _showInfoBtn
             // 
             this._showInfoBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this._showInfoBtn.Cursor = System.Windows.Forms.Cursors.Default;
             this._showInfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._showInfoBtn.Location = new System.Drawing.Point(472, 23);
-            this._showInfoBtn.Name = "showInfoBtn";
+            this._showInfoBtn.Name = "_showInfoBtn";
             this._showInfoBtn.Size = new System.Drawing.Size(75, 40);
             this._showInfoBtn.TabIndex = 3;
             this._showInfoBtn.TabStop = false;
@@ -819,43 +818,43 @@ namespace SpielDesLebens
             this._showInfoBtn.Visible = false;
             this._showInfoBtn.Click += new System.EventHandler(this.ShowInfo);
             // 
-            // eventTxtBox
+            // _eventTxtBox
             // 
             this._eventTxtBox.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._eventTxtBox.BackColor = System.Drawing.SystemColors.Control;
             this._eventTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._eventTxtBox.Location = new System.Drawing.Point(59, 84);
             this._eventTxtBox.Multiline = true;
-            this._eventTxtBox.Name = "eventTxtBox";
+            this._eventTxtBox.Name = "_eventTxtBox";
             this._eventTxtBox.ReadOnly = true;
             this._eventTxtBox.Size = new System.Drawing.Size(488, 106);
             this._eventTxtBox.TabIndex = 4;
             this._eventTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // option1Btn
+            // _option1Btn
             // 
             this._option1Btn.BackColor = System.Drawing.Color.RosyBrown;
             this._option1Btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._option1Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._option1Btn.Location = new System.Drawing.Point(59, 230);
-            this._option1Btn.Name = "option1Btn";
+            this._option1Btn.Name = "_option1Btn";
             this._option1Btn.Size = new System.Drawing.Size(222, 57);
             this._option1Btn.TabIndex = 0;
             this._option1Btn.Text = "option1Btn";
             this._option1Btn.UseVisualStyleBackColor = false;
             this._option1Btn.Click += new System.EventHandler(this.Option1Click);
             // 
-            // button3
+            // _button3
             // 
             this._button3.Location = new System.Drawing.Point(116, 90);
-            this._button3.Name = "button3";
+            this._button3.Name = "_button3";
             this._button3.Size = new System.Drawing.Size(62, 25);
             this._button3.TabIndex = 13;
             this._button3.Text = "Weiter";
             this._button3.UseVisualStyleBackColor = true;
             this._button3.Click += new System.EventHandler(this.ContinueTutorial1);
             // 
-            // panel4
+            // _panel4
             // 
             this._panel4.BackColor = System.Drawing.Color.Transparent;
             this._panel4.BackgroundImage = global::SpielDesLebens.Properties.Resources.redBlack;
@@ -865,67 +864,67 @@ namespace SpielDesLebens
             this._panel4.Controls.Add(this._progressProgBar);
             this._panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this._panel4.Location = new System.Drawing.Point(240, 0);
-            this._panel4.Name = "panel4";
+            this._panel4.Name = "_panel4";
             this._panel4.Size = new System.Drawing.Size(835, 119);
             this._panel4.TabIndex = 0;
             // 
-            // tutorialPanel6
+            // _tutorialPanel6
             // 
             this._tutorialPanel6.BackColor = System.Drawing.Color.FloralWhite;
             this._tutorialPanel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialPanel6.Controls.Add(this._button5);
             this._tutorialPanel6.Controls.Add(this._tutorialTxt6);
-            this._tutorialPanel6.Location = new System.Drawing.Point(650, 3);
-            this._tutorialPanel6.Name = "tutorialPanel6";
-            this._tutorialPanel6.Size = new System.Drawing.Size(190, 119);
+            this._tutorialPanel6.Location = new System.Drawing.Point(523, 3);
+            this._tutorialPanel6.Name = "_tutorialPanel6";
+            this._tutorialPanel6.Size = new System.Drawing.Size(317, 116);
             this._tutorialPanel6.TabIndex = 11;
             this._tutorialPanel6.Visible = false;
             // 
-            // button5
+            // _button5
             // 
-            this._button5.Location = new System.Drawing.Point(116, 88);
-            this._button5.Name = "button5";
+            this._button5.Location = new System.Drawing.Point(243, 87);
+            this._button5.Name = "_button5";
             this._button5.Size = new System.Drawing.Size(62, 25);
             this._button5.TabIndex = 13;
             this._button5.Text = "Weiter";
             this._button5.UseVisualStyleBackColor = true;
             this._button5.Click += new System.EventHandler(this.ContinueTutorial6);
             // 
-            // tutorialTxt6
+            // _tutorialTxt6
             // 
             this._tutorialTxt6.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._tutorialTxt6.BackColor = System.Drawing.Color.Snow;
             this._tutorialTxt6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialTxt6.Location = new System.Drawing.Point(15, 14);
             this._tutorialTxt6.Multiline = true;
-            this._tutorialTxt6.Name = "tutorialTxt6";
+            this._tutorialTxt6.Name = "_tutorialTxt6";
             this._tutorialTxt6.ReadOnly = true;
-            this._tutorialTxt6.Size = new System.Drawing.Size(163, 68);
+            this._tutorialTxt6.Size = new System.Drawing.Size(290, 68);
             this._tutorialTxt6.TabIndex = 11;
-            this._tutorialTxt6.Text = "Rechts kannst du erkennen in welcher Phase, du dich befindest. Eine Phase ist ein " +
-    "Ausbildungsabschnitt.";
+            this._tutorialTxt6.Text = "Rechts kannst du erkennen in welcher Phase, du dich befindest. Eine Phase ist ein" +
+    " Ausbildungsabschnitt.";
             this._tutorialTxt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tutorialPanel1
+            // _tutorialPanel1
             // 
             this._tutorialPanel1.BackColor = System.Drawing.Color.FloralWhite;
             this._tutorialPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialPanel1.Controls.Add(this._button3);
             this._tutorialPanel1.Controls.Add(this._tutorialTxt1);
             this._tutorialPanel1.Location = new System.Drawing.Point(0, 0);
-            this._tutorialPanel1.Name = "tutorialPanel1";
+            this._tutorialPanel1.Name = "_tutorialPanel1";
             this._tutorialPanel1.Size = new System.Drawing.Size(190, 128);
             this._tutorialPanel1.TabIndex = 0;
             this._tutorialPanel1.Visible = false;
             // 
-            // tutorialTxt1
+            // _tutorialTxt1
             // 
             this._tutorialTxt1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._tutorialTxt1.BackColor = System.Drawing.Color.White;
             this._tutorialTxt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialTxt1.Location = new System.Drawing.Point(15, 5);
             this._tutorialTxt1.Multiline = true;
-            this._tutorialTxt1.Name = "tutorialTxt1";
+            this._tutorialTxt1.Name = "_tutorialTxt1";
             this._tutorialTxt1.ReadOnly = true;
             this._tutorialTxt1.Size = new System.Drawing.Size(163, 82);
             this._tutorialTxt1.TabIndex = 11;
@@ -933,27 +932,27 @@ namespace SpielDesLebens
     "st, hast du die Möglichkeit deinen Karriereweg zu wechseln.";
             this._tutorialTxt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label5
+            // _label5
             // 
             this._label5.AutoSize = true;
             this._label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._label5.Location = new System.Drawing.Point(193, 22);
-            this._label5.Name = "label5";
+            this._label5.Name = "_label5";
             this._label5.Size = new System.Drawing.Size(92, 20);
             this._label5.TabIndex = 8;
             this._label5.Text = "Fortschritt";
             // 
-            // progressProgBar
+            // _progressProgBar
             // 
             this._progressProgBar.BackColor = System.Drawing.Color.White;
             this._progressProgBar.ForeColor = System.Drawing.Color.Maroon;
             this._progressProgBar.Location = new System.Drawing.Point(196, 53);
-            this._progressProgBar.Name = "progressProgBar";
+            this._progressProgBar.Name = "_progressProgBar";
             this._progressProgBar.Size = new System.Drawing.Size(548, 44);
             this._progressProgBar.TabIndex = 4;
             // 
-            // panel3
+            // _panel3
             // 
             this._panel3.BackColor = System.Drawing.Color.Transparent;
             this._panel3.BackgroundImage = global::SpielDesLebens.Properties.Resources.redBlack;
@@ -973,33 +972,33 @@ namespace SpielDesLebens
             this._panel3.Controls.Add(this._learnProgBar);
             this._panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this._panel3.Location = new System.Drawing.Point(1075, 0);
-            this._panel3.Name = "panel3";
+            this._panel3.Name = "_panel3";
             this._panel3.Size = new System.Drawing.Size(275, 642);
             this._panel3.TabIndex = 7;
             // 
-            // nextPhaseBtn
+            // _nextPhaseBtn
             // 
             this._nextPhaseBtn.ForeColor = System.Drawing.Color.White;
             this._nextPhaseBtn.Location = new System.Drawing.Point(39, 21);
-            this._nextPhaseBtn.Name = "nextPhaseBtn";
+            this._nextPhaseBtn.Name = "_nextPhaseBtn";
             this._nextPhaseBtn.Size = new System.Drawing.Size(136, 23);
             this._nextPhaseBtn.TabIndex = 16;
             this._nextPhaseBtn.Text = "Nächste Phase";
             this._nextPhaseBtn.UseVisualStyleBackColor = true;
             this._nextPhaseBtn.Click += new System.EventHandler(this.NextPhase);
             // 
-            // moneyProgBar
+            // _moneyProgBar
             // 
             this._moneyProgBar.BackColor = System.Drawing.Color.WhiteSmoke;
             this._moneyProgBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._moneyProgBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._moneyProgBar.Location = new System.Drawing.Point(31, 221);
-            this._moneyProgBar.Name = "moneyProgBar";
+            this._moneyProgBar.Name = "_moneyProgBar";
             this._moneyProgBar.ReadOnly = true;
             this._moneyProgBar.Size = new System.Drawing.Size(162, 20);
             this._moneyProgBar.TabIndex = 15;
             // 
-            // tutorialPanel2
+            // _tutorialPanel2
             // 
             this._tutorialPanel2.BackColor = System.Drawing.Color.FloralWhite;
             this._tutorialPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -1007,146 +1006,146 @@ namespace SpielDesLebens
             this._tutorialPanel2.Controls.Add(this._tutorialBtn2);
             this._tutorialPanel2.Controls.Add(this._tutorialTxt2);
             this._tutorialPanel2.Location = new System.Drawing.Point(31, 496);
-            this._tutorialPanel2.Name = "tutorialPanel2";
+            this._tutorialPanel2.Name = "_tutorialPanel2";
             this._tutorialPanel2.Size = new System.Drawing.Size(169, 133);
             this._tutorialPanel2.TabIndex = 11;
             this._tutorialPanel2.Visible = false;
             // 
-            // tutorialBtn2
+            // _tutorialBtn2
             // 
             this._tutorialBtn2.Location = new System.Drawing.Point(92, 103);
-            this._tutorialBtn2.Name = "tutorialBtn2";
+            this._tutorialBtn2.Name = "_tutorialBtn2";
             this._tutorialBtn2.Size = new System.Drawing.Size(62, 25);
             this._tutorialBtn2.TabIndex = 13;
             this._tutorialBtn2.Text = "Weiter";
             this._tutorialBtn2.UseVisualStyleBackColor = true;
             this._tutorialBtn2.Click += new System.EventHandler(this.ContinueTutorial2);
             // 
-            // tutorialTxt2
+            // _tutorialTxt2
             // 
             this._tutorialTxt2.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._tutorialTxt2.BackColor = System.Drawing.SystemColors.Control;
             this._tutorialTxt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialTxt2.Location = new System.Drawing.Point(15, 14);
             this._tutorialTxt2.Multiline = true;
-            this._tutorialTxt2.Name = "tutorialTxt2";
+            this._tutorialTxt2.Name = "_tutorialTxt2";
             this._tutorialTxt2.ReadOnly = true;
             this._tutorialTxt2.Size = new System.Drawing.Size(139, 83);
             this._tutorialTxt2.TabIndex = 11;
-            this._tutorialTxt2.Text = "Oben werden die Stats deines Charakters angezeigt. Wenn mindestens einer der Attri" +
-    "bute auf 0 fällt, ist das Spiel verloren.";
+            this._tutorialTxt2.Text = "Oben werden die Stats deines Charakters angezeigt. Wenn mindestens einer der Attr" +
+    "ibute auf 0 fällt, ist das Spiel verloren.";
             this._tutorialTxt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // actionPointsTxt
+            // _actionPointsTxt
             // 
             this._actionPointsTxt.AutoSize = true;
             this._actionPointsTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.267326F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._actionPointsTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._actionPointsTxt.Location = new System.Drawing.Point(30, 154);
-            this._actionPointsTxt.Name = "actionPointsTxt";
+            this._actionPointsTxt.Name = "_actionPointsTxt";
             this._actionPointsTxt.Size = new System.Drawing.Size(182, 16);
             this._actionPointsTxt.TabIndex = 12;
             this._actionPointsTxt.Text = "Aktionspunkte: XY Punkte";
             // 
-            // leftPhaseTxt
+            // _leftPhaseTxt
             // 
             this._leftPhaseTxt.AutoSize = true;
             this._leftPhaseTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._leftPhaseTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._leftPhaseTxt.Location = new System.Drawing.Point(30, 112);
-            this._leftPhaseTxt.Name = "leftPhaseTxt";
+            this._leftPhaseTxt.Name = "_leftPhaseTxt";
             this._leftPhaseTxt.Size = new System.Drawing.Size(233, 17);
             this._leftPhaseTxt.TabIndex = 11;
             this._leftPhaseTxt.Text = "Verbleibende Länge der Phase";
             // 
-            // currentPhaseTxt
+            // _currentPhaseTxt
             // 
             this._currentPhaseTxt.AutoSize = true;
             this._currentPhaseTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._currentPhaseTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._currentPhaseTxt.Location = new System.Drawing.Point(30, 70);
-            this._currentPhaseTxt.Name = "currentPhaseTxt";
+            this._currentPhaseTxt.Name = "_currentPhaseTxt";
             this._currentPhaseTxt.Size = new System.Drawing.Size(212, 17);
             this._currentPhaseTxt.TabIndex = 10;
             this._currentPhaseTxt.Text = "Derzeitige Phase: XY Phase";
             // 
-            // label4
+            // _label4
             // 
             this._label4.AutoSize = true;
             this._label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._label4.Location = new System.Drawing.Point(28, 411);
-            this._label4.Name = "label4";
+            this._label4.Name = "_label4";
             this._label4.Size = new System.Drawing.Size(86, 13);
             this._label4.TabIndex = 7;
             this._label4.Text = "Mental Health";
             // 
-            // label3
+            // _label3
             // 
             this._label3.AutoSize = true;
             this._label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._label3.Location = new System.Drawing.Point(28, 341);
-            this._label3.Name = "label3";
+            this._label3.Name = "_label3";
             this._label3.Size = new System.Drawing.Size(66, 13);
             this._label3.TabIndex = 6;
             this._label3.Text = "Motivation";
             // 
-            // label2
+            // _label2
             // 
             this._label2.AutoSize = true;
             this._label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._label2.Location = new System.Drawing.Point(28, 268);
-            this._label2.Name = "label2";
+            this._label2.Name = "_label2";
             this._label2.Size = new System.Drawing.Size(63, 13);
             this._label2.TabIndex = 5;
             this._label2.Text = "Lernstand";
             // 
-            // label1
+            // _label1
             // 
             this._label1.AutoSize = true;
             this._label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._label1.Location = new System.Drawing.Point(28, 204);
-            this._label1.Name = "label1";
+            this._label1.Name = "_label1";
             this._label1.Size = new System.Drawing.Size(33, 13);
             this._label1.TabIndex = 4;
             this._label1.Text = "Geld";
             // 
-            // mentalProgBar
+            // _mentalProgBar
             // 
             this._mentalProgBar.BackColor = System.Drawing.Color.WhiteSmoke;
             this._mentalProgBar.ForeColor = System.Drawing.Color.Maroon;
             this._mentalProgBar.Location = new System.Drawing.Point(31, 431);
             this._mentalProgBar.MarqueeAnimationSpeed = 50;
-            this._mentalProgBar.Name = "mentalProgBar";
+            this._mentalProgBar.Name = "_mentalProgBar";
             this._mentalProgBar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this._mentalProgBar.Size = new System.Drawing.Size(162, 23);
             this._mentalProgBar.TabIndex = 3;
             this._mentalProgBar.Value = 70;
             // 
-            // motivationProgBar
+            // _motivationProgBar
             // 
             this._motivationProgBar.BackColor = System.Drawing.Color.WhiteSmoke;
             this._motivationProgBar.ForeColor = System.Drawing.Color.Maroon;
             this._motivationProgBar.Location = new System.Drawing.Point(31, 357);
-            this._motivationProgBar.Name = "motivationProgBar";
+            this._motivationProgBar.Name = "_motivationProgBar";
             this._motivationProgBar.Size = new System.Drawing.Size(162, 23);
             this._motivationProgBar.TabIndex = 2;
             this._motivationProgBar.Value = 70;
             // 
-            // learnProgBar
+            // _learnProgBar
             // 
             this._learnProgBar.BackColor = System.Drawing.Color.WhiteSmoke;
             this._learnProgBar.ForeColor = System.Drawing.Color.Maroon;
             this._learnProgBar.Location = new System.Drawing.Point(31, 285);
-            this._learnProgBar.Name = "learnProgBar";
+            this._learnProgBar.Name = "_learnProgBar";
             this._learnProgBar.Size = new System.Drawing.Size(162, 23);
             this._learnProgBar.TabIndex = 1;
             this._learnProgBar.Value = 70;
             // 
-            // panel2
+            // _panel2
             // 
             this._panel2.BackColor = System.Drawing.Color.Brown;
             this._panel2.BackgroundImage = global::SpielDesLebens.Properties.Resources.redBlack;
@@ -1160,35 +1159,35 @@ namespace SpielDesLebens
             this._panel2.Controls.Add(this._userInfo);
             this._panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this._panel2.Location = new System.Drawing.Point(0, 0);
-            this._panel2.Name = "panel2";
+            this._panel2.Name = "_panel2";
             this._panel2.Size = new System.Drawing.Size(240, 642);
             this._panel2.TabIndex = 6;
             // 
-            // backToMenuBtn
+            // _backToMenuBtn
             // 
             this._backToMenuBtn.BackColor = System.Drawing.Color.Transparent;
             this._backToMenuBtn.ForeColor = System.Drawing.Color.White;
             this._backToMenuBtn.Location = new System.Drawing.Point(30, 585);
-            this._backToMenuBtn.Name = "backToMenuBtn";
+            this._backToMenuBtn.Name = "_backToMenuBtn";
             this._backToMenuBtn.Size = new System.Drawing.Size(185, 23);
             this._backToMenuBtn.TabIndex = 17;
             this._backToMenuBtn.Text = "Zurück zum Hauptmenü";
             this._backToMenuBtn.UseVisualStyleBackColor = false;
             this._backToMenuBtn.Click += new System.EventHandler(this.BackToMenuBtnClick);
             // 
-            // saveBtn
+            // _saveBtn
             // 
             this._saveBtn.BackColor = System.Drawing.Color.Transparent;
             this._saveBtn.ForeColor = System.Drawing.Color.White;
             this._saveBtn.Location = new System.Drawing.Point(30, 548);
-            this._saveBtn.Name = "saveBtn";
+            this._saveBtn.Name = "_saveBtn";
             this._saveBtn.Size = new System.Drawing.Size(185, 23);
             this._saveBtn.TabIndex = 16;
             this._saveBtn.Text = "Speichern";
             this._saveBtn.UseVisualStyleBackColor = false;
             this._saveBtn.Click += new System.EventHandler(this.SaveBtnClick);
             // 
-            // action3Btn
+            // _action3Btn
             // 
             this._action3Btn.BackColor = System.Drawing.Color.Transparent;
             this._action3Btn.FlatAppearance.BorderSize = 0;
@@ -1198,7 +1197,7 @@ namespace SpielDesLebens
             this._action3Btn.Image = global::SpielDesLebens.Properties.Resources.homeworkIconSmall;
             this._action3Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this._action3Btn.Location = new System.Drawing.Point(0, 450);
-            this._action3Btn.Name = "action3Btn";
+            this._action3Btn.Name = "_action3Btn";
             this._action3Btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this._action3Btn.Size = new System.Drawing.Size(240, 60);
             this._action3Btn.TabIndex = 15;
@@ -1209,7 +1208,7 @@ namespace SpielDesLebens
             this._action3Btn.MouseLeave += new System.EventHandler(this.CloseHoverAction);
             this._action3Btn.MouseHover += new System.EventHandler(this.HoverActionTxtShow3);
             // 
-            // action2Btn
+            // _action2Btn
             // 
             this._action2Btn.BackColor = System.Drawing.Color.Transparent;
             this._action2Btn.FlatAppearance.BorderSize = 0;
@@ -1219,7 +1218,7 @@ namespace SpielDesLebens
             this._action2Btn.Image = global::SpielDesLebens.Properties.Resources.criminal48Px;
             this._action2Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this._action2Btn.Location = new System.Drawing.Point(0, 380);
-            this._action2Btn.Name = "action2Btn";
+            this._action2Btn.Name = "_action2Btn";
             this._action2Btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this._action2Btn.Size = new System.Drawing.Size(240, 60);
             this._action2Btn.TabIndex = 14;
@@ -1230,17 +1229,16 @@ namespace SpielDesLebens
             this._action2Btn.MouseLeave += new System.EventHandler(this.CloseHoverAction);
             this._action2Btn.MouseHover += new System.EventHandler(this.HoverActionTxtShow2);
             // 
-            // action1Btn
+            // _action1Btn
             // 
             this._action1Btn.BackColor = System.Drawing.Color.Transparent;
             this._action1Btn.FlatAppearance.BorderSize = 0;
             this._action1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._action1Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.980198F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._action1Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this._action1Btn.Image = ((System.Drawing.Image)(resources.GetObject("action1Btn.Image")));
             this._action1Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this._action1Btn.Location = new System.Drawing.Point(0, 310);
-            this._action1Btn.Name = "action1Btn";
+            this._action1Btn.Name = "_action1Btn";
             this._action1Btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this._action1Btn.Size = new System.Drawing.Size(240, 60);
             this._action1Btn.TabIndex = 13;
@@ -1251,7 +1249,7 @@ namespace SpielDesLebens
             this._action1Btn.MouseLeave += new System.EventHandler(this.CloseHoverAction);
             this._action1Btn.MouseHover += new System.EventHandler(this.HoverActionTxtShow1);
             // 
-            // action0Btn
+            // _action0Btn
             // 
             this._action0Btn.BackColor = System.Drawing.Color.Transparent;
             this._action0Btn.FlatAppearance.BorderSize = 0;
@@ -1261,7 +1259,7 @@ namespace SpielDesLebens
             this._action0Btn.Image = global::SpielDesLebens.Properties.Resources.motivation48Px;
             this._action0Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this._action0Btn.Location = new System.Drawing.Point(0, 240);
-            this._action0Btn.Name = "action0Btn";
+            this._action0Btn.Name = "_action0Btn";
             this._action0Btn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this._action0Btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this._action0Btn.Size = new System.Drawing.Size(240, 60);
@@ -1273,7 +1271,7 @@ namespace SpielDesLebens
             this._action0Btn.MouseLeave += new System.EventHandler(this.CloseHoverAction);
             this._action0Btn.MouseHover += new System.EventHandler(this.HoverActionTxtShow0);
             // 
-            // userInfo
+            // _userInfo
             // 
             this._userInfo.BackColor = System.Drawing.Color.Transparent;
             this._userInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -1287,81 +1285,81 @@ namespace SpielDesLebens
             this._userInfo.Controls.Add(this._lblPlayerAge);
             this._userInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this._userInfo.Location = new System.Drawing.Point(0, 0);
-            this._userInfo.Name = "userInfo";
+            this._userInfo.Name = "_userInfo";
             this._userInfo.Size = new System.Drawing.Size(238, 217);
             this._userInfo.TabIndex = 2;
             // 
-            // lblPlayerPath
+            // _lblPlayerPath
             // 
             this._lblPlayerPath.AutoSize = true;
             this._lblPlayerPath.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._lblPlayerPath.Location = new System.Drawing.Point(100, 167);
             this._lblPlayerPath.MaximumSize = new System.Drawing.Size(120, 0);
-            this._lblPlayerPath.Name = "lblPlayerPath";
+            this._lblPlayerPath.Name = "_lblPlayerPath";
             this._lblPlayerPath.Size = new System.Drawing.Size(102, 13);
             this._lblPlayerPath.TabIndex = 11;
             this._lblPlayerPath.Text = "Spieler Bildungsweg";
             // 
-            // lblPath
+            // _lblPath
             // 
             this._lblPath.AutoSize = true;
             this._lblPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._lblPath.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._lblPath.Location = new System.Drawing.Point(42, 167);
-            this._lblPath.Name = "lblPath";
+            this._lblPath.Name = "_lblPath";
             this._lblPath.Size = new System.Drawing.Size(55, 13);
             this._lblPath.TabIndex = 10;
             this._lblPath.Text = "Karriere:";
             // 
-            // lblPlayerName
+            // _lblPlayerName
             // 
             this._lblPlayerName.AutoSize = true;
             this._lblPlayerName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._lblPlayerName.Location = new System.Drawing.Point(100, 127);
-            this._lblPlayerName.Name = "lblPlayerName";
+            this._lblPlayerName.Name = "_lblPlayerName";
             this._lblPlayerName.Size = new System.Drawing.Size(70, 13);
             this._lblPlayerName.TabIndex = 6;
             this._lblPlayerName.Text = "Spieler Name";
             // 
-            // lblAge
+            // _lblAge
             // 
             this._lblAge.AutoSize = true;
             this._lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._lblAge.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._lblAge.Location = new System.Drawing.Point(42, 147);
-            this._lblAge.Name = "lblAge";
+            this._lblAge.Name = "_lblAge";
             this._lblAge.Size = new System.Drawing.Size(37, 13);
             this._lblAge.TabIndex = 9;
             this._lblAge.Text = "Alter:";
             // 
-            // avatarPic
+            // _avatarPic
             // 
             this._avatarPic.InitialImage = null;
             this._avatarPic.Location = new System.Drawing.Point(64, 11);
-            this._avatarPic.Name = "avatarPic";
+            this._avatarPic.Name = "_avatarPic";
             this._avatarPic.Size = new System.Drawing.Size(98, 106);
             this._avatarPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this._avatarPic.TabIndex = 5;
             this._avatarPic.TabStop = false;
             this._avatarPic.Click += new System.EventHandler(this.NewProfessionOptOpen);
             // 
-            // lblName
+            // _lblName
             // 
             this._lblName.AutoSize = true;
             this._lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.841584F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._lblName.Location = new System.Drawing.Point(42, 127);
-            this._lblName.Name = "lblName";
+            this._lblName.Name = "_lblName";
             this._lblName.Size = new System.Drawing.Size(43, 13);
             this._lblName.TabIndex = 8;
             this._lblName.Text = "Name:";
             // 
-            // lblPlayerAge
+            // _lblPlayerAge
             // 
             this._lblPlayerAge.AutoSize = true;
             this._lblPlayerAge.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this._lblPlayerAge.Location = new System.Drawing.Point(100, 147);
-            this._lblPlayerAge.Name = "lblPlayerAge";
+            this._lblPlayerAge.Name = "_lblPlayerAge";
             this._lblPlayerAge.Size = new System.Drawing.Size(63, 13);
             this._lblPlayerAge.TabIndex = 7;
             this._lblPlayerAge.Text = "Spieler Alter";

@@ -430,17 +430,10 @@ namespace SpielDesLebens
             _avatarBox5.BorderStyle = BorderStyle.None;
             _avatarBox6.BorderStyle = BorderStyle.None;
 
-
-
-
-
             _dropDownPath.Items.Clear();
             _dropDownProfession.Items.Clear();
-
-            _fictionPanel.Visible = true;
             _panel1.Visible = true;
             _panel1.BringToFront();
-            _fictionPanel.BringToFront();
         }
     }
 }

@@ -473,6 +473,7 @@ namespace SpielDesLebens
                 ProfessionSet(_refrenceProfession);
                 _uiInterface.ResetPath(_training, _profession);
                 _newProfessionYesBtn.Text = "Ja";
+                BtnLoadEventClick();
             }
             _newProfessionPanel.Visible = false;
             _newProfessionPathLable.Visible = false;
@@ -624,6 +625,7 @@ namespace SpielDesLebens
         {
             _uiInterface.NextPhase();
             BtnLoadEventClick();
+            AllOptionsEnable();
         }
 
         private void SaveBtnClick(object sender, EventArgs e)
