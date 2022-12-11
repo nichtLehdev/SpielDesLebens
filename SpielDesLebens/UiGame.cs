@@ -319,6 +319,10 @@ namespace SpielDesLebens
             string gameOverText = _uiInterface.GetGameEnd();
             if (gameOverText != "")
             {
+                if (gameOverText.StartsWith("Erfolg"))
+                {
+                    _gameOverTitle.Text = "Erfolg";
+                }
                 _gameOverPanel.Visible = true;
                 _nextPhaseBtn.Enabled = false;
                 _saveBtn.Enabled = false;
