@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SpielDesLebens.Properties {
-    using System;
-    
-    
+namespace SpielDesLebens.Properties
+{
+
+
     /// <summary>
     ///   Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
     /// </summary>

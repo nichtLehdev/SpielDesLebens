@@ -737,7 +737,7 @@ namespace SpielDesLebens
             this._gameOverBtn.Name = "_gameOverBtn";
             this._gameOverBtn.Size = new System.Drawing.Size(100, 40);
             this._gameOverBtn.TabIndex = 10;
-            this._gameOverBtn.Text = "Zum Main Menu";
+            this._gameOverBtn.Text = "Zum Hauptmenü";
             this._gameOverBtn.UseVisualStyleBackColor = true;
             this._gameOverBtn.Click += new System.EventHandler(this.GameOverBtnClick);
             // 

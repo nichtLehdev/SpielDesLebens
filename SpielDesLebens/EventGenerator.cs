@@ -17,7 +17,7 @@ namespace SpielDesLebens
         private int _seed;
 
 
-        #region Getter and Setter
+        #region GetterSetter
         public List<Event> GetFilteredEventsPathProf()
         {
             return _filteredEventsPathProfession;
@@ -44,6 +44,13 @@ namespace SpielDesLebens
         {
             FilterEventsByPhase();
             List<Event> events = FilterEventsByStats(stats).OrderBy(x => x.GetPriority()).ToList();
+
+            // There to prvent a crash if there are no events left.
+            // Ugly fix for the game end, because there again an event is requested for a phase for which there are no events.
+            if (events.Count == 0)
+            {
+                return _filteredEventsPathProfession[0];
+            }
 
             if (events[0].GetPriority() == 0)
             {
@@ -116,7 +123,7 @@ namespace SpielDesLebens
             _filteredEventsPathProfession.RemoveAt(FindEventIndexByID(id));
         }
 
-        #region load career events
+        #region LoadCareerEvents
         // Saves all events from JSON to LoadEvents in a list, saves all LoadEvents as Events.
         private List<Event> LoadEvents()
         {
@@ -152,7 +159,7 @@ namespace SpielDesLebens
         }
         #endregion
 
-        #region filter
+        #region Filter
         private void FilterEventsByPhase()
         {
             _filteredEventsPhase.Clear();

@@ -9,7 +9,7 @@ namespace SpielDesLebens
         private readonly string _info;
         private readonly Option _result;
 
-        #region getters
+        #region Getter
         public string GetId() { return _id; }
         public string GetTitle() { return _title; }
         public string GetInfo() { return _info; }

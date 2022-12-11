@@ -41,7 +41,7 @@ namespace SpielDesLebens
             _currentActions = _player.GetActionGenerator().GetActions();
         }
 
-        #region getActionString        
+        #region GetActionString        
         public string GetActionTitle(int action)
         {
             if (action >= _currentActions.Count)
@@ -131,7 +131,7 @@ namespace SpielDesLebens
         #endregion
 
 
-        #region getEventString
+        #region GetEventString
         public string GetEventOptionTitle(int option)
         {
             if (option >= _currentEvent.GetOptions().Count)
@@ -184,16 +184,11 @@ namespace SpielDesLebens
         {
             return _player.GetEducationPath().GetPhase().GetActionPoints();
         }
+
         public int GetCurrentPhase()
         {
             return _player.GetEducationPath().GetPhase().GetCurrentPhase();
         }
-
-        public void SetCurrentPhase(int newCurrentPhase)
-        {
-            _player.GetEducationPath().GetPhase().SetCurrentPhase(newCurrentPhase);
-        }
-
 
         public int GetMaxPhaseNumber()
         {
@@ -205,8 +200,7 @@ namespace SpielDesLebens
             return _player.GetGraduation();
         }
 
-
-        #region getPlayerStats
+        #region GetPlayerStats
         public int GetPlayerMoney()
         {
             foreach (StatParameter statsp in _player.GetPlayerStat().GetStats())
@@ -362,7 +356,8 @@ namespace SpielDesLebens
                     return true;
                 }
             }
-            else if (_player.GetEducationPath().GetPath() == Data.Path.Study) // seperatly in case of changes in the future
+            // Seperatly in case of changes in the future.
+            else if (_player.GetEducationPath().GetPath() == Data.Path.Study)
             {
                 if (currentPhase % 2 != 0)
                 {
