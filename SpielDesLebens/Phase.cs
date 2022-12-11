@@ -47,11 +47,6 @@ namespace SpielDesLebens
             return _currentPhase;
         }
 
-        public void SetCurrentPhase(int newCurntPhase)
-        {
-            _currentPhase = newCurntPhase;
-        }
-
         public int GetMaxPhaseNumber()
         {
             return (int)((3 * 12) / (_maxActionPoints / 7));

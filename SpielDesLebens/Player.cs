@@ -35,7 +35,7 @@ namespace SpielDesLebens
             _eduPath = eduPath;
         }
 
-        #region createOrReset
+        #region CreateOrReset
 
         public void ResetCareer(Data.Path path, Data.Profession profession)
         {

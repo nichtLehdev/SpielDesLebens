@@ -188,6 +188,7 @@ namespace SpielDesLebens
         {
             _panel1.Visible = true;
             _layouNewGame.Visible = false;
+            ResetForm();
         }
 
         private void TxtOldKeyPress(object sender, KeyPressEventArgs e)

@@ -19,8 +19,6 @@ namespace SpielDesLebens
         private string _refrencePath;
         private string _refrenceProfession;
 
-
-
         public UiGame(UiMenu uiMenu, UiInterface uiInterface, bool newGame)
         {
             InitializeComponent();
@@ -37,7 +35,7 @@ namespace SpielDesLebens
             _lblPlayerPath.Text = _uiInterface.GetPlayerProfessionName();
             _avatarPic.Image = SetAvatar();
             BtnLoadEventClick();
-            UpdateActionpoints();
+            UpdateActionPoints();
             if (_newGame == true)
             {
                 AllOptionsDisable();
@@ -50,12 +48,12 @@ namespace SpielDesLebens
         {
             switch (_uiInterface.GetAvatar())
             {
-                case 1: return SpielDesLebens.Properties.Resources.avatarBoy0;
-                case 2: return SpielDesLebens.Properties.Resources.avatarBoy1;
-                case 3: return SpielDesLebens.Properties.Resources.avatarBoy2;
-                case 4: return SpielDesLebens.Properties.Resources.avatarGirl0;
-                case 5: return SpielDesLebens.Properties.Resources.avatarGirl1;
-                case 6: return SpielDesLebens.Properties.Resources.avatarGirl2;
+                case 1: return Properties.Resources.avatarBoy0;
+                case 2: return Properties.Resources.avatarBoy1;
+                case 3: return Properties.Resources.avatarBoy2;
+                case 4: return Properties.Resources.avatarGirl0;
+                case 5: return Properties.Resources.avatarGirl1;
+                case 6: return Properties.Resources.avatarGirl2;
                 default: throw new Error("There has to be an avatar");
             }
         }
@@ -134,7 +132,7 @@ namespace SpielDesLebens
 
         private void BtnLoadEventClick()
         {
-            UpdateActionpoints();
+            UpdateActionPoints();
             _uiInterface.NextEvent();
             _eventTitle.Text = _uiInterface.GetEventTitle();
             _eventTxtBox.Text = _uiInterface.GetEventText();
@@ -168,6 +166,7 @@ namespace SpielDesLebens
                 _option4Btn.Visible = false;
             }
         }
+
         private void AllOptionsDisable()
         {
             _option1Btn.Enabled = false;
@@ -241,15 +240,15 @@ namespace SpielDesLebens
             WarningCheck();
         }
 
-        private void UpdateActionpoints()
+        private void UpdateActionPoints()
         {
             if (_uiInterface.IsInSchool() == true)
             {
-                _panelActiveChild.BackgroundImage = SpielDesLebens.Properties.Resources.uniTable;
+                _panelActiveChild.BackgroundImage = Properties.Resources.uniTable;
             }
             else
             {
-                _panelActiveChild.BackgroundImage = SpielDesLebens.Properties.Resources.coworking;
+                _panelActiveChild.BackgroundImage = Properties.Resources.coworking;
             }
             double actionPoints = _uiInterface.GetActionPoints();
             double curPhase = _uiInterface.GetCurrentPhase();
@@ -306,11 +305,11 @@ namespace SpielDesLebens
         {
             switch (r)
             {
-                case -1: return SpielDesLebens.Properties.Resources.criminal48Px;
-                case 0: return SpielDesLebens.Properties.Resources.mentalHealth48Px;
-                case 1: return SpielDesLebens.Properties.Resources.money48Px;
-                case 2: return SpielDesLebens.Properties.Resources.motivation48Px;
-                case 3: return SpielDesLebens.Properties.Resources.homeworkIconSmall;
+                case -1: return Properties.Resources.criminal48Px;
+                case 0: return Properties.Resources.mentalHealth48Px;
+                case 1: return Properties.Resources.money48Px;
+                case 2: return Properties.Resources.motivation48Px;
+                case 3: return Properties.Resources.homeworkIconSmall;
                 default: throw new Error("There has to be an icon for actions");
             }
         }
@@ -321,7 +320,8 @@ namespace SpielDesLebens
         }
         private void GameOverCheck()
         {
-            if (_uiInterface.GetGameEnd() != "")
+            string gameOverText = _uiInterface.GetGameEnd();
+            if (gameOverText != "")
             {
                 _gameOverPanel.Visible = true;
                 _nextPhaseBtn.Enabled = false;
@@ -329,7 +329,7 @@ namespace SpielDesLebens
                 _backToMenuBtn.Enabled = false;
                 _tutorialBtn2.Enabled = false;
                 AllOptionsDisable();
-                _gameOverTxt.Text = _uiInterface.GetGameEnd();
+                _gameOverTxt.Text = gameOverText;
             }
         }
 
@@ -337,6 +337,7 @@ namespace SpielDesLebens
         {
             ToMenu();
         }
+
         private void ToMenu()
         {
             _uiMenu.ResetForm();
@@ -345,6 +346,7 @@ namespace SpielDesLebens
             _uiMenu.BringToFront();
             Hide();
         }
+
         private void EndTutorial(object sender, EventArgs e)
         {
             _tutorialAskPanel.Visible = false;
@@ -435,7 +437,7 @@ namespace SpielDesLebens
             }
             else
             {
-                UpdateActionpoints();
+                UpdateActionPoints();
             }
             if (_uiInterface.GetActionPoints() == 1)
             {
@@ -484,7 +486,6 @@ namespace SpielDesLebens
                 PathSet(_refrencePath);
                 ProfessionSet(_refrenceProfession);
                 _uiInterface.ResetPath(_path, _profession);
-                _uiInterface.SetCurrentPhase(0);
                 _newProfessionYesBtn.Text = "Ja";
                 _newProfessionNoBtn.Text = "Nein";
                 BtnLoadEventClick();
@@ -501,7 +502,7 @@ namespace SpielDesLebens
                 _newProfessionProfessionLable.Visible = false;
                 _newProfessionProfessionComboBox.Visible = false;
                 AllOptionsEnable();
-                UpdateActionpoints();
+                UpdateActionPoints();
             }
         }
 
@@ -589,7 +590,7 @@ namespace SpielDesLebens
             }
             else if (_newProfessionPathComboBox.Text == "Duales Studium")
             {
-                _refrencePath = "DualStuy";
+                _refrencePath = "DualStudy";
                 _newProfessionProfessionComboBox.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
             }
             else if (_newProfessionPathComboBox.Text == "Studium")
@@ -643,6 +644,7 @@ namespace SpielDesLebens
             _uiInterface.NextPhase();
             BtnLoadEventClick();
             AllOptionsEnable();
+
         }
 
         private void SaveBtnClick(object sender, EventArgs e)
