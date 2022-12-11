@@ -154,6 +154,7 @@ namespace SpielDesLebens
             // 
             this._panelActiveChild.BackColor = System.Drawing.Color.SeaShell;
             this._panelActiveChild.BackgroundImage = global::SpielDesLebens.Properties.Resources.uniTable;
+            this._panelActiveChild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._panelActiveChild.Controls.Add(this._tutorialPanel7);
             this._panelActiveChild.Controls.Add(this._infoActionPanel0);
             this._panelActiveChild.Controls.Add(this._infoActionPanel2);
