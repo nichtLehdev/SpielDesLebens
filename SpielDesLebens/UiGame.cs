@@ -11,6 +11,7 @@ namespace SpielDesLebens
         private Form _activeForm;
         private readonly UiInterface _uiInterface;
         private readonly bool _newGame;
+        private int _actionChosen;
 
         private Data.Path _training;
         private Data.Profession _profession;
@@ -94,6 +95,7 @@ namespace SpielDesLebens
 
         private void Action0Click(object sender, EventArgs e)
         {
+            _actionChosen = 0;
             _actionText.Text = _uiInterface.GetActionOptionText(0);
             _actionTitle.Text = _uiInterface.GetActionTitle(0);
             ActionTextShow();
@@ -101,6 +103,7 @@ namespace SpielDesLebens
 
         private void Action1Click(object sender, EventArgs e)
         {
+            _actionChosen = 1;
             _actionText.Text = _uiInterface.GetActionOptionText(1);
             _actionTitle.Text = _uiInterface.GetActionTitle(1);
             ActionTextShow();
@@ -108,6 +111,7 @@ namespace SpielDesLebens
 
         private void Action2Click(object sender, EventArgs e)
         {
+            _actionChosen = 2;
             _actionText.Text = _uiInterface.GetActionOptionText(2);
             _actionTitle.Text = _uiInterface.GetActionTitle(2);
             ActionTextShow();
@@ -115,6 +119,7 @@ namespace SpielDesLebens
 
         private void Action3Click(object sender, EventArgs e)
         {
+            _actionChosen = 3;
             _actionText.Text = _uiInterface.GetActionOptionText(3);
             _actionTitle.Text = _uiInterface.GetActionTitle(3);
             ActionTextShow();
@@ -123,14 +128,6 @@ namespace SpielDesLebens
         {
             _actionPanel.Visible = true;
             AllOptionsDisable();
-            if ("Derzeitige Phase: " + _uiInterface.GetCurrentPhase() != _currentPhaseTxt.Text)
-            {
-                BtnLoadEventClick();
-            }
-            else
-            {
-                UpdateActionpoints();
-            }
         }
 
         private void BtnLoadEventClick()
@@ -424,6 +421,15 @@ namespace SpielDesLebens
         {
             _actionPanel.Visible = false;
             AllOptionsEnable();
+            _uiInterface.AfterActionTextRecieved(_actionChosen);
+            if ("Derzeitige Phase: " + _uiInterface.GetCurrentPhase() != _currentPhaseTxt.Text)
+            {
+                BtnLoadEventClick();
+            }
+            else
+            {
+                UpdateActionpoints();
+            }
             if (_uiInterface.GetActionPoints() == 1)
             {
                 _option1Btn.Enabled = false;

@@ -86,10 +86,14 @@ namespace SpielDesLebens
             }
             else
             {
-                SubtractActionPoints(1);
-                _player.ChangePlayerStat(_currentActions[action].GetResult().GetOptionStat());
                 return _currentActions[action].GetResult().GetText();
             }
+        }
+
+        public void AfterActionTextRecieved(int action)
+        {
+            SubtractActionPoints(1);
+            _player.ChangePlayerStat(_currentActions[action].GetResult().GetOptionStat());
         }
 
         public int GetActionOptionMainStat(int action)
