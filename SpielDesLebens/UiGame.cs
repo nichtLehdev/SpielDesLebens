@@ -211,7 +211,6 @@ namespace SpielDesLebens
             _showInfoBtn.Visible = false;
             _closeOptEndTxt.Visible = true;
             AllOptionsHide();
-            WarningCheck();
         }
         private void Option2Click(object sender, EventArgs e)
         {
@@ -219,7 +218,6 @@ namespace SpielDesLebens
             _showInfoBtn.Visible = false;
             _closeOptEndTxt.Visible = true;
             AllOptionsHide();
-            WarningCheck();
 
         }
         private void Option3Click(object sender, EventArgs e)
@@ -228,7 +226,6 @@ namespace SpielDesLebens
             _showInfoBtn.Visible = false;
             _closeOptEndTxt.Visible = true;
             AllOptionsHide();
-            WarningCheck();
         }
 
         private void Option4Click(object sender, EventArgs e)
@@ -237,7 +234,6 @@ namespace SpielDesLebens
             _showInfoBtn.Visible = false;
             _closeOptEndTxt.Visible = true;
             AllOptionsHide();
-            WarningCheck();
         }
 
         private void UpdateActionPoints()
@@ -284,7 +280,6 @@ namespace SpielDesLebens
                 _option4Btn.Enabled = true;
                 _showInfoBtn.Enabled = true;
             }
-            WarningCheck();
             GameOverCheck();
             GetNewActions();
         }
@@ -317,6 +312,7 @@ namespace SpielDesLebens
         {
             _closeOptEndTxt.Visible = false;
             BtnLoadEventClick();
+            WarningCheck();
         }
         private void GameOverCheck()
         {
