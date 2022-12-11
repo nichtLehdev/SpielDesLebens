@@ -62,8 +62,8 @@ namespace SpielDesLebens
             this._newProfessionProfessionComboBox = new System.Windows.Forms.ComboBox();
             this._newProfessionYesBtn = new System.Windows.Forms.Button();
             this._newProfessionNoBtn = new System.Windows.Forms.Button();
-            this._newProfessionTitle = new System.Windows.Forms.TextBox();
-            this._newProfessionTxt = new System.Windows.Forms.TextBox();
+            this._newProfessionTitle = new System.Windows.Forms.Label();
+            this._newProfessionTxt = new System.Windows.Forms.Label();
             this._eventTitle = new System.Windows.Forms.Label();
             this._actionPanel = new System.Windows.Forms.Panel();
             this._button9 = new System.Windows.Forms.Button();
@@ -73,11 +73,11 @@ namespace SpielDesLebens
             this._tutorialAskPanel = new System.Windows.Forms.Panel();
             this._tutorialAskBtn = new System.Windows.Forms.Button();
             this._button2 = new System.Windows.Forms.Button();
-            this._tutorialAskTitle = new System.Windows.Forms.TextBox();
+            this._tutorialAskTitle = new System.Windows.Forms.Label();
             this._tutorialAskTxt = new System.Windows.Forms.TextBox();
             this._gameOverPanel = new System.Windows.Forms.Panel();
             this._gameOverBtn = new System.Windows.Forms.Button();
-            this._gameOverTitle = new System.Windows.Forms.TextBox();
+            this._gameOverTitle = new System.Windows.Forms.Label();
             this._gameOverTxt = new System.Windows.Forms.RichTextBox();
             this._infoPanel = new System.Windows.Forms.Panel();
             this._infoCloseButton = new System.Windows.Forms.Button();
@@ -97,9 +97,6 @@ namespace SpielDesLebens
             this._panel3 = new System.Windows.Forms.Panel();
             this._nextPhaseBtn = new System.Windows.Forms.Button();
             this._moneyProgBar = new System.Windows.Forms.TextBox();
-            this._tutorialPanel2 = new System.Windows.Forms.Panel();
-            this._tutorialBtn2 = new System.Windows.Forms.Button();
-            this._tutorialTxt2 = new System.Windows.Forms.TextBox();
             this._actionPointsTxt = new System.Windows.Forms.Label();
             this._leftPhaseTxt = new System.Windows.Forms.Label();
             this._currentPhaseTxt = new System.Windows.Forms.Label();
@@ -110,6 +107,9 @@ namespace SpielDesLebens
             this._mentalProgBar = new System.Windows.Forms.ProgressBar();
             this._motivationProgBar = new System.Windows.Forms.ProgressBar();
             this._learnProgBar = new System.Windows.Forms.ProgressBar();
+            this._tutorialPanel2 = new System.Windows.Forms.Panel();
+            this._tutorialBtn2 = new System.Windows.Forms.Button();
+            this._tutorialTxt2 = new System.Windows.Forms.TextBox();
             this._panel2 = new System.Windows.Forms.Panel();
             this._backToMenuBtn = new System.Windows.Forms.Button();
             this._saveBtn = new System.Windows.Forms.Button();
@@ -485,10 +485,10 @@ namespace SpielDesLebens
             // 
             this._newProfessionPanel.BackColor = System.Drawing.Color.FloralWhite;
             this._newProfessionPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._newProfessionPanel.Controls.Add(this._newProfessionProfessionComboBox);
             this._newProfessionPanel.Controls.Add(this._newProfessionPathComboBox);
             this._newProfessionPanel.Controls.Add(this._newProfessionPathLable);
             this._newProfessionPanel.Controls.Add(this._newProfessionProfessionLable);
-            this._newProfessionPanel.Controls.Add(this._newProfessionProfessionComboBox);
             this._newProfessionPanel.Controls.Add(this._newProfessionYesBtn);
             this._newProfessionPanel.Controls.Add(this._newProfessionNoBtn);
             this._newProfessionPanel.Controls.Add(this._newProfessionTitle);
@@ -502,7 +502,7 @@ namespace SpielDesLebens
             // _newProfessionPathComboBox
             // 
             this._newProfessionPathComboBox.FormattingEnabled = true;
-            this._newProfessionPathComboBox.Location = new System.Drawing.Point(128, 85);
+            this._newProfessionPathComboBox.Location = new System.Drawing.Point(125, 85);
             this._newProfessionPathComboBox.Name = "_newProfessionPathComboBox";
             this._newProfessionPathComboBox.Size = new System.Drawing.Size(204, 21);
             this._newProfessionPathComboBox.TabIndex = 16;
@@ -512,7 +512,7 @@ namespace SpielDesLebens
             // _newProfessionPathLable
             // 
             this._newProfessionPathLable.AutoSize = true;
-            this._newProfessionPathLable.BackColor = System.Drawing.Color.Transparent;
+            this._newProfessionPathLable.BackColor = System.Drawing.SystemColors.Control;
             this._newProfessionPathLable.Location = new System.Drawing.Point(41, 85);
             this._newProfessionPathLable.Name = "_newProfessionPathLable";
             this._newProfessionPathLable.Size = new System.Drawing.Size(67, 13);
@@ -523,7 +523,7 @@ namespace SpielDesLebens
             // _newProfessionProfessionLable
             // 
             this._newProfessionProfessionLable.AutoSize = true;
-            this._newProfessionProfessionLable.BackColor = System.Drawing.Color.Transparent;
+            this._newProfessionProfessionLable.BackColor = System.Drawing.SystemColors.Control;
             this._newProfessionProfessionLable.Location = new System.Drawing.Point(44, 119);
             this._newProfessionProfessionLable.Name = "_newProfessionProfessionLable";
             this._newProfessionProfessionLable.Size = new System.Drawing.Size(63, 13);
@@ -534,7 +534,7 @@ namespace SpielDesLebens
             // _newProfessionProfessionComboBox
             // 
             this._newProfessionProfessionComboBox.FormattingEnabled = true;
-            this._newProfessionProfessionComboBox.Location = new System.Drawing.Point(129, 116);
+            this._newProfessionProfessionComboBox.Location = new System.Drawing.Point(125, 116);
             this._newProfessionProfessionComboBox.Name = "_newProfessionProfessionComboBox";
             this._newProfessionProfessionComboBox.Size = new System.Drawing.Size(204, 21);
             this._newProfessionProfessionComboBox.TabIndex = 13;
@@ -564,12 +564,10 @@ namespace SpielDesLebens
             // _newProfessionTitle
             // 
             this._newProfessionTitle.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this._newProfessionTitle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this._newProfessionTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._newProfessionTitle.BackColor = System.Drawing.Color.Transparent;
             this._newProfessionTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._newProfessionTitle.Location = new System.Drawing.Point(33, 17);
             this._newProfessionTitle.Name = "_newProfessionTitle";
-            this._newProfessionTitle.ReadOnly = true;
             this._newProfessionTitle.Size = new System.Drawing.Size(185, 20);
             this._newProfessionTitle.TabIndex = 10;
             this._newProfessionTitle.Text = "Neue Karriere";
@@ -579,14 +577,15 @@ namespace SpielDesLebens
             this._newProfessionTxt.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._newProfessionTxt.BackColor = System.Drawing.SystemColors.Control;
             this._newProfessionTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._newProfessionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._newProfessionTxt.Location = new System.Drawing.Point(33, 52);
-            this._newProfessionTxt.Multiline = true;
+            this._newProfessionTxt.Margin = new System.Windows.Forms.Padding(3);
             this._newProfessionTxt.Name = "_newProfessionTxt";
-            this._newProfessionTxt.ReadOnly = true;
+            this._newProfessionTxt.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this._newProfessionTxt.Size = new System.Drawing.Size(300, 103);
             this._newProfessionTxt.TabIndex = 10;
             this._newProfessionTxt.Text = "Möchtest du deine Karriere ändern?";
-            this._newProfessionTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this._newProfessionTxt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // _eventTitle
             // 
@@ -698,12 +697,10 @@ namespace SpielDesLebens
             // _tutorialAskTitle
             // 
             this._tutorialAskTitle.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this._tutorialAskTitle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this._tutorialAskTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._tutorialAskTitle.BackColor = System.Drawing.Color.Transparent;
             this._tutorialAskTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._tutorialAskTitle.Location = new System.Drawing.Point(33, 17);
             this._tutorialAskTitle.Name = "_tutorialAskTitle";
-            this._tutorialAskTitle.ReadOnly = true;
             this._tutorialAskTitle.Size = new System.Drawing.Size(185, 20);
             this._tutorialAskTitle.TabIndex = 10;
             this._tutorialAskTitle.Text = "Tutorial";
@@ -746,12 +743,10 @@ namespace SpielDesLebens
             // 
             // _gameOverTitle
             // 
-            this._gameOverTitle.BackColor = System.Drawing.Color.White;
-            this._gameOverTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._gameOverTitle.BackColor = System.Drawing.Color.Transparent;
             this._gameOverTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._gameOverTitle.Location = new System.Drawing.Point(33, 17);
             this._gameOverTitle.Name = "_gameOverTitle";
-            this._gameOverTitle.ReadOnly = true;
             this._gameOverTitle.Size = new System.Drawing.Size(185, 20);
             this._gameOverTitle.TabIndex = 5;
             this._gameOverTitle.Text = "GameOver";
@@ -999,44 +994,6 @@ namespace SpielDesLebens
             this._moneyProgBar.Size = new System.Drawing.Size(162, 20);
             this._moneyProgBar.TabIndex = 15;
             // 
-            // _tutorialPanel2
-            // 
-            this._tutorialPanel2.BackColor = System.Drawing.Color.FloralWhite;
-            this._tutorialPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this._tutorialPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this._tutorialPanel2.Controls.Add(this._tutorialBtn2);
-            this._tutorialPanel2.Controls.Add(this._tutorialTxt2);
-            this._tutorialPanel2.Location = new System.Drawing.Point(31, 496);
-            this._tutorialPanel2.Name = "_tutorialPanel2";
-            this._tutorialPanel2.Size = new System.Drawing.Size(169, 133);
-            this._tutorialPanel2.TabIndex = 11;
-            this._tutorialPanel2.Visible = false;
-            // 
-            // _tutorialBtn2
-            // 
-            this._tutorialBtn2.Location = new System.Drawing.Point(92, 103);
-            this._tutorialBtn2.Name = "_tutorialBtn2";
-            this._tutorialBtn2.Size = new System.Drawing.Size(62, 25);
-            this._tutorialBtn2.TabIndex = 13;
-            this._tutorialBtn2.Text = "Weiter";
-            this._tutorialBtn2.UseVisualStyleBackColor = true;
-            this._tutorialBtn2.Click += new System.EventHandler(this.ContinueTutorial2);
-            // 
-            // _tutorialTxt2
-            // 
-            this._tutorialTxt2.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this._tutorialTxt2.BackColor = System.Drawing.SystemColors.Control;
-            this._tutorialTxt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this._tutorialTxt2.Location = new System.Drawing.Point(15, 14);
-            this._tutorialTxt2.Multiline = true;
-            this._tutorialTxt2.Name = "_tutorialTxt2";
-            this._tutorialTxt2.ReadOnly = true;
-            this._tutorialTxt2.Size = new System.Drawing.Size(139, 83);
-            this._tutorialTxt2.TabIndex = 11;
-            this._tutorialTxt2.Text = "Auf der rechten Seite werden die Stats deines Charakters angezeigt. Wenn mindeste" +
-    "ns einer der Attribute auf 0 fällt, ist das Spiel verloren.";
-            this._tutorialTxt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // _actionPointsTxt
             // 
             this._actionPointsTxt.AutoSize = true;
@@ -1145,6 +1102,44 @@ namespace SpielDesLebens
             this._learnProgBar.Size = new System.Drawing.Size(162, 23);
             this._learnProgBar.TabIndex = 1;
             this._learnProgBar.Value = 70;
+            // 
+            // _tutorialPanel2
+            // 
+            this._tutorialPanel2.BackColor = System.Drawing.Color.FloralWhite;
+            this._tutorialPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this._tutorialPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._tutorialPanel2.Controls.Add(this._tutorialBtn2);
+            this._tutorialPanel2.Controls.Add(this._tutorialTxt2);
+            this._tutorialPanel2.Location = new System.Drawing.Point(31, 496);
+            this._tutorialPanel2.Name = "_tutorialPanel2";
+            this._tutorialPanel2.Size = new System.Drawing.Size(169, 133);
+            this._tutorialPanel2.TabIndex = 11;
+            this._tutorialPanel2.Visible = false;
+            // 
+            // _tutorialBtn2
+            // 
+            this._tutorialBtn2.Location = new System.Drawing.Point(92, 103);
+            this._tutorialBtn2.Name = "_tutorialBtn2";
+            this._tutorialBtn2.Size = new System.Drawing.Size(62, 25);
+            this._tutorialBtn2.TabIndex = 13;
+            this._tutorialBtn2.Text = "Weiter";
+            this._tutorialBtn2.UseVisualStyleBackColor = true;
+            this._tutorialBtn2.Click += new System.EventHandler(this.ContinueTutorial2);
+            // 
+            // _tutorialTxt2
+            // 
+            this._tutorialTxt2.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this._tutorialTxt2.BackColor = System.Drawing.SystemColors.Control;
+            this._tutorialTxt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._tutorialTxt2.Location = new System.Drawing.Point(15, 14);
+            this._tutorialTxt2.Multiline = true;
+            this._tutorialTxt2.Name = "_tutorialTxt2";
+            this._tutorialTxt2.ReadOnly = true;
+            this._tutorialTxt2.Size = new System.Drawing.Size(139, 83);
+            this._tutorialTxt2.TabIndex = 11;
+            this._tutorialTxt2.Text = "Auf der rechten Seite werden die Stats deines Charakters angezeigt. Wenn mindeste" +
+    "ns einer der Attribute auf 0 fällt, ist das Spiel verloren.";
+            this._tutorialTxt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // _panel2
             // 
@@ -1410,7 +1405,6 @@ namespace SpielDesLebens
             this._tutorialAskPanel.ResumeLayout(false);
             this._tutorialAskPanel.PerformLayout();
             this._gameOverPanel.ResumeLayout(false);
-            this._gameOverPanel.PerformLayout();
             this._infoPanel.ResumeLayout(false);
             this._panel4.ResumeLayout(false);
             this._panel4.PerformLayout();
@@ -1469,12 +1463,12 @@ namespace SpielDesLebens
       private System.Windows.Forms.Button _closeOptEndTxt;
       private System.Windows.Forms.Panel _gameOverPanel;
       private System.Windows.Forms.Button _gameOverBtn;
-      private System.Windows.Forms.TextBox _gameOverTitle;
+      private System.Windows.Forms.Label _gameOverTitle;
       private System.Windows.Forms.RichTextBox _gameOverTxt;
       private System.Windows.Forms.Panel _tutorialAskPanel;
       private System.Windows.Forms.Button _tutorialAskBtn;
       private System.Windows.Forms.Button _button2;
-      private System.Windows.Forms.TextBox _tutorialAskTitle;
+      private System.Windows.Forms.Label _tutorialAskTitle;
       private System.Windows.Forms.TextBox _tutorialAskTxt;
       private System.Windows.Forms.Panel _tutorialPanel1;
       private System.Windows.Forms.Button _button3;
@@ -1510,8 +1504,8 @@ namespace SpielDesLebens
       private System.Windows.Forms.Panel _newProfessionPanel;
       private System.Windows.Forms.Button _newProfessionYesBtn;
       private System.Windows.Forms.Button _newProfessionNoBtn;
-      private System.Windows.Forms.TextBox _newProfessionTitle;
-      private System.Windows.Forms.TextBox _newProfessionTxt;
+      private System.Windows.Forms.Label _newProfessionTitle;
+      private System.Windows.Forms.Label _newProfessionTxt;
       private System.Windows.Forms.Label _newProfessionProfessionLable;
       private System.Windows.Forms.ComboBox _newProfessionProfessionComboBox;
       private System.Windows.Forms.Label _lblPlayerPath;
