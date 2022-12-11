@@ -118,7 +118,7 @@
       "result": {
          "id": "A-008_1",
          "title": "Der nächste Tag",
-         "text": "Du nun zwar motiviert, aber leider noch so betrunken, dass du heute nicht produktiv bist.",
+         "text": "Du bist zwar nun motiviert, aber leider noch so betrunken, dass du heute nicht produktiv bist.",
          "stats": {
             "mentalHealth": 5,
             "motivation": 15,
@@ -129,7 +129,7 @@
    },
    {
       "id": "A-009",
-      "title": "Einen spaziergang machen",
+      "title": "Einen Spaziergang machen",
       "info": "Kostenlos und gut für die Gesundheit",
       "result": {
          "id": "A-009_1",
@@ -146,7 +146,7 @@
    {
       "id": "A-010",
       "title": "Gut essen gehen",
-      "info": "Gute Essen gehen ist teuer, aber es lohnt sich",
+      "info": "Gut Essen gehen ist teuer, aber es lohnt sich",
       "result": {
          "id": "A-010_1",
          "title": "Das war lecker",
@@ -230,7 +230,7 @@
       "result": {
          "id": "A-015_1",
          "title": "Du hast eine neuen Highscore erreicht",
-         "text": "Motivation und Mental Health haben wurden gesteigert.",
+         "text": "Motivation und Mental Health wurden gesteigert.",
          "stats": {
             "mentalHealth": 5,
             "motivation": 15,
@@ -242,7 +242,7 @@
    {
       "id": "A-016",
       "title": "Kochen / Backen",
-      "info": "Wenn du es schaffst ein etwas genießbares zu kreieren, dann ist das ein Erfolg",
+      "info": "Wenn du es geschafft hast etwas genießbares zu kreieren, dann ist das ein Erfolg",
       "result": {
          "id": "A-016_1",
          "title": "Die Küche steht in Flammen",
@@ -390,7 +390,7 @@
       "result": {
          "id": "A-025_1",
          "title": "Erholt und motiviert",
-         "text": "Da du dich entspannt hast, bist du nun motiviert und in psychisch bester Verfassung, dass du die liegengebliebenen Aufgaben in kürzester Zeit erledigen kannst.",
+         "text": "Da du dich entspannt hast, bist du nun motiviert und in psychisch bester Verfassung, dass du die liegengebliebenen Aufgaben in kürzester Zeit erledigst kannst.",
          "stats": {
             "mentalHealth": 15,
             "motivation": 10,
@@ -454,7 +454,7 @@
       "result": {
          "id": "A-029_1",
          "title": "Ob sich der Aufwand gelohnt hat ?",
-         "text": "Du hast Erfolgreich den Kurs abgeschlossen, war aber anstrengender als gedacht. Deine Motivation und Mental Health sind gefallen.",
+         "text": "Du hast erfolgreich den Kurs abgeschlossen, war aber anstrengender als gedacht. Deine Motivation und Mental Health sind gefallen.",
          "stats": {
             "mentalHealth": -5,
             "motivation": -5,
