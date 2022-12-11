@@ -324,10 +324,6 @@ namespace SpielDesLebens
                     _gameOverTitle.Text = "Erfolg";
                 }
                 _gameOverPanel.Visible = true;
-                _nextPhaseBtn.Enabled = false;
-                _saveBtn.Enabled = false;
-                _backToMenuBtn.Enabled = false;
-                _tutorialBtn2.Enabled = false;
                 AllOptionsDisable();
                 _gameOverTxt.Text = gameOverText;
             }
@@ -644,6 +640,7 @@ namespace SpielDesLebens
             _uiInterface.NextPhase();
             BtnLoadEventClick();
             AllOptionsEnable();
+            GameOverCheck();
 
         }
 
