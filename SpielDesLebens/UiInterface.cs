@@ -192,7 +192,7 @@ namespace SpielDesLebens
         public void SetCurrentPhase(int newCurrentPhase)
         {
             _player.GetEducationPath().GetPhase().SetCurrentPhase(newCurrentPhase);
-        }   
+        }
 
 
         public int GetMaxPhaseNumber()

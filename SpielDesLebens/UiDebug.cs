@@ -2,8 +2,10 @@
 
 // For Debugging only !!!
 
+#if DEBUG
 using System;
 using System.Collections.Generic;
+#endif
 
 namespace SpielDesLebens
 {

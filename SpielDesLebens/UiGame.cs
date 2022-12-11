@@ -482,8 +482,8 @@ namespace SpielDesLebens
                 _newProfessionYesBtn.Text = "Ja";
                 _newProfessionNoBtn.Text = "Nein";
                 BtnLoadEventClick();
-            } 
-            if(_newProfessionNoBtn.Text != "Weiter")
+            }
+            if (_newProfessionNoBtn.Text != "Weiter")
             {
                 _newProfessionPanel.Visible = false;
                 _newProfessionPathLable.Visible = false;

@@ -214,7 +214,7 @@
       "result": {
          "id": "A-099_1",
          "title": "Social Media ist nicht dein Freund",
-         "text": "Deine Motivation hat sich verbessert. Mental Health und Erfolgs haben sich verschlechtert.",
+         "text": "Deine Motivation hat sich verbessert. Mental Health und Erfolg haben sich verschlechtert.",
          "stats": {
             "mentalHealth": -10,
             "motivation": 5,
