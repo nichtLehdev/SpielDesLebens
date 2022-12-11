@@ -23,27 +23,40 @@ namespace SpielDesLebens
             InitializeComponent();
         }
 
-        private void OpenNext(object sender, EventArgs e)
-        {
-
-            if (ValidateInputs())
-            {
-                UiGame mainForm = CreateFormUiGame(true);
-                mainForm.TopLevel = false;
-                mainForm.FormBorderStyle = FormBorderStyle.None;
-                mainForm.Dock = DockStyle.Fill;
-                this.Controls.Add(mainForm);
-                this.Tag = mainForm;
-                mainForm.BringToFront();
-                mainForm.Show();
-            }
-
-        }
-
 
         public UiGame CreateFormUiGame(bool newGame)
         {
             return new UiGame(_uiInterface, newGame, this);
+        }
+
+        public void ShowFormUiGame(UiGame uiGame)
+        {
+            uiGame.TopLevel = false;
+            uiGame.FormBorderStyle = FormBorderStyle.None;
+            uiGame.Dock = DockStyle.Fill;
+            Controls.Add(uiGame);
+            Tag = uiGame;
+            uiGame.BringToFront();
+            uiGame.Show();
+        }
+
+        private void OpenNewGame(object sender, EventArgs e)
+        {
+            if (ValidateInputs())
+            {
+                UiGame uiGame = CreateFormUiGame(true);
+                ShowFormUiGame(uiGame);
+            }
+        }
+
+        private void LoadSaveGame(Object sender, EventArgs e)
+        {
+            _uiMenu.LoadGame(_slot);
+            _uiInterface = _uiMenu.CreateUiInterface(_slot);
+            UiGame uiGame = CreateFormUiGame(false);
+            _panel2.Visible = false;
+            ShowFormUiGame(uiGame);
+
         }
 
 
@@ -101,16 +114,6 @@ namespace SpielDesLebens
                 _avatarBox6.BorderStyle = BorderStyle.FixedSingle;
                 _avatar = 6;
             }
-        }
-
-        private void LoadSaveGame(Object sender, EventArgs e)
-        {
-            _uiMenu.LoadGame(_slot);
-            _uiInterface = _uiMenu.CreateUiInterface(_slot);
-            _panel2.Visible = false;
-            UiGame t = CreateFormUiGame(false);
-            t.Show();
-            this.Hide();
         }
 
         private void ChangePath(object sender, EventArgs e)
