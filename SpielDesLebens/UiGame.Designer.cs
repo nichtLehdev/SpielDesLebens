@@ -30,6 +30,7 @@ namespace SpielDesLebens
       /// </summary>
       private void InitializeComponent()
       {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UiGame));
             this._panelActiveChild = new System.Windows.Forms.Panel();
             this._tutorialPanel7 = new System.Windows.Forms.Panel();
             this._tutorialButton7 = new System.Windows.Forms.Button();
@@ -64,7 +65,6 @@ namespace SpielDesLebens
             this._newProfessionNoBtn = new System.Windows.Forms.Button();
             this._newProfessionTitle = new System.Windows.Forms.Label();
             this._newProfessionTxt = new System.Windows.Forms.Label();
-            this._eventTitle = new System.Windows.Forms.Label();
             this._actionPanel = new System.Windows.Forms.Panel();
             this._button9 = new System.Windows.Forms.Button();
             this._actionTitle = new System.Windows.Forms.Label();
@@ -88,6 +88,7 @@ namespace SpielDesLebens
             this._showInfoBtn = new System.Windows.Forms.Button();
             this._eventTxtBox = new System.Windows.Forms.Label();
             this._option1Btn = new System.Windows.Forms.Button();
+            this._eventTitle = new System.Windows.Forms.Label();
             this._panel4 = new System.Windows.Forms.Panel();
             this._tutorialPanel6 = new System.Windows.Forms.Panel();
             this._button5 = new System.Windows.Forms.Button();
@@ -587,19 +588,6 @@ namespace SpielDesLebens
             this._newProfessionTxt.Text = "Möchtest du deine Karriere ändern?";
             this._newProfessionTxt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // _eventTitle
-            // 
-            this._eventTitle.AutoSize = true;
-            this._eventTitle.BackColor = System.Drawing.Color.Transparent;
-            this._eventTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._eventTitle.ForeColor = System.Drawing.Color.White;
-            this._eventTitle.Location = new System.Drawing.Point(56, 47);
-            this._eventTitle.MaximumSize = new System.Drawing.Size(412, 0);
-            this._eventTitle.Name = "_eventTitle";
-            this._eventTitle.Size = new System.Drawing.Size(52, 17);
-            this._eventTitle.TabIndex = 1;
-            this._eventTitle.Text = "label6";
-            // 
             // _actionPanel
             // 
             this._actionPanel.BackColor = System.Drawing.Color.FloralWhite;
@@ -875,6 +863,19 @@ namespace SpielDesLebens
             this._option1Btn.UseVisualStyleBackColor = false;
             this._option1Btn.Click += new System.EventHandler(this.Option1Click);
             // 
+            // _eventTitle
+            // 
+            this._eventTitle.AutoSize = true;
+            this._eventTitle.BackColor = System.Drawing.Color.Transparent;
+            this._eventTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._eventTitle.ForeColor = System.Drawing.Color.White;
+            this._eventTitle.Location = new System.Drawing.Point(56, 47);
+            this._eventTitle.MaximumSize = new System.Drawing.Size(412, 0);
+            this._eventTitle.Name = "_eventTitle";
+            this._eventTitle.Size = new System.Drawing.Size(52, 17);
+            this._eventTitle.TabIndex = 1;
+            this._eventTitle.Text = "label6";
+            // 
             // _panel4
             // 
             this._panel4.BackColor = System.Drawing.Color.Transparent;
@@ -894,15 +895,15 @@ namespace SpielDesLebens
             this._tutorialPanel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialPanel6.Controls.Add(this._button5);
             this._tutorialPanel6.Controls.Add(this._tutorialTxt6);
-            this._tutorialPanel6.Location = new System.Drawing.Point(514, 2);
+            this._tutorialPanel6.Location = new System.Drawing.Point(460, 2);
             this._tutorialPanel6.Name = "_tutorialPanel6";
-            this._tutorialPanel6.Size = new System.Drawing.Size(317, 110);
+            this._tutorialPanel6.Size = new System.Drawing.Size(371, 110);
             this._tutorialPanel6.TabIndex = 1;
             this._tutorialPanel6.Visible = false;
             // 
             // _button5
             // 
-            this._button5.Location = new System.Drawing.Point(243, 79);
+            this._button5.Location = new System.Drawing.Point(298, 80);
             this._button5.Name = "_button5";
             this._button5.Size = new System.Drawing.Size(62, 25);
             this._button5.TabIndex = 1;
@@ -919,10 +920,9 @@ namespace SpielDesLebens
             this._tutorialTxt6.Multiline = true;
             this._tutorialTxt6.Name = "_tutorialTxt6";
             this._tutorialTxt6.ReadOnly = true;
-            this._tutorialTxt6.Size = new System.Drawing.Size(290, 60);
+            this._tutorialTxt6.Size = new System.Drawing.Size(345, 60);
             this._tutorialTxt6.TabIndex = 1;
-            this._tutorialTxt6.Text = "Oben rechts kannst du erkennen, in welcher Phase du dich befindest. Eine Phase is" +
-    "t ein Ausbildungsabschnitt.";
+            this._tutorialTxt6.Text = resources.GetString("_tutorialTxt6.Text");
             this._tutorialTxt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // _label5
