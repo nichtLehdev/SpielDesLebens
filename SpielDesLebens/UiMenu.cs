@@ -134,7 +134,6 @@ namespace SpielDesLebens
             {
                 _graduation = 1;
                 _btnRealschule.FlatStyle = FlatStyle.Popup;
-                _btnHauptschule.BackColor = Color.Gray;
                 _dropDownProfession.Items.AddRange(new object[] { "Ausbildung", "Duales Studium" });
             }
             else
