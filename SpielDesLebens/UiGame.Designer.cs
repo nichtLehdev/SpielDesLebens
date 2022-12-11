@@ -937,7 +937,7 @@ namespace SpielDesLebens
             this._label5.AutoSize = true;
             this._label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this._label5.Location = new System.Drawing.Point(193, 22);
+            this._label5.Location = new System.Drawing.Point(145, 22);
             this._label5.Name = "_label5";
             this._label5.Size = new System.Drawing.Size(92, 20);
             this._label5.TabIndex = 8;
@@ -947,9 +947,9 @@ namespace SpielDesLebens
             // 
             this._progressProgBar.BackColor = System.Drawing.Color.White;
             this._progressProgBar.ForeColor = System.Drawing.Color.Maroon;
-            this._progressProgBar.Location = new System.Drawing.Point(196, 53);
+            this._progressProgBar.Location = new System.Drawing.Point(146, 53);
             this._progressProgBar.Name = "_progressProgBar";
-            this._progressProgBar.Size = new System.Drawing.Size(548, 44);
+            this._progressProgBar.Size = new System.Drawing.Size(589, 44);
             this._progressProgBar.TabIndex = 4;
             // 
             // _panel3
