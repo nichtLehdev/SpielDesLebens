@@ -255,7 +255,11 @@ namespace SpielDesLebens
             double curPhase = _uiInterface.GetCurrentPhase();
             double maxPhaseLength = _uiInterface.GetMaxPhaseNumber();
             double maxActionPoints = _uiInterface.GetMaxActionPoints();
-            double progBarValue = 100 * ((maxActionPoints * curPhase + maxActionPoints - actionPoints) / (maxActionPoints * maxPhaseLength)); ;
+            double progBarValue = 100 * ((maxActionPoints * curPhase + maxActionPoints - actionPoints) / (maxActionPoints * maxPhaseLength));
+            if (progBarValue > 100)
+            {
+                progBarValue = 100;
+            }
             _lblPlayerAge.Text = Convert.ToString(_uiInterface.GetPlayerAge());
             _currentPhaseTxt.Text = "Derzeitige Phase: " + curPhase;
             _actionPointsTxt.Text = "Benutzte Aktionspunkte:" + (_uiInterface.GetMaxActionPoints() - actionPoints);
