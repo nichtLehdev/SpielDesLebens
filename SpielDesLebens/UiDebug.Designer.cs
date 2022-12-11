@@ -44,7 +44,7 @@ namespace SpielDesLebens
             _textBox1.Multiline = true;
             _textBox1.Name = "textBox1";
             _textBox1.Size = new System.Drawing.Size(231, 784);
-            _textBox1.TabIndex = 0;
+            _textBox1.TabIndex = 1;
             // 
             // textBox3
             // 
@@ -52,7 +52,7 @@ namespace SpielDesLebens
             _textBox3.Multiline = true;
             _textBox3.Name = "textBox3";
             _textBox3.Size = new System.Drawing.Size(1223, 784);
-            _textBox3.TabIndex = 2;
+            _textBox3.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -60,7 +60,7 @@ namespace SpielDesLebens
             _textBox2.Multiline = true;
             _textBox2.Name = "textBox2";
             _textBox2.Size = new System.Drawing.Size(231, 784);
-            _textBox2.TabIndex = 3;
+            _textBox2.TabIndex = 1;
             // 
             // Form
             // 
