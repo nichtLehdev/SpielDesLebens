@@ -228,7 +228,7 @@ namespace SpielDesLebens
             LoadSaves();
 
         }
-        private void LoadSaves()
+        public void LoadSaves()
         {
             if (UiInterfaceMenu.HasValidData(1))
             {

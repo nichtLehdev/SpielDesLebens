@@ -334,6 +334,7 @@ namespace SpielDesLebens
         private void ToMenu()
         {
             _uiMenu.ResetForm();
+            _uiMenu.LoadSaves();
             _uiMenu.Show();
             _uiMenu.BringToFront();
             Hide();
