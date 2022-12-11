@@ -117,8 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="_tutorialTxt6.Text" xml:space="preserve">
-    <value>Oben rechts kannst du erkennen, in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt. 
-Du kannst auch direkt in die nächste Phase springen. Achte dabei aber auf deine Stats, bei jedem Phasenwehsel verringern sich deine Stats.</value>
-  </data>
 </root>

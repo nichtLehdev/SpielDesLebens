@@ -407,23 +407,23 @@ namespace SpielDesLebens
         {
             if (_tutorialTxt6.Text == "Oben rechts kannst du erkennen, in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
             {
-                _tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei um einen. Ein Event erhöht die Anzahl der Aktionspnkte um zwei.";
+                _tutorialTxt6.Text = "Du kannst auch direkt in die nächste Phase springen. Achte dabei aber auf deine Stats, bei jedem Phasenwechsel verringern sich deine Stats.";
             }
-            _tutorialPanel6.Visible = false;
-            _tutorialPanel7.Visible = true;
+            else if (_tutorialTxt6.Text == "Du kannst auch direkt in die nächste Phase springen. Achte dabei aber auf deine Stats, bei jedem Phasenwechsel verringern sich deine Stats.")
+            {
+                _tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei um einen. Ein Event erhöht die Anzahl der Aktionspunkte um zwei.";
+            }
+            else
+            {
+                _tutorialPanel6.Visible = false;
+                _tutorialPanel7.Visible = true;
+            }            
         }
 
         private void ContinueTutorial7(object sender, EventArgs e)
         {
-            if (_tutorialTxt6.Text == "Oben rechts kannst du erkennen, in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
-            {
-                _tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei um einen. Ein Event erhöht die Anzahl der Aktionspnkte um zwei.";
-            }
-            else
-            {
-                _tutorialPanel7.Visible = false;
-                AllOptionsEnable();
-            }
+            _tutorialPanel7.Visible = false;
+            AllOptionsEnable();
         }
 
         private void ActionClose(object sender, EventArgs e)

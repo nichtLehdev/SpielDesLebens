@@ -30,7 +30,6 @@ namespace SpielDesLebens
       /// </summary>
       private void InitializeComponent()
       {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UiGame));
             this._panelActiveChild = new System.Windows.Forms.Panel();
             this._tutorialPanel7 = new System.Windows.Forms.Panel();
             this._tutorialButton7 = new System.Windows.Forms.Button();
@@ -895,15 +894,15 @@ namespace SpielDesLebens
             this._tutorialPanel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialPanel6.Controls.Add(this._button5);
             this._tutorialPanel6.Controls.Add(this._tutorialTxt6);
-            this._tutorialPanel6.Location = new System.Drawing.Point(460, 2);
+            this._tutorialPanel6.Location = new System.Drawing.Point(609, 2);
             this._tutorialPanel6.Name = "_tutorialPanel6";
-            this._tutorialPanel6.Size = new System.Drawing.Size(371, 110);
+            this._tutorialPanel6.Size = new System.Drawing.Size(222, 111);
             this._tutorialPanel6.TabIndex = 1;
             this._tutorialPanel6.Visible = false;
             // 
             // _button5
             // 
-            this._button5.Location = new System.Drawing.Point(298, 80);
+            this._button5.Location = new System.Drawing.Point(149, 75);
             this._button5.Name = "_button5";
             this._button5.Size = new System.Drawing.Size(62, 25);
             this._button5.TabIndex = 1;
@@ -916,13 +915,14 @@ namespace SpielDesLebens
             this._tutorialTxt6.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this._tutorialTxt6.BackColor = System.Drawing.Color.Snow;
             this._tutorialTxt6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this._tutorialTxt6.Location = new System.Drawing.Point(15, 14);
+            this._tutorialTxt6.Location = new System.Drawing.Point(9, 9);
             this._tutorialTxt6.Multiline = true;
             this._tutorialTxt6.Name = "_tutorialTxt6";
             this._tutorialTxt6.ReadOnly = true;
-            this._tutorialTxt6.Size = new System.Drawing.Size(345, 60);
+            this._tutorialTxt6.Size = new System.Drawing.Size(202, 60);
             this._tutorialTxt6.TabIndex = 1;
-            this._tutorialTxt6.Text = resources.GetString("_tutorialTxt6.Text");
+            this._tutorialTxt6.Text = "Oben rechts kannst du erkennen, in welcher Phase du dich befindest. Eine Phase is" +
+    "t ein Ausbildungsabschnitt.";
             this._tutorialTxt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // _label5
