@@ -213,6 +213,7 @@ namespace SpielDesLebens
             _showInfoBtn.Visible = false;
             _closeOptEndTxt.Visible = true;
             AllOptionsHide();
+            WarningCheck();
         }
         private void Option2Click(object sender, EventArgs e)
         {
@@ -220,6 +221,8 @@ namespace SpielDesLebens
             _showInfoBtn.Visible = false;
             _closeOptEndTxt.Visible = true;
             AllOptionsHide();
+            WarningCheck();
+
         }
         private void Option3Click(object sender, EventArgs e)
         {
@@ -227,6 +230,7 @@ namespace SpielDesLebens
             _showInfoBtn.Visible = false;
             _closeOptEndTxt.Visible = true;
             AllOptionsHide();
+            WarningCheck();
         }
 
         private void Option4Click(object sender, EventArgs e)
@@ -235,6 +239,7 @@ namespace SpielDesLebens
             _showInfoBtn.Visible = false;
             _closeOptEndTxt.Visible = true;
             AllOptionsHide();
+            WarningCheck();
         }
 
         private void UpdateActionpoints()
@@ -277,13 +282,7 @@ namespace SpielDesLebens
                 _option4Btn.Enabled = true;
                 _showInfoBtn.Enabled = true;
             }
-            string warningCheck = _uiInterface.GetStatWarning();
-            if (warningCheck != "")
-            {
-                _tutorialPanel2.Visible = true;
-                _tutorialTxt2.Text = warningCheck;
-                _tutorialBtn2.Text = "Schließen";
-            }
+            WarningCheck();
             GameOverCheck();
             GetNewActions();
         }
@@ -466,26 +465,30 @@ namespace SpielDesLebens
 
         private void NewProfessionNoBtnClick(object sender, EventArgs e)
         {
-            if (_newProfessionNoBtn.Text == "Weiter")
+            if (_newProfessionNoBtn.Text == "Weiter" && _newProfessionPathComboBox.Text != "" && _newProfessionProfessionComboBox.Text != "")
             {
                 _lblPlayerPath.Text = _newProfessionProfessionComboBox.Text;
                 PathSet(_refrenceTraining);
                 ProfessionSet(_refrenceProfession);
                 _uiInterface.ResetPath(_training, _profession);
                 _newProfessionYesBtn.Text = "Ja";
+                _newProfessionNoBtn.Text = "Nein";
                 BtnLoadEventClick();
+            } 
+            if(_newProfessionNoBtn.Text != "Weiter")
+            {
+                _newProfessionPanel.Visible = false;
+                _newProfessionPathLable.Visible = false;
+                _newProfessionPathComboBox.Visible = false;
+                _newProfessionPathComboBox.Text = "";
+                _newProfessionProfessionComboBox.Text = "";
+                _newProfessionProfessionComboBox.Items.Clear();
+                _newProfessionPathComboBox.Items.Clear();
+                _newProfessionProfessionLable.Visible = false;
+                _newProfessionProfessionComboBox.Visible = false;
+                AllOptionsEnable();
+                UpdateActionpoints();
             }
-            _newProfessionPanel.Visible = false;
-            _newProfessionPathLable.Visible = false;
-            _newProfessionPathComboBox.Visible = false;
-            _newProfessionPathComboBox.Text = "";
-            _newProfessionProfessionComboBox.Text = "";
-            _newProfessionProfessionComboBox.Items.Clear();
-            _newProfessionPathComboBox.Items.Clear();
-            _newProfessionProfessionLable.Visible = false;
-            _newProfessionProfessionComboBox.Visible = false;
-            AllOptionsEnable();
-            UpdateActionpoints();
         }
 
         private void NewProfessionOptOpen(object sender, EventArgs e)
@@ -649,6 +652,21 @@ namespace SpielDesLebens
         private void UiGameFormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void WarningCheck()
+        {
+            string warningCheck = _uiInterface.GetStatWarning();
+            if (warningCheck != "")
+            {
+                _tutorialPanel2.Visible = true;
+                _tutorialTxt2.Text = warningCheck;
+                _tutorialBtn2.Text = "Schließen";
+            }
+            else
+            {
+                _tutorialPanel2.Visible = false;
+            }
         }
     }
 }
