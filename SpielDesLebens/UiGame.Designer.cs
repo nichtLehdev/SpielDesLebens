@@ -156,6 +156,7 @@ namespace SpielDesLebens
             this._panelActiveChild.BackgroundImage = global::SpielDesLebens.Properties.Resources.uniTable;
             this._panelActiveChild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this._panelActiveChild.Controls.Add(this._tutorialPanel7);
+            this._panelActiveChild.Controls.Add(this._tutorialPanel1);
             this._panelActiveChild.Controls.Add(this._infoActionPanel0);
             this._panelActiveChild.Controls.Add(this._infoActionPanel2);
             this._panelActiveChild.Controls.Add(this._tutorialPanel4);
@@ -860,7 +861,6 @@ namespace SpielDesLebens
             this._panel4.BackColor = System.Drawing.Color.Transparent;
             this._panel4.BackgroundImage = global::SpielDesLebens.Properties.Resources.redBlack;
             this._panel4.Controls.Add(this._tutorialPanel6);
-            this._panel4.Controls.Add(this._tutorialPanel1);
             this._panel4.Controls.Add(this._label5);
             this._panel4.Controls.Add(this._progressProgBar);
             this._panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -902,8 +902,7 @@ namespace SpielDesLebens
             this._tutorialTxt6.ReadOnly = true;
             this._tutorialTxt6.Size = new System.Drawing.Size(290, 68);
             this._tutorialTxt6.TabIndex = 11;
-            this._tutorialTxt6.Text = "Rechts kannst du erkennen in welcher Phase, du dich befindest. Eine Phase ist ein" +
-    " Ausbildungsabschnitt.";
+            this._tutorialTxt6.Text = "Oben rechts kannst du erkennen, in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.";
             this._tutorialTxt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // _tutorialPanel1
@@ -912,7 +911,7 @@ namespace SpielDesLebens
             this._tutorialPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._tutorialPanel1.Controls.Add(this._button3);
             this._tutorialPanel1.Controls.Add(this._tutorialTxt1);
-            this._tutorialPanel1.Location = new System.Drawing.Point(0, 0);
+            this._tutorialPanel1.Location = new System.Drawing.Point(9, 6);
             this._tutorialPanel1.Name = "_tutorialPanel1";
             this._tutorialPanel1.Size = new System.Drawing.Size(190, 128);
             this._tutorialPanel1.TabIndex = 0;
@@ -929,8 +928,7 @@ namespace SpielDesLebens
             this._tutorialTxt1.ReadOnly = true;
             this._tutorialTxt1.Size = new System.Drawing.Size(163, 82);
             this._tutorialTxt1.TabIndex = 11;
-            this._tutorialTxt1.Text = "Links wird dein Charakter angezeigt. Wenn du auf das Bild deines Charakters klick" +
-    "st, hast du die Möglichkeit deinen Karriereweg zu wechseln.";
+            this._tutorialTxt1.Text = "Oben links wird dein Charakter angezeigt. Wenn du auf das Bild deines Charakters klickst, hast du die Möglichkeit deinen Karriereweg zu wechseln.";
             this._tutorialTxt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // _label5
@@ -1033,7 +1031,7 @@ namespace SpielDesLebens
             this._tutorialTxt2.ReadOnly = true;
             this._tutorialTxt2.Size = new System.Drawing.Size(139, 83);
             this._tutorialTxt2.TabIndex = 11;
-            this._tutorialTxt2.Text = "Oben werden die Stats deines Charakters angezeigt. Wenn mindestens einer der Attr" +
+            this._tutorialTxt2.Text = "Auf der rechten Seite werden die Stats deines Charakters angezeigt. Wenn mindestens einer der Attr" +
     "ibute auf 0 fällt, ist das Spiel verloren.";
             this._tutorialTxt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

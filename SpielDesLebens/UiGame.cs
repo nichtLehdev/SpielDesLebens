@@ -353,9 +353,9 @@ namespace SpielDesLebens
 
         private void ContinueTutorial1(object sender, EventArgs e)
         {
-            if (_tutorialTxt1.Text == "Links wird dein Charakter angezeigt. Wenn du auf das Bild deines Charakters klickst, hast du die Möglichkeit deinen Karriereweg zu wechseln.")
+            if (_tutorialTxt1.Text == "Oben links wird dein Charakter angezeigt. Wenn du auf das Bild deines Charakters klickst, hast du die Möglichkeit deinen Karriereweg zu wechseln.")
             {
-                _tutorialTxt1.Text = "Auf der rechten Seite siehtst du deinen Fortschritt im Spiel.";
+                _tutorialTxt1.Text = "Oben mittig siehtst du deinen Fortschritt im Spiel.";
             }
             else
             {
@@ -397,9 +397,9 @@ namespace SpielDesLebens
         }
         private void ContinueTutorial6(object sender, EventArgs e)
         {
-            if (_tutorialTxt6.Text == "Rechts kannst du erkennen in welcher, Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
+            if (_tutorialTxt6.Text == "Oben rechts kannst du erkennen, in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
             {
-                _tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei einem. Ein Event erhöht die Anzahl der Aktionspnkte bei zwei.";
+                _tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei um einen. Ein Event erhöht die Anzahl der Aktionspnkte um zwei.";
             }
             _tutorialPanel6.Visible = false;
             _tutorialPanel7.Visible = true;
@@ -407,9 +407,9 @@ namespace SpielDesLebens
 
         private void ContinueTutorial7(object sender, EventArgs e)
         {
-            if (_tutorialTxt6.Text == "Rechts kannst du erkennen in welcher, Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
+            if (_tutorialTxt6.Text == "Oben rechts kannst du erkennen, in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
             {
-                _tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei einem. Ein Event erhöht die Anzahl der Aktionspnkte bei zwei.";
+                _tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei um einen. Ein Event erhöht die Anzahl der Aktionspnkte um zwei.";
             }
             else
             {
