@@ -8,24 +8,26 @@ namespace SpielDesLebens
 {
     internal partial class UiGame : Form
     {
-        private Form _activeForm;
+        private readonly UiMenu _uiMenu;
         private readonly UiInterface _uiInterface;
+        private Form _activeForm;
         private readonly bool _newGame;
         private int _actionChosen;
 
-        private Data.Path _training;
+        private Data.Path _path;
         private Data.Profession _profession;
-        private string _refrenceTraining;
+        private string _refrencePath;
         private string _refrenceProfession;
-        private readonly UiMenu _uiMenu;
 
 
-        public UiGame(UiInterface uiInterface, bool newGame, UiMenu uiMenu)
+
+        public UiGame(UiMenu uiMenu, UiInterface uiInterface, bool newGame)
         {
             InitializeComponent();
+            _uiMenu = uiMenu;
             _uiInterface = uiInterface;
             _newGame = newGame;
-            _uiMenu = uiMenu;
+
         }
 
         private void FormGameUiLoad(object sender, EventArgs e)
@@ -475,9 +477,9 @@ namespace SpielDesLebens
             if (_newProfessionNoBtn.Text == "Weiter" && _newProfessionPathComboBox.Text != "" && _newProfessionProfessionComboBox.Text != "")
             {
                 _lblPlayerPath.Text = _newProfessionProfessionComboBox.Text;
-                PathSet(_refrenceTraining);
+                PathSet(_refrencePath);
                 ProfessionSet(_refrenceProfession);
-                _uiInterface.ResetPath(_training, _profession);
+                _uiInterface.ResetPath(_path, _profession);
                 _uiInterface.SetCurrentPhase(0);
                 _newProfessionYesBtn.Text = "Ja";
                 _newProfessionNoBtn.Text = "Nein";
@@ -578,17 +580,17 @@ namespace SpielDesLebens
             _newProfessionProfessionComboBox.Text = null;
             if (_newProfessionPathComboBox.Text == "Ausbildung")
             {
-                _refrenceTraining = "Training";
+                _refrencePath = "Training";
                 _newProfessionProfessionComboBox.Items.AddRange(new object[] { "Krankenpflege", "Industriekaufmann", "Pharmazeutisch Technische Assistenz", "Fachinformatiker", "Rechtanwaltsfachangestellter" });
             }
             else if (_newProfessionPathComboBox.Text == "Duales Studium")
             {
-                _refrenceTraining = "Duales Studium";
+                _refrencePath = "DualStuy";
                 _newProfessionProfessionComboBox.Items.AddRange(new object[] { "Angewandte Gesundheits- und Pflegewissenschaften", "BWL", "Angewandte Physik", "Angewandtes Informatikstudium", "Steuerwesen" });
             }
             else if (_newProfessionPathComboBox.Text == "Studium")
             {
-                _refrenceTraining = "Studium";
+                _refrencePath = "Study";
                 _newProfessionProfessionComboBox.Items.AddRange(new object[] { "Medizinstudium", "BWL", "Physikstudium", "Informatikstudium", "Jurastudium" });
             }
             _newProfessionProfessionComboBox.Enabled = true;
@@ -620,15 +622,15 @@ namespace SpielDesLebens
         {
             if (givenPath == "Training")
             {
-                _training = Data.Path.Training;
+                _path = Data.Path.Training;
             }
             else if (givenPath == "DualStudy")
             {
-                _training = Data.Path.DualStudy;
+                _path = Data.Path.DualStudy;
             }
             else if (givenPath == "Study")
             {
-                _training = Data.Path.Study;
+                _path = Data.Path.Study;
             }
         }
 

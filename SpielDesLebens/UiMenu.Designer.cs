@@ -100,7 +100,7 @@ namespace SpielDesLebens
             this._fictionPanel.BackgroundImage = global::SpielDesLebens.Properties.Resources.redBlack;
             this._fictionPanel.Controls.Add(this._acceptFictBtn);
             this._fictionPanel.Controls.Add(this._fictionTxtBox);
-            this._fictionPanel.Location = new System.Drawing.Point(504, 31);
+            this._fictionPanel.Location = new System.Drawing.Point(0, 0);
             this._fictionPanel.Name = "_fictionPanel";
             this._fictionPanel.Size = new System.Drawing.Size(343, 511);
             this._fictionPanel.TabIndex = 4;
@@ -121,6 +121,7 @@ namespace SpielDesLebens
             // 
             this._panel1.BackColor = System.Drawing.Color.Brown;
             this._panel1.BackgroundImage = global::SpielDesLebens.Properties.Resources.redBlack;
+            this._panel1.Controls.Add(this._fictionPanel);
             this._panel1.Controls.Add(this._title);
             this._panel1.Controls.Add(this._panel2);
             this._panel1.Controls.Add(this._slotBtn1);
@@ -136,11 +137,11 @@ namespace SpielDesLebens
             this._title.AutoEllipsis = true;
             this._title.AutoSize = true;
             this._title.BackColor = System.Drawing.Color.Transparent;
-            this._title.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._title.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this._title.Location = new System.Drawing.Point(100, 58);
+            this._title.Location = new System.Drawing.Point(53, 62);
             this._title.Name = "_title";
-            this._title.Size = new System.Drawing.Size(164, 22);
+            this._title.Size = new System.Drawing.Size(254, 33);
             this._title.TabIndex = 7;
             this._title.Text = "Spiel des Lebens";
             // 
@@ -502,7 +503,6 @@ namespace SpielDesLebens
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 664);
-            this.Controls.Add(this._fictionPanel);
             this.Controls.Add(this._panel1);
             this.Controls.Add(this._layouNewGame);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

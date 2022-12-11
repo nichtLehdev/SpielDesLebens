@@ -26,7 +26,7 @@ namespace SpielDesLebens
 
         public UiGame CreateFormUiGame(bool newGame)
         {
-            return new UiGame(_uiInterface, newGame, this);
+            return new UiGame(this, _uiInterface, newGame);
         }
 
         public void ShowFormUiGame(UiGame uiGame)
