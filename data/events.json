@@ -240,7 +240,7 @@
          },
          {
             "id": "E-004_4",
-            "title": "Sehr Freizügiges Foto... ;)",
+            "title": "Sehr freizügiges Foto... ;)",
             "text": "Falsch, zu verwenden ist ein aktuelles Porträt von dir mit Klamotten!",
             "stats": {
                "mentalHealth": 0,
@@ -345,7 +345,7 @@
          {
             "id": "E-006_2",
             "title": "In diesem Unternehmen in Position x",
-            "text": "So, oder so ähnlich kann die Antwort ausfallen. Die Frage zielt auf die Beruflichen Ambitionen ab.",
+            "text": "So, oder so ähnlich kann die Antwort ausfallen. Die Frage zielt auf die beruflichen Ambitionen ab.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -928,7 +928,7 @@
          {
             "id": "E-016_1",
             "title": "Ansprechen",
-            "text": "Du stellst dich dem neuenKommilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde und bildet eine Lerngruppe",
+            "text": "Du stellst dich dem neuen Kommilitonen vor und zeigst ihm wo es freie Plätze gibt. Ihr werdet Freunde und bildet eine Lerngruppe",
             "stats": {
                "mentalHealth": 10,
                "motivation": 30,
@@ -980,7 +980,7 @@
          {
             "id": "E-017_1",
             "title": "Zusagen",
-            "text": "Du kommst zur Party und hast eine tolle Zeit aber der Morgen danach bringt das böse Erwachen",
+            "text": "Du kommst zur Party und hast eine tolle Zeit, aber der Morgen danach bringt das böse Erwachen",
             "stats": {
                "mentalHealth": 15,
                "motivation": 0,
@@ -1768,7 +1768,7 @@
          {
             "id": "E-029_1",
             "title": "Das Koks kaufen",
-            "text": "Du nimmst jetzt einen Zug und hebst dir den Rest für später auf. Du bist aktuell sehr Glücklich, verläufst dich aber auf dem Heimweg.",
+            "text": "Du nimmst jetzt einen Zug und hebst dir den Rest für später auf. Du bist aktuell sehr glücklich, verläufst dich aber auf dem Heimweg.",
             "stats": {
                "mentalHealth": 5,
                "motivation": 6,
@@ -1957,7 +1957,7 @@
          {
             "id": "E-032_2",
             "title": "Professionelle Nachhilfe",
-            "text": "Du nimmst dir Nachhilfe und zahlst Monatlich Geld",
+            "text": "Du nimmst dir Nachhilfe und zahlst monatlich Geld",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -2094,7 +2094,7 @@
          {
             "id": "E-034_3",
             "title": "Mensa",
-            "text": "Du gehst mit ein paar anderen Kommilitonen in die Mensa der Uni. Das essen ist okay.",
+            "text": "Du gehst mit ein paar anderen Kommilitonen in die Mensa der Uni. Das Essen ist okay.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 0,
@@ -2146,7 +2146,7 @@
          {
             "id": "E-035_1",
             "title": "Saftschorle",
-            "text": "Du kauft dir einen Saft beim Supermarkt. Er gibt dir die Energie die du für die letzte Vorlesung brauchst.",
+            "text": "Du kauft dir einen Saft beim Supermarkt. Er gibt dir die Energie, die du für die letzte Vorlesung brauchst.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -2294,7 +2294,7 @@
          {
             "id": "E-037_1",
             "title": "Schlafen",
-            "text": "Da du bis 5 Uhr Morgens Hellblade Seuna`s Sacrifice gespielt hast bist du müde und schläft in der Vorlesung. Du hast Albträume vom Höllenbiest.",
+            "text": "Da du bis 5 Uhr Morgens Hellblade Seuna`s Sacrifice gespielt hast, bist du müde und schläft in der Vorlesung. Du hast Albträume vom Höllenbiest.",
             "stats": {
                "mentalHealth": -5,
                "motivation": 0,
@@ -2453,7 +2453,7 @@
          {
             "id": "E-039_2",
             "title": "Computer spielen",
-            "text": "Du hörst Herr Prof. Dr. Kruse nicht zu und spielst auf deinem 2. Bildschirm Stardew Valley. Als Herr Prof. Dr. Kruse am Glücksrad dreht und dieses dich zum beantworten der Frage auswählt, hast du nicht zu sagen.",
+            "text": "Du hörst Herr Prof. Dr. Kruse nicht zu und spielst auf deinem 2. Bildschirm Stardew Valley. Als Herr Prof. Dr. Kruse am Glücksrad dreht und dieses dich zum beantworten der Frage auswählt, hast du nichts zu sagen.",
             "stats": {
                "mentalHealth": -15,
                "motivation": -5,
@@ -2641,7 +2641,7 @@
          {
             "id": "E-042_2",
             "title": "Erschießen",
-            "text": "Falsch, diese Methode ist zu aufwändig. Der Aufwand eine Waffe zu besorgen ist unnötig, die Methode ist nicht schmerzfrei und es gibt eine Sauerei. ",
+            "text": "Falsch, diese Methode ist zu aufwändig. Der Aufwand eine Waffe zu besorgen ist unnötig, die Methode ist nicht schmerzfrei und es gibt eine Sauerei.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -7025,7 +7025,7 @@
    {
       "id": "E-101",
       "title": "Linux, aber Welches ?",
-      "text": "Du sollst eine geeinte Linux Distribution für einen neuen Webserver der Firma auswählen.",
+      "text": "Du sollst eine geeignete Linux Distribution für einen neuen Webserver der Firma auswählen.",
       "info": "Stabilität und Sicherheit sind wichtige Kriterien.",
       "priority": 1,
       "requirements": {
@@ -8609,7 +8609,7 @@
          {
             "id": "E-121_3",
             "title": "Nichts unternehmen",
-            "text": "Du entscheidest dich nichts zu unternehmen und die Situation hinzunehmen. Leider verstest du die Vorlesung nicht und hast Probleme die Prüfung zu bestehen.",
+            "text": "Du entscheidest dich nichts zu unternehmen und die Situation hinzunehmen. Leider verstehst du die Vorlesung nicht und hast Probleme die Prüfung zu bestehen.",
             "stats": {
                "mentalHealth": 0,
                "motivation": -10,
@@ -8745,7 +8745,7 @@
          {
             "id": "E-123_2",
             "title": "Du nimmst was du schon hast du schreibst die Nacht durch.",
-            "text": "Deine Arbeit wir mit 2,0 bewertet. Die Nacht hat sich gelohnt.",
+            "text": "Deine Arbeit wird mit 2,0 bewertet. Die Nacht hat sich gelohnt.",
             "stats": {
                "mentalHealth": -20,
                "motivation": -15,
@@ -9352,7 +9352,7 @@
    {
       "id": "E-134",
       "title": "Die Qual der Wahl",
-      "text": "Du hast von 2 Universitäten in verschiedenen Städten bekommen eine Zusage bekommen, für welches Angebot entscheidest du dich",
+      "text": "Du hast von 2 Universitäten in verschiedenen Städten  eine Zusage bekommen, für welches Angebot entscheidest du dich",
       "info": "Schlaf ist wichtig für deine Gesundheit",
       "priority": 1,
       "requirements": {
@@ -9402,7 +9402,7 @@
          {
             "id": "E-134_3",
             "title": "Die günstigere Stadt",
-            "text": "Die beste Uni ist meists nicht in der günstigsten Stadt. Deine Wahl ist dennoch gut, denn du sparst Geld und kannst dir eine Wohnung in guter Lage leisten.",
+            "text": "Die beste Uni ist meist nicht in der günstigsten Stadt. Deine Wahl ist dennoch gut, denn du sparst Geld und kannst dir eine Wohnung in guter Lage leisten.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 10,
@@ -9415,7 +9415,7 @@
    {
       "id": "E-135",
       "title": "Gartenarbeit",
-      "text": "Dein Nachbar baut seinen Garten um, er bittet dich für ein kleines Entfeld um Hilfe. Was tust du ?",
+      "text": "Dein Nachbar baut seinen Garten um, er bittet dich für ein kleines Entgelt um Hilfe. Was tust du ?",
       "info": "Harte Arbeit zahlt sich aus",
       "priority": 1,
       "requirements": {
@@ -9454,7 +9454,7 @@
          {
             "id": "E-135_2",
             "title": "Du lehnst das Angebot ab und ruhst dich dafür etwas aus",
-            "text": "Du machst einen Mittagschlag und bist nun etwas erholter",
+            "text": "Du machst einen Mittagsschlaf und bist nun etwas erholter",
             "stats": {
                "mentalHealth": 10,
                "motivation": 0,
@@ -9467,7 +9467,7 @@
    {
       "id": "E-136",
       "title": "Sportsfreund",
-      "text": "Du bekommst einen Anruf von deinem Freund, er fragt dich ob du mit Ihm zu Abwechslug ins Fittnesstudio kommen möchtest. Gehst du mit Ihm ins Fittnesstudio?",
+      "text": "Du bekommst einen Anruf von deinem Freund, er fragt dich ob du mit ihm zu Abwechslung ins Fitnessstudio kommen möchtest. Gehst du mit ihm ins Fitnessstudio?",
       "info": "Sport macht Laune",
       "priority": 1,
       "requirements": {
@@ -9495,7 +9495,7 @@
          {
             "id": "E-136_1",
             "title": "Du sagst zu",
-            "text": "Am nächsten morgen kommst du gut aus dem Bett, bist motiviert und voller Energie für einen neuen Tag",
+            "text": "Am nächsten Morgen kommst du gut aus dem Bett, bist motiviert und voller Energie für einen neuen Tag",
             "stats": {
                "mentalHealth": 15,
                "motivation": 10,
@@ -9768,8 +9768,8 @@
       "options": [
          {
             "id": "E-140_1",
-            "title": "Die Leasingfirma bleibt Eigentümer des PKW.",
-            "text": "Deine Antwort ist Korrekt!",
+            "title": "Die Leasingfirma bleibt Eigentümer des PKWs.",
+            "text": "Deine Antwort ist korrekt!",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -9779,8 +9779,8 @@
          },
          {
             "id": "E-140_2",
-            "title": "Die Leasingfirma bleibt Besitzer des PKW.",
-            "text": "Falsch! Die Firma bleibt Eigentümer des PKW",
+            "title": "Die Leasingfirma bleibt Besitzer des PKWs.",
+            "text": "Falsch! Die Firma bleibt Eigentümer des PKWs",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -9790,8 +9790,8 @@
          },
          {
             "id": "E-140_3",
-            "title": "Der Außendienstmitarbeiter ist Eigentümer und Besitzer des PKW .",
-            "text": "Falsch! Die Firma bleibt Eigentümer des PKW",
+            "title": "Der Außendienstmitarbeiter ist Eigentümer und Besitzer des PKWs.",
+            "text": "Falsch! Die Firma bleibt Eigentümer des PKWs",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -9801,8 +9801,8 @@
          },
          {
             "id": "E-140_4",
-            "title": "Der Arbeitgeber des Außendienstmitarbeiter ist Eigentümer und der Außendienstmitarbeiter Besitzer des PKW",
-            "text": "Falsch! Die Firma bleibt Eigentümer des PKW",
+            "title": "Der Arbeitgeber des Außendienstmitarbeiters ist Eigentümer und der Außendienstmitarbeiter Besitzer des PKWs",
+            "text": "Falsch! Die Firma bleibt Eigentümer des PKWs",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -9993,7 +9993,7 @@
    {
       "id": "E-144",
       "title": "Geschirr spülen",
-      "text": "Benutzest Geschirr hat sich schon wieder angesammelt und du musst es spülen.",
+      "text": "Benutztes Geschirr hat sich schon wieder angesammelt und du musst es spülen.",
       "info": "Ordnung ist das halbe Leben",
       "priority": 2,
       "requirements": {
@@ -10049,8 +10049,8 @@
    },
    {
       "id": "E-145",
-      "title": "Wahl der Universiät",
-      "text": "Du bist am Ende Deiner Entscheidungsphase und musst Dich nun für eine Universität entscheiden. Welche wirst Du wählen?",
+      "title": "Wahl der Universität",
+      "text": "Du bist am Ende deiner Entscheidungsphase und musst dich nun für eine Universität entscheiden. Welche wirst du wählen?",
       "info": "Hat Auswirkungen auf den Erfolg, Mental Health und Geld",
       "priority": 0,
       "requirements": {
@@ -10089,7 +10089,7 @@
          {
             "id": "E-145_2",
             "title": "Näher da, aber nicht das optimale Angebot",
-            "text": "Du entscheidest Dich für Universität B, die zwar näher an Deinem Zuhause ist, aber nicht Dein Traumstudium anbietet.",
+            "text": "Du entscheidest dich für Universität B, die zwar näher an deinem Zuhause ist, aber nicht dein Traumstudium anbietet.",
             "stats": {
                "mentalHealth": 5,
                "motivation": 0,
@@ -10130,7 +10130,7 @@
          {
             "id": "E-146_1",
             "title": "An die frische Luft gehen",
-            "text": "Du gehst an die frische Luft, du fühlst dich erfrischt und kannst du entspannen.",
+            "text": "Du gehst an die frische Luft, du fühlst dich erfrischt und kannst dich entspannen.",
             "stats": {
                "mentalHealth": 15,
                "motivation": 10,
@@ -10141,7 +10141,7 @@
          {
             "id": "E-146_2",
             "title": "Auf der Couch liegen bleiben",
-            "text": "Du bleibst auf der Couch liegen, du fühlst dich entspannst dich, aber wirklich neue Motivation gewinnst du nicht.",
+            "text": "Du bleibst auf der Couch liegen, du entspannst dich, aber wirklich neue Motivation gewinnst du nicht.",
             "stats": {
                "mentalHealth": 5,
                "motivation": 5,
@@ -10193,7 +10193,7 @@
          {
             "id": "E-147_2",
             "title": "Bafög",
-            "text": "Du beantragst ein Bafög. Antrag genhemigt. Du bekommst zwar nicht viel, aber es reicht um über die Runden zu kommen.",
+            "text": "Du beantragst ein Bafög. Antrag genehmigt. Du bekommst zwar nicht viel, aber es reicht um über die Runden zu kommen.",
             "stats": {
                "mentalHealth": 7,
                "motivation": 7,
@@ -10245,7 +10245,7 @@
          {
             "id": "E-148_1",
             "title": "Praktikum annehmen",
-            "text": "Du nimmst das Praktikum an und lernst viel über deinen zukünfitgen Beruf.",
+            "text": "Du nimmst das Praktikum an und lernst viel über deinen zukünftigen Beruf.",
             "stats": {
                "mentalHealth": 0,
                "motivation": -15,
