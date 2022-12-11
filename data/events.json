@@ -10658,7 +10658,7 @@
          {
             "id": "E-155_2",
             "title": "Nein.",
-            "text": "Du entscheidest dich dagegen, nach draußen zu gehen und machst drepresiv und demotiviert weiter mit deinen heutigen Aufgaben.",
+            "text": "Du entscheidest dich dagegen, nach draußen zu gehen und machst drepressiv und demotiviert weiter mit deinen heutigen Aufgaben.",
             "stats": {
                "mentalHealth": -15,
                "motivation": -15,
@@ -10869,7 +10869,7 @@
          {
             "id": "E-158_2",
             "title": "Du versuchst dein Fahrrad zu reparieren.",
-            "text": "Handwerklich bist du leider nicht so begabt und du brauchtst 2,5h für die Reperatur. Du kommst zur spät zur Arbeit und bekommst eine Abmahnung.",
+            "text": "Handwerklich bist du leider nicht so begabt und du brauchtst 2,5h für die Reparatur. Du kommst zu spät zur Arbeit und bekommst eine Abmahnung.",
             "stats": {
                "mentalHealth": -5,
                "motivation": -5,
@@ -10893,7 +10893,7 @@
    {
       "id": "E-159",
       "title": "Schneeballschlacht",
-      "text": "Es ist ein kalter Wintertag und du siehst einen schönen Schnee. Wählst du es, einen mit deinen Freuden eine Schneeballschlacht zu starten?",
+      "text": "Es ist ein kalter Wintertag und du siehst einen schönen Schnee. Wählst du es,  mit deinen Freuden eine Schneeballschlacht zu starten?",
       "info": "Verletzungsgefahr",
       "priority": 1,
       "requirements": {
@@ -10926,7 +10926,7 @@
          {
             "id": "E-159_1",
             "title": "Ja!",
-            "text": "Ihr starte eine Schnellballschlacht und habt viel Spaß. Leider verletzt du dich dabei und musst zum Arzt. Du fällst für zwei Wochen aus.",
+            "text": "Ihr startet eine Schnellballschlacht und habt viel Spaß. Leider verletzt du dich dabei und musst zum Arzt. Du fällst für zwei Wochen aus.",
             "stats": {
                "mentalHealth": 20,
                "motivation": 20,
@@ -11119,7 +11119,7 @@
          {
             "id": "E-162_1",
             "title": "Du nimmst den Urlaub jetzt",
-            "text": "Dein Urlaub ist zwar nicht verfallen, aber dein Abteilungsleiter ist nun sauer auf dich, da du dich nicht an Absprachen hälst. Du gewonne Mental Health und Motivation, ist nach der Auseinandersetzung wieder auf dem Urlaub.",
+            "text": "Dein Urlaub ist zwar nicht verfallen, aber dein Abteilungsleiter ist nun sauer auf dich, da du dich nicht an Absprachen hälst. Die gewonnene Mental Health und Motivation, ist nach der Auseinandersetzung wieder wie vor dem Urlaub.",
             "stats": {
                "mentalHealth": 3,
                "motivation": 3,
@@ -11130,7 +11130,7 @@
          {
             "id": "E-162_2",
             "title": "Du nimmst den Urlaub später",
-            "text": "Kein Urlaub mehr zum nehmen, da dein Urlaub dann bereits verfallen ist. Du verlierst Mental Health und Motivation.",
+            "text": "Kein Urlaub mehr zum Nehmen !!! Dein Urlaub ist bis dahin dann bereits verfallen. Du verlierst Mental Health und Motivation.",
             "stats": {
                "mentalHealth": -25,
                "motivation": -25,
@@ -11272,7 +11272,7 @@
          {
             "id": "E-164_3",
             "title": "Du gehst in die Stadt und fütterst die Tauben",
-            "text": "Deine Tierliebe ist löblich, allerdings kommen die Ratten der Lüfte hervorand ohne dein Futter aus.",
+            "text": "Deine Tierliebe ist löblich, allerdings kommen die Ratten der Lüfte hervorragend ohne dein Futter aus.",
             "stats": {
                "mentalHealth": 10,
                "motivation": 10,
@@ -11376,7 +11376,7 @@
          {
             "id": "E-166_1",
             "title": "Einfach weiter wie bisher, das wird schon wieder",
-            "text": "Leider findest du auch nach einer weiteren Wochen Netflix und Chill keine Motivation produktiv zu sein. Du verlierst weitere Motivation und Mental Health.",
+            "text": "Leider findest du auch nach einer weiteren Woche Netflix und Chill keine Motivation produktiv zu sein. Du verlierst weitere Motivation und Mental Health.",
             "stats": {
                "mentalHealth": -10,
                "motivation": -5,
@@ -11422,7 +11422,7 @@
    {
       "id": "E-167",
       "title": "Privatinsolvenz ?",
-      "text": "Da kaum noch Geld hast, solltest du gegensteuern.",
+      "text": "Da Du kaum noch Geld hast, solltest du gegensteuern.",
       "info": "Willkommen im Kapitalismus",
       "priority": 0,
       "requirements": {
@@ -11450,7 +11450,7 @@
          {
             "id": "E-167_1",
             "title": "Einfach weiter wie bisher, neues Geld wird sich schon auftreiben lassen",
-            "text": "Außer einem Euro den du auf der Straße gefunden hast, hast du keine Einnahmen genriert und bist immer noch pleite. Du durch laufenden Kosten verlierst du weiteres Geld. Dazu schlägt sich deine finazielle Situation auch auf deine Mental Health durch.",
+            "text": "Außer einem Euro den du auf der Straße gefunden hast, hast du keine Einnahmen genriert und bist immer noch pleite. Durch laufende Kosten verlierst du weiteres Geld. Dazu schlägt sich deine finazielle Situation auch auf deine Mental Health durch.",
             "stats": {
                "mentalHealth": -15,
                "motivation": -15,
@@ -11472,7 +11472,7 @@
          {
             "id": "E-167_3",
             "title": "Eltern um finanzielle Unterstützung bitten",
-            "text": "Deine Eltern wollen dir helfen und leihen dir etwas Geld. Dafür musst du aber am Wochenende, alle Garten und Hausarbeiten erledigen. Deswegen kannst du einen eigentlichen Aufgaben nicht nachkommen und verlierst Erfolg.",
+            "text": "Deine Eltern wollen dir helfen und leihen dir etwas Geld. Dafür musst du aber am Wochenende, alle Garten und Hausarbeiten erledigen. Deswegen kannst du deinen eigentlichen Aufgaben nicht nachkommen und verlierst Erfolg.",
             "stats": {
                "mentalHealth": 0,
                "motivation": 0,
@@ -11597,7 +11597,7 @@
          },
          {
             "id": "E-169_2",
-            "title": "Du besuchts sein Büro und prüfst ob er vielleicht doch da ist.",
+            "title": "Du besuchts sein Büro und prüfst, ob er vielleicht doch da ist.",
             "text": "Leider ist dies nicht von Erfolg gekrönt. Du verlierst Motivation und Mental Health. Da du aber die Anwort für dein Studium benötigst, verlierst du auch Erfolg. Zusätzlich wirst du vom Sekreteriat ausgelacht, da Prof. Dr. Hofmann nie im Büro ist.",
             "stats": {
                "mentalHealth": -35,
@@ -11682,7 +11682,7 @@
          },
          {
             "id": "E-170_3",
-            "title": "Du gibst gernervst auf.",
+            "title": "Du gibst gernervt auf.",
             "text": "Eine gute Entscheidung nach Hause zu gehen, da du sonst noch mehr Stress und Frustation erfahren würdest. Du verlierst etwas Motivation und Mental Health. Da du aber eine Anwort für dein Studium benötigst, verlierst du auch Erfolg.",
             "stats": {
                "mentalHealth": -25,
