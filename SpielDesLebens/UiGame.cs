@@ -478,6 +478,7 @@ namespace SpielDesLebens
                 PathSet(_refrenceTraining);
                 ProfessionSet(_refrenceProfession);
                 _uiInterface.ResetPath(_training, _profession);
+                _uiInterface.SetCurrentPhase(0);
                 _newProfessionYesBtn.Text = "Ja";
                 _newProfessionNoBtn.Text = "Nein";
                 BtnLoadEventClick();
