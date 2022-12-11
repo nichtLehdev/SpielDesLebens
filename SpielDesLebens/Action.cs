@@ -1,4 +1,5 @@
 ﻿// @author: Lars Lehmann
+// Data class for an action. An action is a choice the player can make. It has an id, a title, an info text and a result.
 
 namespace SpielDesLebens
 {

@@ -1,4 +1,5 @@
 ﻿// @author: Maximilian Koch, Liz Wellhausen
+// This class is the interface between the UI and the save game logic. It is used to load and start new games.
 
 namespace SpielDesLebens
 {

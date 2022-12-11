@@ -1,4 +1,5 @@
 ﻿// @author: Kevin Kern, Maximilian Koch
+// Data class for an education path. An education path consists of a path and a profession. It also holds a phase object and stores the corresponding length.
 
 namespace SpielDesLebens
 {

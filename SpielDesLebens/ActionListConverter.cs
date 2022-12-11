@@ -1,4 +1,5 @@
 ﻿// @author: Lars Lehmann
+// Converts a list of LoadActions to a list of Actions.
 
 using System.Collections.Generic;
 

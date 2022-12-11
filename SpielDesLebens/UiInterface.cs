@@ -1,4 +1,5 @@
 ﻿// @author: Joel Dag, Kevin Kern, Liz Wellhausen
+// This class is the interface between the UI and the game logic. It contains all the methods that the UI needs to access the game logic.
 
 using System.Collections.Generic;
 

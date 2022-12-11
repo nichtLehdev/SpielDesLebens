@@ -1,4 +1,5 @@
 ﻿// @author: Kevin Kern
+// Class for unit tests.
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;

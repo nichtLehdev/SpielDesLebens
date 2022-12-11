@@ -1,4 +1,5 @@
 ﻿// @author: Lars Lehmann
+// Data class for a LoadEducationPath.
 
 namespace SpielDesLebens
 {

@@ -1,4 +1,5 @@
 ﻿// @author: Kevin Kern
+// Error class for the game. 
 
 using System;
 

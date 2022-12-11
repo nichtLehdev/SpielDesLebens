@@ -1,4 +1,5 @@
 ﻿// @author: Kevin Kern, Maximilian Koch
+// Data class for a Stat. A Stat has a list of StatParameters.
 
 using System.Collections.Generic;
 

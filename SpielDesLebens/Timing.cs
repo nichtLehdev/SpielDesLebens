@@ -1,4 +1,5 @@
 ﻿// @author: Lars Lehmann
+// Data class a Timing. This class is used to store the timing of a requirement from an event.
 
 using System.Collections.Generic;
 

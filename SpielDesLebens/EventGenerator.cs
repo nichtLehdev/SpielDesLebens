@@ -1,4 +1,5 @@
 ﻿// @author: Joel Dag, Kevin Kern, Maximilian Koch
+// EventGenerator class for the game. It generates events based on the current phase and the current stats of the player.
 
 using Newtonsoft.Json;
 using System;
@@ -200,7 +201,7 @@ namespace SpielDesLebens
             return LoadEvents();
         }
 #endif
-#if DEBUG        
+#if DEBUG
         // For Debugging only !!!
         public void FilterEventsByPhaseDebug()
         {

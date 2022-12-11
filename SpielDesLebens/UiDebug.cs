@@ -1,4 +1,5 @@
 ﻿// @author: Maximilian Koch
+// This class is used for debugging purposes only. It is used to test and display the data from the JSON files and the corresponding converters.
 
 // For Debugging only !!!
 

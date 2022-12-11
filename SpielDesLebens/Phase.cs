@@ -1,4 +1,5 @@
 ﻿// @author: Joel Dag, Kevin Kern
+// Data class for a phase. A phase consists of a current phase, action points and a maximum action points. It also holds a method to calculate the maximum phase number.
 
 namespace SpielDesLebens
 {

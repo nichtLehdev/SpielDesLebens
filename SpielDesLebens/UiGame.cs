@@ -1,4 +1,5 @@
-﻿// @author: Joel Dag, Liz Wellhausen
+﻿// @author: Joel Dag, Viktoria Gönnheimer, Liz Wellhausen
+// Main form for the game. It holds the panels for the different phases and the tutorial. It also holds the UI objects for actions and events.
 
 using System;
 using System.Drawing;
@@ -413,7 +414,7 @@ namespace SpielDesLebens
             {
                 _tutorialPanel6.Visible = false;
                 _tutorialPanel7.Visible = true;
-            }            
+            }
         }
 
         private void ContinueTutorial7(object sender, EventArgs e)

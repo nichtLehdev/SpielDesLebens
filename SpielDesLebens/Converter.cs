@@ -1,4 +1,5 @@
 ﻿// @author: Maximilian Koch, Lars Lehmann
+// Class with static methods to convert between Load- and normal classes. 
 
 using System.Collections.Generic;
 

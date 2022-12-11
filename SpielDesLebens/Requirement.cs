@@ -1,4 +1,5 @@
 ﻿// @author: Kevin Kern, Maximilian Koch
+// Data class for a Requirement. A Requirement has a list of Timings, a minimum Stat and a maximum Stat.
 
 using System.Collections.Generic;
 

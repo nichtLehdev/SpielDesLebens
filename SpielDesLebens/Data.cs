@@ -1,4 +1,5 @@
 ﻿// @author: Joel Dag, Kevin Kern, Maximilian Koch
+// General data class with all the enums and arrays, which are used at many points in the project.
 
 namespace SpielDesLebens
 {

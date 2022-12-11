@@ -1,4 +1,5 @@
 ﻿// @author: Kevin Kern, Maximilian Koch
+// Data class for an event. An event is an object that is displayed to the player. It has an id, a title, a text, an info text, a priority, a requirement and a list of options.
 
 using System.Collections.Generic;
 namespace SpielDesLebens

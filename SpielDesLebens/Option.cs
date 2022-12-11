@@ -1,4 +1,5 @@
 ﻿// @author: Kevin Kern, Maximilian Koch
+// Data class for an Option.
 
 namespace SpielDesLebens
 {

@@ -1,4 +1,5 @@
 ﻿// @author: Kevin Kern, Maximilian Koch, Lars Lehmann
+// Generates a list of actions for the player to choose from. The list contains 4 actions. The actions are loaded from a JSON file.
 
 using Newtonsoft.Json;
 using System;

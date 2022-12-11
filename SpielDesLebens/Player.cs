@@ -1,4 +1,5 @@
 // @author: Joel Dag, Kevin Kern, Maximilian Koch
+// Data class for a Player. Contains all the information about the player. Also contains methods to create or reset the player, as well as methods to get and set the player's stats and other attributes.
 
 namespace SpielDesLebens
 {

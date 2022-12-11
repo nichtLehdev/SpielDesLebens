@@ -1,5 +1,6 @@
 ﻿// @author events.json: Joel Dag, Viktoria Gönnheimer, Maximilian Koch
 // @author actions.json: Maximilian Koch
+// Default starting point of the application.
 
 using System;
 using System.Windows.Forms;

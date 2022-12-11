@@ -1,4 +1,5 @@
 ﻿// @author: Lars Lehmann
+// Class for handling savegames. It can save, load and delete savegames.
 
 using Newtonsoft.Json;
 using System.IO;

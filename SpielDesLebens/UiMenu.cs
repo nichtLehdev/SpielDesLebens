@@ -1,4 +1,5 @@
-﻿// @author: Joel Dag, Liz Wellhausen
+﻿// @author: Joel Dag, Viktoria Gönnheimer, Liz Wellhausen
+// UI for the main menu. It is used to load and start new games.
 
 using System;
 using System.Drawing;

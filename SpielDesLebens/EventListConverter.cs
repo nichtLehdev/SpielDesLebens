@@ -1,4 +1,5 @@
 ﻿// @author: Maximilian Koch, Lars Lehmann
+// Converts a list of LoadEvents to a list of Events.
 
 using System;
 using System.Collections.Generic;

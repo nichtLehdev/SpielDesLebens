@@ -1,4 +1,5 @@
 // @author: Kevin Kern, Maximilian Koch
+// Data class for a StatParameter. A StatParameter has a name, a value and a boolean to indicate if it should be clamped.
 
 namespace SpielDesLebens
 {

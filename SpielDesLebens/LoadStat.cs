@@ -1,4 +1,5 @@
 ﻿// @author: Maximilian Koch, Lars Lehmann
+// Data class for a LoadStat.
 
 namespace SpielDesLebens
 {
