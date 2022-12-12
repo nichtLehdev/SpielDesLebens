@@ -4,7 +4,7 @@
       "title": "Bewerbung schreiben",
       "text": "Was gehört NICHT in ein Bewerbungsschreiben?",
       "info": "Hat Auswirkungen auf deinen Erfolg.",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -56,7 +56,7 @@
       "title": "Bewerbung schreiben",
       "text": "Was kommt in ein Bewerbungsschreiben?",
       "info": "Hat Auswirkungen auf den Erfolg.",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -108,7 +108,7 @@
       "title": "Lebenslauf erstellen",
       "text": "Was kommt in den Lebenslauf?",
       "info": "Hat Auswirkungen auf deinen Erfolg",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -182,7 +182,7 @@
       "title": "Bildauswahl für den Lebenslauf",
       "text": "Wähle ein Bild für deinen Lebenslauf aus:",
       "info": "Hat Auswirkungen auf deinen Erfolg",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -256,7 +256,7 @@
       "title": "Hobbys für den Lebenslauf",
       "text": "Welche Hobbys kommen für einen Lebenslauf in Frage?:",
       "info": "Hat Auswirkungen auf den Erfolg",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -308,7 +308,7 @@
       "title": "Frage Bewerbungsgespräch",
       "text": "Wo sehen Sie sich in 5 Jahren?",
       "info": "Hat Auswirkungen auf den Erfolg",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -360,7 +360,7 @@
       "title": "Frage Bewerbungsgespräch",
       "text": "Warum haben Sie sich für diese Berufsrichtung entschieden?",
       "info": "Hat Auswirkungen auf den Erfolg",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -412,7 +412,7 @@
       "title": "Bewerbungsphase Studium",
       "text": "Du hast deine Bewerbungsunterlagen an mehrere Unis geschickt und wartests auf Antwort, was tust du in der Zwischenzeit?",
       "info": "Hat Auswirkungen auf den Erfolg",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -464,7 +464,7 @@
       "title": "Wohnungssuche fürs Studium",
       "text": "Du bewirbst dich für eine Wohnung, was schreibst du in deine Bewerbung?",
       "info": "Hat Auswirkungen auf den Erfolg",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -960,7 +960,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -1064,7 +1064,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -1138,7 +1138,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -1496,7 +1496,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -1874,7 +1874,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -1969,7 +1969,7 @@
    },
    {
       "id": "E-033",
-      "title": "Mobbing  eines Freundes",
+      "title": "Mobbing eines Freundes",
       "text": "Einer deiner Freunde wird gemobbt",
       "info": "Verletzungsgefahr",
       "priority": 1,
@@ -1978,7 +1978,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -8129,7 +8129,7 @@
             {
                "path": ["2"],
                "profession": ["4"],
-               "phase": ["*"]
+               "phase": ["8", "12"]
             }
          ],
          "statsMin": {
@@ -8203,7 +8203,7 @@
             {
                "path": ["2"],
                "profession": ["4"],
-               "phase": ["*"]
+               "phase": ["8", "12"]
             }
          ],
          "statsMin": {
@@ -8277,7 +8277,7 @@
             {
                "path": ["2"],
                "profession": ["4"],
-               "phase": ["*"]
+               "phase": ["8", "12"]
             }
          ],
          "statsMin": {
@@ -8351,7 +8351,7 @@
             {
                "path": ["2"],
                "profession": ["4"],
-               "phase": ["*"]
+               "phase": ["8", "12"]
             }
          ],
          "statsMin": {
@@ -8425,7 +8425,7 @@
             {
                "path": ["2"],
                "profession": ["4"],
-               "phase": ["*"]
+               "phase": ["8", "12"]
             }
          ],
          "statsMin": {
@@ -9308,7 +9308,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -9354,7 +9354,7 @@
       "title": "Die Qual der Wahl",
       "text": "Du hast von 2 Universitäten in verschiedenen Städten  eine Zusage bekommen, für welches Angebot entscheidest du dich",
       "info": "Schlaf ist wichtig für deine Gesundheit",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -9409,6 +9409,17 @@
                "money": 50,
                "success": 0
             }
+         },
+         {
+            "id": "E-134_4",
+            "title": "Gar keine.",
+            "text": "Zwar ist nirgends zu studieren auch eine Option, da du dich aber für ein Studium entschieden hast musst du ein Universität für dein Studium finden.",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": -10,
+               "money": 0,
+               "success": -40
+            }
          }
       ]
    },
@@ -9423,7 +9434,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -9468,14 +9479,14 @@
       "id": "E-136",
       "title": "Sportsfreund",
       "text": "Du bekommst einen Anruf von deinem Freund, er fragt dich ob du mit ihm zu Abwechslung ins Fitnessstudio kommen möchtest. Gehst du mit ihm ins Fitnessstudio?",
-      "info": "Sport macht Laune",
+      "info": "Sport macht gute Laune",
       "priority": 1,
       "requirements": {
          "timings": [
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -9527,7 +9538,7 @@
             {
                "path": ["0"],
                "profession": ["1"],
-               "phase": ["*"]
+               "phase": ["*%2"]
             }
          ],
          "statsMin": {
@@ -9601,7 +9612,7 @@
             {
                "path": ["0"],
                "profession": ["1"],
-               "phase": ["*"]
+               "phase": ["*%2"]
             }
          ],
          "statsMin": {
@@ -9675,7 +9686,7 @@
             {
                "path": ["0"],
                "profession": ["1"],
-               "phase": ["*"]
+               "phase": ["*%2"]
             }
          ],
          "statsMin": {
@@ -9749,7 +9760,7 @@
             {
                "path": ["0"],
                "profession": ["1"],
-               "phase": ["*"]
+               "phase": ["*%2"]
             }
          ],
          "statsMin": {
@@ -9823,7 +9834,7 @@
             {
                "path": ["0"],
                "profession": ["1"],
-               "phase": ["*"]
+               "phase": ["*%2"]
             }
          ],
          "statsMin": {
@@ -9897,7 +9908,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -10096,6 +10107,17 @@
                "money": -20,
                "success": 5
             }
+         },
+         {
+            "id": "E-145_4",
+            "title": "Gar keine.",
+            "text": "Zwar ist nirgends zu studieren auch eine Option, da du dich aber für ein Studium entschieden hast musst du ein Universität für dein Studium finden.",
+            "stats": {
+               "mentalHealth": -10,
+               "motivation": -10,
+               "money": 0,
+               "success": -40
+            }
          }
       ]
    },
@@ -10110,7 +10132,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -10156,7 +10178,7 @@
       "title": "Studienfinanzierung",
       "text": "Du hast nur noch ein paar Monate bis zum Beginn deines Studiums. Wie willst du dein Studium finanzieren?",
       "info": "Willkommen im Kapitalismus",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -10219,7 +10241,7 @@
       "title": "Du hast ein Praktikum bei einer bekannten Firma bekommen",
       "text": "Du musst nun entscheiden, ob du das Praktikum annehmen möchtest. Was tust du?",
       "info": "Hat Auswirkungen auf den Erfolg",
-      "priority": 1,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -10391,7 +10413,7 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*"]
+               "phase": ["*", "0"]
             }
          ],
          "statsMin": {
@@ -10437,7 +10459,7 @@
       "title": "Du hast ein Job-Angebot für einen Ausbildungsplatz erhalten",
       "text": "Du hast ein Job-Angebot erhalten und hast die Wahl es anzunehmen oder die Anstellung abzulehnen.",
       "info": "Hat Auswirkungen auf den Erfolg",
-      "priority": 3,
+      "priority": 0,
       "requirements": {
          "timings": [
             {
@@ -10479,7 +10501,7 @@
                "mentalHealth": 15,
                "motivation": -15,
                "money": 0,
-               "success": -10
+               "success": -40
             }
          }
       ]
@@ -11436,6 +11458,7 @@
          "statsMin": {
             "mentalHealth": 0,
             "motivation": 0,
+            "priority": 0,
             "money": 0,
             "success": 0
          },
