@@ -19,7 +19,7 @@ namespace SpielDesLebens
             // For Debugging only !!!
 #if DEBUG
             Data.SetFilePathsDebug();
-            // Application.Run(new UiDebug());
+            Application.Run(new UiDebug());
 #endif
             Application.Run(new UiMenu());
         }

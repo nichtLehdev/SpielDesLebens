@@ -960,7 +960,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
@@ -1064,7 +1069,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
@@ -1138,7 +1148,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
@@ -1496,7 +1511,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
@@ -1874,7 +1894,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
@@ -1978,7 +2003,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
@@ -9308,7 +9338,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
@@ -9434,7 +9469,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
@@ -9486,7 +9526,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
@@ -9908,7 +9953,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
@@ -10132,7 +10182,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
@@ -10413,7 +10468,12 @@
             {
                "path": ["*"],
                "profession": ["*"],
-               "phase": ["*", "0"]
+               "phase": ["*"]
+            },
+            {
+               "path": ["*"],
+               "profession": ["*"],
+               "phase": ["0"]
             }
          ],
          "statsMin": {
