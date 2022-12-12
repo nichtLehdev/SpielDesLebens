@@ -444,6 +444,7 @@ namespace SpielDesLebens
                 _option4Btn.Enabled = false;
                 _showInfoBtn.Enabled = false;
             }
+            WarningCheck();
         }
 
         private void HoverActionTxtShow0(object sender, EventArgs e)
