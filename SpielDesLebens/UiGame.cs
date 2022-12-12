@@ -404,11 +404,11 @@ namespace SpielDesLebens
         {
             if (_tutorialTxt6.Text == "Oben rechts kannst du erkennen, in welcher Phase du dich befindest. Eine Phase ist ein Ausbildungsabschnitt.")
             {
-                _tutorialTxt6.Text = "Du kannst auch direkt in die nächste Phase springen. Achte dabei aber auf deine Stats, bei jedem Phasenwechsel verringern sich deine Stats.";
+                _tutorialTxt6.Text = "Du kannst auch direkt in die nächste Phase springen. Achte dabei aber auf deine Stats, denn bei jedem Phasenwechsel verringern sich deine Stats.";
             }
-            else if (_tutorialTxt6.Text == "Du kannst auch direkt in die nächste Phase springen. Achte dabei aber auf deine Stats, bei jedem Phasenwechsel verringern sich deine Stats.")
+            else if (_tutorialTxt6.Text == "Du kannst auch direkt in die nächste Phase springen. Achte dabei aber auf deine Stats, denn bei jedem Phasenwechsel verringern sich deine Stats.")
             {
-                _tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der Aktionspunktebei um einen. Ein Event erhöht die Anzahl der Aktionspunkte um zwei.";
+                _tutorialTxt6.Text = "Eine Aktion erhöht die Anzahl der genutzen Aktionspunktebei um eins. Ein Event erhöht die Anzahl dieser um zwei.";
             }
             else
             {
