@@ -1139,21 +1139,16 @@
    },
    {
       "id": "E-020",
-      "title": "Mobbing eines Freundes",
-      "text": "Einer deiner Freunde wird gemobbt.",
-      "info": "Verletzungsgefahr",
-      "priority": 1,
+      "title": "Abschlussprüfung",
+      "text": "Deine Abschlussprüfung steht an. Wie bereitest du dich darauf vor?",
+      "info": "Nur noch diese eine Prüfung.",
+      "priority": 0,
       "requirements": {
          "timings": [
             {
-               "path": ["*"],
+               "path": ["0"],
                "profession": ["*"],
-               "phase": ["*"]
-            },
-            {
-               "path": ["*"],
-               "profession": ["*"],
-               "phase": ["0"]
+               "phase": ["18"]
             }
          ],
          "statsMin": {
@@ -1172,35 +1167,35 @@
       "options": [
          {
             "id": "E-020_1",
-            "title": "Verteidigen",
-            "text": "Du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
+            "title": "Mit Mitschülern lernen",
+            "text": "Gratulation, durch deine Vorbereitung hast du die Prüfung bestanden.",
             "stats": {
-               "mentalHealth": 10,
+               "mentalHealth": 0,
                "motivation": 0,
                "money": 0,
-               "success": 0
+               "success": 100
             }
          },
          {
             "id": "E-020_2",
-            "title": "Weglaufen",
-            "text": "Du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
+            "title": "Auf Tipps vom Ausbilder hören",
+            "text": "Da die Prüfung deines Ausbilders schon einige Jahre her ist, hat sich vieles geändert. Du hast die Prüfung gerade so bestanden.",
             "stats": {
-               "mentalHealth": -10,
+               "mentalHealth": 0,
                "motivation": 0,
                "money": 0,
-               "success": 0
+               "success": 50
             }
          },
          {
             "id": "E-020_3",
-            "title": "Mitmachen",
-            "text": "Du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
+            "title": "Chillen und das Leben genießen",
+            "text": "Du hast die Prüfung leider nicht bestanden, da du dich nicht auf die Prüfung vorbereitet hast.",
             "stats": {
-               "mentalHealth": -30,
+               "mentalHealth": 0,
                "motivation": 0,
-               "money": 15,
-               "success": 0
+               "money": 0,
+               "success": -100
             }
          }
       ]
@@ -1994,21 +1989,16 @@
    },
    {
       "id": "E-033",
-      "title": "Mobbing eines Freundes",
-      "text": "Einer deiner Freunde wird gemobbt",
-      "info": "Verletzungsgefahr",
-      "priority": 1,
+      "title": "Bachelorarbeit",
+      "text": "Deine letzte Arbeit steht an. Was tust du?",
+      "info": "Nur noch diese eine Arbeit.",
+      "priority": 0,
       "requirements": {
          "timings": [
             {
-               "path": ["*"],
+               "path": ["1", "2"],
                "profession": ["*"],
-               "phase": ["*"]
-            },
-            {
-               "path": ["*"],
-               "profession": ["*"],
-               "phase": ["0"]
+               "phase": ["12"]
             }
          ],
          "statsMin": {
@@ -2027,46 +2017,35 @@
       "options": [
          {
             "id": "E-033_1",
-            "title": "Verteidigen",
-            "text": "Du verteidigst deinen Freund und kassierst dabei ein paar Schläge.",
+            "title": "Frühzeitig anfangen und auf Tipps vom Betreuer hören",
+            "text": "Gratulation, durch deine Vorbereitung und die Tipps vom Betreuer hast du die Arbeit mit guter Note bestanden.",
             "stats": {
-               "mentalHealth": 15,
+               "mentalHealth": 0,
                "motivation": 0,
                "money": 0,
-               "success": 0
+               "success": 100
             }
          },
          {
             "id": "E-033_2",
-            "title": "Weglaufen",
-            "text": "Du rennst weg und lässt deinen Freund alleine. Die Freundschaft leidet",
+            "title": "Sich inspieren lassen",
+            "text": "Dein Plagiat wurde entdeckt und du hast die Arbeit nicht bestanden.",
             "stats": {
-               "mentalHealth": -10,
+               "mentalHealth": 0,
                "motivation": 0,
                "money": 0,
-               "success": 0
+               "success": -100
             }
          },
          {
             "id": "E-033_3",
-            "title": "Mitmachen",
-            "text": "Du schließt dich den Mobbern an und klaust deinem Freund den Geldbeutel. Die Freundschaft zerbricht",
+            "title": "Erstmal chillen und drei Tage vorher anfangen",
+            "text": "Leider hat dein aufgebrachter Aufwand nicht ausgereicht und du hast die Arbeit nicht bestanden.",
             "stats": {
-               "mentalHealth": -30,
-               "motivation": 0,
-               "money": 15,
-               "success": 0
-            }
-         },
-         {
-            "id": "E-033_4",
-            "title": "Zuschauen und danach helfen",
-            "text": "Du schaust zu wie dein Freund fertig gemacht wird und bietest ihm danach ein Pflaster für seine Wunde an.",
-            "stats": {
-               "mentalHealth": -10,
+               "mentalHealth": 0,
                "motivation": 0,
                "money": 0,
-               "success": 0
+               "success": -50
             }
          }
       ]
@@ -9448,7 +9427,7 @@
          {
             "id": "E-134_4",
             "title": "Gar keine.",
-            "text": "Zwar ist nirgends zu studieren auch eine Option, da du dich aber für ein Studium entschieden hast musst du ein Universität für dein Studium finden.",
+            "text": "Zwar ist nirgends zu studieren auch eine Option, da du dich aber für ein Studium entschieden hast, musst du eine Universität für dein Studium finden.",
             "stats": {
                "mentalHealth": -10,
                "motivation": -10,
