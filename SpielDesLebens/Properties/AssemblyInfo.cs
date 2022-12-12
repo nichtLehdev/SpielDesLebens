@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Spiel des Lebens")]
 [assembly: AssemblyDescription("Spiel des Lebens")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Spiel des Lebens")]
+[assembly: AssemblyCompany("TINF21AI1")]
 [assembly: AssemblyProduct("Spiel des Lebens")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("Spiel des Lebens")]
