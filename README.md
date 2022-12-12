@@ -69,16 +69,16 @@ Durch die Softwarelösung „Spiel des Lebens” wird ermöglicht, dass junge Me
    3. Jedes Event hat zwischen 2 und 4 Auswahlmöglichkeiten
    4. Events sind vom ausgewählten Bildungsweg und der ausgewählten Berufsgruppe abhängig.
    5. Eine Liste mit allen Events und Aktionen werden im Laufe der Entwicklung erstellt. 
-      Bisher wurden folgende Events bereits genauer spezifiziert:
-      -  In einer Klausur spicken
-      -  Treffen eines neuen Schülers
-      -  Einladung zu einer Party
-      -  Mehr Aufwand in Präsentation/Projekt stecken
-   -  Außerdem wurden folgende Aktionen bereits spezifiziert: 
-      - Lernen 
-      - Ins Kino gehen 
-      - Uno mit Familie spielen 
-      - Nebenjob
+      - Bisher wurden folgende Events bereits genauer spezifiziert:
+         -  In einer Klausur spicken
+         -  Treffen eines neuen Schülers
+         -  Einladung zu einer Party
+         -  Mehr Aufwand in Präsentation/Projekt stecken
+      -  Außerdem wurden folgende Aktionen bereits spezifiziert: 
+         - Lernen 
+         - Ins Kino gehen 
+         - Uno mit Familie spielen 
+         - Nebenjob
    6. Events haben einen großen Einfluss auf mindestens eine der Statistiken und beeinflussen den weiteren Verlauf der Storyline.
    7. Aktionen benötigen ein Maß an Aufwand in Form mindestens einer der Statistiken, um ein bestmögliches Resultat für 6. zu erzielen.
    8. Aktionen haben einen geringen Einfluss auf mindestens eine der Statistiken.
